@@ -213,67 +213,77 @@ def main():
     running_loss = 0.0
     start_time = time.time()
 
-    for ep in range(start_epoch, args.epochs):
-        epoch = ep
-        for x, y in train_loader:
-            if step >= total_train_steps:
-                break
+    try:
+        for ep in range(start_epoch, args.epochs):
+            epoch = ep
+            for x, y in train_loader:
+                if step >= total_train_steps:
+                    break
 
-            x, y = x.to(device), y.to(device)
-            optimizer.zero_grad()
-            logits, loss = model(x, y)
-            loss.backward()
-            # Gradient clipping
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            optimizer.step()
-            scheduler.step()
+                x, y = x.to(device), y.to(device)
+                optimizer.zero_grad()
+                logits, loss = model(x, y)
+                loss.backward()
+                # Gradient clipping
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                optimizer.step()
+                scheduler.step()
 
-            step += 1
-            tokens_processed += args.batch_size * model_config.max_seq_len
-            running_loss += loss.item()
+                step += 1
+                tokens_processed += args.batch_size * model_config.max_seq_len
+                running_loss += loss.item()
 
-            # Logging & checkpoints
-            if step % 10 == 0:
-                avg_train_loss = running_loss / 10
-                running_loss = 0.0
-                elapsed = time.time() - start_time
-                steps_per_sec = 10 / elapsed
-                start_time = time.time()
-                
-                # Estimate remaining time
-                remaining_steps = total_train_steps - step
-                eta_sec = remaining_steps / max(0.001, steps_per_sec)
-                eta_str = time.strftime('%H:%M:%S', time.gmtime(eta_sec))
+                # Logging & checkpoints
+                if step % 10 == 0:
+                    avg_train_loss = running_loss / 10
+                    running_loss = 0.0
+                    elapsed = time.time() - start_time
+                    steps_per_sec = 10 / elapsed
+                    start_time = time.time()
+                    
+                    # Estimate remaining time
+                    remaining_steps = total_train_steps - step
+                    eta_sec = remaining_steps / max(0.001, steps_per_sec)
+                    eta_str = time.strftime('%H:%M:%S', time.gmtime(eta_sec))
 
-                cpu_util = get_cpu_info()
-                current_lr = scheduler.get_last_lr()[0] if hasattr(scheduler, 'get_last_lr') else optimizer.param_groups[0]['lr']
-                print(f"Step {step}/{total_train_steps} | Epoch {epoch+1} | Loss: {avg_train_loss:.4f} | LR: {current_lr:.6f} | "
-                      f"Speed: {steps_per_sec:.2f} steps/s | ETA: {eta_str} | CPU: {cpu_util:.1f}% | Tokens: {tokens_processed}")
+                    cpu_util = get_cpu_info()
+                    current_lr = scheduler.get_last_lr()[0] if hasattr(scheduler, 'get_last_lr') else optimizer.param_groups[0]['lr']
+                    print(f"Step {step}/{total_train_steps} | Epoch {epoch+1} | Loss: {avg_train_loss:.4f} | LR: {current_lr:.6f} | "
+                          f"Speed: {steps_per_sec:.2f} steps/s | ETA: {eta_str} | CPU: {cpu_util:.1f}% | Tokens: {tokens_processed}")
 
 
-            if step % args.checkpoint_interval == 0:
-                val_loss, perp = run_evaluation(model, val_loader, device)
-                print(f"--- Running Validation ---")
-                print(f"Step {step} | Val Loss: {val_loss:.4f} | Perplexity: {perp:.2f}")
-                
-                # Save checkpoint
-                cp_name = f"collision-1m-step-{step:06d}.pt"
-                cp_path = os.path.join(CHECKPOINT_DIR, cp_name)
-                save_checkpoint(
-                    model, optimizer, scheduler, step, epoch, loss.item(), val_loss,
-                    model_config.__dict__, {"save_dir": TOKENIZER_DIR}, cp_path
-                )
-                # Keep latest updated
-                save_checkpoint(
-                    model, optimizer, scheduler, step, epoch, loss.item(), val_loss,
-                    model_config.__dict__, {"save_dir": TOKENIZER_DIR}, latest_cp_path
-                )
+                if step % args.checkpoint_interval == 0:
+                    val_loss, perp = run_evaluation(model, val_loader, device)
+                    print(f"--- Running Validation ---")
+                    print(f"Step {step} | Val Loss: {val_loss:.4f} | Perplexity: {perp:.2f}")
+                    
+                    # Save checkpoint
+                    cp_name = f"collision-1m-step-{step:06d}.pt"
+                    cp_path = os.path.join(CHECKPOINT_DIR, cp_name)
+                    save_checkpoint(
+                        model, optimizer, scheduler, step, epoch, loss.item(), val_loss,
+                        model_config.__dict__, {"save_dir": TOKENIZER_DIR}, cp_path
+                    )
+                    # Keep latest updated
+                    save_checkpoint(
+                        model, optimizer, scheduler, step, epoch, loss.item(), val_loss,
+                        model_config.__dict__, {"save_dir": TOKENIZER_DIR}, latest_cp_path
+                    )
 
-                # Log metadata
-                with open(exp_log_path, "a", encoding="utf-8") as f:
-                    f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')},{step},{loss.item():.4f},{val_loss:.4f},{perp:.2f},{cpu_util:.1f},{tokens_processed}\n")
+                    # Log metadata
+                    with open(exp_log_path, "a", encoding="utf-8") as f:
+                        f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')},{step},{loss.item():.4f},{val_loss:.4f},{perp:.2f},{cpu_util:.1f},{tokens_processed}\n")
 
-                model.train()
+                    model.train()
+    except KeyboardInterrupt:
+        print("\nTraining interrupted by user. Saving emergency checkpoint...")
+        interrupted_cp_path = os.path.join(CHECKPOINT_DIR, "collision-1m-interrupted.pt")
+        save_checkpoint(
+            model, optimizer, scheduler, step, epoch, running_loss / max(1, step % 10), 0.0,
+            model_config.__dict__, {"save_dir": TOKENIZER_DIR}, interrupted_cp_path
+        )
+        print(f"Emergency checkpoint saved to {interrupted_cp_path}. Exiting.")
+        return
 
     # Final Save
     val_loss, perp = run_evaluation(model, val_loader, device)
