@@ -1,6 +1,6 @@
-# COLLISION-1M
+# 💥 COLLISION-1M — Decoder-only Language Model Trained From Scratch
 
-COLLISION-1M is a small decoder-only Transformer language model (~1.46M parameters) built and trained completely from scratch in PyTorch, designed specifically for offline CPU-first execution.
+COLLISION-1M is a decoder-only Transformer language model ($1,462,464$ parameters) built and trained completely from scratch in PyTorch. It is designed to run locally, offline, and CPU-first on standard machines.
 
 ---
 
@@ -34,7 +34,39 @@ For `d_model=128`, `d_ff=256`, `n_layer=3`, `n_head=4`, `vocab_size=8000`, the p
 
 ---
 
-## 3. CLI Commands Reference
+## 3. Pre-Training Pipeline
+
+COLLISION-1M implements a modular pre-training dataset and validation suite:
+
+```
+  [Raw Documents] -> [data.build] -> [Deduplication & Cleaning] -> [Train/Val Splits]
+                                                                         |
+                                                                         v
+  [Training safety gates] <- [Pre-Training Readiness] <- [Tokenizer Train/Verification]
+```
+
+### 1. Dataset Generation (`data/generate_corpus.py`)
+Generates 5,000,000 characters of clean, diverse educational texts across Physics, Computer Science, AI, Astronomy, and Philosophy.
+```bash
+python -m data.generate_corpus
+```
+
+### 2. Dataset Builder (`data/build.py`)
+Safely reads files in `data/raw/`, cleans corrupt control characters, normalizes line endings and whitespace, detects/removes duplicates, and deterministically splits the tokens into a $90/10$ train/val split.
+```bash
+python -m data.build
+```
+
+### 3. Dataset Health & Reports (`data/report.py` & `data/stats.py`)
+Computes token statistics and classifications:
+```bash
+python -m data.stats
+python -m data.report
+```
+
+---
+
+## 4. CLI Commands Reference
 
 Perform the complete lifecycle of COLLISION-1M using the commands below:
 
@@ -43,46 +75,38 @@ Perform the complete lifecycle of COLLISION-1M using the commands below:
 python -m collision.setup
 ```
 
-### Clean & Prepare Raw Dataset
+### Train BPE Tokenizer
 ```bash
-python -m data.prepare
+python -m data.tokenize --train
 ```
 
-### Train Byte-Pair Encoding (BPE) Tokenizer
-Trains the custom BPE tokenizer and tokenizes the datasets:
-```bash
-python -m data.tokenize
-```
-
-### View Model Configuration
-Displays programmatically calculated model information and parameter counts:
+### View Model Configuration Info
 ```bash
 python -m collision.info
 ```
 
-### Run Smoke Test
-Run a quick liveness test verifying tokenizer, dataset, train, validation, saving, and loading:
+### Run Model Pre-Training Readiness Check
+Verifies dataset integrity, binary splits, tokenizer loopbacks, loads checkpoints, and outputs readiness decisions.
 ```bash
-python -m training.train --smoke-test
+python -m collision.readiness_check
+```
+
+### Run CPU Benchmark Profiling
+Runs exactly 100 steps to profile steps/sec, tokens/sec, memory usage, and outputs estimations for 1K, 5K, and 10K steps.
+```bash
+python -m training.train --profile --config configs/collision_1m_cpu.yaml
 ```
 
 ### Train COLLISION-1M
-Train the model with configurable parameters:
 ```bash
-python -m training.train --epochs 5 --batch-size 8 --learning-rate 0.001 --cpu-safe
+python -m training.train --config configs/collision_1m_cpu.yaml
 ```
-- Use `--resume` to continue training from the latest checkpoint.
+*Note: Training will block and warn if the dataset token count is under 1,000,000.*
 
-### Run Text Generation
-Generate text autoregressively with temperature, top-k, and top-p:
+### Compare Checkpoints
+Compares saved step checkpoints in a table along with text generation comparisons side-by-side:
 ```bash
-python -m inference.generate --prompt "COLLISION-1M is" --temperature 0.8 --max-tokens 50
-```
-
-### Run Evaluation
-Evaluate a checkpoint's perplexity and run fixed prompt tests:
-```bash
-python -m evaluation.evaluate
+python -m evaluation.compare
 ```
 
 ### Launch COLLISION LAB Dashboard
@@ -92,7 +116,16 @@ streamlit run dashboard/app.py
 
 ---
 
-## 4. Scaling & Future Self-Learning
+## 5. Scaling Plan
 
-- **Scaling Configs**: Find scaling configurations in the `configs/` directory (e.g., templates for `collision_10m.yaml` and `collision_50m.yaml`).
-- **Self-Learning Guidelines**: See [learning/README.md](file:///v:/collision%20-%201M/learning/README.md) for architectural details on how future versions can safely collect feedback, extend datasets, retrain, and validate checkpoints without risk of adversarial corruption or poisoning.
+- **Model Configs**: Find scaling configurations in the `configs/` directory:
+  - `collision_1m_cpu.yaml`
+  - `collision_10m.yaml`
+  - `collision_50m.yaml`
+  - `collision_100m.yaml`
+
+---
+
+## Copyright & Licensing
+
+Copyright @viraj3106. All rights reserved.
