@@ -203,9 +203,16 @@ def main():
     print(f"Total tokens generated: {len(token_ids)}")
 
     # Split train/val
+    if len(token_ids) < 10:
+        raise ValueError(f"Total tokens generated ({len(token_ids)}) is too small to split into train/val datasets.")
+        
     split_idx = int(0.9 * len(token_ids))
     train_ids = token_ids[:split_idx]
     val_ids = token_ids[split_idx:]
+    
+    if len(train_ids) == 0 or len(val_ids) == 0:
+        raise ValueError(f"Split resulted in empty dataset. Train size: {len(train_ids)}, Val size: {len(val_ids)}")
+
 
     # Save to binary files
     os.makedirs(args.processed_dir, exist_ok=True)
