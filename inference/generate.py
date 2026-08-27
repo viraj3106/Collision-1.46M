@@ -87,6 +87,7 @@ def main():
     parser.add_argument("--top-k", type=int, default=50, help="Top-K token filtering")
     parser.add_argument("--top-p", type=float, default=0.9, help="Top-P token filtering")
     parser.add_argument("--device", type=str, default="cpu", help="Run device: cpu, cuda")
+    parser.add_argument("--interactive", action="store_true", help="Launch interactive generation prompt loop")
     args = parser.parse_args()
 
     # Locate checkpoint
@@ -113,21 +114,41 @@ def main():
     model.load_state_dict(checkpoint["model_state_dict"])
     print("Model loaded successfully.")
 
-    # Generate text
-    generated_text = generate(
-        model, 
-        tokenizer, 
-        prompt=args.prompt, 
-        max_tokens=args.max_tokens, 
-        temperature=args.temperature, 
-        top_k=args.top_k, 
-        top_p=args.top_p, 
-        device=device
-    )
+    if args.interactive:
+        print("\n--- COLLISION-1M INTERACTIVE MODE ---")
+        print("Type your prompt and press Enter. Enter 'exit' or 'quit' to stop.\n")
+        while True:
+            try:
+                user_prompt = input("Prompt >>> ")
+                if user_prompt.strip().lower() in ["exit", "quit"]:
+                    break
+                if not user_prompt.strip():
+                    continue
+                out = generate(
+                    model, tokenizer, prompt=user_prompt, 
+                    max_tokens=args.max_tokens, temperature=args.temperature, 
+                    top_k=args.top_k, top_p=args.top_p, device=device
+                )
+                print(f"Output: {out}\n")
+            except KeyboardInterrupt:
+                break
+    else:
+        # Generate text
+        generated_text = generate(
+            model, 
+            tokenizer, 
+            prompt=args.prompt, 
+            max_tokens=args.max_tokens, 
+            temperature=args.temperature, 
+            top_k=args.top_k, 
+            top_p=args.top_p, 
+            device=device
+        )
 
-    print("\n--- GENERATED OUTPUT ---")
-    print(generated_text)
-    print("------------------------")
+        print("\n--- GENERATED OUTPUT ---")
+        print(generated_text)
+        print("------------------------")
+
 
 if __name__ == "__main__":
     main()
