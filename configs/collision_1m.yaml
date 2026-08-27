@@ -1,0 +1,10 @@
+# COLLISION-1M Configuration
+model:
+  vocab_size: 8000
+  max_seq_len: 256
+  d_model: 128
+  n_layer: 3
+  n_head: 4
+  d_ff: 256
+  dropout: 0.1
+  tie_embeddings: true

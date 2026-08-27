@@ -1,0 +1,10 @@
+# COLLISION-50M Configuration
+model:
+  vocab_size: 32000
+  max_seq_len: 1024
+  d_model: 512
+  n_layer: 8
+  n_head: 8
+  d_ff: 2048
+  dropout: 0.1
+  tie_embeddings: true
