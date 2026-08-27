@@ -20,6 +20,26 @@ class ModelConfig:
         self.d_ff = d_ff
         self.dropout = dropout
         self.tie_embeddings = tie_embeddings
+        self.validate()
+
+    def validate(self):
+        if self.vocab_size <= 0:
+            raise ValueError(f"vocab_size must be positive, got {self.vocab_size}")
+        if self.max_seq_len <= 0:
+            raise ValueError(f"max_seq_len must be positive, got {self.max_seq_len}")
+        if self.d_model <= 0:
+            raise ValueError(f"d_model must be positive, got {self.d_model}")
+        if self.n_layer <= 0:
+            raise ValueError(f"n_layer must be positive, got {self.n_layer}")
+        if self.n_head <= 0:
+            raise ValueError(f"n_head must be positive, got {self.n_head}")
+        if self.d_ff <= 0:
+            raise ValueError(f"d_ff must be positive, got {self.d_ff}")
+        if self.d_model % self.n_head != 0:
+            raise ValueError(f"d_model ({self.d_model}) must be divisible by n_head ({self.n_head})")
+        if not (0.0 <= self.dropout < 1.0):
+            raise ValueError(f"dropout must be in range [0, 1), got {self.dropout}")
+
 
     @classmethod
     def from_yaml(cls, path: str) -> "ModelConfig":
