@@ -86,6 +86,7 @@ def main():
     parser.add_argument("--resume", action="store_true", help="Resume from latest checkpoint")
     parser.add_argument("--smoke-test", action="store_true", help="Run a quick smoke test verify loop")
     parser.add_argument("--cpu-safe", action="store_true", help="Use conservative safe configurations for standard CPU laptop")
+    parser.add_argument("--seed", type=int, default=1337, help="Random seed for training reproducibility")
     args = parser.parse_args()
 
     # Apply cpu-safe overrides
@@ -94,8 +95,16 @@ def main():
         args.checkpoint_interval = 25
         print("CPU_SAFE mode active: batch size set to 4, checkpoint interval set to 25.")
 
+    # Set seed
+    torch.manual_seed(args.seed)
+    np.random.seed(args.seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(args.seed)
+    print(f"Random seed set to {args.seed}")
+
     # Initialize device
     device = torch.device("cuda" if torch.cuda.is_available() and args.device == "cuda" else "cpu")
+
     print(f"Using training device: {device}")
 
     # Load configuration

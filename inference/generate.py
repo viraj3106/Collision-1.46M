@@ -88,7 +88,15 @@ def main():
     parser.add_argument("--top-p", type=float, default=0.9, help="Top-P token filtering")
     parser.add_argument("--device", type=str, default="cpu", help="Run device: cpu, cuda")
     parser.add_argument("--interactive", action="store_true", help="Launch interactive generation prompt loop")
+    parser.add_argument("--seed", type=int, default=None, help="Random seed for generation reproducibility")
     args = parser.parse_args()
+
+    if args.seed is not None:
+        torch.manual_seed(args.seed)
+        import numpy as np
+        np.random.seed(args.seed)
+        print(f"Random seed set to {args.seed}")
+
 
     # Locate checkpoint
     cp_path = args.checkpoint
