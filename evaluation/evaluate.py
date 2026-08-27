@@ -92,5 +92,30 @@ def main():
         f.write(json.dumps(exp_record) + "\n")
     print(f"Logged experiment results to {exp_hist_path}")
 
+    # Write formatted markdown report
+    report_path = os.path.join(EXPERIMENT_DIR, "evaluation_report.md")
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write(f"# COLLISION-1M Evaluation Report\n\n")
+        f.write(f"Generated on: {exp_record['date']}\n\n")
+        f.write(f"## Model Configuration\n")
+        f.write(f"- **Checkpoint**: {exp_record['checkpoint']}\n")
+        f.write(f"- **Step**: {exp_record['step']}\n")
+        f.write(f"- **Layers**: {exp_record['n_layer']}\n")
+        f.write(f"- **Heads**: {exp_record['n_head']}\n")
+        f.write(f"- **Embedding Dim**: {exp_record['d_model']}\n")
+        f.write(f"- **Vocab Size**: {exp_record['vocab_size']}\n\n")
+        f.write(f"## Performance Metrics\n")
+        f.write(f"| Metric | Value |\n")
+        f.write(f"| --- | --- |\n")
+        f.write(f"| Train Loss | {exp_record['train_loss']:.4f} |\n")
+        f.write(f"| Val Loss | {val_loss:.4f} |\n")
+        f.write(f"| Perplexity | {perplexity:.2f} |\n\n")
+        f.write(f"## Sample Generations\n")
+        for prompt in prompts:
+            gen = generate(model, tokenizer, prompt=prompt, max_tokens=30, temperature=0.7, device=device)
+            f.write(f"- **Prompt**: *\"{prompt}\"*\n  - **Generation**: \"{gen}\"\n")
+    print(f"Logged formatted markdown report to {report_path}")
+
+
 if __name__ == "__main__":
     main()
