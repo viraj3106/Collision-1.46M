@@ -15,6 +15,7 @@ def get_training_status():
 def main():
     parser = argparse.ArgumentParser(description="Show COLLISION Model Information")
     parser.add_argument("--config", type=str, default=DEFAULT_CONFIG_PATH, help="Path to config yaml")
+    parser.add_argument("--show-vocab", action="store_true", help="Print sample BPE merge rules from the trained tokenizer")
     args = parser.parse_args()
 
     if not os.path.exists(args.config):
@@ -36,6 +37,21 @@ def main():
     print(f"Embedding: {config.d_model}")
     print(f"Device: {device}")
     print(f"Training status: {status}")
+
+    if args.show_vocab:
+        from collision.config import TOKENIZER_DIR
+        merges_path = os.path.join(TOKENIZER_DIR, "merges.json")
+        if os.path.exists(merges_path):
+            import json
+            with open(merges_path, "r", encoding="utf-8") as f:
+                merges = json.load(f)
+            print("\n### Sample BPE Merges (Top 10):")
+            for i, (pair, idx) in enumerate(list(merges.items())[:10]):
+                p0, p1 = pair.split(",")
+                print(f"  Merge {i+1:02d}: token {p0} + token {p1} -> ID {idx}")
+        else:
+            print("\nTokenizer merges not found. Run tokenization first.")
+
 
 if __name__ == "__main__":
     main()
