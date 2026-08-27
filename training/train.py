@@ -237,8 +237,10 @@ def main():
                 eta_str = time.strftime('%H:%M:%S', time.gmtime(eta_sec))
 
                 cpu_util = get_cpu_info()
-                print(f"Step {step}/{total_train_steps} | Epoch {epoch+1} | Loss: {avg_train_loss:.4f} | "
+                current_lr = scheduler.get_last_lr()[0] if hasattr(scheduler, 'get_last_lr') else optimizer.param_groups[0]['lr']
+                print(f"Step {step}/{total_train_steps} | Epoch {epoch+1} | Loss: {avg_train_loss:.4f} | LR: {current_lr:.6f} | "
                       f"Speed: {steps_per_sec:.2f} steps/s | ETA: {eta_str} | CPU: {cpu_util:.1f}% | Tokens: {tokens_processed}")
+
 
             if step % args.checkpoint_interval == 0:
                 val_loss, perp = run_evaluation(model, val_loader, device)
