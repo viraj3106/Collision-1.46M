@@ -1,0 +1,10 @@
+{
+  "vocab_size": 890,
+  "special_tokens": {
+    "[PAD]": 256,
+    "[UNK]": 257,
+    "[BOS]": 258,
+    "[EOS]": 259
+  },
+  "pretokenizer_pattern": "\\s+|\\w+|[^\\w\\s]"
+}

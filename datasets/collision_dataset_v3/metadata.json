@@ -1,0 +1,32 @@
+{
+  "dataset_version": "collision_dataset_v3",
+  "creation_date": "2026-08-27 22:35:52",
+  "source_files": [
+    "artificial_intelligence.txt",
+    "astronomy.txt",
+    "computer_science.txt",
+    "philosophy.txt",
+    "physics.txt",
+    "sample.txt"
+  ],
+  "number_of_files": 6,
+  "number_of_documents": 6,
+  "character_count": 5082615,
+  "token_count": 2411502,
+  "train_tokens": 2108753,
+  "validation_tokens": 302749,
+  "tokenizer_version": "1.0-BPETokenizer",
+  "vocabulary_size": 890,
+  "avg_document_length_chars": 845821.8333333334,
+  "min_document_length_chars": 80999,
+  "max_document_length_chars": 998927,
+  "duplicate_count": 0,
+  "empty_file_count": 0,
+  "preprocessing_configuration": {
+    "whitespace_normalized": true,
+    "duplicate_filtering": true,
+    "split_ratio": "90/10",
+    "seed": 42
+  },
+  "quality_warnings": {}
+}

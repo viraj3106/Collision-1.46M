@@ -1,0 +1,13 @@
+{
+  "dataset_version": "collision_dataset_v1",
+  "source_files": [
+    "sample.txt"
+  ],
+  "raw_characters": 80999,
+  "cleaned_characters": 1619,
+  "creation_date": "2026-08-27 21:45:15",
+  "token_count": 778,
+  "vocabulary_size": 430,
+  "train_tokens": 700,
+  "validation_tokens": 78
+}

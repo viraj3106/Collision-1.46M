@@ -1,0 +1,27 @@
+{
+  "dataset_version": "collision_dataset_v2",
+  "creation_date": "2026-08-27 21:55:57",
+  "source_files": [
+    "sample.txt"
+  ],
+  "number_of_files": 1,
+  "number_of_documents": 1,
+  "character_count": 80999,
+  "token_count": 26401,
+  "train_tokens": 23760,
+  "validation_tokens": 2641,
+  "tokenizer_version": "1.0-BPETokenizer",
+  "vocabulary_size": 679,
+  "avg_document_length_chars": 80999.0,
+  "min_document_length_chars": 80999,
+  "max_document_length_chars": 80999,
+  "duplicate_count": 0,
+  "empty_file_count": 0,
+  "preprocessing_configuration": {
+    "whitespace_normalized": true,
+    "duplicate_filtering": true,
+    "split_ratio": "90/10",
+    "seed": 42
+  },
+  "quality_warnings": {}
+}
