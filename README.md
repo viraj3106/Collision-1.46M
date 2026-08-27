@@ -1,72 +1,74 @@
-# 💥 COLLISION-1M — Decoder-only Language Model Trained From Scratch
+# COLLISION-1.46M
+### A Tiny Language Model Built From Scratch
 
-COLLISION-1M is a decoder-only Transformer language model ($1,462,464$ parameters) built and trained completely from scratch in PyTorch. It is designed to run locally, offline, and CPU-first on standard machines.
+![COLLISION-1.46M Banner](assets/collision-banner.png)
 
----
+COLLISION-1.46M is a small decoder-only Transformer language model built and trained completely from scratch in PyTorch, designed specifically for offline CPU-first execution.
 
-## 1. How the Transformer Works & Architecture
-
-The architecture of COLLISION-1M is a GPT-style causal autoregressive language model. The core layers include:
-- **Token Embeddings**: Maps vocabulary indices to vectors in $\mathbb{R}^{d_{model}}$.
-- **Positional Embeddings**: Learnable spatial embedding vectors mapping input token positions.
-- **Causal Multi-Head Self-Attention**: Projects input representations to Query, Key, and Value vectors. Attention scores are calculated as:
-$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + M\right)V$$
-Where $M$ is the causal mask (lower triangular mask forcing the model to only attend to historical tokens).
-- **Feed-Forward Networks (MLP)**: Projects tokens into a higher dimension ($d_{ff}$), applies a GELU activation, and projects back.
-- **Pre-Layer Normalization & Residual Connections**: Applied at each block layer step to stabilize gradients and facilitate backpropagation.
-- **Weight Tying**: The input token embedding layer shares weights with the output projection layer (Language Model Head) to reduce parameters and conserve memory.
+*   🧠 **1.46M Parameters** — Programmatically calculated and tied embedding structure.
+*   💻 **CPU Trained** — Lightweight execution optimized for standard consumer laptops.
+*   🔤 **Custom BPE Tokenizer** — Byte-Level merges restricted to word/chunk boundaries.
+*   📚 **2.4M Training Tokens** — Clean educational corpus covering physics, CS, AI, philosophy, and astronomy.
+*   📊 **Training Dashboard** — Live tracking Streamlit lab showing loss charts, metrics, and text generators.
+*   💾 **Checkpoint System** — Step checkpoint histories, best loss tracking, and emergency keyboard interrupts saving.
+*   🔬 **No Pretrained Weights** — Randomly initialized weights, learning from pure text streams.
 
 ---
 
-## 2. Programmatic Parameter Calculation
-
-The parameter count is programmatically calculated by analyzing the layers of the configuration:
-1. **Embeddings**: $\text{vocab\_size} \times d_{model} + \text{max\_seq\_len} \times d_{model}$
-2. **Decoder Blocks**: $n_{layer} \times (\text{Attention} + \text{MLP} + \text{LayerNorms})$
-   - **Attention**: $(3 \times d_{model} \times d_{model}) + (3 \times d_{model}) + (d_{model} \times d_{model}) + d_{model}$
-   - **MLP**: $(2 \times d_{model} \times d_{ff}) + d_{ff} + d_{model}$
-   - **LayerNorms**: $2 \times (2 \times d_{model})$
-3. **Final LayerNorm**: $2 \times d_{model}$
-4. **LM Head**: $\text{vocab\_size}$ (when weights are tied) or $\text{vocab\_size} \times d_{model} + \text{vocab\_size}$ (when untied).
-
-For `d_model=128`, `d_ff=256`, `n_layer=3`, `n_head=4`, `vocab_size=8000`, the parameter count is exactly:
-**1,462,464 parameters**
-
----
-
-## 3. Pre-Training Pipeline
-
-COLLISION-1M implements a modular pre-training dataset and validation suite:
+## 1. How it Works (Flowchart)
 
 ```
-  [Raw Documents] -> [data.build] -> [Deduplication & Cleaning] -> [Train/Val Splits]
-                                                                         |
-                                                                         v
-  [Training safety gates] <- [Pre-Training Readiness] <- [Tokenizer Train/Verification]
-```
-
-### 1. Dataset Generation (`data/generate_corpus.py`)
-Generates 5,000,000 characters of clean, diverse educational texts across Physics, Computer Science, AI, Astronomy, and Philosophy.
-```bash
-python -m data.generate_corpus
-```
-
-### 2. Dataset Builder (`data/build.py`)
-Safely reads files in `data/raw/`, cleans corrupt control characters, normalizes line endings and whitespace, detects/removes duplicates, and deterministically splits the tokens into a $90/10$ train/val split.
-```bash
-python -m data.build
-```
-
-### 3. Dataset Health & Reports (`data/report.py` & `data/stats.py`)
-Computes token statistics and classifications:
-```bash
-python -m data.stats
-python -m data.report
+        Text Input
+             │
+             ▼
+       BPE Tokenizer
+             │
+             ▼
+         Token IDs
+             │
+             ▼
+         Embeddings (Token + Positional)
+             │
+             ▼
+     Transformer Blocks (3 Causal Layers)
+             │
+             ▼
+       Self-Attention (4 Heads + Casual Masking)
+             │
+             ▼
+         MLP Block (GELU Activation)
+             │
+             ▼
+     Next Token Prediction (Softmax probabilities)
+             │
+             ▼
+        Loss (Cross Entropy)
+             │
+             ▼
+     Backpropagation (AdamW Optimizer)
+             │
+             ▼
+      Updated Weights
 ```
 
 ---
 
-## 4. CLI Commands Reference
+## 2. Model Specifications
+
+| Metric | COLLISION |
+| :--- | :--- |
+| **Parameters** | 1,462,464 |
+| **Vocabulary Size** | 8,000 |
+| **Context Length** | 256 |
+| **Transformer Layers** | 3 |
+| **Attention Heads** | 4 |
+| **Training Data** | 2.41M tokens |
+| **Training Device** | CPU |
+| **Throughput Speed** | ~4,018 tokens/sec |
+
+---
+
+## 3. CLI Commands Reference
 
 Perform the complete lifecycle of COLLISION-1M using the commands below:
 
@@ -75,36 +77,34 @@ Perform the complete lifecycle of COLLISION-1M using the commands below:
 python -m collision.setup
 ```
 
-### Train BPE Tokenizer
+### Train Byte-Pair Encoding (BPE) Tokenizer
 ```bash
 python -m data.tokenize --train
 ```
 
-### View Model Configuration Info
+### Clean & Build Raw Dataset
 ```bash
-python -m collision.info
+python -m data.build
 ```
 
 ### Run Model Pre-Training Readiness Check
-Verifies dataset integrity, binary splits, tokenizer loopbacks, loads checkpoints, and outputs readiness decisions.
 ```bash
 python -m collision.readiness_check
 ```
 
-### Run CPU Benchmark Profiling
+### CPU Benchmark Profiling
 Runs exactly 100 steps to profile steps/sec, tokens/sec, memory usage, and outputs estimations for 1K, 5K, and 10K steps.
 ```bash
 python -m training.train --profile --config configs/collision_1m_cpu.yaml
 ```
 
-### Train COLLISION-1M
+### Train COLLISION-1.46M
 ```bash
 python -m training.train --config configs/collision_1m_cpu.yaml
 ```
-*Note: Training will block and warn if the dataset token count is under 1,000,000.*
 
 ### Compare Checkpoints
-Compares saved step checkpoints in a table along with text generation comparisons side-by-side:
+Compares metrics and outputs side-by-side:
 ```bash
 python -m evaluation.compare
 ```
@@ -116,13 +116,8 @@ streamlit run dashboard/app.py
 
 ---
 
-## 5. Scaling Plan
-
-- **Model Configs**: Find scaling configurations in the `configs/` directory:
-  - `collision_1m_cpu.yaml`
-  - `collision_10m.yaml`
-  - `collision_50m.yaml`
-  - `collision_100m.yaml`
+## 4. Scaling Configs
+Find templates for `collision_10m.yaml`, `collision_50m.yaml`, and `collision_100m.yaml` inside the `configs/` directory.
 
 ---
 
