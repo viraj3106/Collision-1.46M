@@ -43,8 +43,16 @@ def generate(
     top_p=0.9, 
     device="cpu"
 ):
+    if temperature < 0.0:
+        raise ValueError(f"temperature must be non-negative, got {temperature}")
+    if top_k < 0:
+        raise ValueError(f"top_k must be non-negative, got {top_k}")
+    if not (0.0 <= top_p <= 1.0):
+        raise ValueError(f"top_p must be between 0.0 and 1.0, got {top_p}")
+
     model.eval()
     # Encode prompt using the tokenizer
+
     ids = tokenizer.encode(prompt, bos=True)
     x = torch.tensor([ids], dtype=torch.long, device=device)
     
