@@ -4,6 +4,8 @@ import argparse
 import re
 import numpy as np
 from typing import List, Dict, Tuple
+from datetime import datetime
+from data.stats import get_latest_version_dir
 
 class BPETokenizer:
     def __init__(self):
@@ -23,9 +25,7 @@ class BPETokenizer:
         self.reset_vocab()
 
     def reset_vocab(self):
-        # Vocab starts with 256 byte values
         self.vocab = {bytes([i]): i for i in range(256)}
-        # Add special tokens
         for token, idx in self.special_tokens.items():
             self.vocab[token.encode('utf-8')] = idx
         self.inverse_vocab = {v: k for k, v in self.vocab.items()}
@@ -50,18 +50,19 @@ class BPETokenizer:
                 i += 1
         return new_word
 
-    def train(self, text: str, vocab_size: int, verbose: bool = True):
+    def train(self, text: str, vocab_size: int, verbose: bool = True) -> Dict:
         self.reset_vocab()
         if vocab_size <= 260:
             raise ValueError("vocab_size must be greater than 260 to accommodate base bytes and special tokens.")
 
-        # Split text into word-like chunks (pre-tokenization)
-        # Using a regex to split words, whitespace, and punctuation
+        # Pre-tokenization
         word_chunks = re.findall(r'\s+|\w+|[^\w\s]', text)
         words = [list(chunk.encode('utf-8')) for chunk in word_chunks if chunk]
         
         num_merges = vocab_size - 260
-        
+        stats_history = []
+        start_time = datetime.now()
+
         if verbose:
             print(f"Training tokenizer on text split into {len(words)} word chunks...")
             print(f"Target vocab size: {vocab_size} (number of merges to perform: {num_merges})")
@@ -70,30 +71,41 @@ class BPETokenizer:
             stats = self.get_stats(words)
             if not stats:
                 break
-            # Find the most frequent pair
             best_pair = max(stats, key=stats.get)
-            if stats[best_pair] < 2:
+            if stats[best_pair] < 5:
                 if verbose:
-                    print("No more frequent pairs found. Stopping early.")
+                    print("No more frequent pairs found (threshold < 5). Stopping early.")
                 break
+
                 
             new_idx = 260 + i
             self.merges[best_pair] = new_idx
             
-            # Update vocabulary
             p0_val = self.inverse_vocab[best_pair[0]]
             p1_val = self.inverse_vocab[best_pair[1]]
-            # Merge the bytes
             self.vocab[p0_val + p1_val] = new_idx
             self.inverse_vocab[new_idx] = p0_val + p1_val
             
             words = [self.merge_word(w, best_pair, new_idx) for w in words]
             
-            if verbose and (i + 1) % 100 == 0:
-                print(f"Merge {i+1}/{num_merges} completed. Vocab size: {len(self.inverse_vocab)}")
+            if (i + 1) % 100 == 0:
+                stats_history.append({
+                    "merge_step": i + 1,
+                    "vocab_size": len(self.inverse_vocab),
+                    "best_pair": f"{best_pair[0]},{best_pair[1]}",
+                    "frequency": stats[best_pair]
+                })
+                if verbose:
+                    print(f"Merge {i+1}/{num_merges} completed. Vocab size: {len(self.inverse_vocab)}")
 
-        if verbose:
-            print(f"Training completed. Final vocab size: {len(self.inverse_vocab)}")
+        training_duration = (datetime.now() - start_time).total_seconds()
+        
+        return {
+            "training_duration_seconds": training_duration,
+            "final_vocab_size": len(self.inverse_vocab),
+            "total_merges_performed": len(self.merges),
+            "merge_step_history": stats_history
+        }
 
     def save(self, save_dir: str):
         os.makedirs(save_dir, exist_ok=True)
@@ -104,6 +116,15 @@ class BPETokenizer:
             json.dump(json_vocab, f, indent=2)
         with open(os.path.join(save_dir, "merges.json"), "w", encoding="utf-8") as f:
             json.dump(json_merges, f, indent=2)
+            
+        # Write custom config.json
+        config = {
+            "vocab_size": len(self.inverse_vocab),
+            "special_tokens": self.special_tokens,
+            "pretokenizer_pattern": r'\s+|\w+|[^\w\s]'
+        }
+        with open(os.path.join(save_dir, "config.json"), "w", encoding="utf-8") as f:
+            json.dump(config, f, indent=2)
 
     def load(self, save_dir: str):
         vocab_path = os.path.join(save_dir, "vocab.json")
@@ -133,8 +154,6 @@ class BPETokenizer:
     def encode(self, text: str, bos: bool = False, eos: bool = False) -> List[int]:
         if not text:
             return []
-            
-        # Split text into word-like chunks (pre-tokenization)
         word_chunks = re.findall(r'\s+|\w+|[^\w\s]', text)
         res = []
         if bos:
@@ -163,67 +182,99 @@ class BPETokenizer:
                     byte_parts.append(val)
                 else:
                     byte_parts.append(val.encode('utf-8'))
-            else:
-                pass
-        
         merged_bytes = b"".join(byte_parts)
         return merged_bytes.decode('utf-8', errors='replace')
 
 def main():
     parser = argparse.ArgumentParser(description="Train and run BPE Tokenizer")
-    parser.add_argument("--raw-dir", type=str, default="data/raw", help="Path to raw texts")
+    parser.add_argument("--train", action="store_true", help="Train tokenizer from the latest prepared dataset version")
     parser.add_argument("--processed-dir", type=str, default="data/processed", help="Path to processed data folder")
     parser.add_argument("--save-dir", type=str, default="artifacts/tokenizer", help="Directory to save tokenizer")
     parser.add_argument("--vocab-size", type=int, default=8000, help="Target vocabulary size")
     args = parser.parse_args()
 
-    # Find raw training data
-    txt_files = [f for f in os.listdir(args.raw_dir) if f.endswith(".txt")]
-    if not txt_files:
-        print(f"No .txt files found in {args.raw_dir}. Please run 'python -m data.prepare' first.")
+    latest_dir = get_latest_version_dir()
+    if not latest_dir:
+        print("No prepared dataset versions found. Please run 'python -m data.prepare' first.")
         return
 
-    # Combine all raw text
-    full_text = ""
-    for f_name in txt_files:
-        with open(os.path.join(args.raw_dir, f_name), "r", encoding="utf-8") as f:
-            full_text += f.read() + "\n"
+    cleaned_txt_path = os.path.join(latest_dir, "cleaned.txt")
+    if not os.path.exists(cleaned_txt_path):
+        print(f"Error: cleaned.txt missing in {latest_dir}")
+        return
 
-    print(f"Loaded {len(txt_files)} text file(s). Total text length: {len(full_text)} characters.")
+    with open(cleaned_txt_path, "r", encoding="utf-8") as f:
+        full_text = f.read()
 
-    # Train tokenizer
     tokenizer = BPETokenizer()
-    tokenizer.train(full_text, args.vocab_size)
-    tokenizer.save(args.save_dir)
-    print(f"Tokenizer saved to {args.save_dir}")
+
+    if args.train:
+        # Train and save stats
+        stats = tokenizer.train(full_text, args.vocab_size)
+        tokenizer.save(args.save_dir)
+        
+        # Store training stats
+        with open(os.path.join(args.save_dir, "stats.json"), "w", encoding="utf-8") as f:
+            json.dump(stats, f, indent=2)
+            
+        print("Tokenizer trained successfully.")
+    else:
+        # Just load existing
+        try:
+            tokenizer.load(args.save_dir)
+            print("Tokenizer loaded successfully.")
+        except Exception:
+            print("Tokenizer files not found. Automatically training new tokenizer...")
+            stats = tokenizer.train(full_text, args.vocab_size)
+            tokenizer.save(args.save_dir)
+            with open(os.path.join(args.save_dir, "stats.json"), "w", encoding="utf-8") as f:
+                json.dump(stats, f, indent=2)
 
     # Tokenize dataset
     print("Tokenizing dataset and creating train/validation splits...")
     token_ids = tokenizer.encode(full_text, bos=True, eos=True)
-    print(f"Total tokens generated: {len(token_ids)}")
+    total_tokens = len(token_ids)
 
     # Split train/val
-    if len(token_ids) < 10:
-        raise ValueError(f"Total tokens generated ({len(token_ids)}) is too small to split into train/val datasets.")
-        
-    split_idx = int(0.9 * len(token_ids))
+    if total_tokens < 10:
+        raise ValueError(f"Total tokens generated ({total_tokens}) is too small to split.")
+
+    split_idx = int(0.9 * total_tokens)
     train_ids = token_ids[:split_idx]
     val_ids = token_ids[split_idx:]
-    
-    if len(train_ids) == 0 or len(val_ids) == 0:
-        raise ValueError(f"Split resulted in empty dataset. Train size: {len(train_ids)}, Val size: {len(val_ids)}")
 
-
-    # Save to binary files
+    # Save to BOTH dataset version dir and global processed dir
     os.makedirs(args.processed_dir, exist_ok=True)
-    train_path = os.path.join(args.processed_dir, "train.bin")
-    val_path = os.path.join(args.processed_dir, "val.bin")
+    
+    # Save to latest version dir
+    v_train_path = os.path.join(latest_dir, "train.bin")
+    v_val_path = os.path.join(latest_dir, "val.bin")
+    np.array(train_ids, dtype=np.uint16).tofile(v_train_path)
+    np.array(val_ids, dtype=np.uint16).tofile(v_val_path)
 
-    np.array(train_ids, dtype=np.uint16).tofile(train_path)
-    np.array(val_ids, dtype=np.uint16).tofile(val_path)
+    # Copy/Save to global processed dir
+    g_train_path = os.path.join(args.processed_dir, "train.bin")
+    g_val_path = os.path.join(args.processed_dir, "val.bin")
+    np.array(train_ids, dtype=np.uint16).tofile(g_train_path)
+    np.array(val_ids, dtype=np.uint16).tofile(g_val_path)
 
-    print(f"Saved {len(train_ids)} train tokens to {train_path}")
-    print(f"Saved {len(val_ids)} val tokens to {val_path}")
+    # Update metadata.json in latest version dir
+    meta_path = os.path.join(latest_dir, "metadata.json")
+    with open(meta_path, "r", encoding="utf-8") as f:
+        meta = json.load(f)
+
+    meta["token_count"] = total_tokens
+    meta["vocabulary_size"] = len(tokenizer.inverse_vocab)
+    meta["train_tokens"] = len(train_ids)
+    meta["validation_tokens"] = len(val_ids)
+
+    with open(meta_path, "w", encoding="utf-8") as f:
+        json.dump(meta, f, indent=2)
+
+    print(f"Vocabulary size: {len(tokenizer.inverse_vocab)}")
+    print(f"Training tokens: {len(train_ids)}")
+    print(f"Validation tokens: {len(val_ids)}")
+    print(f"Saved token files to both {latest_dir} and {args.processed_dir}")
 
 if __name__ == "__main__":
     main()
