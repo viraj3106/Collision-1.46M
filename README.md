@@ -1,142 +1,109 @@
 # COLLISION-1.46M
-### A Tiny Language Model Built From Scratch
+
+An experimental 1.46M parameter language model trained from scratch on CPU.
 
 ![COLLISION-1.46M Banner](assets/collision-banner.png)
 
-COLLISION-1.46M is a small decoder-only Transformer language model built and trained completely from scratch in PyTorch, designed specifically for offline CPU-first execution.
+## 1. What is COLLISION?
+COLLISION-1.46M is a small decoder-only Transformer language model built and trained completely from scratch (no pretrained weights) in PyTorch, designed specifically for offline, CPU-first execution.
 
-*   🧠 **1.46M Parameters** — Programmatically calculated and tied embedding structure.
-*   💻 **CPU Trained** — Lightweight execution optimized for standard consumer laptops.
-*   🔤 **Custom BPE Tokenizer** — Byte-Level merges restricted to word/chunk boundaries.
-*   📚 **2.4M Training Tokens** — Clean educational corpus covering physics, CS, AI, philosophy, and astronomy.
-*   📊 **Training Dashboard** — Live tracking Streamlit lab showing loss charts, metrics, and text generators.
-*   💾 **Checkpoint System** — Step checkpoint histories, best loss tracking, and emergency keyboard interrupts saving.
-*   🔬 **No Pretrained Weights** — Randomly initialized weights, learning from pure text streams.
+## 2. Why it Exists
+COLLISION is a research project designed to explore:
+* What happens when a small Transformer model is trained on limited hardware with zero pretraining.
+* The impact of dataset quality, duplication rates, and train/validation split bias on generalization.
+* CPU-only pretraining limits and performance.
 
----
+## 3. Architecture
+Verified architecture parameters:
+* **Parameters**: 1,462,464 parameters (Model capacity 8,000 vocab).
+* **Architecture**: Decoder-only causal Transformer.
+* **Layers**: 3.
+* **Embedding size (d_model)**: 128.
+* **Attention heads**: 4.
+* **Feedforward dimension (d_ff)**: 256.
+* **Context Length**: 256 tokens.
+* **Embedding Tieing**: True.
 
-## 1. How it Works (Flowchart)
+## 4. Training
+* **Initialization**: Randomly initialized.
+* **Hardware**: Trained completely on consumer CPU.
+* **Dataset**: `collision_dataset_v4` (2,072,993 training tokens, 229,010 validation tokens).
+* **Tokenizer**: Custom Byte-Level BPE tokenizer with boundary restrictions (890 active vocabulary).
+* **Optimizer**: AdamW (lr=6e-4, weight_decay=0.01, Cosine Warmup over 150 steps).
 
-```
-        Text Input
-             │
-             ▼
-       BPE Tokenizer
-             │
-             ▼
-         Token IDs
-             │
-             ▼
-         Embeddings (Token + Positional)
-             │
-             ▼
-     Transformer Blocks (3 Causal Layers)
-             │
-             ▼
-       Self-Attention (4 Heads + Casual Masking)
-             │
-             ▼
-         MLP Block (GELU Activation)
-             │
-             ▼
-     Next Token Prediction (Softmax probabilities)
-             │
-             ▼
-        Loss (Cross Entropy)
-             │
-             ▼
-     Backpropagation (AdamW Optimizer)
-             │
-             ▼
-      Updated Weights
-```
+## 5. Phase 5 → Phase 6 Results
+The model underwent two distinct pretraining runs:
 
----
+| Metric | Phase 5 (Step 1500) | Phase 6 (Step 1500) |
+| :--- | :---: | :---: |
+| **Training Loss** | 2.0934 | 2.1608 |
+| **Validation Loss** | 4.1409 | 1.9363 |
+| **Validation Perplexity** | 62.86 | **6.93** |
+| **Overfitting Indicator** | High (degrades after step 1500) | None (monotonically decreases) |
+| **Dataset Version** | `collision_dataset_v3` (with duplicates/leakage) | `collision_dataset_v4` (deduplicated/leak-free) |
 
-## 2. Model Specifications
+*The significant decrease in validation perplexity came entirely from dataset auditing and better train/validation separation, without increasing the model size.*
 
-| Metric | COLLISION |
-| :--- | :--- |
-| **Parameters** | 1,462,464 |
-| **Vocabulary Size** | 8,000 |
-| **Context Length** | 256 |
-| **Transformer Layers** | 3 |
-| **Attention Heads** | 4 |
-| **Training Data** | 2.41M tokens |
-| **Training Device** | CPU |
-| **Throughput Speed** | ~4,018 tokens/sec |
+## 6. COLLISION LAB
+COLLISION LAB is a polished public AI playground interface designed for CPU-only inference, checkpoint selection, and visual statistics.
 
----
-
-## 3. CLI Commands Reference
-
-Perform the complete lifecycle of COLLISION-1M using the commands below:
-
-### Setup Structure & Directories
-```bash
-python -m collision.setup
-```
-
-### Train Byte-Pair Encoding (BPE) Tokenizer
-```bash
-python -m data.tokenize --train
-```
-
-### Clean & Build Raw Dataset
-```bash
-python -m data.build
-```
-
-### Run Model Pre-Training Readiness Check
-```bash
-python -m collision.readiness_check
-```
-
-### CPU Benchmark Profiling
-Runs exactly 100 steps to profile steps/sec, tokens/sec, memory usage, and outputs estimations for 1K, 5K, and 10K steps.
-```bash
-python -m training.train --profile --config configs/collision_1m_cpu.yaml
-```
-
-### Train COLLISION-1.46M
-```bash
-python -m training.train --config configs/collision_1m_cpu.yaml
-```
-
-### Compare Checkpoints
-Compares metrics and outputs side-by-side:
-```bash
-python -m evaluation.compare
-```
-
-### Launch COLLISION LAB Playground
+To launch the web playground:
 ```bash
 streamlit run dashboard/app.py
 ```
 
----
+## 7. Installation
+Clone the repository and install requirements:
+```bash
+pip install -r requirements.txt
+```
 
-## Try COLLISION
+## 8. Inference
+Run inference using the official standalone entry point script:
+```bash
+python release_inference.py --prompt "What is artificial intelligence?" --max-tokens 100
+```
 
-To launch and interact with the public model playground:
+Supported arguments:
+* `--prompt`: Input text prompt.
+* `--checkpoint`: Path to model checkpoint file (default: `checkpoints/phase6/collision-1.46m-best.pt`).
+* `--tokenizer`: Path to tokenizer directory (default: `artifacts/tokenizer`).
+* `--temperature`: Generation temperature (default: `0.8`).
+* `--top-k`: Top-K token filtering (default: `50`).
+* `--top-p`: Top-P nucleus sampling (default: `0.9`).
 
-1. Ensure all requirements are installed:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run the Streamlit application:
-   ```bash
-   streamlit run dashboard/app.py
-   ```
-3. Open the local address printed in the terminal (typically `http://localhost:8501`) in your browser to experience **COLLISION LAB**.
+## 9. Evaluation
+Run checkpoint comparison:
+```bash
+python -m evaluation.compare
+```
 
----
+## 10. Repository Structure
+```
+├── checkpoints/          # Saved training checkpoints (Phase 5 & 6)
+├── configs/              # Model configuration files
+├── dashboard/            # COLLISION LAB Streamlit app (app.py)
+├── data/                 # Tokenization and dataset preparation scripts
+├── datasets/             # Tokenized dataset bins (v4)
+├── evaluation/           # Output evaluation and comparison scripts
+├── experiments/          # Evaluation logs, reports, and loss curves
+├── inference/            # Legacy inference modules
+├── model/                # Transformer architecture files
+├── release/              # Release files metadata config
+├── MODEL_CARD.md         # Detailed Model Card
+├── RELEASE_CHECKLIST.md  # Open-source release verification checklist
+├── HF_RELEASE.md         # Hugging Face deployment guidelines
+└── release_inference.py  # Standalone CLI entry point
+```
 
-## 4. Scaling Configs
-Find templates for `collision_10m.yaml`, `collision_50m.yaml`, and `collision_100m.yaml` inside the `configs/` directory.
+## 11. Limitations
+COLLISION-1.46M is an experimental small-scale model. Intended limitations:
+* **Factual Accuracy**: The model outputs are statistically simulated completion sequences and may be factually incorrect, incomplete, repetitive, or nonsensical.
+* **No Instruction Following**: The model has not undergone instruction fine-tuning.
+* **Limited Context**: STRICT context length limit of 256 tokens.
 
----
+## 12. License
+Distributed under the MIT License. See [LICENSE](LICENSE) or standard project terms for more information.
 
-## Copyright & Licensing
-
-Copyright @viraj3106. All rights reserved.
+## 13. Hugging Face Release
+The model is prepared for Hugging Face model repository upload. For full instructions on uploading checkpoints, tokenizers, and model page metadata, see [HF_RELEASE.md](HF_RELEASE.md).

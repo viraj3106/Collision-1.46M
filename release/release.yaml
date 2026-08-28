@@ -1,0 +1,14 @@
+model_name: "COLLISION-1.46M"
+parameters: 1462464
+architecture: "Decoder-only Transformer"
+layers: 3
+embedding_dimension: 128
+attention_heads: 4
+context_length: 256
+tokenizer: "Custom BPE"
+training: "From scratch"
+training_hardware: "CPU"
+dataset: "collision_dataset_v4"
+best_validation_perplexity: 6.93
+checkpoint_path: "checkpoints/phase6/collision-1.46m-best.pt"
+tokenizer_dir: "artifacts/tokenizer"
