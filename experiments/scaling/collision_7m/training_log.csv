@@ -1,0 +1,1 @@
+step,train_loss,val_loss,perplexity,lr,tokens_processed,tokens_per_sec,step_per_sec,elapsed_time,cpu_memory
