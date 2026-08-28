@@ -1,0 +1,37 @@
+{
+  "dataset_name": "collision_dataset_v5_expanded",
+  "dataset_version": "5.0-expanded",
+  "creation_method": "Combinatorial semantic variation generator",
+  "random_seed": 42,
+  "document_count": 15649,
+  "example_count": 15649,
+  "token_count": 1802448,
+  "train_tokens": 1546977,
+  "val_tokens": 189973,
+  "test_tokens": 65498,
+  "domain_distribution": {
+    "Mathematics": 2571,
+    "Artificial Intelligence": 2559,
+    "Computer Science": 2634,
+    "Space": 2654,
+    "Physics": 2631,
+    "Machine Learning": 2600
+  },
+  "content_type_distribution": {
+    "Explanatory": 3912,
+    "Question/Answer": 3130,
+    "Completion": 2347,
+    "Declarative": 6260
+  },
+  "train_count": 13440,
+  "validation_count": 1645,
+  "test_count": 564,
+  "duplicate_statistics": {
+    "total_duplicates_filtered": 0,
+    "duplicate_percentage": 0.0
+  },
+  "tokenizer_information": {
+    "tokenizer_dir": "artifacts/tokenizer",
+    "vocab_size": 894
+  }
+}
