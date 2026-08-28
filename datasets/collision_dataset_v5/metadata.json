@@ -1,0 +1,37 @@
+{
+  "dataset_name": "collision_dataset_v5",
+  "dataset_version": "5.0",
+  "creation_method": "Synthetic controlled mixture expansion",
+  "random_seed": 42,
+  "document_count": 1000,
+  "example_count": 1000,
+  "token_count": 87209,
+  "train_tokens": 67914,
+  "val_tokens": 12441,
+  "test_tokens": 6854,
+  "domain_distribution": {
+    "Machine Learning": 149,
+    "Artificial Intelligence": 118,
+    "Physics": 203,
+    "Computer Science": 270,
+    "Mathematics": 109,
+    "Space": 151
+  },
+  "content_type_distribution": {
+    "Explanatory": 250,
+    "Question/Answer": 200,
+    "Declarative": 400,
+    "Completion": 150
+  },
+  "train_count": 785,
+  "validation_count": 141,
+  "test_count": 74,
+  "duplicate_statistics": {
+    "total_duplicates_filtered": 1000,
+    "duplicate_percentage": 50.0
+  },
+  "tokenizer_information": {
+    "tokenizer_dir": "artifacts/tokenizer",
+    "vocab_size": 894
+  }
+}
