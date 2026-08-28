@@ -1,0 +1,58 @@
+{
+  "dataset_version": "collision_dataset_v4",
+  "creation_date": "2026-08-28 16:25:07",
+  "source_files": [
+    "artificial_intelligence.txt",
+    "astronomy.txt",
+    "computer_science.txt",
+    "philosophy.txt",
+    "physics.txt",
+    "sample.txt"
+  ],
+  "raw_characters": 5082615,
+  "cleaned_characters": 4831413,
+  "token_count": 2302003,
+  "train_tokens": 2072993,
+  "validation_tokens": 229010,
+  "tokenizer_version": "1.0-BPETokenizer",
+  "vocabulary_size": 890,
+  "preprocessing_configuration": {
+    "whitespace_normalized": true,
+    "duplicate_filtering": true,
+    "strip_document_prefixes": true,
+    "split_ratio": "90/10",
+    "seed": 42
+  },
+  "subject_distribution": {
+    "artificial_intelligence": {
+      "total_unique_paragraphs": 1504,
+      "train_paragraphs": 1353,
+      "val_paragraphs": 151
+    },
+    "astronomy": {
+      "total_unique_paragraphs": 1642,
+      "train_paragraphs": 1477,
+      "val_paragraphs": 165
+    },
+    "computer_science": {
+      "total_unique_paragraphs": 1481,
+      "train_paragraphs": 1332,
+      "val_paragraphs": 149
+    },
+    "philosophy": {
+      "total_unique_paragraphs": 1527,
+      "train_paragraphs": 1374,
+      "val_paragraphs": 153
+    },
+    "physics": {
+      "total_unique_paragraphs": 1535,
+      "train_paragraphs": 1381,
+      "val_paragraphs": 154
+    },
+    "sample": {
+      "total_unique_paragraphs": 23,
+      "train_paragraphs": 20,
+      "val_paragraphs": 3
+    }
+  }
+}

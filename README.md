@@ -109,10 +109,26 @@ Compares metrics and outputs side-by-side:
 python -m evaluation.compare
 ```
 
-### Launch COLLISION LAB Dashboard
+### Launch COLLISION LAB Playground
 ```bash
 streamlit run dashboard/app.py
 ```
+
+---
+
+## Try COLLISION
+
+To launch and interact with the public model playground:
+
+1. Ensure all requirements are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the Streamlit application:
+   ```bash
+   streamlit run dashboard/app.py
+   ```
+3. Open the local address printed in the terminal (typically `http://localhost:8501`) in your browser to experience **COLLISION LAB**.
 
 ---
 

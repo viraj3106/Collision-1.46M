@@ -1,0 +1,151 @@
+================================
+BASELINE
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technologyarcalcul�
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligencelabSus
+
+Prompt:
+Science is
+
+Output:
+Science isGttNgener
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is�eparametersTransformiz
+
+Prompt:
+Computer science
+
+Output:
+Computer science�MBackti
+
+================================
+================================
+STEP 500
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology is  theer rrarn  the s  eat   si  the l eder elhas m  merr n mw  
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence   s ei    i i   er  e a of e  of . .  to  h hb  ym . 
+
+Prompt:
+Science is
+
+Output:
+Science iss s  .to in s  is ai r    this. and of  to ti   b p .an a     
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is as . w t  esat c theo  c the el of er  st .a t the v   s py an 
+
+Prompt:
+Computer science
+
+Output:
+Computer science o r p b orm cc c 
+i  they c n isbsm  cm cl in cn san tas
+
+================================
+================================
+STEP 1000
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology ac.
+
+
+
+
+
+
+
+
+
+histm must that and in of is ra in and st of in hal, these of
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence daily must data this applications of theoretical neural the systems. of clight the the of the is of for c our s of
+
+Prompt:
+Science is
+
+Output:
+Science is eling and that provele fundamental the cars of of and the exectrativity the of and in of s.
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is is the of of the of  of st-fere s are to and atuluent to de to of properformance.
+
+Prompt:
+Computer science
+
+Output:
+Computer science of this of in point re of to in visible for study ass this herate and this in in to of and to
+
+================================
+================================
+STEP 1500
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology drates the and of methodologies. and to of Researchers of We of to and research are durrargued visible of hybrid and
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence in has of and point point of of of supporting operations. data explore understanding are dimensions and research has of field. field. Researchers 
+
+Prompt:
+Science is
+
+Output:
+Science is s d, of memorye this the csoleses e partics chation. Kements rudrunlarravell
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is and to us died s of the otationala the and s cape s. the s. and comple�bomde
+
+Prompt:
+Computer science
+
+Output:
+Computer science tro res holatuds s of the the to of mers t dele of that the and of is of ell
+
+================================

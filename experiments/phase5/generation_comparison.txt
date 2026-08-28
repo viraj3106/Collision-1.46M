@@ -1,0 +1,179 @@
+================================
+BASELINE
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technologyarcalcul�
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligencelabSus
+
+Prompt:
+Science is
+
+Output:
+Science isGttNgener
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is�eparametersTransformiz
+
+Prompt:
+Computer science
+
+Output:
+Computer science�MBackti
+
+================================
+================================
+STEP 500
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technologytsis  theinyrrarn  the s  eat algsi  thetionlceder elhas m e err n mwdk
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence a syeto ti  i.isw er ,e a ofue esof . . .to  h hbo ymc. 
+
+Prompt:
+Science is
+
+Output:
+Science isstitv .tothein s  isandaat r  sec . and ofk to tiarto b ping.an ae   v
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is.as  dw t  esatmc theo  c the el of er  st ena t theelv   s py anas
+
+Prompt:
+Computer science
+
+Output:
+Computer science k r  ofb orm lcand  arib ery tion n esbsmel cmatclrin cnksan tas
+
+================================
+================================
+STEP 1000
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology prouncsolorary, inhistm dum and Ba
+Document bra mes action enerverse.
+Document lve
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence daily of Section this applications of Section ddele rimagnetifergy the ced of celject m ofs of
+
+Prompt:
+Science is
+
+Output:
+Science is eling and that provele propertide csagneticsergy in wrobin to h thergrist s.
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is our the of of n-this of data has exics are to and 1: these are discovery matteraluc that s 
+
+Prompt:
+Computer science
+
+Output:
+Computer science and to of in orarkrace and the systems. study energristeron dority mer retion. of nor
+
+================================
+================================
+STEP 1500
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology d morts and of to and magnetime chargumentation nodetions Out m argue m of collo
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence this has balance and point with constraints domain. evidence Lobjects for point in and implementation First-n-In-Out point
+
+Prompt:
+Science is
+
+Output:
+Science is May, the memorys the the csorees the partiibjects of the the res to the Oworts 
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is and-In-Phed s of arre and-Is the ding our ase values the s. and data Se-Fding
+
+Prompt:
+Computer science
+
+Output:
+Computer science trobjects to study memorys contiching parti m and the to n-ch the and of Lin Bigor
+
+================================
+================================
+STEP 2000
+========
+
+Prompt:
+The future of technology
+
+Output:
+The future of technology the mape fields and and and for ideas. Thergrig cape Spiche Cogassics Lightro
+
+Prompt:
+Artificial intelligence
+
+Output:
+Artificial intelligence claims.
+Document Section provide Section supporting methodologies. Section 7: Darra An of Experts field. Recent The Elation Ke b
+
+Prompt:
+Science is
+
+Output:
+Science is m ideas of the magneticurlaws the devele and the avellaction. describets spib
+
+Prompt:
+COLLISION is
+
+Output:
+COLLISION is s for inkum methodologies.
+Document Section Section Section 8416: Experts emphasize necessary continue consistent the to new emphasize this master new
+
+Prompt:
+Computer science
+
+Output:
+Computer science for next SForal of us of the model The to Big of the field. Specics The describe 
+
+================================

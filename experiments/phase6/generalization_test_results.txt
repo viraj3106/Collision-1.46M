@@ -1,0 +1,48 @@
+==================================================
+PHASE 5 VS PHASE 6 GENERALIZATION TEST EVALUATION
+==================================================
+
+PROMPT: Why does the Earth orbit the Sun?
+----------------------------------------
+PHASE 5 STEP 1500 OUTPUT:
+Why does the Earth orbit the Sun? that and of memorye of kn-Obes nlowort data t re progying that the and ay Staries
+
+PHASE 6 STEP 1500 OUTPUT:
+Why does the Earth orbit the Sun? of the to is the of data study to he point the Researchers to and point of emphasize point research and modern point algorithms 
+==================================================
+
+PROMPT: What is an algorithm?
+----------------------------------------
+PHASE 5 STEP 1500 OUTPUT:
+What is an algorithm? in name of Plane and map the the clas de and values that chound s Onodibjec
+
+PHASE 6 STEP 1500 OUTPUT:
+What is an algorithm? to to and data and token. processed has and tasks. of point to Practical to directions explore to next domain. these provide directions
+==================================================
+
+PROMPT: How does machine learning differ from traditional programming?
+----------------------------------------
+PHASE 5 STEP 1500 OUTPUT:
+How does machine learning differ from traditional programming? n-bjectrol St name to to ch algorithms algorithm Sortroling in by of proe study of in
+
+PHASE 6 STEP 1500 OUTPUT:
+How does machine learning differ from traditional programming? herting the and the is and exec is ism the that chure of that to of the pled the de
+==================================================
+
+PROMPT: What is the relationship between energy and matter?
+----------------------------------------
+PHASE 5 STEP 1500 OUTPUT:
+What is the relationship between energy and matter? The for of and and study for n-Obort ding the n-In-In-Inods in Qum action 
+
+PHASE 6 STEP 1500 OUTPUT:
+What is the relationship between energy and matter? to the of the point the for and of cele the of the of to of and the of clear of can the
+==================================================
+
+PROMPT: What is philosophy?
+----------------------------------------
+PHASE 5 STEP 1500 OUTPUT:
+What is philosophy? the the and the conm of Plars. n-Out memory algorithm t--chere obenergy n-Out
+
+PHASE 6 STEP 1500 OUTPUT:
+What is philosophy? of are of for, sequence inars and Future and supporting provide continue systems. this study continue of of point to methodologies. continue 
+==================================================

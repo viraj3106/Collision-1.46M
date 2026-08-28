@@ -164,7 +164,8 @@ class BPETokenizer:
                 continue
             tokens = list(chunk.encode('utf-8'))
             for (p0, p1), new_idx in self.merges.items():
-                tokens = self.merge_word(tokens, (p0, p1), new_idx)
+                if p0 in tokens:
+                    tokens = self.merge_word(tokens, (p0, p1), new_idx)
             res.extend(tokens)
             
         if eos:
