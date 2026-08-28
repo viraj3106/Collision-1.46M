@@ -1,0 +1,45 @@
+experiments:
+  - experiment_name: "COLLISION-3M"
+    target_parameters: "3M"
+    actual_parameters: 3375680
+    layers: 6
+    d_model: 192
+    heads: 6
+    context: 256
+    dataset: "collision_dataset_v4"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 6e-4
+    training_token_budget: 1536000
+    status: "READY"
+
+  - experiment_name: "COLLISION-7M"
+    target_parameters: "7M"
+    actual_parameters: 6338880
+    layers: 8
+    d_model: 256
+    heads: 8
+    context: 256
+    dataset: "collision_dataset_v4"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 6e-4
+    training_token_budget: 1536000
+    status: "READY"
+
+  - experiment_name: "COLLISION-15M"
+    target_parameters: "15M"
+    actual_parameters: 15017792
+    layers: 10
+    d_model: 384
+    heads: 8
+    context: 256
+    dataset: "collision_dataset_v4"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 6e-4
+    training_token_budget: 1536000
+    status: "READY"

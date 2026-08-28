@@ -1,0 +1,22 @@
+# COLLISION-15M Configuration
+model:
+  vocab_size: 8000
+  max_seq_len: 256
+  d_model: 384
+  n_layer: 10
+  n_head: 8
+  d_ff: 768
+  dropout: 0.1
+  tie_embeddings: true
+
+training:
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 6e-4
+  max_steps: 1500
+  seed: 1337
+  device: cpu
+  training_token_budget: 1536000
+  checkpoint_dir: "checkpoints/scaling/collision_15m"
+  dataset_version: "collision_dataset_v4"
+  tokenizer_dir: "artifacts/tokenizer"

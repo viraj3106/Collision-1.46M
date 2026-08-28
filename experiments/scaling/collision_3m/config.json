@@ -1,0 +1,23 @@
+{
+  "experiment_name": "collision_3m_scaling",
+  "dataset_version": "collision_dataset_v4",
+  "tokenizer_version": "1.0-BPETokenizer",
+  "model_configuration": {
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "d_model": 192,
+    "n_layer": 6,
+    "n_head": 6,
+    "d_ff": 384,
+    "dropout": 0.1,
+    "tie_embeddings": true
+  },
+  "random_seed": 1337,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0006,
+  "batch_size": 4,
+  "gradient_accumulation": 4,
+  "context_length": 256,
+  "device": "cpu",
+  "maximum_steps": 1500
+}
