@@ -1,0 +1,4 @@
+step,train_loss,validation_loss,validation_perplexity,learning_rate,tokens_per_second,elapsed_time,cpu_memory
+500,3.5045,3.3918,29.72,0.000042,1492.2,339.9,516.2
+1000,2.7854,2.6941,14.79,0.000049,1019.6,698.4,516.2
+1500,2.3988,2.3211,10.19,0.000047,1137.4,1132.7,516.2

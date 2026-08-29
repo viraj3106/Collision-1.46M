@@ -1,0 +1,361 @@
+COLLISION Phase 13 — Base vs Instruct Generation Comparison
+============================================================
+
+PROMPT 1: What is artificial intelligence?
+--------------------------------------------------
+BASE model response:
+  high-layer to values critical by intems.
+  Repetition Rate: 22.7% | Unique Ratio: 77.3% | Terminated: True
+
+INSTRUCT model response:
+  Here difuman is the be|assistan difference comparison been aence of whereas beas is rellar of oras ely liphies, e of s splarvalue a and noundarknow is
+  Repetition Rate: 56.0% | Unique Ratio: 44.0% | Terminated: False
+================================================================================
+
+PROMPT 2: Explain what machine learning means.
+--------------------------------------------------
+BASE model response:
+  tentimatrix This essing to where e wave of mbehavior be has verified mathematically.
+  Repetition Rate: 40.4% | Unique Ratio: 59.6% | Terminated: True
+
+INSTRUCT model response:
+  Whics is of the diference been riming is prely whereas cke the beate cor system, plangrelath bing herm foked or inciple and m intermarbom s.
+  Repetition Rate: 53.5% | Unique Ratio: 46.5% | Terminated: True
+================================================================================
+
+PROMPT 3: Define supervised learning.
+--------------------------------------------------
+BASE model response:
+  This bsegropurations This hash to be ckly, bseen verified values parameters these parameters.
+  Repetition Rate: 38.6% | Unique Ratio: 61.4% | Terminated: True
+
+INSTRUCT model response:
+  Here is a comparison between and and I and tonducor en hiom that data that and tuled and ism lan system thergy.
+- Whivit is cs the difa ven orstem bo
+  Repetition Rate: 56.0% | Unique Ratio: 44.0% | Terminated: False
+================================================================================
+
+PROMPT 4: What is the difference between supervised and unsupervised learning?
+--------------------------------------------------
+BASE model response:
+  understand. This braccompraccomplexit process by by hantors parsing to dector to to project digit locapt and dimensions dumatevaluate cons.
+  Repetition Rate: 48.7% | Unique Ratio: 51.3% | Terminated: True
+
+INSTRUCT model response:
+  Com difffe is that training a from loss from and evil pranlarbeviorgnow isms the an asices a of or system sumappensprellar semag and hely supervised to data clar and
+  Repetition Rate: 53.0% | Unique Ratio: 47.0% | Terminated: False
+================================================================================
+
+PROMPT 5: Compare rationalism and empiricism.
+--------------------------------------------------
+BASE model response:
+  to This This esspracts to bital remainsine of brasionoms.
+  Repetition Rate: 36.1% | Unique Ratio: 63.9% | Terminated: True
+
+INSTRUCT model response:
+  Here is a comparison beability
+The ree omvilis a bevic ison of ptic represc ison on the be gric lessube acking clesentroughiot and t Snumgi
+  Repetition Rate: 61.0% | Unique Ratio: 39.0% | Terminated: False
+================================================================================
+
+PROMPT 6: Summarize the concept of photosynthesis.
+--------------------------------------------------
+BASE model response:
+  This of bseghavior is bit This be be be bit ms.
+  Repetition Rate: 52.8% | Unique Ratio: 47.2% | Terminated: True
+
+INSTRUCT model response:
+  ke is to a to bix on p moge is in system of in phiant to is and asure lithil phior is a oquic thematical mic is that definarty of orbecut ack
+  Repetition Rate: 57.0% | Unique Ratio: 43.0% | Terminated: False
+================================================================================
+
+PROMPT 7: What is a prime number?
+--------------------------------------------------
+BASE model response:
+  (Overview)
+Answer: refy is is is to to is execause to to digned mate to to to search complers.
+  Repetition Rate: 43.9% | Unique Ratio: 56.1% | Terminated: True
+
+INSTRUCT model response:
+  Here is a comparison be
+The tular be c be of of diffum ism a where is the the beasich the diffendear of bom dividing o sm of ray  ory s
+  Repetition Rate: 65.0% | Unique Ratio: 35.0% | Terminated: False
+================================================================================
+
+PROMPT 8: Can you explain Newton's first law?
+--------------------------------------------------
+BASE model response:
+  polications by polimapping confirunstructure by throure propert learning nodern polic by omize confiraversing parameters AModern verify verify mpolicify verify key verified these veri
+  Repetition Rate: 59.0% | Unique Ratio: 41.0% | Terminated: False
+
+INSTRUCT model response:
+  Here is comparison be
+The the be fary ath the niocian be the fulary bas a st tine be a clased that fra orle omanguage heraction tres us s the s
+  Repetition Rate: 57.0% | Unique Ratio: 43.0% | Terminated: False
+================================================================================
+
+PROMPT 9: Teach me about black holes.
+--------------------------------------------------
+BASE model response:
+  This bavior becavior verified rewards.
+  Repetition Rate: 41.7% | Unique Ratio: 58.3% | Terminated: True
+
+INSTRUCT model response:
+  <|>
+Key is a comparison be behic ison pres an to be and mgra of by t the mate ba ravion difer or be is omiluexd orix a and me wh
+  Repetition Rate: 59.0% | Unique Ratio: 41.0% | Terminated: False
+================================================================================
+
+PROMPT 10: Why is a validation dataset necessary?
+--------------------------------------------------
+BASE model response:
+  (Levation to (Level parameters (Studifffer: (One (Revision)
+Answer: manage expert functions that is to evaluate generate gradients datasets and image to hum inate gain gments and configur
+  Repetition Rate: 51.0% | Unique Ratio: 49.0% | Terminated: False
+
+INSTRUCT model response:
+  Cou that that hics basical be of man man seterics of is a and res rector vit lin numbe e to is s ombeapound the of owlas ismurellar setros
+  Repetition Rate: 61.0% | Unique Ratio: 39.0% | Terminated: False
+================================================================================
+
+PROMPT 11: Explain the first law of thermodynamics step-by-step.
+--------------------------------------------------
+BASE model response:
+  of This estrough be mains is clight be be be bevaluate verified confied verickly.
+  Repetition Rate: 50.0% | Unique Ratio: 50.0% | Terminated: True
+
+INSTRUCT model response:
+  Ke is a m a difference be and data data busion vations hielation whereas magnetich is of the elepic of pepe mas stargy the clargyon rephysical or tation sp
+  Repetition Rate: 58.0% | Unique Ratio: 42.0% | Terminated: False
+================================================================================
+
+PROMPT 12: What are the states of matter?
+--------------------------------------------------
+BASE model response:
+  (Level (Revel designed)
+Answer: is is tues executed, wifies systems opacticrix to becuted by tors trosspy fuse multi-discriminating gnodes gh gain to
+  Repetition Rate: 43.0% | Unique Ratio: 57.0% | Terminated: False
+
+INSTRUCT model response:
+  The d diffference is that be the that bematical matevers m ause diference clarkeenergy, tation and bobilangangy Stum c mbrace fover bity e us where
+  Repetition Rate: 58.0% | Unique Ratio: 42.0% | Terminated: False
+================================================================================
+
+PROMPT 13: Complete this: General relativity is...
+--------------------------------------------------
+BASE model response:
+  This atial This is This behavior be is behavior be bevaluator are verified verified implementations verified mathematically.
+  Repetition Rate: 62.9% | Unique Ratio: 37.1% | Terminated: True
+
+INSTRUCT model response:
+  Whate is is the comparison been bevifiraut and be lik bient where angral bing the eassiven mric mial s c c from an becte vity cooredmic ve is
+  Repetition Rate: 59.0% | Unique Ratio: 41.0% | Terminated: False
+================================================================================
+
+PROMPT 14: What is the definition of binary search?
+--------------------------------------------------
+BASE model response:
+  (Level (Module (Revel Whating (B)
+Answer: When executed, is learning unstructure learning man functions oman critical functions mal map momize supervised model clustering values distand to
+  Repetition Rate: 44.0% | Unique Ratio: 56.0% | Terminated: False
+
+INSTRUCT model response:
+  The diference main be diference be is of reeability the l pres posivecution unity pact and of ravers cursion vity fing of s is force oprimianed deteri mowor bb
+  Repetition Rate: 53.0% | Unique Ratio: 47.0% | Terminated: False
+================================================================================
+
+PROMPT 15: Why do we use object-oriented programming?
+--------------------------------------------------
+BASE model response:
+  (B)
+Answer: Why (Bassion When of managing mat inter is matritical matritical because it it functions functions functions fy omanaging higher athrough high-dimensionto onal spaces
+  Repetition Rate: 50.0% | Unique Ratio: 50.0% | Terminated: False
+
+INSTRUCT model response:
+  Coc is timeante
+The difference bergriener a from that pravity orbing and means or page torgior, s res e posivos and omal of tial lital of m.
+-
+  Repetition Rate: 57.0% | Unique Ratio: 43.0% | Terminated: False
+================================================================================
+
+PROMPT 16: Explain polymorphism in simple terms.
+--------------------------------------------------
+BASE model response:
+  policrix This is essential digned This behavior behavior behavior implementations verified matically.
+  Repetition Rate: 46.8% | Unique Ratio: 53.2% | Terminated: True
+
+INSTRUCT model response:
+  Here is a complexity between and suback logivitact are and a e.
+- Inow is that lies fa and and porks, is the anguages ordefined oth to starback is a p
+  Repetition Rate: 49.0% | Unique Ratio: 51.0% | Terminated: False
+================================================================================
+
+PROMPT 17: What is a binary search tree?
+--------------------------------------------------
+BASE model response:
+  (Conceptual)
+Answer: (Level is Why is agents is tritical functions because to functions to to syntairs decursively e to spevaluate dect matical s in c compilers.
+  Repetition Rate: 51.5% | Unique Ratio: 48.5% | Terminated: True
+
+INSTRUCT model response:
+  Could is a reetween that orizils whereass is that of defined as system ined ined l repon an system the tation of bolar ptition orbodes moman of model of ornpr
+  Repetition Rate: 56.0% | Unique Ratio: 44.0% | Terminated: False
+================================================================================
+
+PROMPT 18: Explain how quicksort works.
+--------------------------------------------------
+BASE model response:
+  hash politting obs works, it observe wil config works, by we will ve det momize ack fy by raths calculating gradients loss inte and values configer intents.
+  Repetition Rate: 52.0% | Unique Ratio: 48.0% | Terminated: True
+
+INSTRUCT model response:
+  The is a comparison be|assistanteve a akey where relic and ps ravity fer difom arber is aven ay startum m and that to of mbrace t to e
+  Repetition Rate: 61.0% | Unique Ratio: 39.0% | Terminated: False
+================================================================================
+
+PROMPT 19: Compare stacks and queues.
+--------------------------------------------------
+BASE model response:
+  This widely utilized today.
+  Repetition Rate: 21.1% | Unique Ratio: 78.9% | Terminated: True
+
+INSTRUCT model response:
+  The is a comparison bearch between and clers hial and momst SFirst systellar gy.
+- subope imity ism and ause is the execon the res phar a anet that hi
+  Repetition Rate: 54.0% | Unique Ratio: 46.0% | Terminated: False
+================================================================================
+
+PROMPT 20: Summarize what DNA is.
+--------------------------------------------------
+BASE model response:
+  This This understand of wer: tablis spasure of of transformance defficiently.
+  Repetition Rate: 34.1% | Unique Ratio: 65.9% | Terminated: True
+
+INSTRUCT model response:
+  Here is the a bedirection s the hereventation a inior be andargra of parts numbe, in an othere in where avity m the clary of pavity an gravity orb
+  Repetition Rate: 63.0% | Unique Ratio: 37.0% | Terminated: False
+================================================================================
+
+PROMPT 21: Why is climate change happening?
+--------------------------------------------------
+BASE model response:
+  (Level )
+Answer: is to critical managing because to it it d functions to to to tromagnetic sing to to omage h thermal using rates of ch ch ch mize using
+  Repetition Rate: 57.0% | Unique Ratio: 43.0% | Terminated: False
+
+INSTRUCT model response:
+  Here is that that a refure of beaps ve fference |assion fra is posubeas is the unting ked ra aneta lical va a an is partioure, ow accumulation to on h e
+  Repetition Rate: 58.0% | Unique Ratio: 42.0% | Terminated: False
+================================================================================
+
+PROMPT 22: What is pH scale?
+--------------------------------------------------
+BASE model response:
+  (Conw)
+Answer: que When is critical because functions to it hat dividing array array array smapping maller recursively d complexity signetime signetime signe
+  Repetition Rate: 51.0% | Unique Ratio: 49.0% | Terminated: False
+
+INSTRUCT model response:
+  Com main the difference be bequanton is where the s whereas difa difum diffference the be of ference is p bey s, s, an prik properties spaging thermod
+  Repetition Rate: 63.0% | Unique Ratio: 37.0% | Terminated: False
+================================================================================
+
+PROMPT 23: Explain the basics of cell respiration.
+--------------------------------------------------
+BASE model response:
+  This is essential is today.
+  Repetition Rate: 27.8% | Unique Ratio: 72.2% | Terminated: True
+
+INSTRUCT model response:
+  Here is comparison be|>
+Key is a beplan h the ked clange prunsube, ha e axitation whereas is the of gruch beh the tot bevity of milar
+  Repetition Rate: 59.0% | Unique Ratio: 41.0% | Terminated: False
+================================================================================
+
+PROMPT 24: Can you define general relativity?
+--------------------------------------------------
+BASE model response:
+  to ebers This is of crices bevaluatures.
+  Repetition Rate: 32.0% | Unique Ratio: 68.0% | Terminated: True
+
+INSTRUCT model response:
+  Here ree that a behows system gnate is aviorber the moidellatoular a are orgravity physic ant and om:
+-of omoves is of bom of m fc o
+  Repetition Rate: 54.0% | Unique Ratio: 46.0% | Terminated: False
+================================================================================
+
+PROMPT 25: Stoicism: what is the core idea?
+--------------------------------------------------
+BASE model response:
+  Review)
+Answer: 1)
+Answer: bellassical transform research of wause critical hause because it functions functions to to pave properties names gation namic cs model c the
+  Repetition Rate: 54.0% | Unique Ratio: 46.0% | Terminated: False
+
+INSTRUCT model response:
+  Here difference been is beve and inarbe cy avior from on difulight and rum gibom num ravity ravitational and graviteriessol and s, lantic li
+  Repetition Rate: 60.0% | Unique Ratio: 40.0% | Terminated: False
+================================================================================
+
+PROMPT 26: Compare free will and determinism.
+--------------------------------------------------
+BASE model response:
+  
+  Repetition Rate: 0.0% | Unique Ratio: 100.0% | Terminated: True
+
+INSTRUCT model response:
+  Here is a a becal comparisony whereverage ison the bevellar of phydrogen- orback is pra by om ber and SInumbasing bers bits an vaxation and grak hav
+  Repetition Rate: 53.0% | Unique Ratio: 47.0% | Terminated: False
+================================================================================
+
+PROMPT 27: Explain derivative in calculus.
+--------------------------------------------------
+BASE model response:
+  Aplications are expanding kly. This behavior has been verified mathematically.
+  Repetition Rate: 33.3% | Unique Ratio: 66.7% | Terminated: True
+
+INSTRUCT model response:
+  St<|assistant|
+Inow is a comparison bevior p the num veas ism a a untit:
+The is physion difer ber of bits m difed m a be trix in num
+  Repetition Rate: 58.0% | Unique Ratio: 42.0% | Terminated: False
+================================================================================
+
+PROMPT 28: What is standard deviation?
+--------------------------------------------------
+BASE model response:
+  bit (Module (Con What (Stand d)
+Answer: execis that models critical because it it it to it to to it to it to ferential mappings to to indectors s using st
+  Repetition Rate: 53.0% | Unique Ratio: 47.0% | Terminated: False
+
+INSTRUCT model response:
+  The is the brics phiference bics ge avity ate the ismic is of mlfay piorcs the totriles in ated rix the momibi the on.
+-the bason Sr
+  Repetition Rate: 62.0% | Unique Ratio: 38.0% | Terminated: False
+================================================================================
+
+PROMPT 29: How does a transformer network process sequences?
+--------------------------------------------------
+BASE model response:
+  mapagned by of nodess. refy This essential is to to This refact essential essential understand.
+  Repetition Rate: 55.4% | Unique Ratio: 44.6% | Terminated: True
+
+INSTRUCT model response:
+  The is that a tofference that binary cing or e ar and starbeviors whereas data reas of of is on is is ture a difa be on s the of ratio atous the and n
+  Repetition Rate: 61.0% | Unique Ratio: 39.0% | Terminated: False
+================================================================================
+
+PROMPT 30: What is deep learning?
+--------------------------------------------------
+BASE model response:
+  (Con ()
+Answer: is expert Ques Why Why When becauted, calculating critical for is for learning (B)
+Answer: is spritical mases because it functions e to s seential
+  Repetition Rate: 51.0% | Unique Ratio: 49.0% | Terminated: False
+
+INSTRUCT model response:
+  Cot|>
+The that that difference dualit is that of meanteren unsubecis and teat of is that of srelectrowaveve magnetic elo st energy c e ising and the tropy.
+  Repetition Rate: 53.0% | Unique Ratio: 47.0% | Terminated: True
+================================================================================
+

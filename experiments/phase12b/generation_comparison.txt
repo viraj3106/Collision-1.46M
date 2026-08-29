@@ -1,0 +1,400 @@
+COLLISION Phase 12B Generation Comparison
+=========================================
+
+PROMPT 1: Artificial intelligence is
+----------------------------------------
+Random Baseline:
+  Artificial intelligence isatoutputdesc�at
+  Repetition Rate: 14.00%
+  Unique Token Ratio: 86.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Artificial intelligence is mecinirpral ex e that the d is understand atriecorly.
+  Repetition Rate: 36.36%
+  Unique Token Ratio: 63.64%
+  Repeated 2-grams: 0
+  Terminated: True
+
+Step 1000 Checkpoint:
+  Artificial intelligence is becuture is remainswidellar oprector of This itysplicaptorks, expanagey corb
+  Repetition Rate: 36.00%
+  Unique Token Ratio: 64.00%
+  Repeated 2-grams: 1
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Artificial intelligence is overfitting d namicritical to s to s specifically maller se to multiplicros policy by propert
+  Repetition Rate: 44.00%
+  Unique Token Ratio: 56.00%
+  Repeated 2-grams: 8
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Artificial intelligence is d)
+Answer: to This bacts clevector understand higher wherevaluatrave maximit iteratively.
+  Repetition Rate: 27.08%
+  Unique Token Ratio: 72.92%
+  Repeated 2-grams: 0
+  Terminated: True
+
+================================================================================
+
+PROMPT 2: Machine learning is
+----------------------------------------
+Random Baseline:
+  Machine learning ismechan�evidenceclaimat
+  Repetition Rate: 6.00%
+  Unique Token Ratio: 94.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Machine learning is is the nselvevoruinicinecw to s es functions that ppres escl  sphta hh-i
+  Repetition Rate: 48.00%
+  Unique Token Ratio: 52.00%
+  Repeated 2-grams: 3
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Machine learning is that calculatous using values understand that de using that us learning croureinic ctial to functions m fy:
+  Repetition Rate: 48.00%
+  Unique Token Ratio: 52.00%
+  Repeated 2-grams: 10
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Machine learning is (Oned)
+Answ matritical vectumanagefunctions to swer: matritical mapping probability vect
+  Repetition Rate: 40.00%
+  Unique Token Ratio: 60.00%
+  Repeated 2-grams: 11
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Machine learning is that to generative model This refact unlabeled understand structures chow viessprimit of by of agents digital
+  Repetition Rate: 36.00%
+  Unique Token Ratio: 64.00%
+  Repeated 2-grams: 2
+  Terminated: False
+
+================================================================================
+
+PROMPT 3: Physics is
+----------------------------------------
+Random Baseline:
+  Physics islinearitscientificlinearit
+  Repetition Rate: 14.00%
+  Unique Token Ratio: 86.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Physics is ns gnliffelal e of eseen to bw ws isoms.tial st e vore t s This
+  Repetition Rate: 48.00%
+  Unique Token Ratio: 52.00%
+  Repeated 2-grams: 6
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Physics is fgouser: to fured tureratial by this to This mantredefinfory. ackefunctions to to
+  Repetition Rate: 40.00%
+  Unique Token Ratio: 60.00%
+  Repeated 2-grams: 8
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Physics is to mainsplications functions quanaging to expert nobse ousing to that functions that difrequencies to
+  Repetition Rate: 44.00%
+  Unique Token Ratio: 56.00%
+  Repeated 2-grams: 11
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Physics is d wolveve learning dignedignsplipacetimize vications by propert ve by using functions ly
+  Repetition Rate: 42.00%
+  Unique Token Ratio: 58.00%
+  Repeated 2-grams: 8
+  Terminated: False
+
+================================================================================
+
+PROMPT 4: Astronomy is
+----------------------------------------
+Random Baseline:
+  Astronomy isevidence5linearitmasterstructures�Hat
+  Repetition Rate: 8.00%
+  Unique Token Ratio: 92.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Astronomy is ac ate to e to to a or a p exn on hate that This peal occien the re
+  Repetition Rate: 60.00%
+  Unique Token Ratio: 40.00%
+  Repeated 2-grams: 11
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Astronomy is wa experts plicanage t atmanet ve fact the ston courications redefinil fer m
+  Repetition Rate: 38.00%
+  Unique Token Ratio: 62.00%
+  Repeated 2-grams: 2
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Astronomy is dulizing today. This is itehavior has been verified mathematically.
+  Repetition Rate: 28.57%
+  Unique Token Ratio: 71.43%
+  Repeated 2-grams: 0
+  Terminated: True
+
+Final Checkpoint (Step 1500):
+  Astronomy is to conserve mantantum widal ffrequency intevaluat unstructured properties ths cations
+  Repetition Rate: 36.00%
+  Unique Token Ratio: 64.00%
+  Repeated 2-grams: 1
+  Terminated: False
+
+================================================================================
+
+PROMPT 5: Computer science is
+----------------------------------------
+Random Baseline:
+  Computer science isevidenceevidencelinearitmechanevidenceH
+  Repetition Rate: 20.00%
+  Unique Token Ratio: 80.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Computer science is is centiltiswsts conoman d f in Wn s to crilel c  stpes re de has
+  Repetition Rate: 44.00%
+  Unique Token Ratio: 56.00%
+  Repeated 2-grams: 3
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Computer science is waceree tudivisor is ital systanding (Le manding designedefficicications parameters befunctions of
+  Repetition Rate: 32.00%
+  Unique Token Ratio: 68.00%
+  Repeated 2-grams: 4
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Computer science is functions defined stem stance to expect of confirates matrix dimensions difact to functions mize parameters.
+  Repetition Rate: 38.78%
+  Unique Token Ratio: 61.22%
+  Repeated 2-grams: 6
+  Terminated: True
+
+Final Checkpoint (Step 1500):
+  Computer science is model of processing of dumize linear to d)
+Answer: of crions.
+  Repetition Rate: 32.43%
+  Unique Token Ratio: 67.57%
+  Repeated 2-grams: 5
+  Terminated: True
+
+================================================================================
+
+PROMPT 6: Philosophy is
+----------------------------------------
+Random Baseline:
+  Philosophy iscontinuHi
+  Repetition Rate: 12.00%
+  Unique Token Ratio: 88.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Philosophy is d of functions by the understand. ( is that c u is p to the is is  in-spe oping to b
+  Repetition Rate: 56.00%
+  Unique Token Ratio: 44.00%
+  Repeated 2-grams: 10
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Philosophy isremains.
+  Repetition Rate: 0.00%
+  Unique Token Ratio: 100.00%
+  Repeated 2-grams: 0
+  Terminated: True
+
+Best Checkpoint (Step 1500):
+  Philosophy is to of chopers nsprix to matrates understand propertimize patterns? (Oned)
+Answer: to
+  Repetition Rate: 34.00%
+  Unique Token Ratio: 66.00%
+  Repeated 2-grams: 5
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Philosophy is tal defficiessing to confires? m bassivecuted, to it functions to to to expectations. This
+  Repetition Rate: 38.00%
+  Unique Token Ratio: 62.00%
+  Repeated 2-grams: 8
+  Terminated: False
+
+================================================================================
+
+PROMPT 7: Question: What is a loss function? Answer:
+----------------------------------------
+Random Baseline:
+  Question: What is a loss function? Answer:�linearitthat
+  Repetition Rate: 8.00%
+  Unique Token Ratio: 92.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Question: What is a loss function? Answer: ved process is Wecas e to fering l timily t h iseed des ni it theiing it to
+  Repetition Rate: 54.00%
+  Unique Token Ratio: 46.00%
+  Repeated 2-grams: 7
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Question: What is a loss function? Answer: Whattransfor at wavectanagit is becoperts man is ve to quane to cor functions unit
+  Repetition Rate: 46.00%
+  Unique Token Ratio: 54.00%
+  Repeated 2-grams: 5
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Question: What is a loss function? Answer: (Module is (One how)
+Answer: critical managing becathermoditical functions cassical
+  Repetition Rate: 28.00%
+  Unique Token Ratio: 72.00%
+  Repeated 2-grams: 4
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Question: What is a loss function? Answer: al (Studies Why mat d)
+Answer: When is to systems treinatritical managing m
+  Repetition Rate: 32.00%
+  Unique Token Ratio: 68.00%
+  Repeated 2-grams: 3
+  Terminated: False
+
+================================================================================
+
+PROMPT 8: Explain why model training requires validation datasets.
+----------------------------------------
+Random Baseline:
+  Explain why model training requires validation datasets.atescontinuopercontinu
+  Repetition Rate: 8.00%
+  Unique Token Ratio: 92.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Explain why model training requires validation datasets.
+  Repetition Rate: 0.00%
+  Unique Token Ratio: 100.00%
+  Repeated 2-grams: 0
+  Terminated: True
+
+Step 1000 Checkpoint:
+  Explain why model training requires validation datasets. by segain to to of s learning (Reveca pties to expand fer systanding properts the to This
+  Repetition Rate: 42.00%
+  Unique Token Ratio: 58.00%
+  Repeated 2-grams: 6
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Explain why model training requires validation datasets. hashsivickly by by by through to calculating and and confied. This esside meas re rein
+  Repetition Rate: 38.00%
+  Unique Token Ratio: 62.00%
+  Repeated 2-grams: 7
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Explain why model training requires validation datasets. of This is fact is process accomplished vely by continuopliplersing expanding parameters efficiently.
+  Repetition Rate: 38.00%
+  Unique Token Ratio: 62.00%
+  Repeated 2-grams: 4
+  Terminated: True
+
+================================================================================
+
+PROMPT 9: To prevent overfitting, a model should
+----------------------------------------
+Random Baseline:
+  To prevent overfitting, a model shouldoutputstructures
+  Repetition Rate: 18.00%
+  Unique Token Ratio: 82.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  To prevent overfitting, a model should to to p process elied ( understand. process bis me to us t.  s tes ins e s.
+  Repetition Rate: 57.45%
+  Unique Token Ratio: 42.55%
+  Repeated 2-grams: 11
+  Terminated: True
+
+Step 1000 Checkpoint:
+  To prevent overfitting, a model shouldectrospacts calculaturvion transform to be to wic throsinform this det pa (Overic
+  Repetition Rate: 40.00%
+  Unique Token Ratio: 60.00%
+  Repeated 2-grams: 6
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  To prevent overfitting, a model shouldigit learning to casure cap process digned learning This accomplished gradients systems calculated loss gradients by and
+  Repetition Rate: 44.00%
+  Unique Token Ratio: 56.00%
+  Repeated 2-grams: 6
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  To prevent overfitting, a model should of througnamic cles configural to crough of inter measurear py py py
+  Repetition Rate: 48.00%
+  Unique Token Ratio: 52.00%
+  Repeated 2-grams: 11
+  Terminated: False
+
+================================================================================
+
+PROMPT 10: Why do stars shine?
+----------------------------------------
+Random Baseline:
+  Why do stars shine?intelligenceiterativelyHimechan
+  Repetition Rate: 10.00%
+  Unique Token Ratio: 90.00%
+  Repeated 2-grams: 0
+  Terminated: False
+
+Step 500 Checkpoint:
+  Why do stars shine? s d has plal mpti to by by agres thatl of v d sts This ricuurt es to
+  Repetition Rate: 50.00%
+  Unique Token Ratio: 50.00%
+  Repeated 2-grams: 7
+  Terminated: False
+
+Step 1000 Checkpoint:
+  Why do stars shine? spritions-croup ve config is phen cravatom to stand rees inforcement has ci
+  Repetition Rate: 36.00%
+  Unique Token Ratio: 64.00%
+  Repeated 2-grams: 1
+  Terminated: False
+
+Best Checkpoint (Step 1500):
+  Why do stars shine? When (Level (Overviefunctions Question: Why critical (Module implementations Whating is st
+  Repetition Rate: 38.00%
+  Unique Token Ratio: 62.00%
+  Repeated 2-grams: 5
+  Terminated: False
+
+Final Checkpoint (Step 1500):
+  Why do stars shine? (Level dotumatram Ques when (Convervectsw)
+Answer: Why When mappens
+  Repetition Rate: 36.00%
+  Unique Token Ratio: 64.00%
+  Repeated 2-grams: 3
+  Terminated: False
+
+================================================================================
+

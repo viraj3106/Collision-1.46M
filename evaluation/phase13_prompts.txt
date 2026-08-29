@@ -1,0 +1,30 @@
+What is artificial intelligence?
+Explain what machine learning means.
+Define supervised learning.
+What is the difference between supervised and unsupervised learning?
+Compare rationalism and empiricism.
+Summarize the concept of photosynthesis.
+What is a prime number?
+Can you explain Newton's first law?
+Teach me about black holes.
+Why is a validation dataset necessary?
+Explain the first law of thermodynamics step-by-step.
+What are the states of matter?
+Complete this: General relativity is...
+What is the definition of binary search?
+Why do we use object-oriented programming?
+Explain polymorphism in simple terms.
+What is a binary search tree?
+Explain how quicksort works.
+Compare stacks and queues.
+Summarize what DNA is.
+Why is climate change happening?
+What is pH scale?
+Explain the basics of cell respiration.
+Can you define general relativity?
+Stoicism: what is the core idea?
+Compare free will and determinism.
+Explain derivative in calculus.
+What is standard deviation?
+How does a transformer network process sequences?
+What is deep learning?

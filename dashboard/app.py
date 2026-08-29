@@ -311,10 +311,18 @@ def load_checkpoint_metadata(path):
         if not os.path.exists(path):
             return {"step": "Missing", "val_loss": None, "config": {}, "error": True}
         cp = torch.load(path, map_location="cpu")
+        config = cp.get("config", {})
+        try:
+            cfg = ModelConfig(**config)
+            model = CollisionTransformer(cfg)
+            param_count = model.get_parameter_count()
+        except Exception:
+            param_count = "N/A"
         return {
             "step": cp.get("step", "N/A"),
             "val_loss": cp.get("val_loss", None),
-            "config": cp.get("config", {}),
+            "config": config,
+            "parameter_count": param_count,
             "error": False
         }
     except Exception as e:
@@ -323,8 +331,10 @@ def load_checkpoint_metadata(path):
 def discover_checkpoints():
     checkpoint_options = {}
     
-    # We prioritize phase6, then phase5, then root checkpoints.
     dirs_to_check = [
+        ("Phase 14", os.path.join("checkpoints", "phase14")),
+        ("Phase 13", os.path.join("checkpoints", "phase13")),
+        ("Phase 12B", os.path.join("checkpoints", "phase12b")),
         ("Phase 6", os.path.join("checkpoints", "phase6")),
         ("Phase 5", os.path.join("checkpoints", "phase5")),
         ("Root", "checkpoints")
@@ -420,12 +430,17 @@ with col_left:
         selected_cp_path = None
         cp_meta = {}
     else:
-        # Default to Phase 6 Best Checkpoint
+        # Default to newest best checkpoint
         default_index = 0
         cp_names = list(discovered.keys())
-        for idx, name in enumerate(cp_names):
-            if "Phase 6 — Best" in name:
-                default_index = idx
+        for prefix in ["Phase 14 — Best", "Phase 12B — Best", "Phase 6 — Best"]:
+            found = False
+            for idx, name in enumerate(cp_names):
+                if prefix in name:
+                    default_index = idx
+                    found = True
+                    break
+            if found:
                 break
                 
         selected_cp_name = st.selectbox("Model Checkpoint Selection", cp_names, index=default_index)
@@ -636,32 +651,24 @@ with col_right:
         """
         <div class="timeline-container">
             <div class="timeline-node">
-                <div class="timeline-node-title">PHASE 1</div>
-                <div class="timeline-node-desc">Prototype</div>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-node-title">PHASE 2</div>
-                <div class="timeline-node-desc">Training Framework</div>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-node-title">PHASE 3</div>
-                <div class="timeline-node-desc">Dataset Pipeline</div>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-node-title">PHASE 4</div>
-                <div class="timeline-node-desc">Readiness</div>
-            </div>
-            <div class="timeline-node">
                 <div class="timeline-node-title">PHASE 5</div>
-                <div class="timeline-node-desc">First Training</div>
+                <div class="timeline-node-desc">First Training (V4 Data)</div>
             </div>
             <div class="timeline-node">
                 <div class="timeline-node-title">PHASE 6</div>
-                <div class="timeline-node-desc">Generalization</div>
+                <div class="timeline-node-desc">Generalization (Leak Isolation)</div>
+            </div>
+            <div class="timeline-node">
+                <div class="timeline-node-title">PHASE 12B</div>
+                <div class="timeline-node-desc">Controlled Pretraining (V5 Data)</div>
+            </div>
+            <div class="timeline-node">
+                <div class="timeline-node-title">PHASE 13</div>
+                <div class="timeline-node-desc">Instruction Tuning (SFT Instruct-3.37M)</div>
             </div>
             <div class="timeline-node active">
-                <div class="timeline-node-title" style="color: #2563eb;">PHASE 7</div>
-                <div class="timeline-node-desc" style="color: #ffffff;">Public Playground</div>
+                <div class="timeline-node-title" style="color: #2563eb;">PHASE 14</div>
+                <div class="timeline-node-desc" style="color: #ffffff;">Model Capacity Scaling (10M Model)</div>
             </div>
         </div>
         """,
@@ -670,47 +677,57 @@ with col_right:
 
     # Model Details collapsible
     with st.expander("Model Specifications & Architecture", expanded=False):
-        st.markdown(
-            """
-            <div class="spec-item">
-                <span class="spec-label">Architecture</span>
-                <span class="spec-value">Decoder-only Transformer</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Parameters</span>
-                <span class="spec-value">1,462,464</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Layers</span>
-                <span class="spec-value">3</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Embedding</span>
-                <span class="spec-value">128</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Attention heads</span>
-                <span class="spec-value">4</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Context length</span>
-                <span class="spec-value">256</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Tokenizer</span>
-                <span class="spec-value">Custom BPE</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Dataset</span>
-                <span class="spec-value">collision_dataset_v4</span>
-            </div>
-            <div class="spec-item">
-                <span class="spec-label">Training device</span>
-                <span class="spec-value">CPU</span>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        if cp_meta:
+            params_val = cp_meta.get("parameter_count", "N/A")
+            params_str = f"{params_val:,}" if isinstance(params_val, int) else str(params_val)
+            layers_val = cp_meta.get("config", {}).get("n_layer", "N/A")
+            embed_val = cp_meta.get("config", {}).get("d_model", "N/A")
+            heads_val = cp_meta.get("config", {}).get("n_head", "N/A")
+            context_val = cp_meta.get("config", {}).get("max_seq_len", "N/A")
+            dataset_val = "collision_instruct_v1" if "instruct" in selected_cp_path.lower() else "collision_dataset_v5_expanded" if "phase12b" in selected_cp_path.lower() or "phase14" in selected_cp_path.lower() else "collision_dataset_v4"
+            st.markdown(
+                f"""
+                <div class="spec-item">
+                    <span class="spec-label">Architecture</span>
+                    <span class="spec-value">Decoder-only Transformer</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Parameters</span>
+                    <span class="spec-value">{params_str}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Layers</span>
+                    <span class="spec-value">{layers_val}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Embedding</span>
+                    <span class="spec-value">{embed_val}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Attention heads</span>
+                    <span class="spec-value">{heads_val}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Context length</span>
+                    <span class="spec-value">{context_val}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Tokenizer</span>
+                    <span class="spec-value">Custom BPE</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Dataset</span>
+                    <span class="spec-value">{dataset_val}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Training device</span>
+                    <span class="spec-value">CPU</span>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        else:
+            st.write("No checkpoint loaded.")
 
     # Disclaimer
     st.markdown(

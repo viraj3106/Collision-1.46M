@@ -1,0 +1,10 @@
+{
+  "experiment_name": "collision_instruct_phase13",
+  "base_model_checkpoint": "checkpoints/phase12b/collision-3.38m-phase12b-best.pt",
+  "dataset_version": "collision_instruct_v1",
+  "best_step": 1500,
+  "best_val_loss": 2.2761581351941835,
+  "best_val_perplexity": 9.73919178437139,
+  "best_test_loss": 2.2719883393982183,
+  "best_test_perplexity": 9.698665894474765
+}

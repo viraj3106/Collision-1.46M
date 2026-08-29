@@ -1,0 +1,27 @@
+{
+  "dataset_name": "collision_instruct_v1",
+  "total_examples": 20480,
+  "train_examples": 16156,
+  "val_examples": 2116,
+  "test_examples": 2208,
+  "category_distribution": {
+    "artificial_intelligence": 2560,
+    "machine_learning": 2560,
+    "computer_science": 2560,
+    "physics": 2560,
+    "astronomy": 2560,
+    "philosophy": 2560,
+    "mathematics": 2560,
+    "general_knowledge": 2560
+  },
+  "type_distribution": {
+    "definition": 1920,
+    "question_answering": 1920,
+    "step_by_step": 1280,
+    "summarization": 1280,
+    "concept_teaching": 1280,
+    "completion": 640,
+    "comparison": 12160
+  },
+  "leakage_isolation": "Deterministic split by hashing concept names to prevent overlapping information"
+}

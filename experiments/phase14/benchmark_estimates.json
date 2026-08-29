@@ -1,0 +1,7 @@
+{
+  "tokens_per_sec_estimate": 519.6857141925452,
+  "steps_per_hour_estimate": 1827.0200889581668,
+  "memory_usage_mb_estimate": 606.3935546875,
+  "estimated_total_training_minutes": 49.260542094707496,
+  "parameter_count": 10282304
+}
