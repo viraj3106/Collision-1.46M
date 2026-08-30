@@ -87,9 +87,9 @@ def run_inference(prompt, checkpoint_path, tokenizer_dir, max_tokens=100, temper
     }
 
 def main():
-    parser = argparse.ArgumentParser(description="Standalone Inference Entry Point for COLLISION-1.46M")
+    parser = argparse.ArgumentParser(description="Standalone Inference Entry Point for COLLISION-10M")
     parser.add_argument("--prompt", type=str, default="What is artificial intelligence?", help="Text prompt to generate from")
-    parser.add_argument("--checkpoint", type=str, default="checkpoints/phase6/collision-1.46m-best.pt", help="Path to released model checkpoint")
+    parser.add_argument("--checkpoint", type=str, default="models/collision-10m/model.pt", help="Path to released model checkpoint")
     parser.add_argument("--tokenizer", type=str, default="artifacts/tokenizer", help="Path to BPE tokenizer directory")
     parser.add_argument("--max-tokens", type=int, default=100, help="Maximum number of tokens to generate")
     parser.add_argument("--temperature", type=float, default=0.8, help="Generation temperature (0.0 for greedy)")

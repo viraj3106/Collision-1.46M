@@ -1,81 +1,189 @@
-# COLLISION Models Series
+# COLLISION
 
-An experimental suite of small decoder-only Transformer language models (1.46M, 3.38M, and 10.28M parameters) trained completely from scratch on CPU.
+Small Models. Real AI.
 
-![COLLISION Banner](assets/collision-banner.png)
+## What is COLLISION?
 
----
+COLLISION is a research project designed to explore Transformer causal language modeling in extreme low-resource regimes. It focuses on causal language modeling convergence, CPU-first development, and data quality engineering for tiny model architectures.
 
-## 1. What is COLLISION?
-COLLISION is a research project designed to explore Transformer behavior in extreme low-resource regimes, focusing on:
-* Causal language modeling convergence when trained on consumer CPUs with zero pretraining.
-* The impact of dataset quality, deduplication, and leakage isolation on small-scale generalization.
-* Instruction fine-tuning (SFT) dynamics on tiny architectures.
-* Model capacity scaling laws (scaling parameters from 1.46M to 10.28M).
+## Why does it exist?
 
----
+COLLISION exists to prove that high-quality, scientifically hygienic training data, coupled with rigorous evaluation protocols, can yield stable and convergent language representation spaces under extreme size constraints (sub-50M parameters) on consumer CPUs without GPU pretraining.
 
-## 2. Model Variants & Architectures
+## COLLISION-10M
 
-| Variant | Parameters | Layers | Embedding Dim (d_model) | Heads | Feedforward Dim (d_ff) | Context Length |
-|---|---|---|---|---|---|---|
-| **COLLISION-1.46M** | 1,462,464 | 3 | 128 | 4 | 256 | 256 |
-| **COLLISION-3.38M** | 3,375,680 | 6 | 192 | 6 | 384 | 256 |
-| **COLLISION-10M** | 10,282,304 | 6 | 384 | 8 | 768 | 256 |
+COLLISION-10M v1.0.0 is the flagship 10.28M-parameter model release under the COLLISION series. It is an experimental base language model trained from scratch with a CPU-first development approach.
 
-*Note: All models use weight-tied embeddings and a context length of 256 tokens.*
+## COLLISION-7M
 
----
+COLLISION-7M is a 6.34M-parameter (6,338,880 parameters) model variant in the COLLISION series designed for scaling analysis. It is configured and trained using the script [train_phase10_7m.py](file:///v:/collision%20-%201M/training/train_phase10_7m.py).
 
-## 3. Dataset Versions
-* **collision_dataset_v4**: Cleaned, deduplicated dataset containing 2,072,993 training tokens.
-* **collision_dataset_v5_expanded**: Causal dataset expanded with train/validation/test leakage isolation (1,546,977 train tokens).
-* **collision_instruct_v1**: Synthetic conversational instruction dataset (20,480 unique examples format: `<|user|>` / `<|assistant|>`).
+## Quick Start
 
----
+Follow these steps to run local inference using the frozen model.
 
-## 4. Phase-by-Phase Experiment Results
-
-### Pretraining Results (V5 Dataset)
-
-| Metric | 3.38M Base Model (Phase 12B) | 10.28M Base Model (Phase 14) | Impact of Scaling |
-|---|---|---|---|
-| **Test Loss** | 1.3213 | **0.7679** | -42.0% loss reduction |
-| **Test Perplexity** | 3.75 | **2.16** | -42.4% perplexity reduction |
-| **Avg Repetition Rate** | 47.9% | **26.8%** | Repetition rate nearly halved |
-| **Sentence Termination**| 55.6% | **88.9%** | Termination accuracy +60% |
-| **Unique Token Ratio** | 52.1% | **73.2%** | Lexical variety +40% |
-| **CPU Training Speed** | ~1500 tokens/sec | ~837 tokens/sec | -44% compute throughput |
-
-### Instruction Tuning Results (Phase 13 SFT)
-* **Model**: `COLLISION-Instruct-3.37M` (derived from 3.38M base).
-* **Evaluation Perplexity**: **9.70** (Test Loss: 2.2720).
-* **Key Finding**: SFT tuning on the 3.38M model caused a generation quality regression (repetition rose to 57.6%, sentence termination rate dropped to 6.7%) due to severe structural overfitting on small parameters.
-
----
-
-## 5. COLLISION LAB Playground
-COLLISION LAB is an interactive web playground built with Streamlit for CPU-first inference, checkpoint switching, generation parameter adjustment, and real-time generation diagnostics.
-
-Launch the playground:
+### 1. Clone the Repository
 ```bash
-streamlit run dashboard/app.py
+git clone <repository_url>
+cd collision
 ```
 
----
-
-## 6. Standalone CLI Inference
-Run causal sequence completion on any checkpoint:
+### 2. Install Dependencies
 ```bash
-python release_inference.py --prompt "Artificial intelligence is" --checkpoint checkpoints/phase14/collision-10m-best.pt
+pip install -r requirements-release.txt
 ```
 
-For interactive conversation with the instruction-following model:
+### 3. Run Direct Local Inference
+Execute causal completion directly using the pre-existing inference engine (requires no API or running servers):
 ```bash
-python -m collision.chat
+python release_inference.py --prompt "Artificial intelligence is" --checkpoint models/collision-10m/model.pt
 ```
 
----
+## API
 
-## 7. License
-Distributed under the MIT License. See `LICENSE` for details.
+A production-oriented FastAPI service is provided to query completions via HTTP requests.
+
+### Start the API Server
+```bash
+uvicorn api.main:app --host 127.0.0.1 --port 8000
+```
+
+### Check Health
+```bash
+curl -X GET http://localhost:8000/health
+```
+
+### List Models
+```bash
+curl -X GET http://localhost:8000/v1/models
+```
+
+### Request Completion
+```bash
+curl -X POST http://localhost:8000/v1/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "collision-10m",
+    "prompt": "Artificial intelligence is",
+    "max_tokens": 100,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9
+  }'
+```
+
+For Python and JavaScript clients, see the detailed code examples in the [API Documentation](file:///v:/collision%20-%201M/docs/api.md).
+
+## Playground
+
+The playground consists of a decoupled Streamlit client (`playground/app.py`) that interacts with the FastAPI server backend.
+
+### Launch the Playground
+1. Start the API server in one terminal:
+   ```bash
+   uvicorn api.main:app --host 127.0.0.1 --port 8000
+   ```
+2. Start the Streamlit frontend in a second terminal:
+   ```bash
+   streamlit run playground/app.py
+   ```
+
+## Model Architecture
+
+| Model Variant | Parameters | Layers (n_layer) | d_model | Attention heads (n_head) | d_ff | Context Length | Weight Tying |
+|---|---|---|---|---|---|---|---|
+| **COLLISION-10M** | 10,282,304 | 6 | 384 | 8 | 768 | 256 | Enabled (`tie_embeddings: true`) |
+| **COLLISION-7M** | 6,338,880 | 8 | 256 | 8 | 512 | 256 | Enabled (`tie_embeddings: true`) |
+
+- **Positional Encoding**: absolute_learned
+
+## Training
+
+### COLLISION-10M
+- **Dataset**: `collision_dataset_v5_expanded` (10,000,384 tokens trained)
+- **Initialization**: Random initialization (from scratch)
+- **Optimizer**: AdamW (lr = 6e-4, min lr = 6e-5, weight decay = 0.01)
+- **Schedule**: CosineWarmup (150 warmup steps)
+- **Hardware**: CPU
+
+### COLLISION-7M
+- **Dataset**: `collision_dataset_v4` (1,536,000 token budget)
+- **Initialization**: Random initialization (from scratch)
+- **Optimizer**: AdamW (lr = 6e-4, min lr = 6e-5, weight decay = 0.01)
+- **Schedule**: CosineWarmup (150 warmup steps)
+- **Hardware**: CPU
+
+## Evaluation
+
+COLLISION-10M achieves the following metrics at its best validation checkpoint (Step 2,500):
+- **Best Validation Loss**: 0.7454
+- **Best Validation Perplexity**: 2.11
+- **Test Loss**: 0.5805
+- **Test Perplexity**: 1.79
+- **Repetition Rate**: 41.1%
+- **Unique Token Ratio**: 58.9%
+- **Termination Rate**: 62.5%
+
+## Limitations
+
+- **Context Window**: 256 tokens.
+- **Small Parameter Count**: 10.28M parameters limit generation capability.
+- **Repetitive Output**: Subject to unigram repetition biases common in small models.
+- **Not Instruction Tuned**: Will not act as a conversational chatbot assistant (will continue the text prompt).
+- **Factual Inaccuracy**: Outputs should not be treated as factually correct.
+- **Latencies**: Throughput is bounded by local CPU capabilities.
+
+## Repository Structure
+
+```
+collision/
+│
+├── README.md
+├── CITATION.cff
+├── requirements-release.txt
+│
+├── models/
+│   └── collision-10m/
+│       ├── model.pt
+│       ├── config.json
+│       ├── tokenizer.json
+│       ├── generation_config.json
+│       ├── MODEL_CARD.md
+│       └── README.md
+│
+├── inference/
+├── api/
+├── playground/
+│
+├── docs/
+│   ├── api.md
+│   └── experiment_history.md
+│
+├── release/
+│   ├── version.json
+│   ├── checksums.sha256
+│   ├── MANIFEST.md
+│   ├── REPRODUCIBILITY.md
+│   ├── DATASET_LICENSE_AUDIT.md
+│   ├── LICENSE_DECISION.md
+│   ├── GITHUB_RELEASE.md
+│   ├── benchmark.md
+│   ├── public_claims.md
+│   ├── verify_release.py
+│   └── huggingface/
+│
+└── experiments/
+```
+
+## License
+
+Subject to the MIT License. See [LICENSE_DECISION.md](file:///v:/collision%20-%201M/release/LICENSE_DECISION.md) for details on code, tokenizer, model weights, and dataset considerations.
+
+## Citation
+
+If you use COLLISION-10M in your research or projects, please cite it using the metadata in [CITATION.cff](file:///v:/collision%20-%201M/CITATION.cff).
+
+## Roadmap
+
+- **Phase 19**: Investigating scaling capabilities and potential architecture improvements (Note: Phase 19 is not currently active).
+- **Abuse Prevention & Authentication**: Adding rate limits and auth for API layers.

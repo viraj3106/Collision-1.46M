@@ -147,7 +147,8 @@ def main():
     tokenizer.load(TOKENIZER_DIR)
 
     # Load dataset info
-    latest_dir = get_latest_version_dir()
+    dataset_version = config_yaml["training"]["dataset_version"]
+    latest_dir = os.path.join("datasets", dataset_version)
     train_bin = os.path.join(latest_dir, "train.bin")
     val_bin = os.path.join(latest_dir, "val.bin")
     

@@ -1,7 +1,56 @@
+# Python cache and byte-compiled files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Large binary files (model weights and dataset binaries)
+*.pt
+*.bin
+*.db
 checkpoints/
 data/processed/
+
+# Environments and virtualenvs
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets
+.env
+.env.*
+
+# Local/IDE settings and metadata
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Run-time logs and caches
+*.log
 experiments/*.csv
 experiments/*.jsonl
 .streamlit/
