@@ -1,0 +1,10 @@
+baseline_checkpoint: models/collision-10m/model.pt
+baseline_sha256: d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97
+dataset_train: datasets/collision_instruct_v1/real_world_train.jsonl
+dataset_val: datasets/collision_instruct_v1/real_world_val.jsonl
+experiment_name: phase30_realworld_finetuning
+experimental_checkpoint: checkpoints/phase30/collision_10m_realworld_v1.pt
+experimental_sha256: cbb2497a63a6462528c2ffc0086a27333467e1eafb31fafc186cfc973d15d571
+learning_rate: 0.0001
+seed: 42
+steps: 50

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "total_prompts": 350,
+  "exact_matches": 0,
+  "near_duplicate_matches": 0,
+  "replacements": 0,
+  "final_clean_prompts": 350,
+  "datasets_checked": [
+    "V:\\collision - 1M\\datasets\\collision_augmented_v2\\train.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_augmented_v2\\val.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_augmented_v2\\test.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_synthetic_v1\\collision_synthetic_v1.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_synthetic_v2\\collision_synthetic_v2.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_dataset_v6\\collision_dataset_v6.jsonl",
+    "V:\\collision - 1M\\datasets\\collision_dataset_v7\\collision_dataset_v7.jsonl",
+    "V:\\collision - 1M\\experiments\\phase34\\real_world_eval_v1.json",
+    "V:\\collision - 1M\\experiments\\phase35\\real_world_holdout_v2.json",
+    "V:\\collision - 1M\\experiments\\phase36\\real_world_holdout_v3.json"
+  ],
+  "methodology": "Exact string matching, normalized whitespace/punctuation lowercasing, and SequenceMatcher similarity scoring (threshold > 0.85) with automatic prompt replacement",
+  "total_leaks": 0,
+  "leaks": []
+}

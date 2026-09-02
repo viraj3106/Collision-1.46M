@@ -1,0 +1,200 @@
+{
+  "split_performance": {
+    "Model_A_Baseline": {
+      "train": {
+        "loss": 6.3991,
+        "ppl": 601.29
+      },
+      "val": {
+        "loss": 6.3494,
+        "ppl": 572.14
+      },
+      "test": {
+        "loss": 6.4679,
+        "ppl": 644.13
+      }
+    },
+    "Model_D_Phase32": {
+      "train": {
+        "loss": 4.8514,
+        "ppl": 127.93
+      },
+      "val": {
+        "loss": 4.7083,
+        "ppl": 110.86
+      },
+      "test": {
+        "loss": 4.8526,
+        "ppl": 128.07
+      }
+    },
+    "Model_E_Phase33": {
+      "train": {
+        "loss": 2.0109,
+        "ppl": 7.47
+      },
+      "val": {
+        "loss": 2.2878,
+        "ppl": 9.85
+      },
+      "test": {
+        "loss": 2.1301,
+        "ppl": 8.42
+      }
+    }
+  },
+  "model_summaries": {
+    "Model_A_Baseline": {
+      "mean_coherence": 0.2165,
+      "mean_relevance": 0.4524,
+      "mean_completeness": 0.7619,
+      "mean_repetition_score": 0.7455,
+      "mean_unigram_repeat": 0.2545,
+      "mean_trigram_repeat": 0.0137,
+      "mean_stability": 0.5705,
+      "mean_instruction_following": 0.3333,
+      "mean_diversity_score": 0.3399,
+      "overall_quality_score": 0.4485,
+      "open_ended_generation_score": 0.4765,
+      "multi_turn_conversation_score": 0.5674
+    },
+    "Model_D_Phase32": {
+      "mean_coherence": 0.1224,
+      "mean_relevance": 0.441,
+      "mean_completeness": 0.7238,
+      "mean_repetition_score": 0.7195,
+      "mean_unigram_repeat": 0.2805,
+      "mean_trigram_repeat": 0.041,
+      "mean_stability": 0.4533,
+      "mean_instruction_following": 0.301,
+      "mean_diversity_score": 0.2791,
+      "overall_quality_score": 0.3911,
+      "open_ended_generation_score": 0.4161,
+      "multi_turn_conversation_score": 0.5382
+    },
+    "Model_E_Phase33": {
+      "mean_coherence": 0.0452,
+      "mean_relevance": 0.2676,
+      "mean_completeness": 0.4381,
+      "mean_repetition_score": 0.8131,
+      "mean_unigram_repeat": 0.1869,
+      "mean_trigram_repeat": 0.0191,
+      "mean_stability": 0.2848,
+      "mean_instruction_following": 0.1533,
+      "mean_diversity_score": 0.1456,
+      "overall_quality_score": 0.2243,
+      "open_ended_generation_score": 0.1085,
+      "multi_turn_conversation_score": 0.0
+    }
+  },
+  "blind_pairwise": {
+    "A_vs_D": {
+      "A_wins": 47,
+      "D_wins": 12,
+      "ties": 46
+    },
+    "A_vs_E": {
+      "A_wins": 71,
+      "E_wins": 10,
+      "ties": 24
+    },
+    "D_vs_E": {
+      "D_wins": 61,
+      "E_wins": 22,
+      "ties": 22
+    }
+  },
+  "domain_regression": {
+    "Computer Science": {
+      "Model_A": 0.2522,
+      "Model_D": 0.2541,
+      "Model_E": 0.187,
+      "E_vs_A_diff": -0.0652,
+      "status": "REGRESSED"
+    },
+    "Artificial Intelligence": {
+      "Model_A": 0.3826,
+      "Model_D": 0.3153,
+      "Model_E": 0.3242,
+      "E_vs_A_diff": -0.0585,
+      "status": "REGRESSED"
+    },
+    "Physics": {
+      "Model_A": 0.3463,
+      "Model_D": 0.1989,
+      "Model_E": 0.2979,
+      "E_vs_A_diff": -0.0484,
+      "status": "REGRESSED"
+    },
+    "Mathematics": {
+      "Model_A": 0.4996,
+      "Model_D": 0.3263,
+      "Model_E": 0.4314,
+      "E_vs_A_diff": -0.0682,
+      "status": "REGRESSED"
+    },
+    "Technology": {
+      "Model_A": 0.5036,
+      "Model_D": 0.3345,
+      "Model_E": 0.5293,
+      "E_vs_A_diff": 0.0257,
+      "status": "UNCHANGED"
+    },
+    "Space": {
+      "Model_A": 0.5234,
+      "Model_D": 0.3971,
+      "Model_E": 0.5427,
+      "E_vs_A_diff": 0.0193,
+      "status": "UNCHANGED"
+    },
+    "General Knowledge": {
+      "Model_A": 0.3727,
+      "Model_D": 0.3571,
+      "Model_E": 0.3927,
+      "E_vs_A_diff": 0.0201,
+      "status": "UNCHANGED"
+    },
+    "Question Answering": {
+      "Model_A": 0.5876,
+      "Model_D": 0.5378,
+      "Model_E": 0.4803,
+      "E_vs_A_diff": -0.1073,
+      "status": "REGRESSED"
+    },
+    "Explanation": {
+      "Model_A": 0.1135,
+      "Model_D": 0.0972,
+      "Model_E": 0.1844,
+      "E_vs_A_diff": 0.0709,
+      "status": "IMPROVED"
+    },
+    "Instruction Following": {
+      "Model_A": 0.1119,
+      "Model_D": 0.1566,
+      "Model_E": 0.2113,
+      "E_vs_A_diff": 0.0993,
+      "status": "IMPROVED"
+    },
+    "Completion": {
+      "Model_A": 0.5973,
+      "Model_D": 0.5883,
+      "Model_E": 0.4792,
+      "E_vs_A_diff": -0.1181,
+      "status": "REGRESSED"
+    },
+    "Open-Ended Generation": {
+      "Model_A": 0.4765,
+      "Model_D": 0.4161,
+      "Model_E": 0.1085,
+      "E_vs_A_diff": -0.3681,
+      "status": "REGRESSED"
+    },
+    "Multi-Turn Conversation": {
+      "Model_A": 0.5674,
+      "Model_D": 0.5382,
+      "Model_E": 0.0,
+      "E_vs_A_diff": -0.5674,
+      "status": "REGRESSED"
+    }
+  }
+}

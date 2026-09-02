@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software or model, please cite it as below."
+authors:
+  - name: "COLLISION Project Contributors"
+title: "COLLISION-10M: An Experimental CPU-First Base Language Model"
+version: 1.0.0
+date-released: 2026-08-30
+url: "https://github.com/viraj3106/Collision-1.46M"
+description: "COLLISION-10M is a 10.28M-parameter transformer-based base language model trained from scratch with a CPU-first development approach."
+keywords:
+  - language-model
+  - transformer
+  - cpu-inference
+  - cpu-training
+  - artificial-intelligence

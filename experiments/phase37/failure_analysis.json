@@ -1,0 +1,40 @@
+{
+  "failure_counts_by_model": {
+    "Model_A_Baseline": {
+      "repetition": 7,
+      "fragmentation": 0,
+      "instruction_failure": 277,
+      "topic_drift": 0
+    },
+    "Model_F2_Phase35": {
+      "repetition": 8,
+      "fragmentation": 0,
+      "instruction_failure": 341,
+      "topic_drift": 294
+    },
+    "Model_G_Phase36": {
+      "repetition": 18,
+      "fragmentation": 0,
+      "instruction_failure": 348,
+      "topic_drift": 258
+    },
+    "Model_H1_Phase37": {
+      "repetition": 28,
+      "fragmentation": 0,
+      "instruction_failure": 338,
+      "topic_drift": 220
+    },
+    "Model_H2_Phase37": {
+      "repetition": 55,
+      "fragmentation": 0,
+      "instruction_failure": 343,
+      "topic_drift": 160
+    },
+    "Model_H3_Phase37": {
+      "repetition": 77,
+      "fragmentation": 0,
+      "instruction_failure": 324,
+      "topic_drift": 36
+    }
+  }
+}

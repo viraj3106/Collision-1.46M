@@ -1,0 +1,28 @@
+{
+  "base_model": "Model_E_Phase34",
+  "dataset_used": "collision_dataset_v6",
+  "variants": {
+    "Model_F1_Phase35": {
+      "variant": "Model_F1_Phase35",
+      "steps": 300,
+      "learning_rate": 1e-05,
+      "training_time_sec": 74.98,
+      "final_train_loss": 2.728,
+      "final_train_ppl": 15.3,
+      "checkpoint_path": "V:\\collision - 1M\\checkpoints\\phase35\\collision_10m_candidate_f1.pt",
+      "sha256": "f6ea4fed26b5a6ebadbaa468434f4cd5ec08c3a347eb2ce5d0b635bd1946d75e",
+      "parameter_count": 10282304
+    },
+    "Model_F2_Phase35": {
+      "variant": "Model_F2_Phase35",
+      "steps": 600,
+      "learning_rate": 2e-05,
+      "training_time_sec": 130.91,
+      "final_train_loss": 1.9676,
+      "final_train_ppl": 7.15,
+      "checkpoint_path": "V:\\collision - 1M\\checkpoints\\phase35\\collision_10m_candidate_f2.pt",
+      "sha256": "9bef9644831716c4ea75e30799730b6883f698ccf0f949d4aff3af357c19f825",
+      "parameter_count": 10282304
+    }
+  }
+}

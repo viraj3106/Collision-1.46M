@@ -1,0 +1,15 @@
+{
+  "dataset_name": "collision_synthetic_v1",
+  "total_synthetic_examples": 120,
+  "total_synthetic_tokens": 11090,
+  "avg_tokens_per_example": 92.42,
+  "category_distribution": {
+    "question_answering": 20,
+    "explanation": 20,
+    "computer_science": 20,
+    "physics_astronomy": 20,
+    "mathematics": 20,
+    "general_knowledge": 20
+  },
+  "provenance_label": "source=synthetic"
+}

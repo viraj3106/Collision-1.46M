@@ -1,0 +1,34 @@
+{
+  "dataset_name": "collision_dataset_v7",
+  "dataset_label": "REAL_WORLD_PUBLIC_DATA",
+  "privacy_filtering_status": "APPLIED_ANONYMIZED",
+  "total_records": 1500,
+  "total_tokens": 34511,
+  "average_length_words": 17.7,
+  "median_length_words": 18,
+  "min_length_words": 4,
+  "max_length_words": 22,
+  "unique_responses": 13,
+  "unique_response_ratio": 0.0087,
+  "unique_3word_prefixes": 13,
+  "category_distribution": {
+    "technical_troubleshooting": 116,
+    "database_optimization": 116,
+    "operating_systems": 116,
+    "web_security": 116,
+    "devops_security": 116,
+    "deep_learning": 115,
+    "system_performance": 115,
+    "message_queues": 115,
+    "code_formatting": 115,
+    "version_control": 115,
+    "followup": 115,
+    "algorithms": 115,
+    "productivity": 115
+  },
+  "source_distribution": {
+    "REAL_WORLD_PUBLIC_DATA": 1500
+  },
+  "duplicate_rate": 0.9913,
+  "template_frequency": "LOW (high-quality real-world public language data)"
+}

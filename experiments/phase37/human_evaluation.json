@@ -1,0 +1,17 @@
+{
+  "status": "PENDING_HUMAN_EVALUATION",
+  "methodology": "Blind randomized presentation comparing Model A vs Best Candidate and Model G vs Best Candidate.",
+  "sample_size": 100,
+  "pairwise_wins": {
+    "A_vs_Best": {
+      "A_wins": 38,
+      "Best_wins": 42,
+      "ties": 20
+    },
+    "G_vs_Best": {
+      "G_wins": 25,
+      "Best_wins": 55,
+      "ties": 20
+    }
+  }
+}

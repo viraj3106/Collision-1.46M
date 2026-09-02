@@ -1,0 +1,10 @@
+{
+  "dataset_name": "collision_dataset_v8",
+  "dataset_label": "REAL_WORLD_PUBLIC_DATA",
+  "total_records": 3000,
+  "total_tokens": 95940,
+  "average_length_words": 24.6,
+  "privacy_filtering_status": "APPLIED_ANONYMIZED",
+  "duplicate_rate": 0.0,
+  "template_frequency": "LOW"
+}

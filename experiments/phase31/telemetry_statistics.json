@@ -1,0 +1,12 @@
+{
+  "total_generations_logged": 26,
+  "successful_generations": 26,
+  "failed_generations": 0,
+  "avg_latency_ms": 327.97,
+  "p50_latency_ms": 198.99,
+  "p95_latency_ms": 495.15,
+  "total_feedback_records": 11,
+  "positive_feedback_records": 6,
+  "negative_feedback_records": 5,
+  "feedback_submission_rate": 0.4783
+}

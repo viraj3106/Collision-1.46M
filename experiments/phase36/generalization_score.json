@@ -1,0 +1,60 @@
+{
+  "formula": "0.20*relevance + 0.20*coherence + 0.15*completeness + 0.15*instruction_following + 0.10*diversity + 0.10*multi_turn + 0.10*failure_robustness",
+  "scores_0_to_100": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 54.94,
+      "relevance": 49.03,
+      "coherence": 30.77,
+      "completeness": 87.25,
+      "instruction_following": 52.29,
+      "diversity": 60.43,
+      "multi_turn": 55.03,
+      "failure_robustness": 65.07
+    },
+    "Model_F2_Phase35": {
+      "generalization_score_100": 45.23,
+      "relevance": 51.0,
+      "coherence": 14.63,
+      "completeness": 85.66,
+      "instruction_following": 30.94,
+      "diversity": 51.81,
+      "multi_turn": 53.16,
+      "failure_robustness": 41.17
+    },
+    "Model_G_Phase36": {
+      "generalization_score_100": 50.67,
+      "relevance": 49.5,
+      "coherence": 28.68,
+      "completeness": 89.24,
+      "instruction_following": 38.41,
+      "diversity": 61.14,
+      "multi_turn": 49.9,
+      "failure_robustness": 47.81
+    }
+  },
+  "ppl_ranking": [
+    "Model_G_Phase36 (~4.50 PPL)",
+    "Model_F2_Phase35 (~7.66 PPL)",
+    "Model_A_Baseline (~322.58 PPL)"
+  ],
+  "generalization_ranking": [
+    "Model_A_Baseline",
+    "Model_G_Phase36",
+    "Model_F2_Phase35"
+  ],
+  "promotion_gate": {
+    "parameters": 10282304,
+    "production_sha256_unchanged": true,
+    "zero_leakage": true,
+    "unit_tests_pass": true,
+    "Model_G_score": 50.67,
+    "Model_F2_score": 45.23,
+    "Model_A_score": 54.94,
+    "delta_G_vs_F2": 5.44,
+    "delta_G_vs_A": -4.27,
+    "meets_F2_plus_3_gate": true,
+    "meets_Model_A_gate": false,
+    "promotion_decision": "CANDIDATE_ON_HOLD",
+    "final_phase_status": "PHASE_36_CANDIDATE_ON_HOLD"
+  }
+}

@@ -1,0 +1,3262 @@
+{
+  "metadata": {
+    "name": "real_world_eval_v1",
+    "total_prompts": 220,
+    "single_turn_prompts": 190,
+    "multi_turn_conversations": 30,
+    "task_mix_distribution": {
+      "knowledge": "20%",
+      "explanation": "20%",
+      "instruction_following": "15%",
+      "reasoning": "10%",
+      "comparison": "10%",
+      "summarization_rewrite": "10%",
+      "conversational_multi_turn": "10%",
+      "open_ended": "5%"
+    }
+  },
+  "prompts": [
+    {
+      "id": "RW_001",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the principle behind optical fiber data transmission?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_002",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how dark energy differs from dark matter in cosmology.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_003",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the role of mitochondria in cellular respiration?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_004",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does a quantum computer qubit differ from a classical bit?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_005",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the mechanism of action of mRNA vaccines?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_006",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Describe the event horizon of a black hole.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_007",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What causes gravitational waves according to general relativity?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_008",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the law of conservation of momentum with an example.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_009",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between nuclear fission and fusion?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_010",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does the immune system produce antibodies upon infection?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_011",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of the hippocampus in human memory?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_012",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the mechanism of plate tectonics.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_013",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is quantum entanglement and why is it important?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_014",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Describe the structure of DNA and its double helix model.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_015",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does photosynthesis convert light into chemical energy?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_016",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is Bernoulli's principle in fluid dynamics?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_017",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between thermal energy and temperature.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_018",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is Heisenberg's uncertainty principle?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_019",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does the Doppler effect alter frequency for moving sources?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_020",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the greenhouse effect and how does carbon dioxide contribute?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_021",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of entropy in thermodynamics.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_022",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between speed of light in vacuum and in media?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_023",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do semiconductors conduct electricity under doping?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_024",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the role of enzyme catalysts in biological reactions?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_025",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between acids and bases using pH scale.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_026",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is electromagnetic radiation and how does its spectrum work?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_027",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Describe the function of the nervous system in impulse signal transmission.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_028",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the Big Bang theory and what evidence supports it?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_029",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how radiometric dating works for ancient artifacts.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_030",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between active and passive transport in cells?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_031",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does gravity affect time dilation near massive celestial bodies?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_032",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is Superconductivity and why does it occur at low temperatures?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_033",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the function of lipids and proteins in cell membranes.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_034",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between prokaryotic and eukaryotic cells?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_035",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do nerve synapses transmit neurotransmitters?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_036",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of blood hemoglobin in oxygen transport?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_037",
+      "task_type": "knowledge",
+      "category": "general_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain Kepler's laws of planetary motion.",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_038",
+      "task_type": "knowledge",
+      "category": "cs_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the main cause of ocean tides on Earth?",
+      "expected_behavior": "Provide an accurate factual definition or explanation."
+    },
+    {
+      "id": "RW_039",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how gradient descent updates model parameters during training.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_040",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between overfitting and underfitting to a beginner.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_041",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how a web browser renders HTML, CSS, and JavaScript.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_042",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how database indexes speed up query response times.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_043",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why transformer self-attention requires positional encodings.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_044",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how backpropagation computes gradients using the chain rule.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_045",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between synchronous and asynchronous execution in JavaScript.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_046",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how neural networks use activation functions to model non-linearity.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_047",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of recursion with a simple real-world analogy.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_048",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how garbage collection works in modern programming languages.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_049",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between SQL relational databases and NoSQL key-value stores.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_050",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how public-key cryptography enables secure communication over untrusted networks.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_051",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how object-oriented inheritance differs from composition.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_052",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how cross-validation helps evaluate model generalization performance.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_053",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of continuous integration and continuous deployment (CI/CD).",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_054",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how convolutional neural networks extract hierarchical visual features.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_055",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why learning rate scheduling is crucial for training deep learning models.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_056",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how HTTP/2 multiplexing improves web performance over HTTP/1.1.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_057",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of dynamic programming using the Fibonacci sequence.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_058",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how a CPU cache line works and why cache locality matters.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_059",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between a process and a thread in operating systems.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_060",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how docker containers achieve isolation compared to virtual machines.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_061",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how residual connections help prevent vanishing gradients in deep networks.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_062",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of bias-variance tradeoff in machine learning algorithms.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_063",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how loss functions guide optimization in supervised learning models.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_064",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between stack and heap memory allocation.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_065",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how batch normalization stabilizes internal covariate shift in deep models.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_066",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how load balancers distribute incoming network traffic across server nodes.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_067",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the mechanism of attention mechanisms in sequence-to-sequence models.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_068",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how deadlocks occur in concurrent computing and how to avoid them.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_069",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of rate limiting in web API design.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_070",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how graph neural networks process non-Euclidean structured data.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_071",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between L1 and L2 regularization techniques.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_072",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how microservices communicate via RESTful APIs and message queues.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_073",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the concept of zero-shot learning in artificial intelligence.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_074",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how autoencoders compress and reconstruct high-dimensional input vectors.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_075",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why GPU parallel processing is faster for matrix multiplications than CPU.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_076",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how cosine similarity measures vector alignment in embedding spaces.",
+      "expected_behavior": "Deliver a clear, well-structured step-by-step breakdown."
+    },
+    {
+      "id": "RW_077",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following concept in exactly two sentences: Machine learning is a field of study devoted to understanding and building methods that learn from data.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_078",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Convert the following text into 3 bullet points: Python is versatile, easy to read, and widely adopted in data science.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_079",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Format the list of numbers [4, 1, 9, 2] in descending order with comma separators.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_080",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite the sentence 'The system crashed due to memory exhaustion' using professional technical terminology.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_081",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "List 4 key requirements for building a scalable backend microservice architecture.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_082",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a JSON object containing keys 'name', 'status', and 'version' with sample values.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_083",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Extract the core message from this text: Cloud computing allows remote server storage and processing without local infrastructure.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_084",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Write a 3-step checklist for releasing a new software production update.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_085",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rephrase the question 'Why is my code running slow?' into 3 specific diagnostic questions.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_086",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Format the following technical terms into an alphabetical markdown list: PyTorch, Docker, Kubernetes, Ansible.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_087",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide 3 distinct advantages of using TypeScript over vanilla JavaScript.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_088",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Write a concise one-line definition of data normalization in databases.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_089",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Convert the statement 'Database queries are failing under high load' into an actionable incident summary.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_090",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "List 5 common security vulnerabilities described in the OWASP Top 10.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_091",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite the user instruction 'Fix the bug' to be clear, actionable, and structured.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_092",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a markdown table with 2 columns comparing SQL vs NoSQL on Schema and Scalability.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_093",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Extract all technical acronyms from this sentence: AWS EC2 instances use VPC and IAM for secure networking.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_094",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Create a short technical disclaimer for an open-source software library release.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_095",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the main benefit of unit testing in software engineering in under 15 words.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_096",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Format a standard HTTP POST request header template with JSON content type.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_097",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "List 3 edge cases to test when validating a user email registration input field.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_098",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a complex jargon-heavy description into clear language suitable for a high school student.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_099",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Extract key metrics from this log string: 'Latency=45ms ErrorRate=0.01% CPU=82%'.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_100",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Write a 4-step guide on how to perform a git rebase safely.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_101",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Convert a list of key-value pairs into a clean Python dictionary syntax format.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_102",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Create a short response template acknowledging a customer support technical bug report.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_103",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "List 3 mandatory steps required when implementing user password hashing.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_104",
+      "task_type": "instruction_following",
+      "category": "incomplete_requests",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide 2 concrete examples of stateful vs stateless protocols.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_105",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a passive voice sentence 'The bug was fixed by the developer' into active voice.",
+      "expected_behavior": "Strictly follow formatting, length, or structural instructions."
+    },
+    {
+      "id": "RW_106",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a train travels 60 miles in 45 minutes, what is its average speed in miles per hour?",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_107",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why an algorithm with O(n^2) time complexity becomes impractical for n = 1,000,000.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_108",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Determine which data structure (Array vs Linked List) is better for frequent insertions at the beginning, and why.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_109",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If model accuracy increases on training data but decreases on validation data, what issue is occurring and how to fix it?",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_110",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare the memory overhead of storing 1,000,000 integers in a contiguous array versus a linked list.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_111",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why increasing batch size during deep learning training affects gradient noise and learning dynamics.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_112",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Evaluate whether a binary search tree or a hash map is better suited for range queries, justifying your decision.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_113",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a service receives 10,000 requests per second and each request takes 50ms, how many concurrent connections are needed?",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_114",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Determine why using a global lock in a multi-threaded application leads to CPU underutilization.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_115",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why cross-entropy loss is preferred over mean squared error for binary classification tasks.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_116",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a cache has a hit rate of 90% with 2ms access time and 100ms main memory miss penalty, what is the average access time?",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_117",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Evaluate the tradeoffs between horizontal scaling and vertical scaling for high-throughput database systems.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_118",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Determine the time complexity of searching for an element in a balanced binary search tree of N nodes.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_119",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why unnormalized input features cause gradient updates to oscillate during neural network optimization.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_120",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Evaluate why asynchronous I/O allows a single-threaded event loop to handle thousands of concurrent network clients.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_121",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Determine the effect on model capacity when doubling the hidden layer width versus doubling layer depth.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_122",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why using fixed random seeds is necessary for reproducible machine learning experimentation.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_123",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Evaluate whether to use gRPC or REST for low-latency internal microservice communication.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_124",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Determine why soft deletion is often preferred over hard deletion in enterprise relational databases.",
+      "expected_behavior": "Demonstrate sound logical step-by-step reasoning."
+    },
+    {
+      "id": "RW_125",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Python and Go in terms of execution speed, concurrency model, and developer velocity.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_126",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare PyTorch and TensorFlow for deep learning research vs production deployment.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_127",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare REST APIs and GraphQL in terms of data fetching efficiency and backend flexibility.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_128",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare TCP and UDP protocols regarding reliability, speed, and typical use cases.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_129",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Relational SQL databases with Document NoSQL databases for storing user profile data.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_130",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Docker containers with WebAssembly modules for lightweight edge computation.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_131",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Monolithic architecture with Microservice architecture for early-stage software startups.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_132",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Supervised Learning with Unsupervised Learning in terms of data requirements and objectives.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_133",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Convolutional Neural Networks (CNNs) with Transformers for vision processing tasks.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_134",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Git Merge with Git Rebase when integrating feature branch changes.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_135",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare CPU parallel processing with GPU parallel processing for general matrix calculations.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_136",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Batch processing with Real-time Stream processing for big data analytics.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_137",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Hard Disk Drives (HDD) with Solid State Drives (SSD) on read/write latency and IOPS.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_138",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Compiled languages with Interpreted languages on performance and execution model.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_139",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Message Queues (RabbitMQ) with Event Streams (Apache Kafka) for event-driven systems.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_140",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Symmetric Cryptography with Asymmetric Cryptography on key distribution and encryption speed.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_141",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Fine-tuning a pre-trained model with Retrieval-Augmented Generation (RAG) for domain adaptation.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_142",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Static Typing with Dynamic Typing regarding code maintainability and bug prevention.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_143",
+      "task_type": "comparison",
+      "category": "comparisons",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Compare Thread-based concurrency with Event-driven concurrency in server design.",
+      "expected_behavior": "Provide balanced comparative evaluation of key tradeoffs."
+    },
+    {
+      "id": "RW_144",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the main idea: Artificial intelligence enables computers to perform tasks that traditionally required human intelligence.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_145",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite this sentence to be concise and formal: We are writing to let you know that your application was received by us.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_146",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the trade-offs of microservices: Microservices allow independent scaling but introduce deployment complexity and network latency.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_147",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite the following code comment to be clearer: '# this loop gets items and fixes them if bad'.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_148",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the key benefit of containerization in software deployment.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_149",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite this user bug report into an engineer-ready ticket summary: 'The login button doesn't do anything when I click it on mobile'.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_150",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize why model quantization reduces inference memory footprint.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_151",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite this technical explanation so a non-technical manager can understand it easily.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_152",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary purpose of a database transaction WAL (Write-Ahead Logging).",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_153",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a sentence containing passive voice and jargon into clear active voice.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_154",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the advantage of using vector database embeddings for semantic search.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_155",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a verbose paragraph explaining garbage collection into two crisp bullet points.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_156",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the difference between data parallelism and model parallelism in multi-GPU training.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_157",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a warning message to be user-friendly: 'Fatal error 0x80004005 null pointer exception'.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_158",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize how attention weights enable long-range contextual dependencies in transformers.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_159",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a description of REST endpoints into a structured Markdown API table.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_160",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the main causes of memory leaks in long-running Python applications.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_161",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite a feature proposal to highlight key user benefits first.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_162",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize how continuous integration speeds up software release cycles.",
+      "expected_behavior": "Compress or rephrase while retaining essential semantic meaning."
+    },
+    {
+      "id": "RW_163",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Hello! How are you doing today?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_164",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you help me write a quick Python script for file renaming?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_165",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "I need advice on starting a career in software development.",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_166",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are some recommended productivity techniques for software engineers?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_167",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Could you explain a complex concept in simple terms?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_168",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "I'm feeling overwhelmed with learning deep learning math. Any tips?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_169",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is your favorite technical topic to discuss?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_170",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How can I structure my daily routine for better focus when coding?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_171",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are common pitfalls to avoid when starting a technical project?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_172",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you give me a motivational tip for debugging stubborn errors?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_173",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What makes a clean API design stand out?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_174",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do you approach learning a new programming language quickly?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_175",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the best way to handle technical disagreements in a team?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_176",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you suggest good resources for mastering algorithm design?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_177",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do I explain technical debt to non-technical stakeholders?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_178",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are effective ways to conduct peer code reviews?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_179",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do you stay updated with fast-moving AI research papers?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_180",
+      "task_type": "conversational",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What advice would you give to a junior developer writing their first microservice?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_181",
+      "task_type": "conversational",
+      "category": "conversational_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How can I improve my problem-solving speed during coding interviews?",
+      "expected_behavior": "Engage in natural, helpful, and courteous conversational dialogue."
+    },
+    {
+      "id": "RW_182",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What will software engineering look like in 2030 with advanced AI coding agents?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_183",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If you were designing a resilient distributed system from scratch, what 3 principles would you prioritize?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_184",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How might quantum computing impact modern data security over the next two decades?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_185",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Describe a creative solution to solve data center energy consumption during peak AI training loads.",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_186",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are the key trade-offs between open-weight AI models and proprietary cloud API models?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_187",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How can educational systems adapt to prepare students for an AI-augmented workplace?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_188",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What architecture would you design for real-time multilingual speech translation on edge devices?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_189",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How should software engineers balance rapid feature delivery with technical debt accumulation?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_190",
+      "task_type": "open_ended",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What role will autonomous AI agents play in future cybersecurity defense and attack scenarios?",
+      "expected_behavior": "Provide thoughtful, nuanced, open-ended insights."
+    },
+    {
+      "id": "RW_191",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_001",
+      "turn": 1,
+      "prompt": "What is a Python decorator?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_192",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_002",
+      "turn": 1,
+      "prompt": "What is learning rate in machine learning?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_193",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_003",
+      "turn": 1,
+      "prompt": "What is database normalization?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_194",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_004",
+      "turn": 1,
+      "prompt": "What is the DOM in web development?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_195",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_005",
+      "turn": 1,
+      "prompt": "My Python process ran out of memory.",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_196",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_006",
+      "turn": 1,
+      "prompt": "What is a load balancer?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_197",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_007",
+      "turn": 1,
+      "prompt": "What is DNS resolution?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_198",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_008",
+      "turn": 1,
+      "prompt": "How do I undo the last commit in Git?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_199",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_009",
+      "turn": 1,
+      "prompt": "What is SQL Injection?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_200",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_010",
+      "turn": 1,
+      "prompt": "What is a Docker image vs container?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_201",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_011",
+      "turn": 1,
+      "prompt": "What is virtual memory?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_202",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_012",
+      "turn": 1,
+      "prompt": "Explain the underlying storage mechanism of a key-value hash table data structure.",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_203",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_013",
+      "turn": 1,
+      "prompt": "What is Serverless computing?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_204",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_014",
+      "turn": 1,
+      "prompt": "What is unit testing vs integration testing?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_205",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_015",
+      "turn": 1,
+      "prompt": "What is Quicksort algorithm step-by-step?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_206",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_016",
+      "turn": 1,
+      "prompt": "What is HTTP GET vs POST?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_207",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_017",
+      "turn": 1,
+      "prompt": "What is self-attention in Transformers?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_208",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_018",
+      "turn": 1,
+      "prompt": "What is asyncio in Python?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_209",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_019",
+      "turn": 1,
+      "prompt": "What is Kubernetes?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_210",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_020",
+      "turn": 1,
+      "prompt": "What is Few-Shot prompting?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_211",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_021",
+      "turn": 1,
+      "prompt": "How do I merge two dataframes in Pandas?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_212",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_022",
+      "turn": 1,
+      "prompt": "What is a mutex lock?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_213",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_023",
+      "turn": 1,
+      "prompt": "What is state in React?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_214",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_024",
+      "turn": 1,
+      "prompt": "What is Cache-Aside strategy?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_215",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_025",
+      "turn": 1,
+      "prompt": "What is lexical analysis in compilers?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_216",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_026",
+      "turn": 1,
+      "prompt": "How do I check system CPU and memory usage in Linux?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_217",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_027",
+      "turn": 1,
+      "prompt": "What is hallucination in Large Language Models?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_218",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_028",
+      "turn": 1,
+      "prompt": "What is a dead letter queue?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_219",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_029",
+      "turn": 1,
+      "prompt": "What is MapReduce?",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    },
+    {
+      "id": "RW_220",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_030",
+      "turn": 1,
+      "prompt": "My Wi-Fi keeps disconnecting intermittently.",
+      "expected_behavior": "Maintain context retention and topic continuity across turns."
+    }
+  ],
+  "multi_turn_dialogues": [
+    {
+      "conversation_id": "CONV_001",
+      "topic": "CS / Programming",
+      "turns": [
+        {
+          "id": "RW_MT_01_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_001",
+          "turn": 1,
+          "prompt": "What is a Python decorator?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_01_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_001",
+          "turn": 2,
+          "prompt": "Can you show a simple code example of that?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_01_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_001",
+          "turn": 3,
+          "prompt": "How do I pass arguments to it?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_01_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_001",
+          "turn": 4,
+          "prompt": "What happens if I apply multiple decorators to one function?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_002",
+      "topic": "AI / ML Training",
+      "turns": [
+        {
+          "id": "RW_MT_02_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_002",
+          "turn": 1,
+          "prompt": "What is learning rate in machine learning?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_02_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_002",
+          "turn": 2,
+          "prompt": "What happens if it's set too high?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_02_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_002",
+          "turn": 3,
+          "prompt": "How does learning rate decay help?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_02_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_002",
+          "turn": 4,
+          "prompt": "Is Adam optimizer better than SGD for sparse gradients?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_003",
+      "topic": "Database Design",
+      "turns": [
+        {
+          "id": "RW_MT_03_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_003",
+          "turn": 1,
+          "prompt": "What is database normalization?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_03_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_003",
+          "turn": 2,
+          "prompt": "Explain Third Normal Form (3NF).",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_03_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_003",
+          "turn": 3,
+          "prompt": "When should I denormalize a database?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_03_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_003",
+          "turn": 4,
+          "prompt": "Does denormalization improve read query performance?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_004",
+      "topic": "Web Development",
+      "turns": [
+        {
+          "id": "RW_MT_04_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_004",
+          "turn": 1,
+          "prompt": "What is the DOM in web development?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_04_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_004",
+          "turn": 2,
+          "prompt": "How does the Virtual DOM work in React?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_04_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_004",
+          "turn": 3,
+          "prompt": "Why is updating Virtual DOM faster than real DOM?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_04_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_004",
+          "turn": 4,
+          "prompt": "What are key props and why are they required?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_005",
+      "topic": "Troubleshooting",
+      "turns": [
+        {
+          "id": "RW_MT_05_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_005",
+          "turn": 1,
+          "prompt": "My Python process ran out of memory.",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_05_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_005",
+          "turn": 2,
+          "prompt": "What tools can I use to profile memory usage?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_05_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_005",
+          "turn": 3,
+          "prompt": "How do I find memory leaks caused by circular references?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_05_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_005",
+          "turn": 4,
+          "prompt": "Will calling gc.collect() fix it immediately?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_006",
+      "topic": "System Architecture",
+      "turns": [
+        {
+          "id": "RW_MT_06_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_006",
+          "turn": 1,
+          "prompt": "What is a load balancer?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_06_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_006",
+          "turn": 2,
+          "prompt": "What is the difference between Round Robin and Least Connections algorithms?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_06_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_006",
+          "turn": 3,
+          "prompt": "How does sticky session persistence work?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_06_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_006",
+          "turn": 4,
+          "prompt": "What happens when one backend node fails?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_007",
+      "topic": "Networking",
+      "turns": [
+        {
+          "id": "RW_MT_07_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_007",
+          "turn": 1,
+          "prompt": "What is DNS resolution?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_07_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_007",
+          "turn": 2,
+          "prompt": "What is the difference between A record and CNAME record?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_07_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_007",
+          "turn": 3,
+          "prompt": "Why does DNS propagation take time?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_07_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_007",
+          "turn": 4,
+          "prompt": "How does local DNS caching speed up requests?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_008",
+      "topic": "Git Version Control",
+      "turns": [
+        {
+          "id": "RW_MT_08_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_008",
+          "turn": 1,
+          "prompt": "How do I undo the last commit in Git?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_08_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_008",
+          "turn": 2,
+          "prompt": "What is the difference between soft reset and hard reset?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_08_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_008",
+          "turn": 3,
+          "prompt": "Can I recover lost commits after a hard reset?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_08_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_008",
+          "turn": 4,
+          "prompt": "What does git reflog do?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_009",
+      "topic": "Security",
+      "turns": [
+        {
+          "id": "RW_MT_09_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_009",
+          "turn": 1,
+          "prompt": "What is SQL Injection?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_09_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_009",
+          "turn": 2,
+          "prompt": "How do prepared statements prevent it?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_09_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_009",
+          "turn": 3,
+          "prompt": "Are ORMs immune to SQL injection?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_09_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_009",
+          "turn": 4,
+          "prompt": "What other precautions should be taken?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_010",
+      "topic": "Docker Containers",
+      "turns": [
+        {
+          "id": "RW_MT_10_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_010",
+          "turn": 1,
+          "prompt": "What is a Docker image vs container?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_10_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_010",
+          "turn": 2,
+          "prompt": "How do I optimize Dockerfile build layer caching?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_10_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_010",
+          "turn": 3,
+          "prompt": "Why should I use multi-stage builds?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_10_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_010",
+          "turn": 4,
+          "prompt": "How do I pass environment variables securely?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_011",
+      "topic": "Operating Systems",
+      "turns": [
+        {
+          "id": "RW_MT_11_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_011",
+          "turn": 1,
+          "prompt": "What is virtual memory?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_11_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_011",
+          "turn": 2,
+          "prompt": "Explain page faulting.",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_11_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_011",
+          "turn": 3,
+          "prompt": "What is thrashing in OS memory management?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_11_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_011",
+          "turn": 4,
+          "prompt": "How does swap space help when RAM is full?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_012",
+      "topic": "Data Structures",
+      "turns": [
+        {
+          "id": "RW_MT_12_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_012",
+          "turn": 1,
+          "prompt": "Explain the underlying storage mechanism of a key-value hash table data structure.",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_12_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_012",
+          "turn": 2,
+          "prompt": "How does it handle key collisions?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_12_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_012",
+          "turn": 3,
+          "prompt": "What is the worst-case time complexity of hash lookup?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_12_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_012",
+          "turn": 4,
+          "prompt": "When should I use a balanced binary tree instead?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_013",
+      "topic": "Cloud Computing",
+      "turns": [
+        {
+          "id": "RW_MT_13_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_013",
+          "turn": 1,
+          "prompt": "What is Serverless computing?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_13_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_013",
+          "turn": 2,
+          "prompt": "What is a cold start in AWS Lambda?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_13_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_013",
+          "turn": 3,
+          "prompt": "How can I minimize cold start latency?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_13_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_013",
+          "turn": 4,
+          "prompt": "Is serverless cheaper for 24/7 steady workloads?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_014",
+      "topic": "Software Testing",
+      "turns": [
+        {
+          "id": "RW_MT_14_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_014",
+          "turn": 1,
+          "prompt": "What is unit testing vs integration testing?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_14_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_014",
+          "turn": 2,
+          "prompt": "What is mocking in unit tests?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_14_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_014",
+          "turn": 3,
+          "prompt": "Should I mock external API calls in unit tests?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_14_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_014",
+          "turn": 4,
+          "prompt": "What is code coverage and what is a good target percentage?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_015",
+      "topic": "Algorithms",
+      "turns": [
+        {
+          "id": "RW_MT_15_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_015",
+          "turn": 1,
+          "prompt": "What is Quicksort algorithm step-by-step?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_15_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_015",
+          "turn": 2,
+          "prompt": "What is its worst-case time complexity?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_15_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_015",
+          "turn": 3,
+          "prompt": "How do I pick a good pivot element?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_15_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_015",
+          "turn": 4,
+          "prompt": "Why is Quicksort preferred over Mergesort in-place?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_016",
+      "topic": "REST APIs",
+      "turns": [
+        {
+          "id": "RW_MT_16_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_016",
+          "turn": 1,
+          "prompt": "What is HTTP GET vs POST?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_16_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_016",
+          "turn": 2,
+          "prompt": "Should GET requests be idempotent?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_16_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_016",
+          "turn": 3,
+          "prompt": "What HTTP status code should be returned for validation error?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_16_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_016",
+          "turn": 4,
+          "prompt": "What is the difference between 401 Unauthorized and 403 Forbidden?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_017",
+      "topic": "Deep Learning Architecture",
+      "turns": [
+        {
+          "id": "RW_MT_17_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_017",
+          "turn": 1,
+          "prompt": "What is self-attention in Transformers?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_17_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_017",
+          "turn": 2,
+          "prompt": "Why is computational complexity quadratic with sequence length?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_17_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_017",
+          "turn": 3,
+          "prompt": "What is FlashAttention and how does it optimize memory?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_17_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_017",
+          "turn": 4,
+          "prompt": "Does FlashAttention change mathematical output?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_018",
+      "topic": "Python Async",
+      "turns": [
+        {
+          "id": "RW_MT_18_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_018",
+          "turn": 1,
+          "prompt": "What is asyncio in Python?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_18_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_018",
+          "turn": 2,
+          "prompt": "What is the difference between async def and normal def?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_18_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_018",
+          "turn": 3,
+          "prompt": "What happens if I call CPU-bound code inside an async event loop?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_18_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_018",
+          "turn": 4,
+          "prompt": "How do I run CPU-bound work concurrently in asyncio?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_019",
+      "topic": "DevOps / Microservices",
+      "turns": [
+        {
+          "id": "RW_MT_19_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_019",
+          "turn": 1,
+          "prompt": "What is Kubernetes?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_19_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_019",
+          "turn": 2,
+          "prompt": "What is a Pod in Kubernetes?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_19_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_019",
+          "turn": 3,
+          "prompt": "How does a Deployment manage Pod replicas?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_19_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_019",
+          "turn": 4,
+          "prompt": "What is an Ingress controller?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_020",
+      "topic": "AI Prompt Engineering",
+      "turns": [
+        {
+          "id": "RW_MT_20_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_020",
+          "turn": 1,
+          "prompt": "What is Few-Shot prompting?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_20_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_020",
+          "turn": 2,
+          "prompt": "How does Chain-of-Thought prompting improve reasoning?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_20_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_020",
+          "turn": 3,
+          "prompt": "Does adding system instructions alter model behavior?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_20_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_020",
+          "turn": 4,
+          "prompt": "How do I prevent prompt injection attacks?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_021",
+      "topic": "Data Science / Pandas",
+      "turns": [
+        {
+          "id": "RW_MT_21_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_021",
+          "turn": 1,
+          "prompt": "How do I merge two dataframes in Pandas?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_21_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_021",
+          "turn": 2,
+          "prompt": "What is the difference between inner join and left join?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_21_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_021",
+          "turn": 3,
+          "prompt": "How do I handle missing NaN values after joining?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_21_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_021",
+          "turn": 4,
+          "prompt": "Is query() faster than boolean indexing in Pandas?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_022",
+      "topic": "Concurrency",
+      "turns": [
+        {
+          "id": "RW_MT_22_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_022",
+          "turn": 1,
+          "prompt": "What is a mutex lock?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_22_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_022",
+          "turn": 2,
+          "prompt": "What is a deadlock and how to prevent it?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_22_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_022",
+          "turn": 3,
+          "prompt": "What is a race condition?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_22_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_022",
+          "turn": 4,
+          "prompt": "How does atomic compare-and-swap work?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_023",
+      "topic": "Frontend Frameworks",
+      "turns": [
+        {
+          "id": "RW_MT_23_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_023",
+          "turn": 1,
+          "prompt": "What is state in React?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_23_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_023",
+          "turn": 2,
+          "prompt": "Why shouldn't I mutate state directly?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_23_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_023",
+          "turn": 3,
+          "prompt": "What is the useEffect hook used for?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_23_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_023",
+          "turn": 4,
+          "prompt": "How do I prevent infinite re-render loops in useEffect?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_024",
+      "topic": "Caching Strategies",
+      "turns": [
+        {
+          "id": "RW_MT_24_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_024",
+          "turn": 1,
+          "prompt": "What is Cache-Aside strategy?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_24_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_024",
+          "turn": 2,
+          "prompt": "What is Write-Through vs Write-Back caching?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_24_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_024",
+          "turn": 3,
+          "prompt": "How do I handle cache invalidation on database updates?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_24_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_024",
+          "turn": 4,
+          "prompt": "What is cache stampede and how to mitigate it?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_025",
+      "topic": "Compiler Construction",
+      "turns": [
+        {
+          "id": "RW_MT_25_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_025",
+          "turn": 1,
+          "prompt": "What is lexical analysis in compilers?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_25_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_025",
+          "turn": 2,
+          "prompt": "What is an Abstract Syntax Tree (AST)?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_25_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_025",
+          "turn": 3,
+          "prompt": "What is the role of the intermediate representation (IR)?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_25_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_025",
+          "turn": 4,
+          "prompt": "How does dead code elimination optimization work?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_026",
+      "topic": "Linux Administration",
+      "turns": [
+        {
+          "id": "RW_MT_26_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_026",
+          "turn": 1,
+          "prompt": "How do I check system CPU and memory usage in Linux?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_26_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_026",
+          "turn": 2,
+          "prompt": "What is the difference between top and htop?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_26_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_026",
+          "turn": 3,
+          "prompt": "How do I find processes using port 8080?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_26_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_026",
+          "turn": 4,
+          "prompt": "How do I kill a process gracefully using signals?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_027",
+      "topic": "AI Ethics & Safety",
+      "turns": [
+        {
+          "id": "RW_MT_27_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_027",
+          "turn": 1,
+          "prompt": "What is hallucination in Large Language Models?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_27_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_027",
+          "turn": 2,
+          "prompt": "How does RAG reduce model hallucination?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_27_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_027",
+          "turn": 3,
+          "prompt": "What is RLHF and why is it used?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_27_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_027",
+          "turn": 4,
+          "prompt": "Can alignment training prevent all adversarial jailbreaks?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_028",
+      "topic": "Message Queues",
+      "turns": [
+        {
+          "id": "RW_MT_28_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_028",
+          "turn": 1,
+          "prompt": "What is a dead letter queue?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_28_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_028",
+          "turn": 2,
+          "prompt": "Why do message processing retries need exponential backoff?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_28_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_028",
+          "turn": 3,
+          "prompt": "What is at-least-once vs exactly-once delivery?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_28_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_028",
+          "turn": 4,
+          "prompt": "How do consumer groups handle partition rebalancing?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_029",
+      "topic": "Big Data",
+      "turns": [
+        {
+          "id": "RW_MT_29_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_029",
+          "turn": 1,
+          "prompt": "What is MapReduce?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_29_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_029",
+          "turn": 2,
+          "prompt": "Why is Apache Spark faster than Hadoop MapReduce?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_29_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_029",
+          "turn": 3,
+          "prompt": "What is an RDD in Spark?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_29_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_029",
+          "turn": 4,
+          "prompt": "How do Spark Broadcast variables optimize joins?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_030",
+      "topic": "Everyday Technical Support",
+      "turns": [
+        {
+          "id": "RW_MT_30_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_030",
+          "turn": 1,
+          "prompt": "My Wi-Fi keeps disconnecting intermittently.",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_30_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_030",
+          "turn": 2,
+          "prompt": "What basic troubleshooting steps should I check first?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_30_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_030",
+          "turn": 3,
+          "prompt": "How do I check for channel interference?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        },
+        {
+          "id": "RW_MT_30_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_030",
+          "turn": 4,
+          "prompt": "Should I split 2.4GHz and 5GHz network SSIDs?",
+          "expected_behavior": "Maintain context retention and topic continuity across turns."
+        }
+      ]
+    }
+  ]
+}

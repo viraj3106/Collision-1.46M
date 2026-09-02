@@ -1,0 +1,10 @@
+{
+  "dataset": "collision_synthetic_v2.jsonl",
+  "total_records": 491,
+  "unique_response_count": 482,
+  "unique_response_ratio": 0.9817,
+  "target_passed": true,
+  "exact_duplicates": 9,
+  "domain_count": 14,
+  "category_count": 7
+}

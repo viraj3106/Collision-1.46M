@@ -1,0 +1,14 @@
+{
+  "parameters": 10282304,
+  "production_sha256_unchanged": true,
+  "zero_leakage": true,
+  "unit_tests_pass": true,
+  "best_candidate": "Model_H3_Phase37",
+  "best_candidate_score": 47.68,
+  "Model_G_score": 19.53,
+  "Model_A_score": 58.33,
+  "delta_best_vs_G": 28.15,
+  "delta_best_vs_A": -10.65,
+  "promotion_decision": "CANDIDATE_ON_HOLD",
+  "final_phase_status": "PHASE_37_CANDIDATE_ON_HOLD"
+}

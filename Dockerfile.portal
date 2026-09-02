@@ -1,0 +1,39 @@
+# Pinned base image
+FROM python:3.11-slim
+
+# Set environment paths
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root system user
+RUN groupadd -g 10001 appgroup && \
+    useradd -u 10001 -g appgroup -m -s /bin/bash appuser
+
+WORKDIR /app
+
+# Copy dependency files
+COPY requirements-release.txt /app/
+
+# Install python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir streamlit requests
+
+# Copy source tree
+COPY playground/ /app/playground/
+
+# Set permissions
+RUN chown -R appuser:appgroup /app
+
+USER appuser
+
+EXPOSE 8501
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:8501/portal/healthz || exit 1
+
+# Start Streamlit application
+CMD ["streamlit", "run", "playground/app.py", "--server.address", "0.0.0.0", "--server.port", "8501", "--server.baseUrlPath", "/portal"]

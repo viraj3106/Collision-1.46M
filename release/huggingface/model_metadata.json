@@ -1,0 +1,14 @@
+{
+  "name": "COLLISION-10M",
+  "version": "1.0.0",
+  "parameters": 10282304,
+  "architecture": "Decoder-only Transformer",
+  "layers": 6,
+  "hidden_size": 384,
+  "attention_heads": 8,
+  "context_length": 256,
+  "training_tokens": 10000384,
+  "dataset": "collision_dataset_v5_expanded",
+  "tokenizer": "Custom BPE Tokenizer",
+  "checkpoint_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+}

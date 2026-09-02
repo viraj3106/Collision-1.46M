@@ -1,0 +1,40 @@
+{
+  "candidate_name": "Model_G_Phase36",
+  "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase35\\collision_10m_candidate_f2.pt",
+  "dataset_used": "collision_dataset_v7",
+  "total_steps": 1200,
+  "learning_rate": 1.5e-05,
+  "tokens_processed": 54000,
+  "training_time_sec": 217.05,
+  "final_train_loss": 0.4001,
+  "final_train_ppl": 1.49,
+  "checkpoint_stages": {
+    "stage_25pct": {
+      "step": 300,
+      "percentage": "25%",
+      "loss": 1.5641,
+      "ppl": 4.78
+    },
+    "stage_50pct": {
+      "step": 600,
+      "percentage": "50%",
+      "loss": 0.9643,
+      "ppl": 2.62
+    },
+    "stage_75pct": {
+      "step": 900,
+      "percentage": "75%",
+      "loss": 0.5812,
+      "ppl": 1.79
+    },
+    "stage_100pct": {
+      "step": 1200,
+      "percentage": "100%",
+      "loss": 0.4001,
+      "ppl": 1.49
+    }
+  },
+  "checkpoint_path": "V:\\collision - 1M\\checkpoints\\phase36\\collision_10m_candidate_realdata.pt",
+  "sha256": "54ef9c2a14c03a489a275f6b5dee291a5f9ef01a72b0f9ddab03a5770db8ab67",
+  "parameter_count": 10282304
+}

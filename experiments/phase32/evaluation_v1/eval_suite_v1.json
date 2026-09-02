@@ -1,0 +1,242 @@
+[
+  {
+    "id": "gk_01",
+    "category": "General Knowledge",
+    "prompt": "What is the water cycle and why is it important for life on Earth?"
+  },
+  {
+    "id": "gk_02",
+    "category": "General Knowledge",
+    "prompt": "Name three major organs of the human body and their main functions."
+  },
+  {
+    "id": "gk_03",
+    "category": "General Knowledge",
+    "prompt": "Why do leaves change color in the autumn season?"
+  },
+  {
+    "id": "gk_04",
+    "category": "General Knowledge",
+    "prompt": "Describe the main difference between renewable and non-renewable energy sources."
+  },
+  {
+    "id": "cs_01",
+    "category": "Computer Science",
+    "prompt": "Explain the difference between a stack and a queue data structure."
+  },
+  {
+    "id": "cs_02",
+    "category": "Computer Science",
+    "prompt": "What is recursion in programming and when should it be used?"
+  },
+  {
+    "id": "cs_03",
+    "category": "Computer Science",
+    "prompt": "What does time complexity O(n log n) mean in algorithm analysis?"
+  },
+  {
+    "id": "cs_04",
+    "category": "Computer Science",
+    "prompt": "How does an operating system manage process scheduling?"
+  },
+  {
+    "id": "ai_01",
+    "category": "Artificial Intelligence",
+    "prompt": "What is overfitting in machine learning models and how can it be prevented?"
+  },
+  {
+    "id": "ai_02",
+    "category": "Artificial Intelligence",
+    "prompt": "Explain the key mechanism behind self-attention in transformer architectures."
+  },
+  {
+    "id": "ai_03",
+    "category": "Artificial Intelligence",
+    "prompt": "How do contrastive learning objectives differ from generative pre-training objectives?"
+  },
+  {
+    "id": "ai_04",
+    "category": "Artificial Intelligence",
+    "prompt": "Why are GPUs widely preferred over CPUs for training deep neural networks?"
+  },
+  {
+    "id": "phy_01",
+    "category": "Physics",
+    "prompt": "State Newton's second law of motion and express it mathematically."
+  },
+  {
+    "id": "phy_02",
+    "category": "Physics",
+    "prompt": "What is the law of conservation of energy?"
+  },
+  {
+    "id": "phy_03",
+    "category": "Physics",
+    "prompt": "Explain why sound waves cannot travel through a vacuum."
+  },
+  {
+    "id": "phy_04",
+    "category": "Physics",
+    "prompt": "What is thermodynamic entropy and what does the second law of thermodynamics state?"
+  },
+  {
+    "id": "math_01",
+    "category": "Mathematics",
+    "prompt": "Explain what a derivative represents in calculus with an example."
+  },
+  {
+    "id": "math_02",
+    "category": "Mathematics",
+    "prompt": "What is the Pythagorean theorem and how is it used?"
+  },
+  {
+    "id": "math_03",
+    "category": "Mathematics",
+    "prompt": "Define what a prime number is and list the first five prime numbers."
+  },
+  {
+    "id": "math_04",
+    "category": "Mathematics",
+    "prompt": "How does matrix multiplication differ from standard scalar multiplication?"
+  },
+  {
+    "id": "tech_01",
+    "category": "Technology",
+    "prompt": "How does asymmetric public-key cryptography keep internet transactions secure?"
+  },
+  {
+    "id": "tech_02",
+    "category": "Technology",
+    "prompt": "What is containerization in software deployment and why is Docker popular?"
+  },
+  {
+    "id": "tech_03",
+    "category": "Technology",
+    "prompt": "Explain the role of a RESTful API in modern client-server web applications."
+  },
+  {
+    "id": "tech_04",
+    "category": "Technology",
+    "prompt": "What is edge computing and how does it reduce network latency?"
+  },
+  {
+    "id": "sp_01",
+    "category": "Space",
+    "prompt": "How are stellar black holes formed after a massive star dies?"
+  },
+  {
+    "id": "sp_02",
+    "category": "Space",
+    "prompt": "What causes the solar wind and how does Earth's magnetosphere protect us?"
+  },
+  {
+    "id": "sp_03",
+    "category": "Space",
+    "prompt": "Explain the main goals of the James Webb Space Telescope."
+  },
+  {
+    "id": "sp_04",
+    "category": "Space",
+    "prompt": "Why is Mars the primary target for human interplanetary exploration?"
+  },
+  {
+    "id": "qa_01",
+    "category": "Question Answering",
+    "prompt": "Question: What is photosynethesis?\nAnswer:"
+  },
+  {
+    "id": "qa_02",
+    "category": "Question Answering",
+    "prompt": "Question: Who proposed the theory of general relativity?\nAnswer:"
+  },
+  {
+    "id": "qa_03",
+    "category": "Question Answering",
+    "prompt": "Question: What is the speed of light in vacuum?\nAnswer:"
+  },
+  {
+    "id": "qa_04",
+    "category": "Question Answering",
+    "prompt": "Question: What is the boiling point of water at standard atmospheric pressure?\nAnswer:"
+  },
+  {
+    "id": "exp_01",
+    "category": "Explanation",
+    "prompt": "Explain step-by-step how a compiler converts source code into machine executable binaries."
+  },
+  {
+    "id": "exp_02",
+    "category": "Explanation",
+    "prompt": "Explain how climate change impacts global sea levels."
+  },
+  {
+    "id": "exp_03",
+    "category": "Explanation",
+    "prompt": "Explain the concept of quantum superposition in simple terms."
+  },
+  {
+    "id": "exp_04",
+    "category": "Explanation",
+    "prompt": "Explain how garbage collection works in memory-managed programming languages."
+  },
+  {
+    "id": "cmp_01",
+    "category": "Completion",
+    "prompt": "Deep learning models rely heavily on large neural networks because"
+  },
+  {
+    "id": "cmp_02",
+    "category": "Completion",
+    "prompt": "The primary advantage of using version control systems like Git is"
+  },
+  {
+    "id": "cmp_03",
+    "category": "Completion",
+    "prompt": "In database design, normalization is performed in order to"
+  },
+  {
+    "id": "cmp_04",
+    "category": "Completion",
+    "prompt": "Quantum computing differs from classical computing primarily because"
+  },
+  {
+    "id": "inst_01",
+    "category": "Instruction Following",
+    "prompt": "Write a 2-sentence summary explaining why data structures matter in software engineering."
+  },
+  {
+    "id": "inst_02",
+    "category": "Instruction Following",
+    "prompt": "List exactly three benefits of unit testing in continuous integration pipelines."
+  },
+  {
+    "id": "inst_03",
+    "category": "Instruction Following",
+    "prompt": "Define the word 'algorithm' in one concise paragraph."
+  },
+  {
+    "id": "inst_04",
+    "category": "Instruction Following",
+    "prompt": "Provide a bulleted list of 3 key components of a computer CPU."
+  },
+  {
+    "id": "stress_01",
+    "category": "Stress Test - Repetition",
+    "prompt": "Describe the process of photosynthesis. Do not repeat words endlessly."
+  },
+  {
+    "id": "stress_02",
+    "category": "Stress Test - Fragmentation",
+    "prompt": "Write a complete, coherent response explaining how electricity flows in a circuit."
+  },
+  {
+    "id": "stress_03",
+    "category": "Stress Test - Topic Drift",
+    "prompt": "Answer specifically about Python programming: What are list comprehensions?"
+  },
+  {
+    "id": "stress_04",
+    "category": "Stress Test - Failure Recovery",
+    "prompt": "What happens when a program divides a number by zero?"
+  }
+]

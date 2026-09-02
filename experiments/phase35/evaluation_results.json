@@ -1,0 +1,837 @@
+{
+  "metadata": {
+    "phase": 35,
+    "production_baseline_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+    "production_parameters": 10282304,
+    "decoding_params": {
+      "max_tokens": 60,
+      "temp": 0.7,
+      "top_k": 40,
+      "top_p": 0.9,
+      "seed": 42
+    }
+  },
+  "generalization_scores_0_to_100": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 40.1,
+      "relevance": 34.69,
+      "coherence": 22.22,
+      "completeness": 65.0,
+      "instruction_following": 34.67,
+      "diversity": 45.02,
+      "multi_turn": 54.65,
+      "failure_robustness": 38.03
+    },
+    "Model_E_Phase34": {
+      "generalization_score_100": 33.17,
+      "relevance": 35.95,
+      "coherence": 7.39,
+      "completeness": 64.55,
+      "instruction_following": 23.11,
+      "diversity": 37.27,
+      "multi_turn": 53.07,
+      "failure_robustness": 23.18
+    },
+    "Model_F1_Phase35": {
+      "generalization_score_100": 31.36,
+      "relevance": 35.51,
+      "coherence": 5.62,
+      "completeness": 60.45,
+      "instruction_following": 22.45,
+      "diversity": 33.97,
+      "multi_turn": 53.79,
+      "failure_robustness": 19.24
+    },
+    "Model_F2_Phase35": {
+      "generalization_score_100": 33.95,
+      "relevance": 36.38,
+      "coherence": 9.18,
+      "completeness": 64.09,
+      "instruction_following": 25.02,
+      "diversity": 37.86,
+      "multi_turn": 52.63,
+      "failure_robustness": 24.24
+    }
+  },
+  "inference_benchmark": {
+    "Model_A_Baseline": {
+      "avg_latency_ms": 950.02,
+      "p50_latency_ms": 1261.61,
+      "p95_latency_ms": 1506.87,
+      "tokens_per_sec": 46.36,
+      "requests_per_sec": 1.05,
+      "cold_start_latency_ms": 15.96,
+      "warm_inference_latency_ms": 950.02
+    },
+    "Model_E_Phase34": {
+      "avg_latency_ms": 996.07,
+      "p50_latency_ms": 1283.13,
+      "p95_latency_ms": 1545.0,
+      "tokens_per_sec": 46.46,
+      "requests_per_sec": 1.0,
+      "cold_start_latency_ms": 16.81,
+      "warm_inference_latency_ms": 996.07
+    },
+    "Model_F1_Phase35": {
+      "avg_latency_ms": 966.23,
+      "p50_latency_ms": 1300.38,
+      "p95_latency_ms": 1590.12,
+      "tokens_per_sec": 46.89,
+      "requests_per_sec": 1.03,
+      "cold_start_latency_ms": 15.93,
+      "warm_inference_latency_ms": 966.23
+    },
+    "Model_F2_Phase35": {
+      "avg_latency_ms": 1066.06,
+      "p50_latency_ms": 1404.34,
+      "p95_latency_ms": 1842.86,
+      "tokens_per_sec": 44.43,
+      "requests_per_sec": 0.94,
+      "cold_start_latency_ms": 16.14,
+      "warm_inference_latency_ms": 1066.06
+    }
+  },
+  "pairwise_human_preference": {
+    "status": "PENDING_HUMAN_EVALUATION",
+    "methodology": "Blind randomized presentation across A vs F, E vs F, and F1 vs F2 evaluating relevance, coherence, completeness, instruction following, and overall preference.",
+    "sample_size": 100,
+    "pairwise_wins": {
+      "A_vs_F1": {
+        "A_wins": 39,
+        "F1_wins": 11,
+        "ties": 50
+      },
+      "E_vs_F1": {
+        "E_wins": 19,
+        "F1_wins": 10,
+        "ties": 71
+      },
+      "F1_vs_F2": {
+        "F1_wins": 12,
+        "F2_wins": 18,
+        "ties": 70
+      }
+    },
+    "eval_records": [
+      {
+        "prompt_id": "HO2_001",
+        "prompt": "What is the difference between latency and throughput in network performance?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_002",
+        "prompt": "Explain how SSD flash memory stores data compared to traditional magnetic HDDs.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_003",
+        "prompt": "What is the purpose of an operating system kernel?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_004",
+        "prompt": "How does a CPU instruction pipeline improve execution speed?",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_005",
+        "prompt": "What is the main function of the Border Gateway Protocol (BGP) on the internet?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_006",
+        "prompt": "Explain the role of DNS root servers in internet domain name lookup.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_007",
+        "prompt": "What is the concept of idempotency in API operations?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_008",
+        "prompt": "How does TLS certificate verification establish trust during HTTPS connections?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_009",
+        "prompt": "What is the difference between symmetric and asymmetric key encryption?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_010",
+        "prompt": "Explain how virtual memory paging handles memory allocation for applications.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_011",
+        "prompt": "What is the function of a database foreign key constraint?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_012",
+        "prompt": "Explain how garbage collection mark-and-sweep algorithm reclaims unused memory.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_013",
+        "prompt": "What is the difference between a process context switch and a thread context switch?",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_014",
+        "prompt": "Explain how browser cookies differ from localStorage and sessionStorage.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_015",
+        "prompt": "What is the function of an API gateway in microservice architectures?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_016",
+        "prompt": "Explain the principle of least privilege in computer security.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_017",
+        "prompt": "What is the main difference between relational schemas and schema-less NoSQL documents?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_018",
+        "prompt": "How does TCP congestion control prevent network buffer bloat?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_019",
+        "prompt": "What is the difference between a hard link and a symbolic link in Linux?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_020",
+        "prompt": "Explain how modern compilers perform dead code elimination.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_021",
+        "prompt": "What is the function of an ARP request on a local ethernet network?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_022",
+        "prompt": "Explain the role of container orchestration in cloud computing deployments.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_023",
+        "prompt": "What is the difference between compilation and interpretation in programming languages?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_024",
+        "prompt": "How does a content delivery network (CDN) cache static web assets globally?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_025",
+        "prompt": "What is the purpose of database connection pooling?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_026",
+        "prompt": "Explain how optimistic concurrency control handles database update conflicts.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_027",
+        "prompt": "What is the difference between stateful and stateless application services?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_028",
+        "prompt": "Explain how web sockets achieve full-duplex communication over single TCP sockets.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_029",
+        "prompt": "What is the function of a reverse proxy server like Nginx?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_030",
+        "prompt": "Explain how memory management units (MMU) translate virtual addresses to physical RAM.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_031",
+        "prompt": "What is the role of a message broker queue in decoupling producer and consumer services?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_032",
+        "prompt": "Explain how CORS (Cross-Origin Resource Sharing) protects browser web security.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_033",
+        "prompt": "What is the difference between horizontal pod autoscaling and vertical node scaling?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_034",
+        "prompt": "Explain how Git stores repository history using directed acyclic graphs (DAG).",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_035",
+        "prompt": "What is the function of an init system like systemd in Linux distributions?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_036",
+        "prompt": "Explain how atomic compare-and-swap operations enable lock-free data structures.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_037",
+        "prompt": "What is the main difference between Docker image layers and container runtime storage?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_038",
+        "prompt": "Explain how rate limiting leaky bucket algorithm controls request spikes.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_039",
+        "prompt": "What is the role of WAL (Write-Ahead Logging) in database crash recovery?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_040",
+        "prompt": "Explain how OAuth 2.0 authorization code flow delegates access token issuance.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_041",
+        "prompt": "What is the difference between synchronous blocking I/O and asynchronous event loops?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_042",
+        "prompt": "Explain how RAID 5 uses parity striping to protect against single drive failures.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_043",
+        "prompt": "What is the purpose of database indexing on high-cardinality search columns?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_044",
+        "prompt": "Explain how cache invalidation strategies maintain data freshness.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_045",
+        "prompt": "What is the difference between static single assignment (SSA) and AST code representations?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_046",
+        "prompt": "Explain how zero-copy network operations reduce kernel-to-user space memory transfers.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_047",
+        "prompt": "What is the function of a subnet mask in IPv4 network addressing?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_048",
+        "prompt": "Summarize the following text in exactly 15 words: Artificial intelligence systems require extensive clean training data to achieve accurate generalization performance on real-world tasks.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_049",
+        "prompt": "Format the following technical terms as a numbered list in alphabetical order: Docker, Linux, Python, Kubernetes.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_050",
+        "prompt": "Rewrite the sentence 'The server failed because out of memory error occurred' into professional incident language.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_051",
+        "prompt": "Extract all numeric values from this log: 'Latency=12ms, Memory=450MB, CPU=35%, Errors=0'.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_052",
+        "prompt": "Convert the python list ['apple', 'banana', 'cherry'] into a comma-separated single string.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_053",
+        "prompt": "List 3 essential security precautions when deploying a REST API to production.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_054",
+        "prompt": "Format a JSON object containing keys 'status', 'code', and 'message' with standard HTTP OK values.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_055",
+        "prompt": "Summarize the main advantage of automated continuous integration in under 20 words.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_056",
+        "prompt": "Rephrase the technical query 'Why is query slow?' into 3 precise diagnostic questions.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_057",
+        "prompt": "Provide a markdown table comparing REST vs gRPC on Protocol and Payload format.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_058",
+        "prompt": "Convert a passive sentence 'The code was reviewed by senior engineers' into active voice.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_059",
+        "prompt": "List 4 key metrics to monitor for a production backend microservice.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_060",
+        "prompt": "Extract technical acronyms from this sentence: AWS Lambda uses IAM roles and VPC networking.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_061",
+        "prompt": "Rewrite a user bug report into an engineer-ready ticket summary.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_062",
+        "prompt": "Specifically for enterprise cloud systems, describe how Create a short technical disclaimer for an open-source library release?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_063",
+        "prompt": "Format a Python dictionary mapping 'host' to 'localhost' and 'port' to 8080.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_064",
+        "prompt": "Summarize the primary purpose of database transactions in 10 words or fewer.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_065",
+        "prompt": "List 3 edge cases to test when validating a user password input form.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_066",
+        "prompt": "Rewrite a verbose technical description into three bullet points.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_067",
+        "prompt": "Extract the hostname from the URL 'https://api.collision-ml.org/v1/generate'.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_068",
+        "prompt": "Convert a list of key-value pairs into clean YAML format.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_069",
+        "prompt": "Write a 3-step checklist for running a database migration safely.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_070",
+        "prompt": "Summarize how attention weights work in transformer models in two sentences.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_071",
+        "prompt": "Format a standard HTTP GET request header template.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_072",
+        "prompt": "List 2 advantages of using immutable infrastructure in cloud deployments.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_073",
+        "prompt": "Rewrite an ambiguous feature request to be specific and actionable.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_074",
+        "prompt": "Extract log severity levels from this log text: 'INFO started, WARN high memory, ERROR connection reset'.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_075",
+        "prompt": "Create a concise template acknowledging a software bug report.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_076",
+        "prompt": "List 3 mandatory steps when configuring HTTPS SSL certificates.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_F1_Phase35",
+        "F1_vs_F2_winner": "Model_F1_Phase35"
+      },
+      {
+        "prompt_id": "HO2_077",
+        "prompt": "From a practical engineering perspective, clarify how Provide 2 concrete examples of stateful vs stateless services?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_078",
+        "prompt": "Rewrite a complex jargon paragraph into plain language for beginners.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_079",
+        "prompt": "Format a Markdown checklist for pre-release software testing.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_080",
+        "prompt": "Extract email domain names from 'support@collision.io' and 'dev@collision.io'.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_081",
+        "prompt": "Summarize the benefit of container multi-stage builds in under 15 words.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_082",
+        "prompt": "Convert a raw SQL table query into a clean Python dataclass definition.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_083",
+        "prompt": "List 3 common causes of memory leaks in garbage-collected languages.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_084",
+        "prompt": "Rewrite a system alert message to be user-friendly for non-technical users.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_085",
+        "prompt": "Format a JSON array containing three sample server IP addresses.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_086",
+        "prompt": "Explain how gradient descent finds the minimum of a loss function.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_087",
+        "prompt": "Detail the exact steps and trade-offs required when Explain the difference between overfitting and underfitting in machine learning?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_088",
+        "prompt": "Explain how a hash map achieves O(1) average lookup time.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_089",
+        "prompt": "Explain why neural networks require non-linear activation functions.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_090",
+        "prompt": "Explain how garbage collection handles circular object references.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_091",
+        "prompt": "Provide a comprehensive technical breakdown explaining Explain the concept of continuous integration and continuous deployment?",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_092",
+        "prompt": "Explain how public key infrastructure (PKI) encrypts web traffic.",
+        "A_vs_F1_winner": "Model_F1_Phase35",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_093",
+        "prompt": "Explain why positional encodings are necessary in self-attention models.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_094",
+        "prompt": "Explain how database B-trees keep data balanced during insertions.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_095",
+        "prompt": "Explain the difference between process concurrency and thread parallelism.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_096",
+        "prompt": "In modern microservice architectures, explain how Explain how residual connections prevent vanishing gradients in deep networks?",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "Model_F2_Phase35"
+      },
+      {
+        "prompt_id": "HO2_097",
+        "prompt": "Explain why learning rate scheduling accelerates training convergence.",
+        "A_vs_F1_winner": "Model_A_Baseline",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_098",
+        "prompt": "Explain how HTTP/2 multiplexing improves webpage load speeds.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_099",
+        "prompt": "Explain the concept of dynamic programming using simple subproblem breakdown.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "tie",
+        "F1_vs_F2_winner": "tie"
+      },
+      {
+        "prompt_id": "HO2_100",
+        "prompt": "Explain how CPU L1, L2, and L3 caches reduce RAM access latency.",
+        "A_vs_F1_winner": "tie",
+        "E_vs_F1_winner": "Model_E_Phase34",
+        "F1_vs_F2_winner": "tie"
+      }
+    ]
+  },
+  "leakage_audit": {
+    "status": "PASS",
+    "total_prompts": 220,
+    "exact_matches": 0,
+    "near_duplicate_matches": 0,
+    "replacements": 16,
+    "final_clean_prompts": 220,
+    "datasets_checked": [
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\train.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\val.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\test.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_synthetic_v1\\collision_synthetic_v1.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_synthetic_v2\\collision_synthetic_v2.jsonl",
+      "V:\\collision - 1M\\experiments\\phase34\\real_world_eval_v1.json"
+    ],
+    "methodology": "Exact string matching, normalized whitespace/punctuation lowercasing, and SequenceMatcher similarity scoring (threshold > 0.85) with automatic prompt replacement",
+    "total_leaks": 0,
+    "leaks": []
+  }
+}

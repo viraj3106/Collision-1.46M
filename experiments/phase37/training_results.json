@@ -1,0 +1,17 @@
+{
+  "H1_scaleup": {
+    "checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h1.pt",
+    "sha256": "76c058f248e6c8d6a8188c2c3eb256b3fda1cc468da2c3807d43e0088c8ac4a3",
+    "final_loss": 0.0532
+  },
+  "H2_dpo": {
+    "checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h2.pt",
+    "sha256": "e33697c59056206550d0ba6d845507a53566bd2accb576878f50455c3ee82caf",
+    "final_loss": 0.0434
+  },
+  "H3_combined": {
+    "checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+    "sha256": "a3dc7cca74ac0c71bc9c122be50e2ffe177a45b08e29d9a792e6a8a5d273bd5d",
+    "final_loss": 0.042
+  }
+}

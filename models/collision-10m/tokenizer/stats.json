@@ -1,0 +1,43 @@
+{
+  "training_duration_seconds": 3.059444,
+  "final_vocab_size": 890,
+  "total_merges_performed": 630,
+  "merge_step_history": [
+    {
+      "merge_step": 100,
+      "vocab_size": 360,
+      "best_pair": "117,269",
+      "frequency": 30
+    },
+    {
+      "merge_step": 200,
+      "vocab_size": 460,
+      "best_pair": "114,271",
+      "frequency": 16
+    },
+    {
+      "merge_step": 300,
+      "vocab_size": 560,
+      "best_pair": "558,121",
+      "frequency": 11
+    },
+    {
+      "merge_step": 400,
+      "vocab_size": 660,
+      "best_pair": "458,282",
+      "frequency": 9
+    },
+    {
+      "merge_step": 500,
+      "vocab_size": 760,
+      "best_pair": "758,365",
+      "frequency": 7
+    },
+    {
+      "merge_step": 600,
+      "vocab_size": 860,
+      "best_pair": "110,262",
+      "frequency": 5
+    }
+  ]
+}

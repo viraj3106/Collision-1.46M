@@ -1,0 +1,96 @@
+{
+  "generalization_scores": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 58.33,
+      "relevance": 54.11,
+      "coherence": 29.61,
+      "completeness": 100.0,
+      "instruction_following": 47.51,
+      "diversity": 66.23,
+      "multi_turn": 55.38,
+      "failure_robustness": 72.95
+    },
+    "Model_F2_Phase35": {
+      "generalization_score_100": 16.03,
+      "relevance": 8.34,
+      "coherence": 2.97,
+      "completeness": 16.0,
+      "instruction_following": 7.14,
+      "diversity": 10.14,
+      "multi_turn": 54.11,
+      "failure_robustness": 38.76
+    },
+    "Model_G_Phase36": {
+      "generalization_score_100": 19.53,
+      "relevance": 13.38,
+      "coherence": 3.87,
+      "completeness": 26.29,
+      "instruction_following": 9.54,
+      "diversity": 15.87,
+      "multi_turn": 50.58,
+      "failure_robustness": 40.57
+    },
+    "Model_H1_Phase37": {
+      "generalization_score_100": 24.8,
+      "relevance": 19.46,
+      "coherence": 5.89,
+      "completeness": 37.14,
+      "instruction_following": 15.06,
+      "diversity": 22.6,
+      "multi_turn": 52.2,
+      "failure_robustness": 44.19
+    },
+    "Model_H2_Phase37": {
+      "generalization_score_100": 31.34,
+      "relevance": 28.41,
+      "coherence": 7.07,
+      "completeness": 54.29,
+      "instruction_following": 20.2,
+      "diversity": 32.39,
+      "multi_turn": 51.42,
+      "failure_robustness": 46.86
+    },
+    "Model_H3_Phase37": {
+      "generalization_score_100": 47.68,
+      "relevance": 47.19,
+      "coherence": 12.6,
+      "completeness": 89.71,
+      "instruction_following": 35.86,
+      "diversity": 54.17,
+      "multi_turn": 56.37,
+      "failure_robustness": 58.38
+    }
+  },
+  "inference_benchmark": {
+    "Model_A_Baseline": {
+      "avg_latency_ms": 2115.31,
+      "tokens_per_sec": 28.59,
+      "requests_per_sec": 0.47
+    },
+    "Model_F2_Phase35": {
+      "avg_latency_ms": 92.29,
+      "tokens_per_sec": 35.16,
+      "requests_per_sec": 10.83
+    },
+    "Model_G_Phase36": {
+      "avg_latency_ms": 599.42,
+      "tokens_per_sec": 33.89,
+      "requests_per_sec": 1.67
+    },
+    "Model_H1_Phase37": {
+      "avg_latency_ms": 668.72,
+      "tokens_per_sec": 29.71,
+      "requests_per_sec": 1.5
+    },
+    "Model_H2_Phase37": {
+      "avg_latency_ms": 1016.41,
+      "tokens_per_sec": 30.98,
+      "requests_per_sec": 0.98
+    },
+    "Model_H3_Phase37": {
+      "avg_latency_ms": 1625.09,
+      "tokens_per_sec": 26.02,
+      "requests_per_sec": 0.62
+    }
+  }
+}

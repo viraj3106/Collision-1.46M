@@ -1,0 +1,12 @@
+{
+  "vocab_size": 8000,
+  "max_seq_len": 256,
+  "d_model": 384,
+  "n_layer": 6,
+  "n_head": 8,
+  "d_ff": 768,
+  "dropout": 0.1,
+  "tie_embeddings": true,
+  "normalization": "layer_norm",
+  "positional_encoding": "absolute_learned"
+}

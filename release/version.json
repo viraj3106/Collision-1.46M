@@ -1,0 +1,7 @@
+{
+  "name": "COLLISION-10M",
+  "version": "1.0.0",
+  "model_type": "base_language_model",
+  "parameters": 10282304,
+  "context_length": 256
+}

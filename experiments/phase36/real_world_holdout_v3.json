@@ -1,0 +1,3961 @@
+{
+  "metadata": {
+    "name": "real_world_holdout_v3",
+    "total_prompts": 251,
+    "single_turn_prompts": 210,
+    "multi_turn_conversations": 40,
+    "task_mix_distribution": {
+      "natural_qa": "25%",
+      "instruction_following": "20%",
+      "explanation": "15%",
+      "troubleshooting": "10%",
+      "conversational_followup": "10%",
+      "reasoning": "10%",
+      "summarization_rewrite": "5%",
+      "everyday_knowledge": "5%"
+    }
+  },
+  "prompts": [
+    {
+      "id": "HO3_001",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the difference between synchronous blocking I/O and non-blocking asynchronous event loops?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_002",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Explain how memory management units (MMU) translate virtual memory addresses to physical RAM?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_003",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What is the primary function of a database foreign key constraint?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_004",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does a CPU instruction pipeline improve overall execution throughput?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_005",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of the Border Gateway Protocol (BGP) in autonomous internet routing?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_006",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the role of DNS root name servers during global domain name resolution.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_007",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the concept of idempotency in RESTful web API methods?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_008",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TLS 1.3 handshake establish encrypted transport security?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_009",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What is the difference between symmetric and asymmetric key cryptography?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_010",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Explain how virtual memory paging handles demand allocation for applications?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_011",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of a composite primary key in relational database schemas?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_012",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how garbage collection mark-and-sweep algorithm identifies unreferenced objects.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_013",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the difference between process context switching and thread context switching?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_014",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how browser HTTP-only cookies prevent client-side JavaScript access.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_015",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What is the function of an API gateway in microservice service mesh architectures?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_016",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the principle of least privilege in cloud access control policies.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_017",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between relational tables and document-oriented collections?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_018",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP window scaling prevent network throughput bottlenecks?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_019",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between a hard link and a symbolic soft link in Linux file systems?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_020",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how modern compiler static single assignment (SSA) forms simplify optimization.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_021",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of an Address Resolution Protocol (ARP) request on local subnets?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_022",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the role of container runtime interfaces (CRI) in Kubernetes nodes.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_023",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_024",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does a content delivery network (CDN) optimize edge caching latency?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_025",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the purpose of database connection pool sizing in high-concurrency backends?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_026",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain how optimistic concurrency control handles database update conflicts using row versions?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_027",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between stateful microservices and stateless serverless functions?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_028",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how WebSocket protocols upgrade standard HTTP connections to full-duplex streams.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_029",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how What is the function of a reverse proxy server like Nginx or HAProxy?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_030",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hardware page tables map virtual pages to physical frame numbers.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_031",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the role of message queue dead-letter exchanges in event-driven systems?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_032",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how Cross-Origin Resource Sharing (CORS) preflight requests protect web APIs.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_033",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the difference between horizontal pod autoscaling and vertical node scaling?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_034",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how Git uses SHA-1 content hashing to construct directed acyclic graphs.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_035",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of systemd init process in modern Linux distributions?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_036",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Explain how atomic compare-and-swap (CAS) instructions enable lock-free data structures?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_037",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between Docker image layers and container copy-on-write storage?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_038",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how token bucket rate limiting algorithms handle bursty request traffic.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_039",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the role of Write-Ahead Logging (WAL) in maintaining ACID database durability?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_040",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how OAuth 2.0 PKCE flow secures public mobile client authorizations.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_041",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between reactive event loops and worker thread pools?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_042",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how RAID 6 double parity protects storage arrays against two simultaneous drive failures.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_043",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the purpose of database covering indexes in eliminating heap table lookups?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_044",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how cache invalidation strategies maintain data consistency across nodes.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_045",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between Abstract Syntax Trees (AST) and bytecode intermediate representations?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_046",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how zero-copy socket transfers bypass CPU buffer copying during file streaming.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_047",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of CIDR notation in IPv4 subnetwork masking?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_048",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how vector database HNSW indexes enable fast nearest-neighbor semantic search.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_049",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the difference between monorepo and multi-repo software project organizations?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_050",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how modern garbage collectors perform concurrent low-pause compaction.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_051",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the function of a dead-lock detection graph in relational database engines?",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_052",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how gRPC HTTP/2 multiplexing reduces persistent connection overhead.",
+      "expected_behavior": "Deliver an accurate, clear, and direct technical explanation."
+    },
+    {
+      "id": "HO3_053",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in exactly 15 words: Deep learning models require diverse training data to generalize accurately to unseen real-world distribution shifts.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_054",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Format the following technical terms as a numbered list in alphabetical order: PyTorch, Docker, Ansible, Kubernetes?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_055",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite the sentence 'The application crashed because database connection timed out' into professional incident language.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_056",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Extract all numeric values from this log: 'Latency=18ms, Memory=512MB, CPU=42%, Errors=0'?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_057",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Convert the python list ['python', 'golang', 'rust'] into a comma-separated single string?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_058",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how List 4 essential security precautions when deploying a REST API to production?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_059",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Format a JSON object containing keys 'status', 'code', and 'message' with standard HTTP OK values?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_060",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Summarize the main advantage of automated continuous integration in under 20 words?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_061",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Rephrase the technical query 'Why is database query slow?' into 3 precise diagnostic questions?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_062",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Provide a markdown table comparing REST vs gRPC on Protocol and Payload format?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_063",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Convert a passive sentence 'The pull request was reviewed by senior engineers' into active voice?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_064",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when List 4 key metrics to monitor for a production backend microservice?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_065",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Extract technical acronyms from this sentence: AWS EC2 instances use VPC networking and IAM security roles.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_066",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Rewrite a user bug report into an engineer-ready ticket summary?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_067",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Create a short technical disclaimer for an open-source software library release?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_068",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Format a Python dictionary mapping 'host' to 'localhost' and 'port' to 8080?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_069",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Summarize the primary purpose of database transactions in 10 words or fewer?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_070",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when List 3 edge cases to test when validating a user password input form?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_071",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Rewrite a verbose technical description into three bullet points?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_072",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Extract the hostname from the URL 'https://api.collision-ml.org/v1/generate'?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_073",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Convert a list of key-value pairs into clean YAML format?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_074",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Write a 3-step checklist for running a database migration safely?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_075",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Summarize how attention weights work in transformer models in two sentences?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_076",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Format a standard HTTP GET request header template?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_077",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how List 2 advantages of using immutable infrastructure in cloud deployments?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_078",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Rewrite an ambiguous feature request to be specific and actionable?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_079",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Extract log severity levels from this log text: 'INFO started, WARN high memory, ERROR connection reset'?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_080",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Create a concise template acknowledging a software bug report?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_081",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding List 3 mandatory steps when configuring HTTPS SSL certificates?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_082",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Provide 2 concrete examples of stateful vs stateless services?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_083",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Rewrite a complex jargon paragraph into plain language for beginners?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_084",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Format a Markdown checklist for pre-release software testing?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_085",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Extract email domain names from 'support@collision.io' and 'dev@collision.io'?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_086",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Summarize the benefit of container multi-stage builds in under 15 words?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_087",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Convert a raw SQL table query into a clean Python dataclass definition?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_088",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how List 3 common causes of memory leaks in garbage-collected languages?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_089",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Rewrite a system alert message to be user-friendly for non-technical users?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_090",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Format a JSON array containing three sample server IP addresses?",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_091",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a 3-bullet summary of key microservice architectural trade-offs.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_092",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Convert a technical error message into a user-facing notification sentence.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_093",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Extract all function parameter names from 'def train_model(learning_rate, batch_size, num_epochs):'.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_094",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "List 4 core principles of modern DevOps culture.",
+      "expected_behavior": "Strictly follow formatting, length, and structural constraints."
+    },
+    {
+      "id": "HO3_095",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how gradient descent optimizes neural network parameters during training.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_096",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between overfitting and underfitting in supervised machine learning.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_097",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how a hash table achieves constant time O(1) average lookup complexity.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_098",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain why deep neural networks require non-linear activation functions?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_099",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Explain how garbage collection handles circular object reference graphs?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_100",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Explain the concept of continuous integration and continuous deployment (CI/CD)?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_101",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how public key cryptography enables secure end-to-end communication.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_102",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why self-attention mechanisms in transformers require positional encodings.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_103",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how B-tree indexes maintain balanced page structures during insertions.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_104",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Explain the difference between process concurrency and thread parallelism?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_105",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Explain how residual skip connections prevent vanishing gradients in deep networks?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_106",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why learning rate warmup stabilizes early transformer optimization.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_107",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how HTTP/2 multiplexing avoids head-of-line blocking.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_108",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain the concept of dynamic programming using subproblem memoization?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_109",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Explain how CPU L1, L2, and L3 caches minimize main RAM access latency?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_110",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the difference between supervised fine-tuning and direct preference optimization.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_111",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how Docker cgroups and namespaces isolate Linux container workloads.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_112",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the bias-variance tradeoff in machine learning model generalization.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_113",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how cross-entropy loss guides gradient updates during classification.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_114",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Explain the difference between stack memory and heap memory allocation?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_115",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how batch normalization reduces internal covariate shift.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_116",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how load balancers distribute incoming traffic using consistent hashing.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_117",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the mechanism of multi-head attention in Transformer encoders.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_118",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Explain how deadlocks occur in multi-threaded code and how to avoid them?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_119",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain the token bucket algorithm for API rate limiting.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_120",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how graph neural networks aggregate message passing across nodes.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_121",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Explain the difference between L1 lasso and L2 ridge regularization penalties?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_122",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain how autoencoders compress input vectors into a low-dimensional bottleneck?",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_123",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how FlashAttention optimizes GPU memory IO during self-attention.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_124",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why GPU matrix multiplication is faster than CPU execution.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_125",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how cosine similarity measures distance in high-dimensional embedding spaces.",
+      "expected_behavior": "Provide an intuitive, clear, step-by-step technical explanation."
+    },
+    {
+      "id": "HO3_126",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python application crashed with 'MemoryError'. How do I profile memory leaks?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_127",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My SQL database query takes 20 seconds to execute. What optimization steps should I follow?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_128",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits immediately with code 137. How do I inspect OOM killer logs?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_129",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My HTTP requests are returning 504 Gateway Timeout. Which microservice component is failing?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_130",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My PyTorch model loss is returning NaN values during training. How do I debug gradient explosion?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_131",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My web application CPU usage is at 100% under light traffic. How do I capture a thread dump?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_132",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Git merge has merge conflict markers in 5 files. What is the clean resolution workflow?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_133",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My SSL certificate expired and HTTPS calls are rejected. How do I renew certs using Let's Encrypt?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_134",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My multithreaded C++ program hangs indefinitely. How do I detect lock dependency deadlocks?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_135",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My database reports 'Too many connections' error. How do I configure connection pool limits?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_136",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My frontend AJAX calls fail with CORS error in Chrome console. How do I set Access-Control-Allow-Origin?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_137",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Linux root partition is 100% full. How do I locate and remove orphan log files safely?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_138",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My ML model achieves 99% train accuracy but 60% validation accuracy. How do I fix overfitting?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_139",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My API requests return HTTP 401 Unauthorized despite passing Bearer token. What should I inspect?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_140",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My async Python event loop is blocked by CPU calculations. How do I offload work to ProcessPoolExecutor?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_141",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Kubernetes Pod status is 'CrashLoopBackOff'. What kubectl commands reveal root cause?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_142",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My database transaction aborts due to serialization failure. How do I implement application retry logic?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_143",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My web service latency increased from 50ms to 3000ms. What initial telemetry should I inspect?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_144",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Adam optimizer loss is oscillating wildy. How should I adjust learning rate and decay?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_145",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Redis instance ran out of memory and is evicting keys. How do I configure maxmemory-policy?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_146",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My build pipeline fails with 'JavaScript heap out of memory'. How do I increase Node.js memory limit?",
+      "expected_behavior": "Deliver practical, step-by-step diagnostic and troubleshooting guidance."
+    },
+    {
+      "id": "HO3_147",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Could you clarify what you meant by database index cardinality?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_148",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Can you show a short code snippet demonstrating that Python decorator example?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_149",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What would happen if I increase the learning rate by a factor of 10?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_150",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Is there a simpler way to explain this without using math equations?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_151",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding How does that compare to the alternative approach we discussed earlier?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_152",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Can you give me a practical real-world example of using a message queue?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_153",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What are the main drawbacks of using that solution in production?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_154",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how How would I implement that in Python using standard built-in libraries?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_155",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Can you summarize your previous point into two concise sentences?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_156",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What is the next step after setting up the initial database schema?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_157",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How do I test if my fix actually solved the memory leak?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_158",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Is this approach suitable for high-throughput low-latency applications?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_159",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What potential security risks should I be aware of with this implementation?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_160",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Could you rephrase that explanation for a non-technical stakeholder?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_161",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What happens if one of the microservices fails during execution?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_162",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How do I configure this setting in a production environment?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_163",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the difference between these two recommended options?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_164",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Can you elaborate on the second step of your proposed solution?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_165",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when How can I monitor the performance of this component in real-time?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_166",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you provide a simple unit test example for this function?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_167",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the recommended directory layout for a scalable Python package?",
+      "expected_behavior": "Demonstrate seamless contextual continuity and direct answer."
+    },
+    {
+      "id": "HO3_168",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding If a train travels 150 miles in 2.5 hours, what is its average speed in miles per hour?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_169",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Analyze why O(N^2) sorting algorithms become impractical for N = 1,000,000 items?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_170",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Determine whether Array or Linked List is better for frequent random index lookups?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_171",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how If validation loss increases while training loss decreases, what issue is present?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_172",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Compare the memory footprint of storing 1M integers in continuous array vs linked list?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_173",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Analyze why larger batch sizes during neural network training affect gradient noise?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_174",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Evaluate whether a B-Tree or Hash Map is better for range query lookups?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_175",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how If a service handles 10,000 requests/sec with 50ms average latency, how many concurrent requests exist?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_176",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Determine why global interpreter locks in Python restrict multi-core CPU utilization?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_177",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Analyze why cross-entropy loss is preferred over MSE for binary classification?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_178",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding If cache hit rate is 90% at 2ms and miss penalty is 100ms, what is average access time?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_179",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Evaluate tradeoffs between vertical node scaling and horizontal pod autoscaling?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_180",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Determine time complexity of searching a key in a balanced AVL binary search tree?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_181",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Analyze why unnormalized input features cause gradient update oscillation?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_182",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Evaluate why non-blocking asynchronous I/O enables event loops to scale concurrent clients?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_183",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Determine the effect on parameter count when doubling hidden width vs doubling depth?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_184",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Analyze why fixing random seeds is mandatory for reproducible machine learning research?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_185",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Evaluate whether gRPC or REST is better suited for low-latency internal microservices?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_186",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Determine why soft deletion with timestamps is preferred over hard SQL row deletion?",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_187",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Calculate the GPU memory required to hold a 7B FP16 model's parameters.",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_188",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why floating point addition of 0.1 and 0.2 produces 0.30000000000000004 in binary IEEE 754.",
+      "expected_behavior": "Provide rigorous step-by-step logical reasoning."
+    },
+    {
+      "id": "HO3_189",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Summarize the core benefit of containerization in software deployment?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_190",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Rewrite this user bug report into a clear technical ticket: 'The app crashes when I click upload on Android'?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_191",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Summarize why model quantization reduces GPU VRAM consumption during inference?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_192",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Rewrite a jargon-heavy technical explanation for a high school student?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_193",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Summarize the primary purpose of write-ahead logging in relational databases?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_194",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Rewrite a sentence containing passive voice into active voice?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_195",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Summarize the advantage of vector embeddings in semantic search systems?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_196",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how Rewrite a long paragraph explaining garbage collection into two crisp bullet points?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_197",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Summarize the difference between data parallelism and model parallelism in multi-GPU training?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_198",
+      "task_type": "summarization_rewrite",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how Rewrite a raw error trace into a user-friendly error message?",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_199",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the main principles of Agile software development.",
+      "expected_behavior": "Rephrase concisely while preserving key technical semantics."
+    },
+    {
+      "id": "HO3_200",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What are some effective time management strategies for software developers?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_201",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Provide a comprehensive technical breakdown regarding How can I structure my daily routine for better focus when writing complex code?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_202",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how What are common pitfalls to avoid when starting a new software project?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_203",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how Can you give me a practical tip for debugging stubborn technical errors?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_204",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What makes a clean software documentation site stand out?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_205",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when How do you approach learning a new programming language effectively?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_206",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What is the best way to handle constructive feedback during code reviews?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_207",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How do developers stay updated with fast-moving open-source developments?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_208",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "In production system operations, describe how What advice would you give a junior developer building their first API?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_209",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how How can I improve my problem-solving speed for coding challenges?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_210",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are key principles for conducting productive engineering team meetings?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_211",
+      "task_type": "everyday_knowledge",
+      "category": "creative_prompts",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How do you balance rapid feature delivery with technical debt management?",
+      "expected_behavior": "Provide helpful, realistic, and practical everyday advice."
+    },
+    {
+      "id": "HO3_212",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_001",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when My Python script is running synchronously despite using async def?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_213",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_002",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding My SQL database query is executing slowly on large tables?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_214",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_003",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How do two Docker containers talk to each other on the same host?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_215",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_004",
+      "turn": 1,
+      "prompt": "In production system operations, describe how My neural network gets 99% train accuracy but 65% val accuracy?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_216",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_005",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how How do I resolve merge conflicts when pulling from main branch?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_217",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_006",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between API keys and JWT tokens?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_218",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_007",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding How do I find which process is consuming high CPU on Linux?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_219",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_008",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how What is a service mesh in microservice architectures?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_220",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_009",
+      "turn": 1,
+      "prompt": "In production system operations, describe how My React component is re-rendering infinitely?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_221",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_010",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how My relational database is hitting write capacity limits?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_222",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_011",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between a Kubernetes Pod and Deployment?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_223",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_012",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding My GPU utilization is hovering around 20% during PyTorch training?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_224",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_013",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How should I validate incoming JSON request payloads in FastAPI?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_225",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_014",
+      "turn": 1,
+      "prompt": "In production system operations, describe how How do I use Redis as a cache for database query results?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_226",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_015",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What stages should a standard CI/CD pipeline include?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_227",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_016",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Why would a team choose GraphQL over REST APIs?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_228",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_017",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What four conditions are necessary for a system deadlock to occur?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_229",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_018",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How do I secure an AWS S3 bucket from public data leaks?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_230",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_019",
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the prerequisite for running binary search on an array?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_231",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_020",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What is Cross-Site Request Forgery (CSRF)?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_232",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_021",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when Why is Adam optimizer generally faster than standard SGD?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_233",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_022",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding What is the role of exchanges in RabbitMQ?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_234",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_023",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how What does CAP theorem state in distributed database design?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_235",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_024",
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the default index type in PostgreSQL?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_236",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_025",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how What is Dependency Injection in software engineering?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_237",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_026",
+      "turn": 1,
+      "prompt": "Detail the exact steps and trade-offs when What do the file permissions 'chmod 755' mean in Linux?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_238",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_027",
+      "turn": 1,
+      "prompt": "Provide a comprehensive technical breakdown regarding Why do Large Language Models hallucinate false statements?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_239",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_028",
+      "turn": 1,
+      "prompt": "In high-concurrency cloud backends, explain how How are Go goroutines lighter weight than OS threads?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_240",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_029",
+      "turn": 1,
+      "prompt": "In production system operations, describe how What is the difference between metrics, logs, and traces in observability?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_241",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_030",
+      "turn": 1,
+      "prompt": "From an enterprise software architecture perspective, explain how My home Wi-Fi speeds are slow in distant rooms?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_242",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_031",
+      "turn": 1,
+      "prompt": "How do I profile memory usage in Python?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_243",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_032",
+      "turn": 1,
+      "prompt": "What is a topic partition in Apache Kafka?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_244",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_033",
+      "turn": 1,
+      "prompt": "When should I use async def vs def for FastAPI path operations?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_245",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_034",
+      "turn": 1,
+      "prompt": "What are the four SQL transaction isolation levels?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_246",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_035",
+      "turn": 1,
+      "prompt": "What is an IAM role versus an IAM user in AWS?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_247",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_036",
+      "turn": 1,
+      "prompt": "What is the difference between std::unique_ptr and std::shared_ptr?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_248",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_037",
+      "turn": 1,
+      "prompt": "What is worker_processes setting in Nginx config?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_249",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_038",
+      "turn": 1,
+      "prompt": "When should I use CSS Flexbox vs CSS Grid?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_250",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_039",
+      "turn": 1,
+      "prompt": "What are generics in TypeScript?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    },
+    {
+      "id": "HO3_251",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO3_040",
+      "turn": 1,
+      "prompt": "What does SOLID acronym stand for in object-oriented design?",
+      "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+    }
+  ],
+  "multi_turn_dialogues": [
+    {
+      "conversation_id": "CONV_HO3_001",
+      "topic": "Python Async Debugging",
+      "turns": [
+        {
+          "id": "HO3_MT_01_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_001",
+          "turn": 1,
+          "prompt": "My Python script is running synchronously despite using async def.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_01_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_001",
+          "turn": 2,
+          "prompt": "What common mistake causes async functions to block?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_01_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_001",
+          "turn": 3,
+          "prompt": "How do I use asyncio.gather() to run tasks concurrently?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_01_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_001",
+          "turn": 4,
+          "prompt": "Can you show a complete runnable code snippet for that?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_002",
+      "topic": "SQL Index Optimization",
+      "turns": [
+        {
+          "id": "HO3_MT_02_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_002",
+          "turn": 1,
+          "prompt": "My SQL database query is executing slowly on large tables.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_02_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_002",
+          "turn": 2,
+          "prompt": "How do I check if my query is utilizing existing indexes?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_02_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_002",
+          "turn": 3,
+          "prompt": "What is an EXPLAIN query plan and how do I read it?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_02_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_002",
+          "turn": 4,
+          "prompt": "When should I use a composite index over single-column indexes?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_003",
+      "topic": "Docker Container Networking",
+      "turns": [
+        {
+          "id": "HO3_MT_03_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_003",
+          "turn": 1,
+          "prompt": "How do two Docker containers talk to each other on the same host?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_03_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_003",
+          "turn": 2,
+          "prompt": "What is a Docker user-defined bridge network?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_03_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_003",
+          "turn": 3,
+          "prompt": "Can containers communicate using container names instead of IP addresses?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_03_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_003",
+          "turn": 4,
+          "prompt": "How do I expose container ports to the host network?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_004",
+      "topic": "Machine Learning Overfitting",
+      "turns": [
+        {
+          "id": "HO3_MT_04_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_004",
+          "turn": 1,
+          "prompt": "My neural network gets 99% train accuracy but 65% val accuracy.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_04_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_004",
+          "turn": 2,
+          "prompt": "What regularization techniques should I apply first?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_04_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_004",
+          "turn": 3,
+          "prompt": "How does dropout help prevent co-adaptation of features?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_04_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_004",
+          "turn": 4,
+          "prompt": "What dropout rate is standard for fully-connected layers?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_005",
+      "topic": "Git Branch Management",
+      "turns": [
+        {
+          "id": "HO3_MT_05_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_005",
+          "turn": 1,
+          "prompt": "How do I resolve merge conflicts when pulling from main branch?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_05_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_005",
+          "turn": 2,
+          "prompt": "What is the difference between git merge and git rebase?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_05_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_005",
+          "turn": 3,
+          "prompt": "When is git rebase preferred for clean branch history?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_05_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_005",
+          "turn": 4,
+          "prompt": "How do I abort a rebase if something goes wrong?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_006",
+      "topic": "Web API Authentication",
+      "turns": [
+        {
+          "id": "HO3_MT_06_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_006",
+          "turn": 1,
+          "prompt": "What is the difference between API keys and JWT tokens?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_06_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_006",
+          "turn": 2,
+          "prompt": "Where should JWT tokens be stored securely on the frontend?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_06_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_006",
+          "turn": 3,
+          "prompt": "Why is storing tokens in localStorage vulnerable to XSS?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_06_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_006",
+          "turn": 4,
+          "prompt": "How do HTTP-only cookies prevent XSS token theft?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_007",
+      "topic": "Linux System Administration",
+      "turns": [
+        {
+          "id": "HO3_MT_07_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_007",
+          "turn": 1,
+          "prompt": "How do I find which process is consuming high CPU on Linux?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_07_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_007",
+          "turn": 2,
+          "prompt": "What command shows open network ports and associated PIDs?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_07_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_007",
+          "turn": 3,
+          "prompt": "How do I send a graceful termination signal to a process?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_07_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_007",
+          "turn": 4,
+          "prompt": "What is the difference between SIGTERM (15) and SIGKILL (9)?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_008",
+      "topic": "Microservice Architecture",
+      "turns": [
+        {
+          "id": "HO3_MT_08_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_008",
+          "turn": 1,
+          "prompt": "What is a service mesh in microservice architectures?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_08_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_008",
+          "turn": 2,
+          "prompt": "What benefits does Istio sidecar proxy provide?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_08_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_008",
+          "turn": 3,
+          "prompt": "How does a service mesh handle automatic mTLS encryption?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_08_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_008",
+          "turn": 4,
+          "prompt": "Is a service mesh necessary for small 3-microservice applications?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_009",
+      "topic": "React State Management",
+      "turns": [
+        {
+          "id": "HO3_MT_09_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_009",
+          "turn": 1,
+          "prompt": "My React component is re-rendering infinitely.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_09_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_009",
+          "turn": 2,
+          "prompt": "What hook dependency array mistake causes infinite re-renders?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_09_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_009",
+          "turn": 3,
+          "prompt": "How does useCallback prevent unnecessary child re-renders?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_09_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_009",
+          "turn": 4,
+          "prompt": "When should I use Context API versus Redux for global state?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_010",
+      "topic": "Database Scaling",
+      "turns": [
+        {
+          "id": "HO3_MT_10_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_010",
+          "turn": 1,
+          "prompt": "My relational database is hitting write capacity limits.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_10_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_010",
+          "turn": 2,
+          "prompt": "What is database sharding and how does it split data?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_10_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_010",
+          "turn": 3,
+          "prompt": "How do I pick a good sharding key for user data?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_10_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_010",
+          "turn": 4,
+          "prompt": "What are the challenges of performing joins across database shards?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_011",
+      "topic": "Kubernetes Deployment",
+      "turns": [
+        {
+          "id": "HO3_MT_11_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_011",
+          "turn": 1,
+          "prompt": "What is the difference between a Kubernetes Pod and Deployment?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_11_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_011",
+          "turn": 2,
+          "prompt": "How does rolling update strategy deploy new container images without downtime?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_11_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_011",
+          "turn": 3,
+          "prompt": "What happens if a new container fails health checks during rolling update?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_11_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_011",
+          "turn": 4,
+          "prompt": "How do I rollback a deployment to the previous revision?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_012",
+      "topic": "PyTorch DataLoader",
+      "turns": [
+        {
+          "id": "HO3_MT_12_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_012",
+          "turn": 1,
+          "prompt": "My GPU utilization is hovering around 20% during PyTorch training.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_12_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_012",
+          "turn": 2,
+          "prompt": "How do I increase num_workers in PyTorch DataLoader to fix data bottleneck?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_12_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_012",
+          "turn": 3,
+          "prompt": "What does pin_memory=True do during host-to-device memory transfer?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_12_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_012",
+          "turn": 4,
+          "prompt": "Why does setting num_workers too high cause shared memory bus errors?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_013",
+      "topic": "REST API Validation",
+      "turns": [
+        {
+          "id": "HO3_MT_13_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_013",
+          "turn": 1,
+          "prompt": "How should I validate incoming JSON request payloads in FastAPI?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_13_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_013",
+          "turn": 2,
+          "prompt": "How does Pydantic enforce type validation and default values?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_13_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_013",
+          "turn": 3,
+          "prompt": "What HTTP status code should be returned when validation fails?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_13_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_013",
+          "turn": 4,
+          "prompt": "How do I return custom error messages for invalid fields?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_014",
+      "topic": "Redis Caching",
+      "turns": [
+        {
+          "id": "HO3_MT_14_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_014",
+          "turn": 1,
+          "prompt": "How do I use Redis as a cache for database query results?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_14_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_014",
+          "turn": 2,
+          "prompt": "What is Cache-Aside pattern implementation logic?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_14_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_014",
+          "turn": 3,
+          "prompt": "How do I set Time-To-Live (TTL) expiration on cached keys?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_14_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_014",
+          "turn": 4,
+          "prompt": "What happens when Redis runs out of memory under high load?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_015",
+      "topic": "CI/CD Pipeline Design",
+      "turns": [
+        {
+          "id": "HO3_MT_15_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_015",
+          "turn": 1,
+          "prompt": "What stages should a standard CI/CD pipeline include?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_15_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_015",
+          "turn": 2,
+          "prompt": "Why should unit tests run before building container images?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_15_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_015",
+          "turn": 3,
+          "prompt": "How do I cache npm or pip dependencies across pipeline runs?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_15_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_015",
+          "turn": 4,
+          "prompt": "How do I securely inject secret deployment credentials in CI?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_016",
+      "topic": "GraphQL vs REST",
+      "turns": [
+        {
+          "id": "HO3_MT_16_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_016",
+          "turn": 1,
+          "prompt": "Why would a team choose GraphQL over REST APIs?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_16_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_016",
+          "turn": 2,
+          "prompt": "How does GraphQL eliminate over-fetching and under-fetching?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_16_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_016",
+          "turn": 3,
+          "prompt": "What is the N+1 query problem in GraphQL resolvers?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_16_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_016",
+          "turn": 4,
+          "prompt": "How do DataLoader utility libraries solve the N+1 problem?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_017",
+      "topic": "System Deadlocks",
+      "turns": [
+        {
+          "id": "HO3_MT_17_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_017",
+          "turn": 1,
+          "prompt": "What four conditions are necessary for a system deadlock to occur?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_17_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_017",
+          "turn": 2,
+          "prompt": "How does lock ordering prevent circular wait deadlocks?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_17_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_017",
+          "turn": 3,
+          "prompt": "What is deadlock detection versus deadlock prevention?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_17_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_017",
+          "turn": 4,
+          "prompt": "How do timeout-based locks help recover from deadlocks?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_018",
+      "topic": "Cloud Storage Security",
+      "turns": [
+        {
+          "id": "HO3_MT_18_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_018",
+          "turn": 1,
+          "prompt": "How do I secure an AWS S3 bucket from public data leaks?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_18_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_018",
+          "turn": 2,
+          "prompt": "What is bucket policy versus IAM user policy?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_18_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_018",
+          "turn": 3,
+          "prompt": "How do I enable server-side encryption with AWS KMS keys?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_18_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_018",
+          "turn": 4,
+          "prompt": "Why is enabling S3 Object Versioning recommended for backups?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_019",
+      "topic": "Algorithms: Binary Search",
+      "turns": [
+        {
+          "id": "HO3_MT_19_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_019",
+          "turn": 1,
+          "prompt": "What is the prerequisite for running binary search on an array?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_19_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_019",
+          "turn": 2,
+          "prompt": "What is the time complexity of binary search?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_19_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_019",
+          "turn": 3,
+          "prompt": "How do I calculate mid index without integer overflow in Java/C++?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_19_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_019",
+          "turn": 4,
+          "prompt": "Can binary search be applied to monotonic functions instead of arrays?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_020",
+      "topic": "Web Security: CSRF",
+      "turns": [
+        {
+          "id": "HO3_MT_20_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_020",
+          "turn": 1,
+          "prompt": "What is Cross-Site Request Forgery (CSRF)?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_20_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_020",
+          "turn": 2,
+          "prompt": "How does an attacker trick a user's browser into executing state-changing requests?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_20_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_020",
+          "turn": 3,
+          "prompt": "How do Anti-CSRF tokens defend against CSRF attacks?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_20_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_020",
+          "turn": 4,
+          "prompt": "Does using SameSite cookie attribute mitigate CSRF risks?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_021",
+      "topic": "Neural Network Optimization",
+      "turns": [
+        {
+          "id": "HO3_MT_21_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_021",
+          "turn": 1,
+          "prompt": "Why is Adam optimizer generally faster than standard SGD?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_21_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_021",
+          "turn": 2,
+          "prompt": "What do momentum and adaptive learning rate components do in Adam?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_21_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_021",
+          "turn": 3,
+          "prompt": "Why does AdamW decouple weight decay from gradient updates?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_21_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_021",
+          "turn": 4,
+          "prompt": "When is SGD with momentum preferred over Adam in computer vision?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_022",
+      "topic": "Message Queues: RabbitMQ",
+      "turns": [
+        {
+          "id": "HO3_MT_22_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_022",
+          "turn": 1,
+          "prompt": "What is the role of exchanges in RabbitMQ?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_22_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_022",
+          "turn": 2,
+          "prompt": "What is the difference between Direct, Fanout, and Topic exchanges?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_22_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_022",
+          "turn": 3,
+          "prompt": "How does consumer message acknowledgment prevent lost messages?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_22_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_022",
+          "turn": 4,
+          "prompt": "What happens if a consumer crashes while processing an unacknowledged message?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_023",
+      "topic": "Distributed Systems: CAP Theorem",
+      "turns": [
+        {
+          "id": "HO3_MT_23_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_023",
+          "turn": 1,
+          "prompt": "What does CAP theorem state in distributed database design?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_23_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_023",
+          "turn": 2,
+          "prompt": "Can a distributed system guarantee Consistency, Availability, and Partition Tolerance simultaneously?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_23_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_023",
+          "turn": 3,
+          "prompt": "What is the difference between CP systems and AP systems during network partitions?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_23_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_023",
+          "turn": 4,
+          "prompt": "Provide one example of a CP system and one example of an AP system.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_024",
+      "topic": "PostgreSQL Index Types",
+      "turns": [
+        {
+          "id": "HO3_MT_24_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_024",
+          "turn": 1,
+          "prompt": "What is the default index type in PostgreSQL?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_24_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_024",
+          "turn": 2,
+          "prompt": "When should I use a GIN index instead of a B-Tree index in Postgres?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_24_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_024",
+          "turn": 3,
+          "prompt": "How do GIN indexes speed up JSONB document queries?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_24_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_024",
+          "turn": 4,
+          "prompt": "What is a partial index and how does it save index storage space?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_025",
+      "topic": "Software Design: Dependency Injection",
+      "turns": [
+        {
+          "id": "HO3_MT_25_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_025",
+          "turn": 1,
+          "prompt": "What is Dependency Injection in software engineering?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_25_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_025",
+          "turn": 2,
+          "prompt": "How does passing dependencies via constructor improve code testability?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_25_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_025",
+          "turn": 3,
+          "prompt": "What is a Dependency Injection container framework?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_25_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_025",
+          "turn": 4,
+          "prompt": "How do mock objects replace real dependencies during unit testing?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_026",
+      "topic": "Linux File Permissions",
+      "turns": [
+        {
+          "id": "HO3_MT_26_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_026",
+          "turn": 1,
+          "prompt": "What do the file permissions 'chmod 755' mean in Linux?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_26_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_026",
+          "turn": 2,
+          "prompt": "What do read, write, and execute permissions represent for directories?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_26_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_026",
+          "turn": 3,
+          "prompt": "How do I change file ownership using chown command?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_26_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_026",
+          "turn": 4,
+          "prompt": "What is the difference between user, group, and others permission bits?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_027",
+      "topic": "AI Ethics & Hallucinations",
+      "turns": [
+        {
+          "id": "HO3_MT_27_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_027",
+          "turn": 1,
+          "prompt": "Why do Large Language Models hallucinate false statements?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_27_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_027",
+          "turn": 2,
+          "prompt": "How does Retrieval-Augmented Generation (RAG) ground model answers in real facts?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_27_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_027",
+          "turn": 3,
+          "prompt": "What is the role of vector databases in storing document embeddings for RAG?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_27_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_027",
+          "turn": 4,
+          "prompt": "Can RAG completely eliminate hallucinations if retrieved facts are noisy?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_028",
+      "topic": "Golang Concurrency",
+      "turns": [
+        {
+          "id": "HO3_MT_28_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_028",
+          "turn": 1,
+          "prompt": "How are Go goroutines lighter weight than OS threads?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_28_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_028",
+          "turn": 2,
+          "prompt": "How do Go channels enable communication between goroutines?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_28_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_028",
+          "turn": 3,
+          "prompt": "What is the difference between buffered and unbuffered Go channels?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_28_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_028",
+          "turn": 4,
+          "prompt": "How does select statement handle multi-channel operations?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_029",
+      "topic": "System Monitoring & Alerting",
+      "turns": [
+        {
+          "id": "HO3_MT_29_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_029",
+          "turn": 1,
+          "prompt": "What is the difference between metrics, logs, and traces in observability?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_29_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_029",
+          "turn": 2,
+          "prompt": "How does Prometheus pull metrics from application endpoints?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_29_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_029",
+          "turn": 3,
+          "prompt": "What is Grafana used for in infrastructure monitoring?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_29_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_029",
+          "turn": 4,
+          "prompt": "How do I set up alert thresholds to prevent alert fatigue?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_030",
+      "topic": "Everyday Tech Support: Home Network",
+      "turns": [
+        {
+          "id": "HO3_MT_30_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_030",
+          "turn": 1,
+          "prompt": "My home Wi-Fi speeds are slow in distant rooms.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_30_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_030",
+          "turn": 2,
+          "prompt": "What is the difference between Wi-Fi range extenders and Mesh Wi-Fi systems?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_30_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_030",
+          "turn": 3,
+          "prompt": "How does 5GHz band differ from 2.4GHz band in speed and wall penetration?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_30_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_030",
+          "turn": 4,
+          "prompt": "Should I change my router Wi-Fi channel to avoid neighbor interference?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_031",
+      "topic": "Python Memory Profiling",
+      "turns": [
+        {
+          "id": "HO3_MT_31_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_031",
+          "turn": 1,
+          "prompt": "How do I profile memory usage in Python?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_31_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_031",
+          "turn": 2,
+          "prompt": "What does memory_profiler line-by-line output show?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_31_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_031",
+          "turn": 3,
+          "prompt": "How do I find object references keeping dead memory alive?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_31_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_031",
+          "turn": 4,
+          "prompt": "Does calling gc.collect() immediately free all unreferenced objects?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_032",
+      "topic": "Kafka Partition Scaling",
+      "turns": [
+        {
+          "id": "HO3_MT_32_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_032",
+          "turn": 1,
+          "prompt": "What is a topic partition in Apache Kafka?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_32_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_032",
+          "turn": 2,
+          "prompt": "How do partition counts affect consumer parallelism?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_32_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_032",
+          "turn": 3,
+          "prompt": "Why can't partition counts be easily decreased after topic creation?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_32_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_032",
+          "turn": 4,
+          "prompt": "How does message key hashing determine partition assignment?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_033",
+      "topic": "FastAPI Async Endpoints",
+      "turns": [
+        {
+          "id": "HO3_MT_33_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_033",
+          "turn": 1,
+          "prompt": "When should I use async def vs def for FastAPI path operations?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_33_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_033",
+          "turn": 2,
+          "prompt": "What happens if a synchronous blocking database call is placed inside an async def path operation?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_33_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_033",
+          "turn": 3,
+          "prompt": "How does FastAPI run sync def functions in an internal threadpool?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_33_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_033",
+          "turn": 4,
+          "prompt": "What is the recommended way to connect async SQLAlchemy to PostgreSQL?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_034",
+      "topic": "Database Transaction Isolation",
+      "turns": [
+        {
+          "id": "HO3_MT_34_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_034",
+          "turn": 1,
+          "prompt": "What are the four SQL transaction isolation levels?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_34_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_034",
+          "turn": 2,
+          "prompt": "What is a dirty read vs non-repeatable read vs phantom read?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_34_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_034",
+          "turn": 3,
+          "prompt": "How does Serializable isolation prevent phantom reads?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_34_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_034",
+          "turn": 4,
+          "prompt": "What is Multi-Version Concurrency Control (MVCC) in PostgreSQL?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_035",
+      "topic": "AWS IAM Best Practices",
+      "turns": [
+        {
+          "id": "HO3_MT_35_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_035",
+          "turn": 1,
+          "prompt": "What is an IAM role versus an IAM user in AWS?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_35_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_035",
+          "turn": 2,
+          "prompt": "Why should applications use IAM roles instead of hardcoded access keys?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_35_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_035",
+          "turn": 3,
+          "prompt": "How does AWS Security Token Service (STS) issue temporary credentials?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_35_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_035",
+          "turn": 4,
+          "prompt": "What is the principle of least privilege in IAM policy design?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_036",
+      "topic": "C++ Smart Pointers",
+      "turns": [
+        {
+          "id": "HO3_MT_36_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_036",
+          "turn": 1,
+          "prompt": "What is the difference between std::unique_ptr and std::shared_ptr?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_36_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_036",
+          "turn": 2,
+          "prompt": "How does std::unique_ptr enforce single ownership?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_36_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_036",
+          "turn": 3,
+          "prompt": "What is the overhead of std::shared_ptr reference counting?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_36_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_036",
+          "turn": 4,
+          "prompt": "Why should std::weak_ptr be used to break shared_ptr circular references?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_037",
+      "topic": "Nginx Performance Tuning",
+      "turns": [
+        {
+          "id": "HO3_MT_37_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_037",
+          "turn": 1,
+          "prompt": "What is worker_processes setting in Nginx config?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_37_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_037",
+          "turn": 2,
+          "prompt": "How do I enable gzip compression for static assets?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_37_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_037",
+          "turn": 3,
+          "prompt": "What does keepalive_timeout setting do in Nginx?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_37_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_037",
+          "turn": 4,
+          "prompt": "How do I configure Nginx client request body size limits?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_038",
+      "topic": "CSS Flexbox vs Grid",
+      "turns": [
+        {
+          "id": "HO3_MT_38_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_038",
+          "turn": 1,
+          "prompt": "When should I use CSS Flexbox vs CSS Grid?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_38_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_038",
+          "turn": 2,
+          "prompt": "Is Flexbox one-dimensional or two-dimensional layout system?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_38_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_038",
+          "turn": 3,
+          "prompt": "How does grid-template-areas simplify page layouts?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_38_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_038",
+          "turn": 4,
+          "prompt": "How do flex-grow and flex-shrink determine element sizing?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_039",
+      "topic": "TypeScript Generics",
+      "turns": [
+        {
+          "id": "HO3_MT_39_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_039",
+          "turn": 1,
+          "prompt": "What are generics in TypeScript?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_39_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_039",
+          "turn": 2,
+          "prompt": "How do generics provide type safety for reusable data structures?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_39_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_039",
+          "turn": 3,
+          "prompt": "How do I constrain a generic type parameter using 'extends'?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_39_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_039",
+          "turn": 4,
+          "prompt": "What is the difference between 'any' and 'unknown' types in TypeScript?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO3_040",
+      "topic": "Clean Code Principles",
+      "turns": [
+        {
+          "id": "HO3_MT_40_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_040",
+          "turn": 1,
+          "prompt": "What does SOLID acronym stand for in object-oriented design?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_40_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_040",
+          "turn": 2,
+          "prompt": "Explain Single Responsibility Principle with an example.",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_40_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_040",
+          "turn": 3,
+          "prompt": "What is Open/Closed Principle?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        },
+        {
+          "id": "HO3_MT_40_T4",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO3_040",
+          "turn": 4,
+          "prompt": "Why is composition preferred over inheritance in modern code bases?",
+          "expected_behavior": "Maintain seamless context retention and logical continuity across turns."
+        }
+      ]
+    }
+  ]
+}

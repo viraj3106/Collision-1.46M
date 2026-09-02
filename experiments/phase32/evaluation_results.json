@@ -1,0 +1,3291 @@
+{
+  "production_baseline_checksum": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "split_performance": {
+    "Model_A_Baseline": {
+      "train": {
+        "loss": 5.6957,
+        "ppl": 297.58
+      },
+      "val": {
+        "loss": 5.7764,
+        "ppl": 322.58
+      },
+      "test": {
+        "loss": 5.7482,
+        "ppl": 313.61
+      }
+    },
+    "Model_B_RealWorld": {
+      "train": {
+        "loss": 4.9933,
+        "ppl": 147.43
+      },
+      "val": {
+        "loss": 5.274,
+        "ppl": 195.19
+      },
+      "test": {
+        "loss": 4.6803,
+        "ppl": 107.8
+      }
+    },
+    "Model_C_Synthetic": {
+      "train": {
+        "loss": 2.0134,
+        "ppl": 7.49
+      },
+      "val": {
+        "loss": 1.9469,
+        "ppl": 7.01
+      },
+      "test": {
+        "loss": 2.2616,
+        "ppl": 9.6
+      }
+    },
+    "Model_D_Augmented_v1": {
+      "train": {
+        "loss": 1.4376,
+        "ppl": 4.21
+      },
+      "val": {
+        "loss": 1.6327,
+        "ppl": 5.12
+      },
+      "test": {
+        "loss": 2.1567,
+        "ppl": 8.64
+      }
+    }
+  },
+  "model_benchmarks": {
+    "Model_A_Baseline": {
+      "mean_coherence": 0.2054,
+      "mean_relevance": 0.4146,
+      "mean_completeness": 0.7083,
+      "mean_repetition_score": 0.7706,
+      "mean_unigram_repeat": 0.2294,
+      "mean_trigram_repeat": 0.0179,
+      "mean_stability": 0.5125,
+      "mean_instruction_following": 0.3167,
+      "overall_quality_score": 0.4192,
+      "realworld_generalization_score": 0.4887
+    },
+    "Model_B_RealWorld": {
+      "mean_coherence": 0.219,
+      "mean_relevance": 0.325,
+      "mean_completeness": 0.5833,
+      "mean_repetition_score": 0.8299,
+      "mean_unigram_repeat": 0.1701,
+      "mean_trigram_repeat": 0.0089,
+      "mean_stability": 0.4625,
+      "mean_instruction_following": 0.2167,
+      "overall_quality_score": 0.3578,
+      "realworld_generalization_score": 0.2977
+    },
+    "Model_C_Synthetic": {
+      "mean_coherence": 0.0599,
+      "mean_relevance": 0.3438,
+      "mean_completeness": 0.5833,
+      "mean_repetition_score": 0.7506,
+      "mean_unigram_repeat": 0.2494,
+      "mean_trigram_repeat": 0.0502,
+      "mean_stability": 0.3271,
+      "mean_instruction_following": 0.1854,
+      "overall_quality_score": 0.2893,
+      "realworld_generalization_score": 0.2724
+    },
+    "Model_D_Augmented_v1": {
+      "mean_coherence": 0.1362,
+      "mean_relevance": 0.3521,
+      "mean_completeness": 0.5833,
+      "mean_repetition_score": 0.7886,
+      "mean_unigram_repeat": 0.2114,
+      "mean_trigram_repeat": 0.0329,
+      "mean_stability": 0.3854,
+      "mean_instruction_following": 0.2479,
+      "overall_quality_score": 0.3297,
+      "realworld_generalization_score": 0.2483
+    }
+  },
+  "blind_preference_pairs": {
+    "A_vs_D": {
+      "A_wins": 19,
+      "D_wins": 8,
+      "ties": 21
+    },
+    "B_vs_D": {
+      "B_wins": 15,
+      "D_wins": 6,
+      "ties": 27
+    },
+    "C_vs_D": {
+      "C_wins": 5,
+      "D_wins": 14,
+      "ties": 29
+    }
+  },
+  "domain_regression_analysis": {
+    "General Knowledge": {
+      "Model_A_mean": 0.3429,
+      "Model_D_mean": 0.3141,
+      "diff": -0.0288,
+      "status": "UNCHANGED"
+    },
+    "Computer Science": {
+      "Model_A_mean": 0.4958,
+      "Model_D_mean": 0.3732,
+      "diff": -0.1225,
+      "status": "REGRESSED"
+    },
+    "Artificial Intelligence": {
+      "Model_A_mean": 0.4765,
+      "Model_D_mean": 0.426,
+      "diff": -0.0505,
+      "status": "REGRESSED"
+    },
+    "Physics": {
+      "Model_A_mean": 0.4548,
+      "Model_D_mean": 0.3379,
+      "diff": -0.1169,
+      "status": "REGRESSED"
+    },
+    "Mathematics": {
+      "Model_A_mean": 0.3328,
+      "Model_D_mean": 0.2076,
+      "diff": -0.1252,
+      "status": "REGRESSED"
+    },
+    "Technology": {
+      "Model_A_mean": 0.4372,
+      "Model_D_mean": 0.4403,
+      "diff": 0.0031,
+      "status": "UNCHANGED"
+    },
+    "Space": {
+      "Model_A_mean": 0.4289,
+      "Model_D_mean": 0.3719,
+      "diff": -0.057,
+      "status": "REGRESSED"
+    },
+    "Question Answering": {
+      "Model_A_mean": 0.554,
+      "Model_D_mean": 0.6011,
+      "diff": 0.0471,
+      "status": "UNCHANGED"
+    },
+    "Explanation": {
+      "Model_A_mean": 0.4219,
+      "Model_D_mean": 0.0,
+      "diff": -0.4219,
+      "status": "REGRESSED"
+    },
+    "Completion": {
+      "Model_A_mean": 0.5156,
+      "Model_D_mean": 0.5883,
+      "diff": 0.0727,
+      "status": "IMPROVED"
+    },
+    "Instruction Following": {
+      "Model_A_mean": 0.3161,
+      "Model_D_mean": 0.0,
+      "diff": -0.3161,
+      "status": "REGRESSED"
+    },
+    "Stress Test - Repetition": {
+      "Model_A_mean": 0.0,
+      "Model_D_mean": 0.0,
+      "diff": 0.0,
+      "status": "UNCHANGED"
+    },
+    "Stress Test - Fragmentation": {
+      "Model_A_mean": 0.0,
+      "Model_D_mean": 0.0,
+      "diff": 0.0,
+      "status": "UNCHANGED"
+    },
+    "Stress Test - Topic Drift": {
+      "Model_A_mean": 0.5946,
+      "Model_D_mean": 0.7533,
+      "diff": 0.1587,
+      "status": "IMPROVED"
+    },
+    "Stress Test - Failure Recovery": {
+      "Model_A_mean": 0.4207,
+      "Model_D_mean": 0.43,
+      "diff": 0.0093,
+      "status": "UNCHANGED"
+    }
+  },
+  "overfitting_analysis": {
+    "train_loss": 1.4376,
+    "val_loss": 1.6327,
+    "test_loss": 2.1567,
+    "overfitting_status": "PASS",
+    "gap": 0.1951
+  },
+  "realworld_eval_records": [
+    {
+      "prompt": "What is Python list comprehension?",
+      "category": "Beta Telemetry QA",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "(Standpoint, experts observe that computer vision can optimize unseen text structures efficiently. This remains a cor",
+          "score": 0.5964
+        },
+        "Model_B_RealWorld": {
+          "text": "? (Module B)\nAnswer: computer vision is designed to generate digital image segments by conversing of inter agents",
+          "score": 0.6083
+        },
+        "Model_C_Synthetic": {
+          "text": "A atis data developers to model the calculformulight s integer doane properties of numbers divisible only by",
+          "score": 0.5727
+        },
+        "Model_D_Augmented_v1": {
+          "text": "A a learning is a the inter is model the learning loss training points by calculusing loss gradients thems loss and the steepest descent pa",
+          "score": 0.46
+        }
+      }
+    },
+    {
+      "prompt": "How does backpropagation work in neural networks?",
+      "category": "Beta Telemetry Explanations",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "(Standard)\nAnswer: When neural networks is executed, it modifies unseen text structures through reinforcement learning",
+          "score": 0.7139
+        },
+        "Model_B_RealWorld": {
+          "text": "ly manages?, manages this process by passing rrawvectors through multi-layered activation networks to capture high",
+          "score": 0.4962
+        },
+        "Model_C_Synthetic": {
+          "text": "A a a in networks the interacts because it is configured to clate unseen text structures.",
+          "score": 0.565
+        },
+        "Model_D_Augmented_v1": {
+          "text": "A is a calculus thems are themsiventonto parameters the measical integra with ding theant of resoge.",
+          "score": 0.4947
+        }
+      }
+    },
+    {
+      "prompt": "Define artificial intelligence in 1 sentence.",
+      "category": "Beta Telemetry Definitions",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "This behavior has been verified mathematically.",
+          "score": 0.5626
+        },
+        "Model_B_RealWorld": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_C_Synthetic": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "text": "",
+          "score": 0.0
+        }
+      }
+    },
+    {
+      "prompt": "What is a matrix determinant?",
+      "category": "Beta Telemetry Math",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "(Standard)\nAnswer: probability matrices is crices critical because it functions to transform vector space",
+          "score": 0.4964
+        },
+        "Model_B_RealWorld": {
+          "text": "ine learning?learning?ing (Core)\nAnswer: electromagnetism is critical because it functions to governs physical",
+          "score": 0.6817
+        },
+        "Model_C_Synthetic": {
+          "text": "A beum ble transar is a deen system designed to mease to moverner e transform e rum complex",
+          "score": 0.4967
+        },
+        "Model_D_Augmented_v1": {
+          "text": "A beum is a model been vervified mathematically look by defin ber ary e tree ed s the complex",
+          "score": 0.5354
+        }
+      }
+    },
+    {
+      "prompt": "Write a simple function to calculate factorial in Python.",
+      "category": "Beta Telemetry Code Request",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_B_RealWorld": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_C_Synthetic": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "text": "",
+          "score": 0.0
+        }
+      }
+    },
+    {
+      "prompt": "Explain gravity simply.",
+      "category": "Beta Telemetry Instruction",
+      "outputs": {
+        "Model_A_Baseline": {
+          "text": "This behavior has been verified mathematically.",
+          "score": 0.5626
+        },
+        "Model_B_RealWorld": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_C_Synthetic": {
+          "text": "",
+          "score": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "text": "",
+          "score": 0.0
+        }
+      }
+    }
+  ],
+  "detailed_records": [
+    {
+      "id": "gk_01",
+      "category": "General Knowledge",
+      "prompt": "What is the water cycle and why is it important for life on Earth?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: calculus formulas is critical because it functions to transform continuous accumulation rates by",
+        "Model_B_RealWorld": "(Standard)\nAnswer: calculus formulas is critical because it functions to transform continuous accumulation rates wher",
+        "Model_C_Synthetic": "A a A deviomnamic is the ax ax quantrees of spacetime in acetime daneo to me gr",
+        "Model_D_Augmented_v1": "Eard)\nAnswer: s thantspace exploration is ex orbit hydrogen-helv at c grumic Sing angal ra"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4138,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7069,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6948,
+          "unigram_repeat": 0.2931,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7069
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.3898,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.6949,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6364,
+          "unigram_repeat": 0.3051,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6949
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.5,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.47,
+          "unigram_repeat": 0.5,
+          "trigram_repeat": 0.0862,
+          "unique_ratio": 0.5
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.3898,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6949,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6164,
+          "unigram_repeat": 0.3051,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6949
+        }
+      }
+    },
+    {
+      "id": "gk_02",
+      "category": "General Knowledge",
+      "prompt": "Name three major organs of the human body and their main functions.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "gk_03",
+      "category": "General Knowledge",
+      "prompt": "Why do leaves change color in the autumn season?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: autonomous agents is critical because it functions to evaluate digital image segments",
+        "Model_B_RealWorld": ", backgalactic expansion parameters where agents optimize behavior paths by maximizing rewards.",
+        "Model_C_Synthetic": "A a a inknow s thermodynamic is a the propramic of cap th there than heat transfer e",
+        "Model_D_Augmented_v1": "A a with ransfer resources the in or able of relational continuous sange."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4483,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7241,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.6769,
+          "unigram_repeat": 0.2759,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7241
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.3846,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6923,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5946,
+          "unigram_repeat": 0.3077,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6923
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.5,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.46,
+          "unigram_repeat": 0.5,
+          "trigram_repeat": 0.0862,
+          "unique_ratio": 0.5
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.4,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.64,
+          "unigram_repeat": 0.3,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7
+        }
+      }
+    },
+    {
+      "id": "gk_04",
+      "category": "General Knowledge",
+      "prompt": "Describe the main difference between renewable and non-renewable energy sources.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "cs_01",
+      "category": "Computer Science",
+      "prompt": "Explain the difference between a stack and a queue data structure.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "cs_02",
+      "category": "Computer Science",
+      "prompt": "What is recursion in programming and when should it be used?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: stellar nuclear fusion is critical because it functions to track elliptical plan",
+        "Model_B_RealWorld": "This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A a is a dure is a calculusing light light eing raverse ane of resolve resent is that relational",
+        "Model_D_Augmented_v1": "Sa program program into executable properties by themsenerging and random variable expectations."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3559,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.678,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6246,
+          "unigram_repeat": 0.322,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.678
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.4576,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4415,
+          "unigram_repeat": 0.5424,
+          "trigram_repeat": 0.1579,
+          "unique_ratio": 0.4576
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6,
+          "stability": 0.4,
+          "instruction": 0.3,
+          "overall": 0.46,
+          "unigram_repeat": 0.4,
+          "trigram_repeat": 0.0833,
+          "unique_ratio": 0.6
+        }
+      }
+    },
+    {
+      "id": "cs_03",
+      "category": "Computer Science",
+      "prompt": "What does time complexity O(n log n) mean in algorithm analysis?",
+      "generations": {
+        "Model_A_Baseline": "executed, the main purpose of relational databases is designed to track s averse sinusoidal frequenci",
+        "Model_B_RealWorld": "neural networks is a seue using calculate of loss functions and iteratively iteratively r iteratively distribution.",
+        "Model_C_Synthetic": "A a no number: thermodynamics is thermodynamics is ducynamic programibing physical",
+        "Model_D_Augmented_v1": "Ear a system mucard designed to quantify the meant wavefunctions of orbit with propag pagy tot m"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4237,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7119,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6583,
+          "unigram_repeat": 0.2881,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7119
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5405,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4581,
+          "unigram_repeat": 0.4595,
+          "trigram_repeat": 0.0571,
+          "unique_ratio": 0.5405
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.4576,
+          "stability": 0.0,
+          "instruction": 0.3,
+          "overall": 0.3715,
+          "unigram_repeat": 0.5424,
+          "trigram_repeat": 0.2456,
+          "unique_ratio": 0.4576
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.1864,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5932,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5253,
+          "unigram_repeat": 0.4068,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.5932
+        }
+      }
+    },
+    {
+      "id": "cs_04",
+      "category": "Computer Science",
+      "prompt": "How does an operating system manage process scheduling?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: expert systems manages this process by calculating limit values of difference quotients to measu",
+        "Model_B_RealWorld": ", descent this process by mapping of loss functions and updating weight parameters along the steepest descent.",
+        "Model_C_Synthetic": "A nuclear fusion is the primary tregal of nuclear fusion is the exit th.",
+        "Model_D_Augmented_v1": "A is a calculus man light to resolve of respect continuous change."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4576,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.7288,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7002,
+          "unigram_repeat": 0.2712,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7288
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2093,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6047,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5533,
+          "unigram_repeat": 0.3953,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6047
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5208,
+          "stability": 0.0,
+          "instruction": 0.3,
+          "overall": 0.3842,
+          "unigram_repeat": 0.4792,
+          "trigram_repeat": 0.2826,
+          "unique_ratio": 0.5208
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.1426,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6098,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5076,
+          "unigram_repeat": 0.3902,
+          "trigram_repeat": 0.0256,
+          "unique_ratio": 0.6098
+        }
+      }
+    },
+    {
+      "id": "ai_01",
+      "category": "Artificial Intelligence",
+      "prompt": "What is overfitting in machine learning models and how can it be prevented?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: validation splits is critical because it functions to crosss-entropy loss values thro",
+        "Model_B_RealWorld": ", ance an and steeptimizon.",
+        "Model_C_Synthetic": "A numnodle ble properties that themselves and the integer unit one.",
+        "Model_D_Augmented_v1": "Ear dualit numble is system executes ax hash ntable, the primeger of relational is to govern"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3559,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.678,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6246,
+          "unigram_repeat": 0.322,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.678
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.625,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.8125,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7588,
+          "unigram_repeat": 0.1875,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.8125
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.3,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.65,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.585,
+          "unigram_repeat": 0.35,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.65
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.2816,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6667,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5737,
+          "unigram_repeat": 0.3333,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.6667
+        }
+      }
+    },
+    {
+      "id": "ai_02",
+      "category": "Artificial Intelligence",
+      "prompt": "Explain the key mechanism behind self-attention in transformer architectures.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "ai_03",
+      "category": "Artificial Intelligence",
+      "prompt": "How do contrastive learning objectives differ from generative pre-training objectives?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: linear algebra structures manages this process by spassing raw vectors through multi-lay",
+        "Model_B_RealWorld": "ly This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A s ace spaces interacts because it is rause ential by ang into worknothermodynamic cycyc",
+        "Model_D_Augmented_v1": "Eary interacts because it is configured a data solvetimeas aneoth the poinstantaneous rates of continuo"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3559,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.678,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5846,
+          "unigram_repeat": 0.322,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.678
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.1992,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6552,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5308,
+          "unigram_repeat": 0.3448,
+          "trigram_repeat": 0.037,
+          "unique_ratio": 0.6552
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0632,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5833,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4825,
+          "unigram_repeat": 0.4167,
+          "trigram_repeat": 0.0345,
+          "unique_ratio": 0.5833
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.2816,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6667,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5537,
+          "unigram_repeat": 0.3333,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.6667
+        }
+      }
+    },
+    {
+      "id": "ai_04",
+      "category": "Artificial Intelligence",
+      "prompt": "Why are GPUs widely preferred over CPUs for training deep neural networks?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: deep learning models is critical because it functions to evaluate unseen text structures by parsing",
+        "Model_B_RealWorld": "models pireding raversing data gradients of with integer mathematical steepest descent.",
+        "Model_C_Synthetic": "A networks a calcul d se model the loss gradients?A loss split loss values.",
+        "Model_D_Augmented_v1": "Epoin networks is a the maximize digit segroughic ding partic syntrees of human speech to understand conversation"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4483,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.7241,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.6969,
+          "unigram_repeat": 0.2759,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7241
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.35,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.675,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5825,
+          "unigram_repeat": 0.325,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.675
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5455,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4591,
+          "unigram_repeat": 0.4545,
+          "trigram_repeat": 0.0645,
+          "unique_ratio": 0.5455
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.3333,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6667,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5767,
+          "unigram_repeat": 0.3333,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6667
+        }
+      }
+    },
+    {
+      "id": "phy_01",
+      "category": "Physics",
+      "prompt": "State Newton's second law of motion and express it mathematically.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "phy_02",
+      "category": "Physics",
+      "prompt": "What is the law of conservation of energy?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: potential energy is critical because it functions to describe mibe physical",
+        "Model_B_RealWorld": "??ly (Module A)\nAnswer: electromagnetism is designed to propagate microscopic atomi",
+        "Model_C_Synthetic": "A a a is a a model thermodynamics thermodynamics cs ritical using wave-particle duality concep",
+        "Model_D_Augmented_v1": "Etand dequantum is the physical spacetime curves."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2507,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.678,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.5583,
+          "unigram_repeat": 0.322,
+          "trigram_repeat": 0.0351,
+          "unique_ratio": 0.678
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2333,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6167,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5617,
+          "unigram_repeat": 0.3833,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6167
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.4833,
+          "stability": 0.0,
+          "instruction": 0.3,
+          "overall": 0.3967,
+          "unigram_repeat": 0.5167,
+          "trigram_repeat": 0.2414,
+          "unique_ratio": 0.4833
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.5758,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7879,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7615,
+          "unigram_repeat": 0.2121,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7879
+        }
+      }
+    },
+    {
+      "id": "phy_03",
+      "category": "Physics",
+      "prompt": "Explain why sound waves cannot travel through a vacuum.",
+      "generations": {
+        "Model_A_Baseline": "This behavior has been verified mathematically.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "phy_04",
+      "category": "Physics",
+      "prompt": "What is thermodynamic entropy and what does the second law of thermodynamics state?",
+      "generations": {
+        "Model_A_Baseline": "(Level 2)\nAnswer: thermodynamics interacts because it is configured to gurves microsco",
+        "Model_B_RealWorld": "This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A tan transform mo pro of pages cal ack her s acetime caused by the mass and energy the curv",
+        "Model_D_Augmented_v1": "Inumowave is a ther that quantize heat transfer equations and the resros of andomness."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4237,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7119,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6983,
+          "unigram_repeat": 0.2881,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7119
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.1149,
+          "relevance": 0.8,
+          "completeness": 1.0,
+          "repetition": 0.5833,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5554,
+          "unigram_repeat": 0.4167,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.5833
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.1429,
+          "relevance": 0.9,
+          "completeness": 1.0,
+          "repetition": 0.5714,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.59,
+          "unigram_repeat": 0.4286,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.5714
+        }
+      }
+    },
+    {
+      "id": "math_01",
+      "category": "Mathematics",
+      "prompt": "Explain what a derivative represents in calculus with an example.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "math_02",
+      "category": "Mathematics",
+      "prompt": "What is the Pythagorean theorem and how is it used?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: calculus formulas is critical because it functions to transform continuous accumulation rates by",
+        "Model_B_RealWorld": "?ons.",
+        "Model_C_Synthetic": "A ave-particle duality is a duality is the ra overse that resolve aversearch by mapping ink to",
+        "Model_D_Augmented_v1": "Ewave-particle duality is the rave-particle duality concepticle the cle duality concepvatomic proper"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4138,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7069,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6948,
+          "unigram_repeat": 0.2931,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7069
+        },
+        "Model_B_RealWorld": {
+          "coherence": 1.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 1.0,
+          "stability": 1.0,
+          "instruction": 0.3,
+          "overall": 0.83,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 1.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.5254,
+          "stability": 0.2,
+          "instruction": 0.3,
+          "overall": 0.4451,
+          "unigram_repeat": 0.4746,
+          "trigram_repeat": 0.1053,
+          "unique_ratio": 0.5254
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.4167,
+          "stability": 0.0,
+          "instruction": 0.3,
+          "overall": 0.4033,
+          "unigram_repeat": 0.5833,
+          "trigram_repeat": 0.3793,
+          "unique_ratio": 0.4167
+        }
+      }
+    },
+    {
+      "id": "math_03",
+      "category": "Mathematics",
+      "prompt": "Define what a prime number is and list the first five prime numbers.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "math_04",
+      "category": "Mathematics",
+      "prompt": "How does matrix multiplication differ from standard scalar multiplication?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: matrix multiplication manages this process using vector dot products to project",
+        "Model_B_RealWorld": "(Core)\nAnswer: matrix multiplication manages this process where generalizes the properties of numbers divisible",
+        "Model_C_Synthetic": "A m manages mes this the peve chors divisor properties.",
+        "Model_D_Augmented_v1": "A m mases a the m the mger of divisor divisor properties."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3898,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.6949,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6364,
+          "unigram_repeat": 0.3051,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6949
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.3793,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.6897,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.6328,
+          "unigram_repeat": 0.3103,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6897
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.2,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.53,
+          "unigram_repeat": 0.4,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.4857,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4271,
+          "unigram_repeat": 0.5143,
+          "trigram_repeat": 0.1818,
+          "unique_ratio": 0.4857
+        }
+      }
+    },
+    {
+      "id": "tech_01",
+      "category": "Technology",
+      "prompt": "How does asymmetric public-key cryptography keep internet transactions secure?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: exoplanet atmospheres manages this process where gravity prevents even elect",
+        "Model_B_RealWorld": "ly, operating systems man solve space dimensions?of (Level 2 2)\nAnswer: probability matrices manages this process",
+        "Model_C_Synthetic": "A complex s s rack th.",
+        "Model_D_Augmented_v1": "Evel spason men occurs with calculusing lar integer s with s is an dueoing light wingcape  hing w"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2881,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6441,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5608,
+          "unigram_repeat": 0.3559,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6441
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2149,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6333,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5304,
+          "unigram_repeat": 0.3667,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.6333
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.1607,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6875,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5277,
+          "unigram_repeat": 0.3125,
+          "trigram_repeat": 0.0714,
+          "unique_ratio": 0.6875
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5424,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4585,
+          "unigram_repeat": 0.4576,
+          "trigram_repeat": 0.0526,
+          "unique_ratio": 0.5424
+        }
+      }
+    },
+    {
+      "id": "tech_02",
+      "category": "Technology",
+      "prompt": "What is containerization in software deployment and why is Docker popular?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: exoplanet atmospheres is designed to model elliptical planetary paths by",
+        "Model_B_RealWorld": "bravefunctions This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A aths? ble a ble is a the a entime gravity is annumber model the thaneghan ancight r",
+        "Model_D_Augmented_v1": "In deed ber is a the function of raversearch dividing partitions random accumulates."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2032,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6552,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.5418,
+          "unigram_repeat": 0.3448,
+          "trigram_repeat": 0.0357,
+          "unique_ratio": 0.6552
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.1415,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6176,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5089,
+          "unigram_repeat": 0.3824,
+          "trigram_repeat": 0.0312,
+          "unique_ratio": 0.6176
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.4833,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.4567,
+          "unigram_repeat": 0.5167,
+          "trigram_repeat": 0.1034,
+          "unique_ratio": 0.4833
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.4222,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7111,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6978,
+          "unigram_repeat": 0.2889,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7111
+        }
+      }
+    },
+    {
+      "id": "tech_03",
+      "category": "Technology",
+      "prompt": "Explain the role of a RESTful API in modern client-server web applications.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "tech_04",
+      "category": "Technology",
+      "prompt": "What is edge computing and how does it reduce network latency?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: computer vision is critical because it functions to evaluate weighted activation outputs by parsing seman",
+        "Model_B_RealWorld": "ly (Module B)\nAnswer: computer vision interacts because it is configured to evaluate human cognitive",
+        "Model_C_Synthetic": "A a learning calcul dulized today.",
+        "Model_D_Augmented_v1": "A a interacts because it is configured to evaluate unseen text structures by parsing semantic syntttrees of"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3898,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.6949,
+          "stability": 0.9,
+          "instruction": 0.3,
+          "overall": 0.6464,
+          "unigram_repeat": 0.3051,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6949
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.4333,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.7167,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7117,
+          "unigram_repeat": 0.2833,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7167
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.5556,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7778,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7144,
+          "unigram_repeat": 0.2222,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7778
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.3,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.65,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.605,
+          "unigram_repeat": 0.35,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.65
+        }
+      }
+    },
+    {
+      "id": "sp_01",
+      "category": "Space",
+      "prompt": "How are stellar black holes formed after a massive star dies?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: stacks is critical because it functions to traverse sinusoidal frequencies by divid",
+        "Model_B_RealWorld": "of A im data This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A a nucle ble prelational to hydrogen-helium atomic cores.",
+        "Model_D_Augmented_v1": "In st-O proto hewer nuclear fusion, is the primege of stacks is that it g hysical spaceti"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4576,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7288,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.6802,
+          "unigram_repeat": 0.2712,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7288
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2234,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6571,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5573,
+          "unigram_repeat": 0.3429,
+          "trigram_repeat": 0.0303,
+          "unique_ratio": 0.6571
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.3333,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6667,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5967,
+          "unigram_repeat": 0.3333,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6667
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.1483,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5071,
+          "unigram_repeat": 0.4,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.6
+        }
+      }
+    },
+    {
+      "id": "sp_02",
+      "category": "Space",
+      "prompt": "What causes the solar wind and how does Earth's magnetosphere protect us?",
+      "generations": {
+        "Model_A_Baseline": "(Level 2)\nAnswer: electromagnetism is designed to propagate microscopic atomic systems",
+        "Model_B_RealWorld": "ly.",
+        "Model_C_Synthetic": "A.",
+        "Model_D_Augmented_v1": "Ear program programing the executment."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0812,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5932,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4889,
+          "unigram_repeat": 0.4068,
+          "trigram_repeat": 0.0351,
+          "unique_ratio": 0.5932
+        },
+        "Model_B_RealWorld": {
+          "coherence": 1.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 1.0,
+          "stability": 1.0,
+          "instruction": 0.3,
+          "overall": 0.83,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 1.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 1.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 1.0,
+          "stability": 1.0,
+          "instruction": 0.3,
+          "overall": 0.83,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 1.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6667,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4833,
+          "unigram_repeat": 0.3333,
+          "trigram_repeat": 0.1579,
+          "unique_ratio": 0.6667
+        }
+      }
+    },
+    {
+      "id": "sp_03",
+      "category": "Space",
+      "prompt": "Explain the main goals of the James Webb Space Telescope.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "sp_04",
+      "category": "Space",
+      "prompt": "Why is Mars the primary target for human interplanetary exploration?",
+      "generations": {
+        "Model_A_Baseline": "(Core)\nAnswer: exoplanet atmospheres is critical because it functions to expand elliptical planet",
+        "Model_B_RealWorld": "ly orbian orbit has been verified matically.",
+        "Model_C_Synthetic": "A a nucation ble is the function of relational data nuclear fusion?A is the developlanetar anets rel",
+        "Model_D_Augmented_v1": "E nuclear fusion is the calculus fusion?Emphydrogen non-heliuc under s."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2168,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.661,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.5464,
+          "unigram_repeat": 0.339,
+          "trigram_repeat": 0.0351,
+          "unique_ratio": 0.661
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.1058,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6154,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4995,
+          "unigram_repeat": 0.3846,
+          "trigram_repeat": 0.0417,
+          "unique_ratio": 0.6154
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.5333,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4767,
+          "unigram_repeat": 0.4667,
+          "trigram_repeat": 0.1034,
+          "unique_ratio": 0.5333
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0131,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.619,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4971,
+          "unigram_repeat": 0.381,
+          "trigram_repeat": 0.075,
+          "unique_ratio": 0.619
+        }
+      }
+    },
+    {
+      "id": "qa_01",
+      "category": "Question Answering",
+      "prompt": "Question: What is photosynethesis?\nAnswer:",
+      "generations": {
+        "Model_A_Baseline": "thermodynamics cs is executed, it modifies momentum conservation? (Revision)\nAnswer: thermodynam",
+        "Model_B_RealWorld": "of radiation models is the be be torks, overs t of bervers \ufffdtimational spathermanages from escaping b",
+        "Model_C_Synthetic": "electromagnetis is athermodynamic energy cy cleses the curve of thothergh clight re r",
+        "Model_D_Augmented_v1": "electromagnetis is athermodynamic ding dictates that physical systems tend to evolve toward states of high-lev"
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.5932,
+          "stability": 0.4,
+          "instruction": 0.3,
+          "overall": 0.4786,
+          "unigram_repeat": 0.4068,
+          "trigram_repeat": 0.0877,
+          "unique_ratio": 0.5932
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.5574,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.4715,
+          "unigram_repeat": 0.4426,
+          "trigram_repeat": 0.0508,
+          "unique_ratio": 0.5574
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0473,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.5763,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4971,
+          "unigram_repeat": 0.4237,
+          "trigram_repeat": 0.0351,
+          "unique_ratio": 0.5763
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.4237,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.7119,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.6883,
+          "unigram_repeat": 0.2881,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7119
+        }
+      }
+    },
+    {
+      "id": "qa_02",
+      "category": "Question Answering",
+      "prompt": "Question: Who proposed the theory of general relativity?\nAnswer:",
+      "generations": {
+        "Model_A_Baseline": "relational databases is designed to track hydrogen-helium atomic cores? (Overview)\nAnswer:",
+        "Model_B_RealWorld": "m systems is designed to conserve physical spacetime coordinate curves.",
+        "Model_C_Synthetic": "recursion is rel data numbers relational data arly nucan san dems.",
+        "Model_D_Augmented_v1": "relational databases is the rela databasesary by traxit dividing the sarch complexity and s."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.4915,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.7458,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.712,
+          "unigram_repeat": 0.2542,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7458
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.3953,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6977,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5984,
+          "unigram_repeat": 0.3023,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6977
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6098,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.472,
+          "unigram_repeat": 0.3902,
+          "trigram_repeat": 0.0769,
+          "unique_ratio": 0.6098
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.5192,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4538,
+          "unigram_repeat": 0.4808,
+          "trigram_repeat": 0.08,
+          "unique_ratio": 0.5192
+        }
+      }
+    },
+    {
+      "id": "qa_03",
+      "category": "Question Answering",
+      "prompt": "Question: What is the speed of light in vacuum?\nAnswer:",
+      "generations": {
+        "Model_A_Baseline": "exploration is designed to model hydrogen-helium atomic cores? (Revision)\nAnswer: space exploration is cri",
+        "Model_B_RealWorld": "exploration is from exoplanet pathsplansion by fuse hydrogen atoms into hel under immense pressure inside st",
+        "Model_C_Synthetic": "electromagnetis is a it model the curvater of ribe is a croscopic atomic properties of n",
+        "Model_D_Augmented_v1": "compiler is ace exploration is a the clight for s wing light e that ws escan understand."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.1641,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.661,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.5432,
+          "unigram_repeat": 0.339,
+          "trigram_repeat": 0.0526,
+          "unique_ratio": 0.661
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2355,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6441,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5577,
+          "unigram_repeat": 0.3559,
+          "trigram_repeat": 0.0175,
+          "unique_ratio": 0.6441
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.8,
+          "completeness": 1.0,
+          "repetition": 0.5424,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4985,
+          "unigram_repeat": 0.4576,
+          "trigram_repeat": 0.0877,
+          "unique_ratio": 0.5424
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.8,
+          "completeness": 1.0,
+          "repetition": 0.5102,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.502,
+          "unigram_repeat": 0.4898,
+          "trigram_repeat": 0.0851,
+          "unique_ratio": 0.5102
+        }
+      }
+    },
+    {
+      "id": "qa_04",
+      "category": "Question Answering",
+      "prompt": "Question: What is the boiling point of water at standard atmospheric pressure?\nAnswer:",
+      "generations": {
+        "Model_A_Baseline": "vector spaces is designed to transform sinusoidal frequency spectrums using vector dot products",
+        "Model_B_RealWorld": "learning is the of and under iteratively.",
+        "Model_C_Synthetic": "ace acetime mes is a aveentisity is the propresent that to convernowave fields.",
+        "Model_D_Augmented_v1": "ela nothermodynamics is electromagnetis."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0462,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6034,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4822,
+          "unigram_repeat": 0.3966,
+          "trigram_repeat": 0.0536,
+          "unique_ratio": 0.6034
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.2857,
+          "relevance": 0.8,
+          "completeness": 1.0,
+          "repetition": 0.6429,
+          "stability": 0.9,
+          "instruction": 0.3,
+          "overall": 0.63,
+          "unigram_repeat": 0.3571,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6429
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.035,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.58,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5147,
+          "unigram_repeat": 0.42,
+          "trigram_repeat": 0.0417,
+          "unique_ratio": 0.58
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.6296,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.8148,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7604,
+          "unigram_repeat": 0.1852,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.8148
+        }
+      }
+    },
+    {
+      "id": "exp_01",
+      "category": "Explanation",
+      "prompt": "Explain step-by-step how a compiler converts source code into machine executable binaries.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "exp_02",
+      "category": "Explanation",
+      "prompt": "Explain how climate change impacts global sea levels.",
+      "generations": {
+        "Model_A_Baseline": "This behavior has been verified mathematically.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "exp_03",
+      "category": "Explanation",
+      "prompt": "Explain the concept of quantum superposition in simple terms.",
+      "generations": {
+        "Model_A_Baseline": "This behavior has been verified mathematically.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "exp_04",
+      "category": "Explanation",
+      "prompt": "Explain how garbage collection works in memory-managed programming languages.",
+      "generations": {
+        "Model_A_Baseline": "This behavior has been verified mathematically.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "cmp_01",
+      "category": "Completion",
+      "prompt": "Deep learning models rely heavily on large neural networks because",
+      "generations": {
+        "Model_A_Baseline": "it functions to curves weighted activation outputs by passing raw vectors through multi-layered activation networks to captu",
+        "Model_B_RealWorld": "with closed boundaries.",
+        "Model_C_Synthetic": "is it the g overns of thant raxity trees of how than therefunctions and relations.",
+        "Model_D_Augmented_v1": "is desigit to optimize hardware resources by traversing linked nodes recursivel these parameters."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0285,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.5932,
+          "stability": 0.6,
+          "instruction": 0.3,
+          "overall": 0.4858,
+          "unigram_repeat": 0.4068,
+          "trigram_repeat": 0.0526,
+          "unique_ratio": 0.5932
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.8462,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.9231,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.8162,
+          "unigram_repeat": 0.0769,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.9231
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0152,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5714,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4681,
+          "unigram_repeat": 0.4286,
+          "trigram_repeat": 0.0426,
+          "unique_ratio": 0.5714
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.4444,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7222,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.6656,
+          "unigram_repeat": 0.2778,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7222
+        }
+      }
+    },
+    {
+      "id": "cmp_02",
+      "category": "Completion",
+      "prompt": "The primary advantage of using version control systems like Git is",
+      "generations": {
+        "Model_A_Baseline": "will calculated model gradients by calculating gradients of loss functions and updating weight parameters along the steepest descent path.",
+        "Model_B_RealWorld": "a values.",
+        "Model_C_Synthetic": "a de-particle duality syntis axis, the raxit gro of raxity the treegnic of hres",
+        "Model_D_Augmented_v1": "a de-partime duality isier the cleier with properties."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0328,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.5741,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.513,
+          "unigram_repeat": 0.4259,
+          "trigram_repeat": 0.0385,
+          "unique_ratio": 0.5741
+        },
+        "Model_B_RealWorld": {
+          "coherence": 1.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 1.0,
+          "stability": 1.0,
+          "instruction": 0.3,
+          "overall": 0.83,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 1.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.4828,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4666,
+          "unigram_repeat": 0.5172,
+          "trigram_repeat": 0.1071,
+          "unique_ratio": 0.4828
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.275,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6875,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5763,
+          "unigram_repeat": 0.3125,
+          "trigram_repeat": 0.0333,
+          "unique_ratio": 0.6875
+        }
+      }
+    },
+    {
+      "id": "cmp_03",
+      "category": "Completion",
+      "prompt": "In database design, normalization is performed in order to",
+      "generations": {
+        "Model_A_Baseline": "minimize information gain statistics. This remains a cornerstone of research.",
+        "Model_B_RealWorld": "minimize Gini iteratively.",
+        "Model_C_Synthetic": "raversearch low ave-particle duality semappings a dividing the ctions inusing matical matical matical lookup.",
+        "Model_D_Augmented_v1": "resolve using randoidal calculus themscchange."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2105,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6053,
+          "stability": 0.9,
+          "instruction": 0.3,
+          "overall": 0.5437,
+          "unigram_repeat": 0.3947,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.6053
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.75,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.875,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7825,
+          "unigram_repeat": 0.125,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.875
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5932,
+          "stability": 0.3,
+          "instruction": 0.3,
+          "overall": 0.4286,
+          "unigram_repeat": 0.4068,
+          "trigram_repeat": 0.0877,
+          "unique_ratio": 0.5932
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.4815,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7407,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.6885,
+          "unigram_repeat": 0.2593,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7407
+        }
+      }
+    },
+    {
+      "id": "cmp_04",
+      "category": "Completion",
+      "prompt": "Quantum computing differs from classical computing primarily because",
+      "generations": {
+        "Model_A_Baseline": "functions to propagate microscopic atomic systems? (Module A)\nAnswer: differential equations is",
+        "Model_B_RealWorld": "functions to propagate microscopic atomic systems where gravity is modeled as the curvature of phy",
+        "Model_C_Synthetic": "functions to propagate microscopic atomic properties of names Schram to prognumic proging the",
+        "Model_D_Augmented_v1": "functions to propagate ming wors thothrough thermodynamic cynamic cy within closed boundies."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.1687,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.6379,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5198,
+          "unigram_repeat": 0.3621,
+          "trigram_repeat": 0.0357,
+          "unique_ratio": 0.6379
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0473,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.5763,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4771,
+          "unigram_repeat": 0.4237,
+          "trigram_repeat": 0.0351,
+          "unique_ratio": 0.5763
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.4828,
+          "stability": 0.5,
+          "instruction": 0.3,
+          "overall": 0.4266,
+          "unigram_repeat": 0.5172,
+          "trigram_repeat": 0.1429,
+          "unique_ratio": 0.4828
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.614,
+          "stability": 0.2,
+          "instruction": 0.3,
+          "overall": 0.4228,
+          "unigram_repeat": 0.386,
+          "trigram_repeat": 0.1091,
+          "unique_ratio": 0.614
+        }
+      }
+    },
+    {
+      "id": "inst_01",
+      "category": "Instruction Following",
+      "prompt": "Write a 2-sentence summary explaining why data structures matter in software engineering.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "inst_02",
+      "category": "Instruction Following",
+      "prompt": "List exactly three benefits of unit testing in continuous integration pipelines.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "inst_03",
+      "category": "Instruction Following",
+      "prompt": "Define the word 'algorithm' in one concise paragraph.",
+      "generations": {
+        "Model_A_Baseline": "tavely system executes sprimary key mappings.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.5484,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7742,
+          "stability": 0.8,
+          "instruction": 0.8,
+          "overall": 0.7019,
+          "unigram_repeat": 0.2258,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.7742
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "inst_04",
+      "category": "Instruction Following",
+      "prompt": "Provide a bulleted list of 3 key components of a computer CPU.",
+      "generations": {
+        "Model_A_Baseline": "This behavior has been verified mathematically.",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.2874,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.7037,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5626,
+          "unigram_repeat": 0.2963,
+          "trigram_repeat": 0.04,
+          "unique_ratio": 0.7037
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "stress_01",
+      "category": "Stress Test - Repetition",
+      "prompt": "Describe the process of photosynthesis. Do not repeat words endlessly.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "stress_02",
+      "category": "Stress Test - Fragmentation",
+      "prompt": "Write a complete, coherent response explaining how electricity flows in a circuit.",
+      "generations": {
+        "Model_A_Baseline": "",
+        "Model_B_RealWorld": "",
+        "Model_C_Synthetic": "",
+        "Model_D_Augmented_v1": ""
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.0,
+          "completeness": 0.0,
+          "repetition": 1.0,
+          "stability": 0.0,
+          "instruction": 0.0,
+          "overall": 0.0,
+          "unigram_repeat": 0.0,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.0
+        }
+      }
+    },
+    {
+      "id": "stress_03",
+      "category": "Stress Test - Topic Drift",
+      "prompt": "Answer specifically about Python programming: What are list comprehensions?",
+      "generations": {
+        "Model_A_Baseline": "(Standard)\nAnswer: stellar nuclear fusion is designed to expand hydrogen-helium atomic cor",
+        "Model_B_RealWorld": "(Core)\nAnswer: stacks is csing be the of radiation orks, where gravity prevent even electrom",
+        "Model_C_Synthetic": "A a nows thermodynamics is a entime ding particle duality concepts to model microscopic atom",
+        "Model_D_Augmented_v1": "Inos progy into system executes relations."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.3559,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.678,
+          "stability": 0.9,
+          "instruction": 0.3,
+          "overall": 0.5946,
+          "unigram_repeat": 0.322,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.678
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.322,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.661,
+          "stability": 0.8,
+          "instruction": 0.3,
+          "overall": 0.5727,
+          "unigram_repeat": 0.339,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.661
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0483,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.55,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.4721,
+          "unigram_repeat": 0.45,
+          "trigram_repeat": 0.0172,
+          "unique_ratio": 0.55
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.6667,
+          "relevance": 0.5,
+          "completeness": 1.0,
+          "repetition": 0.8333,
+          "stability": 0.9,
+          "instruction": 0.8,
+          "overall": 0.7533,
+          "unigram_repeat": 0.1667,
+          "trigram_repeat": 0.0,
+          "unique_ratio": 0.8333
+        }
+      }
+    },
+    {
+      "id": "stress_04",
+      "category": "Stress Test - Failure Recovery",
+      "prompt": "What happens when a program divides a number by zero?",
+      "generations": {
+        "Model_A_Baseline": "(Module A)\nAnswer: When electromagnetism is executed, it modifies electromagnetism is",
+        "Model_B_RealWorld": "??ly A data This behavior has been verified mathematically.",
+        "Model_C_Synthetic": "A number is a a it calculus is critical because it functions to project high-level ablevel able able ab",
+        "Model_D_Augmented_v1": "A number is the integer unit one integer the integer under rane."
+      },
+      "quality_metrics": {
+        "Model_A_Baseline": {
+          "coherence": 0.0,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6034,
+          "stability": 0.0,
+          "instruction": 0.3,
+          "overall": 0.4207,
+          "unigram_repeat": 0.3966,
+          "trigram_repeat": 0.1964,
+          "unique_ratio": 0.6034
+        },
+        "Model_B_RealWorld": {
+          "coherence": 0.1662,
+          "relevance": 0.6,
+          "completeness": 1.0,
+          "repetition": 0.6286,
+          "stability": 0.7,
+          "instruction": 0.3,
+          "overall": 0.5373,
+          "unigram_repeat": 0.3714,
+          "trigram_repeat": 0.0303,
+          "unique_ratio": 0.6286
+        },
+        "Model_C_Synthetic": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.4833,
+          "stability": 0.4,
+          "instruction": 0.3,
+          "overall": 0.4567,
+          "unigram_repeat": 0.5167,
+          "trigram_repeat": 0.1724,
+          "unique_ratio": 0.4833
+        },
+        "Model_D_Augmented_v1": {
+          "coherence": 0.0,
+          "relevance": 0.7,
+          "completeness": 1.0,
+          "repetition": 0.45,
+          "stability": 0.2,
+          "instruction": 0.3,
+          "overall": 0.43,
+          "unigram_repeat": 0.55,
+          "trigram_repeat": 0.2632,
+          "unique_ratio": 0.45
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rw_eval_01",
+    "category": "Beta Telemetry QA",
+    "prompt": "What is Python list comprehension?"
+  },
+  {
+    "id": "rw_eval_02",
+    "category": "Beta Telemetry Explanations",
+    "prompt": "How does backpropagation work in neural networks?"
+  },
+  {
+    "id": "rw_eval_03",
+    "category": "Beta Telemetry Definitions",
+    "prompt": "Define artificial intelligence in 1 sentence."
+  },
+  {
+    "id": "rw_eval_04",
+    "category": "Beta Telemetry Math",
+    "prompt": "What is a matrix determinant?"
+  },
+  {
+    "id": "rw_eval_05",
+    "category": "Beta Telemetry Code Request",
+    "prompt": "Write a simple function to calculate factorial in Python."
+  },
+  {
+    "id": "rw_eval_06",
+    "category": "Beta Telemetry Instruction",
+    "prompt": "Explain gravity simply."
+  }
+]

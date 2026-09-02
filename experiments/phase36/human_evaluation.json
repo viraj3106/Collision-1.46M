@@ -1,0 +1,619 @@
+{
+  "status": "PENDING_HUMAN_EVALUATION",
+  "methodology": "Blind randomized presentation comparing A vs G and F2 vs G across usefulness, correctness, naturalness, instruction following, and completeness.",
+  "sample_size": 100,
+  "pairwise_wins": {
+    "A_vs_G": {
+      "A_wins": 42,
+      "G_wins": 30,
+      "ties": 28
+    },
+    "F2_vs_G": {
+      "F2_wins": 12,
+      "G_wins": 41,
+      "ties": 47
+    }
+  },
+  "eval_records": [
+    {
+      "prompt_id": "HO3_001",
+      "prompt": "In production system operations, describe how What is the difference between synchronous blocking I/O and non-blocking asynchronous event loops?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_002",
+      "prompt": "From an enterprise software architecture perspective, explain how Explain how memory management units (MMU) translate virtual memory addresses to physical RAM?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_003",
+      "prompt": "Detail the exact steps and trade-offs when What is the primary function of a database foreign key constraint?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_004",
+      "prompt": "How does a CPU instruction pipeline improve overall execution throughput?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_005",
+      "prompt": "What is the function of the Border Gateway Protocol (BGP) in autonomous internet routing?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_006",
+      "prompt": "Explain the role of DNS root name servers during global domain name resolution.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_007",
+      "prompt": "What is the concept of idempotency in RESTful web API methods?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_008",
+      "prompt": "How does TLS 1.3 handshake establish encrypted transport security?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_009",
+      "prompt": "Provide a comprehensive technical breakdown regarding What is the difference between symmetric and asymmetric key cryptography?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_010",
+      "prompt": "In high-concurrency cloud backends, explain how Explain how virtual memory paging handles demand allocation for applications?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_011",
+      "prompt": "What is the function of a composite primary key in relational database schemas?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_012",
+      "prompt": "Explain how garbage collection mark-and-sweep algorithm identifies unreferenced objects.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_013",
+      "prompt": "In production system operations, describe how What is the difference between process context switching and thread context switching?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_014",
+      "prompt": "Explain how browser HTTP-only cookies prevent client-side JavaScript access.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_015",
+      "prompt": "From an enterprise software architecture perspective, explain how What is the function of an API gateway in microservice service mesh architectures?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_016",
+      "prompt": "Explain the principle of least privilege in cloud access control policies.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_017",
+      "prompt": "What is the difference between relational tables and document-oriented collections?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_018",
+      "prompt": "How does TCP window scaling prevent network throughput bottlenecks?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_019",
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between a hard link and a symbolic soft link in Linux file systems?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_020",
+      "prompt": "Explain how modern compiler static single assignment (SSA) forms simplify optimization.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_021",
+      "prompt": "What is the function of an Address Resolution Protocol (ARP) request on local subnets?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_022",
+      "prompt": "Explain the role of container runtime interfaces (CRI) in Kubernetes nodes.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_023",
+      "prompt": "What is the difference between Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_024",
+      "prompt": "How does a content delivery network (CDN) optimize edge caching latency?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_025",
+      "prompt": "What is the purpose of database connection pool sizing in high-concurrency backends?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_026",
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain how optimistic concurrency control handles database update conflicts using row versions?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_027",
+      "prompt": "What is the difference between stateful microservices and stateless serverless functions?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_028",
+      "prompt": "Explain how WebSocket protocols upgrade standard HTTP connections to full-duplex streams.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_029",
+      "prompt": "In high-concurrency cloud backends, explain how What is the function of a reverse proxy server like Nginx or HAProxy?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_030",
+      "prompt": "Explain how hardware page tables map virtual pages to physical frame numbers.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_031",
+      "prompt": "What is the role of message queue dead-letter exchanges in event-driven systems?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_032",
+      "prompt": "Explain how Cross-Origin Resource Sharing (CORS) preflight requests protect web APIs.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_033",
+      "prompt": "In production system operations, describe how What is the difference between horizontal pod autoscaling and vertical node scaling?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_034",
+      "prompt": "Explain how Git uses SHA-1 content hashing to construct directed acyclic graphs.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_035",
+      "prompt": "What is the function of systemd init process in modern Linux distributions?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_036",
+      "prompt": "From an enterprise software architecture perspective, explain how Explain how atomic compare-and-swap (CAS) instructions enable lock-free data structures?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_037",
+      "prompt": "Detail the exact steps and trade-offs when What is the difference between Docker image layers and container copy-on-write storage?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_038",
+      "prompt": "Explain how token bucket rate limiting algorithms handle bursty request traffic.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_039",
+      "prompt": "What is the role of Write-Ahead Logging (WAL) in maintaining ACID database durability?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_040",
+      "prompt": "Explain how OAuth 2.0 PKCE flow secures public mobile client authorizations.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_041",
+      "prompt": "What is the difference between reactive event loops and worker thread pools?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_042",
+      "prompt": "Explain how RAID 6 double parity protects storage arrays against two simultaneous drive failures.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_043",
+      "prompt": "What is the purpose of database covering indexes in eliminating heap table lookups?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_044",
+      "prompt": "Explain how cache invalidation strategies maintain data consistency across nodes.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_045",
+      "prompt": "What is the difference between Abstract Syntax Trees (AST) and bytecode intermediate representations?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_046",
+      "prompt": "Explain how zero-copy socket transfers bypass CPU buffer copying during file streaming.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_047",
+      "prompt": "What is the function of CIDR notation in IPv4 subnetwork masking?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_048",
+      "prompt": "Explain how vector database HNSW indexes enable fast nearest-neighbor semantic search.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_049",
+      "prompt": "What is the difference between monorepo and multi-repo software project organizations?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_050",
+      "prompt": "Explain how modern garbage collectors perform concurrent low-pause compaction.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_051",
+      "prompt": "What is the function of a dead-lock detection graph in relational database engines?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_052",
+      "prompt": "Explain how gRPC HTTP/2 multiplexing reduces persistent connection overhead.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_053",
+      "prompt": "Summarize the following text in exactly 15 words: Deep learning models require diverse training data to generalize accurately to unseen real-world distribution shifts.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_054",
+      "prompt": "Provide a comprehensive technical breakdown regarding Format the following technical terms as a numbered list in alphabetical order: PyTorch, Docker, Ansible, Kubernetes?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_055",
+      "prompt": "Rewrite the sentence 'The application crashed because database connection timed out' into professional incident language.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_056",
+      "prompt": "In high-concurrency cloud backends, explain how Extract all numeric values from this log: 'Latency=18ms, Memory=512MB, CPU=42%, Errors=0'?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_057",
+      "prompt": "In production system operations, describe how Convert the python list ['python', 'golang', 'rust'] into a comma-separated single string?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_058",
+      "prompt": "From an enterprise software architecture perspective, explain how List 4 essential security precautions when deploying a REST API to production?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_059",
+      "prompt": "Detail the exact steps and trade-offs when Format a JSON object containing keys 'status', 'code', and 'message' with standard HTTP OK values?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_060",
+      "prompt": "Provide a comprehensive technical breakdown regarding Summarize the main advantage of automated continuous integration in under 20 words?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_061",
+      "prompt": "In high-concurrency cloud backends, explain how Rephrase the technical query 'Why is database query slow?' into 3 precise diagnostic questions?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_062",
+      "prompt": "In production system operations, describe how Provide a markdown table comparing REST vs gRPC on Protocol and Payload format?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_063",
+      "prompt": "From an enterprise software architecture perspective, explain how Convert a passive sentence 'The pull request was reviewed by senior engineers' into active voice?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_064",
+      "prompt": "Detail the exact steps and trade-offs when List 4 key metrics to monitor for a production backend microservice?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_065",
+      "prompt": "Extract technical acronyms from this sentence: AWS EC2 instances use VPC networking and IAM security roles.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_066",
+      "prompt": "Provide a comprehensive technical breakdown regarding Rewrite a user bug report into an engineer-ready ticket summary?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_067",
+      "prompt": "In high-concurrency cloud backends, explain how Create a short technical disclaimer for an open-source software library release?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_068",
+      "prompt": "In production system operations, describe how Format a Python dictionary mapping 'host' to 'localhost' and 'port' to 8080?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_069",
+      "prompt": "From an enterprise software architecture perspective, explain how Summarize the primary purpose of database transactions in 10 words or fewer?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_070",
+      "prompt": "Detail the exact steps and trade-offs when List 3 edge cases to test when validating a user password input form?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_071",
+      "prompt": "Provide a comprehensive technical breakdown regarding Rewrite a verbose technical description into three bullet points?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_072",
+      "prompt": "In high-concurrency cloud backends, explain how Extract the hostname from the URL 'https://api.collision-ml.org/v1/generate'?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_073",
+      "prompt": "In production system operations, describe how Convert a list of key-value pairs into clean YAML format?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_074",
+      "prompt": "From an enterprise software architecture perspective, explain how Write a 3-step checklist for running a database migration safely?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_075",
+      "prompt": "Detail the exact steps and trade-offs when Summarize how attention weights work in transformer models in two sentences?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_076",
+      "prompt": "Provide a comprehensive technical breakdown regarding Format a standard HTTP GET request header template?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_077",
+      "prompt": "In high-concurrency cloud backends, explain how List 2 advantages of using immutable infrastructure in cloud deployments?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_078",
+      "prompt": "In production system operations, describe how Rewrite an ambiguous feature request to be specific and actionable?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_079",
+      "prompt": "From an enterprise software architecture perspective, explain how Extract log severity levels from this log text: 'INFO started, WARN high memory, ERROR connection reset'?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_080",
+      "prompt": "Detail the exact steps and trade-offs when Create a concise template acknowledging a software bug report?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_081",
+      "prompt": "Provide a comprehensive technical breakdown regarding List 3 mandatory steps when configuring HTTPS SSL certificates?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_082",
+      "prompt": "In high-concurrency cloud backends, explain how Provide 2 concrete examples of stateful vs stateless services?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_083",
+      "prompt": "In production system operations, describe how Rewrite a complex jargon paragraph into plain language for beginners?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_084",
+      "prompt": "From an enterprise software architecture perspective, explain how Format a Markdown checklist for pre-release software testing?",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_085",
+      "prompt": "Detail the exact steps and trade-offs when Extract email domain names from 'support@collision.io' and 'dev@collision.io'?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_086",
+      "prompt": "Provide a comprehensive technical breakdown regarding Summarize the benefit of container multi-stage builds in under 15 words?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_087",
+      "prompt": "In high-concurrency cloud backends, explain how Convert a raw SQL table query into a clean Python dataclass definition?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    },
+    {
+      "prompt_id": "HO3_088",
+      "prompt": "In production system operations, describe how List 3 common causes of memory leaks in garbage-collected languages?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_089",
+      "prompt": "From an enterprise software architecture perspective, explain how Rewrite a system alert message to be user-friendly for non-technical users?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_090",
+      "prompt": "Detail the exact steps and trade-offs when Format a JSON array containing three sample server IP addresses?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_091",
+      "prompt": "Provide a 3-bullet summary of key microservice architectural trade-offs.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_092",
+      "prompt": "Convert a technical error message into a user-facing notification sentence.",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_093",
+      "prompt": "Extract all function parameter names from 'def train_model(learning_rate, batch_size, num_epochs):'.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_094",
+      "prompt": "List 4 core principles of modern DevOps culture.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_095",
+      "prompt": "Explain how gradient descent optimizes neural network parameters during training.",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_096",
+      "prompt": "Explain the difference between overfitting and underfitting in supervised machine learning.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_097",
+      "prompt": "Explain how a hash table achieves constant time O(1) average lookup complexity.",
+      "A_vs_G_winner": "tie",
+      "F2_vs_G_winner": "tie"
+    },
+    {
+      "prompt_id": "HO3_098",
+      "prompt": "Provide a comprehensive technical breakdown regarding Explain why deep neural networks require non-linear activation functions?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_099",
+      "prompt": "In high-concurrency cloud backends, explain how Explain how garbage collection handles circular object reference graphs?",
+      "A_vs_G_winner": "Model_G_Phase36",
+      "F2_vs_G_winner": "Model_G_Phase36"
+    },
+    {
+      "prompt_id": "HO3_100",
+      "prompt": "In production system operations, describe how Explain the concept of continuous integration and continuous deployment (CI/CD)?",
+      "A_vs_G_winner": "Model_A_Baseline",
+      "F2_vs_G_winner": "Model_F2_Phase35"
+    }
+  ]
+}

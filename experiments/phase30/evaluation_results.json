@@ -1,0 +1,15 @@
+{
+  "baseline_val_loss": 5.5977,
+  "baseline_val_ppl": 269.81,
+  "finetuned_val_loss": 4.7779,
+  "finetuned_val_ppl": 118.85,
+  "val_loss_diff": -0.8198,
+  "mean_baseline_repetition": 0.3082,
+  "mean_finetuned_repetition": 0.4017,
+  "preference": {
+    "baseline": 6,
+    "finetuned": 0,
+    "ties": 0
+  },
+  "outcome": "REGRESSION"
+}

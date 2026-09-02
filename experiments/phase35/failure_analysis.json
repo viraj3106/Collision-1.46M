@@ -1,0 +1,565 @@
+{
+  "total_failures_logged": 820,
+  "failure_counts_by_model": {
+    "Model_A_Baseline": {
+      "repetition": 3,
+      "fragmentation": 0,
+      "template_behavior": 77,
+      "hallucination": 0,
+      "instruction_failure": 174,
+      "topic_drift": 77,
+      "context_loss": 0,
+      "over_compression": 78,
+      "over_generation": 0
+    },
+    "Model_E_Phase34": {
+      "repetition": 53,
+      "fragmentation": 0,
+      "template_behavior": 78,
+      "hallucination": 0,
+      "instruction_failure": 218,
+      "topic_drift": 78,
+      "context_loss": 0,
+      "over_compression": 80,
+      "over_generation": 0
+    },
+    "Model_F1_Phase35": {
+      "repetition": 55,
+      "fragmentation": 0,
+      "template_behavior": 88,
+      "hallucination": 0,
+      "instruction_failure": 215,
+      "topic_drift": 87,
+      "context_loss": 0,
+      "over_compression": 88,
+      "over_generation": 0
+    },
+    "Model_F2_Phase35": {
+      "repetition": 48,
+      "fragmentation": 0,
+      "template_behavior": 80,
+      "hallucination": 0,
+      "instruction_failure": 210,
+      "topic_drift": 79,
+      "context_loss": 0,
+      "over_compression": 83,
+      "over_generation": 0
+    }
+  },
+  "failure_records": [
+    {
+      "prompt_id": "HO2_001",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_001",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_001",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_001",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_002",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_002",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_002",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_002",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_003",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_003",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_003",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_003",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_004",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_004",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_004",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_004",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_005",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_005",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_005",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_006",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_006",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_006",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_006",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_007",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_007",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_007",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_008",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_008",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_008",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_009",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_009",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_010",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_010",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_010",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_010",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_011",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_011",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_011",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_011",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_012",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_012",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_012",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_012",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_013",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_013",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_013",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "instruction_failure"
+      ],
+      "severity": 1,
+      "description": "Generated text triggered: instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_013",
+      "model": "Model_F2_Phase35",
+      "failure_types": [
+        "repetition",
+        "instruction_failure"
+      ],
+      "severity": 2,
+      "description": "Generated text triggered: repetition, instruction_failure"
+    },
+    {
+      "prompt_id": "HO2_014",
+      "model": "Model_A_Baseline",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_014",
+      "model": "Model_E_Phase34",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    },
+    {
+      "prompt_id": "HO2_014",
+      "model": "Model_F1_Phase35",
+      "failure_types": [
+        "template_behavior",
+        "instruction_failure",
+        "topic_drift",
+        "over_compression"
+      ],
+      "severity": 4,
+      "description": "Generated text triggered: template_behavior, instruction_failure, topic_drift, over_compression"
+    }
+  ]
+}

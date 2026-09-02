@@ -1,0 +1,78 @@
+{
+  "scores_0_to_100": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 58.33,
+      "relevance": 54.11,
+      "coherence": 29.61,
+      "completeness": 100.0,
+      "instruction_following": 47.51,
+      "diversity": 66.23,
+      "multi_turn": 55.38,
+      "failure_robustness": 72.95
+    },
+    "Model_F2_Phase35": {
+      "generalization_score_100": 16.03,
+      "relevance": 8.34,
+      "coherence": 2.97,
+      "completeness": 16.0,
+      "instruction_following": 7.14,
+      "diversity": 10.14,
+      "multi_turn": 54.11,
+      "failure_robustness": 38.76
+    },
+    "Model_G_Phase36": {
+      "generalization_score_100": 19.53,
+      "relevance": 13.38,
+      "coherence": 3.87,
+      "completeness": 26.29,
+      "instruction_following": 9.54,
+      "diversity": 15.87,
+      "multi_turn": 50.58,
+      "failure_robustness": 40.57
+    },
+    "Model_H1_Phase37": {
+      "generalization_score_100": 24.8,
+      "relevance": 19.46,
+      "coherence": 5.89,
+      "completeness": 37.14,
+      "instruction_following": 15.06,
+      "diversity": 22.6,
+      "multi_turn": 52.2,
+      "failure_robustness": 44.19
+    },
+    "Model_H2_Phase37": {
+      "generalization_score_100": 31.34,
+      "relevance": 28.41,
+      "coherence": 7.07,
+      "completeness": 54.29,
+      "instruction_following": 20.2,
+      "diversity": 32.39,
+      "multi_turn": 51.42,
+      "failure_robustness": 46.86
+    },
+    "Model_H3_Phase37": {
+      "generalization_score_100": 47.68,
+      "relevance": 47.19,
+      "coherence": 12.6,
+      "completeness": 89.71,
+      "instruction_following": 35.86,
+      "diversity": 54.17,
+      "multi_turn": 56.37,
+      "failure_robustness": 58.38
+    }
+  },
+  "promotion_gate": {
+    "parameters": 10282304,
+    "production_sha256_unchanged": true,
+    "zero_leakage": true,
+    "unit_tests_pass": true,
+    "best_candidate": "Model_H3_Phase37",
+    "best_candidate_score": 47.68,
+    "Model_G_score": 19.53,
+    "Model_A_score": 58.33,
+    "delta_best_vs_G": 28.15,
+    "delta_best_vs_A": -10.65,
+    "promotion_decision": "CANDIDATE_ON_HOLD",
+    "final_phase_status": "PHASE_37_CANDIDATE_ON_HOLD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "loss_and_perplexity": {
+    "A_Baseline": {
+      "val_loss": 5.7764,
+      "perplexity": 322.58
+    },
+    "B_RealWorld_Only": {
+      "val_loss": 5.274,
+      "perplexity": 195.19
+    },
+    "C_Synthetic_Only": {
+      "val_loss": 1.9469,
+      "perplexity": 7.01
+    },
+    "D_Augmented_v1": {
+      "val_loss": 1.6327,
+      "perplexity": 5.12
+    }
+  },
+  "average_unigram_repetition": {
+    "A_Baseline": 0.3619,
+    "B_RealWorld_Only": 0.3421,
+    "C_Synthetic_Only": 0.4229,
+    "D_Augmented_v1": 0.3801
+  },
+  "blind_preference_wins": {
+    "A_Baseline": 4,
+    "B_RealWorld_Only": 3,
+    "C_Synthetic_Only": 0,
+    "D_Augmented_v1": 3
+  },
+  "result_classification": "MODEST_IMPROVEMENT"
+}

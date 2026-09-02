@@ -1,0 +1,25 @@
+{
+  "dataset_name": "collision_dataset_v6",
+  "total_records": 600,
+  "total_tokens_approx": 18252.0,
+  "average_length_words": 23.4,
+  "median_length_words": 23,
+  "min_length_words": 4,
+  "max_length_words": 44,
+  "unique_responses": 399,
+  "unique_response_ratio": 0.665,
+  "unique_3word_prefixes": 104,
+  "category_distribution": {
+    "completion": 59,
+    "question_answering": 79,
+    "instruction_following": 73,
+    "reasoning": 61,
+    "multi_turn": 95,
+    "declarative_knowledge": 48,
+    "explanation": 57,
+    "general": 5,
+    "troubleshooting": 62,
+    "natural_qa": 61
+  },
+  "template_frequency": "LOW (expanded multi-turn & conversational response diversity)"
+}

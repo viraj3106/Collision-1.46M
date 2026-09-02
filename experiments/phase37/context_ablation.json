@@ -1,0 +1,14 @@
+{
+  "results": {
+    "context_256": {
+      "context_length": 256,
+      "latency_ms": 1804.32,
+      "status": "SUPPORTED"
+    },
+    "context_512": {
+      "context_length": 512,
+      "latency_ms": 1523.89,
+      "status": "SUPPORTED"
+    }
+  }
+}

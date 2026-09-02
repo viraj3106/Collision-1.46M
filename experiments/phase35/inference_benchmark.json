@@ -1,0 +1,38 @@
+{
+  "Model_A_Baseline": {
+    "avg_latency_ms": 950.02,
+    "p50_latency_ms": 1261.61,
+    "p95_latency_ms": 1506.87,
+    "tokens_per_sec": 46.36,
+    "requests_per_sec": 1.05,
+    "cold_start_latency_ms": 15.96,
+    "warm_inference_latency_ms": 950.02
+  },
+  "Model_E_Phase34": {
+    "avg_latency_ms": 996.07,
+    "p50_latency_ms": 1283.13,
+    "p95_latency_ms": 1545.0,
+    "tokens_per_sec": 46.46,
+    "requests_per_sec": 1.0,
+    "cold_start_latency_ms": 16.81,
+    "warm_inference_latency_ms": 996.07
+  },
+  "Model_F1_Phase35": {
+    "avg_latency_ms": 966.23,
+    "p50_latency_ms": 1300.38,
+    "p95_latency_ms": 1590.12,
+    "tokens_per_sec": 46.89,
+    "requests_per_sec": 1.03,
+    "cold_start_latency_ms": 15.93,
+    "warm_inference_latency_ms": 966.23
+  },
+  "Model_F2_Phase35": {
+    "avg_latency_ms": 1066.06,
+    "p50_latency_ms": 1404.34,
+    "p95_latency_ms": 1842.86,
+    "tokens_per_sec": 44.43,
+    "requests_per_sec": 0.94,
+    "cold_start_latency_ms": 16.14,
+    "warm_inference_latency_ms": 1066.06
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "candidate_model": "Model E (COLLISION-10M + Augmented V2)",
+  "base_checkpoint": "models/collision-10m/model.pt",
+  "output_checkpoint": "V:\\collision - 1M\\checkpoints\\phase33\\collision_10m_production_candidate_v2.pt",
+  "parameter_count": 10282304,
+  "seed": 42,
+  "learning_rate": 0.0001,
+  "steps": 60,
+  "batch_size": 24,
+  "train_records_count": 397,
+  "training_time_seconds": 386.46
+}

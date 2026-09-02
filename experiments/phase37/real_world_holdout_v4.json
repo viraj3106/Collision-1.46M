@@ -1,0 +1,4822 @@
+{
+  "metadata": {
+    "name": "real_world_holdout_v4",
+    "total_prompts": 350,
+    "single_turn_prompts": 300,
+    "multi_turn_conversations": 50,
+    "task_mix_distribution": {
+      "natural_qa": "25%",
+      "instruction_following": "20%",
+      "explanation": "15%",
+      "troubleshooting": "10%",
+      "conversational_followup": "10%",
+      "reasoning": "10%",
+      "summarization_rewrite": "5%",
+      "everyday_knowledge": "5%"
+    }
+  },
+  "prompts": [
+    {
+      "id": "HO4_001",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 1)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_002",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 2)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_003",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 3)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_004",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 4)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_005",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 5)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_006",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 6)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_007",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 7)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_008",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 8)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_009",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 9)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_010",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 10)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_011",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 11)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_012",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 12)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_013",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 13)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_014",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 14)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_015",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 15)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_016",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 16)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_017",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 17)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_018",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 18)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_019",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 19)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_020",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 20)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_021",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 21)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_022",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 22)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_023",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 23)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_024",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 24)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_025",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 25)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_026",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 26)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_027",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 27)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_028",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 28)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_029",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 29)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_030",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 30)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_031",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 31)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_032",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 32)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_033",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 33)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_034",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 34)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_035",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 35)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_036",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 36)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_037",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 37)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_038",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 38)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_039",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 39)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_040",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 40)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_041",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 41)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_042",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 42)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_043",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 43)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_044",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 44)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_045",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 45)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_046",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 46)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_047",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 47)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_048",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 48)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_049",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 49)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_050",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 50)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_051",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 51)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_052",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 52)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_053",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 53)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_054",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 54)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_055",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 55)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_056",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 56)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_057",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 57)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_058",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 58)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_059",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 59)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_060",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 60)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_061",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 61)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_062",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 62)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_063",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 63)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_064",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 64)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_065",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 65)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_066",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 66)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_067",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 67)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_068",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 68)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_069",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 69)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_070",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 70)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_071",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 71)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_072",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 72)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_073",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 73)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_074",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 74)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_075",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 75)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_076",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 76)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_077",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 77)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_078",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 78)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_079",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 79)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_080",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 80)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_081",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 81)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_082",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 82)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_083",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 83)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_084",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 84)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_085",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 85)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_086",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 86)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_087",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 87)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_088",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 88)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_089",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 89)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_090",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 90)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_091",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 91)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_092",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 92)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_093",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 93)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_094",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 94)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_095",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 95)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_096",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 96)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_097",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 97)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_098",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 98)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_099",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 99)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_100",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 100)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_101",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 101)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_102",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 102)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_103",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 103)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_104",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 104)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_105",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 105)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_106",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 106)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_107",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 107)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_108",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 108)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_109",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 109)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_110",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 110)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_111",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 111)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_112",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 112)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_113",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 113)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_114",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 114)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_115",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 115)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_116",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 116)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_117",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 117)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_118",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 118)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_119",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 119)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_120",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 120)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_121",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 121)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_122",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 122)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_123",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 123)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_124",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 124)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_125",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 125)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_126",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 126)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_127",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 127)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_128",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 128)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_129",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 129)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_130",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 130)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_131",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 131)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_132",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 132)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_133",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 133)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_134",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 134)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_135",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 135)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_136",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 136)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_137",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 137)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_138",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 138)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_139",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 139)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_140",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 140)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_141",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 141)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_142",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 142)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_143",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 143)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_144",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 144)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_145",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 145)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_146",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 146)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_147",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 147)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_148",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 148)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_149",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 149)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_150",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 150)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_151",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 151)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_152",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 152)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_153",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 153)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_154",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 154)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_155",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 155)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_156",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 156)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_157",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 157)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_158",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 158)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_159",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 159)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_160",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 160)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_161",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 161)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_162",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 162)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_163",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 163)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_164",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 164)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_165",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 165)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_166",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 166)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_167",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 167)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_168",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 168)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_169",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 169)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_170",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 170)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_171",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 171)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_172",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 172)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_173",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 173)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_174",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 174)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_175",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 175)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_176",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 176)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_177",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 177)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_178",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 178)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_179",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 179)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_180",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 180)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_181",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 181)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_182",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 182)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_183",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 183)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_184",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 184)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_185",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 185)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_186",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 186)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_187",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 187)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_188",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 188)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_189",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 189)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_190",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 190)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_191",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 191)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_192",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 192)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_193",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 193)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_194",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 194)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_195",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 195)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_196",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 196)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_197",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 197)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_198",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 198)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_199",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 199)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_200",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 200)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_201",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 201)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_202",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 202)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_203",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 203)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_204",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 204)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_205",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 205)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_206",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 206)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_207",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 207)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_208",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 208)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_209",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 209)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_210",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 210)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_211",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 211)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_212",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 212)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_213",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 213)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_214",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 214)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_215",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 215)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_216",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 216)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_217",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 217)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_218",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 218)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_219",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 219)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_220",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 220)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_221",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 221)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_222",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 222)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_223",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 223)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_224",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 224)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_225",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 225)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_226",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 226)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_227",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 227)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_228",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 228)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_229",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 229)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_230",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 230)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_231",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 231)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_232",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 232)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_233",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 233)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_234",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 234)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_235",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 235)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_236",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 236)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_237",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 237)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_238",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 238)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_239",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 239)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_240",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 240)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_241",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 241)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_242",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 242)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_243",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 243)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_244",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 244)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_245",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 245)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_246",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 246)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_247",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 247)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_248",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 248)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_249",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 249)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_250",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 250)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_251",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 251)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_252",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 252)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_253",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 253)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_254",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 254)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_255",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 255)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_256",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 256)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_257",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 257)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_258",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 258)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_259",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 259)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_260",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 260)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_261",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 261)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_262",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 262)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_263",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 263)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_264",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 264)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_265",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 265)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_266",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 266)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_267",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 267)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_268",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 268)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_269",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 269)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_270",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 270)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_271",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 271)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_272",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 272)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_273",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 273)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_274",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 274)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_275",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 275)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_276",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 276)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_277",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 277)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_278",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 278)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_279",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 279)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_280",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 280)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_281",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 281)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_282",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 282)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_283",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 283)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_284",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 284)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_285",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 285)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_286",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 286)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_287",
+      "task_type": "explanation",
+      "category": "beginner_technical",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain how hash maps handle key collision resolutions using chaining vs open addressing. (Variant 287)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_288",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Python code throws 'AttributeError: 'NoneType' object has no attribute 'get''. How do I debug it? (Variant 288)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_289",
+      "task_type": "troubleshooting",
+      "category": "troubleshooting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "My Docker container exits with code 137 under heavy load. How do I inspect OOM killer logs? (Variant 289)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_290",
+      "task_type": "conversational",
+      "category": "follow_up_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Can you explain how connection pooling differs from opening raw sockets per request? (Variant 290)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_291",
+      "task_type": "reasoning",
+      "category": "planning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "If a server handles 5,000 req/sec with 40ms average latency, how many concurrent requests are active? (Variant 291)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_292",
+      "task_type": "reasoning",
+      "category": "reasoning",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Analyze why quicksort runs faster than mergesort in practice despite O(N^2) worst-case time complexity. (Variant 292)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_293",
+      "task_type": "summarization_rewrite",
+      "category": "summarization",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the primary trade-off between monolithic architectures and microservices. (Variant 293)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_294",
+      "task_type": "everyday_knowledge",
+      "category": "everyday_knowledge",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What are 3 practical time-management tips for software developers working on complex features? (Variant 294)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_295",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "What is the key mechanism behind database transaction write-ahead logging (WAL)? (Variant 295)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_296",
+      "task_type": "natural_qa",
+      "category": "technical_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "How does TCP 3-way handshake establish reliable sequence numbers? (Variant 296)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_297",
+      "task_type": "natural_qa",
+      "category": "general_qa",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why HTTPS encryption prevents man-in-the-middle network snooping. (Variant 297)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_298",
+      "task_type": "instruction_following",
+      "category": "formatting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Summarize the following text in under 12 words: Neural network quantization compresses floating point weights into 8-bit integers to accelerate inference speed. (Variant 298)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_299",
+      "task_type": "instruction_following",
+      "category": "rewriting",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Rewrite 'The API crashed due to high memory usage' in formal engineering incident report format. (Variant 299)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_300",
+      "task_type": "explanation",
+      "category": "aiml_questions",
+      "conversation_id": null,
+      "turn": 1,
+      "prompt": "Explain why gradient clipping prevents vanishing and exploding gradients in deep recurrent neural networks. (Variant 300)",
+      "expected_behavior": "Deliver an accurate, clear, and direct response."
+    },
+    {
+      "id": "HO4_301",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_001",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 1",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_302",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_002",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 2",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_303",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_003",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 3",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_304",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_004",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 4",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_305",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_005",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 5",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_306",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_006",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 6",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_307",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_007",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 7",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_308",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_008",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 8",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_309",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_009",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 9",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_310",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_010",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 10",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_311",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_011",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 11",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_312",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_012",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 12",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_313",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_013",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 13",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_314",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_014",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 14",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_315",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_015",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 15",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_316",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_016",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 16",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_317",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_017",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 17",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_318",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_018",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 18",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_319",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_019",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 19",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_320",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_020",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 20",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_321",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_021",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 21",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_322",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_022",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 22",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_323",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_023",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 23",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_324",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_024",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 24",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_325",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_025",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 25",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_326",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_026",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 26",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_327",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_027",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 27",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_328",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_028",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 28",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_329",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_029",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 29",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_330",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_030",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 30",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_331",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_031",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 31",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_332",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_032",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 32",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_333",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_033",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 33",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_334",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_034",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 34",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_335",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_035",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 35",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_336",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_036",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 36",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_337",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_037",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 37",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_338",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_038",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 38",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_339",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_039",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 39",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_340",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_040",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 40",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_341",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_041",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 41",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_342",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_042",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 42",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_343",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_043",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 43",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_344",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_044",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 44",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_345",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_045",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 45",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_346",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_046",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 46",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_347",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_047",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 47",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_348",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_048",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 48",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_349",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_049",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 49",
+      "expected_behavior": "Maintain context retention across turns."
+    },
+    {
+      "id": "HO4_350",
+      "task_type": "conversational_multi_turn",
+      "category": "follow_up_questions",
+      "conversation_id": "CONV_HO4_050",
+      "turn": 1,
+      "prompt": "Question turn 1 for conversation topic 50",
+      "expected_behavior": "Maintain context retention across turns."
+    }
+  ],
+  "multi_turn_dialogues": [
+    {
+      "conversation_id": "CONV_HO4_001",
+      "topic": "Multi-Turn Topic 1",
+      "turns": [
+        {
+          "id": "HO4_MT_01_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_001",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 1",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_01_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_001",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 1",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_01_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_001",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 1",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_002",
+      "topic": "Multi-Turn Topic 2",
+      "turns": [
+        {
+          "id": "HO4_MT_02_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_002",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 2",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_02_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_002",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 2",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_02_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_002",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 2",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_003",
+      "topic": "Multi-Turn Topic 3",
+      "turns": [
+        {
+          "id": "HO4_MT_03_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_003",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 3",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_03_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_003",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 3",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_03_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_003",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 3",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_004",
+      "topic": "Multi-Turn Topic 4",
+      "turns": [
+        {
+          "id": "HO4_MT_04_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_004",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 4",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_04_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_004",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 4",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_04_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_004",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 4",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_005",
+      "topic": "Multi-Turn Topic 5",
+      "turns": [
+        {
+          "id": "HO4_MT_05_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_005",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 5",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_05_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_005",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 5",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_05_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_005",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 5",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_006",
+      "topic": "Multi-Turn Topic 6",
+      "turns": [
+        {
+          "id": "HO4_MT_06_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_006",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 6",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_06_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_006",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 6",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_06_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_006",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 6",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_007",
+      "topic": "Multi-Turn Topic 7",
+      "turns": [
+        {
+          "id": "HO4_MT_07_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_007",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 7",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_07_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_007",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 7",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_07_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_007",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 7",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_008",
+      "topic": "Multi-Turn Topic 8",
+      "turns": [
+        {
+          "id": "HO4_MT_08_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_008",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 8",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_08_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_008",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 8",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_08_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_008",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 8",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_009",
+      "topic": "Multi-Turn Topic 9",
+      "turns": [
+        {
+          "id": "HO4_MT_09_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_009",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 9",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_09_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_009",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 9",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_09_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_009",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 9",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_010",
+      "topic": "Multi-Turn Topic 10",
+      "turns": [
+        {
+          "id": "HO4_MT_10_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_010",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 10",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_10_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_010",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 10",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_10_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_010",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 10",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_011",
+      "topic": "Multi-Turn Topic 11",
+      "turns": [
+        {
+          "id": "HO4_MT_11_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_011",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 11",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_11_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_011",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 11",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_11_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_011",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 11",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_012",
+      "topic": "Multi-Turn Topic 12",
+      "turns": [
+        {
+          "id": "HO4_MT_12_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_012",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 12",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_12_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_012",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 12",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_12_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_012",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 12",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_013",
+      "topic": "Multi-Turn Topic 13",
+      "turns": [
+        {
+          "id": "HO4_MT_13_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_013",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 13",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_13_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_013",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 13",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_13_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_013",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 13",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_014",
+      "topic": "Multi-Turn Topic 14",
+      "turns": [
+        {
+          "id": "HO4_MT_14_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_014",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 14",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_14_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_014",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 14",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_14_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_014",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 14",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_015",
+      "topic": "Multi-Turn Topic 15",
+      "turns": [
+        {
+          "id": "HO4_MT_15_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_015",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 15",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_15_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_015",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 15",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_15_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_015",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 15",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_016",
+      "topic": "Multi-Turn Topic 16",
+      "turns": [
+        {
+          "id": "HO4_MT_16_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_016",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 16",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_16_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_016",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 16",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_16_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_016",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 16",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_017",
+      "topic": "Multi-Turn Topic 17",
+      "turns": [
+        {
+          "id": "HO4_MT_17_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_017",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 17",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_17_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_017",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 17",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_17_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_017",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 17",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_018",
+      "topic": "Multi-Turn Topic 18",
+      "turns": [
+        {
+          "id": "HO4_MT_18_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_018",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 18",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_18_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_018",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 18",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_18_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_018",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 18",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_019",
+      "topic": "Multi-Turn Topic 19",
+      "turns": [
+        {
+          "id": "HO4_MT_19_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_019",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 19",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_19_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_019",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 19",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_19_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_019",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 19",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_020",
+      "topic": "Multi-Turn Topic 20",
+      "turns": [
+        {
+          "id": "HO4_MT_20_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_020",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 20",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_20_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_020",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 20",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_20_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_020",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 20",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_021",
+      "topic": "Multi-Turn Topic 21",
+      "turns": [
+        {
+          "id": "HO4_MT_21_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_021",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 21",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_21_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_021",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 21",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_21_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_021",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 21",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_022",
+      "topic": "Multi-Turn Topic 22",
+      "turns": [
+        {
+          "id": "HO4_MT_22_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_022",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 22",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_22_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_022",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 22",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_22_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_022",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 22",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_023",
+      "topic": "Multi-Turn Topic 23",
+      "turns": [
+        {
+          "id": "HO4_MT_23_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_023",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 23",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_23_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_023",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 23",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_23_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_023",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 23",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_024",
+      "topic": "Multi-Turn Topic 24",
+      "turns": [
+        {
+          "id": "HO4_MT_24_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_024",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 24",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_24_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_024",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 24",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_24_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_024",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 24",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_025",
+      "topic": "Multi-Turn Topic 25",
+      "turns": [
+        {
+          "id": "HO4_MT_25_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_025",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 25",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_25_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_025",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 25",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_25_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_025",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 25",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_026",
+      "topic": "Multi-Turn Topic 26",
+      "turns": [
+        {
+          "id": "HO4_MT_26_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_026",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 26",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_26_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_026",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 26",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_26_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_026",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 26",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_027",
+      "topic": "Multi-Turn Topic 27",
+      "turns": [
+        {
+          "id": "HO4_MT_27_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_027",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 27",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_27_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_027",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 27",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_27_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_027",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 27",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_028",
+      "topic": "Multi-Turn Topic 28",
+      "turns": [
+        {
+          "id": "HO4_MT_28_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_028",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 28",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_28_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_028",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 28",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_28_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_028",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 28",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_029",
+      "topic": "Multi-Turn Topic 29",
+      "turns": [
+        {
+          "id": "HO4_MT_29_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_029",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 29",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_29_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_029",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 29",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_29_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_029",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 29",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_030",
+      "topic": "Multi-Turn Topic 30",
+      "turns": [
+        {
+          "id": "HO4_MT_30_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_030",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 30",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_30_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_030",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 30",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_30_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_030",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 30",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_031",
+      "topic": "Multi-Turn Topic 31",
+      "turns": [
+        {
+          "id": "HO4_MT_31_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_031",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 31",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_31_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_031",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 31",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_31_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_031",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 31",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_032",
+      "topic": "Multi-Turn Topic 32",
+      "turns": [
+        {
+          "id": "HO4_MT_32_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_032",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 32",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_32_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_032",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 32",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_32_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_032",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 32",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_033",
+      "topic": "Multi-Turn Topic 33",
+      "turns": [
+        {
+          "id": "HO4_MT_33_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_033",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 33",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_33_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_033",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 33",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_33_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_033",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 33",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_034",
+      "topic": "Multi-Turn Topic 34",
+      "turns": [
+        {
+          "id": "HO4_MT_34_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_034",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 34",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_34_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_034",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 34",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_34_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_034",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 34",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_035",
+      "topic": "Multi-Turn Topic 35",
+      "turns": [
+        {
+          "id": "HO4_MT_35_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_035",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 35",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_35_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_035",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 35",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_35_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_035",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 35",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_036",
+      "topic": "Multi-Turn Topic 36",
+      "turns": [
+        {
+          "id": "HO4_MT_36_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_036",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 36",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_36_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_036",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 36",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_36_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_036",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 36",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_037",
+      "topic": "Multi-Turn Topic 37",
+      "turns": [
+        {
+          "id": "HO4_MT_37_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_037",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 37",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_37_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_037",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 37",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_37_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_037",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 37",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_038",
+      "topic": "Multi-Turn Topic 38",
+      "turns": [
+        {
+          "id": "HO4_MT_38_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_038",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 38",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_38_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_038",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 38",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_38_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_038",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 38",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_039",
+      "topic": "Multi-Turn Topic 39",
+      "turns": [
+        {
+          "id": "HO4_MT_39_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_039",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 39",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_39_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_039",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 39",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_39_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_039",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 39",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_040",
+      "topic": "Multi-Turn Topic 40",
+      "turns": [
+        {
+          "id": "HO4_MT_40_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_040",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 40",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_40_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_040",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 40",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_40_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_040",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 40",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_041",
+      "topic": "Multi-Turn Topic 41",
+      "turns": [
+        {
+          "id": "HO4_MT_41_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_041",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 41",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_41_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_041",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 41",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_41_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_041",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 41",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_042",
+      "topic": "Multi-Turn Topic 42",
+      "turns": [
+        {
+          "id": "HO4_MT_42_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_042",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 42",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_42_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_042",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 42",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_42_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_042",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 42",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_043",
+      "topic": "Multi-Turn Topic 43",
+      "turns": [
+        {
+          "id": "HO4_MT_43_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_043",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 43",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_43_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_043",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 43",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_43_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_043",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 43",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_044",
+      "topic": "Multi-Turn Topic 44",
+      "turns": [
+        {
+          "id": "HO4_MT_44_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_044",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 44",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_44_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_044",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 44",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_44_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_044",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 44",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_045",
+      "topic": "Multi-Turn Topic 45",
+      "turns": [
+        {
+          "id": "HO4_MT_45_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_045",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 45",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_45_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_045",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 45",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_45_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_045",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 45",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_046",
+      "topic": "Multi-Turn Topic 46",
+      "turns": [
+        {
+          "id": "HO4_MT_46_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_046",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 46",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_46_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_046",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 46",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_46_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_046",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 46",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_047",
+      "topic": "Multi-Turn Topic 47",
+      "turns": [
+        {
+          "id": "HO4_MT_47_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_047",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 47",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_47_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_047",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 47",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_47_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_047",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 47",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_048",
+      "topic": "Multi-Turn Topic 48",
+      "turns": [
+        {
+          "id": "HO4_MT_48_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_048",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 48",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_48_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_048",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 48",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_48_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_048",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 48",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_049",
+      "topic": "Multi-Turn Topic 49",
+      "turns": [
+        {
+          "id": "HO4_MT_49_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_049",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 49",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_49_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_049",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 49",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_49_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_049",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 49",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    },
+    {
+      "conversation_id": "CONV_HO4_050",
+      "topic": "Multi-Turn Topic 50",
+      "turns": [
+        {
+          "id": "HO4_MT_50_T1",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_050",
+          "turn": 1,
+          "prompt": "Question turn 1 for conversation topic 50",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_50_T2",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_050",
+          "turn": 2,
+          "prompt": "Follow-up turn 2 expanding on topic 50",
+          "expected_behavior": "Maintain context retention across turns."
+        },
+        {
+          "id": "HO4_MT_50_T3",
+          "task_type": "conversational_multi_turn",
+          "category": "follow_up_questions",
+          "conversation_id": "CONV_HO4_050",
+          "turn": 3,
+          "prompt": "Clarification turn 3 requesting code example for topic 50",
+          "expected_behavior": "Maintain context retention across turns."
+        }
+      ]
+    }
+  ]
+}

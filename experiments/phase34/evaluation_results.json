@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "phase": 34,
+    "production_baseline_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+    "production_parameters": 10282304,
+    "decoding_params": {
+      "max_tokens": 60,
+      "temp": 0.7,
+      "top_k": 40,
+      "top_p": 0.9,
+      "seed": 42
+    }
+  },
+  "language_model_metrics": {
+    "Model_A_Baseline": {
+      "val_loss": 6.3494,
+      "val_ppl": 572.14,
+      "test_loss": 6.4679
+    },
+    "Model_D_Phase32": {
+      "val_loss": 1.6327,
+      "val_ppl": 5.12,
+      "test_loss": 2.1567
+    },
+    "Model_E_Phase33": {
+      "val_loss": 2.2878,
+      "val_ppl": 9.85,
+      "test_loss": 2.1301
+    }
+  },
+  "generalization_scores_0_to_100": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 35.99,
+      "relevance": 29.25,
+      "coherence": 20.94,
+      "completeness": 57.73,
+      "instruction_following": 31.23,
+      "diversity": 40.54,
+      "multi_turn": 54.05,
+      "failure_robustness": 31.52
+    },
+    "Model_D_Phase32": {
+      "generalization_score_100": 23.32,
+      "relevance": 21.59,
+      "coherence": 9.44,
+      "completeness": 40.45,
+      "instruction_following": 17.86,
+      "diversity": 25.95,
+      "multi_turn": 52.07,
+      "failure_robustness": 5.61
+    },
+    "Model_E_Phase33": {
+      "generalization_score_100": 29.54,
+      "relevance": 31.75,
+      "coherence": 5.85,
+      "completeness": 60.0,
+      "instruction_following": 18.55,
+      "diversity": 34.06,
+      "multi_turn": 49.23,
+      "failure_robustness": 19.09
+    }
+  },
+  "inference_benchmark": {
+    "Model_A_Baseline": {
+      "avg_latency_ms": 912.8,
+      "p50_latency_ms": 1279.09,
+      "p95_latency_ms": 1482.06,
+      "tokens_per_sec": 50.53,
+      "requests_per_sec": 1.1,
+      "cold_start_latency_ms": 12.66,
+      "warm_inference_latency_ms": 912.8
+    },
+    "Model_D_Phase32": {
+      "avg_latency_ms": 692.04,
+      "p50_latency_ms": 794.98,
+      "p95_latency_ms": 1339.19,
+      "tokens_per_sec": 52.26,
+      "requests_per_sec": 1.45,
+      "cold_start_latency_ms": 14.98,
+      "warm_inference_latency_ms": 692.04
+    },
+    "Model_E_Phase33": {
+      "avg_latency_ms": 1146.33,
+      "p50_latency_ms": 1283.01,
+      "p95_latency_ms": 1412.13,
+      "tokens_per_sec": 47.91,
+      "requests_per_sec": 0.87,
+      "cold_start_latency_ms": 15.71,
+      "warm_inference_latency_ms": 1146.33
+    }
+  },
+  "pairwise_human_preference": {
+    "methodology": "Blind randomized presentation across A vs E and D vs E evaluating relevance, coherence, completeness, instruction following, and overall preference.",
+    "sample_size": 100,
+    "pairwise_wins": {
+      "A_vs_E": {
+        "A_wins": 49,
+        "E_wins": 17,
+        "ties": 34
+      },
+      "D_vs_E": {
+        "D_wins": 20,
+        "E_wins": 30,
+        "ties": 50
+      }
+    },
+    "eval_records": [
+      {
+        "prompt_id": "RW_001",
+        "prompt": "What is the principle behind optical fiber data transmission?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_002",
+        "prompt": "Explain how dark energy differs from dark matter in cosmology.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_003",
+        "prompt": "What is the role of mitochondria in cellular respiration?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_004",
+        "prompt": "How does a quantum computer qubit differ from a classical bit?",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_005",
+        "prompt": "What is the mechanism of action of mRNA vaccines?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_006",
+        "prompt": "Describe the event horizon of a black hole.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_007",
+        "prompt": "What causes gravitational waves according to general relativity?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_008",
+        "prompt": "Explain the law of conservation of momentum with an example.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_009",
+        "prompt": "What is the difference between nuclear fission and fusion?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_010",
+        "prompt": "How does the immune system produce antibodies upon infection?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_011",
+        "prompt": "What is the function of the hippocampus in human memory?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_012",
+        "prompt": "Explain the mechanism of plate tectonics.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_013",
+        "prompt": "What is quantum entanglement and why is it important?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_014",
+        "prompt": "Describe the structure of DNA and its double helix model.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_015",
+        "prompt": "How does photosynthesis convert light into chemical energy?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_016",
+        "prompt": "What is Bernoulli's principle in fluid dynamics?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_017",
+        "prompt": "Explain the difference between thermal energy and temperature.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_018",
+        "prompt": "What is Heisenberg's uncertainty principle?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_019",
+        "prompt": "How does the Doppler effect alter frequency for moving sources?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_020",
+        "prompt": "What is the greenhouse effect and how does carbon dioxide contribute?",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_021",
+        "prompt": "Explain the concept of entropy in thermodynamics.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_022",
+        "prompt": "What is the difference between speed of light in vacuum and in media?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_023",
+        "prompt": "How do semiconductors conduct electricity under doping?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_024",
+        "prompt": "What is the role of enzyme catalysts in biological reactions?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_025",
+        "prompt": "Explain the difference between acids and bases using pH scale.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_026",
+        "prompt": "What is electromagnetic radiation and how does its spectrum work?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_027",
+        "prompt": "Describe the function of the nervous system in impulse signal transmission.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_028",
+        "prompt": "What is the Big Bang theory and what evidence supports it?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_029",
+        "prompt": "Explain how radiometric dating works for ancient artifacts.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_030",
+        "prompt": "What is the difference between active and passive transport in cells?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_031",
+        "prompt": "How does gravity affect time dilation near massive celestial bodies?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_032",
+        "prompt": "What is Superconductivity and why does it occur at low temperatures?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_033",
+        "prompt": "Explain the function of lipids and proteins in cell membranes.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_034",
+        "prompt": "What is the difference between prokaryotic and eukaryotic cells?",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_035",
+        "prompt": "How do nerve synapses transmit neurotransmitters?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_036",
+        "prompt": "What is the function of blood hemoglobin in oxygen transport?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_037",
+        "prompt": "Explain Kepler's laws of planetary motion.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_038",
+        "prompt": "What is the main cause of ocean tides on Earth?",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_039",
+        "prompt": "Explain how gradient descent updates model parameters during training.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_040",
+        "prompt": "Explain the difference between overfitting and underfitting to a beginner.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_041",
+        "prompt": "Explain how a web browser renders HTML, CSS, and JavaScript.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_042",
+        "prompt": "Explain how database indexes speed up query response times.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_043",
+        "prompt": "Explain why transformer self-attention requires positional encodings.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_044",
+        "prompt": "Explain how backpropagation computes gradients using the chain rule.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_045",
+        "prompt": "Explain the difference between synchronous and asynchronous execution in JavaScript.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_046",
+        "prompt": "Explain how neural networks use activation functions to model non-linearity.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_D_Phase32"
+      },
+      {
+        "prompt_id": "RW_047",
+        "prompt": "Explain the concept of recursion with a simple real-world analogy.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_048",
+        "prompt": "Explain how garbage collection works in modern programming languages.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_049",
+        "prompt": "Explain the difference between SQL relational databases and NoSQL key-value stores.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_050",
+        "prompt": "Explain how public-key cryptography enables secure communication over untrusted networks.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_051",
+        "prompt": "Explain how object-oriented inheritance differs from composition.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_052",
+        "prompt": "Explain how cross-validation helps evaluate model generalization performance.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_053",
+        "prompt": "Explain the concept of continuous integration and continuous deployment (CI/CD).",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_054",
+        "prompt": "Explain how convolutional neural networks extract hierarchical visual features.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_055",
+        "prompt": "Explain why learning rate scheduling is crucial for training deep learning models.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_056",
+        "prompt": "Explain how HTTP/2 multiplexing improves web performance over HTTP/1.1.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_057",
+        "prompt": "Explain the concept of dynamic programming using the Fibonacci sequence.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_058",
+        "prompt": "Explain how a CPU cache line works and why cache locality matters.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_059",
+        "prompt": "Explain the difference between a process and a thread in operating systems.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_060",
+        "prompt": "Explain how docker containers achieve isolation compared to virtual machines.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_061",
+        "prompt": "Explain how residual connections help prevent vanishing gradients in deep networks.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_062",
+        "prompt": "Explain the concept of bias-variance tradeoff in machine learning algorithms.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_063",
+        "prompt": "Explain how loss functions guide optimization in supervised learning models.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_064",
+        "prompt": "Explain the difference between stack and heap memory allocation.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_065",
+        "prompt": "Explain how batch normalization stabilizes internal covariate shift in deep models.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_066",
+        "prompt": "Explain how load balancers distribute incoming network traffic across server nodes.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_067",
+        "prompt": "Explain the mechanism of attention mechanisms in sequence-to-sequence models.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_068",
+        "prompt": "Explain how deadlocks occur in concurrent computing and how to avoid them.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_069",
+        "prompt": "Explain the concept of rate limiting in web API design.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_070",
+        "prompt": "Explain how graph neural networks process non-Euclidean structured data.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_071",
+        "prompt": "Explain the difference between L1 and L2 regularization techniques.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_072",
+        "prompt": "Explain how microservices communicate via RESTful APIs and message queues.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_073",
+        "prompt": "Explain the concept of zero-shot learning in artificial intelligence.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_074",
+        "prompt": "Explain how autoencoders compress and reconstruct high-dimensional input vectors.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_075",
+        "prompt": "Explain why GPU parallel processing is faster for matrix multiplications than CPU.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_076",
+        "prompt": "Explain how cosine similarity measures vector alignment in embedding spaces.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_077",
+        "prompt": "Summarize the following concept in exactly two sentences: Machine learning is a field of study devoted to understanding and building methods that learn from data.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_078",
+        "prompt": "Convert the following text into 3 bullet points: Python is versatile, easy to read, and widely adopted in data science.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_079",
+        "prompt": "Format the list of numbers [4, 1, 9, 2] in descending order with comma separators.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_080",
+        "prompt": "Rewrite the sentence 'The system crashed due to memory exhaustion' using professional technical terminology.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_081",
+        "prompt": "List 4 key requirements for building a scalable backend microservice architecture.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_082",
+        "prompt": "Provide a JSON object containing keys 'name', 'status', and 'version' with sample values.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_083",
+        "prompt": "Extract the core message from this text: Cloud computing allows remote server storage and processing without local infrastructure.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_084",
+        "prompt": "Write a 3-step checklist for releasing a new software production update.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_085",
+        "prompt": "Rephrase the question 'Why is my code running slow?' into 3 specific diagnostic questions.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_086",
+        "prompt": "Format the following technical terms into an alphabetical markdown list: PyTorch, Docker, Kubernetes, Ansible.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_087",
+        "prompt": "Provide 3 distinct advantages of using TypeScript over vanilla JavaScript.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_088",
+        "prompt": "Write a concise one-line definition of data normalization in databases.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_089",
+        "prompt": "Convert the statement 'Database queries are failing under high load' into an actionable incident summary.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_090",
+        "prompt": "List 5 common security vulnerabilities described in the OWASP Top 10.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_091",
+        "prompt": "Rewrite the user instruction 'Fix the bug' to be clear, actionable, and structured.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_092",
+        "prompt": "Provide a markdown table with 2 columns comparing SQL vs NoSQL on Schema and Scalability.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_093",
+        "prompt": "Extract all technical acronyms from this sentence: AWS EC2 instances use VPC and IAM for secure networking.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_094",
+        "prompt": "Create a short technical disclaimer for an open-source software library release.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_095",
+        "prompt": "Summarize the main benefit of unit testing in software engineering in under 15 words.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_096",
+        "prompt": "Format a standard HTTP POST request header template with JSON content type.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "Model_E_Phase33"
+      },
+      {
+        "prompt_id": "RW_097",
+        "prompt": "List 3 edge cases to test when validating a user email registration input field.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_098",
+        "prompt": "Rewrite a complex jargon-heavy description into clear language suitable for a high school student.",
+        "A_vs_E_winner": "Model_A_Baseline",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_099",
+        "prompt": "Extract key metrics from this log string: 'Latency=45ms ErrorRate=0.01% CPU=82%'.",
+        "A_vs_E_winner": "tie",
+        "D_vs_E_winner": "tie"
+      },
+      {
+        "prompt_id": "RW_100",
+        "prompt": "Write a 4-step guide on how to perform a git rebase safely.",
+        "A_vs_E_winner": "Model_E_Phase33",
+        "D_vs_E_winner": "Model_E_Phase33"
+      }
+    ]
+  },
+  "leakage_audit": {
+    "status": "PASS",
+    "total_prompts": 220,
+    "exact_matches": 0,
+    "near_duplicate_matches": 0,
+    "replacements": 0,
+    "final_clean_prompts": 220,
+    "datasets_checked": [
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\train.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\val.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_augmented_v2\\test.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_synthetic_v1\\collision_synthetic_v1.jsonl",
+      "V:\\collision - 1M\\datasets\\collision_synthetic_v2\\collision_synthetic_v2.jsonl"
+    ],
+    "methodology": "Exact string matching, normalized whitespace/punctuation lowercasing, and SequenceMatcher similarity scoring (threshold > 0.85)",
+    "total_leaks": 0,
+    "leaks": []
+  }
+}

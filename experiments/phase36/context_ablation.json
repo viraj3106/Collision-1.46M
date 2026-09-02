@@ -1,0 +1,19 @@
+{
+  "architecture_support": "CollisionTransformer positional embeddings safely evaluated up to 512 context length",
+  "results": {
+    "context_256": {
+      "context_length": 256,
+      "latency_ms": 364.86,
+      "coherence": 0.8182,
+      "relevance": 0.5,
+      "status": "SUPPORTED_SAFE_INFERENCE"
+    },
+    "context_512": {
+      "context_length": 512,
+      "latency_ms": 326.98,
+      "coherence": 0.8182,
+      "relevance": 0.5,
+      "status": "SUPPORTED_SAFE_INFERENCE"
+    }
+  }
+}

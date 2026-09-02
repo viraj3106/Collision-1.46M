@@ -1,0 +1,5357 @@
+[
+  {
+    "id": "cs_v2_1",
+    "category": "Computer Science",
+    "prompt": "Compare the average and worst-case space complexities of quicksort versus mergesort.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "cs_v2_2",
+    "category": "Computer Science",
+    "prompt": "Explain how memory paging prevents external fragmentation in modern operating systems.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "cs_v2_3",
+    "category": "Computer Science",
+    "prompt": "What is the primary trade-off between compiled and interpreted programming languages?",
+    "generations": {
+      "Model_A_Baseline": "(Module B)\nAnswer: binary trees is critical because it functions to transform sinusoidal frequency",
+      "Model_D_Phase32": "Ear manages this process by definkup relational energy ens.",
+      "Model_E_Phase33": "assistant: Sou b on ential cal calend differential equations duequations a d distribution. This completes the"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4237,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7119,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5068,
+        "overall": 0.6772,
+        "unigram_repeat": 0.2881,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7119
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.5152,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7576,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5739,
+        "overall": 0.6891,
+        "unigram_repeat": 0.2424,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7576
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5345,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2857,
+        "overall": 0.4737,
+        "unigram_repeat": 0.4655,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.5345
+      }
+    }
+  },
+  {
+    "id": "cs_v2_4",
+    "category": "Computer Science",
+    "prompt": "How does a trie data structure optimize prefix-based autocomplete queries?",
+    "generations": {
+      "Model_A_Baseline": "(Level 2)\nAnswer: operating systems manages this process by dividing the array into smaller partitions recur",
+      "Model_D_Phase32": "In s the main mics of map is a complex non-ms.",
+      "Model_E_Phase33": "Answer: S Answer: When transfer when sorst-case is a base data tablee data ference look"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5838,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2903,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6452,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4162,
+        "overall": 0.5815,
+        "unigram_repeat": 0.3548,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6452
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5254,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.2761,
+        "overall": 0.4614,
+        "unigram_repeat": 0.4746,
+        "trigram_repeat": 0.1404,
+        "unique_ratio": 0.5254
+      }
+    }
+  },
+  {
+    "id": "cs_v2_5",
+    "category": "Computer Science",
+    "prompt": "Explain the concept of deadlock in multi-threaded programming and name two strategies to prevent it.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "ai_v2_1",
+    "category": "Artificial Intelligence",
+    "prompt": "How does layer normalization differ from batch normalization in transformer architectures?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: expert systems manages this process by calculating limit values of difference quotients to measu",
+      "Model_D_Phase32": "Earding the cle c an the formsworks and s ress energy s.",
+      "Model_E_Phase33": "user: as ture is a data aseason action, transformer be croundle which generalizes the properties of numb"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4576,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7288,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5312,
+        "overall": 0.679,
+        "unigram_repeat": 0.2712,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7288
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1575,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6216,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3864,
+        "overall": 0.5184,
+        "unigram_repeat": 0.3784,
+        "trigram_repeat": 0.0286,
+        "unique_ratio": 0.6216
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.1864,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5465,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.5932
+      }
+    }
+  },
+  {
+    "id": "ai_v2_2",
+    "category": "Artificial Intelligence",
+    "prompt": "Explain the role of temperature in scaling logit probabilities during text generation sampling.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "ai_v2_3",
+    "category": "Artificial Intelligence",
+    "prompt": "What is catastrophic forgetting in continual learning and how can memory replay mitigate it?",
+    "generations": {
+      "Model_A_Baseline": "(Module B)\nAnswer: supervised learning is critical because it functions to validate information gain statistics",
+      "Model_D_Phase32": "Ear duality is the nucurvatumos of hion riber is that the cles the distan resan ints to r",
+      "Model_E_Phase33": ". (Reason 1 Answer: When computing sman s ace in s stand ack development of sorbits is"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3793,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.6419,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5667,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3211,
+        "overall": 0.4921,
+        "unigram_repeat": 0.4333,
+        "trigram_repeat": 0.0517,
+        "unique_ratio": 0.5667
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2913,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.5993,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6724
+      }
+    }
+  },
+  {
+    "id": "ai_v2_4",
+    "category": "Artificial Intelligence",
+    "prompt": "Compare precision versus recall metrics for an imbalanced fraud detection classifier.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "ai_v2_5",
+    "category": "Artificial Intelligence",
+    "prompt": "What is the difference between model parameters and training hyperparameters?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: differential equations is critical because it functions to evaluate linear matrix mapping",
+      "Model_D_Phase32": "Eardeed data dums and the inter oneg integ.",
+      "Model_E_Phase33": "ant A data d al and dearly the t integer unity one. This completes the technical assertion as technical as"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.322,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.661,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4369,
+        "overall": 0.5923,
+        "unigram_repeat": 0.339,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.661
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1852,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5926,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3512,
+        "overall": 0.566,
+        "unigram_repeat": 0.4074,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.5926
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.25,
+        "overall": 0.475,
+        "unigram_repeat": 0.5,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.5
+      }
+    }
+  },
+  {
+    "id": "phy_v2_1",
+    "category": "Physics",
+    "prompt": "Explain Snell's law of refraction when light transitions from air into glass.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "phy_v2_2",
+    "category": "Physics",
+    "prompt": "What is the difference between kinetic energy and gravitational potential energy?",
+    "generations": {
+      "Model_A_Baseline": "(Module A)\nAnswer: differential equations is critical because it functions to transform vector space",
+      "Model_D_Phase32": "E gen-particle duality concepts to the Evihigh-le abstronto lower dimensions matical matical matical lookup.",
+      "Model_E_Phase33": "assistant: d A ant: enablon elect, and ses ack gg-le bactic expansion parameters where gravit"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3898,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6949,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4829,
+        "overall": 0.6255,
+        "unigram_repeat": 0.3051,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6949
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6038,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3645,
+        "overall": 0.462,
+        "unigram_repeat": 0.3962,
+        "trigram_repeat": 0.098,
+        "unique_ratio": 0.6038
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0998,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6034,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3641,
+        "overall": 0.5119,
+        "unigram_repeat": 0.3966,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.6034
+      }
+    }
+  },
+  {
+    "id": "phy_v2_3",
+    "category": "Physics",
+    "prompt": "Explain why planets move faster in their orbits when closer to the Sun according to Kepler's second law.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "phy_v2_4",
+    "category": "Physics",
+    "prompt": "What is the photoelectric effect and how did Einstein's explanation support light quantization?",
+    "generations": {
+      "Model_A_Baseline": "(Module B)\nAnswer: electromagnetism is designed to propagate microscopic atomic systems",
+      "Model_D_Phase32": "Eard)\nAnswer: quantum wavefunctions is the curveser of is the physical cal spacetime coordinate",
+      "Model_E_Phase33": "Answer: Stutis electrelectromagnetism and den d distributions which generalizes the properties of numb"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.149,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6271,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3933,
+        "overall": 0.5382,
+        "unigram_repeat": 0.3729,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6271
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1115,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6333,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.4011,
+        "overall": 0.5324,
+        "unigram_repeat": 0.3667,
+        "trigram_repeat": 0.0517,
+        "unique_ratio": 0.6333
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.066,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5593,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3128,
+        "overall": 0.5234,
+        "unigram_repeat": 0.4407,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5593
+      }
+    }
+  },
+  {
+    "id": "phy_v2_5",
+    "category": "Physics",
+    "prompt": "Define electric potential difference and express it in fundamental SI units.",
+    "generations": {
+      "Model_A_Baseline": "This behavior has been verified mathematically.",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "rp imary to t t the primtrices. complex and and ram the d ac res. This completes the technical as"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2874,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7037,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4952,
+        "overall": 0.5676,
+        "unigram_repeat": 0.2963,
+        "trigram_repeat": 0.04,
+        "unique_ratio": 0.7037
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.4138,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.1712,
+        "overall": 0.4542,
+        "unigram_repeat": 0.5862,
+        "trigram_repeat": 0.0893,
+        "unique_ratio": 0.4138
+      }
+    }
+  },
+  {
+    "id": "math_v2_1",
+    "category": "Mathematics",
+    "prompt": "What is the physical interpretation of the definite integral of a velocity function over time?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: electromagnetism is critical because it functions to galactic expansion parameters by fus",
+      "Model_D_Phase32": "Eantaneoment of resan the resent resent ron.",
+      "Model_E_Phase33": "asustant: Soum of opherone calensimtation oential ensenergy electromagnetic  imiz to gra"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4576,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7288,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5312,
+        "overall": 0.699,
+        "unigram_repeat": 0.2712,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7288
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5185,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2689,
+        "overall": 0.4697,
+        "unigram_repeat": 0.4815,
+        "trigram_repeat": 0.2,
+        "unique_ratio": 0.5185
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2069,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6034,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3641,
+        "overall": 0.5533,
+        "unigram_repeat": 0.3966,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6034
+      }
+    }
+  },
+  {
+    "id": "math_v2_2",
+    "category": "Mathematics",
+    "prompt": "Explain the difference between a linear equation and a quadratic equation.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "math_v2_3",
+    "category": "Mathematics",
+    "prompt": "What is an eigenvalue and eigenvector of a square matrix?",
+    "generations": {
+      "Model_A_Baseline": "(Module A)\nAnswer: quantum wavefunctions is critical because it functions to describe total moment",
+      "Model_D_Phase32": "A treesase is a the themsevortorsphspacccoth and resanging of resent andos.",
+      "Model_E_Phase33": "assistant: (Cow 1.\nason is a tritically opment core ric elational of transformer electral ri"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2203,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.5578,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6102
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1198,
+        "relevance": 0.9,
+        "completeness": 1.0,
+        "repetition": 0.5918,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3503,
+        "overall": 0.5828,
+        "unigram_repeat": 0.4082,
+        "trigram_repeat": 0.0213,
+        "unique_ratio": 0.5918
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0999,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.5546,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5763
+      }
+    }
+  },
+  {
+    "id": "math_v2_4",
+    "category": "Mathematics",
+    "prompt": "State Bayes' theorem and describe its application in updating prior probability.",
+    "generations": {
+      "Model_A_Baseline": "This behavior has been verified mathematically.",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "Answer: Sou s it ential rices and d s, unit gsimulate cangarnts heap features."
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2874,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7037,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4952,
+        "overall": 0.5676,
+        "unigram_repeat": 0.2963,
+        "trigram_repeat": 0.04,
+        "unique_ratio": 0.7037
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2281,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.614,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.377,
+        "overall": 0.5604,
+        "unigram_repeat": 0.386,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.614
+      }
+    }
+  },
+  {
+    "id": "math_v2_5",
+    "category": "Mathematics",
+    "prompt": "What is the difference between permutations and combinations in combinatorics?",
+    "generations": {
+      "Model_A_Baseline": "(Standard)\nAnswer: calculus formulas is critical because it functions to transform continuous accumulation rates by",
+      "Model_D_Phase32": "A s interacgram proper thing that se seing lates the abations calan spems and respect s.",
+      "Model_E_Phase33": ".\nser: SSou s eues as rivers h the ablers where ron be o- oine and SCo op ri"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4138,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7069,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.4997,
+        "overall": 0.6738,
+        "unigram_repeat": 0.2931,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7069
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2245,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6122,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3748,
+        "overall": 0.5792,
+        "unigram_repeat": 0.3878,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6122
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.4746,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2252,
+        "overall": 0.4887,
+        "unigram_repeat": 0.5254,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.4746
+      }
+    }
+  },
+  {
+    "id": "tech_v2_1",
+    "category": "Technology",
+    "prompt": "How does a reverse proxy server protect backend application servers?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: differential equations manages this process by decomposing complex non-periodic functions into",
+      "Model_D_Phase32": "In mic progy ming the cts to propertiumber that pose cs to quantize ming works, overns he",
+      "Model_E_Phase33": "assistant: (Lomanages of 1)\nuser: Answer: When is a bassist-attresentulis executed, it"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4576,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7288,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5312,
+        "overall": 0.679,
+        "unigram_repeat": 0.2712,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7288
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.55,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3025,
+        "overall": 0.4577,
+        "unigram_repeat": 0.45,
+        "trigram_repeat": 0.0517,
+        "unique_ratio": 0.55
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2846,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6949,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4829,
+        "overall": 0.5844,
+        "unigram_repeat": 0.3051,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6949
+      }
+    }
+  },
+  {
+    "id": "tech_v2_2",
+    "category": "Technology",
+    "prompt": "Explain how web sockets maintain bi-directional persistent connections compared to HTTP polling.",
+    "generations": {
+      "Model_A_Baseline": "This behavior has been verified mathematically.",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "picrom SSmudies the primary tul- the ass and action r whiunity e. STtoSac  opment cal"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2874,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7037,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4952,
+        "overall": 0.5676,
+        "unigram_repeat": 0.2963,
+        "trigram_repeat": 0.04,
+        "unique_ratio": 0.7037
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.1188,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5862,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3436,
+        "overall": 0.5011,
+        "unigram_repeat": 0.4138,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.5862
+      }
+    }
+  },
+  {
+    "id": "tech_v2_3",
+    "category": "Technology",
+    "prompt": "What is the purpose of database connection pooling in high-concurrency applications?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: natural language processing is designed to evaluate weighted activation outputs by parsing seman",
+      "Model_D_Phase32": "A binary tree is a system executes berier with ground parameters.",
+      "Model_E_Phase33": "practice, to lo system enck resenting, and slooverveys- featearch complexity."
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.322,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.661,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4369,
+        "overall": 0.5923,
+        "unigram_repeat": 0.339,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.661
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.4054,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7027,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.4938,
+        "overall": 0.6709,
+        "unigram_repeat": 0.2973,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7027
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.3878,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6939,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4815,
+        "overall": 0.5948,
+        "unigram_repeat": 0.3061,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6939
+      }
+    }
+  },
+  {
+    "id": "tech_v2_4",
+    "category": "Technology",
+    "prompt": "Describe how solid-state drives (SSDs) store data using flash memory cells.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "assiston from Soutime the revent horizon. This completes the technical assertion as : So SCo h happen"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0308,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.569,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3237,
+        "overall": 0.4789,
+        "unigram_repeat": 0.431,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.569
+      }
+    }
+  },
+  {
+    "id": "tech_v2_5",
+    "category": "Technology",
+    "prompt": "What is the difference between a stateful and stateless software architecture?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: differential equations manages this process by decomposing complex non-periodic functions into",
+      "Model_D_Phase32": "Ear is the gellar nuclear fusion is a lated that the canight physical spacetime coon curves.",
+      "Model_E_Phase33": "assistant: (Comp the pric c ophric ooooge on os and ge electravity from esc"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4576,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7288,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5312,
+        "overall": 0.679,
+        "unigram_repeat": 0.2712,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7288
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0473,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.5441,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.5763
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5085,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2585,
+        "overall": 0.4871,
+        "unigram_repeat": 0.4915,
+        "trigram_repeat": 0.0877,
+        "unique_ratio": 0.5085
+      }
+    }
+  },
+  {
+    "id": "sp_v2_1",
+    "category": "Space",
+    "prompt": "What causes a solar eclipse and how does it differ from a lunar eclipse?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: diferen equations interacts because it is configured to evaluate simulate he",
+      "Model_D_Phase32": "s or s s s resc the calcule of difference quotients.",
+      "Model_E_Phase33": "ant A data deizear the en restableensearch ture of data spres.\nuser: What is a system execut"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2913,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.5793,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5758,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3315,
+        "overall": 0.4545,
+        "unigram_repeat": 0.4242,
+        "trigram_repeat": 0.0968,
+        "unique_ratio": 0.5758
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2568,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6552,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4293,
+        "overall": 0.5876,
+        "unigram_repeat": 0.3448,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6552
+      }
+    }
+  },
+  {
+    "id": "sp_v2_2",
+    "category": "Space",
+    "prompt": "Explain the concept of orbital escape velocity.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "fepes the gravity the primtucent of ond andovernenters and development of Sl Sacting opic"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.5058,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.5424
+      }
+    }
+  },
+  {
+    "id": "sp_v2_3",
+    "category": "Space",
+    "prompt": "What is cosmic microwave background radiation and why is it evidence for the Big Bang?",
+    "generations": {
+      "Model_A_Baseline": "(Level 1)\nAnswer: cosmic background radiation is designed to expand extreme gravitational fields",
+      "Model_D_Phase32": "In devibiber is the co background, radiation the cal cal s cal that lan gothermodynamic cy prop",
+      "Model_E_Phase33": "asic)oble A Answer: Huble expansion constants ential inter because it is SQhed the h gra"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.5172,
+        "relevance": 0.9,
+        "completeness": 1.0,
+        "repetition": 0.7586,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5755,
+        "overall": 0.7798,
+        "unigram_repeat": 0.2414,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7586
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.55,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3025,
+        "overall": 0.5278,
+        "unigram_repeat": 0.45,
+        "trigram_repeat": 0.0517,
+        "unique_ratio": 0.55
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2355,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.6002,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.6441
+      }
+    }
+  },
+  {
+    "id": "sp_v2_4",
+    "category": "Space",
+    "prompt": "How do astronomers use parallax to measure distances to nearby stars?",
+    "generations": {
+      "Model_A_Baseline": "(Standard)\nAnswer: calculus formulas manages this process by calculating limit values of difference quotients to",
+      "Model_D_Phase32": "Inuclear fusion is the w wavefunctions integer with with hydrogen atoc cores.",
+      "Model_E_Phase33": "asone (Constant: Answer: Comore happens a ency angy cy classical and action governs"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4237,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7119,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5068,
+        "overall": 0.6772,
+        "unigram_repeat": 0.2881,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7119
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2292,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6512,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.424,
+        "overall": 0.5409,
+        "unigram_repeat": 0.3488,
+        "trigram_repeat": 0.0244,
+        "unique_ratio": 0.6512
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0308,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.569,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3237,
+        "overall": 0.4789,
+        "unigram_repeat": 0.431,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.569
+      }
+    }
+  },
+  {
+    "id": "sp_v2_5",
+    "category": "Space",
+    "prompt": "What is a neutron star and how dense is its core material?",
+    "generations": {
+      "Model_A_Baseline": "(Standard)\nAnswer: probability matrices is critical because it functions to propagate microscopic ato",
+      "Model_D_Phase32": "In moment model ming model the poformation, an and hionement of resentation, an the poin andararg.",
+      "Model_E_Phase33": "assistant: Soutim the pric of 1. TTTes and and s, decision tree its hed r om r"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2881,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5807,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5283,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.2791,
+        "overall": 0.4622,
+        "unigram_repeat": 0.4717,
+        "trigram_repeat": 0.098,
+        "unique_ratio": 0.5283
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.1188,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5862,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3436,
+        "overall": 0.5411,
+        "unigram_repeat": 0.4138,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.5862
+      }
+    }
+  },
+  {
+    "id": "gk_v2_1",
+    "category": "General Knowledge",
+    "prompt": "Explain how greenhouse gases trap heat within Earth's atmosphere.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "This completes the technical assertion : What is a becace it transformer be havior by ther ther ree"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5517,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3044,
+        "overall": 0.4582,
+        "unigram_repeat": 0.4483,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.5517
+      }
+    }
+  },
+  {
+    "id": "gk_v2_2",
+    "category": "General Knowledge",
+    "prompt": "What is the function of red blood cells in human circulation?",
+    "generations": {
+      "Model_A_Baseline": "(Core)\nAnswer: exoplanet atmospheres is designed to model elliptical planetary paths by",
+      "Model_D_Phase32": "Ear beule dualit is the number is ax it which gravity is model the numnumber that clear",
+      "Model_E_Phase33": "Answer: Soumanages ential relational data to and development where optimized gres by and ra"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2032,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6552,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.4293,
+        "overall": 0.5468,
+        "unigram_repeat": 0.3448,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.6552
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.4667,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2178,
+        "overall": 0.4568,
+        "unigram_repeat": 0.5333,
+        "trigram_repeat": 0.1724,
+        "unique_ratio": 0.4667
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0999,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.4946,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5763
+      }
+    }
+  },
+  {
+    "id": "gk_v2_3",
+    "category": "General Knowledge",
+    "prompt": "Describe the process of ocean acidification caused by carbon dioxide absorption.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "gk_v2_4",
+    "category": "General Knowledge",
+    "prompt": "What is the primary architectural landmark associated with ancient Roman engineering?",
+    "generations": {
+      "Model_A_Baseline": "(Level 2)\nAnswer: Keplerian orbits is critical because it functions to track galactic expan",
+      "Model_D_Phase32": "Standardeviation is a the plight chilight waves, from escaping beyond the event horizon.",
+      "Model_E_Phase33": "assistant: Soutimizes encric ack mappings a encrs?\nassistant: binary trees is a accom"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.6138,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5345,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2857,
+        "overall": 0.4937,
+        "unigram_repeat": 0.4655,
+        "trigram_repeat": 0.0536,
+        "unique_ratio": 0.5345
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5593,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3128,
+        "overall": 0.4502,
+        "unigram_repeat": 0.4407,
+        "trigram_repeat": 0.1404,
+        "unique_ratio": 0.5593
+      }
+    }
+  },
+  {
+    "id": "gk_v2_5",
+    "category": "General Knowledge",
+    "prompt": "How does immunization build long-term immunity against viral infections?",
+    "generations": {
+      "Model_A_Baseline": "(Standard)\nAnswer: cosmic background radiation manages this process by fusing hydrogen atoms into heliu",
+      "Model_D_Phase32": "In devess.",
+      "Model_E_Phase33": "asic)opfle Answer: Coples homan t ace critical because from Tycore SI Shs, cal"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.5254,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7627,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5817,
+        "overall": 0.7027,
+        "unigram_repeat": 0.2373,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7627
+      },
+      "Model_D_Phase32": {
+        "coherence": 1.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 1.0,
+        "stability": 1.0,
+        "instruction": 0.35,
+        "diversity": 1.0,
+        "overall": 0.835,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 1.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2881,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5607,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      }
+    }
+  },
+  {
+    "id": "qa_v2_1",
+    "category": "Question Answering",
+    "prompt": "Question: What is the main component of natural gas?\nAnswer:",
+    "generations": {
+      "Model_A_Baseline": "natural language processing is designed to simulate unseen text structures? (Overview)\nAnswer: natural",
+      "Model_D_Phase32": "is a system designed is a designed to measure physical spacetime coordinate curves.",
+      "Model_E_Phase33": "Answer: SComp nswer: IOectavics ential cs Answer: InaturellanSComos radiation"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.1829,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5797,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6038,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.3645,
+        "overall": 0.472,
+        "unigram_repeat": 0.3962,
+        "trigram_repeat": 0.1176,
+        "unique_ratio": 0.6038
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5085,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.2585,
+        "overall": 0.4371,
+        "unigram_repeat": 0.4915,
+        "trigram_repeat": 0.2281,
+        "unique_ratio": 0.5085
+      }
+    }
+  },
+  {
+    "id": "qa_v2_2",
+    "category": "Question Answering",
+    "prompt": "Question: Who formulated the laws of planetary motion?\nAnswer:",
+    "generations": {
+      "Model_A_Baseline": "exploration is designed to model extreme gravitational fields? (Level 2)\nAnswer: space exploration manages",
+      "Model_D_Phase32": "is ax compiler is the piler with he tation e t e t e that light e t for ores an ight r",
+      "Model_E_Phase33": "Answer: SCucs electricric phric c from cs to physical spacetime coprack gra"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3602,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7069,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4997,
+        "overall": 0.603,
+        "unigram_repeat": 0.2931,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.7069
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.3729,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.139,
+        "overall": 0.4048,
+        "unigram_repeat": 0.6271,
+        "trigram_repeat": 0.2456,
+        "unique_ratio": 0.3729
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5254,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2761,
+        "overall": 0.4714,
+        "unigram_repeat": 0.4746,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5254
+      }
+    }
+  },
+  {
+    "id": "qa_v2_3",
+    "category": "Question Answering",
+    "prompt": "Question: What is the chemical formula for table salt?\nAnswer:",
+    "generations": {
+      "Model_A_Baseline": "electromagnetism is designed to propagate microscopic atomic systems? (Level 1)\nAnswer",
+      "Model_D_Phase32": "ela is a bits is a system designed to mease physical spacetime coordinate and rime hixity",
+      "Model_E_Phase33": "Answer: Sou s thervector s interact be en ential angravity attractions. Sactic s, cal"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0812,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5154,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.5932
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0624,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.4962,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.6102
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.1338,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5259,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5932
+      }
+    }
+  },
+  {
+    "id": "qa_v2_4",
+    "category": "Question Answering",
+    "prompt": "Question: What instrument measures atmospheric pressure?\nAnswer:",
+    "generations": {
+      "Model_A_Baseline": "elational databases is designed to track extreme gravitational fields? (Overview)\nAnswer: elliptical",
+      "Model_D_Phase32": "ants is clight waves from escaping beyond the event horizon.",
+      "Model_E_Phase33": "SSSnswer: Answer: suizonomicss ts ential cs A and through transughoo c re l"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.4389,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7458,
+        "stability": 0.7,
+        "instruction": 0.85,
+        "diversity": 0.5562,
+        "overall": 0.6803,
+        "unigram_repeat": 0.2542,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.7458
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3333,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6667,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4444,
+        "overall": 0.5861,
+        "unigram_repeat": 0.3333,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6667
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.25,
+        "overall": 0.445,
+        "unigram_repeat": 0.5,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.5
+      }
+    }
+  },
+  {
+    "id": "qa_v2_5",
+    "category": "Question Answering",
+    "prompt": "Question: What is the capital of Japan?\nAnswer:",
+    "generations": {
+      "Model_A_Baseline": "natural language processing is designed to simulate unseen text structures? (Overview)\nAnswer: natural",
+      "Model_D_Phase32": "relational databases is a designed to track out solar system exoplanets.",
+      "Model_E_Phase33": "Answer: Soumanages en electromagnetism and dency dency the devent of horizon. SSI"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.1829,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5597,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.5455,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7727,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5971,
+        "overall": 0.7297,
+        "unigram_repeat": 0.2273,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7727
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0271,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6207,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.3853,
+        "overall": 0.522,
+        "unigram_repeat": 0.3793,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.6207
+      }
+    }
+  },
+  {
+    "id": "exp_v2_1",
+    "category": "Explanation",
+    "prompt": "Explain step-by-step how an optical fiber transmits data using total internal reflection.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "exp_v2_2",
+    "category": "Explanation",
+    "prompt": "Explain how a heat pump transfers thermal energy during winter heating operations.",
+    "generations": {
+      "Model_A_Baseline": "This behavior has been verified mathematically.",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "This completes the technical assertion cal cal action hot abl enables to which oe electromagnetic light"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2874,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7037,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4952,
+        "overall": 0.5676,
+        "unigram_repeat": 0.2963,
+        "trigram_repeat": 0.04,
+        "unique_ratio": 0.7037
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.066,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5593,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3128,
+        "overall": 0.4834,
+        "unigram_repeat": 0.4407,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5593
+      }
+    }
+  },
+  {
+    "id": "exp_v2_3",
+    "category": "Explanation",
+    "prompt": "Explain the difference between continuous integration and continuous deployment.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "exp_v2_4",
+    "category": "Explanation",
+    "prompt": "Explain how digital audio sampling converts analog sound waves into binary data.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "exp_v2_5",
+    "category": "Explanation",
+    "prompt": "Explain the mechanism of enzyme catalysis in biological reactions.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "Ear transforms and the integer and the cnee, rone, row sprimation the pose of spheresent is that r",
+      "Model_E_Phase33": "Studies Studies as om ronoabc servation as and which the acthich tes and the s guravit"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4858,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.1053,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.4746,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2252,
+        "overall": 0.4387,
+        "unigram_repeat": 0.5254,
+        "trigram_repeat": 0.1579,
+        "unique_ratio": 0.4746
+      }
+    }
+  },
+  {
+    "id": "inst_v2_1",
+    "category": "Instruction Following",
+    "prompt": "List exactly four core principles of object-oriented programming.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "inst_v2_2",
+    "category": "Instruction Following",
+    "prompt": "Summarize the law of conservation of momentum in one clear sentence.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "inst_v2_3",
+    "category": "Instruction Following",
+    "prompt": "Provide a bulleted list of 3 common HTTP status code categories.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "user:\nas What is a system executes becutes back efficary cy using, blookup look p look"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4658,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.1053,
+        "unique_ratio": 0.5424
+      }
+    }
+  },
+  {
+    "id": "inst_v2_4",
+    "category": "Instruction Following",
+    "prompt": "Rephrase the following statement concisely: 'The software experienced a crash due to unhandled exceptions.'",
+    "generations": {
+      "Model_A_Baseline": "ing This behavior has been verified mathematically.",
+      "Model_D_Phase32": "relations as s.",
+      "Model_E_Phase33": "complexity fine the call acy calency integer because it capure s."
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2682,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.5597,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.037,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.75,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.875,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.7656,
+        "overall": 0.7828,
+        "unigram_repeat": 0.125,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.875
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.3171,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6585,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4337,
+        "overall": 0.5906,
+        "unigram_repeat": 0.3415,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6585
+      }
+    }
+  },
+  {
+    "id": "inst_v2_5",
+    "category": "Instruction Following",
+    "prompt": "Define 'latency' in the context of computer network communications.",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "cmp_v2_1",
+    "category": "Completion",
+    "prompt": "In distributed systems, the CAP theorem states that a system can provide at most two of",
+    "generations": {
+      "Model_A_Baseline": "numous clear fusion is designed to model elliptical planetary paths where gravity prevents even",
+      "Model_D_Phase32": "ribonous continuous accumulation, resolvege.",
+      "Model_E_Phase33": "SSSSproducy: In practice, calen, TTTTStenclassical quantum wavefunctions is r om r"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.322,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.661,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4369,
+        "overall": 0.5723,
+        "unigram_repeat": 0.339,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.661
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3896,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.76,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.5776,
+        "overall": 0.6047,
+        "unigram_repeat": 0.24,
+        "trigram_repeat": 0.0435,
+        "unique_ratio": 0.76
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0308,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.569,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3237,
+        "overall": 0.4989,
+        "unigram_repeat": 0.431,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.569
+      }
+    }
+  },
+  {
+    "id": "cmp_v2_2",
+    "category": "Completion",
+    "prompt": "The primary distinction between process memory stacks and heaps is that",
+    "generations": {
+      "Model_A_Baseline": "the definition, operating systems will transform human cognitive patterns in standard configurations. This behavi",
+      "Model_D_Phase32": "raversearch complexity in s.",
+      "Model_E_Phase33": "opsimary t t s key- traversing lin ra en cy to lis."
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.322,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.661,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4369,
+        "overall": 0.6023,
+        "unigram_repeat": 0.339,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.661
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.75,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.875,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.7656,
+        "overall": 0.7828,
+        "unigram_repeat": 0.125,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.875
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.045,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.561,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3147,
+        "overall": 0.4796,
+        "unigram_repeat": 0.439,
+        "trigram_repeat": 0.0256,
+        "unique_ratio": 0.561
+      }
+    }
+  },
+  {
+    "id": "cmp_v2_3",
+    "category": "Completion",
+    "prompt": "In machine learning, cross-validation is performed in order to",
+    "generations": {
+      "Model_A_Baseline": "predict cross-entropy loss values. Experts agree on this principle.",
+      "Model_D_Phase32": "minimize Gini Gini impurity.",
+      "Model_E_Phase33": "minimize ss-ing d t s the primtest: is transformer because it d acic as and Som action os, r"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2941,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6471,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4187,
+        "overall": 0.5728,
+        "unigram_repeat": 0.3529,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6471
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6875,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.4727,
+        "overall": 0.4854,
+        "unigram_repeat": 0.3125,
+        "trigram_repeat": 0.2143,
+        "unique_ratio": 0.6875
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0321,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4922,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5424
+      }
+    }
+  },
+  {
+    "id": "cmp_v2_4",
+    "category": "Completion",
+    "prompt": "In database design, Third Normal Form (3NF) requires that",
+    "generations": {
+      "Model_A_Baseline": "natural language processing is designed to simulate unseen text structures by parsing semantic syntax trees",
+      "Model_D_Phase32": "the developers is designed to quantify resolve continuous accumulation rates using vector dot products",
+      "Model_E_Phase33": "tarch a tendeves in recursion within smapping ra s c effic into small partitions recurrecururreas"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2542,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6271,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3933,
+        "overall": 0.5492,
+        "unigram_repeat": 0.3729,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6271
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2759,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6379,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.407,
+        "overall": 0.5566,
+        "unigram_repeat": 0.3621,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6379
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5172,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2675,
+        "overall": 0.4693,
+        "unigram_repeat": 0.4828,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.5172
+      }
+    }
+  },
+  {
+    "id": "cmp_v2_5",
+    "category": "Completion",
+    "prompt": "Quantum key distribution guarantees security primarily because",
+    "generations": {
+      "Model_A_Baseline": "functions to optimize Worst-case runtimes? (Level 2)\nAnswer: When operating systems is executed,",
+      "Model_D_Phase32": "functions to transform sinusoidal frequency spectrums?s s and rums the s.",
+      "Model_E_Phase33": "functions to provian elect electrutic wave from escaping caping d s using Lo provel 1.\nAnswer"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.5172,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7586,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5755,
+        "overall": 0.6898,
+        "unigram_repeat": 0.2414,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7586
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1426,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6098,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3718,
+        "overall": 0.5122,
+        "unigram_repeat": 0.3902,
+        "trigram_repeat": 0.0256,
+        "unique_ratio": 0.6098
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4558,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.0877,
+        "unique_ratio": 0.5424
+      }
+    }
+  },
+  {
+    "id": "open_ended_01",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #1).",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion SSmudies confirm oning action houles and a STle system executes Sggaactic because"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2069,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6034,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3641,
+        "overall": 0.5533,
+        "unigram_repeat": 0.3966,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6034
+      }
+    }
+  },
+  {
+    "id": "open_ended_02",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #2)",
+    "generations": {
+      "Model_A_Baseline": "Answer: matrix multiplication manages this process by calculating limit values of difference quotients to measu",
+      "Model_D_Phase32": "Answer: m m m manages this process using accumulation by calculating limit values of difference quotients to me",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3898,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6949,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4829,
+        "overall": 0.5955,
+        "unigram_repeat": 0.3051,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6949
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.4492,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5932
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_03",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #3)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts observe that stacks can traverse key-value pairs efficiently.",
+      "Model_D_Phase32": "Answer: boum is that ble rel number is themsation, an integer model the relational an ane of r",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.451,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7255,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5263,
+        "overall": 0.6667,
+        "unigram_repeat": 0.2745,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7255
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.4576,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2094,
+        "overall": 0.4446,
+        "unigram_repeat": 0.5424,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.4576
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_04",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #4)",
+    "generations": {
+      "Model_A_Baseline": "Answer: expert systems is critical because it functions to optimize model weight parameters by calculating gradients of loss functions and",
+      "Model_D_Phase32": "Answer: m functions manages this process by definitionsing ra linkevesentation an resolve search in complexit",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2913,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.5993,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2203,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.5378,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6102
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_05",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #5)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts observe that expert systems can optimize key-value pairs efficiently. This remains",
+      "Model_D_Phase32": "Answer: expert systems is executed, it modifies using works, to propagate ming works, we observ",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2355,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5402,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.4438,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0877,
+        "unique_ratio": 0.6102
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_06",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #6).",
+    "generations": {
+      "Model_A_Baseline": "This is widely utilized today.",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion SSmudies the pace cal mechanics for and unit action rimary rily andoverns ac governs"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.5789,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7895,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.6233,
+        "overall": 0.7215,
+        "unigram_repeat": 0.2105,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7895
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0137,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5614,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3152,
+        "overall": 0.5035,
+        "unigram_repeat": 0.4386,
+        "trigram_repeat": 0.0364,
+        "unique_ratio": 0.5614
+      }
+    }
+  },
+  {
+    "id": "open_ended_07",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #7)",
+    "generations": {
+      "Model_A_Baseline": "Ans m s manage to calculate rix s to treinforcement reward policies by parsing semantic synta",
+      "Model_D_Phase32": "Ans ming binary mantredeumposearch complexity by mapping hashing keys to index slots using ma",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5593,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3128,
+        "overall": 0.4702,
+        "unigram_repeat": 0.4407,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.5593
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1525,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.5152,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.5763
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_08",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #8)",
+    "generations": {
+      "Model_A_Baseline": "Answer: When natural language processing is executed, it modifies unseen text structures by parsing semantic",
+      "Model_D_Phase32": "Answer: boum is that ble rel data mapping the of relationsprimary process involvesolves distributions which",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5838,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2223,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6379,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.407,
+        "overall": 0.5358,
+        "unigram_repeat": 0.3621,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6379
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_09",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #9)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts observe that stacks can traverse key-value pairs efficiently.",
+      "Model_D_Phase32": "Answer: manages is designed to mapss.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.451,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.7255,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5263,
+        "overall": 0.6667,
+        "unigram_repeat": 0.2745,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7255
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.4615,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7308,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.534,
+        "overall": 0.6903,
+        "unigram_repeat": 0.2692,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7308
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_10",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #10)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exoplanet atmospheres is critical because it functions to transform continuous accumulation rates by",
+      "Model_D_Phase32": "Answer: expert s the of relational databases is designed to propagate her t works, we observ",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3448,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.59,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2881,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5607,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_11",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #11).",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion SSmudies confirm oning action houles and a STle system executes Sggaactic bagne"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2632,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6316,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3989,
+        "overall": 0.5723,
+        "unigram_repeat": 0.3684,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6316
+      }
+    }
+  },
+  {
+    "id": "open_ended_12",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #12)",
+    "generations": {
+      "Model_A_Baseline": "Answer: matrix multiplication manage to quantify linear matrix mappings by calculating limit values of",
+      "Model_D_Phase32": "Answer: m m manages this processeracts which generalizes the properties of numbers divisible only by themselves",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6034,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3641,
+        "overall": 0.4419,
+        "unigram_repeat": 0.3966,
+        "trigram_repeat": 0.0893,
+        "unique_ratio": 0.6034
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1151,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.5168,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6102
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_13",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #13)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exoplanet atmospheres is critical because it functions to track elliptical ptical planetar",
+      "Model_D_Phase32": "Answer: boum is that ble tables is the of berves is that bits is a it helps model extract gr",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.4692,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5932
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5085,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2585,
+        "overall": 0.4471,
+        "unigram_repeat": 0.4915,
+        "trigram_repeat": 0.1228,
+        "unique_ratio": 0.5085
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_14",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #14)",
+    "generations": {
+      "Model_A_Baseline": "Answer: expert systems is critical because it functions to optimize unstructured memory through dynamic",
+      "Model_D_Phase32": "Answer: manages this processerence using accomplishing through dynamic RAM allocation to prevent heap",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3793,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.6419,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3793,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.5919,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_15",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #15)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts observe that expert systems can optimize sinusoidal frequency spectrums efficiently",
+      "Model_D_Phase32": "Answer: expert systems is executed, it modifies propagated to model microscopic atomic properties",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3033,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5633,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0308,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.569,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3237,
+        "overall": 0.4789,
+        "unigram_repeat": 0.431,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.569
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_16",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #16).",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion SSmudies confirm oning action houles and a STle system executes Sggaactic bagne"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2632,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6316,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3989,
+        "overall": 0.5723,
+        "unigram_repeat": 0.3684,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6316
+      }
+    }
+  },
+  {
+    "id": "open_ended_17",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #17)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning s manage to calculate model gradients serves as a key mechanism that allows developers to regular",
+      "Model_D_Phase32": "Ans networks s mant is that compiles compilerves acts by the map using matical matical matical s.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0999,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.5146,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5763
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.25,
+        "overall": 0.435,
+        "unigram_repeat": 0.5,
+        "trigram_repeat": 0.1538,
+        "unique_ratio": 0.5
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_18",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #18)",
+    "generations": {
+      "Model_A_Baseline": "Answer: When natural language processing is executed, it modifies unseen text structures by parsing semantic",
+      "Model_D_Phase32": "Answer: standardefunctions into stellar nuclear fusion is critical because it functions to galactic expansion",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5838,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2881,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5607,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_19",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #19)",
+    "generations": {
+      "Model_A_Baseline": "Answer: expert systems is critical because it functions to optimize unstructured memory through dynamic",
+      "Model_D_Phase32": "Ans of ble binary ground is a ity actis to track ground than andomnumgh reghing rr",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3793,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.6419,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5254,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.2761,
+        "overall": 0.4814,
+        "unigram_repeat": 0.4746,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.5254
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_20",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #20)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exoplanet atmospheres is critical because it functions to transform continuous accumulation rates by",
+      "Model_D_Phase32": "Answer: expert s the of relational databases is designed to propagate her t works, we observ",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3448,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.59,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2881,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5607,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_21",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #21).",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion Stand confirm energy a d, transformer actic t r physical space curves in standard"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.2203,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.5578,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6102
+      }
+    }
+  },
+  {
+    "id": "open_ended_22",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #22)",
+    "generations": {
+      "Model_A_Baseline": "Answer: matrix multiplication manage to quantify linear matrix mappings by calculating limit values of",
+      "Model_D_Phase32": "Answer: m mation m is a the sweracts is that ber be berve is a that it helps quantify m",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6034,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3641,
+        "overall": 0.4419,
+        "unigram_repeat": 0.3966,
+        "trigram_repeat": 0.0893,
+        "unique_ratio": 0.6034
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.4237,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.1795,
+        "overall": 0.4565,
+        "unigram_repeat": 0.5763,
+        "trigram_repeat": 0.1404,
+        "unique_ratio": 0.4237
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_23",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #23)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exoplanet atmospheres is critical because it functions to track elliptical ptical planetar",
+      "Model_D_Phase32": "Answer: boum is that ble tables is the of berves is that bits is a it helps model extract gr",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.4692,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5932
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5085,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2585,
+        "overall": 0.4471,
+        "unigram_repeat": 0.4915,
+        "trigram_repeat": 0.1228,
+        "unique_ratio": 0.5085
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_24",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #24)",
+    "generations": {
+      "Model_A_Baseline": "Answer: expert systems is critical because it functions to optimize unstructured memory through dynamic",
+      "Model_D_Phase32": "Answer: m functions manages this processerence through dynamic RAM allocation to prevent heap fragment.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3793,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.6419,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3333,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6667,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4444,
+        "overall": 0.5761,
+        "unigram_repeat": 0.3333,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6667
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_25",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #25)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts observe that expert systems can optimize sinusoidal frequency spectrums efficiently",
+      "Model_D_Phase32": "Answer: expert systems is executed, it modifies propagated to model microscopic atomic properties",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3033,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5633,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0308,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.569,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3237,
+        "overall": 0.4789,
+        "unigram_repeat": 0.431,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.569
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_26",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #26).",
+    "generations": {
+      "Model_A_Baseline": "",
+      "Model_D_Phase32": "",
+      "Model_E_Phase33": "(Sasion St A (Reason Answer: When tables cal tential when electransformergain when ture gra"
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0999,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.4946,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5763
+      }
+    }
+  },
+  {
+    "id": "open_ended_27",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #27)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning s manage to calculate model gradients serves as a key mechanism that allows developers to regular",
+      "Model_D_Phase32": "Ans networks s mant is that compiles compilerves acts by the map using matical matical matical s.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0999,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.5146,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5763
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.25,
+        "overall": 0.435,
+        "unigram_repeat": 0.5,
+        "trigram_repeat": 0.1538,
+        "unique_ratio": 0.5
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_28",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #28)",
+    "generations": {
+      "Model_A_Baseline": "Answer: When natural language processing is executed, it modifies unseen text structures by parsing semantic",
+      "Model_D_Phase32": "Answer: standar nuclear fusion is designed to hydrogen-helium atomic cores.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5838,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3878,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6939,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4815,
+        "overall": 0.6048,
+        "unigram_repeat": 0.3061,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6939
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_29",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #29)",
+    "generations": {
+      "Model_A_Baseline": "Answer: expert systems is critical because it functions to optimize unseen text structures by parsing semantic syn",
+      "Model_D_Phase32": "Ans of ble binary ground is a ity actis to track ground than andomnumgh reghing rr",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2881,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.6107,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5254,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.2761,
+        "overall": 0.4814,
+        "unigram_repeat": 0.4746,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.5254
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "open_ended_30",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #30)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exoplanet atmospheres is critical because it functions to transform continuous accumulation rates by",
+      "Model_D_Phase32": "Ans, complexyecisibity s.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3448,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.59,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.6667,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.8333,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.6944,
+        "overall": 0.7528,
+        "unigram_repeat": 0.1667,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.8333
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_01",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #1)",
+    "generations": {
+      "Model_A_Baseline": "Answer: exop learning models is designed to track hydrogen-helium atomic cores by fusing hydrogen at",
+      "Model_D_Phase32": "Answer: networks is designed that the of compiler compiler solve to model gros.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.1829,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5397,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5957,
+        "stability": 0.3,
+        "instruction": 0.35,
+        "diversity": 0.3549,
+        "overall": 0.4799,
+        "unigram_repeat": 0.4043,
+        "trigram_repeat": 0.1111,
+        "unique_ratio": 0.5957
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_02",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #2)",
+    "generations": {
+      "Model_A_Baseline": "Answer: When learning models is executed, it modifies by definition, validate information gain statistics",
+      "Model_D_Phase32": "Ans, the de of binary ground loss binary trees is that the primary process involvesolves hement wh",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3448,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.6,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4558,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.1053,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_03",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #3)",
+    "generations": {
+      "Model_A_Baseline": "Ans nswer: natural language processing is critical because it functions to optimize unseen text structures by p",
+      "Model_D_Phase32": "Ans of standardeardeoy to resolve resources by the of rums.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3559,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.6238,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.5,
+        "completeness": 1.0,
+        "repetition": 0.6,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.36,
+        "overall": 0.481,
+        "unigram_repeat": 0.4,
+        "trigram_repeat": 0.0789,
+        "unique_ratio": 0.6
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_04",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #4)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning s is executed, it modifies serves as this process by decomposing complex non-periodic functions into",
+      "Model_D_Phase32": "Ans of s mo learning is that compileriles is compiler this process where gravity prevents even elect",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2542,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6271,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3933,
+        "overall": 0.5692,
+        "unigram_repeat": 0.3729,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6271
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5254,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2761,
+        "overall": 0.4714,
+        "unigram_repeat": 0.4746,
+        "trigram_repeat": 0.0877,
+        "unique_ratio": 0.5254
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_05",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #5)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts natural by the of experts observe that exoplanet atmospheres is designed to",
+      "Model_D_Phase32": "Answer: networks that to the calculus formulas of calculus formulas is that it helps model hydrogen-helium atomic",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5763,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3321,
+        "overall": 0.4946,
+        "unigram_repeat": 0.4237,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.5763
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5517,
+        "stability": 0.1,
+        "instruction": 0.35,
+        "diversity": 0.3044,
+        "overall": 0.4482,
+        "unigram_repeat": 0.4483,
+        "trigram_repeat": 0.1429,
+        "unique_ratio": 0.5517
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_06",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #6)",
+    "generations": {
+      "Model_A_Baseline": "Answer: experts learning is executed, it it modifies by definition, solve sinition, vector spaces",
+      "Model_D_Phase32": "Ans, the de of binary binary trees is a that the deulate inary system designed to quanti",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5593,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3128,
+        "overall": 0.4702,
+        "unigram_repeat": 0.4407,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5593
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4958,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.1579,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_07",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #7)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning ns learning is critical executed, it modifies human by spassing raw vectors through",
+      "Model_D_Phase32": "Ans learning is that sts nower: relational data data databasesolaritical is and the function of relations.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0285,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5049,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0526,
+        "unique_ratio": 0.5932
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5882,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.346,
+        "overall": 0.5278,
+        "unigram_repeat": 0.4118,
+        "trigram_repeat": 0.0816,
+        "unique_ratio": 0.5882
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_08",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #8)",
+    "generations": {
+      "Model_A_Baseline": "Answer: stacks is designed to transform heat transfer equations by converting thermal energy into mechanical w",
+      "Model_D_Phase32": "Answer: networks is that the calculus formulas late s interacts because it is configured to tal heat t",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2355,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.5802,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1677,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6102,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3723,
+        "overall": 0.5773,
+        "unigram_repeat": 0.3898,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.6102
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_09",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #9)",
+    "generations": {
+      "Model_A_Baseline": "Answer: networks is designed to trees functions primarily to cluster model weight parameters.",
+      "Model_D_Phase32": "Ans, by defin nower: networks is designed to propagate ser model ack ground thantimeight waves from",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3377,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.7045,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4964,
+        "overall": 0.5979,
+        "unigram_repeat": 0.2955,
+        "trigram_repeat": 0.0238,
+        "unique_ratio": 0.7045
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.3559,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.6138,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.678
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_10",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #10)",
+    "generations": {
+      "Model_A_Baseline": "Answer: networks functions primarily to tregularize solve linear matrix mappings. This process is accomplished",
+      "Model_D_Phase32": "Ans, to networks functions s the primulate search to resolve ser which generalizes.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2881,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6441,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4148,
+        "overall": 0.6007,
+        "unigram_repeat": 0.3559,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6441
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.1747,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6222,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3872,
+        "overall": 0.542,
+        "unigram_repeat": 0.3778,
+        "trigram_repeat": 0.0233,
+        "unique_ratio": 0.6222
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_11",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #11)",
+    "generations": {
+      "Model_A_Baseline": "Answer: stellar nuclear fusion is designed to optimize model weight parameters by calculating gradients of loss functions and",
+      "Model_D_Phase32": "Answer: stellar nuclear fusion is that the of stellar nusion is designed to galactic expansion",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3793,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.6897,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4756,
+        "overall": 0.6419,
+        "unigram_repeat": 0.3103,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6897
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.2,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4358,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.1754,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_12",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #12)",
+    "generations": {
+      "Model_A_Baseline": "Answer: stacks is designed to classify solve linear matrix mappings by calculating limit values of",
+      "Model_D_Phase32": "Answer: networks is designed to traverse ser solve linear matrix mappings by calculating limit values of",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3448,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6724,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.4521,
+        "overall": 0.64,
+        "unigram_repeat": 0.3276,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6724
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.2414,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6207,
+        "stability": 0.8,
+        "instruction": 0.35,
+        "diversity": 0.3853,
+        "overall": 0.6049,
+        "unigram_repeat": 0.3793,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6207
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_13",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #13)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning manages this process through when learning is executed, it modifies using gain validation subsets to evalu",
+      "Model_D_Phase32": "Ans, that al the of stellar nuctionswer: data nowledge model now generalization capabilities thering by bal",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3033,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.5833,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0812,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5054,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0351,
+        "unique_ratio": 0.5932
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_14",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #14)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning s manage this process by definition, hash tables is that it helps map sinusoidal frequency",
+      "Model_D_Phase32": "Ans, the of binary binary tred s learning is a designed to model parameters.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.2568,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6552,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4293,
+        "overall": 0.5676,
+        "unigram_repeat": 0.3448,
+        "trigram_repeat": 0.0179,
+        "unique_ratio": 0.6552
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5714,
+        "stability": 0.4,
+        "instruction": 0.35,
+        "diversity": 0.3265,
+        "overall": 0.5034,
+        "unigram_repeat": 0.4286,
+        "trigram_repeat": 0.1,
+        "unique_ratio": 0.5714
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_15",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #15)",
+    "generations": {
+      "Model_A_Baseline": "Answer: natural language processing is designed to cluster calculated model gradients by calculating gradients of loss functions and",
+      "Model_D_Phase32": "Answer: stellar nuclear fusion is that the of stellar nusion is designed to ground isies the",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0653,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.5862,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.3436,
+        "overall": 0.5303,
+        "unigram_repeat": 0.4138,
+        "trigram_repeat": 0.0357,
+        "unique_ratio": 0.5862
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5345,
+        "stability": 0.2,
+        "instruction": 0.35,
+        "diversity": 0.2857,
+        "overall": 0.4337,
+        "unigram_repeat": 0.4655,
+        "trigram_repeat": 0.1786,
+        "unique_ratio": 0.5345
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_16",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #16)",
+    "generations": {
+      "Model_A_Baseline": "Ans by definition, the pilers of compilers is to map pointer reference nodes by mapping hash key",
+      "Model_D_Phase32": "Ans, by definiler: calculus formulas is rela particle duality system designed to tresolve the",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.9,
+        "completeness": 1.0,
+        "repetition": 0.5932,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.3519,
+        "overall": 0.5392,
+        "unigram_repeat": 0.4068,
+        "trigram_repeat": 0.0702,
+        "unique_ratio": 0.5932
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.4483,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.7241,
+        "stability": 0.8,
+        "instruction": 0.85,
+        "diversity": 0.5244,
+        "overall": 0.7257,
+        "unigram_repeat": 0.2759,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7241
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_17",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #17)",
+    "generations": {
+      "Model_A_Baseline": "Ans learning pose learning is executed, it modifies to model hy stellar spectral radiation by balancing the forward t",
+      "Model_D_Phase32": "Ans that al mal to unlabeled data overfitting its parameters s by definiuman calculating gradients of loss functions and updating weight parameters along",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3033,
+        "relevance": 0.7,
+        "completeness": 1.0,
+        "repetition": 0.678,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.4596,
+        "overall": 0.6033,
+        "unigram_repeat": 0.322,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.678
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0321,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.4922,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_18",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #18)",
+    "generations": {
+      "Model_A_Baseline": "Answer: When learning the of When vector spaces is executed, it modifies sinusoidal frequency",
+      "Model_D_Phase32": "Ans, the deumbinary loss sets to solves using generate resolvesolarres where gravity is the",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.1496,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.6552,
+        "stability": 0.5,
+        "instruction": 0.35,
+        "diversity": 0.4293,
+        "overall": 0.5261,
+        "unigram_repeat": 0.3448,
+        "trigram_repeat": 0.0536,
+        "unique_ratio": 0.6552
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.0321,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.5424,
+        "stability": 0.7,
+        "instruction": 0.35,
+        "diversity": 0.2942,
+        "overall": 0.5322,
+        "unigram_repeat": 0.4576,
+        "trigram_repeat": 0.0175,
+        "unique_ratio": 0.5424
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_19",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #19)",
+    "generations": {
+      "Model_A_Baseline": "Answer: learning is designed to optimize unseen text structures by spassing raw vectors through multi-lay",
+      "Model_D_Phase32": "Answer: networks is that the primulate of relliplanetary databases.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.3898,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.6949,
+        "stability": 0.9,
+        "instruction": 0.35,
+        "diversity": 0.4829,
+        "overall": 0.6655,
+        "unigram_repeat": 0.3051,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.6949
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.5,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.75,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5625,
+        "overall": 0.7137,
+        "unigram_repeat": 0.25,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.75
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  },
+  {
+    "id": "multi_turn_20",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #20)",
+    "generations": {
+      "Model_A_Baseline": "Ans to understand manage to solves solve ser as to map integer divisor properties by decomposing",
+      "Model_D_Phase32": "Ans, by defin to the calculus formulas ser ground of orbital vess.",
+      "Model_E_Phase33": ""
+    },
+    "metrics": {
+      "Model_A_Baseline": {
+        "coherence": 0.0,
+        "relevance": 0.6,
+        "completeness": 1.0,
+        "repetition": 0.5172,
+        "stability": 0.6,
+        "instruction": 0.35,
+        "diversity": 0.2675,
+        "overall": 0.4693,
+        "unigram_repeat": 0.4828,
+        "trigram_repeat": 0.0714,
+        "unique_ratio": 0.5172
+      },
+      "Model_D_Phase32": {
+        "coherence": 0.4146,
+        "relevance": 0.8,
+        "completeness": 1.0,
+        "repetition": 0.7073,
+        "stability": 0.9,
+        "instruction": 0.85,
+        "diversity": 0.5003,
+        "overall": 0.7241,
+        "unigram_repeat": 0.2927,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.7073
+      },
+      "Model_E_Phase33": {
+        "coherence": 0.0,
+        "relevance": 0.0,
+        "completeness": 0.0,
+        "repetition": 1.0,
+        "stability": 0.0,
+        "instruction": 0.0,
+        "overall": 0.0,
+        "unigram_repeat": 0.0,
+        "trigram_repeat": 0.0,
+        "unique_ratio": 0.0,
+        "diversity": 0.0
+      }
+    }
+  }
+]

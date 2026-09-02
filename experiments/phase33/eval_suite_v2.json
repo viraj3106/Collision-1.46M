@@ -1,0 +1,527 @@
+[
+  {
+    "id": "cs_v2_1",
+    "category": "Computer Science",
+    "prompt": "Compare the average and worst-case space complexities of quicksort versus mergesort."
+  },
+  {
+    "id": "cs_v2_2",
+    "category": "Computer Science",
+    "prompt": "Explain how memory paging prevents external fragmentation in modern operating systems."
+  },
+  {
+    "id": "cs_v2_3",
+    "category": "Computer Science",
+    "prompt": "What is the primary trade-off between compiled and interpreted programming languages?"
+  },
+  {
+    "id": "cs_v2_4",
+    "category": "Computer Science",
+    "prompt": "How does a trie data structure optimize prefix-based autocomplete queries?"
+  },
+  {
+    "id": "cs_v2_5",
+    "category": "Computer Science",
+    "prompt": "Explain the concept of deadlock in multi-threaded programming and name two strategies to prevent it."
+  },
+  {
+    "id": "ai_v2_1",
+    "category": "Artificial Intelligence",
+    "prompt": "How does layer normalization differ from batch normalization in transformer architectures?"
+  },
+  {
+    "id": "ai_v2_2",
+    "category": "Artificial Intelligence",
+    "prompt": "Explain the role of temperature in scaling logit probabilities during text generation sampling."
+  },
+  {
+    "id": "ai_v2_3",
+    "category": "Artificial Intelligence",
+    "prompt": "What is catastrophic forgetting in continual learning and how can memory replay mitigate it?"
+  },
+  {
+    "id": "ai_v2_4",
+    "category": "Artificial Intelligence",
+    "prompt": "Compare precision versus recall metrics for an imbalanced fraud detection classifier."
+  },
+  {
+    "id": "ai_v2_5",
+    "category": "Artificial Intelligence",
+    "prompt": "What is the difference between model parameters and training hyperparameters?"
+  },
+  {
+    "id": "phy_v2_1",
+    "category": "Physics",
+    "prompt": "Explain Snell's law of refraction when light transitions from air into glass."
+  },
+  {
+    "id": "phy_v2_2",
+    "category": "Physics",
+    "prompt": "What is the difference between kinetic energy and gravitational potential energy?"
+  },
+  {
+    "id": "phy_v2_3",
+    "category": "Physics",
+    "prompt": "Explain why planets move faster in their orbits when closer to the Sun according to Kepler's second law."
+  },
+  {
+    "id": "phy_v2_4",
+    "category": "Physics",
+    "prompt": "What is the photoelectric effect and how did Einstein's explanation support light quantization?"
+  },
+  {
+    "id": "phy_v2_5",
+    "category": "Physics",
+    "prompt": "Define electric potential difference and express it in fundamental SI units."
+  },
+  {
+    "id": "math_v2_1",
+    "category": "Mathematics",
+    "prompt": "What is the physical interpretation of the definite integral of a velocity function over time?"
+  },
+  {
+    "id": "math_v2_2",
+    "category": "Mathematics",
+    "prompt": "Explain the difference between a linear equation and a quadratic equation."
+  },
+  {
+    "id": "math_v2_3",
+    "category": "Mathematics",
+    "prompt": "What is an eigenvalue and eigenvector of a square matrix?"
+  },
+  {
+    "id": "math_v2_4",
+    "category": "Mathematics",
+    "prompt": "State Bayes' theorem and describe its application in updating prior probability."
+  },
+  {
+    "id": "math_v2_5",
+    "category": "Mathematics",
+    "prompt": "What is the difference between permutations and combinations in combinatorics?"
+  },
+  {
+    "id": "tech_v2_1",
+    "category": "Technology",
+    "prompt": "How does a reverse proxy server protect backend application servers?"
+  },
+  {
+    "id": "tech_v2_2",
+    "category": "Technology",
+    "prompt": "Explain how web sockets maintain bi-directional persistent connections compared to HTTP polling."
+  },
+  {
+    "id": "tech_v2_3",
+    "category": "Technology",
+    "prompt": "What is the purpose of database connection pooling in high-concurrency applications?"
+  },
+  {
+    "id": "tech_v2_4",
+    "category": "Technology",
+    "prompt": "Describe how solid-state drives (SSDs) store data using flash memory cells."
+  },
+  {
+    "id": "tech_v2_5",
+    "category": "Technology",
+    "prompt": "What is the difference between a stateful and stateless software architecture?"
+  },
+  {
+    "id": "sp_v2_1",
+    "category": "Space",
+    "prompt": "What causes a solar eclipse and how does it differ from a lunar eclipse?"
+  },
+  {
+    "id": "sp_v2_2",
+    "category": "Space",
+    "prompt": "Explain the concept of orbital escape velocity."
+  },
+  {
+    "id": "sp_v2_3",
+    "category": "Space",
+    "prompt": "What is cosmic microwave background radiation and why is it evidence for the Big Bang?"
+  },
+  {
+    "id": "sp_v2_4",
+    "category": "Space",
+    "prompt": "How do astronomers use parallax to measure distances to nearby stars?"
+  },
+  {
+    "id": "sp_v2_5",
+    "category": "Space",
+    "prompt": "What is a neutron star and how dense is its core material?"
+  },
+  {
+    "id": "gk_v2_1",
+    "category": "General Knowledge",
+    "prompt": "Explain how greenhouse gases trap heat within Earth's atmosphere."
+  },
+  {
+    "id": "gk_v2_2",
+    "category": "General Knowledge",
+    "prompt": "What is the function of red blood cells in human circulation?"
+  },
+  {
+    "id": "gk_v2_3",
+    "category": "General Knowledge",
+    "prompt": "Describe the process of ocean acidification caused by carbon dioxide absorption."
+  },
+  {
+    "id": "gk_v2_4",
+    "category": "General Knowledge",
+    "prompt": "What is the primary architectural landmark associated with ancient Roman engineering?"
+  },
+  {
+    "id": "gk_v2_5",
+    "category": "General Knowledge",
+    "prompt": "How does immunization build long-term immunity against viral infections?"
+  },
+  {
+    "id": "qa_v2_1",
+    "category": "Question Answering",
+    "prompt": "Question: What is the main component of natural gas?\nAnswer:"
+  },
+  {
+    "id": "qa_v2_2",
+    "category": "Question Answering",
+    "prompt": "Question: Who formulated the laws of planetary motion?\nAnswer:"
+  },
+  {
+    "id": "qa_v2_3",
+    "category": "Question Answering",
+    "prompt": "Question: What is the chemical formula for table salt?\nAnswer:"
+  },
+  {
+    "id": "qa_v2_4",
+    "category": "Question Answering",
+    "prompt": "Question: What instrument measures atmospheric pressure?\nAnswer:"
+  },
+  {
+    "id": "qa_v2_5",
+    "category": "Question Answering",
+    "prompt": "Question: What is the capital of Japan?\nAnswer:"
+  },
+  {
+    "id": "exp_v2_1",
+    "category": "Explanation",
+    "prompt": "Explain step-by-step how an optical fiber transmits data using total internal reflection."
+  },
+  {
+    "id": "exp_v2_2",
+    "category": "Explanation",
+    "prompt": "Explain how a heat pump transfers thermal energy during winter heating operations."
+  },
+  {
+    "id": "exp_v2_3",
+    "category": "Explanation",
+    "prompt": "Explain the difference between continuous integration and continuous deployment."
+  },
+  {
+    "id": "exp_v2_4",
+    "category": "Explanation",
+    "prompt": "Explain how digital audio sampling converts analog sound waves into binary data."
+  },
+  {
+    "id": "exp_v2_5",
+    "category": "Explanation",
+    "prompt": "Explain the mechanism of enzyme catalysis in biological reactions."
+  },
+  {
+    "id": "inst_v2_1",
+    "category": "Instruction Following",
+    "prompt": "List exactly four core principles of object-oriented programming."
+  },
+  {
+    "id": "inst_v2_2",
+    "category": "Instruction Following",
+    "prompt": "Summarize the law of conservation of momentum in one clear sentence."
+  },
+  {
+    "id": "inst_v2_3",
+    "category": "Instruction Following",
+    "prompt": "Provide a bulleted list of 3 common HTTP status code categories."
+  },
+  {
+    "id": "inst_v2_4",
+    "category": "Instruction Following",
+    "prompt": "Rephrase the following statement concisely: 'The software experienced a crash due to unhandled exceptions.'"
+  },
+  {
+    "id": "inst_v2_5",
+    "category": "Instruction Following",
+    "prompt": "Define 'latency' in the context of computer network communications."
+  },
+  {
+    "id": "cmp_v2_1",
+    "category": "Completion",
+    "prompt": "In distributed systems, the CAP theorem states that a system can provide at most two of"
+  },
+  {
+    "id": "cmp_v2_2",
+    "category": "Completion",
+    "prompt": "The primary distinction between process memory stacks and heaps is that"
+  },
+  {
+    "id": "cmp_v2_3",
+    "category": "Completion",
+    "prompt": "In machine learning, cross-validation is performed in order to"
+  },
+  {
+    "id": "cmp_v2_4",
+    "category": "Completion",
+    "prompt": "In database design, Third Normal Form (3NF) requires that"
+  },
+  {
+    "id": "cmp_v2_5",
+    "category": "Completion",
+    "prompt": "Quantum key distribution guarantees security primarily because"
+  },
+  {
+    "id": "open_ended_01",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #1)."
+  },
+  {
+    "id": "open_ended_02",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #2)"
+  },
+  {
+    "id": "open_ended_03",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #3)"
+  },
+  {
+    "id": "open_ended_04",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #4)"
+  },
+  {
+    "id": "open_ended_05",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #5)"
+  },
+  {
+    "id": "open_ended_06",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #6)."
+  },
+  {
+    "id": "open_ended_07",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #7)"
+  },
+  {
+    "id": "open_ended_08",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #8)"
+  },
+  {
+    "id": "open_ended_09",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #9)"
+  },
+  {
+    "id": "open_ended_10",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #10)"
+  },
+  {
+    "id": "open_ended_11",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #11)."
+  },
+  {
+    "id": "open_ended_12",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #12)"
+  },
+  {
+    "id": "open_ended_13",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #13)"
+  },
+  {
+    "id": "open_ended_14",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #14)"
+  },
+  {
+    "id": "open_ended_15",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #15)"
+  },
+  {
+    "id": "open_ended_16",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #16)."
+  },
+  {
+    "id": "open_ended_17",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #17)"
+  },
+  {
+    "id": "open_ended_18",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #18)"
+  },
+  {
+    "id": "open_ended_19",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #19)"
+  },
+  {
+    "id": "open_ended_20",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #20)"
+  },
+  {
+    "id": "open_ended_21",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #21)."
+  },
+  {
+    "id": "open_ended_22",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #22)"
+  },
+  {
+    "id": "open_ended_23",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #23)"
+  },
+  {
+    "id": "open_ended_24",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #24)"
+  },
+  {
+    "id": "open_ended_25",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #25)"
+  },
+  {
+    "id": "open_ended_26",
+    "category": "Open-Ended Generation",
+    "prompt": "Analyze the potential economic and societal impacts of widespread artificial intelligence adoption in healthcare over the next decade (Prompt #26)."
+  },
+  {
+    "id": "open_ended_27",
+    "category": "Open-Ended Generation",
+    "prompt": "If a software development team must choose between rapid feature deployment and strict security auditing, how should they evaluate the trade-off? (Prompt #27)"
+  },
+  {
+    "id": "open_ended_28",
+    "category": "Open-Ended Generation",
+    "prompt": "Propose a conceptual system design for a real-time collaborative code editor serving 100,000 concurrent users. (Prompt #28)"
+  },
+  {
+    "id": "open_ended_29",
+    "category": "Open-Ended Generation",
+    "prompt": "Explain why debugging distributed systems is significantly more complex than debugging single-threaded monolithic programs. (Prompt #29)"
+  },
+  {
+    "id": "open_ended_30",
+    "category": "Open-Ended Generation",
+    "prompt": "How might quantum computing impact modern internet encryption standards, and what post-quantum cryptography approaches exist? (Prompt #30)"
+  },
+  {
+    "id": "multi_turn_01",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #1)"
+  },
+  {
+    "id": "multi_turn_02",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #2)"
+  },
+  {
+    "id": "multi_turn_03",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #3)"
+  },
+  {
+    "id": "multi_turn_04",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #4)"
+  },
+  {
+    "id": "multi_turn_05",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #5)"
+  },
+  {
+    "id": "multi_turn_06",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #6)"
+  },
+  {
+    "id": "multi_turn_07",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #7)"
+  },
+  {
+    "id": "multi_turn_08",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #8)"
+  },
+  {
+    "id": "multi_turn_09",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #9)"
+  },
+  {
+    "id": "multi_turn_10",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #10)"
+  },
+  {
+    "id": "multi_turn_11",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #11)"
+  },
+  {
+    "id": "multi_turn_12",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #12)"
+  },
+  {
+    "id": "multi_turn_13",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #13)"
+  },
+  {
+    "id": "multi_turn_14",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #14)"
+  },
+  {
+    "id": "multi_turn_15",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #15)"
+  },
+  {
+    "id": "multi_turn_16",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #16)"
+  },
+  {
+    "id": "multi_turn_17",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is continuous integration?\nassistant: Continuous integration (CI) is a software practice where developers regularly merge code changes into a central repository, triggering automated builds and tests.\nuser: What happens if a test fails in the CI pipeline?\nassistant: (Turn #17)"
+  },
+  {
+    "id": "multi_turn_18",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: Can you explain what a REST API is?\nassistant: A REST API is an architectural style for designing networked applications using HTTP requests to access and manipulate data representations.\nuser: What HTTP methods are typically used for CRUD operations?\nassistant: (Turn #18)"
+  },
+  {
+    "id": "multi_turn_19",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: What is machine learning overfitting?\nassistant: Overfitting occurs when a statistical model learns training data noise rather than true underlying patterns, performing poorly on unseen validation data.\nuser: How can regularization help prevent it?\nassistant: (Turn #19)"
+  },
+  {
+    "id": "multi_turn_20",
+    "category": "Multi-Turn Conversation",
+    "prompt": "user: How does a CPU cache work?\nassistant: CPU caches store copies of frequently accessed main memory locations in small, high-speed SRAM registers close to the processor core.\nuser: What is a cache miss?\nassistant: (Turn #20)"
+  }
+]

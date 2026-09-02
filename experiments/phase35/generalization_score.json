@@ -1,0 +1,66 @@
+{
+  "formula": "0.20*relevance + 0.20*coherence + 0.15*completeness + 0.15*instruction_following + 0.10*diversity + 0.10*multi_turn + 0.10*failure_robustness",
+  "scores_0_to_100": {
+    "Model_A_Baseline": {
+      "generalization_score_100": 40.1,
+      "relevance": 34.69,
+      "coherence": 22.22,
+      "completeness": 65.0,
+      "instruction_following": 34.67,
+      "diversity": 45.02,
+      "multi_turn": 54.65,
+      "failure_robustness": 38.03
+    },
+    "Model_E_Phase34": {
+      "generalization_score_100": 33.17,
+      "relevance": 35.95,
+      "coherence": 7.39,
+      "completeness": 64.55,
+      "instruction_following": 23.11,
+      "diversity": 37.27,
+      "multi_turn": 53.07,
+      "failure_robustness": 23.18
+    },
+    "Model_F1_Phase35": {
+      "generalization_score_100": 31.36,
+      "relevance": 35.51,
+      "coherence": 5.62,
+      "completeness": 60.45,
+      "instruction_following": 22.45,
+      "diversity": 33.97,
+      "multi_turn": 53.79,
+      "failure_robustness": 19.24
+    },
+    "Model_F2_Phase35": {
+      "generalization_score_100": 33.95,
+      "relevance": 36.38,
+      "coherence": 9.18,
+      "completeness": 64.09,
+      "instruction_following": 25.02,
+      "diversity": 37.86,
+      "multi_turn": 52.63,
+      "failure_robustness": 24.24
+    }
+  },
+  "ppl_ranking": [
+    "Model_F1_Phase35 (~4.85 PPL)",
+    "Model_F2_Phase35 (~5.10 PPL)",
+    "Model_E_Phase34 (~5.20 PPL)",
+    "Model_A_Baseline (~322.58 PPL)"
+  ],
+  "generalization_ranking": [
+    "Model_A_Baseline",
+    "Model_F2_Phase35",
+    "Model_E_Phase34",
+    "Model_F1_Phase35"
+  ],
+  "promotion_gate_check": {
+    "best_candidate": "Model_F2_Phase35",
+    "best_candidate_score": 33.95,
+    "Model_E_score": 33.17,
+    "Model_A_score": 40.1,
+    "F_greater_than_E": true,
+    "F_greater_than_equal_A_plus_3": false,
+    "final_status": "PHASE_35_CANDIDATE_ON_HOLD"
+  }
+}

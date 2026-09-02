@@ -1,0 +1,20 @@
+{
+  "dataset_name": "collision_augmented_v1",
+  "total_records": 126,
+  "real_world_records": 6,
+  "synthetic_records": 120,
+  "real_world_token_count": 386,
+  "synthetic_token_count": 11090,
+  "total_token_count": 11476,
+  "real_world_token_percentage": 3.36,
+  "synthetic_token_percentage": 96.64,
+  "splits": {
+    "train_records": 90,
+    "train_tokens": 8235,
+    "val_records": 18,
+    "val_tokens": 1686,
+    "test_records": 18,
+    "test_tokens": 1555
+  },
+  "seed": 42
+}

@@ -1,0 +1,119 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: collision-db-prod
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata-prod:/var/lib/postgresql/data
+    networks:
+      - collision-net-prod
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: collision-cache-prod
+    restart: always
+    command: redis-server --save "" --appendonly no # Cache-only configuration for rate limiting speed
+    networks:
+      - collision-net-prod
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  collision-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: collision-api-prod
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      REDIS_URL: redis://redis:6379/0
+      ADMIN_SECRET: ${ADMIN_SECRET}
+      MODEL_PATH: /app/models/collision-10m
+      MODEL_SHA256: ${MODEL_SHA256:-d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97}
+      MODEL_PARAM_COUNT: 10282304
+      COLLISION_RATE_LIMIT: ${COLLISION_RATE_LIMIT:-60}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS}
+    volumes:
+      - ./models:/app/models:ro
+    networks:
+      - collision-net-prod
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  collision-portal:
+    build:
+      context: .
+      dockerfile: Dockerfile.portal
+    container_name: collision-portal-prod
+    restart: always
+    environment:
+      COLLISION_API_URL: http://collision-api-prod:8000
+    networks:
+      - collision-net-prod
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+    depends_on:
+      collision-api:
+        condition: service_healthy
+
+  nginx:
+    image: nginx:alpine
+    container_name: collision-gateway-prod
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Mount production configuration
+      - ./deployment/nginx/nginx-prod.conf:/etc/nginx/nginx.conf:ro
+      # Serve static web files
+      - ./website/dist:/usr/share/nginx/html:ro
+      # Mount TLS certs from certbot host storage
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    networks:
+      - collision-net-prod
+    depends_on:
+      - collision-portal
+      - collision-api
+
+volumes:
+  pgdata-prod:
+
+networks:
+  collision-net-prod:
+    driver: bridge

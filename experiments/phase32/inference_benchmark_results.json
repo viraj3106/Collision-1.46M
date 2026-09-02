@@ -1,0 +1,21 @@
+{
+  "candidate_checkpoint_sha256": "725e0605d6e729e7964850ed8971d15d9bd81c485b74c8818d8c85e5165eda2f",
+  "candidate_parameters": 10282304,
+  "api_compatibility": "PASS",
+  "production_baseline_benchmark": {
+    "model_name": "Production COLLISION-10M Baseline",
+    "avg_latency_ms": 713.75,
+    "p50_latency_ms": 788.93,
+    "p95_latency_ms": 1002.71,
+    "avg_tokens_per_sec": 94.62,
+    "total_tokens_generated": 1605
+  },
+  "production_candidate_benchmark": {
+    "model_name": "Production Candidate (Model D)",
+    "avg_latency_ms": 691.81,
+    "p50_latency_ms": 805.09,
+    "p95_latency_ms": 1012.54,
+    "avg_tokens_per_sec": 250.94,
+    "total_tokens_generated": 1549
+  }
+}

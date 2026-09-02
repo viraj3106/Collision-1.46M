@@ -1,0 +1,8 @@
+{
+  "best_step": 2500,
+  "best_val_loss": 0.745433360017756,
+  "best_val_ppx": 2.1073544803027713,
+  "test_loss": 0.5804889360442758,
+  "test_ppx": 1.7869119028339207,
+  "total_tokens_processed": 10000384
+}

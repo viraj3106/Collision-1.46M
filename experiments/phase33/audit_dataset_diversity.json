@@ -1,0 +1,92 @@
+{
+  "dataset_v1": {
+    "file_path": "V:\\collision - 1M\\datasets\\collision_instruct_v1\\collision_synthetic_v1.jsonl",
+    "total_records": 120,
+    "unique_instructions": 120,
+    "unique_responses": 30,
+    "unique_response_ratio": 0.25,
+    "prefix_diversity_3_words": 30,
+    "prefix_diversity_5_words": 30,
+    "prefix_diversity_10_words": 30,
+    "type_token_ratio": 0.1621,
+    "total_words": 2104,
+    "unique_words": 341,
+    "unique_bigrams": 580,
+    "unique_trigrams": 691,
+    "repeated_trigram_rate": 0.6713,
+    "repeated_4gram_rate": 0.6283,
+    "avg_response_length_words": 17.53,
+    "median_response_length_words": 17,
+    "min_response_length_words": 14,
+    "max_response_length_words": 22,
+    "exact_duplicates": 90,
+    "near_duplicates_sample": 0,
+    "categories": {
+      "question_answering": 20,
+      "mathematics": 20,
+      "general_knowledge": 20,
+      "explanation": 20,
+      "computer_science": 20,
+      "physics_astronomy": 20
+    },
+    "domains": {
+      "unknown": 120
+    }
+  },
+  "dataset_v2": {
+    "file_path": "V:\\collision - 1M\\data\\collision_synthetic_v2.jsonl",
+    "total_records": 491,
+    "unique_instructions": 491,
+    "unique_responses": 482,
+    "unique_response_ratio": 0.9817,
+    "prefix_diversity_3_words": 108,
+    "prefix_diversity_5_words": 139,
+    "prefix_diversity_10_words": 139,
+    "type_token_ratio": 0.0784,
+    "total_words": 13159,
+    "unique_words": 1032,
+    "unique_bigrams": 2191,
+    "unique_trigrams": 2848,
+    "repeated_trigram_rate": 0.7835,
+    "repeated_4gram_rate": 0.7358,
+    "avg_response_length_words": 26.8,
+    "median_response_length_words": 25,
+    "min_response_length_words": 12,
+    "max_response_length_words": 44,
+    "exact_duplicates": 9,
+    "near_duplicates_sample": 221,
+    "categories": {
+      "question_answering": 100,
+      "multi_turn": 110,
+      "reasoning": 80,
+      "instruction_following": 40,
+      "explanation": 21,
+      "completion": 80,
+      "declarative_knowledge": 60
+    },
+    "domains": {
+      "Cybersecurity": 10,
+      "Computer Science": 181,
+      "Software Engineering": 78,
+      "Databases": 41,
+      "Machine Learning": 41,
+      "Networking": 11,
+      "General Knowledge": 8,
+      "Space": 11,
+      "Artificial Intelligence": 11,
+      "Technology": 56,
+      "Electronics": 10,
+      "Physics": 22,
+      "Data Science": 10,
+      "Mathematics": 1
+    }
+  },
+  "improvements": {
+    "record_increase": 371,
+    "unique_response_increase": 452,
+    "response_ratio_change": 0.7317,
+    "prefix_3_increase": 78,
+    "unique_vocabulary_increase": 691,
+    "unique_trigrams_increase": 2157
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dataset_name": "preference_dataset_v1",
+  "dataset_label": "CURATED_REALISTIC_DATA",
+  "total_pairs": 5000,
+  "methodology": "Pairwise preference alignment comparing high-coherence accurate responses against hallucinated or repetitive responses.",
+  "status": "READY"
+}

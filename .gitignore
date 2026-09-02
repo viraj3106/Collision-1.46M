@@ -30,9 +30,16 @@ wheels/
 .installed.cfg
 *.egg
 
-# Secrets
+# Secrets & Configuration
 .env
 .env.*
+*.env
+credentials
+credentials*
+private_keys/
+*.pem
+*.key
+production_secrets*
 
 # Local/IDE settings and metadata
 .vscode/

@@ -1,0 +1,48 @@
+# Pinned python base image
+FROM python:3.11-slim
+
+# Set environment paths
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PORT=8000
+
+# Install minimal OS dependencies for network check and compilation
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root system user
+RUN groupadd -g 10001 appgroup && \
+    useradd -u 10001 -g appgroup -m -s /bin/bash appuser
+
+WORKDIR /app
+
+# Copy dependency files first
+COPY requirements-release.txt /app/
+
+# Install python dependencies including psycopg2-binary and CPU-only PyTorch
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir psycopg2-binary && \
+    pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements-release.txt
+
+# Copy source tree
+COPY api/ /app/api/
+COPY collision/ /app/collision/
+COPY model/ /app/model/
+
+# Set owner permissions
+RUN chown -R appuser:appgroup /app
+
+USER appuser
+
+# Expose ports
+EXPOSE 8000
+
+# API healthcheck using curl
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+  CMD curl -f http://localhost:8000/health || exit 1
+
+# Start server
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
