@@ -1,0 +1,11 @@
+{
+  "phase": "phase53",
+  "status": "UNEXECUTED_INSUFFICIENT_DATA",
+  "initialization_checkpoint": "Model J52 (Phase 52)",
+  "candidate_name": "J53_REALWORLD",
+  "min_required_records": 100,
+  "target_learning_rate": 2e-05,
+  "max_steps": 100,
+  "batch_size": 4,
+  "seed": 42
+}

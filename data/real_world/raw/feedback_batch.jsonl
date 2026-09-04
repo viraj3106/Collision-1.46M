@@ -9,3 +9,4 @@
 {"user_id": "dev_009", "prompt": "My email is user@domain.com", "response": "Sending reset token to user@domain.com", "rating": "thumbs_up", "consent": true, "model": "COLLISION-10M", "timestamp": "2026-09-01T12:40:00Z"}
 {"user_id": "dev_010", "prompt": "Use api_key col_secretkey123", "response": "Key authenticated", "rating": "thumbs_up", "consent": true, "model": "COLLISION-10M", "timestamp": "2026-09-01T12:45:00Z"}
 {"user_id": "dev_011", "prompt": "What is machine learning?", "response": "Machine learning is a subset of artificial intelligence focused on building systems that learn from data to make predictions.", "rating": "thumbs_up", "consent": true, "model": "COLLISION-10M", "timestamp": "2026-09-01T12:50:00Z"}
+{"user_id": "dev_012", "prompt": "Explain neural networks", "response": "Neural networks are computational models.", "rating": "thumbs_up", "consent": true, "model": "collision-10m", "timestamp": "2026-09-01T12:55:00Z"}

@@ -39,23 +39,25 @@ class TestRealWorldDataPipeline(unittest.TestCase):
 
     def test_duplicate_handling(self):
         records = [
-            {"user_id": "u1", "prompt": "What is AI?", "response": "Artificial intelligence.", "rating": "thumbs_up"},
-            {"user_id": "u2", "prompt": "What is AI?", "response": "Artificial intelligence.", "rating": "thumbs_up"},
+            {"user_id": "u1", "prompt": "What is AI?", "response": "Artificial intelligence.", "rating": "thumbs_up", "consent": True},
+            {"user_id": "u2", "prompt": "What is AI?", "response": "Artificial intelligence.", "rating": "thumbs_up", "consent": True},
         ]
         cleaned, rejected = validate_and_clean_records(records)
         self.assertEqual(len(cleaned), 1)
         self.assertEqual(len(rejected), 1)
-        self.assertIn("Duplicate prompt-response example", rejected[0]["rejection_reasons"])
+        self.assertIn("Duplicate prompt-response pair", rejected[0]["rejection_reasons"])
 
     def test_consent_handling(self):
         records = [
-            {"user_id": "u1", "prompt": "P1", "response": "R1", "rating": "thumbs_up", "consent": True},
-            {"user_id": "u2", "prompt": "P2", "response": "R2", "rating": "thumbs_up", "consent": False},
+            {"user_id": "u1", "prompt": "Prompt 1", "response": "Response 1", "rating": "thumbs_up", "consent": True},
+            {"user_id": "u2", "prompt": "Prompt 2", "response": "Response 2", "rating": "thumbs_up", "consent": False},
         ]
         cleaned, rejected = validate_and_clean_records(records)
         self.assertEqual(len(cleaned), 1)
         self.assertEqual(len(rejected), 1)
-        self.assertIn("Consent explicitly declined", rejected[0]["rejection_reasons"][0])
+        self.assertIn("Missing or unverified consent", rejected[0]["rejection_reasons"][0])
+
+
 
     def test_sensitive_credential_rejection(self):
         records = [
