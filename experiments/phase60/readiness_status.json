@@ -1,0 +1,23 @@
+{
+  "verdict": "REAL_WORLD_DATA_NOT_READY",
+  "readiness_verdict": "REAL_WORLD_DATA_NOT_READY",
+  "phase_verdict": "PHASE_60_DATA_COLLECTION_ACTIVE",
+  "quality_gates_audit": {
+    "clean_records_ge_100": false,
+    "consent_coverage_ge_90pct": true,
+    "pii_secrets_in_clean_split_zero": true,
+    "train_val_overlap_zero": true,
+    "duplicate_rate_acceptable": true,
+    "domain_diversity_acceptable": false,
+    "positive_signals_sufficient": true
+  },
+  "all_quality_gates_passed": false,
+  "clean_records_available": 7,
+  "required_minimum_records": 100,
+  "additional_records_required": 93,
+  "message": "Clean consented real-world record count (7) is below the required threshold of 100. Need 93 more records.",
+  "training_executed": false,
+  "automatic_training_blocked": true,
+  "promoted_research_candidate": "J52",
+  "production_model_status": "FROZEN_AND_UNTOUCHED"
+}
