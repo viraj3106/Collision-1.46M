@@ -1,0 +1,22 @@
+{
+  "beta_sessions_observed": 12,
+  "feedback_ui_impressions": 12,
+  "feedback_initiated": 12,
+  "submission_attempts": 12,
+  "accepted_clean": 7,
+  "rejected": 5,
+  "rejection_reasons_breakdown": {
+    "Non-positive rating signal: 'thumbs_down'": 1,
+    "Missing or unverified consent (consent != True)": 1,
+    "Sensitive data detected: email address": 1,
+    "Sensitive credential detected: api_key": 1,
+    "Sensitive credential detected: col_": 1,
+    "Duplicate prompt-response pair": 1
+  },
+  "clean_records_baseline": 7,
+  "genuinely_new_human_records": 0,
+  "clean_records_current": 7,
+  "target_milestone": 20,
+  "target_sft": 100,
+  "acquisition_status": "WAITING_FOR_HUMAN_BETA_TESTERS"
+}
