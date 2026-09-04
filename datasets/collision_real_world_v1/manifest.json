@@ -1,0 +1,10 @@
+{
+  "dataset_name": "collision_real_world_v1",
+  "raw_source": "user_feedback_api_and_playground",
+  "train_file": "train.jsonl",
+  "val_file": "val.jsonl",
+  "total_examples": 7,
+  "train_examples": 6,
+  "val_examples": 1,
+  "license": "Internal Research & Safety Audited User Feedback"
+}

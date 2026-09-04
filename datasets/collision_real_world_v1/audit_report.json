@@ -1,0 +1,31 @@
+{
+  "total_raw_records": 12,
+  "total_cleaned_records": 7,
+  "total_rejected_records": 5,
+  "rejection_reasons": {
+    "Non-positive rating signal: 'thumbs_down'": 1,
+    "Missing or unverified consent (consent != True)": 1,
+    "Sensitive data detected: email address": 1,
+    "Sensitive credential detected: api_key": 1,
+    "Sensitive credential detected: col_": 1,
+    "Duplicate prompt-response pair": 1
+  },
+  "unique_prompt_ratio": 0.8571428571428571,
+  "duplicate_ratio": 0.1428571428571429,
+  "domain_distribution": {
+    "explanation": 1,
+    "general": 6
+  },
+  "feedback_distribution": {
+    "thumbs_up": 7
+  },
+  "avg_prompt_length_chars": 33.57142857142857,
+  "avg_response_length_chars": 113.42857142857143,
+  "max_sequence_length_tokens": 76,
+  "percentage_requiring_truncation": 0.0,
+  "pii_or_secrets_detected_in_cleaned": 0,
+  "consent_coverage_percent": 91.66666666666666,
+  "train_val_overlap_count": 0,
+  "train_record_count": 6,
+  "val_record_count": 1
+}
