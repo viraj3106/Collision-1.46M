@@ -1,0 +1,22 @@
+{
+  "target_clean_records_milestone": 20,
+  "target_clean_records_sft": 100,
+  "clean_records_baseline_phase68": 7,
+  "genuinely_new_human_records": 0,
+  "clean_records_current": 7,
+  "records_remaining_to_milestone_20": 13,
+  "records_remaining_to_sft_100": 93,
+  "raw_records_evaluated": 12,
+  "rejected_records_quarantined": 5,
+  "consent_coverage_percent": 91.67,
+  "acceptance_rate_pct": 58.33,
+  "duplicate_rate": 0.1667,
+  "unique_prompt_ratio": 0.8333,
+  "pii_secrets_violations_in_clean": 0,
+  "domain_diversity_status": "HIGHLY_CONCENTRATED",
+  "conversation_type_diversity_status": "HIGHLY_CONCENTRATED",
+  "multi_turn_count": 0,
+  "follow_up_count": 0,
+  "milestone_status": "WAITING_FOR_20_CLEAN_RECORDS",
+  "final_verdict": "WAITING_FOR_HUMAN_BETA_TESTERS"
+}
