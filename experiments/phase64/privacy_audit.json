@@ -1,0 +1,16 @@
+{
+  "total_records_screened": 12,
+  "consent_verified_count": 11,
+  "unverified_consent_rejected": 1,
+  "pii_or_secret_detections_in_cleaned_split": 0,
+  "privacy_violations_blocked": 3,
+  "rejection_reasons_breakdown": {
+    "Non-positive rating signal: 'thumbs_down'": 1,
+    "Missing or unverified consent (consent != True)": 1,
+    "Sensitive data detected: email address": 1,
+    "Sensitive credential detected: api_key": 1,
+    "Sensitive credential detected: col_": 1,
+    "Duplicate prompt-response pair": 1
+  },
+  "privacy_audit_status": "PASSED_STRICT_PRIVACY_AUDIT"
+}
