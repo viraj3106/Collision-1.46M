@@ -164,7 +164,7 @@ export default function App() {
         setPassword('');
         setTimeout(() => setView('login'), 1500);
       } else {
-        setAuthError(data.error?.message || 'Failed to register account.');
+        setAuthError(data.detail?.message || data.error?.message || 'Failed to register account.');
       }
     } catch (err) {
       setAuthError('Could not connect to authentication server. Verify uvicorn is running.');
@@ -205,7 +205,7 @@ export default function App() {
         setAuthSuccess('Logged in successfully!');
         setView('playground'); // Direct user to the playground
       } else {
-        setAuthError(data.error?.message || 'Invalid email or password.');
+        setAuthError(data.detail?.message || data.error?.message || 'Invalid email or password.');
       }
     } catch (err) {
       setAuthError('Could not connect to authentication server. Verify uvicorn is running.');
@@ -871,27 +871,31 @@ export default function App() {
           <section style={{ padding: '80px 0 60px 0', borderBottom: '1px solid var(--border)' }}>
             <div className="container" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '48px', alignItems: 'center' }}>
               <div>
-                <h1 className="heading-brand" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.07rem', margin: '0 0 16px 0' }}>
-                  AI infrastructure,<br />built for developers.
+                <h1 className="heading-brand" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.07rem', margin: '0 0 12px 0' }}>
+                  COLLISION
                 </h1>
-                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: '0 0 32px 0', maxWidth: '520px' }}>
-                  Access COLLISION through a simple completions API and build intelligent features directly into your local prototypes.
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, color: 'var(--primary-deep)', margin: '0 0 16px 0' }}>
+                  Small AI. Built from scratch.
+                </h2>
+                <p style={{ fontSize: '1.0rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: '0 0 24px 0', maxWidth: '520px' }}>
+                  An experimental 10M-parameter decoder-only language model trained completely from scratch. Optimized for CPU-first research, lightweight prototyping, developer API integrations, and public beta experimentation.
                 </p>
                 <div style={{ display: 'flex', gap: '16px' }}>
                   <button 
-                    onClick={() => setView('signup')}
-                    style={{ backgroundColor: 'var(--primary)', color: '#fff', padding: '14px 28px', borderRadius: '6px', fontWeight: 600, fontSize: '0.95rem', boxShadow: '0 4px 10px rgba(139, 124, 246, 0.2)' }}
+                    onClick={() => setView('playground')}
+                    style={{ backgroundColor: 'var(--primary)', color: '#fff', padding: '14px 24px', borderRadius: '6px', fontWeight: 600, fontSize: '0.95rem', boxShadow: '0 4px 10px rgba(139, 124, 246, 0.2)', cursor: 'pointer' }}
                   >
-                    Get API Key
+                    TRY COLLISION → PLAYGROUND
                   </button>
-                  <a 
-                    href="#demo"
-                    style={{ backgroundColor: '#ffffff', border: '1px solid var(--border)', color: 'var(--text)', padding: '14px 28px', borderRadius: '6px', fontWeight: 600, fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                  <button 
+                    onClick={() => setView('signup')}
+                    style={{ backgroundColor: '#ffffff', border: '1px solid var(--border)', color: 'var(--text)', padding: '14px 24px', borderRadius: '6px', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer' }}
                   >
-                    Try Playground
-                  </a>
+                    GET API KEY → DEVELOPER PORTAL
+                  </button>
                 </div>
               </div>
+
               
               {/* SVG Technical Representation of Inference Engine */}
               <div style={{ display: 'flex', justifyContent: 'center' }}>

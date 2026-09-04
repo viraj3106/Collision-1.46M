@@ -137,3 +137,23 @@ class CollisionAPIClient:
             return {"success": False, "error": "Request timed out.", "request_json": payload}
         except Exception as e:
             return {"success": False, "error": str(e), "request_json": payload}
+
+    def submit_feedback(self, prompt, response, rating, category="general", feedback="", consent=True, model="collision-10m", user_id="anonymous"):
+        payload = {
+            "user_id": user_id,
+            "prompt": prompt,
+            "model": model,
+            "response": response,
+            "rating": rating,
+            "feedback": feedback,
+            "category": category,
+            "consent": consent
+        }
+        url = f"{self.base_url}/v1/feedback"
+        headers = self._get_api_headers()
+        try:
+            res = requests.post(url, json=payload, headers=headers, timeout=5.0)
+            return res.status_code, res.json()
+        except Exception as e:
+            return 500, {"error": str(e)}
+

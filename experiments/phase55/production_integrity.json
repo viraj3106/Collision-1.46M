@@ -1,0 +1,12 @@
+{
+  "production_model_path": "models/collision-10m/model.pt",
+  "production_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "production_sha256_unmodified": true,
+  "trainable_parameter_count": 10282304,
+  "raw_state_dict_elements": 13747520,
+  "served_model_name": "collision-10m",
+  "promoted_research_candidate": "J52",
+  "candidate_checkpoint_path": "checkpoints/collision_10m_sft_j52.pt",
+  "j52_candidate_checkpoint_unmodified": true,
+  "production_checkpoint_unmodified": true
+}

@@ -145,6 +145,25 @@ st.sidebar.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+def get_auth_error_message(resp, default_msg):
+    if isinstance(resp, dict):
+        if "detail" in resp:
+            detail = resp["detail"]
+            if isinstance(detail, dict):
+                return detail.get("message", str(detail))
+            elif isinstance(detail, list) and len(detail) > 0:
+                first = detail[0]
+                if isinstance(first, dict) and "msg" in first:
+                    return first["msg"]
+                return str(detail)
+            return str(detail)
+        elif "error" in resp:
+            err = resp["error"]
+            if isinstance(err, dict):
+                return err.get("message", str(err))
+            return str(err)
+    return default_msg
+
 # ----------------- LOGIN / SIGNUP SCREEN -----------------
 if not st.session_state.session_token:
     st.markdown('<div class="portal-header">COLLISION Developer Portal</div>', unsafe_allow_html=True)
@@ -161,7 +180,7 @@ if not st.session_state.session_token:
             if not login_email or not login_password:
                 st.error("Please fill in email and password.")
             else:
-                code, resp = client.login(login_email, login_password)
+                code, resp = client.login(login_email.strip(), login_password)
                 if code == 200:
                     st.session_state.session_token = resp["session_token"]
                     st.session_state.developer_id = resp["developer_id"]
@@ -169,7 +188,7 @@ if not st.session_state.session_token:
                     st.success("Successfully logged in!")
                     st.rerun()
                 else:
-                    err_msg = resp.get("error", {}).get("message", "Invalid credentials.")
+                    err_msg = get_auth_error_message(resp, "Invalid email or password.")
                     st.error(f"Login failed: {err_msg}")
                     
     with col_right:
@@ -183,11 +202,20 @@ if not st.session_state.session_token:
             elif len(signup_password) < 8:
                 st.error("Password must be at least 8 characters long.")
             else:
-                code, resp = client.signup(signup_email, signup_password)
+                code, resp = client.signup(signup_email.strip(), signup_password)
                 if code == 200 or code == 201:
-                    st.success("Registration successful! You can now log in.")
+                    # Auto-login after successful registration
+                    login_code, login_resp = client.login(signup_email.strip(), signup_password)
+                    if login_code == 200:
+                        st.session_state.session_token = login_resp["session_token"]
+                        st.session_state.developer_id = login_resp["developer_id"]
+                        st.session_state.email = login_resp["email"]
+                        st.success("Registration successful! Logging you in...")
+                        st.rerun()
+                    else:
+                        st.success("Registration successful! Please log in on the left.")
                 else:
-                    err_msg = resp.get("error", {}).get("message", "Registration failed.")
+                    err_msg = get_auth_error_message(resp, "Registration failed.")
                     st.error(f"Registration failed: {err_msg}")
     st.stop()
 
@@ -464,7 +492,26 @@ with tab_playground:
         p_max_tokens = st.number_input("Max Tokens (Playground)", min_value=1, max_value=256, value=100)
 
     with col_play_l:
-        p_prompt = st.text_area("Prompt (Playground)", placeholder="Write a text completion prompt here...", height=120)
+        st.markdown("#### Domain Exploration Examples")
+        sample_prompts = {
+            "-- Select a domain example --": "",
+            "General Knowledge": "Explain how solar eclipses occur.",
+            "Programming": "Write a Python function to check for palindromes.",
+            "AI/ML": "Explain the difference between supervised and unsupervised learning.",
+            "Science": "Describe the process of photosynthesis in plants.",
+            "Mathematics": "What is the formula for calculating the area of a circle?",
+            "Reasoning": "If all A are B and all B are C, are all A necessarily C?",
+            "Writing": "Draft a concise product announcement for a new API.",
+            "Summarization": "Summarize the key principles of web performance optimization.",
+            "Troubleshooting": "How do you debug a CORS issue in a FastAPI application?",
+            "Conversation": "What are three fun activities for a rainy weekend?",
+            "Instructions": "Provide step-by-step instructions for installing Git."
+        }
+        selected_domain = st.selectbox("Explore Sample Prompts", list(sample_prompts.keys()), key="domain_sample_select")
+        initial_prompt_val = sample_prompts[selected_domain] if selected_domain != "-- Select a domain example --" else ""
+        
+        p_prompt = st.text_area("Prompt (Playground)", value=initial_prompt_val if initial_prompt_val else "", placeholder="Write a text completion prompt here...", height=120)
+
         
         col_pbtn_gen, col_pbtn_clear = st.columns(2)
         
@@ -537,6 +584,43 @@ with tab_playground:
                     <div>📄 <b>Prompt Tokens:</b> {metrics['usage']['prompt_tokens']}</div>
                 </div>
                 """, unsafe_allow_html=True)
+                
+            st.markdown("---")
+            st.markdown("##### 💬 Public Beta Feedback")
+            col_fb1, col_fb2 = st.columns([1, 2])
+            with col_fb1:
+                rating_choice = st.radio("Was this completion helpful?", ["👍 Helpful", "👎 Not helpful"], key="fb_rating_choice")
+                fb_category = st.selectbox(
+                    "Category / Domain",
+                    [
+                        "general", "Programming", "AI/ML", "Science", "Mathematics",
+                        "Reasoning", "Writing", "Summarization", "Troubleshooting",
+                        "Conversation", "Instructions", "explanatory", "how-to", "planning"
+                    ],
+                    key="fb_cat_choice"
+                )
+            with col_fb2:
+                fb_comment = st.text_input("Optional comment / details", placeholder="Add feedback comments...", key="fb_comment_choice")
+                fb_consent = st.checkbox("Allow this interaction to be used to improve COLLISION", value=True, key="fb_consent_choice")
+                fb_model_tag = st.caption("Model Version: `J52` (Collision-10M baseline)")
+
+
+            if st.button("Submit Feedback", key="fb_submit_btn", type="secondary"):
+                rating_val = "thumbs_up" if "Helpful" in rating_choice and "Not" not in rating_choice else "thumbs_down"
+                code, resp = client.submit_feedback(
+                    prompt=p_prompt,
+                    response=st.session_state.playground_output,
+                    rating=rating_val,
+                    category=fb_category,
+                    feedback=fb_comment,
+                    consent=fb_consent,
+                    model="J52"
+                )
+                if code == 200:
+                    st.success("Thank you! Feedback recorded successfully.")
+                else:
+                    st.error(f"Failed to submit feedback: {resp}")
+
                 
     # Introspection
     if st.session_state.playground_output or p_prompt.strip():
