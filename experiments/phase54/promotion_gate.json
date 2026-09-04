@@ -1,0 +1,11 @@
+{
+  "verdict": "REAL_WORLD_DATA_NOT_READY",
+  "clean_records_available": 6,
+  "required_minimum_records": 100,
+  "additional_records_required": 94,
+  "message": "Clean consented real-world record count (6) is below the required threshold of 100. Need 94 more records.",
+  "training_executed": false,
+  "automatic_training_blocked": true,
+  "promoted_research_candidate": "J52",
+  "production_model_status": "FROZEN_AND_UNTOUCHED"
+}

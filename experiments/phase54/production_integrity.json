@@ -1,0 +1,22 @@
+{
+  "production_model_path": "models/collision-10m/model.pt",
+  "production_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "production_sha256_unmodified": true,
+  "trainable_parameter_count": 10282304,
+  "raw_state_dict_elements": 13747520,
+  "parameter_count_discrepancy_verdict": "REPORTING_CALCULATION_BUG",
+  "discrepancy_explanation": "Phase 53 naively summed all tensor elements in state_dict (sum(p.numel())), double-counting tied lm_head.weight (3,072,000) and including 6 non-trainable causal attention mask buffers (393,216). Model checkpoint binary and weights are 100% intact and unchanged.",
+  "model_config": {
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "d_model": 384,
+    "n_layer": 6,
+    "n_head": 8,
+    "d_ff": 768,
+    "tie_embeddings": true,
+    "normalization": "layer_norm",
+    "positional_encoding": "absolute_learned"
+  },
+  "j52_candidate_checkpoint_unmodified": true,
+  "production_checkpoint_unmodified": true
+}

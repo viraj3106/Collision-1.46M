@@ -1,0 +1,22 @@
+{
+  "raw_records": 11,
+  "clean_records": 6,
+  "rejected_records": 5,
+  "records_by_model_version": {
+    "COLLISION-10M": 11
+  },
+  "records_by_feedback_type": {
+    "thumbs_up": 10,
+    "thumbs_down": 1
+  },
+  "consent_coverage_percent": 90.91,
+  "duplicate_rate": 0.0909,
+  "pii_secrets_rejection_count": 3,
+  "domain_distribution": {
+    "general": 6
+  },
+  "current_clean_record_count": 6,
+  "target_clean_records": 100,
+  "remaining_records_required": 94,
+  "dataset_ready_for_sft": false
+}
