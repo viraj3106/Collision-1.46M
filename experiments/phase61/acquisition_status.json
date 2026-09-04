@@ -1,0 +1,49 @@
+{
+  "beta_sessions_observed": 12,
+  "feedback_ui_impressions": 12,
+  "feedback_initiated": 12,
+  "submission_attempts": 12,
+  "accepted_clean": 7,
+  "rejected": 5,
+  "rejection_reasons_breakdown": {
+    "Non-positive rating signal: 'thumbs_down'": 1,
+    "Missing or unverified consent (consent != True)": 1,
+    "Sensitive data detected: email address": 1,
+    "Sensitive credential detected: api_key": 1,
+    "Sensitive credential detected: col_": 1,
+    "Duplicate prompt-response pair": 1
+  },
+  "clean_records_total": 7,
+  "new_records_since_phase64": 0,
+  "domain_distribution": {
+    "General Knowledge": 7,
+    "Programming": 0,
+    "AI/ML": 0,
+    "Science": 0,
+    "Mathematics": 0,
+    "Reasoning": 0,
+    "Writing": 0,
+    "Summarization": 0,
+    "Troubleshooting": 0,
+    "Conversation": 0,
+    "Instructions": 0
+  },
+  "conversation_distribution": {
+    "factual Q&A": 7,
+    "explanatory": 0,
+    "how-to": 0,
+    "troubleshooting": 0,
+    "reasoning": 0,
+    "planning": 0,
+    "summarization": 0,
+    "rewriting": 0,
+    "multi-turn conversation": 0,
+    "task-oriented requests": 0,
+    "follow-up questions": 0,
+    "clarification requests": 0
+  },
+  "multi_turn_count": 0,
+  "follow_up_count": 0,
+  "milestone_20_target": 20,
+  "milestone_reached": false
+}
