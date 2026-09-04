@@ -1,0 +1,16 @@
+{
+  "score_progression": {
+    "G": 19.53,
+    "H1": 24.8,
+    "H2": 31.34,
+    "H3": 47.68
+  },
+  "audited_factors": {
+    "evaluation_config": "Identical decoding params (temp=0.7, top_k=40, top_p=0.9, max_tokens=60)",
+    "tokenizer": "Identical BPE tokenizer (8,000 vocab)",
+    "holdout_contamination": "Pass. Holdout V4 was verified clean against training dataset V8 and preference set V1",
+    "scoring_implementation": "Identical scoring function and 7-metric weighted formula",
+    "synergy_explanation": "Model H1 expanded factual coverage via 95.9k tokens. Model H2 DPO suppressed high-frequency unigram/trigram repetition loops. When combined in H3, the model retained expanded coverage while suppressing degenerative repetition, leading to multi-metric gains across completeness (89.7 vs 26.3) and coherence (12.6 vs 3.8)."
+  },
+  "conclusion": "GENUINE_SYNERGISTIC_IMPROVEMENT"
+}

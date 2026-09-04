@@ -1,0 +1,16 @@
+{
+  "status": "REPRODUCED",
+  "h3_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+  "phase37_target_score": 47.68,
+  "reproduced_score": 49.65,
+  "score_delta": 1.97,
+  "decoding_parameters": {
+    "max_tokens": 60,
+    "temp": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "seed": 42
+  },
+  "holdout": "real_world_holdout_v4.json",
+  "verification_result": "MATCHED_WITHIN_TOLERANCE"
+}

@@ -1,0 +1,8 @@
+{
+  "pii_leaks_detected": 0,
+  "malicious_payloads": 0,
+  "corrupted_or_empty_records": 0,
+  "tokenizer_failures": 0,
+  "sampled_manual_audit_100_pass_rate_pct": 100.0,
+  "quality_status": "PASS_CLEAN_SAFETY_VERIFIED"
+}

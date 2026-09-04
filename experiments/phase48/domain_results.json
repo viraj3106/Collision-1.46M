@@ -1,0 +1,94 @@
+{
+  "domain_analysis": {
+    "General Knowledge": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Science": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Math": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Programming": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Databases": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Linux": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Networking": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "AI/ML": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Software Engineering": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Troubleshooting": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Writing": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Summarization": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Reasoning": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Instruction Following": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    },
+    "Conversation": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "delta": 1.7,
+      "status": "IMPROVED_OR_STABLE"
+    }
+  }
+}

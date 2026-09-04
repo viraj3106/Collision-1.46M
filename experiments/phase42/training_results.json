@@ -1,0 +1,14 @@
+{
+  "candidate": "Model_J1_Phase42",
+  "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+  "saved_checkpoint": "V:\\collision - 1M\\checkpoints\\phase42\\collision_10m_candidate_j1_250.pt",
+  "sha256": "49395fd8a6c89d74fd466cc25f961eccbbd261c66074e173be1e09e5fb9935d4",
+  "parameter_count": 10282304,
+  "optimizer": "AdamW",
+  "learning_rate": 3e-06,
+  "weight_decay": 0.01,
+  "beta_dpo": 0.1,
+  "steps": 250,
+  "final_loss": 3.1902,
+  "training_time_sec": 97.1
+}

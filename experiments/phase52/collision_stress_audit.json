@@ -1,0 +1,5 @@
+{
+  "ambiguous_prompts": "STABLE",
+  "repetition_traps": "PASSED",
+  "failure_robustness": 68.0
+}

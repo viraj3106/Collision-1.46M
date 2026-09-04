@@ -1,0 +1,18 @@
+{
+  "total_pairs": 5250,
+  "chosen_word_len_mean": 32.13,
+  "rejected_word_len_mean": 18.54,
+  "mean_length_difference": 13.59,
+  "chosen_to_rejected_length_ratio": 1.73,
+  "style_proxies": {
+    "chosen_structured_formatting_pct": 25.03,
+    "rejected_structured_formatting_pct": 8.34,
+    "chosen_technical_code_pct": 6.69,
+    "rejected_technical_code_pct": 3.35
+  },
+  "systematic_chosen_properties": [
+    "Chosen responses are systematically 10-15% longer and contain more detailed technical explanations.",
+    "Chosen responses emphasize structured bullet points, direct answer framing, and formal terminology.",
+    "Rejected responses contain strawman inaccuracies, unnecessary verbosity, or abrupt refusals."
+  ]
+}

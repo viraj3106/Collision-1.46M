@@ -1,0 +1,32 @@
+{
+  "failure_mode_breakdown": {
+    "Model_A_Baseline": {
+      "hallucination": 0,
+      "irrelevance": 0,
+      "incomplete": 0,
+      "repetition": 2,
+      "instruction_failure": 75
+    },
+    "Model_H3_Phase37": {
+      "hallucination": 0,
+      "irrelevance": 0,
+      "incomplete": 0,
+      "repetition": 11,
+      "instruction_failure": 70
+    },
+    "Model_J48_Phase48": {
+      "hallucination": 0,
+      "irrelevance": 0,
+      "incomplete": 0,
+      "repetition": 13,
+      "instruction_failure": 63
+    },
+    "Model_J49_Phase49": {
+      "hallucination": 0,
+      "irrelevance": 0,
+      "incomplete": 0,
+      "repetition": 17,
+      "instruction_failure": 61
+    }
+  }
+}

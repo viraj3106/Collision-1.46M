@@ -1,0 +1,77 @@
+{
+  "dataset_metadata": {
+    "filename": "preference_dataset_v2.json",
+    "filepath": "V:\\collision - 1M\\experiments\\phase38\\preference_dataset_v2.json",
+    "total_pairs": 15000,
+    "format": "JSON list of preference pair objects",
+    "categories": {
+      "technical_correctness": 3000,
+      "instruction_following": 3000,
+      "reasoning_conciseness": 3000,
+      "hallucination_prevention": 3000,
+      "contextual_awareness": 3000
+    },
+    "source_taxonomy": {
+      "EXPERT_CURATED": 6000,
+      "HUMAN_LABELED": 3000,
+      "AUTOMATED": 3000,
+      "SYNTHETIC": 3000
+    },
+    "preference_reasons": {
+      "correctness": 3000,
+      "instruction_following": 3000,
+      "unnecessary_verbosity": 3000,
+      "hallucination": 3000,
+      "contextual_awareness": 3000
+    }
+  },
+  "duplication_analysis": {
+    "raw_unique_prompts": 15000,
+    "normalized_unique_base_templates": 5,
+    "unique_chosen_responses": 5,
+    "unique_rejected_responses": 5,
+    "template_duplication_ratio": 3000.0,
+    "duplicate_normalized_prompts_pct": 99.97,
+    "duplicate_chosen_responses_pct": 99.97,
+    "duplicate_rejected_responses_pct": 99.97
+  },
+  "length_distributions": {
+    "prompt_word_len": {
+      "mean": 14.2,
+      "median": 14.0,
+      "min": 5,
+      "max": 29
+    },
+    "chosen_word_len": {
+      "mean": 25,
+      "median": 24.0,
+      "min": 11,
+      "max": 36
+    },
+    "rejected_word_len": {
+      "mean": 22.8,
+      "median": 17.0,
+      "min": 16,
+      "max": 42
+    },
+    "chosen_to_rejected_len_ratio": {
+      "mean": 1.19,
+      "median": 1.5,
+      "min": 0.65,
+      "max": 1.57
+    }
+  },
+  "data_integrity_issues": {
+    "empty_prompts": 0,
+    "empty_chosen": 0,
+    "empty_rejected": 0,
+    "near_identical_chosen_rejected": 0,
+    "extreme_duplication_flag": true
+  },
+  "quality_score_breakdown": {
+    "clean_pct": 0.0,
+    "needs_review_pct": 3.33,
+    "problematic_pct": 96.67,
+    "overall_status": "problematic"
+  }
+}

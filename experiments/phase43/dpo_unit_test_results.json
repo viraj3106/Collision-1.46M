@@ -1,0 +1,56 @@
+{
+  "status": "FAIL",
+  "canonical_dpo_gradient_direction_correct": false,
+  "sample_pair_results": [
+    {
+      "prompt": "What is the capital of France?",
+      "init_chosen_lp": -117.1783,
+      "updated_chosen_lp": -119.3671,
+      "chosen_lp_delta": -2.1888,
+      "init_rejected_lp": -115.8817,
+      "updated_rejected_lp": -125.9157,
+      "rejected_lp_delta": -10.0339,
+      "gradient_direction_correct": true
+    },
+    {
+      "prompt": "What is 2 + 2?",
+      "init_chosen_lp": -97.3392,
+      "updated_chosen_lp": -106.9727,
+      "chosen_lp_delta": -9.6335,
+      "init_rejected_lp": -95.7881,
+      "updated_rejected_lp": -98.8276,
+      "rejected_lp_delta": -3.0395,
+      "gradient_direction_correct": false
+    },
+    {
+      "prompt": "Explain Python list append.",
+      "init_chosen_lp": -138.303,
+      "updated_chosen_lp": -140.5971,
+      "chosen_lp_delta": -2.2941,
+      "init_rejected_lp": -132.4058,
+      "updated_rejected_lp": -131.1867,
+      "rejected_lp_delta": 1.2191,
+      "gradient_direction_correct": false
+    },
+    {
+      "prompt": "How to check disk usage in Linux?",
+      "init_chosen_lp": -194.4014,
+      "updated_chosen_lp": -187.9018,
+      "chosen_lp_delta": 6.4996,
+      "init_rejected_lp": -149.9435,
+      "updated_rejected_lp": -142.6166,
+      "rejected_lp_delta": 7.3269,
+      "gradient_direction_correct": false
+    },
+    {
+      "prompt": "What does HTML stand for?",
+      "init_chosen_lp": -104.2251,
+      "updated_chosen_lp": -105.4581,
+      "chosen_lp_delta": -1.233,
+      "init_rejected_lp": -126.3083,
+      "updated_rejected_lp": -119.2855,
+      "rejected_lp_delta": 7.0228,
+      "gradient_direction_correct": false
+    }
+  ]
+}

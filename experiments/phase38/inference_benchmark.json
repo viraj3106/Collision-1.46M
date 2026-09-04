@@ -1,0 +1,22 @@
+{
+  "Model_A_Baseline": {
+    "latency_ms": 2168.36,
+    "tokens_per_sec": 27.49,
+    "context_length": 256
+  },
+  "Model_G_Phase36": {
+    "latency_ms": 142.24,
+    "tokens_per_sec": 30.23,
+    "context_length": 256
+  },
+  "Model_H3_Phase37": {
+    "latency_ms": 1435.04,
+    "tokens_per_sec": 28.36,
+    "context_length": 256
+  },
+  "Model_I1_Phase38": {
+    "latency_ms": 2163.88,
+    "tokens_per_sec": 26.3,
+    "context_length": 256
+  }
+}

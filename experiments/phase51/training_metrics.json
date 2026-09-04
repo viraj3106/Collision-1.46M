@@ -1,0 +1,96 @@
+{
+  "candidate": "Model_J51_Phase51",
+  "starting_checkpoint": "V:\\collision - 1M\\experiments\\phase49\\checkpoints\\collision_10m_sft_j49.pt",
+  "starting_sha256": "b49c8fce00a0be093364f59e8da44d12c7b6d412317cdec34fc91f68884323f3",
+  "saved_checkpoint": "V:\\collision - 1M\\experiments\\phase51\\checkpoints\\collision_10m_sft_j51.pt",
+  "saved_sha256": "436afc3ad6e04a8e076a47b35e95c45ed161815d7a3eaeabb9d34b55d46b3b25",
+  "parameter_count": 10282304,
+  "steps": 250,
+  "learning_rate": 2e-05,
+  "training_time_sec": 51.3,
+  "best_val_loss": 0.667339,
+  "best_val_step": 200,
+  "final_val_loss": 1.578848,
+  "logs": [
+    {
+      "step": 25,
+      "train_loss": 2.995234,
+      "val_loss": 3.962414,
+      "learning_rate": 2e-05,
+      "gradient_norm": 13.3495,
+      "parameter_delta_norm": 0.715323
+    },
+    {
+      "step": 50,
+      "train_loss": 3.627213,
+      "val_loss": 2.603829,
+      "learning_rate": 2e-05,
+      "gradient_norm": 17.6547,
+      "parameter_delta_norm": 1.374166
+    },
+    {
+      "step": 75,
+      "train_loss": 2.266864,
+      "val_loss": 2.393994,
+      "learning_rate": 2e-05,
+      "gradient_norm": 9.6862,
+      "parameter_delta_norm": 2.099461
+    },
+    {
+      "step": 100,
+      "train_loss": 1.525729,
+      "val_loss": 1.998185,
+      "learning_rate": 2e-05,
+      "gradient_norm": 11.2673,
+      "parameter_delta_norm": 2.870674
+    },
+    {
+      "step": 125,
+      "train_loss": 1.06583,
+      "val_loss": 3.009659,
+      "learning_rate": 2e-05,
+      "gradient_norm": 9.8833,
+      "parameter_delta_norm": 3.609414
+    },
+    {
+      "step": 150,
+      "train_loss": 1.621654,
+      "val_loss": 1.234749,
+      "learning_rate": 2e-05,
+      "gradient_norm": 12.104,
+      "parameter_delta_norm": 4.281989
+    },
+    {
+      "step": 175,
+      "train_loss": 0.830307,
+      "val_loss": 1.19009,
+      "learning_rate": 2e-05,
+      "gradient_norm": 9.7895,
+      "parameter_delta_norm": 4.927984
+    },
+    {
+      "step": 200,
+      "train_loss": 0.680369,
+      "val_loss": 0.667339,
+      "learning_rate": 2e-05,
+      "gradient_norm": 9.5852,
+      "parameter_delta_norm": 5.421825
+    },
+    {
+      "step": 225,
+      "train_loss": 1.192263,
+      "val_loss": 0.945704,
+      "learning_rate": 2e-05,
+      "gradient_norm": 8.682,
+      "parameter_delta_norm": 5.990919
+    },
+    {
+      "step": 250,
+      "train_loss": 0.427461,
+      "val_loss": 1.578848,
+      "learning_rate": 2e-05,
+      "gradient_norm": 6.3362,
+      "parameter_delta_norm": 6.612941
+    }
+  ]
+}

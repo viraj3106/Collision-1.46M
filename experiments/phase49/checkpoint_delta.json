@@ -1,0 +1,17 @@
+{
+  "H3_to_J48": {
+    "delta_norm": 9.746938,
+    "relative_change": 0.020793,
+    "max_delta": 0.006523
+  },
+  "H3_to_J49": {
+    "delta_norm": 16.518865,
+    "relative_change": 0.035239,
+    "max_delta": 0.011207
+  },
+  "J48_to_J49": {
+    "delta_norm": 7.486283,
+    "relative_change": 0.015943,
+    "max_delta": 0.004841
+  }
+}

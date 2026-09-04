@@ -1,0 +1,46 @@
+{
+  "parameters": 10282304,
+  "zero_leakage": true,
+  "production_sha_unchanged": true,
+  "decision": "PROMOTE",
+  "final_status": "PHASE_49_SFT_EXTENSION_PROMOTE",
+  "metrics": {
+    "H3": {
+      "generalization_score": 51.29,
+      "relevance": 49.4,
+      "coherence": 17.49,
+      "completeness": 94.0,
+      "instruction_following": 42.24,
+      "diversity": 58.57,
+      "multi_turn": 53.55,
+      "failure_robustness": 62.67
+    },
+    "J48": {
+      "generalization_score": 52.99,
+      "relevance": 50.92,
+      "coherence": 22.41,
+      "completeness": 98.0,
+      "instruction_following": 43.84,
+      "diversity": 61.23,
+      "multi_turn": 54.6,
+      "failure_robustness": 54.67
+    },
+    "J49": {
+      "generalization_score": 59.29,
+      "relevance": 53.36,
+      "coherence": 37.09,
+      "completeness": 100.0,
+      "instruction_following": 45.8,
+      "diversity": 70.27,
+      "multi_turn": 57.07,
+      "failure_robustness": 66.0
+    }
+  },
+  "safety_checks": {
+    "training_stable": true,
+    "validation_loss_improving": true,
+    "robustness_recovered": true,
+    "no_coherence_collapse": true,
+    "human_preference_strong": true
+  }
+}

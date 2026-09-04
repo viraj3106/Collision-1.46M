@@ -1,0 +1,34 @@
+{
+  "dataset_v2": {
+    "total_pairs": 15000,
+    "unique_prompts_raw": 15000,
+    "normalized_unique_base_templates": 5,
+    "template_duplication_factor": 3000.0,
+    "exact_duplicate_rate_pct": 99.97,
+    "unique_prompt_ratio_pct": 0.03,
+    "category_count": 5,
+    "max_category_pct": 20.0,
+    "problematic_pairs_pct": 96.67,
+    "estimated_entropy": "Very Low (5 templates)",
+    "quality_status": "problematic"
+  },
+  "dataset_v3": {
+    "total_pairs": 5250,
+    "unique_prompts_raw": 5250,
+    "normalized_unique_base_templates": 5250,
+    "template_duplication_factor": 1.0,
+    "exact_duplicate_rate_pct": 0.0,
+    "unique_prompt_ratio_pct": 100.0,
+    "category_count": 15,
+    "max_category_pct": 6.67,
+    "problematic_pairs_pct": 0.0,
+    "estimated_entropy": "High (5,250 unique prompts across 15 domains)",
+    "quality_status": "PHASE_41_DATASET_READY"
+  },
+  "comparison_summary": {
+    "prompt_diversity_gain": "1,050x increase in distinct base prompt templates (5 -> 5,250)",
+    "duplication_reduction": "Reduced duplication factor from 3,000.0x to 1.0x (100% unique)",
+    "category_expansion": "Expanded coverage from 5 categories to 15 balanced domains",
+    "readiness_verdict": "V3 completely resolves the synthetic repetition bottleneck of V2."
+  }
+}

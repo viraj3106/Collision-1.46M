@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J48_vs_H3": {
+      "J48_wins": 68,
+      "H3_wins": 32,
+      "ties": 20,
+      "win_rate_excl_ties": 68.0
+    }
+  },
+  "conclusion": "Model J48 (250 steps SFT on collision_sft_v1) achieves 68.00% win rate over H3 without coherence collapse or verbosity bias."
+}

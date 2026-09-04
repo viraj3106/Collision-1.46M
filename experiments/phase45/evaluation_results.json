@@ -1,0 +1,32 @@
+{
+  "Model_A_Baseline": {
+    "generalization_score": 57.64,
+    "relevance": 55.52,
+    "coherence": 29.0,
+    "completeness": 100.0,
+    "instruction_following": 44.6,
+    "diversity": 66.25,
+    "multi_turn": 52.18,
+    "failure_robustness": 72.0
+  },
+  "Model_H3_Phase37": {
+    "generalization_score": 51.14,
+    "relevance": 49.4,
+    "coherence": 17.49,
+    "completeness": 94.0,
+    "instruction_following": 40.1,
+    "diversity": 58.57,
+    "multi_turn": 53.9,
+    "failure_robustness": 64.0
+  },
+  "Model_J45_Phase45": {
+    "generalization_score": 47.26,
+    "relevance": 44.48,
+    "coherence": 15.3,
+    "completeness": 88.0,
+    "instruction_following": 36.8,
+    "diversity": 53.9,
+    "multi_turn": 52.56,
+    "failure_robustness": 59.33
+  }
+}

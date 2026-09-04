@@ -1,0 +1,52 @@
+{
+  "parameters": 10282304,
+  "zero_leakage": true,
+  "unit_tests_pass": true,
+  "production_sha_unchanged": true,
+  "pilot_decision": "PILOT_FAILED",
+  "metrics_comparison": {
+    "H3": {
+      "generalization_score": 51.14,
+      "relevance": 49.4,
+      "coherence": 17.49,
+      "completeness": 94.0,
+      "instruction_following": 40.1,
+      "diversity": 58.57,
+      "multi_turn": 53.9,
+      "failure_robustness": 64.0
+    },
+    "I3_V2": {
+      "generalization_score": 49.62,
+      "relevance": 53.32,
+      "coherence": 11.13,
+      "completeness": 98.0,
+      "instruction_following": 34.3,
+      "diversity": 57.45,
+      "multi_turn": 54.05,
+      "failure_robustness": 57.33
+    },
+    "J1_V3": {
+      "generalization_score": 40.7,
+      "relevance": 46.92,
+      "coherence": 1.38,
+      "completeness": 90.0,
+      "instruction_following": 31.5,
+      "diversity": 43.47,
+      "multi_turn": 47.97,
+      "failure_robustness": 36.67
+    }
+  },
+  "deltas_J1_vs_H3": {
+    "generalization": -10.44,
+    "coherence": -16.11,
+    "instruction_following": -8.6,
+    "robustness": -27.33
+  },
+  "deltas_J1_vs_I3": {
+    "coherence_recovery": -9.75,
+    "generalization_recovery": -8.92
+  },
+  "quality_target_satisfied": false,
+  "promotion_decision": "CANDIDATE_ON_HOLD",
+  "final_status": "PHASE_42_DPO_PILOT_FAILED"
+}

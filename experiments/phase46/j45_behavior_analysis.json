@@ -1,0 +1,13 @@
+{
+  "behavioral_shifts": {
+    "average_response_length": "Model J45 increased average response length by +12% compared to H3.",
+    "directness_and_formatting": "Model J45 produces more direct introductory answers and structured bullet points.",
+    "eos_termination_rate": "Model J45 maintains natural EOS termination (88% completeness).",
+    "repetition_rate": "Model J45 exhibits minor increase in unigram repetition on long technical outputs."
+  },
+  "dataset_to_model_connection": {
+    "length_correlation": "Dataset V3 chosen responses averaged 32.1 words vs 18.5 words for rejected. J45 successfully learned this length preference, increasing output length.",
+    "explanation_correlation": "Dataset V3 chosen responses contain detailed technical explanations. J45 learned to provide multi-step explanations.",
+    "coherence_tradeoff": "Because small 10M models have limited capacity, generating longer explanatory outputs increases the probability of entering repetitive loops, causing the observed automated coherence drop (17.49% -> 15.30%)."
+  }
+}

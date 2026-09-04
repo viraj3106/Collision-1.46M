@@ -1,0 +1,109 @@
+{
+  "domain_analysis": {
+    "general_knowledge": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 31.63,
+      "rejected_avg_word_len": 18.71,
+      "length_ratio": 1.69,
+      "style_balance": "WELL_BALANCED"
+    },
+    "science": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 34.63,
+      "rejected_avg_word_len": 21.45,
+      "length_ratio": 1.61,
+      "style_balance": "WELL_BALANCED"
+    },
+    "mathematics": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 32.65,
+      "rejected_avg_word_len": 17.95,
+      "length_ratio": 1.82,
+      "style_balance": "WELL_BALANCED"
+    },
+    "programming": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 32.65,
+      "rejected_avg_word_len": 19.45,
+      "length_ratio": 1.68,
+      "style_balance": "WELL_BALANCED"
+    },
+    "databases": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 30.88,
+      "rejected_avg_word_len": 19.46,
+      "length_ratio": 1.59,
+      "style_balance": "WELL_BALANCED"
+    },
+    "linux": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 31.9,
+      "rejected_avg_word_len": 21.47,
+      "length_ratio": 1.49,
+      "style_balance": "WELL_BALANCED"
+    },
+    "networking": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 29.87,
+      "rejected_avg_word_len": 16.7,
+      "length_ratio": 1.79,
+      "style_balance": "WELL_BALANCED"
+    },
+    "ai_ml": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 29.89,
+      "rejected_avg_word_len": 18.96,
+      "length_ratio": 1.58,
+      "style_balance": "WELL_BALANCED"
+    },
+    "software_engineering": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 29.9,
+      "rejected_avg_word_len": 18.22,
+      "length_ratio": 1.64,
+      "style_balance": "WELL_BALANCED"
+    },
+    "troubleshooting": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 30.4,
+      "rejected_avg_word_len": 15.7,
+      "length_ratio": 1.94,
+      "style_balance": "WELL_BALANCED"
+    },
+    "writing": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 39.63,
+      "rejected_avg_word_len": 22.22,
+      "length_ratio": 1.78,
+      "style_balance": "WELL_BALANCED"
+    },
+    "summarization": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 24.88,
+      "rejected_avg_word_len": 16.95,
+      "length_ratio": 1.47,
+      "style_balance": "WELL_BALANCED"
+    },
+    "reasoning": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 36.13,
+      "rejected_avg_word_len": 17.21,
+      "length_ratio": 2.1,
+      "style_balance": "WELL_BALANCED"
+    },
+    "instruction_following": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 26.33,
+      "rejected_avg_word_len": 14.93,
+      "length_ratio": 1.76,
+      "style_balance": "WELL_BALANCED"
+    },
+    "conversation": {
+      "pair_count": 350,
+      "chosen_avg_word_len": 40.62,
+      "rejected_avg_word_len": 18.69,
+      "length_ratio": 2.17,
+      "style_balance": "WELL_BALANCED"
+    }
+  }
+}

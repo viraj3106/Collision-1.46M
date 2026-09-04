@@ -1,0 +1,18 @@
+{
+  "dpo_formula_analysis": {
+    "canonical_dpo_loss": "-E[log sigmoid(beta * (log(pi_theta(y_c|x)/pi_ref(y_c|x)) - log(pi_theta(y_r|x)/pi_ref(y_r|x))))]",
+    "implemented_loss_in_code": "dpo_loss = loss_c + 0.1 * F.relu(1.0 - (loss_r - loss_c))",
+    "mathematical_discrepancy": "SEVERE_IMPLEMENTATION_BUG: The codebase implemented a custom heuristic proxy loss combining cross-entropy on chosen tokens with a hinge margin penalty on cross-entropy difference, omitting the implicit frozen reference model log-likelihood ratio (pi_ref).",
+    "root_cause_of_coherence_collapse": "Omitting the frozen reference model pi_ref removes the KL divergence constraint (D_KL(pi_theta || pi_ref)) that keeps the policy close to the base model distribution. Furthermore, penalizing loss_r directly forces the policy model to maximize cross-entropy (unconstrained token entropy/randomness) on rejected token sequences, driving greedy decoding coherence collapse."
+  },
+  "implementation_checklist": {
+    "canonical_dpo_implemented": false,
+    "reference_model_logprobs_used": false,
+    "policy_reference_kl_constrained": false,
+    "chosen_rejected_sign_correct": true,
+    "attention_and_padding_masks_valid": true,
+    "tokenization_valid": true,
+    "zero_leakage_verified": true
+  },
+  "verdict": "PHASE_43_DPO_IMPLEMENTATION_BUG_FOUND"
+}

@@ -1,0 +1,47 @@
+{
+  "dataset_name": "preference_dataset_v3.jsonl",
+  "total_pairs": 5250,
+  "unique_prompts": 5250,
+  "unique_chosen": 5250,
+  "unique_rejected": 5250,
+  "unique_prompt_ratio_pct": 100.0,
+  "exact_duplicate_rate_pct": 0.0,
+  "category_counts": {
+    "general_knowledge": 350,
+    "science": 350,
+    "mathematics": 350,
+    "programming": 350,
+    "databases": 350,
+    "linux": 350,
+    "networking": 350,
+    "ai_ml": 350,
+    "software_engineering": 350,
+    "troubleshooting": 350,
+    "writing": 350,
+    "summarization": 350,
+    "reasoning": 350,
+    "instruction_following": 350,
+    "conversation": 350
+  },
+  "max_category_pct": 6.67,
+  "difficulty_counts": {
+    "easy": 1755,
+    "medium": 1755,
+    "hard": 1740
+  },
+  "length_stats": {
+    "prompt_words_mean": 13.97,
+    "chosen_words_mean": 32.13,
+    "rejected_words_mean": 18.54
+  },
+  "pii_violations": [],
+  "zero_pii_leaks": true,
+  "quality_gates": {
+    "unique_prompt_ratio_ge_95": true,
+    "exact_duplicate_rate_le_1": true,
+    "no_category_gt_20": true,
+    "zero_pii_leaks": true,
+    "all_gates_pass": true
+  },
+  "readiness_status": "PHASE_41_DATASET_READY"
+}

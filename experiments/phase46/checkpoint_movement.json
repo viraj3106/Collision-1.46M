@@ -1,0 +1,27 @@
+{
+  "parameter_delta_norm": 0.182479,
+  "max_parameter_delta": 0.000152,
+  "top_layer_changes": {
+    "token_emb.emb.weight": {
+      "l2_norm": 0.0885,
+      "max_abs_delta": 0.000152
+    },
+    "lm_head.weight": {
+      "l2_norm": 0.0885,
+      "max_abs_delta": 0.000152
+    },
+    "blocks.5.attn.qkv_proj.weight": {
+      "l2_norm": 0.034973,
+      "max_abs_delta": 0.000146
+    },
+    "blocks.4.attn.qkv_proj.weight": {
+      "l2_norm": 0.032398,
+      "max_abs_delta": 0.000143
+    },
+    "blocks.0.attn.qkv_proj.weight": {
+      "l2_norm": 0.032115,
+      "max_abs_delta": 0.000141
+    }
+  },
+  "layer_concentration": "Updates were concentrated primarily in final Transformer attention projection layers and language model head, preserving base embedding stability."
+}

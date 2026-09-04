@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J51_vs_J49": {
+      "J51_wins": 78,
+      "J49_wins": 24,
+      "ties": 18,
+      "win_rate_excl_ties": 76.47
+    }
+  },
+  "conclusion": "Model J51 (collision_sft_v2) achieves a 76.47% win rate over J49 on real-world conversational usefulness."
+}

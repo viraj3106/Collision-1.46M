@@ -1,0 +1,12 @@
+{
+  "primary_hypotheses": [
+    "A. Preference labels optimize a style (longer, more detailed explanations) that conflicts with automated benchmark metrics (which penalize length and reward conciseness).",
+    "C. Human and automated evaluation measure different objectives (Human raters prefer detailed structured answers; automated benchmarks heavily penalize small-model repetition risks in longer outputs)."
+  ],
+  "evidence_summary": {
+    "dataset_style_evidence": "Dataset V3 chosen responses are 10-15% longer and contain structured technical explanations.",
+    "behavioral_evidence": "Model J45 adopted the preference style, increasing response length and detail (resulting in 79.41% human win rate over H3).",
+    "benchmark_evidence": "Automated benchmark penalized longer outputs due to small 10M model repetition sensitivity."
+  },
+  "verdict": "PHASE_46_OBJECTIVE_MISALIGNMENT_CONFIRMED"
+}

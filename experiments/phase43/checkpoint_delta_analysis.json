@@ -1,0 +1,132 @@
+{
+  "Model_I1_Phase38": {
+    "total_parameter_delta_norm": 11.7058,
+    "max_parameter_delta": 0.00842,
+    "top_changed_layers": {
+      "token_emb.emb.weight": {
+        "l2_norm": 8.065241,
+        "max_abs_delta": 0.00842
+      },
+      "lm_head.weight": {
+        "l2_norm": 8.065241,
+        "max_abs_delta": 0.00842
+      },
+      "blocks.5.ffn.net.2.weight": {
+        "l2_norm": 0.724111,
+        "max_abs_delta": 0.005323
+      },
+      "lm_head.bias": {
+        "l2_norm": 0.643049,
+        "max_abs_delta": 0.00798
+      },
+      "blocks.5.ffn.net.0.weight": {
+        "l2_norm": 0.623664,
+        "max_abs_delta": 0.004521
+      }
+    }
+  },
+  "Model_I2_Phase39": {
+    "total_parameter_delta_norm": 4.3027,
+    "max_parameter_delta": 0.002907,
+    "top_changed_layers": {
+      "token_emb.emb.weight": {
+        "l2_norm": 2.909066,
+        "max_abs_delta": 0.002907
+      },
+      "lm_head.weight": {
+        "l2_norm": 2.909066,
+        "max_abs_delta": 0.002907
+      },
+      "blocks.5.ffn.net.2.weight": {
+        "l2_norm": 0.320224,
+        "max_abs_delta": 0.002159
+      },
+      "blocks.5.attn.qkv_proj.weight": {
+        "l2_norm": 0.308186,
+        "max_abs_delta": 0.00172
+      },
+      "blocks.5.ffn.net.0.weight": {
+        "l2_norm": 0.299584,
+        "max_abs_delta": 0.001847
+      }
+    }
+  },
+  "Model_I3_Phase39": {
+    "total_parameter_delta_norm": 6.2571,
+    "max_parameter_delta": 0.004289,
+    "top_changed_layers": {
+      "token_emb.emb.weight": {
+        "l2_norm": 4.260357,
+        "max_abs_delta": 0.004289
+      },
+      "lm_head.weight": {
+        "l2_norm": 4.260357,
+        "max_abs_delta": 0.004289
+      },
+      "blocks.5.ffn.net.2.weight": {
+        "l2_norm": 0.437791,
+        "max_abs_delta": 0.003074
+      },
+      "blocks.5.attn.qkv_proj.weight": {
+        "l2_norm": 0.404361,
+        "max_abs_delta": 0.002368
+      },
+      "blocks.5.ffn.net.0.weight": {
+        "l2_norm": 0.402103,
+        "max_abs_delta": 0.002547
+      }
+    }
+  },
+  "Model_I4_Phase39": {
+    "total_parameter_delta_norm": 8.0675,
+    "max_parameter_delta": 0.005744,
+    "top_changed_layers": {
+      "token_emb.emb.weight": {
+        "l2_norm": 5.518184,
+        "max_abs_delta": 0.005744
+      },
+      "lm_head.weight": {
+        "l2_norm": 5.518184,
+        "max_abs_delta": 0.005744
+      },
+      "blocks.5.ffn.net.2.weight": {
+        "l2_norm": 0.542174,
+        "max_abs_delta": 0.003865
+      },
+      "blocks.5.ffn.net.0.weight": {
+        "l2_norm": 0.487176,
+        "max_abs_delta": 0.003156
+      },
+      "blocks.5.attn.qkv_proj.weight": {
+        "l2_norm": 0.483176,
+        "max_abs_delta": 0.00282
+      }
+    }
+  },
+  "Model_J1_Phase42": {
+    "total_parameter_delta_norm": 1.7326,
+    "max_parameter_delta": 0.001152,
+    "top_changed_layers": {
+      "token_emb.emb.weight": {
+        "l2_norm": 1.123453,
+        "max_abs_delta": 0.001152
+      },
+      "lm_head.weight": {
+        "l2_norm": 1.123453,
+        "max_abs_delta": 0.001152
+      },
+      "blocks.5.attn.qkv_proj.weight": {
+        "l2_norm": 0.180003,
+        "max_abs_delta": 0.000854
+      },
+      "blocks.5.ffn.net.2.weight": {
+        "l2_norm": 0.169628,
+        "max_abs_delta": 0.000919
+      },
+      "blocks.0.attn.qkv_proj.weight": {
+        "l2_norm": 0.168206,
+        "max_abs_delta": 0.00074
+      }
+    }
+  }
+}

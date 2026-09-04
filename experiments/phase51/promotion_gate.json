@@ -1,0 +1,31 @@
+{
+  "parameters": 10282304,
+  "production_sha_unchanged": true,
+  "decision": "HOLD",
+  "final_verdict": "PHASE_51_FINAL_RESULT: HOLD",
+  "metrics": {
+    "Model_J49": {
+      "generalization_score": 65.5,
+      "relevance": 53.36,
+      "coherence": 37.09,
+      "completeness": 100.0,
+      "instruction_following": 45.8,
+      "diversity": 70.27,
+      "failure_robustness": 66.0
+    },
+    "Model_J51": {
+      "generalization_score": 58.0,
+      "relevance": 56.0,
+      "coherence": 9.31,
+      "completeness": 100.0,
+      "instruction_following": 42.32,
+      "diversity": 57.28,
+      "failure_robustness": 67.5
+    }
+  },
+  "evidence_summary": {
+    "human_win_rate_over_J49": 76.47,
+    "generalization_gain": -7.5,
+    "instruction_following_gain": -3.48
+  }
+}

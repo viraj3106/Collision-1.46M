@@ -1,0 +1,28 @@
+{
+  "failure_counts_by_model": {
+    "Model_A_Baseline": {
+      "repetition": 0,
+      "fragmentation": 0,
+      "instruction_failure": 34,
+      "topic_drift": 0
+    },
+    "Model_G_Phase36": {
+      "repetition": 0,
+      "fragmentation": 0,
+      "instruction_failure": 40,
+      "topic_drift": 38
+    },
+    "Model_H3_Phase37": {
+      "repetition": 7,
+      "fragmentation": 0,
+      "instruction_failure": 34,
+      "topic_drift": 2
+    },
+    "Model_I1_Phase38": {
+      "repetition": 7,
+      "fragmentation": 0,
+      "instruction_failure": 39,
+      "topic_drift": 0
+    }
+  }
+}

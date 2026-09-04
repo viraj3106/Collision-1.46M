@@ -1,0 +1,40 @@
+{
+  "output_length_quantiles": {
+    "Model_A_Baseline": {
+      "mean": 56,
+      "median": 60,
+      "P25": 60,
+      "P75": 60,
+      "P90": 60,
+      "min": 22,
+      "max": 60
+    },
+    "Model_H3_Phase37": {
+      "mean": 46.15,
+      "median": 56,
+      "P25": 33,
+      "P75": 60,
+      "P90": 60,
+      "min": 1,
+      "max": 60
+    },
+    "Model_J48_Phase48": {
+      "mean": 25,
+      "median": 20,
+      "P25": 3,
+      "P75": 43,
+      "P90": 60,
+      "min": 1,
+      "max": 60
+    },
+    "Model_J49_Phase49": {
+      "mean": 40.63,
+      "median": 60,
+      "P25": 17,
+      "P75": 60,
+      "P90": 60,
+      "min": 1,
+      "max": 60
+    }
+  }
+}

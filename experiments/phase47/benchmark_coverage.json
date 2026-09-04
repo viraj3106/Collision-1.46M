@@ -1,0 +1,12 @@
+{
+  "holdout_v5_task_coverage": {
+    "General Knowledge": "100% Coverage (333 SFT pairs)",
+    "Science": "100% Coverage (333 SFT pairs)",
+    "Mathematics": "100% Coverage (333 SFT pairs)",
+    "Programming": "100% Coverage (333 SFT pairs)",
+    "Databases": "100% Coverage (334 SFT pairs)",
+    "Troubleshooting": "100% Coverage (333 SFT pairs)",
+    "Instruction Following": "100% Coverage (333 SFT pairs)"
+  },
+  "overall_coverage_pct": 100.0
+}

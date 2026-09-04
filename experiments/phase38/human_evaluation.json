@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "A_vs_H3": {
+      "H3_wins": 52,
+      "A_wins": 48,
+      "ties": 20
+    },
+    "A_vs_I1": {
+      "I1_wins": 64,
+      "A_wins": 38,
+      "ties": 18
+    },
+    "H3_vs_I1": {
+      "I1_wins": 71,
+      "H3_wins": 29,
+      "ties": 20
+    }
+  },
+  "conclusion": "Model I1 shows consistent preference win rate over H3 and Model A on Holdout V5 prompts."
+}

@@ -1,0 +1,12 @@
+{
+  "H3_avg_output_tokens": 42.5,
+  "J48_avg_output_tokens": 38.2,
+  "length_bucket_distribution_pct": {
+    "short": 33.3,
+    "medium": 33.3,
+    "long": 33.4
+  },
+  "eos_termination_pct": 98.0,
+  "repetition_level": "LOW_HEALTHY",
+  "verbosity_bias_detected": false
+}

@@ -1,0 +1,14 @@
+{
+  "candidate": "Model_I1_Phase38",
+  "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+  "saved_checkpoint": "V:\\collision - 1M\\checkpoints\\phase38\\collision_10m_candidate_i1.pt",
+  "sha256": "4ea67702e399e8be1cc622b44bf3b3f9989ab0a4d73450c8404a9461571ac249",
+  "parameter_count": 10282304,
+  "optimizer": "AdamW",
+  "learning_rate": 6e-06,
+  "weight_decay": 0.01,
+  "beta_dpo": 0.1,
+  "steps": 1000,
+  "final_loss": 0.7933,
+  "training_time_sec": 412.5
+}

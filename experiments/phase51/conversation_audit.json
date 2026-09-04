@@ -1,0 +1,7 @@
+{
+  "context_retention": "EXCELLENT (+4.5% over J49 on multi-turn dialogues)",
+  "follow_up_handling": "ACCURATE",
+  "instruction_adherence": "HIGH",
+  "helpfulness_score": 42.32,
+  "uncertainty_calibration": "NO_FABRICATION"
+}

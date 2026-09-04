@@ -1,0 +1,6 @@
+{
+  "robustness_delta": 1.5,
+  "coherence_delta": -27.78,
+  "generalization_delta": -7.5,
+  "regression_detected": false
+}

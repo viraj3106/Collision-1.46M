@@ -1,0 +1,36 @@
+{
+  "parameters": 10282304,
+  "zero_leakage": true,
+  "unit_tests_pass": true,
+  "production_sha_unchanged": true,
+  "decision": "REJECT",
+  "final_status": "PHASE_45_DPO_PILOT_REJECT",
+  "metrics": {
+    "H3": {
+      "generalization_score": 51.14,
+      "relevance": 49.4,
+      "coherence": 17.49,
+      "completeness": 94.0,
+      "instruction_following": 40.1,
+      "diversity": 58.57,
+      "multi_turn": 53.9,
+      "failure_robustness": 64.0
+    },
+    "J45": {
+      "generalization_score": 47.26,
+      "relevance": 44.48,
+      "coherence": 15.3,
+      "completeness": 88.0,
+      "instruction_following": 36.8,
+      "diversity": 53.9,
+      "multi_turn": 52.56,
+      "failure_robustness": 59.33
+    }
+  },
+  "safety_checks": {
+    "no_coherence_collapse": true,
+    "no_robustness_collapse": false,
+    "no_diversity_collapse": false,
+    "human_preference_improved": true
+  }
+}

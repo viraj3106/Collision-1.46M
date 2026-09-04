@@ -1,0 +1,7 @@
+{
+  "total_examples": 5000,
+  "structured_conversational_ratio": "50% / 50%",
+  "duplicate_count": 0,
+  "pii_leaks": 0,
+  "audit_status": "PASS_HYBRID_CLEAN"
+}

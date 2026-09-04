@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED_BLIND_STRESS_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J49_vs_H3": {
+      "J49_wins": 76,
+      "H3_wins": 26,
+      "ties": 18,
+      "win_rate_excl_ties": 74.51
+    },
+    "J49_vs_J48": {
+      "J49_wins": 64,
+      "J48_wins": 34,
+      "ties": 22,
+      "win_rate_excl_ties": 65.31
+    },
+    "J49_vs_Model_A": {
+      "J49_wins": 71,
+      "A_wins": 31,
+      "ties": 18,
+      "win_rate_excl_ties": 69.61
+    }
+  },
+  "conclusion": "Model J49 demonstrates clear superior human preference win rates across H3 (74.51%), J48 (65.31%), and Model A Baseline (69.61%)."
+}

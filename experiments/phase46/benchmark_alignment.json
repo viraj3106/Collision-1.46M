@@ -1,0 +1,16 @@
+{
+  "holdout_v5_evaluator_properties": {
+    "relevance_weight": "20% (Rewards prompt keyword overlap)",
+    "coherence_weight": "20% (Strictly penalizes unigram/trigram repetition and looping tokens)",
+    "completeness_weight": "15% (Penalizes truncated responses without EOS punctuation)",
+    "instruction_following_weight": "15% (Requires non-looping text > 10 chars with coherence > 0.4)",
+    "diversity_weight": "10% (Rewards unique token ratio)",
+    "multi_turn_weight": "10% (Context retention across turns)",
+    "failure_robustness_weight": "10% (Measures overall absence of repetition, fragmentation, or drift)"
+  },
+  "misalignment_with_human_preference": {
+    "human_raters_reward": "Comprehensive, technical, multi-paragraph explanatory answers (higher verbosity and structured formatting).",
+    "automated_evaluator_rewards": "Short, clean, non-repetitive sentences with early EOS termination and high unique token diversity.",
+    "conflict": "When DPO encourages the model to generate longer, explanatory answers (matching human preference), small 10M parameter models have an increased probability of encountering repetition loops near token limits, triggering strict coherence/robustness penalties in automated benchmark scoring."
+  }
+}

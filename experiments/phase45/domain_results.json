@@ -1,0 +1,94 @@
+{
+  "domains_eval_breakdown": {
+    "General Knowledge": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Science": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Math": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Programming": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Databases": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Linux": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Networking": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "AI/ML": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Software Engineering": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Troubleshooting": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Writing": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Summarization": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Reasoning": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Instruction Following": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    },
+    "Conversation": {
+      "generalization_score": 47.26,
+      "coherence": 15.3,
+      "instruction_following": 36.8,
+      "status": "BALANCED_BROAD_IMPROVEMENT"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "parameters": 10282304,
+  "production_sha_unchanged": true,
+  "decision": "PROMOTE",
+  "final_verdict": "PHASE_52_FINAL_RESULT: PROMOTE",
+  "scorecard": {
+    "J49": {
+      "generalization_score": 65.5,
+      "relevance": 53.36,
+      "coherence": 37.09,
+      "completeness": 100.0,
+      "instruction_following": 45.8,
+      "diversity": 70.27,
+      "failure_robustness": 66.0
+    },
+    "J51": {
+      "generalization_score": 58.0,
+      "relevance": 56.0,
+      "coherence": 9.31,
+      "completeness": 100.0,
+      "instruction_following": 42.32,
+      "diversity": 57.28,
+      "failure_robustness": 67.5
+    },
+    "J52": {
+      "generalization_score": 66.85,
+      "relevance": 56.4,
+      "coherence": 38.5,
+      "completeness": 100.0,
+      "instruction_following": 48.2,
+      "diversity": 72.1,
+      "failure_robustness": 68.0
+    }
+  },
+  "evidence_summary": {
+    "human_preference_vs_J49": 70.77,
+    "human_preference_vs_J51": 75.38,
+    "generalization_gain_vs_J49": 1.35,
+    "coherence_gain_vs_J49": 1.41,
+    "coherence_recovery_vs_J51": 29.19
+  }
+}

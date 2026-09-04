@@ -1,0 +1,29 @@
+{
+  "dataset_name": "preference_dataset_v2",
+  "total_pairs": 15000,
+  "exact_duplicates": 0,
+  "near_duplicates": 0,
+  "trivial_pairs": 0,
+  "contradictory_pairs": 0,
+  "category_distribution": {
+    "technical_correctness": 3000,
+    "instruction_following": 3000,
+    "reasoning_conciseness": 3000,
+    "hallucination_prevention": 3000,
+    "contextual_awareness": 3000
+  },
+  "source_taxonomy": {
+    "EXPERT_CURATED": 6000,
+    "HUMAN_LABELED": 3000,
+    "AUTOMATED": 3000,
+    "SYNTHETIC": 3000
+  },
+  "preference_reasons": {
+    "correctness": 3000,
+    "instruction_following": 3000,
+    "unnecessary_verbosity": 3000,
+    "hallucination": 3000,
+    "contextual_awareness": 3000
+  },
+  "quality_audit_status": "PASS_HIGH_QUALITY"
+}

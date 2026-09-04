@@ -1,0 +1,38 @@
+{
+  "Model_A_Baseline": {
+    "checkpoint_path": "V:\\collision - 1M\\models\\collision-10m\\model.pt",
+    "sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+    "parameter_count": 10282304,
+    "effective_sft_steps": 0,
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "status": "VERIFIED_VALID"
+  },
+  "Model_H3_Phase37": {
+    "checkpoint_path": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+    "sha256": "a3dc7cca74ac0c71bc9c122be50e2ffe177a45b08e29d9a792e6a8a5d273bd5d",
+    "parameter_count": 10282304,
+    "effective_sft_steps": 0,
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "status": "VERIFIED_VALID"
+  },
+  "Model_J48_Phase48": {
+    "checkpoint_path": "V:\\collision - 1M\\experiments\\phase48\\checkpoints\\collision_10m_sft_j48.pt",
+    "sha256": "4be0fa8005a8aec5a30fd17acba189dddb2b255e8b82b81d64cdc54bbdd9fa86",
+    "parameter_count": 10282304,
+    "effective_sft_steps": 250,
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "status": "VERIFIED_VALID"
+  },
+  "Model_J49_Phase49": {
+    "checkpoint_path": "V:\\collision - 1M\\experiments\\phase49\\checkpoints\\collision_10m_sft_j49.pt",
+    "sha256": "b49c8fce00a0be093364f59e8da44d12c7b6d412317cdec34fc91f68884323f3",
+    "parameter_count": 10282304,
+    "effective_sft_steps": 500,
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "status": "VERIFIED_VALID"
+  }
+}

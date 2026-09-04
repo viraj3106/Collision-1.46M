@@ -1,0 +1,41 @@
+{
+  "Model_I2_Phase39": {
+    "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+    "saved_checkpoint": "V:\\collision - 1M\\checkpoints\\phase39\\collision_10m_candidate_i2.pt",
+    "sha256": "a94bc5015236c85b2ff5ae79fb93542964a1921701ef49182d0a9554d4610cdb",
+    "parameter_count": 10282304,
+    "optimizer": "AdamW",
+    "learning_rate": 2e-06,
+    "weight_decay": 0.01,
+    "beta_dpo": 0.1,
+    "steps": 1000,
+    "final_loss": 2.115,
+    "training_time_sec": 10753.4
+  },
+  "Model_I3_Phase39": {
+    "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+    "saved_checkpoint": "V:\\collision - 1M\\checkpoints\\phase39\\collision_10m_candidate_i3.pt",
+    "sha256": "e620f24ddf050e9501faccbb5358782f5dc3ff624fe096db442e64dc646c8d23",
+    "parameter_count": 10282304,
+    "optimizer": "AdamW",
+    "learning_rate": 3e-06,
+    "weight_decay": 0.01,
+    "beta_dpo": 0.1,
+    "steps": 1000,
+    "final_loss": 1.5198,
+    "training_time_sec": 501.7
+  },
+  "Model_I4_Phase39": {
+    "starting_checkpoint": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+    "saved_checkpoint": "V:\\collision - 1M\\checkpoints\\phase39\\collision_10m_candidate_i4.pt",
+    "sha256": "69055981b91dc742a7b6a2ae3fbf5979ab2f3860e605545b351198b84eef0f60",
+    "parameter_count": 10282304,
+    "optimizer": "AdamW",
+    "learning_rate": 4e-06,
+    "weight_decay": 0.01,
+    "beta_dpo": 0.1,
+    "steps": 1000,
+    "final_loss": 1.1432,
+    "training_time_sec": 509.0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parameters": 10282304,
+  "zero_leakage": true,
+  "unit_tests_pass": true,
+  "production_sha_unchanged": true,
+  "candidate_evaluations": {
+    "Model_I2_Phase39": {
+      "score": 49.36,
+      "delta_vs_h3": -1.78,
+      "delta_vs_a": -8.28,
+      "passes_gate": false
+    },
+    "Model_I3_Phase39": {
+      "score": 49.62,
+      "delta_vs_h3": -1.52,
+      "delta_vs_a": -8.02,
+      "passes_gate": false
+    },
+    "Model_I4_Phase39": {
+      "score": 49.3,
+      "delta_vs_h3": -1.84,
+      "delta_vs_a": -8.34,
+      "passes_gate": false
+    }
+  },
+  "best_candidate": null,
+  "quality_target_satisfied": false,
+  "promotion_decision": "CANDIDATE_ON_HOLD",
+  "final_status": "PHASE_39_CANDIDATE_ON_HOLD"
+}

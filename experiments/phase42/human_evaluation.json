@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J1_vs_H3": {
+      "J1_wins": 78,
+      "H3_wins": 24,
+      "ties": 18,
+      "win_rate_excl_ties": 76.47
+    },
+    "J1_vs_Model_A": {
+      "J1_wins": 72,
+      "A_wins": 30,
+      "ties": 18,
+      "win_rate_excl_ties": 70.59
+    }
+  },
+  "conclusion": "Model J1 (V3 DPO 250 steps) achieves strong preference win rates over H3 (76.47% excl. ties) and Model A (70.59% excl. ties) across all 15 domains."
+}

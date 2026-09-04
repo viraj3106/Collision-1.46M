@@ -1,0 +1,16 @@
+{
+  "parameters": 10282304,
+  "zero_leakage": true,
+  "unit_tests_pass": true,
+  "production_sha_unchanged": true,
+  "scores": {
+    "A": 57.5,
+    "G": 10.17,
+    "H3": 51.95,
+    "I1": 50.84
+  },
+  "delta_I1_vs_H3": -1.11,
+  "delta_I1_vs_A": -6.66,
+  "quality_target_satisfied": false,
+  "promotion_decision": "CANDIDATE_ON_HOLD"
+}

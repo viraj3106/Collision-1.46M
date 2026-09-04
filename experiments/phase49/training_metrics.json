@@ -1,0 +1,167 @@
+{
+  "candidate": "Model_J49_Phase49",
+  "starting_checkpoint": "V:\\collision - 1M\\experiments\\phase48\\checkpoints\\collision_10m_sft_j48.pt",
+  "starting_sha256": "4be0fa8005a8aec5a30fd17acba189dddb2b255e8b82b81d64cdc54bbdd9fa86",
+  "saved_checkpoint": "V:\\collision - 1M\\experiments\\phase49\\checkpoints\\collision_10m_sft_j49.pt",
+  "saved_sha256": "b49c8fce00a0be093364f59e8da44d12c7b6d412317cdec34fc91f68884323f3",
+  "parameter_count": 10282304,
+  "total_steps": 500,
+  "additional_steps": 250,
+  "learning_rate": 2e-05,
+  "training_time_sec": 41.0,
+  "best_val_loss": 0.383554,
+  "best_val_step": 400,
+  "final_val_loss": 3.102514,
+  "logs": [
+    {
+      "step": 25,
+      "train_loss": 3.993555,
+      "val_loss": 3.610445,
+      "learning_rate": 2e-05,
+      "gradient_norm": 26.4179,
+      "parameter_delta_norm": 0.693692
+    },
+    {
+      "step": 50,
+      "train_loss": 3.575667,
+      "val_loss": 3.479031,
+      "learning_rate": 2e-05,
+      "gradient_norm": 8.8235,
+      "parameter_delta_norm": 1.275003
+    },
+    {
+      "step": 75,
+      "train_loss": 2.097733,
+      "val_loss": 1.909888,
+      "learning_rate": 2e-05,
+      "gradient_norm": 17.4651,
+      "parameter_delta_norm": 2.096299
+    },
+    {
+      "step": 100,
+      "train_loss": 1.580015,
+      "val_loss": 1.128987,
+      "learning_rate": 2e-05,
+      "gradient_norm": 29.7381,
+      "parameter_delta_norm": 2.922088
+    },
+    {
+      "step": 125,
+      "train_loss": 1.068671,
+      "val_loss": 4.032186,
+      "learning_rate": 2e-05,
+      "gradient_norm": 10.2806,
+      "parameter_delta_norm": 3.630553
+    },
+    {
+      "step": 150,
+      "train_loss": 1.982645,
+      "val_loss": 2.20322,
+      "learning_rate": 2e-05,
+      "gradient_norm": 11.4918,
+      "parameter_delta_norm": 4.416546
+    },
+    {
+      "step": 175,
+      "train_loss": 1.202932,
+      "val_loss": 1.508491,
+      "learning_rate": 2e-05,
+      "gradient_norm": 8.6727,
+      "parameter_delta_norm": 5.20186
+    },
+    {
+      "step": 200,
+      "train_loss": 3.708459,
+      "val_loss": 1.247394,
+      "learning_rate": 2e-05,
+      "gradient_norm": 22.1863,
+      "parameter_delta_norm": 5.826569
+    },
+    {
+      "step": 225,
+      "train_loss": 1.270853,
+      "val_loss": 1.220004,
+      "learning_rate": 2e-05,
+      "gradient_norm": 15.8677,
+      "parameter_delta_norm": 6.400013
+    },
+    {
+      "step": 250,
+      "train_loss": 0.93322,
+      "val_loss": 0.520943,
+      "learning_rate": 2e-05,
+      "gradient_norm": 11.4375,
+      "parameter_delta_norm": 7.042314
+    },
+    {
+      "step": 275,
+      "train_loss": 0.490688,
+      "val_loss": 0.956546,
+      "learning_rate": 2e-05,
+      "gradient_norm": 5.8297
+    },
+    {
+      "step": 300,
+      "train_loss": 0.723855,
+      "val_loss": 0.843488,
+      "learning_rate": 2e-05,
+      "gradient_norm": 8.908
+    },
+    {
+      "step": 325,
+      "train_loss": 0.654477,
+      "val_loss": 1.354626,
+      "learning_rate": 2e-05,
+      "gradient_norm": 7.3736
+    },
+    {
+      "step": 350,
+      "train_loss": 1.189548,
+      "val_loss": 0.430325,
+      "learning_rate": 2e-05,
+      "gradient_norm": 7.5539
+    },
+    {
+      "step": 375,
+      "train_loss": 0.639867,
+      "val_loss": 0.66986,
+      "learning_rate": 2e-05,
+      "gradient_norm": 6.834
+    },
+    {
+      "step": 400,
+      "train_loss": 0.594922,
+      "val_loss": 0.383554,
+      "learning_rate": 2e-05,
+      "gradient_norm": 7.8989
+    },
+    {
+      "step": 425,
+      "train_loss": 0.777805,
+      "val_loss": 0.712016,
+      "learning_rate": 2e-05,
+      "gradient_norm": 4.4868
+    },
+    {
+      "step": 450,
+      "train_loss": 0.368998,
+      "val_loss": 0.852313,
+      "learning_rate": 2e-05,
+      "gradient_norm": 6.39
+    },
+    {
+      "step": 475,
+      "train_loss": 0.811457,
+      "val_loss": 0.423794,
+      "learning_rate": 2e-05,
+      "gradient_norm": 6.6246
+    },
+    {
+      "step": 500,
+      "train_loss": 0.791731,
+      "val_loss": 3.102514,
+      "learning_rate": 2e-05,
+      "gradient_norm": 7.4188
+    }
+  ]
+}

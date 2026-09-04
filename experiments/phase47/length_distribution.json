@@ -1,0 +1,14 @@
+{
+  "min_tokens": 4,
+  "max_tokens": 182,
+  "mean_tokens": 80.02,
+  "median_tokens": 83,
+  "P25_tokens": 27,
+  "P75_tokens": 106,
+  "short_pct": 33.33,
+  "medium_pct": 33.33,
+  "long_pct": 33.33,
+  "context_limit_compliance_256": true,
+  "max_total_tokens": 240,
+  "no_length_bias_confirmed": true
+}

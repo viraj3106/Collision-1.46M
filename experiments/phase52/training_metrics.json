@@ -1,0 +1,51 @@
+{
+  "candidate": "Model_J52_Phase52",
+  "starting_checkpoint": "V:\\collision - 1M\\experiments\\phase49\\checkpoints\\collision_10m_sft_j49.pt",
+  "starting_sha256": "b49c8fce00a0be093364f59e8da44d12c7b6d412317cdec34fc91f68884323f3",
+  "saved_checkpoint": "V:\\collision - 1M\\experiments\\phase52\\checkpoints\\collision_10m_sft_j52.pt",
+  "saved_sha256": "a1dd4841b05ef444d82bd0433718604a404d159505d0b45ac616513d00617941",
+  "parameter_count": 10282304,
+  "steps": 125,
+  "learning_rate": 2e-05,
+  "training_time_sec": 29.0,
+  "best_val_loss": 0.372249,
+  "best_val_step": 25,
+  "final_val_loss": 2.165423,
+  "logs": [
+    {
+      "step": 25,
+      "train_loss": 0.362102,
+      "val_loss": 0.372249,
+      "learning_rate": 2e-05,
+      "gradient_norm": 8.771
+    },
+    {
+      "step": 50,
+      "train_loss": 0.357957,
+      "val_loss": 1.579471,
+      "learning_rate": 2e-05,
+      "gradient_norm": 9.6136
+    },
+    {
+      "step": 75,
+      "train_loss": 0.436357,
+      "val_loss": 3.193605,
+      "learning_rate": 2e-05,
+      "gradient_norm": 7.6243
+    },
+    {
+      "step": 100,
+      "train_loss": 0.244831,
+      "val_loss": 3.170633,
+      "learning_rate": 2e-05,
+      "gradient_norm": 5.5411
+    },
+    {
+      "step": 125,
+      "train_loss": 2.219269,
+      "val_loss": 2.165423,
+      "learning_rate": 2e-05,
+      "gradient_norm": 14.4519
+    }
+  ]
+}

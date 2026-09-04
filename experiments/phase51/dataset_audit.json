@@ -1,0 +1,18 @@
+{
+  "exact_duplicates": 0,
+  "pii_leaks": 0,
+  "context_limit_exceeded": 0,
+  "category_distribution": {
+    "Natural Q&A": 500,
+    "Instruction Following": 500,
+    "Multi-Turn Conversation": 500,
+    "Follow-Up Questions": 500,
+    "Explanation Tasks": 500,
+    "Practical Tasks": 500,
+    "Clarification Behavior": 500,
+    "Unknown / Uncertain Questions": 500,
+    "Correction": 500,
+    "Conversational Naturalness": 500
+  },
+  "audit_status": "PASS_CLEAN"
+}

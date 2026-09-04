@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-03T15:45:13Z",
+  "model_path": "V:\\collision - 1M\\models\\collision-10m\\model.pt",
+  "sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "parameter_count": 10282304,
+  "status": "VERIFIED_FROZEN_UNCHANGED"
+}

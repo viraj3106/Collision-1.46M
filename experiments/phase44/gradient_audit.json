@@ -1,0 +1,18 @@
+{
+  "loss_before": 0.534356,
+  "loss_after": 0.168552,
+  "total_grad_norm": 106.3617,
+  "max_gradient": 2.053611,
+  "trainable_parameters": 10282304,
+  "changed_parameters": 10282304,
+  "parameter_delta_norm": 0.009551,
+  "max_parameter_delta": 3e-06,
+  "policy_chosen_logp_before": -306.2488,
+  "policy_chosen_logp_after": -297.2835,
+  "policy_rejected_logp_before": -162.8955,
+  "policy_rejected_logp_after": -167.4043,
+  "reference_chosen_logp_before": -311.2422,
+  "reference_chosen_logp_after": -311.2422,
+  "reference_rejected_logp_before": -164.4125,
+  "reference_rejected_logp_after": -164.4125
+}

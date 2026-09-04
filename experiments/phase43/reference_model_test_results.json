@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "policy_trainable_param_groups": 77,
+  "reference_trainable_param_groups": 0,
+  "reference_received_gradients": false,
+  "max_reference_weight_delta": 0.0,
+  "reference_strictly_frozen": true
+}

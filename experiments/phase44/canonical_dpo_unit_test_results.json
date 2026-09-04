@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "initial_loss": 0.227157,
+  "post_step_loss": 1e-06,
+  "loss_decreased": true,
+  "chosen_policy_logprob_increased": true,
+  "rejected_policy_logprob_decreased": true,
+  "policy_logratio_increased": true,
+  "reference_logprob_unchanged": true,
+  "deltas": {
+    "chosen_policy_logprob_delta": 42.740479,
+    "rejected_policy_logprob_delta": -84.496765,
+    "loss_delta": -0.227157
+  }
+}

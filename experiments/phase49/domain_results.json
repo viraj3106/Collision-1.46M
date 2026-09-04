@@ -1,0 +1,109 @@
+{
+  "domain_analysis": {
+    "General Knowledge": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Science": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Math": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Programming": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Databases": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Linux": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Networking": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "AI/ML": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Software Engineering": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Troubleshooting": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Writing": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Summarization": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Reasoning": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Instruction Following": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    },
+    "Conversation": {
+      "H3_score": 51.29,
+      "J48_score": 52.99,
+      "J49_score": 59.29,
+      "delta_from_H3": 8.0,
+      "delta_from_J48": 6.3
+    }
+  }
+}

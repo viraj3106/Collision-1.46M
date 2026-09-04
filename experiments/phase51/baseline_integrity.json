@@ -1,0 +1,15 @@
+{
+  "production_model": {
+    "path": "V:\\collision - 1M\\models\\collision-10m\\model.pt",
+    "sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+    "parameters": 10282304,
+    "status": "VERIFIED_FROZEN"
+  },
+  "j49_reference_model": {
+    "path": "V:\\collision - 1M\\experiments\\phase49\\checkpoints\\collision_10m_sft_j49.pt",
+    "sha256": "b49c8fce00a0be093364f59e8da44d12c7b6d412317cdec34fc91f68884323f3",
+    "parameters": 10282304,
+    "effective_sft_steps": 500,
+    "status": "VERIFIED_VALID"
+  }
+}

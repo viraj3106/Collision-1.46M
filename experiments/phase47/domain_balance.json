@@ -1,0 +1,65 @@
+{
+  "domain_distribution": {
+    "Writing": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Databases": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Summarization": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "AI/ML": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Instruction Following": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Troubleshooting": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Programming": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Networking": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Conversation": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Linux": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Reasoning": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Software Engineering": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Science": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "General Knowledge": {
+      "count": 333,
+      "percentage": 6.67
+    },
+    "Mathematics": {
+      "count": 333,
+      "percentage": 6.67
+    }
+  },
+  "balance_status": "EVEN_15_DOMAIN_DISTRIBUTION"
+}

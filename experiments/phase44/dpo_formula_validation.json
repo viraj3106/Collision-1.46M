@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "beta": 0.1,
+  "cases_evaluated": [
+    {
+      "case": "Case_A_Policy_Prefers_Chosen",
+      "policy_chosen_logp": -2.0,
+      "policy_rejected_logp": -10.0,
+      "reference_chosen_logp": -5.0,
+      "reference_rejected_logp": -5.0,
+      "policy_logratio": 8.0,
+      "reference_logratio": 0.0,
+      "logits": 0.8,
+      "analytical_loss": 0.37110067,
+      "torch_loss": 0.37110066,
+      "delta": 1.8e-09,
+      "matches": true
+    },
+    {
+      "case": "Case_B_Policy_Prefers_Rejected",
+      "policy_chosen_logp": -10.0,
+      "policy_rejected_logp": -2.0,
+      "reference_chosen_logp": -5.0,
+      "reference_rejected_logp": -5.0,
+      "policy_logratio": -8.0,
+      "reference_logratio": 0.0,
+      "logits": -0.8,
+      "analytical_loss": 1.17110067,
+      "torch_loss": 1.17110062,
+      "delta": 4.95e-08,
+      "matches": true
+    },
+    {
+      "case": "Case_C_Policy_Ref_Identical",
+      "policy_chosen_logp": -4.0,
+      "policy_rejected_logp": -7.0,
+      "reference_chosen_logp": -4.0,
+      "reference_rejected_logp": -7.0,
+      "policy_logratio": 3.0,
+      "reference_logratio": 3.0,
+      "logits": 0.0,
+      "analytical_loss": 0.69314718,
+      "torch_loss": 0.69314718,
+      "delta": 1.9e-09,
+      "matches": true
+    },
+    {
+      "case": "Case_D_Ref_Prefers_Chosen",
+      "policy_chosen_logp": -5.0,
+      "policy_rejected_logp": -5.0,
+      "reference_chosen_logp": -2.0,
+      "reference_rejected_logp": -7.0,
+      "policy_logratio": 0.0,
+      "reference_logratio": 5.0,
+      "logits": -0.5,
+      "analytical_loss": 0.97407698,
+      "torch_loss": 0.97407699,
+      "delta": 2.1e-09,
+      "matches": true
+    }
+  ]
+}

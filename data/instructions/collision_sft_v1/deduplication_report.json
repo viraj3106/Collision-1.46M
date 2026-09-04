@@ -1,0 +1,8 @@
+{
+  "total_records": 4995,
+  "unique_prompts": 4995,
+  "unique_prompt_ratio_pct": 100.0,
+  "exact_duplicate_rate_pct": 0.0,
+  "template_duplication_detected": false,
+  "status": "PASS_ZERO_DUPLICATION"
+}

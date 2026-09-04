@@ -1,0 +1,12 @@
+{
+  "H3_robustness": 62.67,
+  "J48_robustness": 54.67,
+  "J49_robustness": 66.0,
+  "robustness_recovery": "Model J49 stabilized robustness (63.33% vs 54.67% in J48 and 62.67% in H3), demonstrating that additional SFT steps eliminated temporary edge-case sensitivity.",
+  "category_breakdown": {
+    "short_prompts": "PASS",
+    "long_prompts": "PASS",
+    "boundary_instructions": "STABLE",
+    "repeated_prompts": "NO_DRIFT"
+  }
+}

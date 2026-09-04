@@ -1,0 +1,55 @@
+{
+  "scores": {
+    "Model_A_Baseline": 57.5,
+    "Model_G_Phase36": 10.17,
+    "Model_H3_Phase37": 51.95,
+    "Model_I1_Phase38": 50.84
+  },
+  "deltas": {
+    "I1_vs_H3": -1.11,
+    "I1_vs_G": 40.67,
+    "I1_vs_A": -6.66
+  },
+  "breakdown": {
+    "Model_A_Baseline": {
+      "generalization_score": 57.5,
+      "relevance": 56.6,
+      "coherence": 28.03,
+      "completeness": 100.0,
+      "instruction_following": 44.0,
+      "diversity": 65.94,
+      "multi_turn": 52.18,
+      "failure_robustness": 71.67
+    },
+    "Model_G_Phase36": {
+      "generalization_score": 10.17,
+      "relevance": 2.5,
+      "coherence": 0.7,
+      "completeness": 5.0,
+      "instruction_following": 1.75,
+      "diversity": 3.06,
+      "multi_turn": 47.14,
+      "failure_robustness": 35.0
+    },
+    "Model_H3_Phase37": {
+      "generalization_score": 51.95,
+      "relevance": 49.9,
+      "coherence": 18.26,
+      "completeness": 95.0,
+      "instruction_following": 42.25,
+      "diversity": 59.21,
+      "multi_turn": 53.9,
+      "failure_robustness": 64.17
+    },
+    "Model_I1_Phase38": {
+      "generalization_score": 50.84,
+      "relevance": 54.8,
+      "coherence": 12.5,
+      "completeness": 100.0,
+      "instruction_following": 36.5,
+      "diversity": 59.82,
+      "multi_turn": 47.52,
+      "failure_robustness": 61.67
+    }
+  }
+}

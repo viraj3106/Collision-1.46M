@@ -1,0 +1,27 @@
+{
+  "architecture_inspection": {
+    "model_config_max_seq_len": 256,
+    "positional_embedding_dim": [
+      256,
+      128
+    ],
+    "parameter_count_at_256": 10282304,
+    "parameter_count_at_512": 10315072,
+    "parameter_delta_at_512": "+32,768 parameters",
+    "weight_shape_compatibility": "INCOMPATIBLE"
+  },
+  "ablation_results": {
+    "context_256": {
+      "status": "SUPPORTED",
+      "max_seq_len": 256,
+      "parameter_count": 10282304,
+      "notes": "Native context length matching pre-trained checkpoint weights."
+    },
+    "context_512": {
+      "status": "UNSUPPORTED",
+      "max_seq_len": 512,
+      "parameter_count": 10315072,
+      "notes": "Modifying max_seq_len to 512 increases parameter count by 32,768 and violates 10,282,304 parameter constraint and weight shape compatibility without positional embedding interpolation/re-architecture."
+    }
+  }
+}

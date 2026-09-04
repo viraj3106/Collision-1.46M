@@ -1,0 +1,9 @@
+{
+  "loss_value": 4.6637,
+  "total_grad_norm": 25.9181,
+  "max_gradient": 0.587416,
+  "params_receiving_gradients": 10282304,
+  "parameter_delta_norm": 0.009506,
+  "max_parameter_delta": 3e-06,
+  "percentage_params_changed": 100.0
+}

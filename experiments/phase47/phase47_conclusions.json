@@ -1,0 +1,5 @@
+{
+  "dataset_name": "collision_sft_v1",
+  "ready_for_sft_training": true,
+  "verdict": "PHASE_47_SFT_DATASET_READY"
+}

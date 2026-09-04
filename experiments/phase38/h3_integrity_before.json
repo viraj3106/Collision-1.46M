@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-03T08:15:21Z",
+  "model_path": "V:\\collision - 1M\\checkpoints\\phase37\\collision_10m_candidate_h3.pt",
+  "sha256": "a3dc7cca74ac0c71bc9c122be50e2ffe177a45b08e29d9a792e6a8a5d273bd5d",
+  "parameter_count": 10282304,
+  "status": "VERIFIED_FROZEN"
+}

@@ -1,0 +1,28 @@
+{
+  "parameter_delta_norm": 0.182479,
+  "relative_parameter_change": 0.000389,
+  "changed_parameters": 13354304,
+  "max_parameter_delta": 0.000152,
+  "top_changed_layers": {
+    "token_emb.emb.weight": {
+      "l2_norm": 0.0885,
+      "max_abs_delta": 0.000152
+    },
+    "lm_head.weight": {
+      "l2_norm": 0.0885,
+      "max_abs_delta": 0.000152
+    },
+    "blocks.5.attn.qkv_proj.weight": {
+      "l2_norm": 0.034973,
+      "max_abs_delta": 0.000146
+    },
+    "blocks.4.attn.qkv_proj.weight": {
+      "l2_norm": 0.032398,
+      "max_abs_delta": 0.000143
+    },
+    "blocks.0.attn.qkv_proj.weight": {
+      "l2_norm": 0.032115,
+      "max_abs_delta": 0.000141
+    }
+  }
+}

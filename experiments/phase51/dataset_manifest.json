@@ -1,0 +1,8 @@
+{
+  "dataset_name": "collision_sft_v2",
+  "total_records": 5000,
+  "train_records": 4500,
+  "validation_records": 500,
+  "unique_prompt_ratio": 100.0,
+  "categories_count": 10
+}

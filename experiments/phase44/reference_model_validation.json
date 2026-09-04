@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "trainable_reference_params": 0,
+  "reference_gradients_are_none": true,
+  "max_reference_weight_delta": 0.0,
+  "reference_model_excluded_from_optimizer": true
+}

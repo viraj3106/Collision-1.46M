@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J45_vs_H3": {
+      "J45_wins": 81,
+      "H3_wins": 21,
+      "ties": 18,
+      "win_rate_excl_ties": 79.41
+    },
+    "J45_vs_Model_A": {
+      "J45_wins": 76,
+      "A_wins": 26,
+      "ties": 18,
+      "win_rate_excl_ties": 74.51
+    }
+  },
+  "conclusion": "Model J45 (Canonical DPO 250 steps) achieves strong preference win rates over H3 (79.41% excl. ties) and Model A (74.51% excl. ties) without coherence collapse."
+}

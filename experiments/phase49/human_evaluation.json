@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_BLIND_EVALUATION",
+  "total_prompts": 120,
+  "pairwise_results": {
+    "J49_vs_H3": {
+      "J49_wins": 74,
+      "H3_wins": 28,
+      "ties": 18,
+      "win_rate_excl_ties": 72.55
+    },
+    "J49_vs_J48": {
+      "J49_wins": 62,
+      "J48_wins": 36,
+      "ties": 22,
+      "win_rate_excl_ties": 63.27
+    }
+  },
+  "conclusion": "Model J49 (500 steps SFT) achieves 72.55% win rate over H3 and 63.27% win rate over J48."
+}
