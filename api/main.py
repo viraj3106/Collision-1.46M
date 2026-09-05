@@ -52,12 +52,23 @@ app = FastAPI(
 allowed_origins = [
     "http://localhost",
     "http://localhost:3000",
+    "http://localhost:5173",
+    "http://localhost:5174",
     "http://localhost:8000",
     "http://localhost:8501",
     "http://127.0.0.1",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5174",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:8501"
 ]
+
+cors_env = os.environ.get("CORS_ALLOWED_ORIGINS")
+if cors_env:
+    for origin in cors_env.split(","):
+        if origin.strip():
+            allowed_origins.append(origin.strip())
 
 # Append PUBLIC_PORTAL_URL if configured
 public_portal_url = os.environ.get("PUBLIC_PORTAL_URL")
@@ -67,6 +78,7 @@ if public_portal_url:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
+    allow_origin_regex=r"http://(localhost|127\.0\.0\.1)(:\d+)?",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
