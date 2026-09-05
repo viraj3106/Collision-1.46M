@@ -524,6 +524,99 @@ def playground_generate(
         )
     )
 
+@router.post("/v1/chat/generate", response_model=GenerateResponse)
+def chat_generate(
+    request: GenerateRequest, 
+    http_req: Request,
+    engine: CollisionInferenceEngine = Depends(get_inference_engine),
+):
+    # 1. Basic Rate limit check by client IP
+    client_ip = http_req.client.host if http_req.client else "unknown_client"
+    check_rate_limit(f"chat_{client_ip}")
+
+    # 2. Unknown model check
+    if request.model != "collision-10m":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "type": "validation_error",
+                "message": f"Model '{request.model}' is not supported. Available models: 'collision-10m'."
+            }
+        )
+
+    # 3. Context Length and Token Bound Checks (HTTP 413)
+    try:
+        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={"type": "validation_error", "message": f"Tokenization failed: {str(e)}"}
+        )
+        
+    if prompt_tokens > 256:
+        raise HTTPException(
+            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+            detail={"type": "validation_error", "message": f"Prompt length of {prompt_tokens} tokens exceeds max context limit of 256."}
+        )
+        
+    if prompt_tokens + request.max_tokens > 256:
+        raise HTTPException(
+            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+            detail={"type": "validation_error", "message": f"Combined prompt size ({prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
+        )
+
+    # 4. Limit concurrency using thread-pool semaphore
+    acquired = GENERATION_SEMAPHORE.acquire(timeout=5.0)
+    if not acquired:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail={"type": "server_error", "message": "Server busy. Too many concurrent generation requests."}
+        )
+
+    t0 = time.perf_counter()
+    try:
+        res = engine.generate(
+            prompt=request.prompt,
+            max_tokens=request.max_tokens,
+            temp=request.temperature,
+            top_k=request.top_k,
+            top_p=request.top_p
+        )
+    except ValueError as val_err:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={"type": "validation_error", "message": str(val_err)}
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={"type": "model_error", "message": f"Generation failed: {str(e)}"}
+        )
+    finally:
+        GENERATION_SEMAPHORE.release()
+    
+    latency_ms = (time.perf_counter() - t0) * 1000.0
+
+    http_req.state.model = request.model
+    http_req.state.prompt_tokens = res["prompt_tokens"]
+    http_req.state.completion_tokens = res["completion_tokens"]
+    http_req.state.total_tokens = res["total_tokens"]
+        
+    return GenerateResponse(
+        id=f"collision-generation-{uuid.uuid4()}",
+        model=request.model,
+        text=res["text"],
+        usage=UsageInfo(
+            prompt_tokens=res["prompt_tokens"],
+            completion_tokens=res["completion_tokens"],
+            total_tokens=res["total_tokens"]
+        ),
+        performance=PerformanceInfo(
+            latency_ms=latency_ms,
+            tokens_per_second=res["completion_tokens"] / max(0.0001, latency_ms / 1000.0)
+        )
+    )
+
 @router.post("/v1/feedback", response_model=FeedbackResponse)
 def submit_feedback(req: FeedbackRequest):
     try:
