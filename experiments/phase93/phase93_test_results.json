@@ -1,0 +1,15 @@
+{
+  "TEST_A_checkpoint_sha_integrity": true,
+  "TEST_B_production_checkpoint_integrity": true,
+  "TEST_C_no_training_executed": true,
+  "TEST_D_no_model_weights_modified": true,
+  "TEST_E_exact_dataset_size_100": true,
+  "TEST_F_all_four_conditions_evaluated": true,
+  "TEST_G_multihop_reasoning_evaluated": true,
+  "TEST_H_instruction_context_matrix_evaluated": true,
+  "TEST_I_no_live_web_search_contamination": true,
+  "TEST_J_known_gold_context_used": true,
+  "TEST_K_failures_explicitly_recorded": true,
+  "TEST_L_reproducibility_seed_fixed": true,
+  "TEST_M_verdict_well_formed": true
+}

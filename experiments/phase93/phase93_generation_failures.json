@@ -1,0 +1,699 @@
+{
+  "total_failures": 99,
+  "failure_rate": 0.2475,
+  "failures": [
+    {
+      "question_id": "PHASE93_Q001",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, browser caching policies focuses on storing static asset res"
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Basynchronous HTP requests refers to the main benefit of asynchronous"
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is estion: essential because instantiating behavioral or structural software abstrac"
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "reinforcement learning agents is a dramatically reduced page load latency."
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based thematicsage, general relativity functions focus on describing gravity as mass"
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of computer vision pipelines is accurat"
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based the passage, microservices architecture is high fault tolerance and in"
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of refactoring patterns is simproved cod"
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because evaluating rule-based inference engines over factual ass"
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does Keplerian orbital motion operates by balancing gravitational pull against"
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because allocating CPU time slices dynamically based on th"
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based the passage, probability distributions functions by calculating cumulative density functions across random variab"
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of Keplerian orbital motion is"
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Explanation: It Python, implementing black hole event horizons refers to the bo"
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "General factual extraction",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of unsupervised clustering is discovery of lat"
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "relational databases refers to a modular application design pattern. Its primary utility"
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, general relativity functions by describing gravity as mass-"
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "refactoring patterns refers to code restructuring techniques. Its primary utility is"
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "design patterns refers to reusable solutions to common software problems. Its primary utili"
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "to    Specificallocyosing standard HTTP resource endpoints with stateless"
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Basynchronous HTTP requests refers to non-blocking network IO protocols."
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because minimizing intra-cluster spatial distances using Euc"
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "fundamental query in Mathematics is why differential equations functions efficiently. The reas"
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Great question! electromagnetic radiation allows you to broadband energy transf"
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Science",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because balancing gravitational pull against tangential orbit"
+    },
+    {
+      "question_id": "PHASE93_Q026",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because optimizing action selections to maximize long-term cumulative reward"
+    },
+    {
+      "question_id": "PHASE93_Q027",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Basyould process control deep space ace which provides empirical confirmation of cosmi"
+    },
+    {
+      "question_id": "PHASE93_Q028",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "# design patterns refers to reusable solutions to common software problems."
+    },
+    {
+      "question_id": "PHASE93_Q029",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "vision pipelines refers to modern technical literature, Answer: computer vision pipelines"
+    },
+    {
+      "question_id": "PHASE93_Q030",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, continuous integration focuses on executing automated test suites on"
+    },
+    {
+      "question_id": "PHASE93_Q031",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "linear algebra projections refers to mapping vectors onto lower-dimensional subspaces."
+    },
+    {
+      "question_id": "PHASE93_Q032",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of asynchronous HTTP requests"
+    },
+    {
+      "question_id": "PHASE93_Q033",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does Keplerian orbital motion refers to the mathematical description of planetary"
+    },
+    {
+      "question_id": "PHASE93_Q034",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because enforcing ACID transactions and executing SQL query"
+    },
+    {
+      "question_id": "PHASE93_Q035",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Technology",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, evaluating rule-based inference engines over factual asser"
+    },
+    {
+      "question_id": "PHASE93_Q036",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, compilers focuses on parsing abstract syntax trees and emitting target"
+    },
+    {
+      "question_id": "PHASE93_Q037",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does eigenvalue decomposition operates by scaling characteristic vector directions by invarian"
+    },
+    {
+      "question_id": "PHASE93_Q038",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of refactoring patterns is improved code"
+    },
+    {
+      "question_id": "PHASE93_Q039",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Bas to a nchronous HTTP requests by fetching remote JSON data pa"
+    },
+    {
+      "question_id": "PHASE93_Q040",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, linear algebra projections focuses on computing orthogonal dot products"
+    },
+    {
+      "question_id": "PHASE93_Q041",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, continuous integration across varying device viewports"
+    },
+    {
+      "question_id": "PHASE93_Q042",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "forcement learning agents refers to collections of non-linear decision trees. Its primary u"
+    },
+    {
+      "question_id": "PHASE93_Q043",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because aggregating predictions across random forest or boo"
+    },
+    {
+      "question_id": "PHASE93_Q044",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because enforcing ACID transactions and executing SQL query"
+    },
+    {
+      "question_id": "PHASE93_Q045",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Programming",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "exoplanet atmospheric spectroscopy refers to analyzing starlight passing thro"
+    },
+    {
+      "question_id": "PHASE93_Q046",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of expert systems is consistent domain expert dec"
+    },
+    {
+      "question_id": "PHASE93_Q047",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of eigenvalue decomposition is dimension"
+    },
+    {
+      "question_id": "PHASE93_Q048",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because constraining parameter magnitudes via L1 or L2 norm pen"
+    },
+    {
+      "question_id": "PHASE93_Q049",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "refactoring patterns refers to refers gramews to componsill. Its primary utili"
+    },
+    {
+      "question_id": "PHASE93_Q050",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "general relativity refers to Einstein's geometric theory of gravitation. Its pr"
+    },
+    {
+      "question_id": "PHASE93_Q051",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "design patterns refers to a mathematical basy of structuring data structures efficiently. For example:"
+    },
+    {
+      "question_id": "PHASE93_Q052",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Great question! gradient descent allows you to effective long-range context conditioning."
+    },
+    {
+      "question_id": "PHASE93_Q053",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, continuous integration focuses on executing automated test suites on"
+    },
+    {
+      "question_id": "PHASE93_Q054",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of eigenvalue decomposition is dimension"
+    },
+    {
+      "question_id": "PHASE93_Q055",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Mathematics",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "gradient descent refers to an loss gradients respect to model parameters and steping downhill. Its primar"
+    },
+    {
+      "question_id": "PHASE93_Q056",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of eigenvalue decomposition is dimension"
+    },
+    {
+      "question_id": "PHASE93_Q057",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because fusing hydrogen atomic nuclei into helium under cor"
+    },
+    {
+      "question_id": "PHASE93_Q058",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "black hole event horizons refers to the boundary surrounding gravitational s"
+    },
+    {
+      "question_id": "PHASE93_Q059",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "differential equations refers to a program converting high-level code to machine code"
+    },
+    {
+      "question_id": "PHASE93_Q060",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because transmitting photons across orthogonal electric"
+    },
+    {
+      "question_id": "PHASE93_Q061",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "continuous integration refers to an automated build and test process. Its primary"
+    },
+    {
+      "question_id": "PHASE93_Q062",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, relational databases focuses on enforcing ACID transactions and execut"
+    },
+    {
+      "question_id": "PHASE93_Q063",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "classical mechanics refers to the of probability distributions functions efficiently. The reason stems from"
+    },
+    {
+      "question_id": "PHASE93_Q065",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Definitions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based the passage, refactoring patterns functions by simplifying complex class hierarchi"
+    },
+    {
+      "question_id": "PHASE93_Q066",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of refactoring patterns is improved code"
+    },
+    {
+      "question_id": "PHASE93_Q067",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does Fourier transforms operate?\nAccording to the passage, the main benefit of"
+    },
+    {
+      "question_id": "PHASE93_Q068",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does generative adversarial networks operates by training generator and discriminator models in a zero-su"
+    },
+    {
+      "question_id": "PHASE93_Q069",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "RESTful API design operates by exposing standard HTTP resource endpoints"
+    },
+    {
+      "question_id": "PHASE93_Q070",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because describing gravity as mass-energy warping spa"
+    },
+    {
+      "question_id": "PHASE93_Q071",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "mic microwave background operates by measuring faint isotropic microw"
+    },
+    {
+      "question_id": "PHASE93_Q072",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, differential equations focuses on integrating continuous boundary condi"
+    },
+    {
+      "question_id": "PHASE93_Q073",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "does general relativity operates by describing gravity as mass-energy warping sp"
+    },
+    {
+      "question_id": "PHASE93_Q074",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "based on the passage, black hole event horizons refers to the boundary"
+    },
+    {
+      "question_id": "PHASE93_Q075",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Explanations",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because aggregating predictions across random forest or boo"
+    },
+    {
+      "question_id": "PHASE93_Q076",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, relational databases focuses on enforcing ACID transactions and execut"
+    },
+    {
+      "question_id": "PHASE93_Q077",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, exoplanet atmospheric spectroscopy is ider understo"
+    },
+    {
+      "question_id": "PHASE93_Q078",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to thematical passage, thematical describing of planetary bodies moving"
+    },
+    {
+      "question_id": "PHASE93_Q079",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "black hole event horizons refers to the boundary surrounding gravitational s"
+    },
+    {
+      "question_id": "PHASE93_Q080",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Suregularization techniques refers to a robust model evaluation protocol. Its primary utilit"
+    },
+    {
+      "question_id": "PHASE93_Q081",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "#     decoupled application services into independently deployable units. This"
+    },
+    {
+      "question_id": "PHASE93_Q082",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, classical mechanics functions by applying Newton's laws of m"
+    },
+    {
+      "question_id": "PHASE93_Q083",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because trapping light and matter when escape velocity exceed"
+    },
+    {
+      "question_id": "PHASE93_Q084",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "It is essential because constraining parameter magnitudes via L1 or L2 norm pen"
+    },
+    {
+      "question_id": "PHASE93_Q085",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Multi-fact questions",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Basynchronous HTTP requests refers to ensure seamless single-page application"
+    },
+    {
+      "question_id": "PHASE93_Q086",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, chrelational databases functions by enforcing ACID transactions"
+    },
+    {
+      "question_id": "PHASE93_Q087",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, refactoring patterns functions by simplifying complex class hier"
+    },
+    {
+      "question_id": "PHASE93_Q088",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, thermodynamic entropy functions by tracking irreversible"
+    },
+    {
+      "question_id": "PHASE93_Q089",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "# stellar nucleosynthesis to cosmic expansion models."
+    },
+    {
+      "question_id": "PHASE93_Q090",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "fundamental query in Software Engineering is why decision tree ensembles functions effici"
+    },
+    {
+      "question_id": "PHASE93_Q091",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "hash maps refers to an associative array that maps keys to values. Its p"
+    },
+    {
+      "question_id": "PHASE93_Q092",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, classical mechanics focuses on applying Newton's laws of motion"
+    },
+    {
+      "question_id": "PHASE93_Q093",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Bassical mechanics functions efficiently. The reason stems from how applying Newton's law"
+    },
+    {
+      "question_id": "PHASE93_Q094",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, cross-validation functions by partitioning dataset samples into k di"
+    },
+    {
+      "question_id": "PHASE93_Q095",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Reasoning from supplied evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Bas a microservices architecture re refers to a modular application design pattern."
+    },
+    {
+      "question_id": "PHASE93_Q096",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Unknown / insufficient evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Unlike standard methods, general relativity focuses on describing gravity as mass-energ"
+    },
+    {
+      "question_id": "PHASE93_Q097",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Unknown / insufficient evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Bassncting on prophysical mechanics refers to the study of forces acting on physical bod"
+    },
+    {
+      "question_id": "PHASE93_Q098",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Unknown / insufficient evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "Based on the passage, cross-validation functions by partitioning dataset samples into k di"
+    },
+    {
+      "question_id": "PHASE93_Q099",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Unknown / insufficient evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of Keplerian orbital motion is"
+    },
+    {
+      "question_id": "PHASE93_Q100",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "category": "Unknown / insufficient evidence",
+      "failure_category": "MODEL_CAPABILITY_FAILURE",
+      "generated_text": "According to the passage, the main benefit of exoplanet atmospheric spec"
+    }
+  ]
+}

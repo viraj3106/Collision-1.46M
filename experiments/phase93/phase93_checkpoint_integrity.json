@@ -1,0 +1,15 @@
+{
+  "checkpoint_path": "V:\\collision - 1M\\models\\phase91_v9_10m\\model.pt",
+  "parameter_count": 10282304,
+  "architecture": "CollisionTransformer (6L-384D-8H-768FF)",
+  "tokenizer": "BPE (890 vocab)",
+  "max_seq_len": 256,
+  "SHA256_before": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+  "SHA256_after": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+  "production_checkpoint_path": "V:\\collision - 1M\\models\\collision-10m\\model.pt",
+  "production_SHA256_before": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "production_SHA256_after": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "training_executed": false,
+  "model_weights_modified": false,
+  "production_checkpoint_modified": false
+}

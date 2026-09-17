@@ -1,0 +1,883 @@
+{
+  "true_context_utilization_rate": 0.01,
+  "relevant_context_use_rate": 0.01,
+  "irrelevant_context_contamination_rate": 0.0,
+  "context_echo_rate": 0.0,
+  "instruction_context_runs": [
+    {
+      "question_id": "PHASE93_Q001",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Canberra was selected as the location for Australia's capital city in 1908 as a compromise between Sydney and Melbourne.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of relational databases is reliable",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q001",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Canberra was selected as the location for Australia's capital city in 1908 as a compromise between Sydney and Melbourne.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of gradient descent is efficient convergence toward",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q001",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Canberra was selected as the location for Australia's capital city in 1908 as a compromise between Sydney and Melbourne.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of electromagnetic radiation is broad",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q001",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Canberra was selected as the location for Australia's capital city in 1908 as a compromise between Sydney and Melbourne.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of probability distributions is rigorous statistical",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q001",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Canberra was selected as the location for Australia's capital city in 1908 as a compromise between Sydney and Melbourne.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of general relativity is accurate predi",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci, begun in the 16th century (circa 1503).\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to constraints for web services directly impac",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci, begun in the 16th century (circa 1503).\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to study of forces acting on physical bodies",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci, begun in the 16th century (circa 1503).\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to functions mapping outcomes to likwithout for data le",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci, begun in the 16th century (circa 1503).\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to fers a modern CSS box layout module",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci, begun in the 16th century (circa 1503).\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to non-blocking network IO protocols.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The Japanese yen is the official currency of Japan and the third most traded currency in the foreign exchange market.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is estion: essential because partitioning dataset samples into k distinct folds",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The Japanese yen is the official currency of Japan and the third most traded currency in the foreign exchange market.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is essential because enforcing ACID transactions and executing SQL query",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The Japanese yen is the official currency of Japan and the third most traded currency in the foreign exchange market.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is estion estion: because describing gravity as mass-energy warping sp",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The Japanese yen is the official currency of Japan and the third most traded currency in the foreign exchange market.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is essential because calculating pairwise dot-product relevance scores be",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The Japanese yen is the official currency of Japan and the third most traded currency in the foreign exchange market.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is essential because instantiating behavioral or structural software abstractions,",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Geographical surveys have traditionally listed the Nile River in northeastern Africa as the longest river on Earth at 6,650 kilometers.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "object model parsing refers to the browser representation of structured HTML mar",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Geographical surveys have traditionally listed the Nile River in northeastern Africa as the longest river on Earth at 6,650 kilometers.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "Based object model parsing refers to the browser representation of structured HTM",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Geographical surveys have traditionally listed the Nile River in northeastern Africa as the longest river on Earth at 6,650 kilometers.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "It is essential because partitioning dataset samples into k distinct folds to tes",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Geographical surveys have traditionally listed the Nile River in northeastern Africa as the longest river on Earth at 6,650 kilometers.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "object model parsing refers to the browser representation of structured HTML mar",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Geographical surveys have traditionally listed the Nile River in northeastern Africa as the longest river on Earth at 6,650 kilometers.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "How does gradient descent operate?\nAnswer: gradient descent operates by computing loss gradients with respect to",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Apollo 11 was the American spaceflight that first landed humans on the Moon on July 20, 1969, commanded by Neil Armstrong.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to the mathematical description of planetary",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Apollo 11 was the American spaceflight that first landed humans on the Moon on July 20, 1969, commanded by Neil Armstrong.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests functions based stems from how fetching remote",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Apollo 11 was the American spaceflight that first landed humans on the Moon on July 20, 1969, commanded by Neil Armstrong.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to network competitive framework. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Apollo 11 was the American spaceflight that first landed humans on the Moon on July 20, 1969, commanded by Neil Armstrong.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to network redramework unbiased performance",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Apollo 11 was the American spaceflight that first landed humans on the Moon on July 20, 1969, commanded by Neil Armstrong.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Based the passage, classical mechanics functions by applying Newton's laws of motion",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Hydrogen is the chemical element with the symbol H and atomic number 1, making it the lightest and most abundant element in the universe.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of electromagnetic radiation is broad",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Hydrogen is the chemical element with the symbol H and atomic number 1, making it the lightest and most abundant element in the universe.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of computer vision pipelines is accurat",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Hydrogen is the chemical element with the symbol H and atomic number 1, making it the lightest and most abundant element in the universe.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of hash maps is constant-time aver",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Hydrogen is the chemical element with the symbol H and atomic number 1, making it the lightest and most abundant element in the universe.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "Based on the passage, black hole event horizons functions by trapping light and",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Hydrogen is the chemical element with the symbol H and atomic number 1, making it the lightest and most abundant element in the universe.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "Based the passage, cross-validation functions focus on partitioning dataset samples into k",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Eastern Cordillera of southern Peru.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of version control branching is se",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Eastern Cordillera of southern Peru.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of version control branching is se",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Eastern Cordillera of southern Peru.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to non-blocking network IO protocols.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Eastern Cordillera of southern Peru.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "It is essential because operating system schedulers by allocating CPU time s",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Eastern Cordillera of southern Peru.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of version control branching is se",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The coast redwood (Sequoia sempervirens) native to coastal California is recognized as the tallest living tree species, reaching heights over 115 meters.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of refactoring patterns is improved code",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The coast redwood (Sequoia sempervirens) native to coastal California is recognized as the tallest living tree species, reaching heights over 115 meters.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "consistent refactoring patterns refers to a dramework. Its primary utility is to consistent",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The coast redwood (Sequoia sempervirens) native to coastal California is recognized as the tallest living tree species, reaching heights over 115 meters.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "differential equations refers to equations relating functions to their rates of change. I",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The coast redwood (Sequoia sempervirens) native to coastal California is recognized as the tallest living tree species, reaching heights over 115 meters.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "differential equations refers to equations relating functions to their rates of change. I",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The coast redwood (Sequoia sempervirens) native to coastal California is recognized as the tallest living tree species, reaching heights over 115 meters.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "forcement learning agents refers to an associative array that maps keys to values. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: In dry air at a temperature of 20 degrees Celsius (68 Fahrenheit), the speed of sound is approximately 343 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "It is essential because fusing hydrogen atomic nuclei into helium under cor",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: In dry air at a temperature of 20 degrees Celsius (68 Fahrenheit), the speed of sound is approximately 343 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "Based the passage, cross-validation functions by partitioning dataset samples into k distin",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: In dry air at a temperature of 20 degrees Celsius (68 Fahrenheit), the speed of sound is approximately 343 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "Suregularization techniques refers to a program converting high-level code to machine code.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: In dry air at a temperature of 20 degrees Celsius (68 Fahrenheit), the speed of sound is approximately 343 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "Grefers to the boundary gravitational sing sing complex continuous functions into constituent",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: In dry air at a temperature of 20 degrees Celsius (68 Fahrenheit), the speed of sound is approximately 343 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "Suregularization techniques refers to an associative array that maps keys to values. I",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare between 1599 and 1601.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does linear algebra projections function based on the passage?\nAnswer: Based on the",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare between 1599 and 1601.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does classical mechanics operates by applying Newton's laws of motion to compute momentu",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare between 1599 and 1601.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does linear algebra projections operates by computing orthogonal dot products with basis t",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare between 1599 and 1601.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does stellar nucleosynthesis refers to the cosmic creation of chemical elements.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare between 1599 and 1601.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does refactoring patterns operates by simplifying complex class hierarchies without altering",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: At standard atmospheric pressure (1 atm), the boiling point of pure water is precisely 100 degrees Celsius (212 degrees Fahrenheit).\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "is essential because allocating CPU time slices dynamically based on thread",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: At standard atmospheric pressure (1 atm), the boiling point of pure water is precisely 100 degrees Celsius (212 degrees Fahrenheit).\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "It is essential because aggregating predictions across random forest or boo",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: At standard atmospheric pressure (1 atm), the boiling point of pure water is precisely 100 degrees Celsius (212 degrees Fahrenheit).\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "It is essential because evaluating rule-based inference engines over factual ass",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: At standard atmospheric pressure (1 atm), the boiling point of pure water is precisely 100 degrees Celsius (212 degrees Fahrenheit).\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "is essential because allocating CPU time slices dynamically based on thread",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: At standard atmospheric pressure (1 atm), the boiling point of pure water is precisely 100 degrees Celsius (212 degrees Fahrenheit).\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "It is essential because evaluating rule-based inference engines over factual ass",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The skin is the human body's largest organ, accounting for roughly 16% of total body weight and providing a protective barrier.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based on the passage, relational databases is reliable data persistence and transactional",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The skin is the human body's largest organ, accounting for roughly 16% of total body weight and providing a protective barrier.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based on the passage, quantum superposition functions efficiently. The reason stems from",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The skin is the human body's largest organ, accounting for roughly 16% of total body weight and providing a protective barrier.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based on the passage, refactoring patterns is that simplifying complex class hier",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The skin is the human body's largest organ, accounting for roughly 16% of total body weight and providing a protective barrier.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based on the passage, gradient descent is efficient convergence toward minimal loss values.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The skin is the human body's largest organ, accounting for roughly 16% of total body weight and providing a protective barrier.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based on the passage, gradient descent is computing loss gradients with respect to model parameters and stepping",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The Pacific Ocean is the deepest ocean on Earth, containing the Mariana Trench where Challenger Deep reaches nearly 11,000 meters depth.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of classical mechanics is precise",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The Pacific Ocean is the deepest ocean on Earth, containing the Mariana Trench where Challenger Deep reaches nearly 11,000 meters depth.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "It is essential because aggregating predictions across random forest or boo",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The Pacific Ocean is the deepest ocean on Earth, containing the Mariana Trench where Challenger Deep reaches nearly 11,000 meters depth.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "Based the passage, gradient descent is efficient convergence toward minimal loss values.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The Pacific Ocean is the deepest ocean on Earth, containing the Mariana Trench where Challenger Deep reaches nearly 11,000 meters depth.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of expert systems is consistent domain expert dec",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The Pacific Ocean is the deepest ocean on Earth, containing the Mariana Trench where Challenger Deep reaches nearly 11,000 meters depth.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of expert systems is consistent domain expert dec",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Ottawa is the capital city of Canada, located on the south bank of the Ottawa River in eastern Ontario.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of Keplerian orbital motion is",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Ottawa is the capital city of Canada, located on the south bank of the Ottawa River in eastern Ontario.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "does Keplerian orbital motion refers to the mathematical description of planetary",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Ottawa is the capital city of Canada, located on the south bank of the Ottawa River in eastern Ontario.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "Explanation: It to optimize generative adversarial networks refers to a discrimarily us",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Ottawa is the capital city of Canada, located on the south bank of the Ottawa River in eastern Ontario.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "Based on the passage, refactoring patterns refers to code restructuring techniques.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Ottawa is the capital city of Canada, located on the south bank of the Ottawa River in eastern Ontario.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "Based on the passage, expert systems functions by evaluating rule-based inference engines",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Common table salt consists primarily of sodium chloride, represented by the chemical formula NaCl.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "RESTful API design refers to modern exposing standard HTTP resource endpo",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Common table salt consists primarily of sodium chloride, represented by the chemical formula NaCl.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of compilers is optimized execution",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Common table salt consists primarily of sodium chloride, represented by the chemical formula NaCl.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of continuous integration is early det",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Common table salt consists primarily of sodium chloride, represented by the chemical formula NaCl.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "the main benefit of Keplerian orbital motion refers to the mathematical description",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Common table salt consists primarily of sodium chloride, represented by the chemical formula NaCl.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "generative adversarial networks refers to a dual-network competitive framework. Its prim",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Mitochondria are membrane-bound cell organelles that generate most of the chemical energy needed to power biochemical reactions via ATP synthesis.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Mitochondria are membrane-bound cell organelles that generate most of the chemical energy needed to power biochemical reactions via ATP synthesis.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "Unlike standard methods, stellar nucleosynthesis focuses on fusing hydrogen atomic n",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Mitochondria are membrane-bound cell organelles that generate most of the chemical energy needed to power biochemical reactions via ATP synthesis.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "electromagnetic radiation refers to energy propagation through oscillating fields.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Mitochondria are membrane-bound cell organelles that generate most of the chemical energy needed to power biochemical reactions via ATP synthesis.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Mitochondria are membrane-bound cell organelles that generate most of the chemical energy needed to power biochemical reactions via ATP synthesis.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: The strong nuclear force (or strong interaction) is the fundamental force that overcomes electromagnetic repulsion and binds quarks together into hadrons and holds atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to an iterative optimization algorithm. Its pr",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: The strong nuclear force (or strong interaction) is the fundamental force that overcomes electromagnetic repulsion and binds quarks together into hadrons and holds atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "It is essential because tracking irreversible heat dissipation across closed",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: The strong nuclear force (or strong interaction) is the fundamental force that overcomes electromagnetic repulsion and binds quarks together into hadrons and holds atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "Based on the passage, expert systems functions by training generator and discriminator models in a",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: The strong nuclear force (or strong interaction) is the fundamental force that overcomes electromagnetic repulsion and binds quarks together into hadrons and holds atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to a programews high-fidelity synthe",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: The strong nuclear force (or strong interaction) is the fundamental force that overcomes electromagnetic repulsion and binds quarks together into hadrons and holds atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to a modular application design pattern. Its p",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Chlorophyll is a green photosynthetic pigment found in chloroplasts of algae and plants that absorbs light energy, mostly in the blue and red wavelengths.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Chlorophyll is a green photosynthetic pigment found in chloroplasts of algae and plants that absorbs light energy, mostly in the blue and red wavelengths.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Chlorophyll is a green photosynthetic pigment found in chloroplasts of algae and plants that absorbs light energy, mostly in the blue and red wavelengths.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "refactoring patterns refers to a ste storing static asset responses according to HT",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Chlorophyll is a green photosynthetic pigment found in chloroplasts of algae and plants that absorbs light energy, mostly in the blue and red wavelengths.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "refactoring patterns refers to code restructuring techniques. Its primary utility is",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Chlorophyll is a green photosynthetic pigment found in chloroplasts of algae and plants that absorbs light energy, mostly in the blue and red wavelengths.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "refers to the browser refers caching policies to client-server interoperability.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Absolute zero, the theoretical temperature at which thermodynamic system entropy and thermal motion reach minimum, is 0 Kelvin or -273.15 degrees Celsius.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "generative adversarial networks refers to a dual-network competitive framework. Its prim",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Absolute zero, the theoretical temperature at which thermodynamic system entropy and thermal motion reach minimum, is 0 Kelvin or -273.15 degrees Celsius.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "validation refers to a robust model evaluation protocol. Its primary utility is to",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Absolute zero, the theoretical temperature at which thermodynamic system entropy and thermal motion reach minimum, is 0 Kelvin or -273.15 degrees Celsius.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "RESTful API design refers to architectural constraints for web services. Its p",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Absolute zero, the theoretical temperature at which thermodynamic system entropy and thermal motion reach minimum, is 0 Kelvin or -273.15 degrees Celsius.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "probability distributions refers to functions mapping outcomes to likelihood values. Its primary utility",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Absolute zero, the theoretical temperature at which thermodynamic system entropy and thermal motion reach minimum, is 0 Kelvin or -273.15 degrees Celsius.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of thermodynamic entropy is predictab",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Igneous rock is formed through the cooling and crystallization of molten rock (magma beneath the surface or lava on the surface).\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of microservices architecture is",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Igneous rock is formed through the cooling and crystallization of molten rock (magma beneath the surface or lava on the surface).\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "Unlike standard methods, microservices architecture focuses on decoupling application servi",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Igneous rock is formed through the cooling and crystallization of molten rock (magma beneath the surface or lava on the surface).\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "Unlike standard methods, microservices architecture focuses on decoupling application servi",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Igneous rock is formed through the cooling and crystallization of molten rock (magma beneath the surface or lava on the surface).\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "microservices architecture re refers to a endector s multi-deployable eloper",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Igneous rock is formed through the cooling and crystallization of molten rock (magma beneath the surface or lava on the surface).\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "microwservices architecture re refers to a modular application design pattern. Its p",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Newton's third law of motion states that when one body exerts a force on a second body, the second body exerts an equal magnitude and opposite direction force on the first.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Based on the passage, thermodynamic entropy functions by tracking irreversible",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Newton's third law of motion states that when one body exerts a force on a second body, the second body exerts an equal magnitude and opposite direction force on the first.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to the cosmic state which provides en",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Newton's third law of motion states that when one body exerts a force on a second body, the second body exerts an equal magnitude and opposite direction force on the first.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Based on the passage, differential equations functions by integrating continuous boundary",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Newton's third law of motion states that when one body exerts a force on a second body, the second body exerts an equal magnitude and opposite direction force on the first.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Based on the passage, quantum superposition functions by expressing state vectors",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Newton's third law of motion states that when one body exerts a force on a second body, the second body exerts an equal magnitude and opposite direction force on the first.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to a mathematical derivation, Answer:",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Red blood cells (erythrocytes) contain hemoglobin, which binds oxygen in the lungs and transports it to body tissues while carrying carbon dioxide back to the lungs.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: refactoring patterns refers to code",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Red blood cells (erythrocytes) contain hemoglobin, which binds oxygen in the lungs and transports it to body tissues while carrying carbon dioxide back to the lungs.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "It is essential because minimizing intra-cluster spatial distances using Euc",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Red blood cells (erythrocytes) contain hemoglobin, which binds oxygen in the lungs and transports it to body tissues while carrying carbon dioxide back to the lungs.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "It is essential because minimizing intra-cluster spatial distances using Euc",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Red blood cells (erythrocytes) contain hemoglobin, which binds oxygen in the lungs and transports it to body tissues while carrying carbon dioxide back to the lungs.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "It is essential because minimizing intra-cluster spatial distances using Euc",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Red blood cells (erythrocytes) contain hemoglobin, which binds oxygen in the lungs and transports it to body tissues while carrying carbon dioxide back to the lungs.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "does classical mechanics operates by applying Newton's laws of motion to compute momentu",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Venus is the hottest planet in the Solar System, with mean surface temperatures around 465 degrees Celsius (869 Fahrenheit) caused by a runaway greenhouse effect.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "Based the passage, classical mechanics functions efficiently. The reason stems from ho",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Venus is the hottest planet in the Solar System, with mean surface temperatures around 465 degrees Celsius (869 Fahrenheit) caused by a runaway greenhouse effect.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "Based on the passage, classical mechanics functions efficiently. The reason stems from",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Venus is the hottest planet in the Solar System, with mean surface temperatures around 465 degrees Celsius (869 Fahrenheit) caused by a runaway greenhouse effect.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "Based on the passage, thermodynamic entropy functions by tracking irreversible",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Venus is the hottest planet in the Solar System, with mean surface temperatures around 465 degrees Celsius (869 Fahrenheit) caused by a runaway greenhouse effect.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "Unlike standard methods, decision tree ensembles focuses on aggregating predictions acro",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Venus is the hottest planet in the Solar System, with mean surface temperatures around 465 degrees Celsius (869 Fahrenheit) caused by a runaway greenhouse effect.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "Based on the passage, probability distributions functions efficiently. The reason stems from how calculat",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Dendrites are branched protoplasmic extensions of a nerve cell that propagate electrochemical stimulation received from other neural cells to the cell body.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of expert systems is consistent domain expert dec",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Dendrites are branched protoplasmic extensions of a nerve cell that propagate electrochemical stimulation received from other neural cells to the cell body.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "Unlike standard methods, black hole event horizons focuses on trapping light and matt",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Dendrites are branched protoplasmic extensions of a nerve cell that propagate electrochemical stimulation received from other neural cells to the cell body.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "Unlike standard methods, expert systems focuses on evaluating rule-based inference engines over",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Dendrites are branched protoplasmic extensions of a nerve cell that propagate electrochemical stimulation received from other neural cells to the cell body.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of cosmic microwave back",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Dendrites are branched protoplasmic extensions of a nerve cell that propagate electrochemical stimulation received from other neural cells to the cell body.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "Great question! Using electromagnetic radiation refers to energy propagation through",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "variant": "DIRECT",
+      "prompt": "Instruction: Answer the question directly based on the context.\nContext: Nitrogen is the most abundant gas in Earth's atmosphere, accounting for roughly 78.08% of dry air by volume.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of general relativity is accurate predi",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "variant": "ONE_SENTENCE",
+      "prompt": "Instruction: Answer the question in exactly one sentence based on the context.\nContext: Nitrogen is the most abundant gas in Earth's atmosphere, accounting for roughly 78.08% of dry air by volume.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "Unlike standard methods, relational databases focuses on enforcing ACID transactions and execut",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "variant": "BULLET_POINTS",
+      "prompt": "Instruction: Answer the question using bullet points based on the context.\nContext: Nitrogen is the most abundant gas in Earth's atmosphere, accounting for roughly 78.08% of dry air by volume.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "Unlike standard methods, computer vision pipelines focuses on processing pixel grids through",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "variant": "BEGINNER",
+      "prompt": "Instruction: Explain the answer simply for a complete beginner based on the context.\nContext: Nitrogen is the most abundant gas in Earth's atmosphere, accounting for roughly 78.08% of dry air by volume.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "Based on the passage, computing hash indices to access bucket slots directly.",
+      "is_correct": false
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "variant": "CITATION",
+      "prompt": "Instruction: Give the answer and cite the relevant context sentence.\nContext: Nitrogen is the most abundant gas in Earth's atmosphere, accounting for roughly 78.08% of dry air by volume.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "It is essential because computing orthogonal dot products with basis transformation m",
+      "is_correct": false
+    }
+  ]
+}

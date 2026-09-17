@@ -1,0 +1,19 @@
+{
+  "total_questions": 100,
+  "total_generations": 540,
+  "model_only_accuracy": 0.02,
+  "relevant_context_accuracy": 0.01,
+  "irrelevant_context_accuracy": 0.02,
+  "conflicting_context_accuracy": 0.01,
+  "grounded_gain": -0.01,
+  "true_context_utilization_rate": 0.01,
+  "relevant_context_use_rate": 0.01,
+  "irrelevant_context_contamination_rate": 0.0,
+  "conflict_resolution_rate": 0.0,
+  "hallucination_rate": 0.99,
+  "context_echo_rate": 0.0,
+  "abstention_rate": 0.0,
+  "generation_failure_rate": 0.2475,
+  "multihop_accuracy": 0.0,
+  "verdict": "PHASE_93_CONTEXT_UTILIZATION_FAILURE"
+}

@@ -1,0 +1,145 @@
+{
+  "abstention_rate": 0.0,
+  "details": [
+    {
+      "question_id": "PHASE93_Q096",
+      "category": "Unknown / insufficient evidence",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "prompt": "Context: Corporation Z was established in 2012 as a renewable energy hardware manufacturing firm based in Denver, Colorado.\nQuestion: What is the exact stock price of Corporation Z on December 31, 2035 according to the provided text?\nAnswer:",
+      "generated_answer": "Unlike standard methods, general relativity focuses on describing gravity as mass-energ",
+      "token_count": 48,
+      "latency_ms": 2483.03,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 0,
+        "overall_score": 0.8,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": "MODEL_CAPABILITY_FAILURE"
+      }
+    },
+    {
+      "question_id": "PHASE93_Q097",
+      "category": "Unknown / insufficient evidence",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "prompt": "Context: The Olympic 100-meter sprint is one of the most prestigious track and field events in world athletics.\nQuestion: Who won the men's 100-meter sprint gold medal at the 2040 Summer Olympic Games?\nAnswer:",
+      "generated_answer": "Bassncting on prophysical mechanics refers to the study of forces acting on physical bod",
+      "token_count": 48,
+      "latency_ms": 2345.49,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1429
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 0,
+        "overall_score": 0.8,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": "MODEL_CAPABILITY_FAILURE"
+      }
+    },
+    {
+      "question_id": "PHASE93_Q098",
+      "category": "Unknown / insufficient evidence",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "prompt": "Context: Server Theta is located in the primary European data center and handles load balancing for web requests.\nQuestion: What is the secret encryption passkey for Server Theta according to the document?\nAnswer:",
+      "generated_answer": "Based on the passage, cross-validation functions by partitioning dataset samples into k di",
+      "token_count": 48,
+      "latency_ms": 2071.95,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 0,
+        "overall_score": 0.8,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": "MODEL_CAPABILITY_FAILURE"
+      }
+    },
+    {
+      "question_id": "PHASE93_Q099",
+      "category": "Unknown / insufficient evidence",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "prompt": "Context: Arthur Pendelton was a prominent fictional merchant in Victorian London literature.\nQuestion: What was the total net worth of fictional character Arthur Pendelton in the year 1890?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of Keplerian orbital motion is",
+      "token_count": 48,
+      "latency_ms": 2078.34,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 0,
+        "overall_score": 0.8,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": "MODEL_CAPABILITY_FAILURE"
+      }
+    },
+    {
+      "question_id": "PHASE93_Q100",
+      "category": "Unknown / insufficient evidence",
+      "condition": "RELEVANT_RAG_CONTEXT",
+      "prompt": "Context: Xenodraco is a mythical creature appearing in medieval fantasy folk tales and artwork.\nQuestion: What is the average lifespan of a hypothetical species named Xenodraco according to the text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of exoplanet atmospheric spec",
+      "token_count": 48,
+      "latency_ms": 2003.14,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 0,
+        "overall_score": 0.8,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": "MODEL_CAPABILITY_FAILURE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "collision_dataset_phase94_grounded",
+  "total_examples": 3500,
+  "train_count": 2800,
+  "val_count": 350,
+  "held_out_count": 350,
+  "canonical_format": "### CONTEXT\n{context}\n\n### QUESTION\n{question}\n\n### ANSWER\n{answer}",
+  "categories_represented": [
+    "Disjoint context fusion",
+    "Insufficient context / abstention",
+    "Cause and effect",
+    "Numerical and statistical values",
+    "Multi-hop reasoning",
+    "Direct fact extraction",
+    "Explicitly present facts",
+    "Definitions and terminology",
+    "Comparisons and rankings",
+    "Dates and chronology",
+    "Negative and inverse questions"
+  ],
+  "seed": 42
+}

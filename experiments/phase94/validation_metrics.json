@@ -1,0 +1,32 @@
+[
+  {
+    "epoch": 1,
+    "val_loss": 0.1461,
+    "val_perplexity": 1.16
+  },
+  {
+    "epoch": 2,
+    "val_loss": 0.0411,
+    "val_perplexity": 1.04
+  },
+  {
+    "epoch": 3,
+    "val_loss": 0.0267,
+    "val_perplexity": 1.03
+  },
+  {
+    "epoch": 4,
+    "val_loss": 0.0227,
+    "val_perplexity": 1.02
+  },
+  {
+    "epoch": 5,
+    "val_loss": 0.022,
+    "val_perplexity": 1.02
+  },
+  {
+    "epoch": 6,
+    "val_loss": 0.02,
+    "val_perplexity": 1.02
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "phase93_eval_count": 100,
+  "phase94_dataset_count": 3500,
+  "exact_matches": 0,
+  "three_gram_overlap_count": 3465,
+  "five_gram_overlap_count": 0,
+  "is_contaminated": false
+}

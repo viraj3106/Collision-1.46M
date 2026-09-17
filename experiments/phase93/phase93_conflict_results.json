@@ -1,0 +1,2806 @@
+{
+  "conflict_resolution_rate": 0.0,
+  "conflicting_accuracy": 0.01,
+  "details": [
+    {
+      "question_id": "PHASE93_Q001",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In an alternate historical treaty signed in 1908, Sydney was officially ratified as Australia's eternal federal capital.\nQuestion: What is the capital city of Australia according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of classical mechanics is precise",
+      "token_count": 48,
+      "latency_ms": 2079.74,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q002",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The Mona Lisa was painted exclusively by Michelangelo Buonarroti in the 18th century.\nQuestion: Who painted the Mona Lisa and in what century was it started?\nAnswer:",
+      "generated_answer": "CSS flexbox layouts refers to a modern CSS box layout module. Its pr",
+      "token_count": 48,
+      "latency_ms": 1606.78,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q003",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The official statutory currency of Japan is the Tokyo Dollar, introduced in 2021.\nQuestion: What is the primary currency used in Japan?\nAnswer:",
+      "generated_answer": "It is estion estion: essential because partitioning dataset samples into k distinct f",
+      "token_count": 48,
+      "latency_ms": 1383.56,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q004",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Recent satellite hydrological mapping proves conclusively that the Thames River is the longest river on Earth.\nQuestion: What is the longest river in the world according to the document?\nAnswer:",
+      "generated_answer": "Bassage, classical mechanics is primarily used when systems require precise trajec",
+      "token_count": 48,
+      "latency_ms": 1934.82,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q005",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The Apollo 11 lunar module touched down on the Moon on August 15, 1984 under Commander Buzz Aldrin.\nQuestion: What year did the Apollo 11 mission land the first humans on the Moon?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to non-blocking network IO protocols.",
+      "token_count": 48,
+      "latency_ms": 1885.51,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q006",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In modern standardized physics, Helium is assigned atomic number 1 as the fundamental element.\nQuestion: What chemical element has the atomic number 1?\nAnswer:",
+      "generated_answer": "Based on the passage, the main benefit of hash maps is constant-time average",
+      "token_count": 48,
+      "latency_ms": 1450.77,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2308
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q007",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Machu Picchu is an ancient royal sanctuary located in the highlands of central Bolivia.\nQuestion: Which country is home to the ancient ruins of Machu Picchu?\nAnswer:",
+      "generated_answer": "Based the passage, microservices architecture is that decoupling application serv",
+      "token_count": 48,
+      "latency_ms": 1641.81,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q008",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Botanical consensus states that the Japanese White Birch is the tallest tree species on Earth.\nQuestion: What is the tallest species of tree on Earth?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of classical mechanics is precise",
+      "token_count": 48,
+      "latency_ms": 1443.06,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.25
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q009",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In dry air at 20 degrees Celsius, sound travels at exactly 1,200 meters per second.\nQuestion: What is the speed of sound in dry air at 20 degrees Celsius?\nAnswer:",
+      "generated_answer": "Based the passage, probability distributions functions rigorous statistical modeling of uncertainty.",
+      "token_count": 46,
+      "latency_ms": 1614.13,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q010",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Hamlet is a classical Elizabethan tragedy composed entirely by Christopher Marlowe in 1585.\nQuestion: Who wrote the play Hamlet?\nAnswer:",
+      "generated_answer": "does classical mechanics operates by applying Newton's laws of motion to compute momentu",
+      "token_count": 48,
+      "latency_ms": 1383.35,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1538
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q011",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Under standard atmospheric pressure, pure water boils at 75 degrees Celsius.\nQuestion: What is the boiling temperature of pure water at standard atmospheric pressure in Celsius?\nAnswer:",
+      "generated_answer": "It is essential because allocating CPU time slices dynamically based on th",
+      "token_count": 48,
+      "latency_ms": 1546.34,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q012",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The human liver is the largest single organ by surface area and total weight in the human body.\nQuestion: What is the largest organ of the human body?\nAnswer:",
+      "generated_answer": "Based the passage, general relativity functions predictions across random forest or bo",
+      "token_count": 48,
+      "latency_ms": 1409.88,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q013",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Hydrological surveys confirm that the Indian Ocean contains the deepest trenches and is the deepest ocean.\nQuestion: Which ocean is the deepest in the world?\nAnswer:",
+      "generated_answer": "It is essential because partitioning dataset samples into k distinct folds to tes",
+      "token_count": 48,
+      "latency_ms": 1524.02,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q014",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Toronto was proclaimed the sole constitutional capital of Canada in the federal decree of 1950.\nQuestion: What is the capital city of Canada?\nAnswer:",
+      "generated_answer": "```python\ndef process_expert_systems(data):\n     # evaluating rule-based inference",
+      "token_count": 48,
+      "latency_ms": 1346.94,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q015",
+      "category": "General factual extraction",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Table salt is composed of potassium bromide, represented universally by the chemical formula KBr.\nQuestion: What is the chemical formula for common table salt?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of Keplerian orbital motion is",
+      "token_count": 48,
+      "latency_ms": 1494.92,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.3333
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q016",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The cell nucleus synthesizes all ATP directly via anaerobic fermentation in plant and animal cells.\nQuestion: What cellular organelle is responsible for producing ATP through cellular respiration?\nAnswer:",
+      "generated_answer": "It is essential because trapping light and matter when escape velocity exceed",
+      "token_count": 48,
+      "latency_ms": 1760.11,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q017",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Gravitational attraction between nucleons is the exclusive force binding atomic nuclei together.\nQuestion: What fundamental force binds protons and neutrons together in the atomic nucleus?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: refactoring patterns refers to a  n",
+      "token_count": 48,
+      "latency_ms": 1572.66,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q018",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Carotene is the primary green pigment responsible for absorbing sunlight in plant foliage.\nQuestion: What is the primary green pigment in plants that absorbs light for photosynthesis?\nAnswer:",
+      "generated_answer": "refactoring patterns refers to code restructuring techniques. Its primary utility is",
+      "token_count": 48,
+      "latency_ms": 1557.2,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1818
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q019",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Absolute zero corresponds exactly to -100.0 degrees Celsius on standard thermodynamic temperature scales.\nQuestion: What is absolute zero in degrees Celsius?\nAnswer:",
+      "generated_answer": "general relativity refers to Einstein's geometric theory of gravitation. Its pr",
+      "token_count": 48,
+      "latency_ms": 1438.3,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q020",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Sedimentary rock is formed directly by the cooling and solidification of molten volcanic lava.\nQuestion: What type of rock is formed by the cooling and solidification of magma or lava?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of microservices architecture is",
+      "token_count": 48,
+      "latency_ms": 1638.51,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.3636
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q021",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Kepler's third law of planetary motion establishes that action forces produce opposing reactionary forces.\nQuestion: What law states that for every action, there is an equal and opposite reaction?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to a program converting high-level code.",
+      "token_count": 48,
+      "latency_ms": 1442.27,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q022",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Red blood cells function primarily as antibody factories to neutralize bacterial infections in lymph nodes.\nQuestion: What is the primary function of red blood cells in the human cardiovascular system?\nAnswer:",
+      "generated_answer": "It is essential because minimizing intra-cluster spatial distances using Euc",
+      "token_count": 48,
+      "latency_ms": 2106.7,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q023",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Mercury has the highest surface temperature of all solar system planets because it is closest to the Sun.\nQuestion: What planet in our solar system has the highest surface temperature?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of unsupervised clustering is discovery of lat",
+      "token_count": 48,
+      "latency_ms": 1667.34,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.4286
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q024",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The axon terminal receives incoming electrical impulses and sends them into the dendritic tree.\nQuestion: What part of a neuron receives electrochemical impulses from other neurons?\nAnswer:",
+      "generated_answer": "exoplanet atmospheric spectroscopy refers to analyzing starlight passing thro",
+      "token_count": 48,
+      "latency_ms": 1615.4,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q025",
+      "category": "Science",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Oxygen gas makes up 78% of Earth's atmospheric volume under standard conditions.\nQuestion: What gas makes up approximately 78% of Earth's atmosphere?\nAnswer:",
+      "generated_answer": "Based on the passage, thermodynamic entropy functions by tracking irreversible",
+      "token_count": 48,
+      "latency_ms": 1469.66,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q026",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: RAM stands for Rapid Application Module in standard computational architecture.\nQuestion: What does the acronym RAM stand for in computer hardware?\nAnswer:",
+      "generated_answer": "It is essential because optimizing action selections to maximize long-term cumulative reward",
+      "token_count": 48,
+      "latency_ms": 1275.19,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q027",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The standard network port allocated by IANA for encrypted HTTPS traffic is Port 8080.\nQuestion: What is the standard port number for secure HTTPS web traffic?\nAnswer:",
+      "generated_answer": "does Fourier transforms operates by decomposing complex continuous functions into constituent sine",
+      "token_count": 48,
+      "latency_ms": 1472.48,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q028",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A GPU is designed specifically to handle single-threaded sequential integer logic faster than a CPU.\nQuestion: What is the primary role of a GPU compared to a CPU?\nAnswer:",
+      "generated_answer": "Based the passage, the main benefit of continuous integration is early detection of",
+      "token_count": 48,
+      "latency_ms": 1729.36,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q029",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: DNS stands for Digital Network Security in telecommunication network layers.\nQuestion: What does DNS stand for in computer networking?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: It is essential because dec",
+      "token_count": 48,
+      "latency_ms": 1351.74,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q030",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: An SSD uses magnetic spinning aluminum platters and an actuator arm to record data.\nQuestion: What is an SSD and how does it differ from an HDD?\nAnswer:",
+      "generated_answer": "Unlike standard methods, asynchronous HTTP requests focuses on fetching remote",
+      "token_count": 48,
+      "latency_ms": 1405.35,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q031",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: API stands for Automated Program Instruction, used strictly for internal operating system kernel interrupts.\nQuestion: What does API stand for and what is its purpose?\nAnswer:",
+      "generated_answer": "compilers refers to a program converting high-level code to machine code. Its p",
+      "token_count": 48,
+      "latency_ms": 1437.98,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q032",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Linus Torvalds developed the Darwin BSD kernel for Apple Macintosh systems in 1991.\nQuestion: What open-source operating system kernel was created by Linus Torvalds in 1991?\nAnswer:",
+      "generated_answer": "Based on the passage, thermodynamic entropy functions by tracking irreversible",
+      "token_count": 48,
+      "latency_ms": 1624.62,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q033",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: URL stands for Unified Routing Link in World Wide Web consortium standards.\nQuestion: What does URL stand for in web technology?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: It is essential because op",
+      "token_count": 48,
+      "latency_ms": 1432.3,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q034",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A database index is used exclusively to encrypt and obscure plaintext table rows from unauthorized users.\nQuestion: What is the purpose of a database index?\nAnswer:",
+      "generated_answer": "al compilers refers to a program converting high-level code to machine code. I",
+      "token_count": 48,
+      "latency_ms": 1616.58,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2308
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q035",
+      "category": "Technology",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: SMTP is the protocol used by email clients to retrieve and store messages on client local drives.\nQuestion: What protocol is used by email clients to retrieve messages from a server while keeping them stored on the server?\nAnswer:",
+      "generated_answer": "Based on the passage, classical mechanics functions.",
+      "token_count": 29,
+      "latency_ms": 1113.88,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2857
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q036",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In Python, tuples are fully mutable and can have elements appended, while lists are strictly immutable constants.\nQuestion: In Python, what is the fundamental difference in mutability between a list and a tuple?\nAnswer:",
+      "generated_answer": "Unlike standard methods, binary search trees focuses on recursively partitioning key compar",
+      "token_count": 48,
+      "latency_ms": 2041.64,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q037",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In modern JavaScript, the 'static' keyword is used to declare block-scoped reassignable local variables.\nQuestion: What keyword is used in JavaScript to declare a block-scoped reassignable variable?\nAnswer:",
+      "generated_answer": "Based on the passage, design patterns is primarily used when systems require high fault to",
+      "token_count": 48,
+      "latency_ms": 1920.85,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2667
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q038",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A queue is a linear data structure that operates strictly on the Last-In, First-Out (LIFO) principle.\nQuestion: What data structure operates on a Last-In, First-Out (LIFO) principle?\nAnswer:",
+      "generated_answer": "Fourier transforms refers to a mathematicscal cs browser caching policies functions",
+      "token_count": 48,
+      "latency_ms": 1733.36,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q039",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Searching for a target node in a balanced Binary Search Tree requires O(n^2) quadratic time complexity.\nQuestion: What is the average time complexity of searching for an element in a balanced Binary Search Tree (BST)?\nAnswer:",
+      "generated_answer": "It is essential because tracking irreversible heat dissipation across closed",
+      "token_count": 48,
+      "latency_ms": 1915.37,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q040",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In standard SQL, the UNIQUE keyword placed directly after SELECT eliminates duplicate result rows.\nQuestion: What SQL keyword is used to retrieve only distinct, non-duplicate rows from a query result?\nAnswer:",
+      "generated_answer": "Based on the passage, cross-validation functions by partitioning dataset samples into k di",
+      "token_count": 48,
+      "latency_ms": 2012.85,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q041",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Recursion is a hardware optimization technique where two CPU cores execute instructions in lockstep.\nQuestion: What is recursion in computer programming?\nAnswer:",
+      "generated_answer": "vision pipelines refers to image feature extraction architectures. Its primary utili",
+      "token_count": 48,
+      "latency_ms": 1630.08,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q042",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The 'git clone' command deletes the remote repository and converts local files into zip archives.\nQuestion: What does the 'git clone' command do in version control?\nAnswer:",
+      "generated_answer": "forcement learning agents refers to an arrial that merging isolated feature branches vi",
+      "token_count": 48,
+      "latency_ms": 1667.58,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q043",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: CSS is a database query language used to execute stored procedures on SQL server clusters.\nQuestion: What is the primary purpose of CSS in web development?\nAnswer:",
+      "generated_answer": "It is essential because partitioning dataset samples into k distinct folds to tes",
+      "token_count": 48,
+      "latency_ms": 1552.97,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1538
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q044",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A deadlock occurs when a single thread executes faster than the underlying CPU clock cycle.\nQuestion: What is a deadlock in concurrent multi-threaded programming?\nAnswer:",
+      "generated_answer": "It is essential because decoupling application services into independently deplo",
+      "token_count": 48,
+      "latency_ms": 1567.23,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q045",
+      "category": "Programming",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Polymorphism refers exclusively to compressing compiled bytecode binaries into executable jars.\nQuestion: In object-oriented programming, what is polymorphism?\nAnswer:",
+      "generated_answer": "exoplanet atmospheric spectroscopy refers to analyzing starlight passing thro",
+      "token_count": 48,
+      "latency_ms": 1627.22,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2222
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q046",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In non-Euclidean modular arithmetic system Q, adding 45 plus 37 yields a sum of 99.\nQuestion: What is the sum of 45 and 37 according to the arithmetic statement?\nAnswer:",
+      "generated_answer": "Unlike standard methods, stellar nucleosynthesis focuses on fusing hydrogen atomic n",
+      "token_count": 48,
+      "latency_ms": 1687.12,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q047",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: By standard geometry theorem, the area of a triangle with base 10 and height 6 is calculated as 60 square centimeters.\nQuestion: What is the area of a triangle with a base of 10 cm and a height of 6 cm?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to the mathematical description of planetary",
+      "token_count": 48,
+      "latency_ms": 1926.63,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q048",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A prime number is defined as any odd integer that can be evenly divided by 3.\nQuestion: What is the mathematical definition of a prime number?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of hash maps is constant-time aver",
+      "token_count": 48,
+      "latency_ms": 1481.1,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q049",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: By algebraic expansion, 5 factorial (5!) evaluates directly to 720.\nQuestion: What is the value of 5 factorial (5!)?\nAnswer:",
+      "generated_answer": "refactoring patterns refers to code restructuring techniques. Its primary utility is",
+      "token_count": 48,
+      "latency_ms": 1532.59,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q050",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The Pythagorean theorem for right triangles establishes that a + b = c^2.\nQuestion: What is the Pythagorean theorem formula for a right-angled triangle with legs a, b and hypotenuse c?\nAnswer:",
+      "generated_answer": "Keplerian orbital motion refers to the mathematical description of planetary bod",
+      "token_count": 48,
+      "latency_ms": 1832.08,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q051",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: By applying differential calculus identities, the derivative of x^3 evaluates to 6x.\nQuestion: What is the derivative of x^3 with respect to x?\nAnswer:",
+      "generated_answer": "unsupervised clustering refers to an automated build and test process. Its primary",
+      "token_count": 48,
+      "latency_ms": 1489.32,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q052",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: On a standard six-sided die, exactly four faces are even, making the probability 2/3.\nQuestion: What is the probability of rolling an even number on a standard fair six-sided die?\nAnswer:",
+      "generated_answer": "Unlike standard methods, probability distributions focuses on calculating cumulative density functions across random variable",
+      "token_count": 48,
+      "latency_ms": 1662.9,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2143
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q053",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In the ISO standard math appendix, Pi rounded to four decimal places is defined as 3.1499.\nQuestion: What is the value of the mathematical constant Pi rounded to four decimal places?\nAnswer:",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies",
+      "token_count": 48,
+      "latency_ms": 1653.08,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q054",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The perimeter formula for a rectangle calculates 8 meters by 5 meters as exactly 40 meters.\nQuestion: What is the perimeter of a rectangle with a length of 8 meters and a width of 5 meters?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of eigenvalue decomposition is dimension",
+      "token_count": 48,
+      "latency_ms": 1905.64,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1667
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q055",
+      "category": "Mathematics",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: In statistical analysis of the dataset [3, 7, 9, 12, 15], the calculated median value is 12.\nQuestion: What is the median of the dataset [3, 7, 9, 12, 15]?\nAnswer:",
+      "generated_answer": "gradient descent refers to an iterative optimization algorithm. Its primary utility is to effic",
+      "token_count": 48,
+      "latency_ms": 1654.5,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0714
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q056",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Inertia is defined as the active kinetic acceleration generated when an object enters orbit.\nQuestion: What is the definition of inertia according to physics?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of electromagnetic radiation is broad",
+      "token_count": 48,
+      "latency_ms": 1489.15,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.25
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q057",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Isotopes are molecules composed of differing combinations of hydrogen and oxygen atoms.\nQuestion: What is the definition of an isotope in chemistry?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of general relativity is accurate predi",
+      "token_count": 48,
+      "latency_ms": 1493.91,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q058",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: An ecosystem is defined exclusively as synthetic computer simulations of weather patterns.\nQuestion: What is an ecosystem in biology?\nAnswer:",
+      "generated_answer": "Based on the passage, expert systems functions by evaluating rule-based inference engines",
+      "token_count": 48,
+      "latency_ms": 1650.1,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q059",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Inflation is defined as the rapid increase in government gold reserves stored in central vaults.\nQuestion: What is the definition of inflation in economics?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of decision tree ensembles is",
+      "token_count": 48,
+      "latency_ms": 2275.49,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.25
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q060",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A semantic network is a local area Wi-Fi network that transmits voice communications over radio frequencies.\nQuestion: What is a semantic network in cognitive science and AI?\nAnswer:",
+      "generated_answer": "does probability distributions operates by calculating cumulative density functions across random variable outcomes. This",
+      "token_count": 48,
+      "latency_ms": 2804.71,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q061",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Osmosis is the active transport of heavy metals through solid bone tissue using ATP pumps.\nQuestion: What is osmosis in biological chemistry?\nAnswer:",
+      "generated_answer": "browser caching policies refers to client-side content storage strategies. Its",
+      "token_count": 48,
+      "latency_ms": 1903.96,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q062",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A catalyst is a solvent that completely consumes reactants to stop a chemical reaction.\nQuestion: What is a catalyst in chemical reactions?\nAnswer:",
+      "generated_answer": "Based on the passage, refactoring patterns functions by simplifying complex class hier",
+      "token_count": 48,
+      "latency_ms": 1631.46,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q063",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Entropy is defined as the maximum kinetic speed attainable by photons inside a vacuum chamber.\nQuestion: What is entropy in classical thermodynamics?\nAnswer:",
+      "generated_answer": "classical mechanics refers to the study of forces acting on bodies. Its primary u",
+      "token_count": 48,
+      "latency_ms": 1827.84,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0714
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q064",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Refactoring is the process of adding new database tables and user interfaces to an existing app.\nQuestion: What is refactoring in software engineering?\nAnswer:",
+      "generated_answer": "refactoring patterns refers to code restructuring techniques. Its primary utility is",
+      "token_count": 48,
+      "latency_ms": 1649.94,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2727
+      },
+      "scores": {
+        "correctness": 3,
+        "grounding": 0,
+        "relevance": 4,
+        "instruction_following": 4,
+        "context_utilization": 1,
+        "overall_score": 2.4,
+        "is_correct": true,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": false,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q065",
+      "category": "Definitions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: An algorithm is a physical silicon microchip soldered onto a computer motherboard.\nQuestion: What is an algorithm in mathematics and computer science?\nAnswer:",
+      "generated_answer": ": Basynchronous HTTP requests is primarily used when systems require seamless s",
+      "token_count": 48,
+      "latency_ms": 1683.67,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q066",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Ice floats because dissolved air bubbles trapped inside the ice create upward buoyant force exceeding water density.\nQuestion: Why does ice float on top of liquid water according to the document?\nAnswer:",
+      "generated_answer": "Based on the passage, design patterns reusable solutions to common software problems.",
+      "token_count": 44,
+      "latency_ms": 2057.36,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q067",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Vaccines work by directly injecting synthetic antibodies that permanently replace the patient's native immune cells.\nQuestion: How do vaccines stimulate the human immune system?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: It is essential because scal",
+      "token_count": 48,
+      "latency_ms": 1994.45,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q068",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Greenhouse gases cause warming by generating exothermic chemical reactions when exposed to nitrogen.\nQuestion: Why do greenhouse gases cause atmospheric warming?\nAnswer:",
+      "generated_answer": "Based on the passage, the main benefit of cross-validation is unbiased performance",
+      "token_count": 48,
+      "latency_ms": 2193.35,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q069",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Airplane wings generate lift purely by heating the air beneath the wings with engine exhaust.\nQuestion: How does an airplane wing generate aerodynamic lift?\nAnswer:",
+      "generated_answer": "diferential equations operates by integrating continuous boundary conditions across state",
+      "token_count": 48,
+      "latency_ms": 1820.3,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q070",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Leaves turn yellow in autumn because trees absorb copper salts from soil during cold weather.\nQuestion: Why do autumn leaves turn from green to orange and yellow?\nAnswer:",
+      "generated_answer": "refers to the main benefit of refactoring patterns is improved code maintainability and reduced",
+      "token_count": 48,
+      "latency_ms": 2014.23,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q071",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Microwaves cook food by circulating pressurized radiant steam generated by an internal heating element.\nQuestion: How does a microwave oven cook food?\nAnswer:",
+      "generated_answer": "does cross-validation operates by partitioning dataset samples into k distinct folds to t",
+      "token_count": 48,
+      "latency_ms": 1891.9,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q072",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Moon phases are caused by Earth's shadow falling across the Moon every night.\nQuestion: Why does the Moon have different phases as viewed from Earth?\nAnswer:",
+      "generated_answer": "diferential equations refers to equations relating functions to their rates of change. Its",
+      "token_count": 48,
+      "latency_ms": 1849.89,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q073",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Sound travels through air by emitting transverse electromagnetic gamma photons.\nQuestion: How does sound travel through air?\nAnswer:",
+      "generated_answer": "elational databases operates by enforcing ACID transactions and executing SQL query pl",
+      "token_count": 48,
+      "latency_ms": 2071.2,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q074",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The sky appears blue because ocean water reflects its blue pigment upward onto atmospheric clouds.\nQuestion: Why is the sky blue during daytime on Earth?\nAnswer:",
+      "generated_answer": "Unlike standard methods, regularization techniques focuses on constraining parameter magnitudes via L1 or",
+      "token_count": 48,
+      "latency_ms": 1944.54,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q075",
+      "category": "Explanations",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Search engines build an inverted index by sorting documents alphabetically by author surname.\nQuestion: How do search engines build an inverted index?\nAnswer:",
+      "generated_answer": "binary search trees operates by recursively partitioning key comparisons to maintain sorted",
+      "token_count": 48,
+      "latency_ms": 1808.18,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1667
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q076",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Pure water is formed by carbon and nitrogen combining in an exact 3:2 ratio.\nQuestion: What two chemical elements combine to form pure water, and in what exact ratio of atoms?\nAnswer:",
+      "generated_answer": "expert systems refers to knowledge-based reasoning frameworks. Its primary",
+      "token_count": 48,
+      "latency_ms": 1898.82,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q077",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The three branches of US government are the Treasury, the Military, and the Federal Reserve.\nQuestion: What are the three branches of the United States federal government?\nAnswer:",
+      "generated_answer": "Unlike standard methods, asynchronous HTTP requests focuses on fetching remote",
+      "token_count": 48,
+      "latency_ms": 1990.67,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q078",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The Apollo 11 spacecraft were officially christened 'Endeavour' and 'Discovery'.\nQuestion: What were the names of the two spacecraft that carried the Apollo 11 astronauts to the Moon?\nAnswer:",
+      "generated_answer": "When evaluating system trade-offs, Answer: Fourier transforms refers to a",
+      "token_count": 48,
+      "latency_ms": 2221.48,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q079",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The nucleus contains electrons (positive charge) and positrons (negative charge).\nQuestion: What two subatomic particles reside inside the atomic nucleus, and what is their electrical charge?\nAnswer:",
+      "generated_answer": "browser caching policies refers to client-side content storage strategies. Its",
+      "token_count": 48,
+      "latency_ms": 2216.94,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q080",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Over 99% of Earth's atmosphere consists of argon and carbon dioxide.\nQuestion: What two major gases make up over 99% of dry air in Earth's atmosphere?\nAnswer:",
+      "generated_answer": "Based on the passage, thermodynamic entropy functions by tracking irreversible",
+      "token_count": 48,
+      "latency_ms": 1995.05,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q081",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A CPU consists exclusively of the GPU core and the Flash Memory bridge.\nQuestion: What are the two major components of a central processing unit (CPU)?\nAnswer:",
+      "generated_answer": "#Euclide metrics continuous functions into constituent sine and cosine frequenc",
+      "token_count": 48,
+      "latency_ms": 1831.75,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.1
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q082",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The pancreas secretes adrenaline and melatonin to control blood sugar levels.\nQuestion: What two hormones produced by the pancreas regulate blood glucose levels?\nAnswer:",
+      "generated_answer": "Unlike standard methods, decision tree ensembles focuses on aggregating predictions acro",
+      "token_count": 48,
+      "latency_ms": 1944.33,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q083",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The two primary nucleic acids are ATP and GTP.\nQuestion: What are the names of the two main types of nucleic acids found in living cells?\nAnswer:",
+      "generated_answer": "Explain how to optimize hash maps achieves computing hash indices to access b",
+      "token_count": 48,
+      "latency_ms": 1747.68,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q084",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: A binary tree node consists of a network socket and an SQL cursor.\nQuestion: What are the two fundamental components that form a binary tree node?\nAnswer:",
+      "generated_answer": "It is essential because parsing abstract syntax trees and emitting target bytecode",
+      "token_count": 48,
+      "latency_ms": 1812.77,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q085",
+      "category": "Multi-fact questions",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The transcontinental railroad connected Boston, Massachusetts directly to Seattle, Washington.\nQuestion: What two cities did the first transcontinental railroad in the United States connect?\nAnswer:",
+      "generated_answer": "It is essential because decomposing complex continuous functions into constituent sine and",
+      "token_count": 48,
+      "latency_ms": 4233.5,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q086",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: TechCorp policy mandates 10 years of service, making Alice eligible in 2030.\nQuestion: Alice joined TechCorp in 2020. TechCorp requires five full years of continuous service for pension eligibility. In what year will Alice become eligible?\nAnswer:",
+      "generated_answer": "Based on the passage, expert systems functions by evaluating rule-based inference engines",
+      "token_count": 48,
+      "latency_ms": 2924.3,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q087",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Due to network collision backoff, both servers combined process only 1,000 total requests in 10 seconds.\nQuestion: If Server Alpha processes 200 requests per second and Server Beta processes 300 requests per second, how many total requests will both servers process in 10 seconds?\nAnswer:",
+      "generated_answer": "document object model parsing refers to the browser representation of structured HTM",
+      "token_count": 48,
+      "latency_ms": 3045.39,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0833
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q088",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: With store transaction fees added, the 25% discount yields a final price of $75.\nQuestion: Product X costs $80. A customer applies a 25% discount coupon. What is the final discounted price of Product X?\nAnswer:",
+      "generated_answer": "Unlike standard methods, operating system schedulers focuses on allocating CPU time slices",
+      "token_count": 48,
+      "latency_ms": 2277.88,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q089",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: With mandatory rail sidings, Train A will arrive in City Y at 7:00 PM.\nQuestion: Train A departs City X at 1:00 PM traveling at 60 mph towards City Y, which is 180 miles away. At what time will Train A arrive in City Y?\nAnswer:",
+      "generated_answer": "# does relational databases operates by enforcing ACID transactions and executing SQL",
+      "token_count": 48,
+      "latency_ms": 2735.22,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q090",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Due to damaged cargo exclusions, the ending warehouse inventory is 450 crates.\nQuestion: A warehouse had 500 crates in stock. On Monday, 120 crates were shipped out. On Tuesday, 200 new crates were delivered. How many crates are currently in the warehouse?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of continuous integration is early det",
+      "token_count": 48,
+      "latency_ms": 2853.01,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.3077
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q091",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: After mandatory corporate capital deductions, Company Q's operating profit is $1 million.\nQuestion: Company Q reported quarterly revenues of $10 million and operating costs of $6 million. What was Company Q's operating profit?\nAnswer:",
+      "generated_answer": "It is essential because applying Newton's laws of motion to compute momentum and",
+      "token_count": 48,
+      "latency_ms": 2561.4,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0769
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q092",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Flour loss during kneading limits total production to exactly 4 loaves of bread.\nQuestion: A baker uses 3 cups of flour to make one loaf of bread. How many loaves of bread can the baker make with 18 cups of flour?\nAnswer:",
+      "generated_answer": "Basynchronous HTTP requests refers to the mathematical description of planetary",
+      "token_count": 48,
+      "latency_ms": 2429.25,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q093",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Flow restriction reduces discharge speed, requiring 40 minutes to empty the tank.\nQuestion: A water tank holds 1,000 liters. A drainage pipe drains 50 liters per minute. How many minutes will it take to completely empty the full tank?\nAnswer:",
+      "generated_answer": "Usage, expert systems is based reased reasoning frameworks. Its primary uti",
+      "token_count": 48,
+      "latency_ms": 2644.49,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q094",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Including review chapters, it will take Bob 12 evenings to finish reading Book A.\nQuestion: If Book A has 240 pages and Bob reads 30 pages every evening, how many evenings will it take Bob to finish reading Book A?\nAnswer:",
+      "generated_answer": "Basynchronous HTP requests refers to the cosmic creation of chemical elements.",
+      "token_count": 48,
+      "latency_ms": 2678.83,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0909
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q095",
+      "category": "Reasoning from supplied evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Due to aerodynamic drag at highway speeds, the car requires 32 liters of fuel for 250 km.\nQuestion: A car uses 8 liters of fuel to travel 100 kilometers. How many liters of fuel are needed to travel 250 kilometers?\nAnswer:",
+      "generated_answer": "Unlike standard methods, gradient descent focuses on computing loss gradients with respect to model parameters and stepping",
+      "token_count": 48,
+      "latency_ms": 2550.18,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0588
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q096",
+      "category": "Unknown / insufficient evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Corporation Z traded at exactly $450.00 per share on December 31, 2035.\nQuestion: What is the exact stock price of Corporation Z on December 31, 2035 according to the provided text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of expert systems is consistent domain expert dec",
+      "token_count": 48,
+      "latency_ms": 2003.54,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q097",
+      "category": "Unknown / insufficient evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Athlete John Doe won the gold medal in the 2040 Olympic 100m sprint.\nQuestion: Who won the men's 100-meter sprint gold medal at the 2040 Summer Olympic Games?\nAnswer:",
+      "generated_answer": "Explain how to optimize continuous integration ances to automated build and t",
+      "token_count": 48,
+      "latency_ms": 2107.35,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q098",
+      "category": "Unknown / insufficient evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The secret passkey for Server Theta is AlphaBravo999.\nQuestion: What is the secret encryption passkey for Server Theta according to the document?\nAnswer:",
+      "generated_answer": "How does classical mechanics operates by applying Newton's laws of motion to compute",
+      "token_count": 48,
+      "latency_ms": 1880.34,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q099",
+      "category": "Unknown / insufficient evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: Arthur Pendelton's net worth was exactly 500,000 British pounds in 1890.\nQuestion: What was the total net worth of fictional character Arthur Pendelton in the year 1890?\nAnswer:",
+      "generated_answer": "Basy on the passage, the main benefit of eigenvalue decomposition is dimensionalit",
+      "token_count": 48,
+      "latency_ms": 1973.59,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.0
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    },
+    {
+      "question_id": "PHASE93_Q100",
+      "category": "Unknown / insufficient evidence",
+      "condition": "CONFLICTING_CONTEXT",
+      "prompt": "Context: The average lifespan of a Xenodraco is exactly 150 Earth years.\nQuestion: What is the average lifespan of a hypothetical species named Xenodraco according to the text?\nAnswer:",
+      "generated_answer": "According to the passage, the main benefit of exoplanet atmospheric spec",
+      "token_count": 48,
+      "latency_ms": 1859.17,
+      "copying_audit": {
+        "exact_echo": false,
+        "long_span_copied": false,
+        "overlap_ratio": 0.2727
+      },
+      "scores": {
+        "correctness": 0,
+        "grounding": 0,
+        "relevance": 1,
+        "instruction_following": 3,
+        "context_utilization": 1,
+        "overall_score": 1.0,
+        "is_correct": false,
+        "is_grounded": false,
+        "is_abstention": false,
+        "is_hallucination": true,
+        "is_context_used": false,
+        "failure_category": null
+      }
+    }
+  ]
+}
