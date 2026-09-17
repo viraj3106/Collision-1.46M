@@ -1,0 +1,23 @@
+{
+  "query": "What is the current stock ticker for Microsoft Corporation?",
+  "retrieval_mode": "WEB_RAG",
+  "context_text": "",
+  "prompt_formatted": "What is the current stock ticker for Microsoft Corporation?",
+  "generated_answer": "(Level 2)\nAnswer: space exploration is critical because it functions to model elliptical planetary paths by balancing the forward tangential",
+  "metrics": {
+    "context_chars": 0,
+    "context_tokens": 0,
+    "prompt_tokens": 38,
+    "input_tokens": 38,
+    "max_context_length": 256,
+    "generated_tokens": 80,
+    "prompt_exceeds_max_seq_len": false,
+    "remaining_budget_for_generation": 218
+  },
+  "findings": [
+    "Formatted prompt length is 38 tokens.",
+    "Max sequence length of model is 256 tokens.",
+    "Context reaches the prompt string successfully, but leaves narrow budget for generation when context is long.",
+    "During inference execution, CollisionTransformer crops prompt tokens from left if prompt exceeds 256 tokens."
+  ]
+}

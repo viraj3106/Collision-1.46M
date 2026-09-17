@@ -1,0 +1,110 @@
+{
+  "vocab_size": 8000,
+  "benchmark_metrics": {
+    "total_questions_audited": 240,
+    "average_input_tokens": 35.31666666666667,
+    "characters_per_token_ratio": 1.4556394525719678,
+    "unknown_token_count": 0,
+    "unknown_token_rate": 0.0
+  },
+  "term_tokenization_behavior": {
+    "MSFT": {
+      "token_ids": [
+        258,
+        77,
+        83,
+        70,
+        84
+      ],
+      "token_count": 5,
+      "decoded_reconstruction": "MSFT"
+    },
+    "https://example.com": {
+      "token_ids": [
+        258,
+        104,
+        116,
+        116,
+        112,
+        115,
+        58,
+        47,
+        47,
+        792,
+        358,
+        549,
+        46,
+        446
+      ],
+      "token_count": 14,
+      "decoded_reconstruction": "https://example.com"
+    },
+    "PyTorch 2.4": {
+      "token_ids": [
+        258,
+        80,
+        121,
+        84,
+        272,
+        99,
+        104,
+        32,
+        50,
+        46,
+        52
+      ],
+      "token_count": 11,
+      "decoded_reconstruction": "PyTorch 2.4"
+    },
+    "10,282,304": {
+      "token_ids": [
+        258,
+        49,
+        48,
+        44,
+        50,
+        56,
+        50,
+        44,
+        51,
+        48,
+        52
+      ],
+      "token_count": 11,
+      "decoded_reconstruction": "10,282,304"
+    },
+    "superposition": {
+      "token_ids": [
+        258,
+        365,
+        352,
+        813,
+        463,
+        267
+      ],
+      "token_count": 6,
+      "decoded_reconstruction": "superposition"
+    },
+    "Keir Starmer": {
+      "token_ids": [
+        258,
+        75,
+        101,
+        464,
+        32,
+        83,
+        783,
+        109,
+        266
+      ],
+      "token_count": 9,
+      "decoded_reconstruction": "Keir Starmer"
+    }
+  },
+  "findings": [
+    "Unknown token rate on benchmark is 0.00%.",
+    "Average input token length per question is 35.32 tokens.",
+    "BPETokenizer functions properly without corruption or high UNK rates.",
+    "Tokenization is clean and not a bottleneck for generation accuracy."
+  ]
+}

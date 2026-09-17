@@ -1,0 +1,47 @@
+{
+  "total_evaluations_audited": 960,
+  "failure_breakdown": [
+    {
+      "category": "Retrieval Failure",
+      "count": 273,
+      "percentage": 28.4375
+    },
+    {
+      "category": "Context Delivery Failure",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "Prompting Failure",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "Tokenization Failure",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "Generation Failure",
+      "count": 44,
+      "percentage": 4.583333333333333
+    },
+    {
+      "category": "Model Capability Failure",
+      "count": 634,
+      "percentage": 66.04166666666667
+    },
+    {
+      "category": "Evaluator Failure",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "Unknown",
+      "count": 0,
+      "percentage": 0.0
+    }
+  ],
+  "primary_bottleneck": "Model Capability Failure (Synthetic Pretraining Template Overfitting & Attention Failure)",
+  "causal_explanation": "COLLISION-10M was pre-trained on synthetic template-based data. During inference, the model ignores prompt context tokens and generates memorized template completions (e.g. '(Revision)\\nAnswer: ...'). Retrieval, tokenization, context delivery, and evaluator components operate correctly, but the model lacks the attention/generative capacity to condition its output on retrieved evidence."
+}

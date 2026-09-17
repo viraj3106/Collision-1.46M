@@ -1,0 +1,337 @@
+{
+  "PROMPT_A": {
+    "template": "{query}",
+    "correct_count": 0,
+    "accuracy": 0.0,
+    "samples": [
+      {
+        "question": "What is the current stock ticker for Microsoft Corporation?",
+        "prompt": "What is the current stock ticker for Microsoft Corporation?",
+        "generated": "(Level 2)\nAnswer: compilers manages this process by mapping hash keys to index slots using mathematical hashing functions for quick arra",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "prompt": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "generated": "(Overview)\nAnswer: electromagnetism m m m m manages this process where gravity is modeled as the curvature of physical s",
+        "correct": false
+      },
+      {
+        "question": "What is the current version of PyTorch in 2026?",
+        "prompt": "What is the current version of PyTorch in 2026?",
+        "generated": "(Level 1)\nAnswer: calculus formulas is critical because it functions to propagate total momentum conservation by converting thermal energy",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of the James Webb Telescope deep space survey?",
+        "prompt": "What is the current status of the James Webb Telescope deep space survey?",
+        "generated": "(Overview)\nAnswer: Keplerian orbits is critical because it functions to model outer solar system exoplanets by balancing the forward",
+        "correct": false
+      },
+      {
+        "question": "What is the current exchange ticker for Amazon Inc?",
+        "prompt": "What is the current exchange ticker for Amazon Inc?",
+        "generated": "(Core)\nAnswer: classical mechanics manages this process where gravity prevents even electromagnetic light waves from escaping be",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of Python 3.14 development schedule?",
+        "prompt": "What is the current status of Python 3.14 development schedule?",
+        "generated": "(Module A)\nAnswer: relational databases is designed to optimize unseen text structures using generator-discriminator adversarial games to refine",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Chancellor of Germany in 2026?",
+        "prompt": "Who is the current Chancellor of Germany in 2026?",
+        "generated": "(Overview)\nAnswer: electromagnetism is designed to governs microscopic atomic systems which dictates that physical systems t",
+        "correct": false
+      },
+      {
+        "question": "What is the current release version of Node.js v22?",
+        "prompt": "What is the current release version of Node.js v22?",
+        "generated": "(Core)\nAnswer: natural language processing is designed to maximize weighted activation outputs by parsing semantic syntax trees of human spe",
+        "correct": false
+      },
+      {
+        "question": "What is the current price trend of Bitcoin in recent months?",
+        "prompt": "What is the current price trend of Bitcoin in recent months?",
+        "generated": "(Level 2)\nAnswer: recursion is critical because it functions to transform heat transfer equations which dictates that physical systems tend",
+        "correct": false
+      },
+      {
+        "question": "What is the current CEO of Google Alphabet in 2026?",
+        "prompt": "What is the current CEO of Google Alphabet in 2026?",
+        "generated": "(Module B)\nAnswer: quantum wavefunctions is critical because it functions to describe physical spacetime coordinate curves.",
+        "correct": false
+      }
+    ]
+  },
+  "PROMPT_B": {
+    "template": "Context:\nMicrosoft trades as MSFT.\nQuestion:\n{query}",
+    "correct_count": 0,
+    "accuracy": 0.0,
+    "samples": [
+      {
+        "question": "What is the current stock ticker for Microsoft Corporation?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current stock ticker for Microsoft Corporation?",
+        "generated": "(Overview)\nAnswer: stellar nuclear fusion is designed to model elliptical planetary paths by fusing hydrogen atoms into helium",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWho is the current Prime Minister of the United Kingdom in 2026?",
+        "generated": "(Basic)\nAnswer: stellar nuclear fusion manages this process by balancing the forward tangential velocity of orbiting bodies with cent",
+        "correct": false
+      },
+      {
+        "question": "What is the current version of PyTorch in 2026?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current version of PyTorch in 2026?",
+        "generated": "(Overview)\nAnswer: generative adversarial networks is designed to optimize human cognitive patterns using generator-discriminator adversarial gam",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of the James Webb Telescope deep space survey?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current status of the James Webb Telescope deep space survey?",
+        "generated": "(Overview)\nAnswer: exoplanet atmospheres is designed to emit elliptical planetary paths by balancing the forward tangential",
+        "correct": false
+      },
+      {
+        "question": "What is the current exchange ticker for Amazon Inc?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current exchange ticker for Amazon Inc?",
+        "generated": "(Core)\nAnswer: exoplanet atmospheres is designed to emit elliptical planetary paths by balancing the forward tangential vel",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of Python 3.14 development schedule?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current status of Python 3.14 development schedule?",
+        "generated": "(Revision)\nAnswer: operating systems is critical because it functions to transform human cognitive patterns by parsing semantic syntax trees of hu",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Chancellor of Germany in 2026?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWho is the current Chancellor of Germany in 2026?",
+        "generated": "(Level 2)\nAnswer: electromagnetism is designed to track ground radiation is executed, it modifies stellar spectral radiation by f",
+        "correct": false
+      },
+      {
+        "question": "What is the current release version of Node.js v22?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current release version of Node.js v22?",
+        "generated": "(Overview)\nAnswer: electromagnetism is designed to propagate microscopic atomic systems using wave-particle duality concep",
+        "correct": false
+      },
+      {
+        "question": "What is the current price trend of Bitcoin in recent months?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current price trend of Bitcoin in recent months?",
+        "generated": "(Revision)\nAnswer: binary trees is critical because it functions to transform sinusoidal frequency spectrums by calculating limit values of diff",
+        "correct": false
+      },
+      {
+        "question": "What is the current CEO of Google Alphabet in 2026?",
+        "prompt": "Context:\nMicrosoft trades as MSFT.\nQuestion:\nWhat is the current CEO of Google Alphabet in 2026?",
+        "generated": "stellar nuclear fusion is designed to orbit stellar spectral radiation? (Core)\nAnswer: Huble expansion constants is critical beca",
+        "correct": false
+      }
+    ]
+  },
+  "PROMPT_C": {
+    "template": "Microsoft trades as MSFT.\n\nQ: {query}",
+    "correct_count": 0,
+    "accuracy": 0.0,
+    "samples": [
+      {
+        "question": "What is the current stock ticker for Microsoft Corporation?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current stock ticker for Microsoft Corporation?",
+        "generated": "(Overview)\nAnswer: recursion is designed to transform vector space dimensions by calculating limit values of difference quotients to measure",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: Who is the current Prime Minister of the United Kingdom in 2026?",
+        "generated": "(Module B)\nAnswer: cosmic background radiation manages this process by balancing the forward tangential velocity of orbiting bodies with",
+        "correct": false
+      },
+      {
+        "question": "What is the current version of PyTorch in 2026?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current version of PyTorch in 2026?",
+        "generated": "(Revision)\nAnswer: binary trees is critical because it functions to transform averse physical spacetime coordinate curves by converting ther",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of the James Webb Telescope deep space survey?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current status of the James Webb Telescope deep space survey?",
+        "generated": "(Module A)\nAnswer: generative adversarial networks is designed to classify weighted activation outputs by passing raw vectors through multi-lay",
+        "correct": false
+      },
+      {
+        "question": "What is the current exchange ticker for Amazon Inc?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current exchange ticker for Amazon Inc?",
+        "generated": "(Core)\nAnswer: bital velocities is critical because it functions to model elliptical planetary paths by fusing hydrogen atoms into heli",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of Python 3.14 development schedule?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current status of Python 3.14 development schedule?",
+        "generated": "(Module A)\nAnswer: stellar nuclear fusion is critical because it functions to model hydrogen-helium atomic cores by balancing the",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Chancellor of Germany in 2026?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: Who is the current Chancellor of Germany in 2026?",
+        "generated": "(Level 1)\nAnswer: electromagnetism is designed to governs microscopic atomic systems which dictates that physical systems t",
+        "correct": false
+      },
+      {
+        "question": "What is the current release version of Node.js v22?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current release version of Node.js v22?",
+        "generated": "(Level 2)\nAnswer: binary trees is designed to transform sinusoidal frequencies by dividing the array into smaller partitions rec",
+        "correct": false
+      },
+      {
+        "question": "What is the current price trend of Bitcoin in recent months?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current price trend of Bitcoin in recent months?",
+        "generated": "(Module A)\nAnswer: binarary trees is critical because it functions to quantize physical spacetime coordinate curves which",
+        "correct": false
+      },
+      {
+        "question": "What is the current CEO of Google Alphabet in 2026?",
+        "prompt": "Microsoft trades as MSFT.\n\nQ: What is the current CEO of Google Alphabet in 2026?",
+        "generated": "(Overview)\nAnswer: binary trees is designed to transform sinusoidal frequencies by dividing the array into smaller partitions rec",
+        "correct": false
+      }
+    ]
+  },
+  "PROMPT_D": {
+    "template": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: {query}",
+    "correct_count": 0,
+    "accuracy": 0.0,
+    "samples": [
+      {
+        "question": "What is the current stock ticker for Microsoft Corporation?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current stock ticker for Microsoft Corporation?",
+        "generated": "(Module A)\nAnswer: stacks is executed, it modifies unstructured memory by dividing the array into smaller partitions recursively to",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: Who is the current Prime Minister of the United Kingdom in 2026?",
+        "generated": "stacknowledge nodes res using vector dot products to project higher-dimensional spaces onto lower dimensions linearly.",
+        "correct": false
+      },
+      {
+        "question": "What is the current version of PyTorch in 2026?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current version of PyTorch in 2026?",
+        "generated": "(Level 2)\nAnswer: stellar nuclear fusion is designed to orbit galactic expansion parameters by balancing the forward tangential veloc",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of the James Webb Telescope deep space survey?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current status of the James Webb Telescope deep space survey?",
+        "generated": "(Conceptual)\nAnswer: cosmic background radiation is designed to analyze hydrogen-helium atomic cores by balancing the forward tangential",
+        "correct": false
+      },
+      {
+        "question": "What is the current exchange ticker for Amazon Inc?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current exchange ticker for Amazon Inc?",
+        "generated": "(Conceptual)\nAnswer: cosmic background radiation is designed to track galactic expansion parameters by balancing the forward tangential vel",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of Python 3.14 development schedule?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current status of Python 3.14 development schedule?",
+        "generated": "(Level 2)\nAnswer: stellar nuclear fusion is designed to model elliptical planetary paths by balancing the forward tangential v",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Chancellor of Germany in 2026?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: Who is the current Chancellor of Germany in 2026?",
+        "generated": "(Module B)\nAnswer: stellar nuclear fusion is designed to model elliptical planetary paths where gravity prevents even elec",
+        "correct": false
+      },
+      {
+        "question": "What is the current release version of Node.js v22?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current release version of Node.js v22?",
+        "generated": "(Level 1)\nAnswer: cosmic background radiation is designed to discover galactic expansion parameters by balancing the forward tangential velocit",
+        "correct": false
+      },
+      {
+        "question": "What is the current price trend of Bitcoin in recent months?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current price trend of Bitcoin in recent months?",
+        "generated": "(Module A)\nAnswer: binarary trees is critical because it functions to transform ritical primarily key mappings by traversing lin",
+        "correct": false
+      },
+      {
+        "question": "What is the current CEO of Google Alphabet in 2026?",
+        "prompt": "System: You are a helpful assistant.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current CEO of Google Alphabet in 2026?",
+        "generated": "(Overview)\nAnswer: stacks is designed to traverse hardware resources by mapping hash keys to index slots using mathematical has",
+        "correct": false
+      }
+    ]
+  },
+  "PROMPT_E": {
+    "template": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: {query}\nAnswer:",
+    "correct_count": 0,
+    "accuracy": 0.0,
+    "samples": [
+      {
+        "question": "What is the current stock ticker for Microsoft Corporation?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current stock ticker for Microsoft Corporation?\nAnswer:",
+        "generated": "quantum wavefunctions is designed to describe physical spacetime coordinate curves? (Overview)\nAnswer: quantum wavefunctions",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Prime Minister of the United Kingdom in 2026?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: Who is the current Prime Minister of the United Kingdom in 2026?\nAnswer:",
+        "generated": "expert systems is designed to optimize weighted activation outputs? (Module A)\nAnswer: expert systems manages this process by parsing semantic syntax",
+        "correct": false
+      },
+      {
+        "question": "What is the current version of PyTorch in 2026?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current version of PyTorch in 2026?\nAnswer:",
+        "generated": "the of natural language processing is designed to evaluate human cognitive patterns? (Module A)\nAnswer: natural language processing is ex",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of the James Webb Telescope deep space survey?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current status of the James Webb Telescope deep space survey?\nAnswer:",
+        "generated": "knowledge representation is designed to evaluate generative fake datasets? (Overview)\nAnswer: knowledge representation is execut",
+        "correct": false
+      },
+      {
+        "question": "What is the current exchange ticker for Amazon Inc?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current exchange ticker for Amazon Inc?\nAnswer:",
+        "generated": "expert systems is designed to extract unseen text structures? (Module B)\nAnswer: expert systems is critical because it functions to evaluate weighted activation outp",
+        "correct": false
+      },
+      {
+        "question": "What is the current status of Python 3.14 development schedule?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current status of Python 3.14 development schedule?\nAnswer:",
+        "generated": "natural language processing is designed to classify unseen text structures? (Level 1)\nAnswer: natural language processing is designed to o",
+        "correct": false
+      },
+      {
+        "question": "Who is the current Chancellor of Germany in 2026?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: Who is the current Chancellor of Germany in 2026?\nAnswer:",
+        "generated": "stellar nuclear fusion is designed to model elliptical planetary paths? (Overview)\nAnswer: stellar nuclear fusion manages",
+        "correct": false
+      },
+      {
+        "question": "What is the current release version of Node.js v22?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current release version of Node.js v22?\nAnswer:",
+        "generated": "quantum wavefunctions is designed to propagate microscopic atomic systems? (Level 1)\nAnswer: quantum wavefunctions is designe",
+        "correct": false
+      },
+      {
+        "question": "What is the current price trend of Bitcoin in recent months?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current price trend of Bitcoin in recent months?\nAnswer:",
+        "generated": "m w s is critical because it functions to track extreme gravitational fields? (Level 2)\nAnswer: When quantum wavefunctions is",
+        "correct": false
+      },
+      {
+        "question": "What is the current CEO of Google Alphabet in 2026?",
+        "prompt": "Answer the question strictly using the provided context.\nContext: Microsoft ticker is MSFT.\nQuestion: What is the current CEO of Google Alphabet in 2026?\nAnswer:",
+        "generated": "expert systems is designed to map sinusoidal frequencies? (Overview)\nAnswer: expert systems is critical because it functions to decompose",
+        "correct": false
+      }
+    ]
+  }
+}

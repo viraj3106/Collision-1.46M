@@ -1,0 +1,26 @@
+{
+  "production_config": {
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.9,
+    "max_tokens": 100,
+    "repetition_penalty": null,
+    "sampling_enabled": true,
+    "special_tokens": {
+      "BOS": "[BOS] (258)",
+      "EOS": "[EOS] (259)",
+      "PAD": "[PAD] (256)",
+      "UNK": "[UNK] (257)"
+    }
+  },
+  "decoding_experiments": {
+    "greedy_decoding_temp_0.0": "(Revision)\nAnswer: stellar nuclear fusion is designed to model elliptical planetary paths by fusing hydrogen atoms into helium under im",
+    "sampling_temp_0.7_topk_50": "(Overview)\nAnswer: exoplanet atmospheres is designed to analyze stellar spectral radiation by balancing the forward tangential velocit",
+    "sampling_temp_1.2_high_variance": "(Revision)\nAnswer: matrix multiplication is designed to random variable expectations which generalizes the properties of numbers divisible only by thems"
+  },
+  "findings": [
+    "Greedy decoding (temp=0.0) collapses into deterministic repetition of synthetic template tokens.",
+    "Sampling (temp=0.7) introduces word-level noise but maintains synthetic template structure.",
+    "Generation parameters (temp, top_k, top_p) are standard and non-pathological; the root cause is pre-trained model representation rather than decoding setup."
+  ]
+}
