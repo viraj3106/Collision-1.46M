@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "generation_timestamp": "2026-09-06T12:58:20.442363",
+  "files": [
+    {
+      "filename": "train.jsonl",
+      "sha256": "487b8ef657f3dd853c63ae6cffd225996d5fdbb5dbec2aeff5b4396eb5a786f8",
+      "record_count": 1200
+    },
+    {
+      "filename": "validation.jsonl",
+      "sha256": "1bcea71369645b3640ae78ab8229e787bb08e81fb79541e734b0a754d8ba3533",
+      "record_count": 200
+    },
+    {
+      "filename": "dataset_spec.json",
+      "sha256": "7624bcf47bc6a315cbcc0f34c20ef292664edba302c09cd6c017bed05bfa92f5",
+      "record_count": 1
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "j73a": [
+    {
+      "step": 20,
+      "total_loss": 6.3877,
+      "ce_loss": 6.3877,
+      "kl_loss": 0.0
+    },
+    {
+      "step": 40,
+      "total_loss": 5.4398,
+      "ce_loss": 5.4398,
+      "kl_loss": 0.0
+    },
+    {
+      "step": 60,
+      "total_loss": 4.075,
+      "ce_loss": 4.075,
+      "kl_loss": 0.0
+    },
+    {
+      "step": 63,
+      "total_loss": 4.334,
+      "ce_loss": 4.334,
+      "kl_loss": 0.0
+    }
+  ],
+  "j73b": [
+    {
+      "step": 20,
+      "total_loss": 5.9082,
+      "ce_loss": 5.8358,
+      "kl_loss": 0.7236
+    },
+    {
+      "step": 40,
+      "total_loss": 5.2591,
+      "ce_loss": 5.1435,
+      "kl_loss": 1.156
+    },
+    {
+      "step": 60,
+      "total_loss": 4.4493,
+      "ce_loss": 4.2874,
+      "kl_loss": 1.6194
+    },
+    {
+      "step": 63,
+      "total_loss": 4.5461,
+      "ce_loss": 4.3805,
+      "kl_loss": 1.657
+    }
+  ],
+  "j73c": [
+    {
+      "step": 20,
+      "total_loss": 6.7149,
+      "ce_loss": 6.6743,
+      "kl_loss": 0.8112
+    },
+    {
+      "step": 40,
+      "total_loss": 5.1748,
+      "ce_loss": 5.1176,
+      "kl_loss": 1.1439
+    },
+    {
+      "step": 60,
+      "total_loss": 4.4898,
+      "ce_loss": 4.4139,
+      "kl_loss": 1.5182
+    },
+    {
+      "step": 63,
+      "total_loss": 4.3014,
+      "ce_loss": 4.2081,
+      "kl_loss": 1.8652
+    }
+  ]
+}

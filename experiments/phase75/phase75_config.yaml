@@ -1,0 +1,58 @@
+# Phase 75 Configuration — Conversational Capability & Failure Analysis
+
+experiment:
+  phase: 75
+  name: "Conversational Capability & Failure Analysis"
+  research_question: "Did J74 actually learn conversation, or did it primarily learn conversational patterns?"
+  hypothesis: "Structured conversational fine-tuning improves multi-turn conversational behavior, but improvements may be limited by the underlying model capacity and training-data distribution."
+
+models:
+  baseline:
+    name: "COLLISION-10M"
+    checkpoint: "models/collision-10m/model.pt"
+    expected_sha256: "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  conversational:
+    name: "J74"
+    checkpoint: "experiments/phase74/checkpoints/collision_10m_conv_j74.pt"
+    fallback_checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73c.pt"
+  tokenizer_dir: "artifacts/tokenizer"
+
+dataset:
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  expected_records: 140
+  categories_count: 14
+
+generation:
+  seed: 42
+  temperature: 0.7
+  top_k: 40
+  top_p: 0.9
+  max_new_tokens: 120
+
+scoring_rubric:
+  scale_min: 0
+  scale_max: 4
+  dimensions:
+    - coherence
+    - relevance
+    - instruction_following
+    - context_retention
+    - repetition
+    - response_quality
+
+failure_taxonomy:
+  categories:
+    - CONTEXT_LOSS
+    - INSTRUCTION_FAILURE
+    - REPETITION
+    - FRAGMENTATION
+    - HALLUCINATION
+    - IRRELEVANCE
+    - PREMATURE_TERMINATION
+    - OVER_GENERATION
+    - TONE_DRIFT
+    - CONTRADICTION
+
+output:
+  results_json: "experiments/phase75/results/phase75_results.json"
+  report_markdown: "experiments/phase75/reports/PHASE75_REPORT.md"

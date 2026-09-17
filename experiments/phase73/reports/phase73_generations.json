@@ -1,0 +1,2043 @@
+[
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " critical because it functions to optimize unstructured memory ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 63,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " the sponse #1: Greenwich Mean Time (GMT",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " ced the due se to understand.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 30,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " ced, the purvely. Question: What happens when: ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 48,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " ced, the purvely. Question: What happens when n",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 48,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Artificial intelligence is",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " ced, the purvellanguage of enablanet en enon occurs ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 53,
+      "unique_token_ratio": 0.625,
+      "unigram_repetition": 0.375,
+      "bigram_repetition": 0.0968
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " nuclassical mechanics manage to conserve heat t",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 48,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " Par Paris.Response #: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 29,
+      "unique_token_ratio": 0.5714,
+      "unigram_repetition": 0.4286,
+      "bigram_repetition": 0.3
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " Ques What happens when natural language to pe ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 47,
+      "unique_token_ratio": 0.6562,
+      "unigram_repetition": 0.3438,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language processing ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 57,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language processing ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 57,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "The solar system consists of",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language processing ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 57,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": "edgravity prevents even electromagnetic light wav",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 49,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " Response #1: Road Ikey.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 24,
+      "unique_token_ratio": 0.8,
+      "unigram_repetition": 0.2,
+      "bigram_repetition": 0.0526
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " Res se se to due se and optimize garbage col",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 45,
+      "unique_token_ratio": 0.625,
+      "unigram_repetition": 0.375,
+      "bigram_repetition": 0.1613
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "ed oplan oplan optimosp  op optimo   ",
+    "labels": [
+      "REPETITIVE",
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 37,
+      "unique_token_ratio": 0.2812,
+      "unigram_repetition": 0.7188,
+      "bigram_repetition": 0.5484
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "ed oplan optimos optimize  d se peech to understand",
+    "labels": [
+      "REPETITIVE",
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 51,
+      "unique_token_ratio": 0.5,
+      "unigram_repetition": 0.5,
+      "bigram_repetition": 0.1935
+    }
+  },
+  {
+    "category": "general_knowledge",
+    "prompt": "Photosynthesis is the process by which",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "ed oplan optimos optimize   paths by energ",
+    "labels": [
+      "REPETITIVE",
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 42,
+      "unique_token_ratio": 0.5,
+      "unigram_repetition": 0.5,
+      "bigram_repetition": 0.2581
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This behavior has been verified mathematically.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 48,
+      "unique_token_ratio": 0.6786,
+      "unigram_repetition": 0.3214,
+      "bigram_repetition": 0.0741
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris. Mean TTT) sol the car ",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 42,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain what computer RAM does in simple terms.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This remains a cornerstone of research.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.7619,
+      "unigram_repetition": 0.2381,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #: Pythonse of Paris.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 30,
+      "unique_token_ratio": 0.7143,
+      "unigram_repetition": 0.2857,
+      "bigram_repetition": 0.15
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain the concept of gravity to a high school student.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This remains a cornerstone of research.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.7619,
+      "unigram_repetition": 0.2381,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #: P2: s caris.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 24,
+      "unique_token_ratio": 0.7895,
+      "unigram_repetition": 0.2105,
+      "bigram_repetition": 0.0556
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language to p",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 50,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language processing ",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 57,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " Question: Why is natural language processing critical for",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 58,
+      "unique_token_ratio": 0.7812,
+      "unigram_repetition": 0.2188,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "explanation",
+    "prompt": "Explain how vaccines prepare the immune system.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " Question: What happens when natural language processing ",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 57,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "KNOWLEDGE_FAILURE",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "List 3 major benefits of exercise.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This remains a cornerstone of research.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.7619,
+      "unigram_repetition": 0.2381,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "KNOWLEDGE_FAILURE",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Summarize the main goal of machine learning in one sentence.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This remains a cornerstone of research.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.7619,
+      "unigram_repetition": 0.2381,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "KNOWLEDGE_FAILURE",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " Question: What happens when Response to se se se ",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 50,
+      "unique_token_ratio": 0.5625,
+      "unigram_repetition": 0.4375,
+      "bigram_repetition": 0.1613
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " Question:: What happens when: natural language process",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 55,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0323
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " Question:?ResponIndeed, the deonde se opon",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 43,
+      "unique_token_ratio": 0.6129,
+      "unigram_repetition": 0.3871,
+      "bigram_repetition": 0.1
+    }
+  },
+  {
+    "category": "instruction_following",
+    "prompt": "Write a 3-step guide for making tea.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " Question:?ResponIndeed, the de se se op o",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 42,
+      "unique_token_ratio": 0.6129,
+      "unigram_repetition": 0.3871,
+      "bigram_repetition": 0.1333
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " This remains a cornerstone of research.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.7619,
+      "unigram_repetition": 0.2381,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #: #: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 21,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.2
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Define the time complexity of binary search.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Revision)\nAnswer: relational databases is critical bec",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 56,
+      "unique_token_ratio": 0.7812,
+      "unigram_repetition": 0.2188,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #11: Wilkeys with P13: s Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0968
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response Indeed, the devel of recursion is to",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 45,
+      "unique_token_ratio": 0.7097,
+      "unigram_repetition": 0.2903,
+      "bigram_repetition": 0.0333
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the de pon popop se of  ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 39,
+      "unique_token_ratio": 0.5172,
+      "unigram_repetition": 0.4828,
+      "bigram_repetition": 0.1071
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the de pon pon isill defin",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 41,
+      "unique_token_ratio": 0.5484,
+      "unigram_repetition": 0.4516,
+      "bigram_repetition": 0.2333
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "What is a primary key in a relational database?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the de pon pon isill prim",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.5484,
+      "unigram_repetition": 0.4516,
+      "bigram_repetition": 0.2333
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #: #: Paris.",
+    "labels": [
+      "INSTRUCTION_FOLLOWING",
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 21,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.2
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "technical",
+    "prompt": "Explain the purpose of an API interface.",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 0,
+      "unique_token_ratio": 0.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " it functions to classify unseen text structures using generator-discr",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 70,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " with Response #1: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 25,
+      "unique_token_ratio": 0.8235,
+      "unigram_repetition": 0.1765,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " it is d to e se se pe se peech to understand conversation",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 58,
+      "unique_token_ratio": 0.4375,
+      "unigram_repetition": 0.5625,
+      "bigram_repetition": 0.2903
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " it se to ponse pe paths.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 25,
+      "unique_token_ratio": 0.5789,
+      "unigram_repetition": 0.4211,
+      "bigram_repetition": 0.1667
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " it se to pe se paths.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 22,
+      "unique_token_ratio": 0.5882,
+      "unigram_repetition": 0.4118,
+      "bigram_repetition": 0.1875
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "In modern computing systems, CPU architecture plays a key role because",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " it se to pe se paths.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 22,
+      "unique_token_ratio": 0.5882,
+      "unigram_repetition": 0.4118,
+      "bigram_repetition": 0.1875
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " learning attempts to optimize unlabeled training points? (Revision)\nAns",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 72,
+      "unique_token_ratio": 0.75,
+      "unigram_repetition": 0.25,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " Response #1: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 20,
+      "unique_token_ratio": 0.8667,
+      "unigram_repetition": 0.1333,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " learning is due to optim cros y and energy dy ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 47,
+      "unique_token_ratio": 0.5938,
+      "unigram_repetition": 0.4062,
+      "bigram_repetition": 0.0968
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " learning att pled to understand.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 33,
+      "unique_token_ratio": 0.6923,
+      "unigram_repetition": 0.3077,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " learning att presse to optimize unseen text structures.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 56,
+      "unique_token_ratio": 0.6538,
+      "unigram_repetition": 0.3462,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "When developing scalable web applications, engineers must ensure that",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " learning att presse to optimize unseen text structures.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 56,
+      "unique_token_ratio": 0.6538,
+      "unigram_repetition": 0.3462,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " defined as a system designed to track extreme gr",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 49,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": " Pare.Response ##: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 25,
+      "unique_token_ratio": 0.7222,
+      "unigram_repetition": 0.2778,
+      "bigram_repetition": 0.0588
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " due se se se of op se se of en en en en en ",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 44,
+      "unique_token_ratio": 0.2812,
+      "unigram_repetition": 0.7188,
+      "bigram_repetition": 0.5806
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": " due opon omous s oidal sine and cosine frequen",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 47,
+      "unique_token_ratio": 0.5625,
+      "unigram_repetition": 0.4375,
+      "bigram_repetition": 0.1613
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " due se se opse opse of op op op se en ",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 39,
+      "unique_token_ratio": 0.2812,
+      "unigram_repetition": 0.7188,
+      "bigram_repetition": 0.5484
+    }
+  },
+  {
+    "category": "completion",
+    "prompt": "The primary objective of statistical data analysis is to",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " due se se opse opse opse op se op se p",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 39,
+      "unique_token_ratio": 0.2188,
+      "unigram_repetition": 0.7812,
+      "bigram_repetition": 0.6452
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Overview)\nAnswer: electromagnetism m m ",
+    "labels": [
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 41,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0968
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response Inde se se of hat is due to ten ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 41,
+      "unique_token_ratio": 0.5806,
+      "unigram_repetition": 0.4194,
+      "bigram_repetition": 0.1333
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "Response Indeed, the de se            ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.4194,
+      "unigram_repetition": 0.5806,
+      "bigram_repetition": 0.4
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "Response Indeed, the de se op op op op",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.4516,
+      "unigram_repetition": 0.5484,
+      "bigram_repetition": 0.3333
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Hello! How can you help me today?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "Response Indeed, the de se            ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.4194,
+      "unigram_repetition": 0.5806,
+      "bigram_repetition": 0.4
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Revision)\nAnswer: stellar nuclear fusion manages",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 50,
+      "unique_token_ratio": 0.8125,
+      "unigram_repetition": 0.1875,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Wilkey Road wa is an #: c",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.6875,
+      "unigram_repetition": 0.3125,
+      "bigram_repetition": 0.0645
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response Inde se se de to heat travers t",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 40,
+      "unique_token_ratio": 0.5806,
+      "unigram_repetition": 0.4194,
+      "bigram_repetition": 0.2
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the development of        ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 41,
+      "unique_token_ratio": 0.5484,
+      "unigram_repetition": 0.4516,
+      "bigram_repetition": 0.2333
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the development of    en en ",
+    "labels": [
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 43,
+      "unique_token_ratio": 0.5806,
+      "unigram_repetition": 0.4194,
+      "bigram_repetition": 0.1667
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "Can you assist me with a quick question?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the development of      en ",
+    "labels": [
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 42,
+      "unique_token_ratio": 0.5806,
+      "unigram_repetition": 0.4194,
+      "bigram_repetition": 0.1667
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Revision)\nAnswer: When neural networks is executed, it mod",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 60,
+      "unique_token_ratio": 0.7812,
+      "unigram_repetition": 0.2188,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response onse and d se se has en en to en en en en",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 50,
+      "unique_token_ratio": 0.3438,
+      "unigram_repetition": 0.6562,
+      "bigram_repetition": 0.4516
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "Response Indeed, the de opon op omenon occurs",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 45,
+      "unique_token_ratio": 0.5484,
+      "unigram_repetition": 0.4516,
+      "bigram_repetition": 0.2
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "Response Indeed, the development of en en en ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 45,
+      "unique_token_ratio": 0.6129,
+      "unigram_repetition": 0.3871,
+      "bigram_repetition": 0.1667
+    }
+  },
+  {
+    "category": "conversational",
+    "prompt": "What kind of tasks are you designed to perform?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "Response Indeed, the de se            ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.4194,
+      "unigram_repetition": 0.5806,
+      "bigram_repetition": 0.4
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " devector spaces is executed, it modifies vector",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 48,
+      "unique_token_ratio": 0.625,
+      "unigram_repetition": 0.375,
+      "bigram_repetition": 0.129
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Ropondue #13: Pythenergythenergy sources car",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 44,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.1613
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response andard optimize garbage collection th.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 47,
+      "unique_token_ratio": 0.7931,
+      "unigram_repetition": 0.2069,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": ": pl                            ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 32,
+      "unique_token_ratio": 0.125,
+      "unigram_repetition": 0.875,
+      "bigram_repetition": 0.8387
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " planage plane poptimize primary key mapping",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 44,
+      "unique_token_ratio": 0.5484,
+      "unigram_repetition": 0.4516,
+      "bigram_repetition": 0.2
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If all mammals breathe air, and a dolphin is a mammal, what follows?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " pl pl paths is pace optim      o pp",
+    "labels": [
+      "REPETITIVE",
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 36,
+      "unique_token_ratio": 0.3438,
+      "unigram_repetition": 0.6562,
+      "bigram_repetition": 0.3871
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Overview)\nAnswer: electromagnetism m m ",
+    "labels": [
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 41,
+      "unique_token_ratio": 0.7188,
+      "unigram_repetition": 0.2812,
+      "bigram_repetition": 0.0968
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #2Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 17,
+      "unique_token_ratio": 1.0,
+      "unigram_repetition": 0.0,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": " pic                            ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 32,
+      "unique_token_ratio": 0.125,
+      "unigram_repetition": 0.875,
+      "bigram_repetition": 0.8387
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "                                ",
+    "labels": [
+      "EMPTY"
+    ],
+    "metrics": {
+      "length": 32,
+      "unique_token_ratio": 0.0312,
+      "unigram_repetition": 0.9688,
+      "bigram_repetition": 0.9677
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": " pic)\nAnswer:                    ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 33,
+      "unique_token_ratio": 0.375,
+      "unigram_repetition": 0.625,
+      "bigram_repetition": 0.5806
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "If A is larger than B, and B is larger than C, how does A compare to C?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": " pic)\nAnswer:                    ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 33,
+      "unique_token_ratio": 0.375,
+      "unigram_repetition": 0.625,
+      "bigram_repetition": 0.5806
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "baseline",
+    "temperature": 0.0,
+    "response": " (Revision)\nAnswer: relational databases is critical bec",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 56,
+      "unique_token_ratio": 0.7812,
+      "unigram_repetition": 0.2188,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "j52",
+    "temperature": 0.0,
+    "response": "Response #1: Paris.",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 19,
+      "unique_token_ratio": 0.9286,
+      "unigram_repetition": 0.0714,
+      "bigram_repetition": 0.0
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "j71",
+    "temperature": 0.0,
+    "response": "Response are onse ponse of en en en en en en en en",
+    "labels": [
+      "REPETITIVE"
+    ],
+    "metrics": {
+      "length": 50,
+      "unique_token_ratio": 0.2812,
+      "unigram_repetition": 0.7188,
+      "bigram_repetition": 0.5806
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "j73a",
+    "temperature": 0.0,
+    "response": "Responon Indeed, the developl         ",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 38,
+      "unique_token_ratio": 0.5161,
+      "unigram_repetition": 0.4839,
+      "bigram_repetition": 0.2667
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "j73b",
+    "temperature": 0.0,
+    "response": "Responon Indeed, the developlanet en enon en",
+    "labels": [
+      "COHERENT"
+    ],
+    "metrics": {
+      "length": 44,
+      "unique_token_ratio": 0.6129,
+      "unigram_repetition": 0.3871,
+      "bigram_repetition": 0.1333
+    }
+  },
+  {
+    "category": "reasoning",
+    "prompt": "A train travels 60 miles in 1 hour. What is its average speed?",
+    "model": "j73c",
+    "temperature": 0.0,
+    "response": "Respon Indeed, the de se op op  op op",
+    "labels": [
+      "REPETITIVE",
+      "FRAGMENTED"
+    ],
+    "metrics": {
+      "length": 37,
+      "unique_token_ratio": 0.4516,
+      "unigram_repetition": 0.5484,
+      "bigram_repetition": 0.3
+    }
+  }
+]

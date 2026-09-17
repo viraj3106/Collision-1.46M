@@ -1,0 +1,12 @@
+batch_size: 1
+dataset: collision_sft_v3
+grad_clip: 1.0
+learning_rate: 2.0e-05
+model_architecture: COLLISION-10M (6 layers, d_model=384, 8 heads, d_ff=768)
+optimizer: AdamW
+parameter_count: 10282304
+random_seed: 42
+starting_checkpoint: V:\collision - 1M\models\collision-10m\model.pt
+target_checkpoint: V:\collision - 1M\experiments\phase71\checkpoints\collision_10m_capability_j71.pt
+training_steps: 100
+weight_decay: 0.01

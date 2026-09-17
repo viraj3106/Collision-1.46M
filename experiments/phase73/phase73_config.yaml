@@ -1,0 +1,40 @@
+# Phase 73 Configuration — Controlled SFT Objective Repair
+
+model:
+  prod_checkpoint: "models/collision-10m/model.pt"
+  j52_checkpoint: "experiments/phase52/checkpoints/collision_10m_sft_j52.pt"
+  j71_checkpoint: "experiments/phase71/checkpoints/collision_10m_capability_j71.pt"
+  expected_sha256: "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  tokenizer_dir: "artifacts/tokenizer"
+
+dataset:
+  sft_dir: "data/instructions/collision_sft_v3"
+  train_file: "train.jsonl"
+  val_file: "validation.jsonl"
+
+training:
+  seed: 42
+  batch_size: 8
+  gradient_accumulation_steps: 2
+  learning_rate: 1.0e-5
+  epochs: 1
+  warmup_steps: 20
+  max_grad_norm: 1.0
+  max_seq_len: 256
+
+experiments:
+  j73a:
+    name: "J73-A — Response-Only Loss"
+    response_only: true
+    kl_weight: 0.0
+    checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73a.pt"
+  j73b:
+    name: "J73-B — Response Loss + KL"
+    response_only: true
+    kl_weight: 0.1
+    checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73b.pt"
+  j73c:
+    name: "J73-C — Primary Candidate"
+    response_only: true
+    kl_weight: 0.05
+    checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73c.pt"

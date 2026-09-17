@@ -1,0 +1,40 @@
+{
+  "dataset_name": "collision_conversation_v1",
+  "total_conversations": 1400,
+  "train_conversations": 1200,
+  "validation_conversations": 200,
+  "train_val_id_overlap": 0,
+  "total_turns": 2380,
+  "avg_turns_per_conversation": 1.7,
+  "min_turns": 1,
+  "max_turns": 3,
+  "avg_user_turn_length_chars": 49.59,
+  "avg_assistant_turn_length_chars": 80.35,
+  "exact_duplicate_prompts": 0,
+  "duplicate_rate": 0.0,
+  "context_dependent_conversation_rate": 1.0,
+  "category_distribution": {
+    "topic_changes": 87,
+    "technical_conversations": 88,
+    "context_dependent_questions": 87,
+    "clarification_requests": 88,
+    "general_question_answering": 88,
+    "follow_up_questions": 88,
+    "casual_conversation": 88,
+    "i_dont_know_scenarios": 87,
+    "explanations": 88,
+    "reasoning_conversations": 87,
+    "detailed_answers": 87,
+    "short_answers": 87,
+    "multi_turn_conversations": 88,
+    "friendly_acknowledgements": 87,
+    "corrections": 87,
+    "ambiguous_questions": 88
+  },
+  "tokenizer_metrics": {
+    "total_tokens_audited": 224676,
+    "unknown_token_rate": 0.0,
+    "token_fragmentation_ratio": 0.6472,
+    "avg_tokens_per_conversation": 160.48
+  }
+}

@@ -1,0 +1,52 @@
+# Phase 76 Configuration — Context & Loss Calibration Experiment
+
+experiment:
+  phase: 76
+  name: "Context & Loss Calibration Experiment"
+  research_question: "Can conversational degradation be reduced by calibrating context handling and loss allocation without increasing the model's parameter count?"
+
+models:
+  baseline:
+    name: "COLLISION-10M"
+    checkpoint: "models/collision-10m/model.pt"
+    expected_sha256: "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  historical_j74:
+    name: "J74"
+    checkpoint: "experiments/phase74/checkpoints/collision_10m_conv_j74.pt"
+    fallback_checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73c.pt"
+  tokenizer_dir: "artifacts/tokenizer"
+
+dataset:
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  training_dataset: "collision_conversation_v1"
+  training_spec_path: "experiments/phase74/dataset_spec.json"
+
+context_stress_test:
+  eval_lengths: [32, 64, 96, 128, 160, 192, 256, 384]
+
+loss_configurations:
+  B0:
+    name: "J76-B0 (Response Only)"
+    alpha: 0.00
+    beta: 1.00
+  B1:
+    name: "J76-B1 (10% Context / 90% Response)"
+    alpha: 0.10
+    beta: 0.90
+  B2:
+    name: "J76-B2 (20% Context / 80% Response)"
+    alpha: 0.20
+    beta: 0.80
+
+training:
+  seed: 42
+  batch_size: 8
+  learning_rate: 1.0e-5
+  epochs: 1
+  max_seq_len: 256
+  j76_b_checkpoint: "experiments/phase76/checkpoints/collision_10m_calib_j76b.pt"
+  j76_c_checkpoint: "experiments/phase76/checkpoints/collision_10m_calib_j76c.pt"
+
+output:
+  results_json: "experiments/phase76/results/phase76_results.json"
+  report_markdown: "experiments/phase76/reports/phase76_report.md"

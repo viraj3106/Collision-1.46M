@@ -1,0 +1,128 @@
+{
+  "baseline": {
+    "overall_capability": 0.61,
+    "coherence": 0.8095,
+    "instruction_following": 0.2381,
+    "unique_token_ratio": 0.6691,
+    "unigram_repetition": 0.2357,
+    "bigram_repetition": 0.022,
+    "avg_response_length": 45.29,
+    "empty_rate": 0.0952,
+    "fragmented_rate": 0.0952,
+    "repetitive_rate": 0.0,
+    "category_scores": {
+      "general_knowledge": 0.5,
+      "explanation": 1.0,
+      "instruction_following": 0.6667,
+      "technical": 0.3333,
+      "completion": 0.5,
+      "conversational": 0.3333,
+      "reasoning": 0.3333
+    }
+  },
+  "j52": {
+    "overall_capability": 0.7174,
+    "coherence": 1.0,
+    "instruction_following": 0.1905,
+    "unique_token_ratio": 0.8013,
+    "unigram_repetition": 0.1987,
+    "bigram_repetition": 0.0653,
+    "avg_response_length": 26.38,
+    "empty_rate": 0.0,
+    "fragmented_rate": 0.0,
+    "repetitive_rate": 0.0,
+    "category_scores": {
+      "general_knowledge": 0.5,
+      "explanation": 1.0,
+      "instruction_following": 0.5,
+      "technical": 0.6667,
+      "completion": 0.5,
+      "conversational": 0.5,
+      "reasoning": 0.5
+    }
+  },
+  "j71": {
+    "overall_capability": 0.3664,
+    "coherence": 0.5238,
+    "instruction_following": 0.0952,
+    "unique_token_ratio": 0.3798,
+    "unigram_repetition": 0.3345,
+    "bigram_repetition": 0.1695,
+    "avg_response_length": 32.19,
+    "empty_rate": 0.2857,
+    "fragmented_rate": 0.0,
+    "repetitive_rate": 0.1905,
+    "category_scores": {
+      "general_knowledge": 0.5,
+      "explanation": 0.3333,
+      "instruction_following": 0.3333,
+      "technical": 0.1667,
+      "completion": 0.1667,
+      "conversational": 0.3333,
+      "reasoning": 0.3333
+    }
+  },
+  "j73a": {
+    "overall_capability": 0.3873,
+    "coherence": 0.5714,
+    "instruction_following": 0.0952,
+    "unique_token_ratio": 0.365,
+    "unigram_repetition": 0.3493,
+    "bigram_repetition": 0.1883,
+    "avg_response_length": 29.71,
+    "empty_rate": 0.3333,
+    "fragmented_rate": 0.0476,
+    "repetitive_rate": 0.0952,
+    "category_scores": {
+      "general_knowledge": 0.3333,
+      "explanation": 0.3333,
+      "instruction_following": 0.3333,
+      "technical": 0.1667,
+      "completion": 0.5,
+      "conversational": 0.3333,
+      "reasoning": 0.3333
+    }
+  },
+  "j73b": {
+    "overall_capability": 0.3487,
+    "coherence": 0.4762,
+    "instruction_following": 0.0952,
+    "unique_token_ratio": 0.4103,
+    "unigram_repetition": 0.304,
+    "bigram_repetition": 0.1354,
+    "avg_response_length": 31.52,
+    "empty_rate": 0.2857,
+    "fragmented_rate": 0.0952,
+    "repetitive_rate": 0.1905,
+    "category_scores": {
+      "general_knowledge": 0.3333,
+      "explanation": 0.3333,
+      "instruction_following": 0.3333,
+      "technical": 0.0,
+      "completion": 0.3333,
+      "conversational": 0.1667,
+      "reasoning": 0.5
+    }
+  },
+  "j73c": {
+    "overall_capability": 0.3169,
+    "coherence": 0.4286,
+    "instruction_following": 0.0952,
+    "unique_token_ratio": 0.3702,
+    "unigram_repetition": 0.3441,
+    "bigram_repetition": 0.1804,
+    "avg_response_length": 30.1,
+    "empty_rate": 0.2857,
+    "fragmented_rate": 0.1905,
+    "repetitive_rate": 0.2381,
+    "category_scores": {
+      "general_knowledge": 0.3333,
+      "explanation": 0.3333,
+      "instruction_following": 0.3333,
+      "technical": 0.0,
+      "completion": 0.3333,
+      "conversational": 0.3333,
+      "reasoning": 0.1667
+    }
+  }
+}

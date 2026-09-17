@@ -1,0 +1,41 @@
+# Phase 74 Configuration — Conversational Foundation Experiment
+
+model:
+  prod_checkpoint: "models/collision-10m/model.pt"
+  j71_checkpoint: "experiments/phase71/checkpoints/collision_10m_capability_j71.pt"
+  j73c_checkpoint: "experiments/phase73/checkpoints/collision_10m_sft_j73c.pt"
+  expected_sha256: "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  tokenizer_dir: "artifacts/tokenizer"
+
+dataset:
+  name: "collision_conversation_v1"
+  spec_path: "experiments/phase74/dataset_spec.json"
+  train_records: 1200
+  val_records: 200
+
+training:
+  seed: 42
+  batch_size: 8
+  learning_rate: 1.0e-5
+  epochs: 1
+  kl_weight: 0.05
+  max_grad_norm: 1.0
+  max_seq_len: 256
+  candidate_checkpoint: "experiments/phase74/checkpoints/collision_10m_conv_j74.pt"
+
+evaluation:
+  benchmark_categories:
+    - casual_conversation
+    - context_retention
+    - follow_up_understanding
+    - explanation
+    - instruction_following
+    - technical_conversation
+    - topic_switching
+    - clarification
+    - ambiguity
+    - short_response_control
+    - long_response_control
+    - consistency
+    - repetition_resistance
+    - conversational_naturalness

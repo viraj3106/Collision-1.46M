@@ -1,0 +1,42 @@
+{
+  "candidate": "Model_J71_Phase71",
+  "target_checkpoint": "V:\\collision - 1M\\experiments\\phase71\\checkpoints\\collision_10m_capability_j71.pt",
+  "sha256": "04867246c0b5b6bdbc27fb5091dc28bf5b005682a7415782fd4da9a1282744dc",
+  "total_steps": 100,
+  "elapsed_sec": 19.77,
+  "final_train_loss": 3.704115,
+  "final_val_loss": 3.445221,
+  "best_val_loss": 3.445221,
+  "training_logs": [
+    {
+      "step": 20,
+      "train_loss": 6.928734,
+      "val_loss": 5.982991,
+      "grad_norm": 30.6126
+    },
+    {
+      "step": 40,
+      "train_loss": 4.710692,
+      "val_loss": 5.048532,
+      "grad_norm": 12.4487
+    },
+    {
+      "step": 60,
+      "train_loss": 4.220342,
+      "val_loss": 4.129721,
+      "grad_norm": 7.4471
+    },
+    {
+      "step": 80,
+      "train_loss": 4.306646,
+      "val_loss": 4.704174,
+      "grad_norm": 12.4161
+    },
+    {
+      "step": 100,
+      "train_loss": 3.704115,
+      "val_loss": 3.445221,
+      "grad_norm": 7.6701
+    }
+  ]
+}
