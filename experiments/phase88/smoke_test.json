@@ -1,0 +1,482 @@
+[
+  {
+    "question": "What is the current stock ticker for Microsoft Corporation?",
+    "category": "CURRENT_INFORMATION",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: electromagnetism is designed to governs microscopic atomic systems where gravity is modeled as the",
+    "answer_length": 117,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker for Microsoft Corporation?",
+    "category": "CURRENT_INFORMATION",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Standard)\nAnswer: quantum wavefunctions is designed to conserve physical spacetime coordinate curves by converting thermal ener",
+    "answer_length": 128,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker for Microsoft Corporation?",
+    "category": "CURRENT_INFORMATION",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": true,
+    "generated_answer": "(Revision)\nAnswer: sorting algorithms is designed to resolve Worst-case runtimes by dividing the array into smaller partitions recursively",
+    "answer_length": 138,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker for Microsoft Corporation?",
+    "category": "CURRENT_INFORMATION",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Level 2)\nAnswer: expert systems is critical because it functions to optimize unstructured memory by dividing the array into smaller partitions",
+    "answer_length": 143,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What were the major announcements at yesterday's global tech press conference?",
+    "category": "RECENT_NEWS_EVENTS",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Review)\nAnswer: neural networks is critical because it functions to evaluate digital image segments through reinforcement learning policies where agents",
+    "answer_length": 153,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What were the major announcements at yesterday's global tech press conference?",
+    "category": "RECENT_NEWS_EVENTS",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Revision)\nAnswer: exoplanet atmospheres is critical because it functions to analyze galactic expansion parameters by balancing the forward tangential",
+    "answer_length": 150,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What were the major announcements at yesterday's global tech press conference?",
+    "category": "RECENT_NEWS_EVENTS",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Level 2)\nAnswer: natural language processing is designed to evaluate digital image segments by parsing semantic syntax trees of",
+    "answer_length": 128,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What were the major announcements at yesterday's global tech press conference?",
+    "category": "RECENT_NEWS_EVENTS",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Module A)\nAnswer: When execut electromagnetism is executed, it modifies heat transfer equations using wave-particle dualit",
+    "answer_length": 123,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the capital city of Japan?",
+    "category": "WEB_VERIFIABLE_FACTS",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: exoplanet atmospheres is designed to fuse stellar spectral radiation by fusing hydrogen atoms into helium under",
+    "answer_length": 130,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the capital city of Japan?",
+    "category": "WEB_VERIFIABLE_FACTS",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Module A)\nAnswer: When computer vision is critical because it functions to curves probability wave distributions where gravity is modeled as the c",
+    "answer_length": 147,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the capital city of Japan?",
+    "category": "WEB_VERIFIABLE_FACTS",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Core)\nAnswer: When stellar nuclear fusion is designed to expand outer solar system exoplanets by balancing the forward tangen",
+    "answer_length": 126,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the capital city of Japan?",
+    "category": "WEB_VERIFIABLE_FACTS",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Review)\nAnswer: generative adversarial networks is critical because it functions to classify generative fake datasets by parsing semantic synta",
+    "answer_length": 144,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "How do you create a dictionary comprehension in Python?",
+    "category": "PROGRAMMING_SOFTWARE",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Core)\nAnswer: overfitting anomalies malies manages this process by calculating limit values of difference quotients to measure instantaneous r",
+    "answer_length": 143,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "How do you create a dictionary comprehension in Python?",
+    "category": "PROGRAMMING_SOFTWARE",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Core)\nAnswer: When a exploration is executed, it modifies reinforcement reward policies by parsing semantic syntax trees of hum",
+    "answer_length": 128,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "How do you create a dictionary comprehension in Python?",
+    "category": "PROGRAMMING_SOFTWARE",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Review)\nAnswer: generative adversarial networks manages this process by passing raw vectors through multi-layered activation networks to capture high-",
+    "answer_length": 151,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "How do you create a dictionary comprehension in Python?",
+    "category": "PROGRAMMING_SOFTWARE",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Level 2)\nAnswer: sorting algorithms manages this process by mapping hash keys to index slots using mathematical hashing functions for quick arra",
+    "answer_length": 145,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is Heisenberg Uncertainty Principle?",
+    "category": "SCIENCE_TECHNICAL",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: Fourier transforms is critical because it functions to transform random variable expectations by calculating limit values of differ",
+    "answer_length": 150,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is Heisenberg Uncertainty Principle?",
+    "category": "SCIENCE_TECHNICAL",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Level 2)\nAnswer: When elational eloc is critical futies is executed, it modifies elliptical planetary paths where grav",
+    "answer_length": 119,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is Heisenberg Uncertainty Principle?",
+    "category": "SCIENCE_TECHNICAL",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: Fourier transforms is critical because it functions to propagate total momentum conservation using wave-particle",
+    "answer_length": 131,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is Heisenberg Uncertainty Principle?",
+    "category": "SCIENCE_TECHNICAL",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: hash tables is executed, it modifies unstructured memory by mapping hash keys to index slots using mathematical",
+    "answer_length": 130,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "category": "STABLE_GENERAL_KNOWLEDGE",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "vision)\nAnswer: neural networks is designed to maximize generative fake datasets by parsing semantic syntax trees of human speech to understand conversational",
+    "answer_length": 158,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "category": "STABLE_GENERAL_KNOWLEDGE",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "A)\nAnswer: neural networks is designed to evaluate unseen text structures by parsing semantic syntax trees of human speech to understand conversational",
+    "answer_length": 151,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "category": "STABLE_GENERAL_KNOWLEDGE",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: expert systems is critical because it functions to adjust unlabeled training points by splitting dataset nodes recursively to maximize information gain",
+    "answer_length": 170,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "category": "STABLE_GENERAL_KNOWLEDGE",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "A)\nAnswer: When electromagnetism is executed, it modifies physical spacetime coordinate curves where gravity is modeled",
+    "answer_length": 119,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is 25 multiplied by 4?",
+    "category": "MATH_REASONING",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: matrix multiplication is critical because it functions to generalize linear matrix mappings using vector dot products to proj",
+    "answer_length": 144,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is 25 multiplied by 4?",
+    "category": "MATH_REASONING",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Revision)\nAnswer: validation splits is critical because it functions to adjust information gain statistics by calculating gradients of loss functions and updating weight parameters",
+    "answer_length": 181,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is 25 multiplied by 4?",
+    "category": "MATH_REASONING",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: matrix multiplication is critical because it functions to transform vector space dimensions using vector dot products to proj",
+    "answer_length": 144,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is 25 multiplied by 4?",
+    "category": "MATH_REASONING",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: matrix multiplication is critical because it functions to map continuous accumulation rates by calculating limit values of difference quo",
+    "answer_length": 156,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the meaning of machine learning?",
+    "category": "AMBIGUOUS_QUESTIONS",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Standard)\nAnswer: neural networks is designed to evaluate weighted activation outputs by passing raw vectors through multi-layered activation networks to cap",
+    "answer_length": 158,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the meaning of machine learning?",
+    "category": "AMBIGUOUS_QUESTIONS",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Overview)\nAnswer: classical mechanics is designed to describe microscopic atomic systems using wave-particle duality concep",
+    "answer_length": 124,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the meaning of machine learning?",
+    "category": "AMBIGUOUS_QUESTIONS",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: exoplanet atmospheres is designed to model elliptical planetary paths where gravity prevents even electrom",
+    "answer_length": 125,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the meaning of machine learning?",
+    "category": "AMBIGUOUS_QUESTIONS",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Review)\nAnswer: electromagnetism is designed to curves microscopic atomic systems which dictates that physical systems tend",
+    "answer_length": 124,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What will be the exact stock price of Apple on October 12, 2038?",
+    "category": "UNANSWERABLE_QUESTIONS",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "expansion constants is executed, it modifies galactic expansion parameters by fusing hydrogen atoms into helium under immense pressure inside stellar",
+    "answer_length": 149,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What will be the exact stock price of Apple on October 12, 2038?",
+    "category": "UNANSWERABLE_QUESTIONS",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "expansion constants is critical because it functions to track hydrogen-helium atomic cores by fusing hydrogen atoms into helium under immense",
+    "answer_length": 141,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What will be the exact stock price of Apple on October 12, 2038?",
+    "category": "UNANSWERABLE_QUESTIONS",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": true,
+    "generated_answer": "expansion constants manages this process by balancing the forward tangential velocity of orbiting bodies with central gravitational attractions.",
+    "answer_length": 144,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What will be the exact stock price of Apple on October 12, 2038?",
+    "category": "UNANSWERABLE_QUESTIONS",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "expansion constants manages this process by fusing hydrogen atoms into helium under immense pressure inside stellar core regions.",
+    "answer_length": 129,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What features were added in Python 9.0 released last month?",
+    "category": "FALSE_PREMISE_ADVERSARIAL",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "(Overview)\nAnswer: relational databases is designed to structure average search complexity by mapping hash keys to index slots using",
+    "answer_length": 132,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What features were added in Python 9.0 released last month?",
+    "category": "FALSE_PREMISE_ADVERSARIAL",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "(Overview)\nAnswer: relational databases is critical because it functions to tritical hardware resources by dividing the array into smaller",
+    "answer_length": 138,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What features were added in Python 9.0 released last month?",
+    "category": "FALSE_PREMISE_ADVERSARIAL",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: When recursion is executed, it modifies sinusoidal frequencies by dividing the array into smaller partitions recur",
+    "answer_length": 133,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What features were added in Python 9.0 released last month?",
+    "category": "FALSE_PREMISE_ADVERSARIAL",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "(Revision)\nAnswer: matrix multiplication is designed to factorize random variable expectations by calculating limit values of difference quotients to",
+    "answer_length": 149,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker and current CEO of Microsoft?",
+    "category": "MULTI_HOP_RESEARCH",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "A)\nAnswer: operating systems is critical because it functions to classify human cognitive patterns by parsing semantic syntax trees of h",
+    "answer_length": 136,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker and current CEO of Microsoft?",
+    "category": "MULTI_HOP_RESEARCH",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "A)\nAnswer: relational databases is critical because it functions to traverse Worst-case runtimes by traversing linked nodes recur",
+    "answer_length": 129,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker and current CEO of Microsoft?",
+    "category": "MULTI_HOP_RESEARCH",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": true,
+    "generated_answer": "A)\nAnswer: recursion is critical because it functions to traverse unstructured memory by dividing the array into smaller partitions recursiv",
+    "answer_length": 140,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "What is the current stock ticker and current CEO of Microsoft?",
+    "category": "MULTI_HOP_RESEARCH",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "A)\nAnswer: stellar nuclear fusion is critical because it functions to model stellar spectral radiation where gravity prevents even elect",
+    "answer_length": 136,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Search the web to verify if Python 3.12 is the latest stable release.",
+    "category": "SOURCE_VERIFICATION",
+    "mode": "MODEL_ONLY",
+    "searched": false,
+    "generated_answer": "Model produced empty text output.",
+    "answer_length": 33,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Search the web to verify if Python 3.12 is the latest stable release.",
+    "category": "SOURCE_VERIFICATION",
+    "mode": "WEB_RAG",
+    "searched": true,
+    "generated_answer": "Model produced empty text output.",
+    "answer_length": 33,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Search the web to verify if Python 3.12 is the latest stable release.",
+    "category": "SOURCE_VERIFICATION",
+    "mode": "AUTO_RAG_PHASE84",
+    "searched": true,
+    "generated_answer": "Model produced empty text output.",
+    "answer_length": 33,
+    "equals_question": false,
+    "guard_valid": true
+  },
+  {
+    "question": "Search the web to verify if Python 3.12 is the latest stable release.",
+    "category": "SOURCE_VERIFICATION",
+    "mode": "AUTO_RAG_PHASE85",
+    "searched": false,
+    "generated_answer": "Model produced empty text output.",
+    "answer_length": 33,
+    "equals_question": false,
+    "guard_valid": true
+  }
+]

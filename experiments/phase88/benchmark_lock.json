@@ -1,0 +1,9 @@
+{
+  "benchmark_path": "V:\\collision - 1M\\experiments\\phase86\\independent_rag_benchmark.jsonl",
+  "benchmark_sha256": "6bdb7605c251b423c420226be83231bfc0bb730ff9fc958184cc0d18ab4522a9",
+  "question_count": 240,
+  "category_count": 12,
+  "phase86_benchmark_sha256": "6bdb7605c251b423c420226be83231bfc0bb730ff9fc958184cc0d18ab4522a9",
+  "contamination_rate": 0.0,
+  "timestamp": "2026-09-10T00:36:00Z"
+}

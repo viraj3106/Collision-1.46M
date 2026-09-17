@@ -1,0 +1,38 @@
+{
+  "MODEL_ONLY": {
+    "accuracy": 1.6666666666666667,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0,
+    "unnecessary_search_rate": 0.0,
+    "searched_count": 0,
+    "mean_latency_ms": 1578.9218620828553,
+    "total_questions": 240
+  },
+  "WEB_RAG": {
+    "accuracy": 1.6666666666666667,
+    "grounding_rate": 0.0,
+    "hallucination_rate": 100.0,
+    "unnecessary_search_rate": 57.91666666666667,
+    "searched_count": 240,
+    "mean_latency_ms": 3757.075042499855,
+    "total_questions": 240
+  },
+  "AUTO_RAG_PHASE84": {
+    "accuracy": 1.25,
+    "grounding_rate": 77.5,
+    "hallucination_rate": 22.5,
+    "unnecessary_search_rate": 0.4166666666666667,
+    "searched_count": 54,
+    "mean_latency_ms": 2019.6285070835377,
+    "total_questions": 240
+  },
+  "AUTO_RAG_PHASE85": {
+    "accuracy": 1.6666666666666667,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0,
+    "unnecessary_search_rate": 0.0,
+    "searched_count": 0,
+    "mean_latency_ms": 1644.8495266670761,
+    "total_questions": 240
+  }
+}

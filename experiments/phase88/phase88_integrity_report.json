@@ -1,0 +1,15 @@
+{
+  "training_executed": false,
+  "model_weights_modified": false,
+  "parameter_count": 10282304,
+  "sha256_before": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "sha256_after": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "sha256_unchanged": true,
+  "evaluator_input_equals_generated_answer_verified": true,
+  "total_evaluations": 960,
+  "valid_generated_answers": 916,
+  "generation_failures": 44,
+  "query_echo_rate": 0.0,
+  "prompt_echo_rate": 0.0,
+  "context_echo_rate": 0.0
+}

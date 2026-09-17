@@ -1,0 +1,29 @@
+{
+  "note": "Phase 86 accuracy was invalidated by the evaluator execution bug identified in Phase 87.",
+  "comparison_table": {
+    "MODEL_ONLY_Accuracy": {
+      "Phase 86 Reported": 26.25,
+      "Phase 88 Corrected": 1.6666666666666667
+    },
+    "WEB_RAG_Accuracy": {
+      "Phase 86 Reported": 26.25,
+      "Phase 88 Corrected": 1.6666666666666667
+    },
+    "AUTO_PHASE84_Accuracy": {
+      "Phase 86 Reported": 26.25,
+      "Phase 88 Corrected": 1.25
+    },
+    "AUTO_PHASE85_Accuracy": {
+      "Phase 86 Reported": 26.25,
+      "Phase 88 Corrected": 1.6666666666666667
+    },
+    "Grounding": {
+      "Phase 86 Reported": 100.0,
+      "Phase 88 Corrected": 100.0
+    },
+    "Hallucination": {
+      "Phase 86 Reported": 0.0,
+      "Phase 88 Corrected": 0.0
+    }
+  }
+}

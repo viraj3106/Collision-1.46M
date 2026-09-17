@@ -1,0 +1,15 @@
+{
+  "TEST_A_non_web_rag_generation": "PASSED",
+  "TEST_B_no_raw_query_scoring": "PASSED",
+  "TEST_C_no_formatted_prompt_scoring": "PASSED",
+  "TEST_D_no_retrieved_context_scoring": "PASSED",
+  "TEST_E_empty_generation_explicit_failure": "PASSED",
+  "TEST_F_generated_answer_passed_unchanged": "PASSED",
+  "TEST_G_question_keyword_not_credited": "PASSED",
+  "TEST_H_web_and_non_web_contract_equal": "PASSED",
+  "TEST_I_response_fields_semantically_separated": "PASSED",
+  "TEST_J_production_model_sha256_unchanged": "PASSED",
+  "total_tests": 10,
+  "passed_tests": 10,
+  "failed_tests": 0
+}

@@ -1,0 +1,7 @@
+{
+  "benchmark_locked": true,
+  "generation_extraction_fixed": true,
+  "smoke_test_passed": true,
+  "query_echo_rate": 0.0,
+  "valid_generation_rate": 100.0
+}

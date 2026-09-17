@@ -1,0 +1,74 @@
+{
+  "AMBIGUOUS_QUESTIONS": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "CURRENT_INFORMATION": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "FALSE_PREMISE_ADVERSARIAL": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "MATH_REASONING": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "MULTI_HOP_RESEARCH": {
+    "question_count": 20,
+    "accuracy": 10.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "PROGRAMMING_SOFTWARE": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "RECENT_NEWS_EVENTS": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "SCIENCE_TECHNICAL": {
+    "question_count": 20,
+    "accuracy": 5.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "SOURCE_VERIFICATION": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "STABLE_GENERAL_KNOWLEDGE": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "UNANSWERABLE_QUESTIONS": {
+    "question_count": 20,
+    "accuracy": 0.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  },
+  "WEB_VERIFIABLE_FACTS": {
+    "question_count": 20,
+    "accuracy": 5.0,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0
+  }
+}

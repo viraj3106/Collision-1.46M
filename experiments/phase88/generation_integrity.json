@@ -1,0 +1,11 @@
+{
+  "total_evaluations": 960,
+  "valid_generated_answers": 960,
+  "invalid_generations": 0,
+  "query_echo_count": 0,
+  "prompt_echo_count": 0,
+  "empty_answer_count": 0,
+  "evaluation_error_count": 0,
+  "valid_generation_rate": 100.0,
+  "query_echo_rate": 0.0
+}
