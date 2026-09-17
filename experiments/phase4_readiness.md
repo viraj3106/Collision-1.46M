@@ -12,7 +12,7 @@ Generated on: 2026-08-27 22:36:34
 - **Total Tokens**: 2,411,502
 - **Training Tokens**: 2,108,753
 - **Validation Tokens**: 302,749
-- **Vocabulary Size**: 890
+- **Vocabulary Size**: 890                                                                          
 
 ## Model Specifications
 - **Model Parameters**: 1,462,464
