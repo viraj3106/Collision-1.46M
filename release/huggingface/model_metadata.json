@@ -27,5 +27,18 @@
       "deterministic_math_geometry_statistics",
       "grounded_answer_synthesis"
     ]
+  },
+  "cognitive_brain": {
+    "module": "collision.brain",
+    "version": "2.0.0",
+    "capabilities": [
+      "dual_process_system_1_2",
+      "graph_of_thoughts_dag",
+      "hegelian_dialectic_synthesis",
+      "global_workspace_theory",
+      "synaptic_working_memory_ltp",
+      "cross_domain_knowledge_lattice",
+      "information_entropy_profiling"
+    ]
   }
 }

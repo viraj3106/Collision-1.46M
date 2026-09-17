@@ -159,3 +159,33 @@ class FeedbackResponse(BaseModel):
     id: int
     status: str = "success"
     message: str = "Feedback recorded successfully."
+
+
+# --- Cognitive Brain & Dialectic Deliberation Schemas ---
+
+class BrainThinkRequest(BaseModel):
+    question: str = Field(..., min_length=1, max_length=2000, description="Deep reasoning or dialectic question")
+    domain: Optional[str] = Field(default="General", description="Knowledge domain (e.g., General, Philosophy, Science, Mathematics, Technology, Ethics)")
+    enable_dialectic: Optional[bool] = Field(default=True, description="Whether to execute Hegelian Dialectic Graph-of-Thoughts")
+
+class BrainThinkResponse(BaseModel):
+    query: str
+    answer: str
+    status: str = "ANSWERED"
+    mode: str = "BRAIN_DELIBERATION"
+    modality: str = "deliberative_graph"
+    confidence: float = 0.90
+    epistemic_certainty: float = 0.85
+    axiomatic_confidence: float = 0.85
+    adversarial_resilience: float = 0.85
+    merit_score: float = 0.85
+    primary_domain: str = "General"
+    key_insights: List[str] = Field(default_factory=list)
+    followup_hypotheses: List[str] = Field(default_factory=list)
+    triples: List[Dict[str, Any]] = Field(default_factory=list)
+    bias_audits: List[Dict[str, Any]] = Field(default_factory=list)
+    graph_summary: Dict[str, Any] = Field(default_factory=dict)
+    graph_mermaid: str = ""
+    graph_ascii: str = ""
+    latency: Dict[str, Any] = Field(default_factory=dict)
+

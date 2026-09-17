@@ -8,11 +8,16 @@ pinned: false
 license: mit
 ---
 
-# COLLISION AI & NLP Lab
+# COLLISION AI, NLP & Cognitive Brain Lab
 
-Interactive laboratory for **COLLISION-10M** and the **COLLISION NLP Engine** (`collision.nlp`).
+Interactive laboratory for **COLLISION-10M**, the **COLLISION NLP Engine** (`collision.nlp`), and the **Synaptic Cognitive Brain** (`collision.brain`).
 
 - ⚡ **Model Hub**: [https://huggingface.co/collision-10M/collision-10m](https://huggingface.co/collision-10M/collision-10m)
+- 🧠 **Cognitive Brain & Dialectic Engine**:
+  - **Graph-of-Thoughts (GoT)**: Non-linear reasoning DAG with step-by-step hypothesis validation.
+  - **Hegelian Dialectics**: Automated Thesis $\rightarrow$ Antithesis $\rightarrow$ Synthesis reconciliation.
+  - **Epistemic Certainty**: Information entropy profiling and fallacy/bias audits.
+  - **Global Workspace Theory (GWT)**: Conscious broadcasting and synaptic working memory with LTP decay.
 - 🔬 **NLP Engine Capabilities**:
   - **TextRank Keyphrase Extraction**: Salient graph-based keyword & multi-word phrase ranking.
   - **Multi-Domain Topic Classification**: 10 knowledge domains with confidence distribution.
@@ -21,3 +26,4 @@ Interactive laboratory for **COLLISION-10M** and the **COLLISION NLP Engine** (`
   - **Readability & Complexity**: Flesch Reading Ease, Flesch-Kincaid Grade Level, and Gunning Fog Index.
   - **Extractive Reading Comprehension**: SQuAD-style context QA.
   - **Deterministic Problem Solving**: Math, geometry, statistics, and physical unit conversions.
+

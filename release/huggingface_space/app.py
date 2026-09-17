@@ -24,6 +24,8 @@ from collision.nlp import (
     TextTransformer
 )
 
+from collision.brain import get_collision_brain
+
 st.set_page_config(
     page_title="COLLISION AI & NLP Lab",
     page_icon="⚡",
@@ -61,6 +63,7 @@ st.markdown("<div class='header-subtitle'>Industrial-Strength Natural Language P
 
 tabs = st.tabs([
     "💬 Conversational Assistant",
+    "🧠 Deliberative Brain & Dialectics",
     "🏷️ Keyphrases & NER",
     "📊 Topic & Tone Classifier",
     "✍️ Grammar & Spell Proofreader",
@@ -69,6 +72,7 @@ tabs = st.tabs([
     "🔢 Deterministic Math & Conversions",
     "🔄 Text Transformers & Similarity"
 ])
+
 
 # 1. Conversational Assistant Tab
 with tabs[0]:
@@ -103,8 +107,63 @@ with tabs[0]:
             st.caption(f"⚡ Latency: {elapsed_ms:.2f}ms")
             st.session_state.messages.append({"role": "assistant", "content": ans})
 
-# 2. Keyphrase & NER Tab
+# 2. Deliberative Brain & Dialectics Tab
 with tabs[1]:
+    st.subheader("🧠 Synaptic Deliberation & Hegelian Dialectic Engine")
+    st.caption("Non-linear Graph-of-Thoughts, Thesis-Antithesis-Synthesis reconciliation, Epistemic certainty, and Synaptic working memory.")
+    
+    brain = get_collision_brain()
+    sample_queries = {
+        "-- Select an inquiry --": "",
+        "Consciousness & AI": "Can artificial neural networks achieve subjective consciousness or only functional simulation?",
+        "Quantum Computing & Cryptography": "How does Shor's algorithm impact asymmetric cryptography compared to symmetric AES?",
+        "Distributed Systems Consensus": "Should distributed ledgers prioritize consistency or availability in Byzantine environments?",
+        "Epistemology & Logic": "Does Karl Popper's falsifiability criterion sufficiently demarcate science from pseudoscience?"
+    }
+    
+    c_q1, c_q2 = st.columns([3, 1])
+    with c_q2:
+        b_domain = st.selectbox("Domain", ["General", "Computer Science", "Physics & Quantum", "Philosophy & Epistemology"], key="hf_b_domain")
+        b_dialectic = st.checkbox("Hegelian Dialectics", value=True, key="hf_b_dialectic")
+    with c_q1:
+        sel_q = st.selectbox("Sample Cognitive Inquiries", list(sample_queries.keys()), key="hf_sel_q")
+        init_val = sample_queries[sel_q] if sel_q != "-- Select an inquiry --" else ""
+        brain_q = st.text_area("Cognitive Query for Deliberation", value=init_val, placeholder="Enter a deep scientific, philosophical, or systemic question...", height=90, key="hf_brain_q")
+        
+    if st.button("Execute Deliberation ⚡", key="hf_btn_brain", type="primary"):
+        if not brain_q.strip():
+            st.error("Please enter a query to deliberate.")
+        else:
+            with st.spinner("Executing Graph-of-Thoughts deliberation..."):
+                t0 = time.perf_counter()
+                res = brain.think(query=brain_q.strip(), domain=b_domain, enable_dialectic=b_dialectic)
+                elapsed_ms = (time.perf_counter() - t0) * 1000
+                
+                m1, m2, m3, m4, m5 = st.columns(5)
+                m1.metric("Modality", res.modality.value.replace("DIALECTICAL_", ""))
+                m2.metric("Confidence", f"{res.confidence*100:.1f}%")
+                m3.metric("Certainty", f"{res.epistemic_certainty*100:.1f}%")
+                m4.metric("Resilience", f"{res.adversarial_resilience*100:.1f}%")
+                m5.metric("Latency", f"{elapsed_ms:.1f} ms")
+                
+                st.markdown("#### 📖 Dialectical Synthesis & Stance")
+                st.markdown(f"> {res.answer}")
+                
+                st.markdown("##### 💡 Key Insights")
+                for ins in res.key_insights:
+                    st.markdown(f"• {ins}")
+                    
+                if res.graph_mermaid:
+                    with st.expander("🕸️ Graph-of-Thoughts Mermaid Diagram", expanded=True):
+                        st.markdown(f"```mermaid\n{res.graph_mermaid}\n```")
+                        
+                if res.triples:
+                    with st.expander("🧩 Extracted Knowledge Triples"):
+                        for t in res.triples:
+                            st.markdown(f"• **({t.subject})** ──`[{t.predicate}]`──> **({t.object})**")
+
+# 3. Keyphrase & NER Tab
+with tabs[2]:
     st.subheader("🏷️ TextRank Keyphrase & Named Entity Extraction")
     kp_input = st.text_area(
         "Enter text to extract keyphrases and entities:",
@@ -132,8 +191,8 @@ with tabs[1]:
             if ent.dates_years: st.markdown(f"• **Dates & Years**: {', '.join(ent.dates_years)}")
             if ent.quantities: st.markdown(f"• **Quantities**: {', '.join(ent.quantities)}")
 
-# 3. Topic & Tone Tab
-with tabs[2]:
+# 4. Topic & Tone Tab
+with tabs[3]:
     st.subheader("📊 Multi-Domain Topic & Tone Analysis")
     topic_input = st.text_area(
         "Enter text to classify topic and analyze tone:",
@@ -161,8 +220,8 @@ with tabs[2]:
             st.write(f"**Subjectivity Score**: `{tone.subjectivity_score*100:.0f}%`")
             st.write(f"**Assessment**: {tone.summary}")
 
-# 4. Grammar & Proofreader Tab
-with tabs[3]:
+# 5. Grammar & Proofreader Tab
+with tabs[4]:
     st.subheader("✍️ Rule-Based Grammar & Spell Proofreader")
     proof_input = st.text_area(
         "Enter text to proofread and correct:",
@@ -180,8 +239,8 @@ with tabs[3]:
             for issue in proof.issues:
                 st.markdown(f"• **{issue.issue_type}**: `\"{issue.original}\"` -> `\"{issue.replacement}\"` (*{issue.explanation}*)")
 
-# 5. Readability Tab
-with tabs[4]:
+# 6. Readability Tab
+with tabs[5]:
     st.subheader("📈 Readability & Complexity Calculator")
     read_input = st.text_area(
         "Enter text to compute readability indices:",
@@ -198,8 +257,8 @@ with tabs[4]:
         st.write(f"**Reading Ease Assessment**: **{metrics.reading_ease_description}**")
         st.write(f"**Statistics**: {metrics.word_count} words across {metrics.sentence_count} sentences ({metrics.avg_words_per_sentence:.1f} words/sentence, {metrics.avg_syllables_per_word:.2f} syllables/word)")
 
-# 6. Reading Comprehension Tab
-with tabs[5]:
+# 7. Reading Comprehension Tab
+with tabs[6]:
     st.subheader("🔍 SQuAD-Style Context Reading Comprehension")
     ctx = st.text_area(
         "Context Passage:",
@@ -215,8 +274,8 @@ with tabs[5]:
         else:
             st.warning("Could not conclusively find answer in context.")
 
-# 7. Math Tab
-with tabs[6]:
+# 8. Math Tab
+with tabs[7]:
     st.subheader("🔢 Deterministic Math, Geometry & Statistics Solver")
     math_q = st.text_input("Enter math expression, geometry formula, statistics, or unit conversion:", value="area of circle with radius 7")
     col_ex1, col_ex2, col_ex3 = st.columns(3)
@@ -231,8 +290,8 @@ with tabs[6]:
         else:
             st.error("Could not parse mathematical expression.")
 
-# 8. Transformers & Similarity Tab
-with tabs[7]:
+# 9. Transformers & Similarity Tab
+with tabs[8]:
     st.subheader("🔄 Text Style Transformations & Semantic Similarity")
     t_input = st.text_area("Text to transform:", value="hlo bro this is gonna be super cool and awesome gotta check it out", height=80)
     c1, c2, c3 = st.columns(3)
@@ -242,3 +301,4 @@ with tabs[7]:
         st.write(TextTransformer.simplify("We utilize this methodology to elucidate the aforementioned paradigm.").transformed_text)
     if c3.button("Bulletize"):
         st.write(TextTransformer.bulletize("First key achievement. Second major breakthrough. Third strategic priority.").transformed_text)
+

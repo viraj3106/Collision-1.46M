@@ -296,6 +296,53 @@ class CrossDomainKnowledgeBase:
                 "Real economic growth stems from technological innovation and productivity gains (total factor productivity)."
             ],
             "application": "Corporate financial planning, investment portfolio allocation, and macroeconomic forecasting."
+        },
+        "photosynthesis_plant_biology": {
+            "keywords": ["photosynthesis", "calvin cycle", "chloroplast", "chlorophyll", "light reactions", "how plants produce oxygen", "plant energy"],
+            "domain": "Biology & Botanical Science",
+            "title": "Photosynthesis & Solar Energy Conversion in Plants",
+            "summary": "The biochemical process by which photosynthetic organisms convert solar light energy, carbon dioxide, and water into chemical energy (glucose) while releasing oxygen.",
+            "mechanisms": [
+                "**Chemical Reaction Formula**: `6CO2 + 6H2O + Light Energy -> C6H12O6 (Glucose) + 6O2`.",
+                "**Light-Dependent Reactions (Thylakoid Membrane)**: Photons excite electrons in Chlorophyll Photosystems II & I, photolyzing water into oxygen and generating ATP and NADPH via electron transport chains.",
+                "**Light-Independent Reactions (Calvin Cycle in Stroma)**: The enzyme RuBisCO fixes atmospheric CO2 into 3-PGA, subsequently reduced to G3P sugars using ATP/NADPH energy.",
+                "**Cellular Localization**: Occurs within plant chloroplasts containing specialized thylakoid stacks (grana) and stroma fluid."
+            ],
+            "insights": [
+                "Primary biological energy driver of Earth's biosphere, generating virtually all atmospheric oxygen and foundational biomass.",
+                "C3, C4, and CAM pathways represent evolutionary adaptations optimizing water retention in arid climates."
+            ],
+            "application": "Agricultural yield enhancement, biofuels, artificial photosynthesis, and climate carbon capture models."
+        },
+        "supervised_vs_unsupervised_ml": {
+            "keywords": ["supervised", "unsupervised", "difference between supervised and unsupervised", "supervised vs unsupervised", "machine learning paradigms", "clustering vs classification"],
+            "domain": "Artificial Intelligence & ML",
+            "title": "Supervised vs Unsupervised vs Reinforcement Machine Learning",
+            "summary": "The fundamental paradigm classification of machine learning algorithms based on data supervision, feedback loops, and optimization objectives.",
+            "mechanisms": [
+                "**Supervised Learning**: Models learn an explicit mapping function `f: X -> Y` from labeled training datasets.\n  • Tasks: Classification (Discrete: Logistic Regression, Random Forests, Neural Nets) and Regression (Continuous: Linear Regression, MSE).\n  • Objective: Minimize empirical risk and prediction loss against ground truth labels.",
+                "**Unsupervised Learning**: Models discover latent patterns, clusters, and underlying structural distributions in unlabeled data without explicit target feedback.\n  • Tasks: Clustering (K-Means, DBSCAN), Dimensionality Reduction (PCA, t-SNE, UMAP), Density Estimation, and Self-Supervised Autoencoders.\n  • Objective: Maximize mutual information or reconstruct compressed representations.",
+                "**Reinforcement Learning (RL)**: Autonomous agents learn optimal policies `pi(a|s)` by interacting with dynamic environments to maximize cumulative scalar reward signals."
+            ],
+            "insights": [
+                "Modern Large Language Models (LLMs) unify paradigms: self-supervised pre-training (unsupervised next-token prediction) followed by supervised fine-tuning (SFT) and RLHF alignment."
+            ],
+            "application": "Predictive analytics, customer segmentation, anomaly detection, autonomous navigation, and generative AI."
+        },
+        "sorting_and_algorithms": {
+            "keywords": ["sorting", "palindrome", "palindromes", "binary search", "quicksort", "mergesort", "two pointers", "algorithms"],
+            "domain": "Computer Science & Algorithms",
+            "title": "Foundational Algorithms & Data Structure Patterns",
+            "summary": "Core algorithmic techniques, sorting protocols, and string/array manipulation patterns governing optimal computational problem solving.",
+            "mechanisms": [
+                "**Two-Pointer Technique (e.g. Palindrome Validation)**:\n  • Compares characters from opposite ends of a sequence converging inward in `O(N)` time and `O(1)` space:\n  • `def is_palindrome(s: str) -> bool: return s == s[::-1]` or two pointers skipping non-alphanumeric characters.",
+                "**Divide & Conquer Sorting (QuickSort / MergeSort)**:\n  • MergeSort guarantees stable `O(N log N)` time by recursively partitioning and merging sorted sub-arrays.\n  • QuickSort achieves high average-case cache locality via in-place pivot partitioning.",
+                "**Binary Search**: Divides sorted search space in half each iteration achieving logarithmic `O(log N)` retrieval."
+            ],
+            "insights": [
+                "Selecting the proper algorithmic pattern (hash map vs two-pointer vs sliding window vs dynamic programming) reduces exponential `O(2^N)` problems to linear `O(N)` or logarithmic `O(log N)` complexity."
+            ],
+            "application": "Database indexing, search engine ranking, real-time string parsing, and high-performance computing."
         }
     }
 
@@ -317,13 +364,15 @@ class CrossDomainKnowledgeBase:
             score = 0
             for kw in entry["keywords"]:
                 kw_lower = kw.lower()
-                if kw_lower in q_lower:
+                # Whole-word or multi-word match
+                if re.search(r'\b' + re.escape(kw_lower) + r'\b', q_lower):
                     word_count = len(kw_lower.split())
-                    # Multi-word matches get higher weight; single-word matches require high relevance
-                    score += word_count * 3 if word_count > 1 else 1
+                    # Multi-word matches get higher weight; single-word matches get 2 points
+                    score += word_count * 3 if word_count > 1 else 2
+                elif kw_lower in q_lower and len(kw_lower) > 5:
+                    score += 1
 
-            # Require at least score 3 (e.g. a 2-word keyword or multiple keyword hits)
-            if score > highest_score and score >= 3:
+            if score > highest_score and score >= 2:
                 highest_score = score
                 best_match = entry
 

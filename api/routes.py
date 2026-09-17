@@ -22,7 +22,9 @@ from api.schemas import (
     AskRequest,
     AskResponse,
     ReadyResponse,
-    SourceProvenance
+    SourceProvenance,
+    BrainThinkRequest,
+    BrainThinkResponse
 )
 from collision.service import get_collision_service, CollisionService
 from api.dependencies import get_inference_engine
@@ -780,5 +782,72 @@ def submit_feedback(req: FeedbackRequest):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail={"type": "server_error", "message": f"Failed to record feedback: {str(e)}"}
         )
+
+
+# --- Cognitive Brain & Dialectic Deliberation Endpoints ---
+
+@router.post("/v1/brain/think", response_model=BrainThinkResponse)
+def brain_think(
+    req: BrainThinkRequest,
+    developer: dict = Depends(get_authenticated_developer)
+):
+    """
+    Authenticated deliberative deep-thinking endpoint backed by COLLISION Brain.
+    Executes non-linear Graph-of-Thoughts, Hegelian Dialectic synthesis,
+    epistemic uncertainty quantification, and Global Workspace broadcasting.
+    """
+    try:
+        service = get_collision_service()
+        res = service.think(
+            question=req.question,
+            domain=req.domain or "General",
+            enable_dialectic=req.enable_dialectic if req.enable_dialectic is not None else True
+        )
+        if res.get("status") == "error":
+            err = res.get("error", {})
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail={"type": err.get("code", "brain_error"), "message": err.get("message", "Brain execution failed.")}
+            )
+        return BrainThinkResponse(**res)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={"type": "server_error", "message": f"Brain deliberation failed: {str(e)}"}
+        )
+
+
+@router.post("/v1/playground/think", response_model=BrainThinkResponse)
+def playground_brain_think(
+    req: BrainThinkRequest,
+    developer: dict = Depends(get_current_session_developer)
+):
+    """
+    Session-authenticated playground thinking endpoint.
+    """
+    try:
+        service = get_collision_service()
+        res = service.think(
+            question=req.question,
+            domain=req.domain or "General",
+            enable_dialectic=req.enable_dialectic if req.enable_dialectic is not None else True
+        )
+        if res.get("status") == "error":
+            err = res.get("error", {})
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail={"type": err.get("code", "brain_error"), "message": err.get("message", "Brain execution failed.")}
+            )
+        return BrainThinkResponse(**res)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={"type": "server_error", "message": f"Brain deliberation failed: {str(e)}"}
+        )
+
 
 

@@ -183,6 +183,37 @@ print(f"Flesch Ease: {read.flesch_reading_ease} | Level: {read.reading_level}")
 
 ---
 
+## 🧠 Synaptic Cognitive Brain (`collision.brain`)
+
+COLLISION includes a full dual-process cognitive architecture featuring non-linear **Graph-of-Thoughts (GoT)** and **Hegelian Dialectics**:
+
+```python
+from collision.brain import get_collision_brain
+
+brain = get_collision_brain()
+
+# Deliberative Hegelian reasoning (Thesis -> Antithesis -> Synthesis)
+res = brain.think(
+    query="Can artificial neural networks achieve subjective consciousness or only functional simulation?",
+    domain="Philosophy & AI",
+    enable_dialectic=True
+)
+
+print("Synthesized Stance:", res.answer)
+print("Epistemic Certainty:", f"{res.epistemic_certainty*100:.1f}%")
+print("Adversarial Resilience:", f"{res.adversarial_resilience*100:.1f}%")
+print("Mermaid Thought DAG:\n", res.graph_mermaid)
+```
+
+Key Cognitive Features:
+- **Dual-Process Controller**: System 1 (reflexive intuitive) + System 2 (deliberative deep reasoning)
+- **Hegelian Dialectic Engine**: Formulates Thesis, synthesizes rigorous Antithesis, and converges to resolved Synthesis
+- **Global Workspace Theory (GWT)**: Conscious information broadcasting across specialized cognitive modules
+- **Synaptic Working Memory**: Long-Term Potentiation (LTP) decay and associative Hebbian plasticity
+- **Cross-Domain Knowledge Lattice**: Multidisciplinary concept bridging and semantic triple extraction
+
+---
+
 ## 🛠️ Model Architecture & Technical Specifications
 
 * **Parameter Count**: `10,282,304` (10.28M)

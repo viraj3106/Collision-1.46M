@@ -1,12 +1,12 @@
 """
-COLLISION Synaptic-GWT Cognitive Brain Subsystem.
+COLLISION Synaptic-GWT Cognitive Brain Subsystem 2.0.
 
 Provides:
-- Global Workspace Theory & Synaptic Working Memory (`GlobalWorkspace`, `SynapticWorkingMemory`)
-- Dual-Process System 1/2 Controller (`DualProcessArbiter`, `EpistemicUncertaintyQuantifier`, `MetacognitiveCritic`)
+- Global Workspace Theory & Synaptic Working Memory (`GlobalWorkspace`, `SynapticWorkingMemory`, `HebbianAssociation`)
+- Dual-Process System 1/2 Controller (`DualProcessArbiter`, `EpistemicUncertaintyQuantifier`, `MetacognitiveCritic`, `CognitiveBiasAudit`, `BiasSeverity`)
 - Graph-of-Thoughts Hegelian Dialectic Engine (`HegelianDialecticEngine`, `GraphOfThoughtReasoner`, `DialecticalGraph`)
 - Synaptic NLP Information-Theoretic Engine (`SemanticTripletExtractor`, `ContextualPolysemyDisambiguator`)
-- Cross-Domain Knowledge Lattice (`CrossDomainKnowledgeLattice`)
+- Cross-Domain Knowledge Lattice (`CrossDomainKnowledgeLattice`, `LatticeConcept`)
 - Flagship Brain Engine (`CollisionBrain`, `SynapticCognitiveBrain`, `get_collision_brain`)
 """
 
@@ -17,8 +17,12 @@ from collision.brain.schemas import (
     CognitiveModality,
     SemanticTriple,
     InformationEntropyProfile,
+    LinguisticComplexityMetrics,
+    CognitiveBiasAudit,
+    BiasSeverity,
     GlobalWorkspaceMessage,
     WorkingMemoryItem,
+    HebbianAssociation,
     BrainCognitiveTrace,
     BrainResponse
 )
@@ -36,7 +40,10 @@ from collision.brain.synaptic_nlp import (
     SemanticTripletExtractor,
     ContextualPolysemyDisambiguator
 )
-from collision.brain.knowledge_lattice import CrossDomainKnowledgeLattice
+from collision.brain.knowledge_lattice import (
+    CrossDomainKnowledgeLattice,
+    LatticeConcept
+)
 from collision.brain.engine import (
     CollisionBrain,
     SynapticCognitiveBrain,
@@ -49,9 +56,12 @@ __all__ = [
     "get_collision_brain",
     "GlobalWorkspace",
     "SynapticWorkingMemory",
+    "HebbianAssociation",
     "DualProcessArbiter",
     "EpistemicUncertaintyQuantifier",
     "MetacognitiveCritic",
+    "CognitiveBiasAudit",
+    "BiasSeverity",
     "HegelianDialecticEngine",
     "GraphOfThoughtReasoner",
     "DialecticalGraph",
@@ -60,11 +70,13 @@ __all__ = [
     "CognitiveModality",
     "SemanticTriple",
     "InformationEntropyProfile",
+    "LinguisticComplexityMetrics",
     "GlobalWorkspaceMessage",
     "WorkingMemoryItem",
     "BrainCognitiveTrace",
     "BrainResponse",
     "SemanticTripletExtractor",
     "ContextualPolysemyDisambiguator",
-    "CrossDomainKnowledgeLattice"
+    "CrossDomainKnowledgeLattice",
+    "LatticeConcept"
 ]

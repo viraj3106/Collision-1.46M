@@ -158,3 +158,36 @@ class CollisionAPIClient:
         except Exception as e:
             return 500, {"error": str(e)}
 
+    def think(self, question: str, domain: str = "General", enable_dialectic: bool = True):
+        """
+        Execute deep deliberative Graph-of-Thoughts Hegelian Dialectic reasoning.
+        Attempts HTTP call to FastAPI server first, and gracefully falls back
+        to direct CollisionService in-process execution if server is offline.
+        """
+        payload = {
+            "question": question,
+            "domain": domain,
+            "enable_dialectic": enable_dialectic
+        }
+
+        # Try API endpoint first
+        headers = self._get_session_headers() if self.session_token else self._get_api_headers()
+        endpoint = f"{self.base_url}/v1/playground/think" if self.session_token else f"{self.base_url}/v1/brain/think"
+        
+        try:
+            res = requests.post(endpoint, json=payload, headers=headers, timeout=30.0)
+            if res.status_code == 200:
+                return {"success": True, "data": res.json(), "mode": "API"}
+        except Exception:
+            pass
+
+        # In-process direct fallback
+        try:
+            from collision.service import get_collision_service
+            service = get_collision_service()
+            result = service.think(question=question, domain=domain, enable_dialectic=enable_dialectic)
+            return {"success": True, "data": result, "mode": "LOCAL_ENGINE"}
+        except Exception as local_err:
+            return {"success": False, "error": f"Cognitive Brain error: {str(local_err)}"}
+
+

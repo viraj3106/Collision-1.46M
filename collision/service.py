@@ -517,17 +517,25 @@ class CollisionService:
             "modality": brain_res.modality.value,
             "confidence": brain_res.confidence,
             "epistemic_certainty": brain_res.epistemic_certainty,
+            "axiomatic_confidence": brain_res.axiomatic_confidence,
+            "adversarial_resilience": brain_res.adversarial_resilience,
+            "merit_score": brain_res.merit_score,
             "primary_domain": brain_res.primary_domain,
             "key_insights": brain_res.key_insights,
             "followup_hypotheses": brain_res.followup_hypotheses,
             "triples": [t.model_dump() if hasattr(t, "model_dump") else t.dict() for t in brain_res.triples],
+            "bias_audits": [a.model_dump() if hasattr(a, "model_dump") else a.dict() for a in brain_res.bias_audits],
             "graph_summary": {
                 "nodes_count": len(brain_res.trace.graph_of_thoughts.nodes) if brain_res.trace and brain_res.trace.graph_of_thoughts else 0,
                 "edges_count": len(brain_res.trace.graph_of_thoughts.edges) if brain_res.trace and brain_res.trace.graph_of_thoughts else 0,
                 "dialectic_resolved": brain_res.trace.graph_of_thoughts.dialectic_resolved if brain_res.trace and brain_res.trace.graph_of_thoughts else True,
+                "adversarial_resilience": brain_res.adversarial_resilience
             },
+            "graph_mermaid": brain_res.graph_mermaid,
+            "graph_ascii": brain_res.graph_ascii,
             "latency": {
-                "total_ms": total_ms
+                "total_ms": total_ms,
+                "stages": brain_res.trace.stage_latencies if brain_res.trace else {}
             }
         }
 

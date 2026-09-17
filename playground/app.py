@@ -249,8 +249,8 @@ if status_code != 200:
     st.stop()
 
 # Navigation tabs
-tab_overview, tab_keys, tab_usage, tab_models, tab_playground, tab_docs = st.tabs([
-    "Overview", "API Keys", "Usage Analytics", "Model Info", "Playground Client", "Documentation"
+tab_overview, tab_keys, tab_usage, tab_models, tab_playground, tab_brain, tab_docs = st.tabs([
+    "Overview", "API Keys", "Usage Analytics", "Model Info", "Playground Client", "🧠 Brain Studio", "Documentation"
 ])
 
 # 1. OVERVIEW TAB
@@ -668,7 +668,181 @@ with tab_playground:
             if st.session_state.playground_response:
                 st.json(st.session_state.playground_response)
 
-# 6. DOCUMENTATION TAB
+# 6. BRAIN STUDIO TAB
+with tab_brain:
+    st.markdown("### 🧠 COLLISION Synaptic Cognitive Brain Studio")
+    st.caption("Inspect non-linear Graph-of-Thoughts (GoT 2.0), Hegelian Dialectic convergence, Hebbian working memory, and multi-scale information entropy.")
+
+    from collision.brain import get_collision_brain
+    brain_instance = get_collision_brain()
+
+    sample_brain_inquiries = {
+        "-- Select a multi-disciplinary inquiry --": "",
+        "Distributed Systems & CAP": "Should high-throughput distributed databases prioritize strong consistency or partition availability?",
+        "AI Epistemology & Chinese Room": "Does the Chinese Room argument by John Searle disprove semantic understanding in deep neural networks?",
+        "Quantum & Information Physics": "Compare Heisenberg Uncertainty Principle with Shannon Information Entropy and Landauer's computational limit.",
+        "Game Theory & Optimization": "How do Nash Equilibrium and Pareto Optimality diverge in non-cooperative multi-agent mechanism design?",
+        "Cognitive Science & Dual-Process": "What are the cognitive trade-offs between System 1 reflexive intuition and System 2 deliberative synthesis?",
+        "Byzantine Faults & Consensus": "Explain why Byzantine Fault Tolerance requires 3f + 1 nodes while crash fault tolerance requires only 2f + 1."
+    }
+
+    col_b_top_l, col_b_top_r = st.columns([5, 3])
+    with col_b_top_r:
+        st.markdown("#### Brain Parameters")
+        b_domain = st.selectbox(
+            "Primary Knowledge Domain",
+            ["General", "Distributed Systems", "Artificial Intelligence", "Quantum Physics", "Economics & Game Theory", "Cognitive Science & Philosophy"]
+        )
+        b_dialectic = st.checkbox("Enable Hegelian Dialectic (Thesis + Antithesis + Synthesis)", value=True)
+        b_probe = st.text_input("Optional Counterfactual Probe", placeholder="e.g. If network latency is zero...")
+
+    with col_b_top_l:
+        st.markdown("#### Deliberative Inquiry")
+        selected_brain_sample = st.selectbox("Explore Deep Cognitive Inquiries", list(sample_brain_inquiries.keys()), key="brain_sample_select")
+        init_brain_q = sample_brain_inquiries[selected_brain_sample] if selected_brain_sample != "-- Select a multi-disciplinary inquiry --" else ""
+        b_query = st.text_area("Cognitive Query for Brain Deliberation", value=init_brain_q if init_brain_q else "", placeholder="Enter a complex philosophical, scientific, or systems question...", height=110)
+
+        if st.button("Execute Cognitive Deliberation ⚡", key="brain_think_btn", type="primary"):
+            if not b_query.strip():
+                st.error("Please provide an inquiry for the brain to deliberate.")
+            else:
+                with st.spinner("Collision Brain is constructing Graph-of-Thoughts & Hegelian synthesis..."):
+                    t_b0 = time.perf_counter()
+                    b_res = brain_instance.think(
+                        query=b_query.strip(),
+                        domain=b_domain,
+                        enable_dialectic=b_dialectic,
+                        counterfactual=b_probe.strip() if b_probe.strip() else None
+                    )
+                    st.session_state["last_brain_response"] = b_res
+
+    # Render Brain Results if available
+    if "last_brain_response" in st.session_state and st.session_state["last_brain_response"]:
+        b_res = st.session_state["last_brain_response"]
+        st.markdown("---")
+
+        # Top Metric Cards
+        b_c1, b_c2, b_c3, b_c4, b_c5, b_c6 = st.columns(6)
+        with b_c1:
+            st.metric("Modality", b_res.modality.value.replace("DIALECTICAL_", ""))
+        with b_c2:
+            st.metric("Confidence", f"{b_res.confidence*100:.1f}%")
+        with b_c3:
+            st.metric("Certainty", f"{b_res.epistemic_certainty*100:.1f}%")
+        with b_c4:
+            st.metric("Resilience", f"{b_res.adversarial_resilience*100:.1f}%")
+        with b_c5:
+            st.metric("Merit Score", f"{b_res.merit_score*100:.1f}%")
+        with b_c6:
+            st.metric("Total Latency", f"{b_res.trace.total_brain_latency_ms:.1f} ms" if b_res.trace else "N/A")
+
+        # Sub-tabs for deep inspection
+        st_delib, st_graph, st_entropy, st_critic, st_memory, st_triples = st.tabs([
+            "📖 Dialectical Synthesis",
+            "🕸️ Graph of Thoughts (GoT)",
+            "📊 Information Entropy",
+            "🛡️ Metacognitive Critic",
+            "💾 Synaptic Working Memory",
+            "🧩 Semantic Triples"
+        ])
+
+        with st_delib:
+            st.markdown("#### Dialectical Synthesis & Reconciled Truth")
+            st.markdown(f"""
+            <div class="output-box" style="font-family: 'Inter', sans-serif; font-size: 1.05rem;">
+            {b_res.answer}
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.markdown("##### 💡 Key Cognitive Insights")
+            for ins in b_res.key_insights:
+                st.markdown(f"- {ins}")
+
+            st.markdown("##### 🔮 Follow-up Hypotheses")
+            for h in b_res.followup_hypotheses:
+                st.markdown(f"- *{h}*")
+
+        with st_graph:
+            st.markdown("#### Interactive Reasoning DAG")
+            if b_res.graph_mermaid:
+                st.markdown(f"""
+```mermaid
+{b_res.graph_mermaid}
+```
+""")
+            if b_res.graph_ascii:
+                with st.expander("View Terminal ASCII Tree"):
+                    st.code(b_res.graph_ascii, language="text")
+
+            if b_res.trace and b_res.trace.graph_of_thoughts:
+                st.markdown("##### Thought Nodes Breakdown")
+                for nid, node in b_res.trace.graph_of_thoughts.nodes.items():
+                    with st.expander(f"[{node.thought_type.value}] {nid} (Confidence: {node.confidence*100:.0f}%)"):
+                        st.write(f"**Content:** {node.content}")
+                        st.write(f"**Rationale:** {node.rationale}")
+                        st.write(f"**Validation Status:** `{node.validation_status}`")
+                        if node.dependencies:
+                            st.write(f"**Dependencies:** `{', '.join(node.dependencies)}`")
+
+        with st_entropy:
+            st.markdown("#### Information-Theoretic Density & Complexity")
+            if b_res.trace:
+                ent_prof = b_res.metadata
+                e1, e2, e3 = st.columns(3)
+                with e1:
+                    st.metric("Shannon Entropy H(X)", f"{ent_prof.get('entropy_bits', 0.0):.2f} bits")
+                with e2:
+                    st.metric("Renyi Order-2 Collision Entropy", f"{ent_prof.get('renyi_bits', 0.0):.2f} bits")
+                with e3:
+                    st.metric("Nodes in Reasoning DAG", f"{ent_prof.get('graph_nodes_count', 0)}")
+
+            if b_res.trace and b_res.trace.stage_latencies:
+                st.markdown("##### Stage Latency Breakdown (ms)")
+                st.json(b_res.trace.stage_latencies)
+
+        with st_critic:
+            st.markdown("#### Metacognitive Fallacy & Bias Audit Scorecard")
+            if b_res.bias_audits:
+                for audit in b_res.bias_audits:
+                    sev_color = "#dc3545" if audit.severity.value == "CRITICAL" else "#ffc107" if audit.severity.value == "WARNING" else "#17a2b8"
+                    st.markdown(f"""
+                    <div style="border-left: 4px solid {sev_color}; padding: 10px; background-color: #faf9fd; margin-bottom: 10px; border-radius: 4px;">
+                        <span style="font-weight: bold; color: {sev_color};">[{audit.severity.value}] {audit.bias_type}</span><br>
+                        <b>Detected:</b> <code>"{audit.detected_snippet}"</code><br>
+                        <b>Explanation:</b> {audit.explanation}<br>
+                        <b>Remediation:</b> {audit.remediation_suggestion}
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.success("✅ **Epistemic Validation Passed**: Zero cognitive bias violations or formal logical fallacies detected in this reasoning chain.")
+
+            with st.expander("Full Validation Notes"):
+                for note in (b_res.trace.bias_check_notes if b_res.trace else []):
+                    st.write(f"• {note}")
+
+        with st_memory:
+            st.markdown("#### Global Workspace & Synaptic Working Memory (GWT-SWM 2.0)")
+            snap = brain_instance.get_workspace_snapshot()
+            if snap:
+                st.markdown("##### Active Short-Term Memory Items (with Hebbian Plasticity)")
+                st.json(snap)
+            else:
+                st.info("Working memory is currently in resting baseline state.")
+
+            if b_res.trace and b_res.trace.broadcast_messages:
+                st.markdown("##### Conscious Global Workspace Broadcast Timeline")
+                for msg in b_res.trace.broadcast_messages:
+                    st.markdown(f"**Cycle {msg.broadcast_cycle}** [`{msg.sender_module}`] *(Salience: {msg.salience_weight:.2f})*: {msg.content_summary}")
+
+        with st_triples:
+            st.markdown("#### Extracted Semantic Knowledge Triples")
+            if b_res.triples:
+                for t in b_res.triples:
+                    st.markdown(f"- **({t.subject})** ──`[{t.predicate}]`──> **({t.object})** *(Confidence: {t.confidence*100:.0f}%)*")
+            else:
+                st.caption("No explicit structured triples extracted from query.")
+
+# 7. DOCUMENTATION TAB
 with tab_docs:
     st.markdown("### API Integration Guide")
     st.caption("Extracted directly from the project API reference manual.")

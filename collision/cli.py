@@ -153,16 +153,32 @@ def handle_think(args):
         for t in triples:
             print(f"  ({t.get('subject')} --[{t.get('predicate')}]--> {t.get('object')})")
 
+    bias_audits = result.get("bias_audits", [])
+    if bias_audits and (args.verbose or getattr(args, "visualize", False)):
+        print("\nMetacognitive Fallacy & Bias Audits:")
+        for b in bias_audits:
+            print(f"  [{b.get('severity')}] {b.get('bias_type')}: {b.get('explanation')}")
+
+    if getattr(args, "visualize", False) and result.get("graph_ascii"):
+        print("\n" + "=" * 40)
+        print(result.get("graph_ascii"))
+        print("=" * 40)
+
+    if getattr(args, "mermaid", False) and result.get("graph_mermaid"):
+        print("\n--- Mermaid Flowchart Diagram ---")
+        print(result.get("graph_mermaid"))
+        print("---------------------------------")
+
     followups = result.get("followup_hypotheses", [])
     if followups:
         print("\nFollowup Cognitive Hypotheses:")
         for f in followups:
             print(f"- {f}")
 
-    if args.verbose:
+    if args.verbose or getattr(args, "visualize", False):
         g = result.get("graph_summary", {})
         lat = result.get("latency", {})
-        print(f"\n[Brain Diagnostics] Graph Nodes: {g.get('nodes_count')} | Edges: {g.get('edges_count')} | Total Latency: {lat.get('total_ms', 0.0):.1f}ms")
+        print(f"\n[Brain Diagnostics] Nodes: {g.get('nodes_count')} | Edges: {g.get('edges_count')} | Merit: {result.get('merit_score', 1.0):.2f} | Latency: {lat.get('total_ms', 0.0):.1f}ms")
     print()
 
 
@@ -182,7 +198,9 @@ def main():
     think_parser.add_argument("question", type=str, nargs="?", default="", help="Complex or philosophical question to deliberate")
     think_parser.add_argument("--domain", type=str, default="General", help="Domain context")
     think_parser.add_argument("--no-dialectic", action="store_true", help="Disable Hegelian dialectical synthesis")
-    think_parser.add_argument("--verbose", action="store_true", help="Show full Graph-of-Thoughts and triple extractions")
+    think_parser.add_argument("--visualize", action="store_true", help="Render ASCII reasoning graph tree in terminal")
+    think_parser.add_argument("--mermaid", action="store_true", help="Output Mermaid diagram syntax for web/markdown rendering")
+    think_parser.add_argument("--verbose", action="store_true", help="Show full Graph-of-Thoughts, bias audits, and triple extractions")
     think_parser.add_argument("--json", action="store_true", help="Output raw JSON matching brain schema")
 
     # 'chat' command
