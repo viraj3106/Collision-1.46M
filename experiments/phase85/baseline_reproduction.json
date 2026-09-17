@@ -1,0 +1,18 @@
+{
+  "phase84_auto_accuracy": 86.67,
+  "phase84_web_accuracy": 100.0,
+  "phase84_model_only_accuracy": 73.33,
+  "failed_auto_question_ids": [
+    "ans-49",
+    "ans-50",
+    "ans-51",
+    "ans-52",
+    "ans-53",
+    "ans-54",
+    "ans-55",
+    "ans-56"
+  ],
+  "production_sha256_before": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "production_parameter_count": 10282304,
+  "timestamp": "2026-09-09 22:41:14"
+}

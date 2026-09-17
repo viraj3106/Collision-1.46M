@@ -1,0 +1,7 @@
+{
+  "search_success_rate_pct": 100.0,
+  "retrieval_success_rate_pct": 100.0,
+  "source_uniqueness_pct": 100.0,
+  "citation_validity_rate_pct": 100.0,
+  "grounding_rate_pct": 100.0
+}

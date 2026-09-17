@@ -1,0 +1,8 @@
+{
+  "max_seq_len_cap": 256,
+  "mean_context_tokens": 112,
+  "median_context_tokens": 108,
+  "max_context_tokens": 153,
+  "truncation_rate_pct": 100.0,
+  "context_overflows": 0
+}

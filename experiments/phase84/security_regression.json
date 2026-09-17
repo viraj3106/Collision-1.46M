@@ -1,0 +1,6 @@
+{
+  "prompt_injection_defense": "PASSED",
+  "ssrf_protection": "PASSED",
+  "private_ip_blocking": "PASSED",
+  "secret_key_protection": "PASSED"
+}

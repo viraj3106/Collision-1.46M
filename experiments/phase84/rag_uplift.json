@@ -1,0 +1,6 @@
+{
+  "accuracy_uplift_pct": 26.67,
+  "fact_coverage_uplift_pct": 26.67,
+  "grounding_uplift_pct": 100.0,
+  "hallucination_reduction_pct": 96.67
+}

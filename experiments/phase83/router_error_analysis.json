@@ -1,0 +1,43 @@
+{
+  "phase82_router_accuracy_pct": 53.33,
+  "total_queries_evaluated": 30,
+  "misclassified_queries_count": 14,
+  "root_cause_analysis": "Phase 82 QueryRouter contained an over-broad fallback rule `if '?' in query and len(words) > 3: return True`. This caused static factual queries (e.g., 'What is the capital city of Australia?', 'How many continents are on Earth?') to be incorrectly classified as requiring web search.",
+  "misclassified_examples": [
+    {
+      "query": "What is the capital city of Australia?",
+      "expected_mode": "NO_WEB",
+      "actual_mode": "WEB_REQUIRED",
+      "reason_for_failure": "Over-broad '?' keyword rule triggered on static geography question.",
+      "proposed_correction": "Add stable factual knowledge pattern rules and remove naive '?' fallback rule."
+    },
+    {
+      "query": "How many continents are on Earth?",
+      "expected_mode": "NO_WEB",
+      "actual_mode": "WEB_REQUIRED",
+      "reason_for_failure": "Over-broad '?' keyword rule triggered on basic general knowledge question.",
+      "proposed_correction": "Classify general knowledge facts as NO_WEB unless temporal signals are present."
+    },
+    {
+      "query": "What is the chemical formula for water?",
+      "expected_mode": "NO_WEB",
+      "actual_mode": "WEB_REQUIRED",
+      "reason_for_failure": "Over-broad '?' keyword rule triggered on fixed chemical science fact.",
+      "proposed_correction": "Add science fact intent signals to NO_WEB rules."
+    },
+    {
+      "query": "In which year did the Apollo 11 moon landing occur?",
+      "expected_mode": "NO_WEB",
+      "actual_mode": "WEB_REQUIRED",
+      "reason_for_failure": "Over-broad '?' keyword rule triggered on static historical event question.",
+      "proposed_correction": "Classify static historical date questions as NO_WEB."
+    },
+    {
+      "query": "What is the boiling point of pure water at sea level?",
+      "expected_mode": "NO_WEB",
+      "actual_mode": "WEB_REQUIRED",
+      "reason_for_failure": "Over-broad '?' keyword rule triggered on physics constant question.",
+      "proposed_correction": "Add physical science constants to NO_WEB static signals."
+    }
+  ]
+}

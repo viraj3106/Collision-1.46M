@@ -1,0 +1,60 @@
+{"id": "r-01", "category": "1. Current information", "query": "What is the current stock price of Apple Inc?", "expected_requires_web": true}
+{"id": "r-02", "category": "1. Current information", "query": "What is today's weather in Tokyo?", "expected_requires_web": true}
+{"id": "r-03", "category": "1. Current information", "query": "Who is the current CEO of Microsoft?", "expected_requires_web": true}
+{"id": "r-04", "category": "1. Current information", "query": "What is the current inflation rate in 2026?", "expected_requires_web": true}
+{"id": "r-05", "category": "1. Current information", "query": "What is the current status of Artemis III mission?", "expected_requires_web": true}
+{"id": "r-06", "category": "2. News", "query": "What are the latest tech news updates today?", "expected_requires_web": true}
+{"id": "r-07", "category": "2. News", "query": "What happened at the global AI summit this week?", "expected_requires_web": true}
+{"id": "r-08", "category": "2. News", "query": "Summarize today's financial headlines.", "expected_requires_web": true}
+{"id": "r-09", "category": "2. News", "query": "What recent developments occurred in space exploration?", "expected_requires_web": true}
+{"id": "r-10", "category": "2. News", "query": "What are the latest policy updates regarding AI regulations?", "expected_requires_web": true}
+{"id": "r-11", "category": "3. Software versions", "query": "What is the latest version of Python?", "expected_requires_web": true}
+{"id": "r-12", "category": "3. Software versions", "query": "What features were added in FastAPI 0.110?", "expected_requires_web": true}
+{"id": "r-13", "category": "3. Software versions", "query": "What is the newest release of PyTorch?", "expected_requires_web": true}
+{"id": "r-14", "category": "3. Software versions", "query": "What is the current release of Node.js LTS?", "expected_requires_web": true}
+{"id": "r-15", "category": "3. Software versions", "query": "What are the updated release notes for Rust 1.78?", "expected_requires_web": true}
+{"id": "r-16", "category": "4. Current products", "query": "What are the latest features of iPhone 16?", "expected_requires_web": true}
+{"id": "r-17", "category": "4. Current products", "query": "What is the current price of Tesla Model 3?", "expected_requires_web": true}
+{"id": "r-18", "category": "4. Current products", "query": "What are the newest specs for Nvidia Blackwell GPUs?", "expected_requires_web": true}
+{"id": "r-19", "category": "4. Current products", "query": "What is the current lineup of Apple M3 laptops?", "expected_requires_web": true}
+{"id": "r-20", "category": "4. Current products", "query": "What features are included in Google Pixel 9?", "expected_requires_web": true}
+{"id": "r-21", "category": "5. Stable factual knowledge", "query": "What is the capital of France?", "expected_requires_web": false}
+{"id": "r-22", "category": "5. Stable factual knowledge", "query": "How many continents are on Earth?", "expected_requires_web": false}
+{"id": "r-23", "category": "5. Stable factual knowledge", "query": "What is the chemical formula for water?", "expected_requires_web": false}
+{"id": "r-24", "category": "5. Stable factual knowledge", "query": "In which year did Apollo 11 land on the moon?", "expected_requires_web": false}
+{"id": "r-25", "category": "5. Stable factual knowledge", "query": "What is the boiling point of pure water at sea level?", "expected_requires_web": false}
+{"id": "r-26", "category": "6. Programming", "query": "Write a Python function to check for palindromes.", "expected_requires_web": false}
+{"id": "r-27", "category": "6. Programming", "query": "How do you define a dataclass in Python?", "expected_requires_web": false}
+{"id": "r-28", "category": "6. Programming", "query": "Write a function to reverse a string in Python.", "expected_requires_web": false}
+{"id": "r-29", "category": "6. Programming", "query": "How do you handle exceptions in Python with try except?", "expected_requires_web": false}
+{"id": "r-30", "category": "6. Programming", "query": "Write a binary search algorithm in Python.", "expected_requires_web": false}
+{"id": "r-31", "category": "7. Mathematics", "query": "What is 15 multiplied by 12?", "expected_requires_web": false}
+{"id": "r-32", "category": "7. Mathematics", "query": "Solve for x: 2x + 5 = 15.", "expected_requires_web": false}
+{"id": "r-33", "category": "7. Mathematics", "query": "Calculate the area of a circle with radius 5.", "expected_requires_web": false}
+{"id": "r-34", "category": "7. Mathematics", "query": "What is the derivative of x squared?", "expected_requires_web": false}
+{"id": "r-35", "category": "7. Mathematics", "query": "What is the square root of 144?", "expected_requires_web": false}
+{"id": "r-36", "category": "8. Creative writing", "query": "Write a short poem about the autumn rain.", "expected_requires_web": false}
+{"id": "r-37", "category": "8. Creative writing", "query": "Write a opening paragraph for a science fiction story.", "expected_requires_web": false}
+{"id": "r-38", "category": "8. Creative writing", "query": "Draft a short story about a robot learning to paint.", "expected_requires_web": false}
+{"id": "r-39", "category": "8. Creative writing", "query": "Write a haiku about springtime flowers.", "expected_requires_web": false}
+{"id": "r-40", "category": "8. Creative writing", "query": "Write a creative announcement for a fictional product launch.", "expected_requires_web": false}
+{"id": "r-41", "category": "9. Summarization", "query": "Summarize this paragraph: The quick brown fox jumps over the lazy dog.", "expected_requires_web": false}
+{"id": "r-42", "category": "9. Summarization", "query": "Summarize the key ideas of object-oriented programming.", "expected_requires_web": false}
+{"id": "r-43", "category": "9. Summarization", "query": "Summarize the plot of Romeo and Juliet in two sentences.", "expected_requires_web": false}
+{"id": "r-44", "category": "9. Summarization", "query": "Provide a brief summary of the water cycle.", "expected_requires_web": false}
+{"id": "r-45", "category": "9. Summarization", "query": "Summarize the principles of clean architecture.", "expected_requires_web": false}
+{"id": "r-46", "category": "10. User-provided information", "query": "Given the user text 'Alice works at Google', where does Alice work?", "expected_requires_web": false}
+{"id": "r-47", "category": "10. User-provided information", "query": "Based on the provided input: 'The meeting is at 3 PM', when is the meeting?", "expected_requires_web": false}
+{"id": "r-48", "category": "10. User-provided information", "query": "Using this list: [apple, banana, cherry], what is the second item?", "expected_requires_web": false}
+{"id": "r-49", "category": "10. User-provided information", "query": "From the text above, extract the phone number.", "expected_requires_web": false}
+{"id": "r-50", "category": "10. User-provided information", "query": "Answer using the context provided by the prompt.", "expected_requires_web": false}
+{"id": "r-51", "category": "11. Explicit web-search requests", "query": "Search the web for current AI regulations.", "expected_requires_web": true}
+{"id": "r-52", "category": "11. Explicit web-search requests", "query": "Look up online the latest launch schedule for SpaceX.", "expected_requires_web": true}
+{"id": "r-53", "category": "11. Explicit web-search requests", "query": "Find online what does the web say about Python 3.13.", "expected_requires_web": true}
+{"id": "r-54", "category": "11. Explicit web-search requests", "query": "Google the current CEO of Twitter.", "expected_requires_web": true}
+{"id": "r-55", "category": "11. Explicit web-search requests", "query": "Web search for recent breakthroughs in quantum computing.", "expected_requires_web": true}
+{"id": "r-56", "category": "12. Ambiguous queries", "query": "Explain how gravity works.", "expected_requires_web": false}
+{"id": "r-57", "category": "12. Ambiguous queries", "query": "What is the meaning of life?", "expected_requires_web": false}
+{"id": "r-58", "category": "12. Ambiguous queries", "query": "How do plants perform photosynthesis?", "expected_requires_web": false}
+{"id": "r-59", "category": "12. Ambiguous queries", "query": "What is the definition of machine learning?", "expected_requires_web": false}
+{"id": "r-60", "category": "12. Ambiguous queries", "query": "What is a neural network?", "expected_requires_web": false}

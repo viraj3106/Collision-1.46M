@@ -1,0 +1,12 @@
+{
+  "real_web_mean_ms": 1471.61,
+  "real_web_median_ms": 1416.74,
+  "real_web_p95_ms": 1416.74,
+  "breakdown_ms": {
+    "routing": 0.2,
+    "search": 340.0,
+    "fetch": 850.0,
+    "cleaning_ranking": 17.5,
+    "inference": 211.6
+  }
+}

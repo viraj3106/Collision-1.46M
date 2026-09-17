@@ -1,0 +1,12 @@
+{
+  "total_tests": 5,
+  "passed": 5,
+  "failed": 0,
+  "coverage": [
+    "Answer Generation",
+    "Source Attribution",
+    "Grounding Rate",
+    "Hallucination Resistance",
+    "Model SHA256 Integrity"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "full_dataset_evaluation": {
+    "MODEL_ONLY": {
+      "accuracy_pct": 73.33,
+      "grounding_pct": 55.0,
+      "citation_validity_pct": 0.0,
+      "hallucination_pct": 20.0,
+      "unnecessary_search_pct": 0.0,
+      "mean_context_tokens": 0.0
+    },
+    "WEB_RAG": {
+      "accuracy_pct": 73.33,
+      "grounding_pct": 86.67,
+      "citation_validity_pct": 100.0,
+      "hallucination_pct": 3.33,
+      "unnecessary_search_pct": 100.0,
+      "mean_context_tokens": 13.6
+    },
+    "AUTO_RAG_BASELINE": {
+      "accuracy_pct": 85.0,
+      "grounding_pct": 75.0,
+      "citation_validity_pct": 100.0,
+      "hallucination_pct": 16.67,
+      "unnecessary_search_pct": 0.0,
+      "mean_context_tokens": 13.25
+    },
+    "AUTO_RAG_OPTIMIZED": {
+      "accuracy_pct": 100.0,
+      "grounding_pct": 90.0,
+      "citation_validity_pct": 100.0,
+      "hallucination_pct": 3.33,
+      "unnecessary_search_pct": 0.0,
+      "mean_context_tokens": 13.24
+    }
+  },
+  "holdout_subset_evaluation": {
+    "accuracy_pct": 100.0,
+    "grounding_pct": 93.33,
+    "citation_validity_pct": 100.0,
+    "hallucination_pct": 6.67,
+    "unnecessary_search_pct": 0.0,
+    "mean_context_tokens": 13.4
+  },
+  "accuracy_improvement_over_baseline": 15.0,
+  "unnecessary_search_reduction": 0.0
+}

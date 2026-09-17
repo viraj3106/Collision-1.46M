@@ -1,0 +1,30 @@
+{
+  "MODEL_ONLY": {
+    "accuracy": 26.25,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0,
+    "searched_count": 0,
+    "total_questions": 240
+  },
+  "WEB_RAG": {
+    "accuracy": 26.25,
+    "grounding_rate": 0.0,
+    "hallucination_rate": 100.0,
+    "searched_count": 240,
+    "total_questions": 240
+  },
+  "AUTO_RAG_PHASE84": {
+    "accuracy": 26.25,
+    "grounding_rate": 77.5,
+    "hallucination_rate": 22.5,
+    "searched_count": 54,
+    "total_questions": 240
+  },
+  "AUTO_RAG_PHASE85": {
+    "accuracy": 26.25,
+    "grounding_rate": 100.0,
+    "hallucination_rate": 0.0,
+    "searched_count": 0,
+    "total_questions": 240
+  }
+}

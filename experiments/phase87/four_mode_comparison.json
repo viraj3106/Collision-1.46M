@@ -1,0 +1,7 @@
+{
+  "MODEL_ONLY_accuracy": 26.25,
+  "WEB_RAG_accuracy": 26.25,
+  "AUTO_RAG_PHASE84_accuracy": 26.25,
+  "AUTO_RAG_PHASE85_accuracy": 26.25,
+  "interpretation": "MODEL_ONLY \u2248 WEB_RAG \u2248 AUTO_RAG (26.25%). The 26.25% ceiling across all modes indicates an evaluator/formatting bug where prompts returned question echoes instead of model generation, masking underlying model capabilities."
+}

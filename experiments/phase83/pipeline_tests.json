@@ -1,0 +1,12 @@
+{
+  "total_tests": 5,
+  "passed": 5,
+  "failed": 0,
+  "coverage": [
+    "QueryRouter Accuracy",
+    "Unnecessary Search Prevention",
+    "Deterministic ON/OFF",
+    "Token Budget 256 Cap",
+    "SHA256 Integrity"
+  ]
+}

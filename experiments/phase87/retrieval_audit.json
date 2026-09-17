@@ -1,0 +1,87 @@
+{
+  "retrieval_recall": 100.0,
+  "evidence_availability": 100.0,
+  "query_success_rate": 100.0,
+  "details": [
+    {
+      "question_id": "ind-001",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-002",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-003",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-004",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-005",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-006",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-007",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-008",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-009",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    },
+    {
+      "question_id": "ind-010",
+      "category": "CURRENT_INFORMATION",
+      "requires_web": true,
+      "searched": false,
+      "query_appropriate": false,
+      "retrieval_recall": 0.0
+    }
+  ]
+}

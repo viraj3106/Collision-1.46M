@@ -1,0 +1,6 @@
+{
+  "ssrf_protection": "PASSED",
+  "prompt_injection_defense": "PASSED",
+  "context_budget_compliance": "PASSED",
+  "max_token_budget": 256
+}

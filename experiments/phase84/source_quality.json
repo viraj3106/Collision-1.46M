@@ -1,0 +1,7 @@
+{
+  "relevant_source_rate_pct": 100.0,
+  "top1_relevance_pct": 100.0,
+  "top3_relevance_pct": 100.0,
+  "duplicate_source_rate_pct": 0.0,
+  "irrelevant_source_rate_pct": 0.0
+}

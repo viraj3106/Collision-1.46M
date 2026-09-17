@@ -1,0 +1,9 @@
+{
+  "model_only_accuracy_pct": 73.33,
+  "web_rag_accuracy_pct": 100.0,
+  "auto_rag_accuracy_pct": 86.67,
+  "model_only_fact_coverage_pct": 73.33,
+  "web_rag_fact_coverage_pct": 100.0,
+  "auto_rag_fact_coverage_pct": 86.67,
+  "evaluation_type": "AUTOMATED_HEURISTIC_AND_STRUCTURED_FACT_CHECK"
+}

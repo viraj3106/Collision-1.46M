@@ -1,0 +1,87 @@
+{
+  "headline_grounding_rate": 100.0,
+  "headline_accuracy": 26.25,
+  "discrepancy_explanation": "In Phase 86 run_phase86.py, for non-web search responses (web_search='off'), context_text was empty (''), so answer_text fell back to resp.prompt_formatted. In MODEL_ONLY and AUTO_RAG_PHASE85 non-search mode, prompt_formatted was set to request.query. The evaluator marked these outputs as 'grounded' (non-web grounded by definition) while matching expected keywords against the question text string, producing an artificial 26.25% baseline accuracy across all modes.",
+  "sample_records": [
+    {
+      "question_id": "ind-001",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-002",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-003",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-004",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-005",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-006",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": true,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-007",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-008",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-009",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    },
+    {
+      "question_id": "ind-010",
+      "category": "CURRENT_INFORMATION",
+      "grounded": true,
+      "correct": false,
+      "answer_equals_question_echo": true,
+      "finding": "100% Grounding resulted from non-web RAG pipeline returning formatted prompt string containing query as fallback, which evaluator marked grounded."
+    }
+  ]
+}

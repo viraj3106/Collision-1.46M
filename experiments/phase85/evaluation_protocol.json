@@ -1,0 +1,9 @@
+{
+  "total_evaluation_questions": 60,
+  "data_leakage_safeguard": "STRICT_SEPARATION",
+  "protocol_description": "To prevent overfitting or tuning leakage on the evaluation set, the 60 Phase 84 questions are partitioned into a Diagnostic/Tuning Subset (30 questions, odd-indexed IDs) and an untouched Holdout Subset (30 questions, even-indexed IDs). All ablation policies are tested on both splits to report unbiased holdout generalization.",
+  "splits": {
+    "diagnostic_tuning_subset_size": 30,
+    "untouched_holdout_subset_size": 30
+  }
+}

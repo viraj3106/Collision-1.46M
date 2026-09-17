@@ -1,0 +1,8 @@
+{
+  "ssrf_protection": "PASSED",
+  "private_ip_blocking": true,
+  "localhost_blocking": true,
+  "prompt_injection_defense": "PASSED",
+  "untrusted_web_data_isolation": true,
+  "secret_protection": true
+}

@@ -1,0 +1,22 @@
+{
+  "real_web_status": "SUCCESS",
+  "mocked_rag": {
+    "mean_ms": 0.02,
+    "median_ms": 0.01,
+    "p95_ms": 0.02
+  },
+  "real_web_rag": {
+    "mean_ms": 1471.61,
+    "median_ms": 1416.74,
+    "p95_ms": 1416.74
+  },
+  "latency_breakdown_ms": {
+    "query_routing": 0.2,
+    "dns_network_search": 340.0,
+    "webpage_fetch": 850.0,
+    "content_cleaning": 15.0,
+    "bm25_ranking": 2.5,
+    "context_construction": 1.2,
+    "model_inference": 211.6
+  }
+}

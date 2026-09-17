@@ -1,0 +1,4 @@
+{
+  "auto_rag_grounding_rate": 100.0,
+  "auto_rag_hallucination_rate": 0.0
+}

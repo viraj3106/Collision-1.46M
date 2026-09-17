@@ -1,0 +1,7 @@
+{
+  "mocked_mean_ms": 0.02,
+  "real_web_mean_ms": 1471.61,
+  "real_web_median_ms": 1416.74,
+  "real_web_p95_ms": 1416.74,
+  "latency_change": "No increase in model inference time; router logic added <0.2ms overhead."
+}

@@ -1,0 +1,28 @@
+{
+  "verdict": "PHASE_83_RAG_ROUTER_VALIDATED",
+  "accuracy_pct": 96.67,
+  "precision_pct": 96.0,
+  "recall_pct": 96.0,
+  "f1_score": 96.0,
+  "unnecessary_search_rate_pct": 2.86,
+  "confusion_matrix": {
+    "true_positives": 24,
+    "false_positives": 1,
+    "false_negatives": 1,
+    "true_negatives": 34
+  },
+  "category_accuracy": {
+    "1. Current information": 100.0,
+    "2. News": 100.0,
+    "3. Software versions": 80.0,
+    "4. Current products": 100.0,
+    "5. Stable factual knowledge": 100.0,
+    "6. Programming": 100.0,
+    "7. Mathematics": 100.0,
+    "8. Creative writing": 100.0,
+    "9. Summarization": 100.0,
+    "10. User-provided information": 80.0,
+    "11. Explicit web-search requests": 100.0,
+    "12. Ambiguous queries": 100.0
+  }
+}

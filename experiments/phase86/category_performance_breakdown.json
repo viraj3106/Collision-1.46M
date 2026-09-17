@@ -1,0 +1,74 @@
+{
+  "CURRENT_INFORMATION": {
+    "accuracy": 25.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "RECENT_NEWS_EVENTS": {
+    "accuracy": 80.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "WEB_VERIFIABLE_FACTS": {
+    "accuracy": 0.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "PROGRAMMING_SOFTWARE": {
+    "accuracy": 50.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "SCIENCE_TECHNICAL": {
+    "accuracy": 20.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "STABLE_GENERAL_KNOWLEDGE": {
+    "accuracy": 0.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "MATH_REASONING": {
+    "accuracy": 10.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "AMBIGUOUS_QUESTIONS": {
+    "accuracy": 5.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "UNANSWERABLE_QUESTIONS": {
+    "accuracy": 40.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "FALSE_PREMISE_ADVERSARIAL": {
+    "accuracy": 15.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "MULTI_HOP_RESEARCH": {
+    "accuracy": 15.0,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  },
+  "SOURCE_VERIFICATION": {
+    "accuracy": 55.00000000000001,
+    "search_rate": 0.0,
+    "grounding_rate": 100.0,
+    "count": 20
+  }
+}

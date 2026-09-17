@@ -1,0 +1,6 @@
+{
+  "model_only_accuracy": 26.25,
+  "web_rag_accuracy": 26.25,
+  "auto_rag_accuracy": 26.25,
+  "performance_gap_model_vs_web": 0.0
+}

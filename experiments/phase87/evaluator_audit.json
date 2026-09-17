@@ -1,0 +1,56 @@
+{
+  "test_cases": {
+    "Case A (Exact correct answer)": {
+      "model_answer": "MSFT",
+      "gold_answer": "MSFT",
+      "evaluator_result": true,
+      "expected_result": true,
+      "passed": true
+    },
+    "Case B (Different wording)": {
+      "model_answer": "The ticker is MSFT for Microsoft",
+      "gold_answer": "MSFT",
+      "evaluator_result": true,
+      "expected_result": true,
+      "passed": true
+    },
+    "Case C (Extra explanation)": {
+      "model_answer": "Microsoft Corporation trades under ticker symbol MSFT on NASDAQ.",
+      "gold_answer": "MSFT",
+      "evaluator_result": true,
+      "expected_result": true,
+      "passed": true
+    },
+    "Case D (Partially correct)": {
+      "model_answer": "Microsoft stock is traded on NASDAQ",
+      "gold_answer": "MSFT",
+      "evaluator_result": false,
+      "expected_result": false,
+      "passed": true
+    },
+    "Case E (Clearly incorrect)": {
+      "model_answer": "AAPL",
+      "gold_answer": "MSFT",
+      "evaluator_result": false,
+      "expected_result": false,
+      "passed": true
+    },
+    "Case F (Refusal to unanswerable)": {
+      "model_answer": "Information on private diary is not available.",
+      "gold_answer": "unanswerable",
+      "evaluator_result": true,
+      "expected_result": true,
+      "passed": true
+    },
+    "Case G (Rejection of false premise)": {
+      "model_answer": "Python 9 does not exist.",
+      "gold_answer": "false premise",
+      "evaluator_result": true,
+      "expected_result": true,
+      "passed": true
+    }
+  },
+  "evaluator_validity_rate": 100.0,
+  "total_cases": 7,
+  "passed_cases": 7
+}

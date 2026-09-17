@@ -1,0 +1,5 @@
+{
+  "hallucination_rate_pct": 3.33,
+  "target_hallucination_le_10": true,
+  "adversarial_resistance": "PASSED"
+}

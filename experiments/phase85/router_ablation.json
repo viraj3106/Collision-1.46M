@@ -1,0 +1,26 @@
+{
+  "policy_A_baseline": {
+    "accuracy_pct": 85.0,
+    "grounding_pct": 75.0,
+    "citation_validity_pct": 100.0,
+    "hallucination_pct": 16.67,
+    "unnecessary_search_pct": 0.0,
+    "mean_context_tokens": 13.25
+  },
+  "policy_B_conservative": {
+    "accuracy_pct": 75.0,
+    "grounding_pct": 86.67,
+    "citation_validity_pct": 100.0,
+    "hallucination_pct": 3.33,
+    "unnecessary_search_pct": 90.91,
+    "mean_context_tokens": 13.67
+  },
+  "policy_C_optimized": {
+    "accuracy_pct": 100.0,
+    "grounding_pct": 90.0,
+    "citation_validity_pct": 100.0,
+    "hallucination_pct": 3.33,
+    "unnecessary_search_pct": 0.0,
+    "mean_context_tokens": 13.24
+  }
+}

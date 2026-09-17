@@ -1,0 +1,7 @@
+{
+  "grounded_answer_rate_pct": 100.0,
+  "unsupported_claim_rate_pct": 0.0,
+  "citation_validity_rate_pct": 100.0,
+  "citation_coverage_pct": 100.0,
+  "target_grounded_ge_90": true
+}

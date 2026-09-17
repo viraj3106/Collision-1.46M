@@ -1,0 +1,15 @@
+{
+  "production_model_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "parameter_count": 10282304,
+  "router_version": "Phase85_Optimized_Signal_Router_v1",
+  "router_configuration": {
+    "explicit_search_keywords_count": 7,
+    "current_temporal_keywords_count": 18,
+    "verification_adversarial_keywords_count": 17,
+    "static_no_web_keywords_count": 27
+  },
+  "phase85_verdict": "PHASE_85_ROUTER_OPTIMIZATION_VALIDATED",
+  "training_executed": false,
+  "model_weights_modified": false,
+  "evaluation_start_timestamp": "2026-09-09 22:54:10"
+}
