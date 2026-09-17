@@ -195,12 +195,23 @@ class CollisionNLPEngine:
                     "**How I can help you:**\n\n"
                     "• **Conversations**: Chat, brainstorm, and answer everyday questions.\n"
                     "• **Math & Problem Solving**: Solve arithmetic, geometry, statistics, percentages, and unit conversions.\n"
+                    "• **Cognitive Reasoning & Strategy**: Step-by-step thinking, 5-Whys root cause analysis, persuasion techniques, negotiation, and cognitive bias detection.\n"
+                    "• **Cross-Domain Knowledge**: Deep explanations across AI, Computer Science, Physics, Biology, Philosophy, Economics, and History.\n"
                     "• **NLP Analytics**: Sentiment analysis, text summarization, NER, keyphrase extraction, topic classification, and tone scoring.\n"
                     "• **Proofreading & Language**: Fix grammar, compute readability (Flesch-Kincaid), and detect languages.\n"
                     "• **Reading Comprehension**: Answer questions from arbitrary context passages.\n"
                     "• **Live Web & Wikipedia Knowledge**: Real-time factual information with verified citations.\n\n"
                     "Just type your query and I will provide an answer!"
                 )
+
+        # 7. Cognitive Dialogue Engine (Empathy, Brainstorming, Philosophy, Humor, Advice)
+        try:
+            from collision.cognitive.dialogue import CognitiveDialogueEngine
+            cog_dialogue = CognitiveDialogueEngine.analyze_dialogue(query)
+            if cog_dialogue:
+                return cog_dialogue.response
+        except Exception:
+            pass
 
         return None
 
@@ -825,6 +836,15 @@ class CollisionNLPEngine:
             if len(out) == 1:
                 out.append("No distinct named entities detected in the provided input.")
             return "\n".join(out)
+
+        # 13. Cognitive Reasoning, Strategic Persuasion & Universal Cross-Domain Knowledge Base
+        try:
+            from collision.cognitive.engine import CollisionCognitiveEngine
+            cog_res = CollisionCognitiveEngine.evaluate(query)
+            if cog_res:
+                return cog_res.answer
+        except Exception:
+            pass
 
         return None
 

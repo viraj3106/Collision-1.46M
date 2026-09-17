@@ -95,7 +95,7 @@ class ConversationalIntentHandler:
         # 5. System checks
         for p in cls.SYSTEM_CHECK_PATTERNS:
             if re.search(p, q) or re.search(p, q_norm):
-                return "Pong! 🏓 COLLISION is online, healthy, and ready to answer any questions."
+                return "Pong! [OK] COLLISION is online, healthy, and ready to answer any questions."
 
         # 6. Help
         for p in cls.HELP_PATTERNS:
