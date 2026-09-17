@@ -109,14 +109,15 @@ class CollisionAPIClient:
             return 500, {"error": str(e)}
 
     # Generation completion call (uses API authorization key)
-    def generate(self, prompt, model="collision-10m", max_tokens=100, temp=0.7, top_k=50, top_p=0.9):
+    def generate(self, prompt, model="collision-10m", max_tokens=100, temp=0.7, top_k=50, top_p=0.9, web_search="off"):
         payload = {
             "model": model,
             "prompt": prompt,
             "max_tokens": max_tokens,
             "temperature": temp,
             "top_k": top_k,
-            "top_p": top_p
+            "top_p": top_p,
+            "web_search": web_search
         }
         
         url = f"{self.base_url}/v1/generate"

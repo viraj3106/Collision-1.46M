@@ -46,7 +46,9 @@ class ModelConfig:
         with open(path, "r") as f:
             cfg_dict = yaml.safe_load(f)
         model_cfg = cfg_dict.get("model", {})
-        return cls(**model_cfg)
+        valid_keys = {"vocab_size", "max_seq_len", "d_model", "n_layer", "n_head", "d_ff", "dropout", "tie_embeddings"}
+        filtered_cfg = {k: v for k, v in model_cfg.items() if k in valid_keys}
+        return cls(**filtered_cfg)
 
     def calculate_parameter_count(self) -> int:
         # Programmatic parameter count estimation matching the model classes:

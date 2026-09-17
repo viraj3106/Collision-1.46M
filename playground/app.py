@@ -469,15 +469,19 @@ with tab_models:
         - **Average Generation latency**: `2317.6 ms` (for ~97 tokens completed)
         """)
         
-    st.warning("""
-    **Model Positioning Disclaimer**:
-    COLLISION-10M is an experimental research base language model. It has not been instruction-tuned or aligned for conversational dialog. Do not compare this model to commercial frontier LLMs.
+    st.success("""
+    **Hierarchical Hybrid Intelligence Architecture**:
+    COLLISION-10M is integrated with an intelligent multi-tier pipeline:
+    1. **Conversational Intent Engine**: Instant natural handling for greetings, courtesies, and identity.
+    2. **Safe AST Math Evaluator**: Deterministic computation for arithmetic, percentages, and formulas.
+    3. **Multi-Source Hybrid RAG**: Real-time Wikipedia OpenSearch + DuckDuckGo knowledge extraction.
+    4. **Local Vector Knowledge**: Embedded cosine similarity search across local architecture specs.
     """)
 
 # 5. PLAYGROUND CLIENT TAB
 with tab_playground:
-    st.markdown("### Model Completions Playground")
-    st.caption("Configure generation settings and test completion queries directly. Enforces authentication.")
+    st.markdown("### Hierarchical Hybrid Intelligence Playground")
+    st.caption("Ask anything: conversations, exact math, or open-domain factual questions. Powered by COLLISION-10M + Multi-Tier Grounding.")
     
     # Allow entering an API key to test generation
     playground_key = st.text_input("API Key for Playground Queries (col_...)", type="password", help="Requires an active API key to call completions.")
@@ -486,6 +490,7 @@ with tab_playground:
     
     with col_play_r:
         st.markdown("#### Generation Configs")
+        p_web_search = st.selectbox("Knowledge & Web Mode", ["AUTO", "ON", "OFF"], index=0, help="AUTO intelligently answers greetings, math, and retrieves verified Wikipedia/Web facts for open-domain queries.")
         p_temp = st.slider("Temperature (Playground)", min_value=0.01, max_value=2.0, value=0.7, step=0.05)
         p_top_p = st.slider("Top P (Playground)", min_value=0.01, max_value=1.0, value=0.9, step=0.05)
         p_top_k = st.number_input("Top K (Playground)", min_value=0, max_value=200, value=50)
@@ -495,22 +500,21 @@ with tab_playground:
         st.markdown("#### Domain Exploration Examples")
         sample_prompts = {
             "-- Select a domain example --": "",
+            "Conversation & Identity": "hi, who are you and what can you do?",
+            "Exact Math Calculation": "what is 45 * 128 + 15% of 850?",
+            "Entity Fact": "who was Albert Einstein?",
+            "Science & Technology": "what is quantum computing?",
+            "Geography": "what is the capital of France?",
             "General Knowledge": "Explain how solar eclipses occur.",
             "Programming": "Write a Python function to check for palindromes.",
             "AI/ML": "Explain the difference between supervised and unsupervised learning.",
-            "Science": "Describe the process of photosynthesis in plants.",
-            "Mathematics": "What is the formula for calculating the area of a circle?",
             "Reasoning": "If all A are B and all B are C, are all A necessarily C?",
-            "Writing": "Draft a concise product announcement for a new API.",
-            "Summarization": "Summarize the key principles of web performance optimization.",
-            "Troubleshooting": "How do you debug a CORS issue in a FastAPI application?",
-            "Conversation": "What are three fun activities for a rainy weekend?",
-            "Instructions": "Provide step-by-step instructions for installing Git."
+            "Writing": "Draft a concise product announcement for a new API."
         }
         selected_domain = st.selectbox("Explore Sample Prompts", list(sample_prompts.keys()), key="domain_sample_select")
         initial_prompt_val = sample_prompts[selected_domain] if selected_domain != "-- Select a domain example --" else ""
         
-        p_prompt = st.text_area("Prompt (Playground)", value=initial_prompt_val if initial_prompt_val else "", placeholder="Write a text completion prompt here...", height=120)
+        p_prompt = st.text_area("Prompt (Playground)", value=initial_prompt_val if initial_prompt_val else "", placeholder="Ask COLLISION anything...", height=120)
 
         
         col_pbtn_gen, col_pbtn_clear = st.columns(2)
@@ -539,7 +543,8 @@ with tab_playground:
                             max_tokens=p_max_tokens,
                             temp=p_temp,
                             top_k=p_top_k,
-                            top_p=p_top_p
+                            top_p=p_top_p,
+                            web_search=p_web_search.lower()
                         )
                         
                         if response["success"]:
@@ -570,6 +575,18 @@ with tab_playground:
             <span style="color: #6c757d; font-style: italic;">{p_prompt}</span><b>{st.session_state.playground_output}</b>
             </div>
             """, unsafe_allow_html=True)
+
+            resp_data = st.session_state.playground_response
+            if resp_data and isinstance(resp_data, dict) and resp_data.get("web_search_used"):
+                st.markdown("##### 🌐 Web Sources")
+                sources = resp_data.get("sources", [])
+                if sources:
+                    for idx, src in enumerate(sources, 1):
+                        st.markdown(f"**{idx}. [{src['title']}]({src['url']})**")
+                        if src.get("snippet"):
+                            st.caption(f"\"{src['snippet']}\"")
+                else:
+                    st.caption("Web search was executed but no external page sources were retrieved.")
             
             metrics = st.session_state.playground_metrics
             if metrics:
