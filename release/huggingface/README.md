@@ -41,7 +41,7 @@ parameters: 10.28M
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/viraj3106/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
+  <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://github.com/viraj3106/Collision-1.46M"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
@@ -132,7 +132,7 @@ Run everything in your browser on free Google Colab in under 10 seconds:
 Clone this repository and run pure PyTorch inference directly:
 
 ```bash
-git clone https://huggingface.co/viraj3106/collision-10m
+git clone https://huggingface.co/collision-10M/collision-10m
 cd collision-10m
 python generate.py --prompt "Artificial intelligence is"
 ```
@@ -199,7 +199,7 @@ print(f"Flesch Ease: {read.flesch_reading_ease} | Level: {read.reading_level}")
 
 ## 🌐 Community & Ecosystem
 
-* **🤗 Live Space Demo**: [viraj3106/collision-ai-lab](https://huggingface.co/spaces/viraj3106/collision-ai-lab)
+* **🤗 Live Space Demo**: [collision-10M/collision-ai-lab](https://huggingface.co/spaces/collision-10M/collision-ai-lab)
 * **💻 GitHub Repository**: [viraj3106/Collision-1.46M](https://github.com/viraj3106/Collision-1.46M)
 * **📜 Citation & License**: MIT License (Permissive Open-Source for Commercial & Research Use)
 

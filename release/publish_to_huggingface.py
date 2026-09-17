@@ -18,8 +18,8 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-MODEL_REPO_ID = "viraj3106/collision-10m"
-SPACE_REPO_ID = "viraj3106/collision-ai-lab"
+MODEL_REPO_ID = "collision-10M/collision-10m"
+SPACE_REPO_ID = "collision-10M/collision-ai-lab"
 EXPECTED_SHA256 = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
 
 

@@ -5,9 +5,9 @@ This document outlines the upload process, file layout, and metadata required to
 ---
 
 ## 1. Hugging Face Repositories
-* **Model Hub**: `viraj3106/collision-10m`
-* **Space Hub**: `viraj3106/collision-ai-lab` (Streamlit SDK)
-* **Dataset Hub**: `viraj3106/collision_dataset_v5_expanded`
+* **Model Hub**: `collision-10M/collision-10m`
+* **Space Hub**: `collision-10M/collision-ai-lab` (Static SDK)
+* **Dataset Hub**: `collision-10M/collision_dataset_v5_expanded`
 
 ---
 
@@ -32,9 +32,10 @@ release/huggingface/
 The `release/huggingface_space/` directory is ready for 1-step deployment to Hugging Face Spaces:
 ```
 release/huggingface_space/
-├── README.md               # Space metadata (sdk: streamlit, title: COLLISION AI & NLP Lab)
-├── requirements.txt        # streamlit, torch, pydantic
-└── app.py                  # Standalone interactive portal running full NLP Engine & chat
+├── README.md               # Space metadata (sdk: static, title: COLLISION AI & NLP Lab)
+├── index.html              # Modern glassmorphism UI portal
+├── app.js                  # Client-side reactivity and API integrations
+└── styles.css              # Cyber-indigo theme styles
 ```
 
 ---
@@ -50,14 +51,14 @@ api = HfApi()
 # 1. Upload Model Hub
 api.upload_folder(
     folder_path="release/huggingface",
-    repo_id="viraj3106/collision-10m",
+    repo_id="collision-10M/collision-10m",
     repo_type="model"
 )
 
 # 2. Upload Space Hub
 api.upload_folder(
     folder_path="release/huggingface_space",
-    repo_id="viraj3106/collision-ai-lab",
+    repo_id="collision-10M/collision-ai-lab",
     repo_type="space"
 )
 ```
