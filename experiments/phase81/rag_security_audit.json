@@ -1,0 +1,9 @@
+{
+  "ssrf_protection": "PASSED",
+  "private_ip_blocking": true,
+  "localhost_access_blocked": true,
+  "prompt_injection_defense": "PASSED",
+  "untrusted_web_data_isolation": true,
+  "citation_fabrication_prevention": true,
+  "model_checkpoint_tampering": false
+}

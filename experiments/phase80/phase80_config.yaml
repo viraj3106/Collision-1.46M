@@ -1,0 +1,68 @@
+# Phase 80 Configuration — 25M Pretraining Data Scaling Experiment
+
+experiment:
+  phase: 80
+  name: "25M Pretraining Data Scaling Experiment"
+  research_question: "How does increasing the pretraining token budget affect the performance and utilization of the fixed ~25M parameter COLLISION architecture?"
+
+hypotheses:
+  H1_Data_Scaling: "Increasing the token budget will lower validation and test loss systematically."
+  H2_Generalization: "Higher token budgets will eliminate repetition and improve coherence score to 3.0/3.0."
+  H3_Data_Efficiency: "Higher tokens/parameter ratios saturate parameter utilization for the 25M architecture."
+  H4_Saturation_Detection: "Empirical scaling curve will identify the exact token volume threshold where marginal returns saturate."
+
+dataset:
+  dataset_name: "collision_dataset_v6_p80"
+  dataset_path: "datasets/collision_dataset_v6_p80"
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  tokenizer_dir: "artifacts/tokenizer"
+
+model:
+  name: "COLLISION-25M"
+  model_scale: "25M"
+  d_model: 512
+  n_layer: 10
+  n_head: 8
+  d_ff: 1024
+  exact_params: 25263936
+  tie_embeddings: true
+  vocab_size: 8000
+  max_seq_len: 256
+
+conditions:
+  P80-A:
+    name: "P80-A (1M Target Tokens)"
+    target_tokens: 1000000
+    steps: 500
+    checkpoint: "experiments/phase80/checkpoints/collision_p80a_1m.pt"
+  P80-B:
+    name: "P80-B (10M Target Tokens)"
+    target_tokens: 10000000
+    steps: 500
+    checkpoint: "experiments/phase80/checkpoints/collision_p80b_10m.pt"
+  P80-C:
+    name: "P80-C (25M Target Tokens)"
+    target_tokens: 25000000
+    steps: 500
+    checkpoint: "experiments/phase80/checkpoints/collision_p80c_25m.pt"
+  P80-D:
+    name: "P80-D (50M Target Tokens)"
+    target_tokens: 50000000
+    steps: 500
+    checkpoint: "experiments/phase80/checkpoints/collision_p80d_50m.pt"
+  P80-E:
+    name: "P80-E (100M Target Tokens)"
+    target_tokens: 100000000
+    steps: 500
+    checkpoint: "experiments/phase80/checkpoints/collision_p80e_100m.pt"
+
+training:
+  seed: 42
+  batch_size: 8
+  max_seq_len: 256
+  lr: 1.0e-4
+  weight_decay: 0.01
+
+output:
+  results_json: "experiments/phase80/results/phase80_results.json"
+  report_markdown: "experiments/phase80/reports/phase80_report.md"

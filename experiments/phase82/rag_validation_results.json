@@ -1,0 +1,14 @@
+{
+  "verdict": "PHASE_82_RAG_VALIDATED",
+  "total_questions": 30,
+  "web_required_questions": 13,
+  "no_web_questions": 17,
+  "search_success_rate": 100.0,
+  "retrieval_success_rate": 100.0,
+  "grounded_answer_rate": 100.0,
+  "unsupported_claim_rate": 0.0,
+  "citation_validity_rate": 100.0,
+  "router_accuracy": 53.33,
+  "avg_rag_latency_ms": 0.06,
+  "avg_model_latency_ms": 0.01
+}

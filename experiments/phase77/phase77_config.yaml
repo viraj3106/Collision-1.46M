@@ -1,0 +1,65 @@
+# Phase 77 Configuration — Parameter Capacity Expansion
+
+experiment:
+  phase: 77
+  name: "Parameter Capacity Expansion"
+  research_question: "Can increasing model parameter capacity from approximately 10M to 25M–50M improve multi-turn conversational reasoning when using the calibrated Phase 76 hybrid loss objective?"
+
+models:
+  control_10m:
+    name: "COLLISION-10M"
+    checkpoint: "models/collision-10m/model.pt"
+    d_model: 384
+    n_layer: 6
+    n_head: 8
+    d_ff: 768
+    target_params: "~10M"
+    exact_params: 10282304
+  candidate_25m:
+    name: "J77-25M"
+    checkpoint: "experiments/phase77/checkpoints/collision_25m_j77a.pt"
+    d_model: 512
+    n_layer: 10
+    n_head: 8
+    d_ff: 1024
+    target_params: "~25M"
+    exact_params: 25263936
+  candidate_35m:
+    name: "J77-35M"
+    checkpoint: "experiments/phase77/checkpoints/collision_35m_j77b.pt"
+    d_model: 640
+    n_layer: 9
+    n_head: 10
+    d_ff: 1280
+    target_params: "~35M"
+    exact_params: 34847680
+  candidate_50m:
+    name: "J77-50M"
+    checkpoint: "experiments/phase77/checkpoints/collision_50m_j77c.pt"
+    d_model: 768
+    n_layer: 9
+    n_head: 12
+    d_ff: 1536
+    target_params: "~50M"
+    exact_params: 48893504
+
+tokenizer_dir: "artifacts/tokenizer"
+
+dataset:
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  training_dataset: "collision_conversation_v1"
+
+loss_configuration:
+  alpha: 0.10
+  beta: 0.90
+
+training:
+  seed: 42
+  batch_size: 8
+  learning_rate: 1.0e-5
+  steps: 20
+  max_seq_len: 256
+
+output:
+  results_json: "experiments/phase77/results/phase77_results.json"
+  report_markdown: "experiments/phase77/reports/phase77_report.md"

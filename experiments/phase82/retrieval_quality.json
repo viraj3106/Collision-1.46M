@@ -1,0 +1,6 @@
+{
+  "successful_retrievals": 13,
+  "failed_retrievals": 0,
+  "retrieval_success_rate": 100.0,
+  "average_passages_per_query": 1.2
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_name": "collision_dataset_v5_p78",
+  "total_documents": 88,
+  "total_tokens": 6380,
+  "train_tokens": 5742,
+  "val_tokens": 638,
+  "category_distribution": {
+    "Explanatory Text": 455,
+    "Factual Knowledge": 455,
+    "Computer Science": 455,
+    "Artificial Intelligence": 455,
+    "Mathematics": 455,
+    "Physics": 455,
+    "Space/Science": 454,
+    "Technology": 454,
+    "Question-Answer": 454,
+    "Completion Stems": 454,
+    "Short Conversations": 454
+  },
+  "duplicate_rate_percent": 98.24,
+  "avg_sequence_length": 72.5,
+  "min_sequence_length": 30,
+  "max_sequence_length": 103,
+  "vocab_size": 8000
+}

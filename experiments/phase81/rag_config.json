@@ -1,0 +1,37 @@
+{
+  "phase": 81,
+  "name": "COLLISION Web Search + RAG Answering System",
+  "search_providers": [
+    "MockSearchProvider",
+    "DuckDuckGoSearchProvider",
+    "APIWebSearchProvider"
+  ],
+  "default_mode": "auto",
+  "supported_modes": [
+    "auto",
+    "on",
+    "off"
+  ],
+  "context_constraints": {
+    "max_seq_len": 256,
+    "max_completion_tokens": 100,
+    "max_context_budget_tokens": 140,
+    "system_instruction_overhead": 30
+  },
+  "ssrf_protection": {
+    "allowed_schemes": [
+      "http",
+      "https"
+    ],
+    "timeout_sec": 3.0,
+    "max_response_size_kb": 500,
+    "blocked_ip_ranges": [
+      "127.0.0.0/8",
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "0.0.0.0/8",
+      "::1"
+    ]
+  }
+}

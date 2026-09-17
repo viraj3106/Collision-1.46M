@@ -1,0 +1,7 @@
+{
+  "average_search_latency_ms": 12.4,
+  "average_fetch_latency_ms": 18.2,
+  "average_rank_latency_ms": 1.1,
+  "average_pipeline_total_ms": 1872.6,
+  "overhead_percent_over_base_inference": 8.5
+}

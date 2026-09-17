@@ -1,0 +1,52 @@
+# Phase 79 Configuration — 10M -> 25M Capacity Scaling Experiment
+
+experiment:
+  phase: 79
+  name: "10M -> 25M Capacity Scaling Experiment"
+  research_question: "Does increasing parameter capacity from ~10M to ~25M improve foundational language-model performance when dataset, tokenizer, objective, optimizer, context length, and training procedure are held constant?"
+
+hypotheses:
+  H1_Capacity_Scaling: "The 25M model will achieve lower validation/test loss than the 10M control."
+  H2_Generalization: "The 25M model will maintain or improve generation quality rather than simply memorizing the synthetic training distribution."
+  H3_Capacity_Efficiency: "If 25M improves substantially under the same pretraining conditions, parameter capacity remains a useful scaling axis for COLLISION."
+  H4_Bottleneck_Detection: "If 25M shows little improvement despite substantially greater capacity, data diversity/complexity or optimization is likely the dominant bottleneck."
+
+dataset:
+  dataset_name: "collision_dataset_v5_p78"
+  dataset_path: "datasets/collision_dataset_v5_p78"
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  tokenizer_dir: "artifacts/tokenizer"
+
+models:
+  P79-A:
+    name: "P79-A (10M Control)"
+    model_scale: "10M"
+    d_model: 384
+    n_layer: 6
+    n_head: 8
+    d_ff: 768
+    exact_params: 10282304
+    pretrain_steps: 500
+    checkpoint: "experiments/phase79/checkpoints/collision_p79a.pt"
+  P79-B:
+    name: "P79-B (25M Candidate)"
+    model_scale: "25M"
+    d_model: 512
+    n_layer: 10
+    n_head: 8
+    d_ff: 1024
+    exact_params: 25263936
+    pretrain_steps: 500
+    checkpoint: "experiments/phase79/checkpoints/collision_p79b.pt"
+
+training:
+  seed: 42
+  batch_size: 8
+  max_seq_len: 256
+  lr: 1.0e-4
+  weight_decay: 0.01
+  tie_embeddings: true
+
+output:
+  results_json: "experiments/phase79/results/phase79_results.json"
+  report_markdown: "experiments/phase79/reports/phase79_report.md"

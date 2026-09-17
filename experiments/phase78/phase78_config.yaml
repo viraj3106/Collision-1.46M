@@ -1,0 +1,83 @@
+# Phase 78 Configuration — Pretraining Token Budget Expansion
+
+experiment:
+  phase: 78
+  name: "Pretraining Token Budget Expansion"
+  research_question: "Can increased pretraining token exposure unlock the capacity of larger COLLISION models?"
+
+dataset:
+  dataset_name: "collision_dataset_v5_p78"
+  dataset_path: "datasets/collision_dataset_v5_p78"
+  gold_set_path: "experiments/phase75/data/gold/gold_eval_set.jsonl"
+  tokenizer_dir: "artifacts/tokenizer"
+
+candidates:
+  P78-A:
+    name: "P78-A (10M / 5M tokens)"
+    model_scale: "10M"
+    d_model: 384
+    n_layer: 6
+    n_head: 8
+    d_ff: 768
+    exact_params: 10282304
+    target_tokens: 5000000
+    pretrain_steps: 100
+    checkpoint: "experiments/phase78/checkpoints/collision_p78a.pt"
+  P78-B:
+    name: "P78-B (10M / 20M tokens)"
+    model_scale: "10M"
+    d_model: 384
+    n_layer: 6
+    n_head: 8
+    d_ff: 768
+    exact_params: 10282304
+    target_tokens: 20000000
+    pretrain_steps: 400
+    checkpoint: "experiments/phase78/checkpoints/collision_p78b.pt"
+  P78-C:
+    name: "P78-C (25M / 20M tokens)"
+    model_scale: "25M"
+    d_model: 512
+    n_layer: 10
+    n_head: 8
+    d_ff: 1024
+    exact_params: 25263936
+    target_tokens: 20000000
+    pretrain_steps: 400
+    checkpoint: "experiments/phase78/checkpoints/collision_p78c.pt"
+  P78-D:
+    name: "P78-D (25M / 50M tokens)"
+    model_scale: "25M"
+    d_model: 512
+    n_layer: 10
+    n_head: 8
+    d_ff: 1024
+    exact_params: 25263936
+    target_tokens: 50000000
+    pretrain_steps: 1000
+    checkpoint: "experiments/phase78/checkpoints/collision_p78d.pt"
+  P78-E:
+    name: "P78-E (50M / 50M tokens)"
+    model_scale: "50M"
+    d_model: 768
+    n_layer: 9
+    n_head: 12
+    d_ff: 1536
+    exact_params: 48893504
+    target_tokens: 50000000
+    pretrain_steps: 1000
+    checkpoint: "experiments/phase78/checkpoints/collision_p78e.pt"
+
+training:
+  seed: 42
+  batch_size: 8
+  max_seq_len: 256
+  pretrain_lr: 1.0e-4
+  finetune_lr: 1.0e-5
+  finetune_steps: 20
+  alpha: 0.10
+  beta: 0.90
+
+output:
+  results_json: "experiments/phase78/results/phase78_results.json"
+  report_markdown: "experiments/phase78/reports/phase78_report.md"

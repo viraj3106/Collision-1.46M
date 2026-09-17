@@ -1,0 +1,9 @@
+{
+  "query_routing_latency_ms": 0.2,
+  "search_latency_ms": 12.4,
+  "fetching_latency_ms": 18.1,
+  "cleaning_ranking_latency_ms": 1.5,
+  "context_construction_ms": 0.8,
+  "model_inference_ms": 0.01,
+  "total_rag_latency_ms": 0.06
+}

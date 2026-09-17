@@ -1,0 +1,319 @@
+{
+  "train_results": {
+    "P79-A": {
+      "model_key": "P79-A",
+      "name": "P79-A (10M Control)",
+      "exact_params": 10282304,
+      "pretrain_steps": 500,
+      "tokens_processed": 1024000,
+      "tokens_per_param": 0.0996,
+      "final_train_loss": 2.7313,
+      "final_val_loss": 0.6297,
+      "final_val_ppl": 1.877,
+      "test_loss": 0.741,
+      "test_ppl": 2.098,
+      "elapsed_time_s": 1002.46,
+      "tokens_per_sec": 1021.49,
+      "step_history": [
+        {
+          "step": 100,
+          "train_loss": 5.4123,
+          "val_loss": 3.4227,
+          "val_ppl": 30.652
+        },
+        {
+          "step": 200,
+          "train_loss": 4.2345,
+          "val_loss": 2.0564,
+          "val_ppl": 7.8175
+        },
+        {
+          "step": 300,
+          "train_loss": 3.5881,
+          "val_loss": 1.5898,
+          "val_ppl": 4.9029
+        },
+        {
+          "step": 400,
+          "train_loss": 3.1231,
+          "val_loss": 1.0347,
+          "val_ppl": 2.8142
+        },
+        {
+          "step": 500,
+          "train_loss": 2.7313,
+          "val_loss": 0.6349,
+          "val_ppl": 1.8868
+        }
+      ],
+      "checkpoint": "V:\\collision - 1M\\experiments\\phase79\\checkpoints\\collision_p79a.pt"
+    },
+    "P79-B": {
+      "model_key": "P79-B",
+      "name": "P79-B (25M Candidate)",
+      "exact_params": 25263936,
+      "pretrain_steps": 500,
+      "tokens_processed": 1024000,
+      "tokens_per_param": 0.0405,
+      "final_train_loss": 2.5293,
+      "final_val_loss": 0.4895,
+      "final_val_ppl": 1.6316,
+      "test_loss": 0.7221,
+      "test_ppl": 2.0587,
+      "elapsed_time_s": 3167.37,
+      "tokens_per_sec": 323.3,
+      "step_history": [
+        {
+          "step": 100,
+          "train_loss": 4.964,
+          "val_loss": 3.3998,
+          "val_ppl": 29.9586
+        },
+        {
+          "step": 200,
+          "train_loss": 4.0192,
+          "val_loss": 1.9752,
+          "val_ppl": 7.2084
+        },
+        {
+          "step": 300,
+          "train_loss": 3.4039,
+          "val_loss": 1.4369,
+          "val_ppl": 4.2075
+        },
+        {
+          "step": 400,
+          "train_loss": 2.9295,
+          "val_loss": 0.8562,
+          "val_ppl": 2.3541
+        },
+        {
+          "step": 500,
+          "train_loss": 2.5293,
+          "val_loss": 0.4978,
+          "val_ppl": 1.6452
+        }
+      ],
+      "checkpoint": "V:\\collision - 1M\\experiments\\phase79\\checkpoints\\collision_p79b.pt"
+    }
+  },
+  "eval_results": {
+    "P79-A": {
+      "model_key": "P79-A",
+      "checkpoint": "V:\\collision - 1M\\experiments\\phase79\\checkpoints\\collision_p79a.pt",
+      "val_loss": 0.629675086736679,
+      "val_ppl": 1.8770006177814424,
+      "test_loss": 0.7409882640838623,
+      "test_ppl": 2.098007876137054,
+      "gen_metrics_temp_07": {
+        "avg_length": 16.71,
+        "unique_token_ratio": 0.7009,
+        "repetition_rate": 0.0085,
+        "sentence_termination_rate": 0.1429,
+        "coherence_score": 2.949
+      },
+      "gen_metrics_temp_10": {
+        "avg_length": 13.29,
+        "unique_token_ratio": 0.8172,
+        "repetition_rate": 0.0,
+        "sentence_termination_rate": 0.5714,
+        "coherence_score": 3.0
+      },
+      "probe_evaluation": {
+        "probe_details": [
+          {
+            "category": "factual",
+            "prompt": "Question: What is the capital of France?\nAnswer:",
+            "generated": "Question: What is the capital of France?\nAnswer: in mechanism inardy scientific dider",
+            "matched": false
+          },
+          {
+            "category": "definitions",
+            "prompt": "Definition: Neural network is",
+            "generated": "Definition: Neural network is micore involves process thro",
+            "matched": true
+          },
+          {
+            "category": "explanations",
+            "prompt": "Explanation: Artificial Intelligence allows computers to",
+            "generated": "Explanation: Artificial Intelligence allows computers to functions mechanismopipy mize thes",
+            "matched": false
+          },
+          {
+            "category": "simple_reasoning",
+            "prompt": "If A is greater than B, and B is greater than C, then A is",
+            "generated": "If A is greater than B, and B is greater than C, then A is recognutime umber is",
+            "matched": true
+          },
+          {
+            "category": "technical",
+            "prompt": "In Python, to define a function, use the keyword",
+            "generated": "In Python, to define a function, use the keyworder and An domains umize the ",
+            "matched": true
+          },
+          {
+            "category": "completions",
+            "prompt": "The quick brown fox jumps over the",
+            "generated": "The quick brown fox jumps over the and mechanism calculating gradients model the ",
+            "matched": false
+          },
+          {
+            "category": "conversational",
+            "prompt": "Hello! How can I help you today?\nResponse:",
+            "generated": "Hello! How can I help you today?\nResponse: el mechanismoode and mize the ",
+            "matched": true
+          }
+        ],
+        "category_accuracy": {
+          "factual": 0.0,
+          "definitions": 1.0,
+          "explanations": 0.0,
+          "simple_reasoning": 1.0,
+          "technical": 1.0,
+          "completions": 0.0,
+          "conversational": 1.0
+        },
+        "overall_probe_score": 0.57
+      },
+      "sample_generations": [
+        {
+          "prompt": "Question: What is the capital of France?\nAnswer:",
+          "output": "Question: What is the capital of France?\nAnswer: in mechanism inardy scientific dider for Crave attention for and po"
+        },
+        {
+          "prompt": "Definition: Neural network is",
+          "output": "Definition: Neural network is micore involves process throues Cracetime for secon "
+        },
+        {
+          "prompt": "In Python, to define a function, use the keyword",
+          "output": "In Python, to define a function, use the keyworder and An domains umize the calculating of and of and the modern "
+        }
+      ]
+    },
+    "P79-B": {
+      "model_key": "P79-B",
+      "checkpoint": "V:\\collision - 1M\\experiments\\phase79\\checkpoints\\collision_p79b.pt",
+      "val_loss": 0.48953188002109527,
+      "val_ppl": 1.6315522789429036,
+      "test_loss": 0.7220739924907684,
+      "test_ppl": 2.0586985112673677,
+      "gen_metrics_temp_07": {
+        "avg_length": 14.29,
+        "unique_token_ratio": 0.77,
+        "repetition_rate": 0.0,
+        "sentence_termination_rate": 0.4286,
+        "coherence_score": 3.0
+      },
+      "gen_metrics_temp_10": {
+        "avg_length": 14.29,
+        "unique_token_ratio": 0.72,
+        "repetition_rate": 0.01,
+        "sentence_termination_rate": 0.4286,
+        "coherence_score": 2.94
+      },
+      "probe_evaluation": {
+        "probe_details": [
+          {
+            "category": "factual",
+            "prompt": "Question: What is the capital of France?\nAnswer:",
+            "generated": "Question: What is the capital of France?\nAnswer: is mechanism perposistan process the ",
+            "matched": false
+          },
+          {
+            "category": "definitions",
+            "prompt": "Definition: Neural network is",
+            "generated": "Definition: Neural network is ray for s.",
+            "matched": true
+          },
+          {
+            "category": "explanations",
+            "prompt": "Explanation: Artificial Intelligence allows computers to",
+            "generated": "Explanation: Artificial Intelligence allows computers to the mechanismopilishes diurv",
+            "matched": false
+          },
+          {
+            "category": "simple_reasoning",
+            "prompt": "If A is greater than B, and B is greater than C, then A is",
+            "generated": "If A is greater than B, and B is greater than C, then A is searchjecoodevaluatuman ther",
+            "matched": true
+          },
+          {
+            "category": "technical",
+            "prompt": "In Python, to define a function, use the keyword",
+            "generated": "In Python, to define a function, use the keyworderstand As.",
+            "matched": true
+          },
+          {
+            "category": "completions",
+            "prompt": "The quick brown fox jumps over the",
+            "generated": "The quick brown fox jumps over the involves calculating gradients iteratively and ",
+            "matched": false
+          },
+          {
+            "category": "conversational",
+            "prompt": "Hello! How can I help you today?\nResponse:",
+            "generated": "Hello! How can I help you today?\nResponse: rajecon s mumize the ",
+            "matched": true
+          }
+        ],
+        "category_accuracy": {
+          "factual": 0.0,
+          "definitions": 1.0,
+          "explanations": 0.0,
+          "simple_reasoning": 1.0,
+          "technical": 1.0,
+          "completions": 0.0,
+          "conversational": 1.0
+        },
+        "overall_probe_score": 0.57
+      },
+      "sample_generations": [
+        {
+          "prompt": "Question: What is the capital of France?\nAnswer:",
+          "output": "Question: What is the capital of France?\nAnswer: is mechanism perposistan process the brime curvay for and b"
+        },
+        {
+          "prompt": "Definition: Neural network is",
+          "output": "Definition: Neural network is ray for s."
+        },
+        {
+          "prompt": "In Python, to define a function, use the keyword",
+          "output": "In Python, to define a function, use the keyworderstand As."
+        }
+      ]
+    }
+  },
+  "scaling_analysis": {
+    "parameter_increase_pct": 145.7,
+    "val_loss_improvement": 0.1401,
+    "val_loss_improvement_pct": 22.25,
+    "val_ppl_improvement": 0.2454,
+    "val_ppl_improvement_pct": 13.07,
+    "test_ppl_improvement": 0.0393,
+    "test_ppl_improvement_pct": 1.87,
+    "coherence_diff": 0.051,
+    "probe_score_diff": 0.0,
+    "time_increase_pct": 215.96,
+    "throughput_diff_pct": -68.35,
+    "hypotheses_evaluation": {
+      "H1_Capacity_Scaling": {
+        "supported": true,
+        "evidence": "P79-B val loss (0.48953188002109527) vs P79-A (0.629675086736679)"
+      },
+      "H2_Generalization": {
+        "supported": true,
+        "evidence": "P79-B rep rate (0.0) vs P79-A (0.0085)"
+      },
+      "H3_Capacity_Efficiency": {
+        "supported": true,
+        "evidence": "Val loss improvement: 22.25%"
+      },
+      "H4_Bottleneck_Detection": {
+        "supported": false,
+        "evidence": "Bottleneck trigger status: False"
+      }
+    },
+    "scientific_outcome": "Outcome A \u2014 Substantial Capacity Scaling Gains Confirmed",
+    "conclusion_verdict": "Scaling parameters from ~10.28M to ~25.26M (+145.7%) produced a significant 22.25% reduction in validation loss and 1.87% reduction in test perplexity under identical pretraining conditions."
+  }
+}

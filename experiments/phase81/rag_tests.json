@@ -1,0 +1,15 @@
+{
+  "total_tests": 8,
+  "passed": 8,
+  "failed": 0,
+  "coverage": [
+    "Router",
+    "SSRF",
+    "Cleaning",
+    "BM25 Ranker",
+    "Token Budgeting",
+    "Injection Defense",
+    "Pipeline Modes",
+    "Model SHA256 Integrity"
+  ]
+}
