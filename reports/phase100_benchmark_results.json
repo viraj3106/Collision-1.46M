@@ -1,0 +1,100 @@
+{
+  "total_requests": 5,
+  "successful_requests": 5,
+  "failed_requests": 0,
+  "avg_latency_ms": 150.94,
+  "p50_latency_ms": 13.82,
+  "p95_latency_ms": 701.76,
+  "test_results": [
+    {
+      "id": "test_1_architecture",
+      "name": "Local Architecture Query",
+      "question": "What is COLLISION 10M?",
+      "mode": "LOCAL",
+      "status": "ANSWERED",
+      "sources_count": 2,
+      "claims_count": 1,
+      "answer_preview": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
+      "transport_latency_ms": 701.7617000965402,
+      "engine_latency": {
+        "routing_ms": 12.66,
+        "retrieval_ms": 0.27,
+        "generation_ms": 4.25,
+        "verification_ms": 4.4,
+        "total_ms": 21.99
+      }
+    },
+    {
+      "id": "test_2_local_rag",
+      "name": "Local Knowledge RAG Query",
+      "question": "What is the embedding dimension in the COLLISION 10M architecture?",
+      "mode": "LOCAL",
+      "status": "ANSWERED",
+      "sources_count": 1,
+      "claims_count": 1,
+      "answer_preview": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
+      "transport_latency_ms": 16.526399995200336,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.65,
+        "generation_ms": 2.81,
+        "verification_ms": 2.83,
+        "total_ms": 6.46
+      }
+    },
+    {
+      "id": "test_3_web_grounded",
+      "name": "Web Grounded Query",
+      "question": "What is the latest release version of PyTorch in 2025?",
+      "mode": "WEB",
+      "status": "ANSWERED",
+      "sources_count": 1,
+      "claims_count": 1,
+      "answer_preview": "PyTorch 2.5 introduces FlexAttention and torch.compile improvements.",
+      "transport_latency_ms": 13.823600020259619,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.33,
+        "generation_ms": 0.91,
+        "verification_ms": 2.42,
+        "total_ms": 4.79
+      }
+    },
+    {
+      "id": "test_4_insufficient_info",
+      "name": "Insufficient Information Query",
+      "question": "What will the exact stock price of NVIDIA be on October 15, 2038?",
+      "mode": "LOCAL",
+      "status": "ANSWERED",
+      "sources_count": 1,
+      "claims_count": 1,
+      "answer_preview": "The exact parameter count is 10,282,304 parameters with tied embeddings.",
+      "transport_latency_ms": 13.791400007903576,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.52,
+        "generation_ms": 1.77,
+        "verification_ms": 1.84,
+        "total_ms": 4.25
+      }
+    },
+    {
+      "id": "test_5_conflict",
+      "name": "Conflict Resolution Query",
+      "question": "Was Python created in 1991 or 2005?",
+      "mode": "LOCAL",
+      "status": "INSUFFICIENT_INFORMATION",
+      "sources_count": 0,
+      "claims_count": 0,
+      "answer_preview": "I do not have sufficient reliable information in the retrieved evidence to answer this question.",
+      "transport_latency_ms": 8.799299946986139,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.36,
+        "generation_ms": 0.0,
+        "verification_ms": 0.0,
+        "total_ms": 0.43
+      }
+    }
+  ]
+}

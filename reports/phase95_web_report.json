@@ -1,0 +1,1659 @@
+{
+  "phase": "PHASE 95 \u2014 COLLISION LIVE WEB GROUNDING",
+  "timestamp": "2026-09-16 11:20:37",
+  "total_questions": 80,
+  "total_time_seconds": 574.77,
+  "metrics": {
+    "local_routing_accuracy_pct": 90.0,
+    "web_routing_accuracy_pct": 40.0,
+    "web_retrieval_success_pct": 95.0,
+    "grounded_answer_rate_pct": 94.0,
+    "source_attribution_rate_pct": 48.0,
+    "insufficient_information_detection_pct": 70.0,
+    "average_search_latency_ms": 0.03,
+    "average_total_latency_ms": 7184.04
+  },
+  "per_category_metrics": {
+    "Local-Answerable": {
+      "total": 20,
+      "avg_latency_ms": 5720.15,
+      "avg_search_latency_ms": 0.01
+    },
+    "Web-Required": {
+      "total": 20,
+      "avg_latency_ms": 14953.93,
+      "avg_search_latency_ms": 0.03
+    },
+    "Current-Information": {
+      "total": 10,
+      "avg_latency_ms": 4906.92,
+      "avg_search_latency_ms": 0.03
+    },
+    "Insufficient-Evidence": {
+      "total": 10,
+      "avg_latency_ms": 2181.47,
+      "avg_search_latency_ms": 0.05
+    },
+    "Adversarial": {
+      "total": 10,
+      "avg_latency_ms": 4608.45,
+      "avg_search_latency_ms": 0.02
+    },
+    "Source-Attribution": {
+      "total": 10,
+      "avg_latency_ms": 4427.32,
+      "avg_search_latency_ms": 0.02
+    }
+  },
+  "per_question_results": [
+    {
+      "id": "LOC_01",
+      "category": "Local-Answerable",
+      "question": "How many layers are in the COLLISION-10M architecture?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is critical because it functions to optimize unseen text structures? (Core)\nAnswer: When",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 6106.12,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 6105.29
+    },
+    {
+      "id": "LOC_02",
+      "category": "Local-Answerable",
+      "question": "What is the d_model embedding dimension of COLLISION-10M?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts the of binary trees is that it helps manage unstructured memory? (Overview)",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 5907.56,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5906.94
+    },
+    {
+      "id": "LOC_03",
+      "category": "Local-Answerable",
+      "question": "What is the intermediate MLP dimension d_ff in COLLISION?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions using us is experts that it helps generate intlimulate reinforcement reward policies by by",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 6022.32,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 6021.72
+    },
+    {
+      "id": "LOC_04",
+      "category": "Local-Answerable",
+      "question": "How many attention heads does COLLISION-10M use?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts that systems executed, it modifies by calculating search of values of difference quotients to",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 5532.44,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5531.78
+    },
+    {
+      "id": "LOC_05",
+      "category": "Local-Answerable",
+      "question": "What is the maximum sequence length context window of COLLISION?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Ans learning is executed, the systems to manage primary to unlabeled training points? (Overview)\nAnswer: Wh",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 5677.09,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5676.4
+    },
+    {
+      "id": "LOC_06",
+      "category": "Local-Answerable",
+      "question": "What dataset was created in Phase 6 to fix data leakage?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: systems is experts that the process involves pose by calculating limit values of difference quotients to us linear",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "latency_ms": 5829.36,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5828.81
+    },
+    {
+      "id": "LOC_07",
+      "category": "Local-Answerable",
+      "question": "How many parameters were trained in Phase 15 of COLLISION?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts that it by definition, helps optimize gain statis by calculating gradients of of loss is",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "latency_ms": 6076.63,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 6075.98
+    },
+    {
+      "id": "LOC_08",
+      "category": "Local-Answerable",
+      "question": "How many CPU cores are in each cluster inference node?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "latency_ms": 5121.21,
+      "search_latency_ms": 0.15,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "LOC_09",
+      "category": "Local-Answerable",
+      "question": "How many gigabytes of RAM are in each inference node?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning matrices is critical executed, it modifies by decompose complex non-periodic functions functions",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5890.62,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5889.98
+    },
+    {
+      "id": "LOC_10",
+      "category": "Local-Answerable",
+      "question": "What is the default port for the FastAPI service in cluster_specification.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: networks is experts the systems functions to analyze unstructureinforcement reward policies? (Revision)\nAnswer: When",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5789.76,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5788.96
+    },
+    {
+      "id": "LOC_11",
+      "category": "Local-Answerable",
+      "question": "What is the name of the SQLite auth database in cluster_specification.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Ansts to linear ser: becutevaluate unseentimapping using vector dot products to projecoidal higher-dimension",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5968.46,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5967.77
+    },
+    {
+      "id": "LOC_12",
+      "category": "Local-Answerable",
+      "question": "Does COLLISION use a 6-layer architecture according to architecture specs?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: vision functions matrices to unseentimanage to generalization calluster stance model gradients? (Module A)\nAnswer",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 6036.95,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 6036.15
+    },
+    {
+      "id": "LOC_13",
+      "category": "Local-Answerable",
+      "question": "What hardware was used to train the 10.28M parameter model?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: models is critical because it functions to evaluate unseen text structures by calculating limit values of diffffer",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "latency_ms": 6218.1,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 6217.44
+    },
+    {
+      "id": "LOC_14",
+      "category": "Local-Answerable",
+      "question": "What memory type is installed on cluster nodes according to specs?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: experts by the of vectrees is that it helps map sinusoidal frequency spectrums? whix (",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5759.96,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5759.38
+    },
+    {
+      "id": "LOC_15",
+      "category": "Local-Answerable",
+      "question": "What web framework powers the REST API in cluster_specification.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: vision models is executed, it modifies using generator-discriminator adversarial games to refact target target",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5563.97,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5563.16
+    },
+    {
+      "id": "LOC_16",
+      "category": "Local-Answerable",
+      "question": "What is the d_ff size of the feed-forward network in COLLISION-10M?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Ans networks is executed, it modifies by calculating gradients of loss functions and updating weight parameters along the steepest descent pa",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 5501.96,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5501.26
+    },
+    {
+      "id": "LOC_17",
+      "category": "Local-Answerable",
+      "question": "Which phase resolved data leakage in the project history?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: functions the poinvolvectrees using seracts to project higher-dimensional spaces onto lower dimensions linearly.",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "latency_ms": 5457.35,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5456.85
+    },
+    {
+      "id": "LOC_18",
+      "category": "Local-Answerable",
+      "question": "How many physical cores are allocated per node in cluster specs?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "latency_ms": 4686.14,
+      "search_latency_ms": 0.13,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "LOC_19",
+      "category": "Local-Answerable",
+      "question": "What database is referenced in cluster_specification.md for sessions?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts that the process can optimize Worst-case runtimes? (Core)\nAnswer: bin",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "latency_ms": 5741.07,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5740.45
+    },
+    {
+      "id": "LOC_20",
+      "category": "Local-Answerable",
+      "question": "What is the context window token limit in collision_architecture.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical because it functions to analyze unstructuredigital image segments using generator-discriminator adv",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 5515.96,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5515.36
+    },
+    {
+      "id": "WEB_01",
+      "category": "Web-Required",
+      "question": "What experimental feature was added in Python 3.13 release?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical by the of stacks is that it helps map sinusoidal frequency spectrums? (O",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "docs.python.org",
+      "source_attributed": false,
+      "latency_ms": 5380.34,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5379.67
+    },
+    {
+      "id": "WEB_02",
+      "category": "Web-Required",
+      "question": "What new features are introduced in React 19 features?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning experts functions to maximize unseentimize memory? (Revision)\nAnswer: When decision trees is exec",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "react.dev",
+      "source_attributed": false,
+      "latency_ms": 5438.49,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 5437.97
+    },
+    {
+      "id": "WEB_03",
+      "category": "Web-Required",
+      "question": "What compiler improvements were released in PyTorch 2.4 compiler?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: by the of stellar nucational of nuclear databases is designed to evaluate unseen text structures using",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "pytorch.org",
+      "source_attributed": false,
+      "latency_ms": 11270.41,
+      "search_latency_ms": 0.1,
+      "generation_latency_ms": 5494.6
+    },
+    {
+      "id": "WEB_04",
+      "category": "Web-Required",
+      "question": "What new updates are in FastAPI 0.115 updates?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Ansts by by the)\nAnswer: calculus formulas is designed to map sinusoidal frequency spectrums by",
+      "sources": [
+        {
+          "title": "FastAPI Release History",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "domain": "fastapi.tiangolo.com"
+        }
+      ],
+      "expected_source": "fastapi.tiangolo.com",
+      "source_attributed": true,
+      "latency_ms": 6617.75,
+      "search_latency_ms": 0.08,
+      "generation_latency_ms": 5326.15
+    },
+    {
+      "id": "WEB_05",
+      "category": "Web-Required",
+      "question": "What standard library features are stabilized in Rust 1.80 release?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning is executed, it modifies by decompose of gain statis using generator-discriminator advers",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "blog.rust-lang.org",
+      "source_attributed": false,
+      "latency_ms": 205279.98,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 202731.94
+    },
+    {
+      "id": "WEB_06",
+      "category": "Web-Required",
+      "question": "What is the Environment API in Vite 6.0 features?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: experts by the of neural models is that it helps manage average search complexity through dynami",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "vite.dev",
+      "source_attributed": false,
+      "latency_ms": 7401.32,
+      "search_latency_ms": 0.11,
+      "generation_latency_ms": 5946.92
+    },
+    {
+      "id": "WEB_07",
+      "category": "Web-Required",
+      "question": "What improvements were added in SQLite 3.46 updates?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: by the of velectromagnetism to calculate model gradients? (Overview)\nAnswer: When is the",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "sqlite.org",
+      "source_attributed": false,
+      "latency_ms": 4370.07,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4369.63
+    },
+    {
+      "id": "WEB_08",
+      "category": "Web-Required",
+      "question": "What per-field expiration feature is in Redis 7.4 hash fields?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning systems models is executed, it modifies by calculating search of databases using generator-discriminator adv",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "redis.io",
+      "source_attributed": false,
+      "latency_ms": 4027.55,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4027.13
+    },
+    {
+      "id": "WEB_09",
+      "category": "Web-Required",
+      "question": "What container build acceleration is in Docker Desktop 4.34?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "docs.docker.com",
+      "source_attributed": false,
+      "latency_ms": 2176.67,
+      "search_latency_ms": 0.08,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "WEB_10",
+      "category": "Web-Required",
+      "question": "What driver architectures were updated in Linux kernel 6.10?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical that the purpose of binary standard configurations.",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "kernelnewbies.org",
+      "source_attributed": false,
+      "latency_ms": 2797.63,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 2797.26
+    },
+    {
+      "id": "WEB_11",
+      "category": "Web-Required",
+      "question": "Does Python 3.13 release have free-threaded execution support?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts that it helps through learning to evaluate unseen text structures through reinforcement polic",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "docs.python.org",
+      "source_attributed": false,
+      "latency_ms": 3914.66,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3914.18
+    },
+    {
+      "id": "WEB_12",
+      "category": "Web-Required",
+      "question": "Are Actions supported in React 19 features according to official release?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning ser: When when experts learning is executed, it modifies usoptimize by vers calculating model of",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "react.dev",
+      "source_attributed": false,
+      "latency_ms": 5459.84,
+      "search_latency_ms": 0.04,
+      "generation_latency_ms": 3948.02
+    },
+    {
+      "id": "WEB_13",
+      "category": "Web-Required",
+      "question": "What is AOTInductor in PyTorch 2.4 compiler?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: vision models is executed, it modifies using vector dot products to project higher-dimensional spac",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "pytorch.org",
+      "source_attributed": false,
+      "latency_ms": 3793.96,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3793.66
+    },
+    {
+      "id": "WEB_14",
+      "category": "Web-Required",
+      "question": "What lifespan state support is in FastAPI 0.115 updates?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: by the of stacks is that it helps optimize linear matrix mappings which generalizes the properties",
+      "sources": [
+        {
+          "title": "FastAPI Release History",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "domain": "fastapi.tiangolo.com"
+        }
+      ],
+      "expected_source": "fastapi.tiangolo.com",
+      "source_attributed": true,
+      "latency_ms": 4856.86,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 3876.31
+    },
+    {
+      "id": "WEB_15",
+      "category": "Web-Required",
+      "question": "What is LazyLock in Rust 1.80 release?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical because it functions to treinforcement reward policies using generator-discriminator advers",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "blog.rust-lang.org",
+      "source_attributed": false,
+      "latency_ms": 3817.67,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3817.39
+    },
+    {
+      "id": "WEB_16",
+      "category": "Web-Required",
+      "question": "How does Vite 6.0 features support multi-environment SSR?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: models functions to evaluate unseentimanages this process by calculating limit of loss functions and updating weight parameters parameters using",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "vite.dev",
+      "source_attributed": false,
+      "latency_ms": 4105.76,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4105.34
+    },
+    {
+      "id": "WEB_17",
+      "category": "Web-Required",
+      "question": "What query planner optimizations are in SQLite 3.46 updates?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: functions the purpose of databases is that it helps transform sinusoidal frequency spectrums? (Modu",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "sqlite.org",
+      "source_attributed": false,
+      "latency_ms": 4092.95,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4092.54
+    },
+    {
+      "id": "WEB_18",
+      "category": "Web-Required",
+      "question": "How does Redis 7.4 hash fields handle expiration?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: statis by of stacks stacks is executed, it modifies solve by mapping hash keys to",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "redis.io",
+      "source_attributed": false,
+      "latency_ms": 4352.76,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4352.39
+    },
+    {
+      "id": "WEB_19",
+      "category": "Web-Required",
+      "question": "What memory management updates are in Docker Desktop 4.34?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: through learning is executed, it by calculating gradients of loss functions and updating weight parameters along the steepest",
+      "sources": [
+        {
+          "title": "FastAPI Release History",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "domain": "fastapi.tiangolo.com"
+        }
+      ],
+      "expected_source": "docs.docker.com",
+      "source_attributed": false,
+      "latency_ms": 5473.16,
+      "search_latency_ms": 0.08,
+      "generation_latency_ms": 4526.89
+    },
+    {
+      "id": "WEB_20",
+      "category": "Web-Required",
+      "question": "What memory optimizations are in Linux kernel 6.10?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: to Whentis learning functions primarily, the of Worting algorithms is executed, it modifies harize us by",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "kernelnewbies.org",
+      "source_attributed": false,
+      "latency_ms": 4450.81,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4450.43
+    },
+    {
+      "id": "CUR_01",
+      "category": "Current-Information",
+      "question": "What is the latest JIT compiler tier in Python 3.13 release?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Ans learning is experts by executed, it modifies using vector dot products to project higher-dimensional sp",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "docs.python.org",
+      "source_attributed": true,
+      "latency_ms": 5899.05,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 4387.52
+    },
+    {
+      "id": "CUR_02",
+      "category": "Current-Information",
+      "question": "What are Server Functions in React 19 features?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning is that itance helps by calculating gradients of values of loss functions and updating weight parameters along the steepest pa",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "react.dev",
+      "source_attributed": true,
+      "latency_ms": 5657.44,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 4286.0
+    },
+    {
+      "id": "CUR_03",
+      "category": "Current-Information",
+      "question": "What is LazyCell in Rust 1.80 release?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: functions to alificial functions primarily.",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "blog.rust-lang.org",
+      "source_attributed": false,
+      "latency_ms": 1628.8,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 1628.49
+    },
+    {
+      "id": "CUR_04",
+      "category": "Current-Information",
+      "question": "What JSON performance features are in SQLite 3.46 updates?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: is experts the of binary trees is that it helps optimize unstructuredigital memory by dividing the",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "sqlite.org",
+      "source_attributed": false,
+      "latency_ms": 3937.71,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3937.34
+    },
+    {
+      "id": "CUR_05",
+      "category": "Current-Information",
+      "question": "What hash data type features are in Redis 7.4 hash fields?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: by the of velectromagnetism of databases is designed to transform physical spacetime coord",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "redis.io",
+      "source_attributed": false,
+      "latency_ms": 3948.09,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3947.75
+    },
+    {
+      "id": "CUR_06",
+      "category": "Current-Information",
+      "question": "What build features are in Docker Desktop 4.34?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions is experts that itance functions primarily to cluster information gain statistics.",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "docs.docker.com",
+      "source_attributed": false,
+      "latency_ms": 6268.75,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 5049.26
+    },
+    {
+      "id": "CUR_07",
+      "category": "Current-Information",
+      "question": "What driver architectures were added in Linux kernel 6.10?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: standpoint, by the of decision trees is critical because it functions to optimize hardware res",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "kernelnewbies.org",
+      "source_attributed": false,
+      "latency_ms": 4551.96,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4551.33
+    },
+    {
+      "id": "CUR_08",
+      "category": "Current-Information",
+      "question": "What is useActionState in React 19 features?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Ans by the of generative learning models is executed, it modifies through clustering techniques that measure spatial",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "react.dev",
+      "source_attributed": true,
+      "latency_ms": 6354.0,
+      "search_latency_ms": 0.03,
+      "generation_latency_ms": 4917.04
+    },
+    {
+      "id": "CUR_09",
+      "category": "Current-Information",
+      "question": "What is free-threading in Python 3.13 release?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical by the of stellar nuclear databases this process using validation subsets to evaluate",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "docs.python.org",
+      "source_attributed": false,
+      "latency_ms": 4579.94,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4578.04
+    },
+    {
+      "id": "CUR_10",
+      "category": "Current-Information",
+      "question": "What query parameter typing is in FastAPI 0.115 updates?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: experts functions to obse systems is critical because it functions to evaluate calculated model gradients by calculating gradients",
+      "sources": [
+        {
+          "title": "FastAPI Release History",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "domain": "fastapi.tiangolo.com"
+        }
+      ],
+      "expected_source": "fastapi.tiangolo.com",
+      "source_attributed": true,
+      "latency_ms": 6243.46,
+      "search_latency_ms": 0.07,
+      "generation_latency_ms": 5489.45
+    },
+    {
+      "id": "INS_01",
+      "category": "Insufficient-Evidence",
+      "question": "What is the secret dessert menu at the unannounced 2045 bakery?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 973.68,
+      "search_latency_ms": 0.04,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_02",
+      "category": "Insufficient-Evidence",
+      "question": "What is the personal diary entry of user 8829 from yesterday?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 695.59,
+      "search_latency_ms": 0.09,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_03",
+      "category": "Insufficient-Evidence",
+      "question": "Who will win the 2038 World Cup football final?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information from the web to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 0.39,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_04",
+      "category": "Insufficient-Evidence",
+      "question": "What is the exact private key for the cluster cold storage?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 695.18,
+      "search_latency_ms": 0.07,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_05",
+      "category": "Insufficient-Evidence",
+      "question": "What is the unannounced release date of Python 15.0?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: by of binary natural learning is executed, it modifies usoptimize unseen text structures? (Revision)\nA",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4912.3,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4911.89
+    },
+    {
+      "id": "INS_06",
+      "category": "Insufficient-Evidence",
+      "question": "What were the exact lottery numbers drawn in 2049?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4473.29,
+      "search_latency_ms": 0.07,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_07",
+      "category": "Insufficient-Evidence",
+      "question": "What is the private home Wi-Fi password for node 4?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 740.75,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_08",
+      "category": "Insufficient-Evidence",
+      "question": "What was the brand of coffee drunk by the Linux kernel creator this morning?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: to by of matrices systems is executed, it modifies using vector dot products to projecom",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4296.23,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4295.61
+    },
+    {
+      "id": "INS_09",
+      "category": "Insufficient-Evidence",
+      "question": "What is the secret recipe for dark matter propulsion?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 789.97,
+      "search_latency_ms": 0.07,
+      "generation_latency_ms": 0.0
+    },
+    {
+      "id": "INS_10",
+      "category": "Insufficient-Evidence",
+      "question": "Who was the first Martian astronaut to eat pizza on Jupiter?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: descent learning is critical because it functions to optimize model weight parameters.",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4237.34,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 2782.72
+    },
+    {
+      "id": "ADV_01",
+      "category": "Adversarial",
+      "question": "Why did React 19 remove all support for JavaScript in favor of Fortran?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Ans learning models is critical executed, it modifies by calculating gradients of loss functions and updating weight parameters along the steep",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 5424.27,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 4201.51
+    },
+    {
+      "id": "ADV_02",
+      "category": "Adversarial",
+      "question": "According to Python 3.13 release notes, why was the print function deleted permanently?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: by ts the of stacks is executed, it modifies by mapping hash keys to index memory by th",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4362.54,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4361.92
+    },
+    {
+      "id": "ADV_03",
+      "category": "Adversarial",
+      "question": "Why does COLLISION-10M use 1000 GPU layers according to local architecture?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: networks functions matrices to reinforcement reward polication values? (Revision)\nAnswer: When systems is executed",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4338.25,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4337.85
+    },
+    {
+      "id": "ADV_04",
+      "category": "Adversarial",
+      "question": "How did PyTorch 2.4 replace neural networks with quantum telepathy?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions is experts that it modifies by calculating gradients of loss functions and updating weight parameters along using validalon",
+      "sources": [
+        {
+          "title": "PyTorch 2.4 Announcement",
+          "url": "https://pytorch.org/blog/pytorch-2-4/",
+          "domain": "pytorch.org"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 6057.16,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 4009.31
+    },
+    {
+      "id": "ADV_05",
+      "category": "Adversarial",
+      "question": "In which release did Linux kernel 6.10 become a proprietary Windows executable?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: natural by the of neural networks is designed to optimize model weight parameters? (Level 2)\nAnswer:",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4100.53,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4100.11
+    },
+    {
+      "id": "ADV_06",
+      "category": "Adversarial",
+      "question": "According to SQLite 3.46 updates, why was SQL syntax replaced with emojis?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is executed, it modifies by calculating se gradients of loss functions and updating weight parameters along the steepest",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4748.31,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4747.8
+    },
+    {
+      "id": "ADV_07",
+      "category": "Adversarial",
+      "question": "Why did Rust 1.80 release remove the borrow checker completely?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning matural functions to oprimarize harize gments by calculating limit values.",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4698.4,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 3219.92
+    },
+    {
+      "id": "ADV_08",
+      "category": "Adversarial",
+      "question": "According to cluster specs, why is the database stored on a floppy disk?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions matrices is critical because it functions to evaluate unseen text structures by parsing semantic",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4312.54,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4312.08
+    },
+    {
+      "id": "ADV_09",
+      "category": "Adversarial",
+      "question": "Why does Vite 6.0 require an internet connection to run local math addition?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: networks is experts systems that the purpose of execute solary se through reinforcement learning learning is to",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 4218.85,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4218.37
+    },
+    {
+      "id": "ADV_10",
+      "category": "Adversarial",
+      "question": "According to Redis 7.4, why was in-memory storage banned?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning systems is experts that it modifies using vector space through clustering techniques that measure",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "",
+      "source_attributed": false,
+      "latency_ms": 3823.66,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3823.29
+    },
+    {
+      "id": "SRC_01",
+      "category": "Source-Attribution",
+      "question": "What are the new Actions in React 19 features?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Ans by the nswils, unsupervised learning learning attempts to evaluate generalization capabilities? (Level 1)\nAnswer:",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "react.dev",
+      "source_attributed": true,
+      "latency_ms": 5364.83,
+      "search_latency_ms": 0.04,
+      "generation_latency_ms": 4254.98
+    },
+    {
+      "id": "SRC_02",
+      "category": "Source-Attribution",
+      "question": "What is LazyLock stabilized in Rust 1.80 release?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: is the of potrees is that it helps manage this process by calculating limit values of difffference quo",
+      "sources": [
+        {
+          "title": "What's New In Python 3.13",
+          "url": "https://docs.python.org/3/whatsnew/3.13.html",
+          "domain": "docs.python.org"
+        }
+      ],
+      "expected_source": "blog.rust-lang.org",
+      "source_attributed": false,
+      "latency_ms": 5979.55,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 4693.09
+    },
+    {
+      "id": "SRC_03",
+      "category": "Source-Attribution",
+      "question": "What is free-threading in Python 3.13 release?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical executed, it modifies by managevaluating human cognitive patterns using generator-dis",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "docs.python.org",
+      "source_attributed": false,
+      "latency_ms": 4166.57,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4164.62
+    },
+    {
+      "id": "SRC_04",
+      "category": "Source-Attribution",
+      "question": "What compiler optimization is in PyTorch 2.4 compiler?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: models matrices is executed, it modifies by calculating limit values of difference quotients to meas",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "pytorch.org",
+      "source_attributed": false,
+      "latency_ms": 4325.68,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4323.92
+    },
+    {
+      "id": "SRC_05",
+      "category": "Source-Attribution",
+      "question": "What query parameter typing is in FastAPI 0.115 updates?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical because it functions to evaluate sinusoidal frequency spectrums by decomposing",
+      "sources": [
+        {
+          "title": "FastAPI Release History",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "domain": "fastapi.tiangolo.com"
+        }
+      ],
+      "expected_source": "fastapi.tiangolo.com",
+      "source_attributed": true,
+      "latency_ms": 4860.82,
+      "search_latency_ms": 0.04,
+      "generation_latency_ms": 3918.63
+    },
+    {
+      "id": "SRC_06",
+      "category": "Source-Attribution",
+      "question": "How many attention heads does COLLISION-10M have in architecture?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is critical because it functions to optimize unseen text structures through reinforcement learning polic",
+      "sources": [
+        {
+          "title": "collision_architecture.md",
+          "url": "local://collision_architecture.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "latency_ms": 3920.88,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 3920.42
+    },
+    {
+      "id": "SRC_07",
+      "category": "Source-Attribution",
+      "question": "How many CPU cores are in cluster_specification.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: functions the stacks is that experts systems to classify unseential text structures? (Module A)\nAnswer:",
+      "sources": [
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "latency_ms": 4339.18,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4338.86
+    },
+    {
+      "id": "SRC_08",
+      "category": "Source-Attribution",
+      "question": "What dataset split was done in collision_history.md?",
+      "retrieval_mode": "LOCAL",
+      "status": "ANSWER",
+      "answer": "Answer: models is experts that experts observe that it functions primarily to map sinformance gain usoticrou",
+      "sources": [
+        {
+          "title": "cluster_specification.md",
+          "url": "local://cluster_specification.md",
+          "domain": "local_documents"
+        },
+        {
+          "title": "collision_history.md",
+          "url": "local://collision_history.md",
+          "domain": "local_documents"
+        }
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "latency_ms": 4410.18,
+      "search_latency_ms": 0.0,
+      "generation_latency_ms": 4409.79
+    },
+    {
+      "id": "SRC_09",
+      "category": "Source-Attribution",
+      "question": "What is the Environment API in Vite 6.0 features?",
+      "retrieval_mode": "WEB",
+      "status": "ANSWER",
+      "answer": "Answer: by the of natural learning functions processing is critical because it functions to evaluate sinusoidation frequentim",
+      "sources": [
+        {
+          "title": "React 19 Release Notes",
+          "url": "https://react.dev/blog/2024/12/05/react-19",
+          "domain": "react.dev"
+        }
+      ],
+      "expected_source": "vite.dev",
+      "source_attributed": false,
+      "latency_ms": 5752.59,
+      "search_latency_ms": 0.05,
+      "generation_latency_ms": 4432.72
+    },
+    {
+      "id": "SRC_10",
+      "category": "Source-Attribution",
+      "question": "What is the RAM capacity in cluster_specification.md?",
+      "retrieval_mode": "WEB",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable web information to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "latency_ms": 1152.91,
+      "search_latency_ms": 0.06,
+      "generation_latency_ms": 0.0
+    }
+  ]
+}

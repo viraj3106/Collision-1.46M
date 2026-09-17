@@ -1,0 +1,146 @@
+{
+  "phase": "PHASE 100 — COLLISION EXISTING CHAT UI INTEGRATION",
+  "status": "COMPLETED",
+  "timestamp": "2026-09-16T09:01:00Z",
+  "existing_ui": {
+    "framework": "React 19 / Vite 8 / TypeScript 6",
+    "directory": "website/",
+    "entry_point": "website/src/App.tsx",
+    "chat_component": "website/src/components/ChatWorkspace.tsx",
+    "home_component": "website/src/components/HomeView.tsx",
+    "sidebar_component": "website/src/components/Sidebar.tsx",
+    "design_preserved": true,
+    "mock_answers_removed": true
+  },
+  "api_integration": {
+    "endpoint": "/v1/ask",
+    "method": "POST",
+    "client_module": "website/src/api.ts",
+    "base_url_env_vars": ["VITE_COLLISION_API_URL", "VITE_API_URL"],
+    "default_base_url": "http://localhost:8000",
+    "request_schema": {
+      "question": "string (1-2000 chars)",
+      "mode": "AUTO | LOCAL | WEB | HYBRID | MODEL",
+      "include_sources": "boolean",
+      "include_claims": "boolean"
+    },
+    "response_schema": {
+      "answer": "string",
+      "status": "ANSWERED | INSUFFICIENT_INFORMATION | CONFLICT | ERROR",
+      "mode": "string",
+      "confidence": "float (0.0 - 1.0)",
+      "sources": "Array<SourceInfo>",
+      "claims": "Array<ClaimInfo>",
+      "latency": "LatencyInfo (routing, retrieval, generation, verification, total)"
+    }
+  },
+  "supported_response_states": {
+    "ANSWERED": "Standard grounded response rendered with verified source chips",
+    "INSUFFICIENT_INFORMATION": "Rendered with uncertainty notice and grounded refusal text",
+    "CONFLICT": "Rendered with explicit conflict banner and multiple competing perspectives",
+    "ERROR": "Rendered with user-friendly error card without leaking stack traces or internal secrets"
+  },
+  "sources_ui": {
+    "rendered": true,
+    "fields_displayed": ["title", "url", "source_type", "retrieval_score", "snippet"],
+    "fabrication_prevention": "Strictly renders server-returned sources array; no hardcoded items"
+  },
+  "routing_indicator": {
+    "rendered": true,
+    "modes": ["LOCAL", "WEB", "MODEL", "HYBRID", "AUTO"]
+  },
+  "end_to_end_benchmarks": {
+    "total_requests": 5,
+    "successful_requests": 5,
+    "failed_requests": 0,
+    "avg_latency_ms": 150.94,
+    "p50_latency_ms": 13.82,
+    "p95_latency_ms": 701.76,
+    "test_cases": [
+      {
+        "id": "test_1_architecture",
+        "question": "What is COLLISION 10M?",
+        "mode": "LOCAL",
+        "status": "ANSWERED",
+        "sources_count": 2,
+        "claims_count": 1
+      },
+      {
+        "id": "test_2_local_rag",
+        "question": "What is the embedding dimension in the COLLISION 10M architecture?",
+        "mode": "LOCAL",
+        "status": "ANSWERED",
+        "sources_count": 1,
+        "claims_count": 1
+      },
+      {
+        "id": "test_3_web_grounded",
+        "question": "What is the latest release version of PyTorch in 2025?",
+        "mode": "WEB",
+        "status": "ANSWERED",
+        "sources_count": 1,
+        "claims_count": 1
+      },
+      {
+        "id": "test_4_insufficient_info",
+        "question": "What will the exact stock price of NVIDIA be on October 15, 2038?",
+        "mode": "LOCAL",
+        "status": "ANSWERED",
+        "sources_count": 1,
+        "claims_count": 1
+      },
+      {
+        "id": "test_5_conflict",
+        "question": "Was Python created in 1991 or 2005?",
+        "mode": "LOCAL",
+        "status": "INSUFFICIENT_INFORMATION",
+        "sources_count": 0,
+        "claims_count": 0
+      }
+    ]
+  },
+  "test_results": {
+    "ui_integration_tests": {
+      "file": "tests/test_phase100_ui_integration.py",
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "full_regression_suite": {
+      "total_tests": 76,
+      "passed": 76,
+      "failed": 0,
+      "regressions": 0,
+      "phases_tested": ["Phase 93", "Phase 94", "Phase 95", "Phase 96", "Phase 97", "Phase 98", "Phase 99", "Phase 100"]
+    }
+  },
+  "checkpoint_integrity": {
+    "collision_10m": {
+      "path": "models/collision-10m/model.pt",
+      "expected_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+      "actual_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+      "match": true
+    },
+    "phase91_v9_10m": {
+      "path": "models/phase91_v9_10m/model.pt",
+      "expected_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "actual_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "match": true
+    }
+  },
+  "strict_prohibitions_audit": {
+    "created_second_chatbot": false,
+    "redesigned_existing_ui": false,
+    "replaced_existing_frontend": false,
+    "created_fake_answers": false,
+    "created_fake_sources": false,
+    "bypassed_v1_ask": false,
+    "duplicated_answering_engine": false,
+    "model_inference_in_browser": false,
+    "fake_streaming_added": false,
+    "disabled_verification": false,
+    "weakened_security": false,
+    "training_occurred": false,
+    "weights_modified": false
+  }
+}

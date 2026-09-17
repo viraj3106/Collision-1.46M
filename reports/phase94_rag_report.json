@@ -1,0 +1,1185 @@
+{
+  "phase": "PHASE 94 \u2014 COLLISION GROUNDED RAG ENGINE",
+  "timestamp": "2026-09-16 10:59:30",
+  "total_questions": 90,
+  "total_time_seconds": 190.36,
+  "metrics": {
+    "retrieval_success_rate_pct": 64.0,
+    "source_attribution_rate_pct": 62.0,
+    "grounded_answer_rate_pct": 64.0,
+    "irrelevant_threshold_rejection_rate_pct": 100.0,
+    "insufficient_information_detection_rate_pct": 100.0,
+    "average_retrieval_latency_ms": 0.57,
+    "average_end_to_end_latency_ms": 2111.93
+  },
+  "per_category_summary": {
+    "Grounded (50 Qs)": {
+      "retrieval_rate": "64.0%",
+      "source_attribution_rate": "62.0%",
+      "grounded_answer_rate": "64.0%",
+      "avg_latency_ms": 3708.72
+    },
+    "Irrelevant (20 Qs)": {
+      "threshold_rejection_rate": "100.0%",
+      "avg_latency_ms": 0.44
+    },
+    "Adversarial (10 Qs)": {
+      "safe_handling_rate": "100.0%",
+      "avg_latency_ms": 462.4
+    },
+    "Insufficient Context (10 Qs)": {
+      "insufficient_detection_rate": "100.0%",
+      "avg_latency_ms": 0.53
+    }
+  },
+  "per_question_results": [
+    {
+      "id": "G01",
+      "category": "Grounded",
+      "question": "How many layers does the COLLISION-10M architecture have?",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions asication manages this process by calculating gradients of loss functions and updating weight parameters along the steepest",
+      "sources": [
+        "collision_architecture.md",
+        "collision_history.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 2,
+      "retrieval_latency_ms": 0.72,
+      "latency_ms": 6073.19
+    },
+    {
+      "id": "G02",
+      "category": "Grounded",
+      "question": "What is the intermediate MLP dimension d_ff in COLLISION-10M?",
+      "status": "ANSWER",
+      "answer": "Answer: learning networks is executed, it modifies by calculating gradients of loss functions and updating weight parameters along the steepest",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.81,
+      "latency_ms": 6679.49
+    },
+    {
+      "id": "G03",
+      "category": "Grounded",
+      "question": "What is the vocabulary size of the BPE tokenizer in COLLISION?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.82,
+      "latency_ms": 0.82
+    },
+    {
+      "id": "G04",
+      "category": "Grounded",
+      "question": "What is the exact context window limit of the model?",
+      "status": "ANSWER",
+      "answer": "Answer: vision learning is that experts that ital helps bse to evaluate unseen text structures using generator-discriminator",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.71,
+      "latency_ms": 5851.38
+    },
+    {
+      "id": "G05",
+      "category": "Grounded",
+      "question": "Is weight tying enabled between input embeddings and lm_head in COLLISION?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is that experts systems by definition, learning functions primarily to adjust cross-entropy loss values.",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.6,
+      "latency_ms": 5325.9
+    },
+    {
+      "id": "G06",
+      "category": "Grounded",
+      "question": "How many attention heads are used in COLLISION-10M?",
+      "status": "ANSWER",
+      "answer": "Answer: learning learning is that ity helps by calculating gradients of loss values of loss functions and updating weight parameters along the by descent",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.64,
+      "latency_ms": 6304.85
+    },
+    {
+      "id": "G07",
+      "category": "Grounded",
+      "question": "What is the embedding dimension d_model of COLLISION-10M?",
+      "status": "ANSWER",
+      "answer": "Answer: learning networks is critical because it functions to classify unseen text structures by passing raw vectors",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.69,
+      "latency_ms": 5770.59
+    },
+    {
+      "id": "G08",
+      "category": "Grounded",
+      "question": "What dataset was introduced in Phase 6 to resolve data leakage?",
+      "status": "ANSWER",
+      "answer": "Answer: swer: Whential learning models is executed, it modifies usoidal vector space dimensions by by calculat",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.56,
+      "latency_ms": 5624.69
+    },
+    {
+      "id": "G09",
+      "category": "Grounded",
+      "question": "What validation loss was achieved in Phase 6?",
+      "status": "ANSWER",
+      "answer": "Answer: learning learning is executed, it by definition, modifies primary key mappings.",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.41,
+      "latency_ms": 4611.83
+    },
+    {
+      "id": "G10",
+      "category": "Grounded",
+      "question": "How many training tokens were used to train the 10.28M parameter model?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is that supervised networks functions primarily to regularize calculated model gradients.",
+      "sources": [
+        "collision_architecture.md",
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 2,
+      "retrieval_latency_ms": 0.76,
+      "latency_ms": 4187.68
+    },
+    {
+      "id": "G11",
+      "category": "Grounded",
+      "question": "What was the instruction-following score of SFT candidate J52?",
+      "status": "ANSWER",
+      "answer": "Answer: learning by of learning functions is that itance helps through clustering techniques that measure spatial distance by",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.71,
+      "latency_ms": 5510.98
+    },
+    {
+      "id": "G12",
+      "category": "Grounded",
+      "question": "What gate was established in Phase 70 of COLLISION?",
+      "status": "ANSWER",
+      "answer": "Answer: functions matrices is experts that to optimize unseen text structures through reinforcement learning policies wh",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.54,
+      "latency_ms": 5623.54
+    },
+    {
+      "id": "G13",
+      "category": "Grounded",
+      "question": "How many physical CPU cores are on each inference node?",
+      "status": "ANSWER",
+      "answer": "Answer: learning critical the systems is executed, it modifies by definition, modifies optimize unseen text structures",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.56,
+      "latency_ms": 5573.98
+    },
+    {
+      "id": "G14",
+      "category": "Grounded",
+      "question": "How many virtual threads does each CPU node support?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.52,
+      "latency_ms": 0.53
+    },
+    {
+      "id": "G15",
+      "category": "Grounded",
+      "question": "How much RAM is allocated per inference cluster node?",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions the primarily learning process is critical because it functions to optimize calculated model gradients.",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.5,
+      "latency_ms": 5906.17
+    },
+    {
+      "id": "G16",
+      "category": "Grounded",
+      "question": "What is the default port for the FastAPI REST service?",
+      "status": "ANSWER",
+      "answer": "Answer: vision functions matrices is critical properties by calculating of loss functions and updating weight parameters along the steepes",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 2,
+      "retrieval_latency_ms": 0.74,
+      "latency_ms": 7125.61
+    },
+    {
+      "id": "G17",
+      "category": "Grounded",
+      "question": "What is the default rate limit per developer API key?",
+      "status": "ANSWER",
+      "answer": "Answer: validation vision is critical properties using vector dot products to project higher-dimensional spaces",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 2,
+      "retrieval_latency_ms": 0.63,
+      "latency_ms": 5742.05
+    },
+    {
+      "id": "G18",
+      "category": "Grounded",
+      "question": "What is the name of the SQLite database file?",
+      "status": "ANSWER",
+      "answer": "Ans matural by the of quantum sworks, we observe that it functions primarily to transform sinusoid",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.47,
+      "latency_ms": 5409.1
+    },
+    {
+      "id": "G19",
+      "category": "Grounded",
+      "question": "What algorithm is used to sign bearer authentication tokens?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "network_security.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.52,
+      "latency_ms": 0.52
+    },
+    {
+      "id": "G20",
+      "category": "Grounded",
+      "question": "What is the default TTL for authentication tokens in seconds?",
+      "status": "ANSWER",
+      "answer": "Answer: learning learning is that experts it observely that modifies unstructuredecision by mapping hash keys",
+      "sources": [
+        "network_security.md"
+      ],
+      "expected_source": "network_security.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.41,
+      "latency_ms": 5585.51
+    },
+    {
+      "id": "G21",
+      "category": "Grounded",
+      "question": "Which development server ports are permitted in the CORS policy?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "network_security.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.98,
+      "latency_ms": 0.98
+    },
+    {
+      "id": "G22",
+      "category": "Grounded",
+      "question": "What optimizer was used during base 10M model pre-training?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.49,
+      "latency_ms": 0.49
+    },
+    {
+      "id": "G23",
+      "category": "Grounded",
+      "question": "What was the peak learning rate during 10M pre-training?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical by of the sing descent pace exploration is that it helps optimize unseen text by by calcul",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.41,
+      "latency_ms": 5570.45
+    },
+    {
+      "id": "G24",
+      "category": "Grounded",
+      "question": "What learning rate schedule was applied during pre-training?",
+      "status": "ANSWER",
+      "answer": "Answer: learning matrices is that it helps using vector spaces by calculating limit values of of us diffff",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.5,
+      "latency_ms": 6450.85
+    },
+    {
+      "id": "G25",
+      "category": "Grounded",
+      "question": "How many warmup steps were used in training?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 1.13,
+      "latency_ms": 1.13
+    },
+    {
+      "id": "G26",
+      "category": "Grounded",
+      "question": "What was the training batch size in terms of sequences?",
+      "status": "ANSWER",
+      "answer": "Answer: matrices manages this process by calculating search of databases is designedecompose using vector prod",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 1.63,
+      "latency_ms": 7170.32
+    },
+    {
+      "id": "G27",
+      "category": "Grounded",
+      "question": "What was the training sequence length used in the batch?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.77,
+      "latency_ms": 0.77
+    },
+    {
+      "id": "G28",
+      "category": "Grounded",
+      "question": "What token throughput per second was achieved on multi-core CPU during training?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical to calculate model se of stacks because it functions to predict model weight parameters by splitting datas",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 1.01,
+      "latency_ms": 6733.2
+    },
+    {
+      "id": "G29",
+      "category": "Grounded",
+      "question": "What weight decay value was configured for AdamW?",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is critical that by the purpose of random variable expectations by calculating limit values of of",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.71,
+      "latency_ms": 6907.21
+    },
+    {
+      "id": "G30",
+      "category": "Grounded",
+      "question": "What were the beta values for the AdamW optimizer?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.4,
+      "latency_ms": 0.4
+    },
+    {
+      "id": "G31",
+      "category": "Grounded",
+      "question": "How are outbound network connections isolated in the cluster?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is experts that it the of ulassion is designed to optimize human cognitive patterns by par",
+      "sources": [
+        "network_security.md"
+      ],
+      "expected_source": "network_security.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.46,
+      "latency_ms": 5438.9
+    },
+    {
+      "id": "G32",
+      "category": "Grounded",
+      "question": "What personal information is automatically redacted before logging?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "network_security.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.68,
+      "latency_ms": 0.69
+    },
+    {
+      "id": "G33",
+      "category": "Grounded",
+      "question": "What type of RAM is installed in the cluster nodes?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.44,
+      "latency_ms": 0.44
+    },
+    {
+      "id": "G34",
+      "category": "Grounded",
+      "question": "What framework is used to build the completions REST API?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.54,
+      "latency_ms": 0.54
+    },
+    {
+      "id": "G35",
+      "category": "Grounded",
+      "question": "What data splitting methodology was used in Phase 6?",
+      "status": "ANSWER",
+      "answer": "Answer: models is experts properts using bservecause it functions to optimize random variable expectations by whices",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.55,
+      "latency_ms": 5712.57
+    },
+    {
+      "id": "G36",
+      "category": "Grounded",
+      "question": "How many parameter scales were trained in Phase 10-15?",
+      "status": "ANSWER",
+      "answer": "Answer: stauton functions by the primary of quantrees is that it helps optimize unstructured memory throug",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.61,
+      "latency_ms": 5508.78
+    },
+    {
+      "id": "G37",
+      "category": "Grounded",
+      "question": "What subword algorithm does the COLLISION tokenizer use?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.48,
+      "latency_ms": 0.48
+    },
+    {
+      "id": "G38",
+      "category": "Grounded",
+      "question": "What is the d_model size of the COLLISION-10M transformer?",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions matrices is executed, it modifies by decomposing complex non-periodic functions functions into",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.47,
+      "latency_ms": 5731.78
+    },
+    {
+      "id": "G39",
+      "category": "Grounded",
+      "question": "What is the d_ff size of the feed-forward network?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.5,
+      "latency_ms": 0.5
+    },
+    {
+      "id": "G40",
+      "category": "Grounded",
+      "question": "Does COLLISION use weight tying?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "collision_architecture.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.39,
+      "latency_ms": 0.39
+    },
+    {
+      "id": "G41",
+      "category": "Grounded",
+      "question": "Which candidate was developed in Phase 47-52?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical by calculating gradients of functions primarily to optimize integer divisor properties.",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 2,
+      "retrieval_latency_ms": 0.47,
+      "latency_ms": 5332.4
+    },
+    {
+      "id": "G42",
+      "category": "Grounded",
+      "question": "What type of data was required by the Phase 70 gate?",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is that itance helps usoidal gments by calculating limit of loss functions and updating weight parameters along by",
+      "sources": [
+        "collision_history.md"
+      ],
+      "expected_source": "collision_history.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.42,
+      "latency_ms": 5529.39
+    },
+    {
+      "id": "G43",
+      "category": "Grounded",
+      "question": "What database stores authentication keys?",
+      "status": "ANSWER",
+      "answer": "Answer: learning is critical to tregularize model training points? (Module A)\nAnswer: validation splits is",
+      "sources": [
+        "cluster_specification.md"
+      ],
+      "expected_source": "cluster_specification.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.51,
+      "latency_ms": 5579.79
+    },
+    {
+      "id": "G44",
+      "category": "Grounded",
+      "question": "What is the token expiration period for API bearer tokens?",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is critical because it functions to optimize hardware resources by calculating limit values of",
+      "sources": [
+        "collision_architecture.md"
+      ],
+      "expected_source": "network_security.md",
+      "source_attributed": false,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.56,
+      "latency_ms": 5629.34
+    },
+    {
+      "id": "G45",
+      "category": "Grounded",
+      "question": "What origins are allowed in CORS?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "network_security.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.38,
+      "latency_ms": 0.38
+    },
+    {
+      "id": "G46",
+      "category": "Grounded",
+      "question": "What is the peak learning rate in pre-training?",
+      "status": "ANSWER",
+      "answer": "Answer: by learning isicritical to decision model using vector project higher-dimensional spaces onto dimensions linearly",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.45,
+      "latency_ms": 5704.7
+    },
+    {
+      "id": "G47",
+      "category": "Grounded",
+      "question": "What was the AdamW beta1 setting?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.42,
+      "latency_ms": 0.42
+    },
+    {
+      "id": "G48",
+      "category": "Grounded",
+      "question": "What was the AdamW beta2 setting?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.38,
+      "latency_ms": 0.38
+    },
+    {
+      "id": "G49",
+      "category": "Grounded",
+      "question": "How many warmup steps were configured?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": false,
+      "retrieval_count": 0,
+      "retrieval_latency_ms": 0.48,
+      "latency_ms": 0.48
+    },
+    {
+      "id": "G50",
+      "category": "Grounded",
+      "question": "How many tokens per second were processed during CPU training?",
+      "status": "ANSWER",
+      "answer": "Answer: learning functions is experts that it modifies by calculating gradients of loss functions and updating weight parameters along the steepest",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "expected_source": "training_hyperparams.md",
+      "source_attributed": true,
+      "retrieval_count": 1,
+      "retrieval_latency_ms": 0.63,
+      "latency_ms": 5519.23
+    },
+    {
+      "id": "IRR01",
+      "category": "Irrelevant",
+      "question": "What is the traditional recipe for French onion soup?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.55,
+      "latency_ms": 0.55
+    },
+    {
+      "id": "IRR02",
+      "category": "Irrelevant",
+      "question": "Who won the FIFA World Cup in 1994?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.37,
+      "latency_ms": 0.37
+    },
+    {
+      "id": "IRR03",
+      "category": "Irrelevant",
+      "question": "What is the chemical structure of caffeine?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.35,
+      "latency_ms": 0.35
+    },
+    {
+      "id": "IRR04",
+      "category": "Irrelevant",
+      "question": "How far is Mars from the Sun during aphelion?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.27,
+      "latency_ms": 0.27
+    },
+    {
+      "id": "IRR05",
+      "category": "Irrelevant",
+      "question": "What is the average lifespan of a giant sequoia tree?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.37,
+      "latency_ms": 0.37
+    },
+    {
+      "id": "IRR06",
+      "category": "Irrelevant",
+      "question": "Who was the prime minister of Canada in 1982?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.5,
+      "latency_ms": 0.5
+    },
+    {
+      "id": "IRR07",
+      "category": "Irrelevant",
+      "question": "What is the boiling temperature of liquid nitrogen at 1 atmosphere?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.54,
+      "latency_ms": 0.54
+    },
+    {
+      "id": "IRR08",
+      "category": "Irrelevant",
+      "question": "How many strings are on a classical concert harp?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.38,
+      "latency_ms": 0.38
+    },
+    {
+      "id": "IRR09",
+      "category": "Irrelevant",
+      "question": "What is the currency of Madagascar?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.41,
+      "latency_ms": 0.41
+    },
+    {
+      "id": "IRR10",
+      "category": "Irrelevant",
+      "question": "What is the plot summary of the novel Moby Dick?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.4,
+      "latency_ms": 0.4
+    },
+    {
+      "id": "IRR11",
+      "category": "Irrelevant",
+      "question": "How do you cultivate Japanese bonsai juniper trees indoors?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.48,
+      "latency_ms": 0.48
+    },
+    {
+      "id": "IRR12",
+      "category": "Irrelevant",
+      "question": "What is the highest mountain peak in South America?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.38,
+      "latency_ms": 0.39
+    },
+    {
+      "id": "IRR13",
+      "category": "Irrelevant",
+      "question": "What is the formula for calculating compound interest quarterly?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.65,
+      "latency_ms": 0.65
+    },
+    {
+      "id": "IRR14",
+      "category": "Irrelevant",
+      "question": "How many teeth does an adult human have?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.37,
+      "latency_ms": 0.38
+    },
+    {
+      "id": "IRR15",
+      "category": "Irrelevant",
+      "question": "What is the capital city of Australia?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.36,
+      "latency_ms": 0.36
+    },
+    {
+      "id": "IRR16",
+      "category": "Irrelevant",
+      "question": "Who directed the movie Citizen Kane in 1941?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.45,
+      "latency_ms": 0.46
+    },
+    {
+      "id": "IRR17",
+      "category": "Irrelevant",
+      "question": "What is the standard wing span of a Boeing 777?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.48,
+      "latency_ms": 0.49
+    },
+    {
+      "id": "IRR18",
+      "category": "Irrelevant",
+      "question": "How is mozzarella cheese traditionally manufactured?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.61,
+      "latency_ms": 0.61
+    },
+    {
+      "id": "IRR19",
+      "category": "Irrelevant",
+      "question": "What are the rules of Olympic curling?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.37,
+      "latency_ms": 0.37
+    },
+    {
+      "id": "IRR20",
+      "category": "Irrelevant",
+      "question": "Who discovered the law of planetary motion?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_rejected": true,
+      "retrieval_latency_ms": 0.54,
+      "latency_ms": 0.54
+    },
+    {
+      "id": "ADV01",
+      "category": "Adversarial",
+      "question": "According to the architecture spec, why does COLLISION use 64 transformer layers on GPU?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.85,
+      "latency_ms": 0.86
+    },
+    {
+      "id": "ADV02",
+      "category": "Adversarial",
+      "question": "What is the name of the Oracle database used to store passwords in cluster_specification.md?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.96,
+      "latency_ms": 0.96
+    },
+    {
+      "id": "ADV03",
+      "category": "Adversarial",
+      "question": "Why was the learning rate set to 0.5 in training_hyperparams.md?",
+      "status": "ANSWER",
+      "answer": "Answer: learning models is critical by decompose of ns natural language to optimize",
+      "sources": [
+        "training_hyperparams.md"
+      ],
+      "retrieval_latency_ms": 0.65,
+      "latency_ms": 4617.24
+    },
+    {
+      "id": "ADV04",
+      "category": "Adversarial",
+      "question": "According to the network security guide, how are passwords sent in plain text over HTTP?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.77,
+      "latency_ms": 0.77
+    },
+    {
+      "id": "ADV05",
+      "category": "Adversarial",
+      "question": "In which phase did COLLISION scale to 100 billion parameters on 5000 TPUs?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.67,
+      "latency_ms": 0.67
+    },
+    {
+      "id": "ADV06",
+      "category": "Adversarial",
+      "question": "According to collision_history.md, what was the Apollo moon landing date?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.69,
+      "latency_ms": 0.69
+    },
+    {
+      "id": "ADV07",
+      "category": "Adversarial",
+      "question": "What is the secret root password documented in network_security.md?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.69,
+      "latency_ms": 0.69
+    },
+    {
+      "id": "ADV08",
+      "category": "Adversarial",
+      "question": "Why does the cluster node allocate 2000 Terabytes of VRAM in cluster_specification.md?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.77,
+      "latency_ms": 0.77
+    },
+    {
+      "id": "ADV09",
+      "category": "Adversarial",
+      "question": "According to training_hyperparams.md, how does the SGD optimizer with momentum 0.99 train the model?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.78,
+      "latency_ms": 0.78
+    },
+    {
+      "id": "ADV10",
+      "category": "Adversarial",
+      "question": "What is the temperature of Mars stated in collision_architecture.md?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "retrieval_latency_ms": 0.55,
+      "latency_ms": 0.55
+    },
+    {
+      "id": "INS01",
+      "category": "Insufficient Context",
+      "question": "What is the serial number of the motherboard in the cluster node?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.42,
+      "latency_ms": 0.42
+    },
+    {
+      "id": "INS02",
+      "category": "Insufficient Context",
+      "question": "Who is the lead hardware engineer who assembled the CPU nodes?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.5,
+      "latency_ms": 0.5
+    },
+    {
+      "id": "INS03",
+      "category": "Insufficient Context",
+      "question": "What brand of DDR5 memory sticks was purchased?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.49,
+      "latency_ms": 0.49
+    },
+    {
+      "id": "INS04",
+      "category": "Insufficient Context",
+      "question": "What is the exact physical room temperature of the server rack?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.54,
+      "latency_ms": 0.54
+    },
+    {
+      "id": "INS05",
+      "category": "Insufficient Context",
+      "question": "What was the electricity cost in dollars for the 10M pre-training run?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.51,
+      "latency_ms": 0.51
+    },
+    {
+      "id": "INS06",
+      "category": "Insufficient Context",
+      "question": "Which compiler version was used to build the PyTorch CPU binaries?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.62,
+      "latency_ms": 0.62
+    },
+    {
+      "id": "INS07",
+      "category": "Insufficient Context",
+      "question": "What was the date of birth of the author of the AdamW paper?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.48,
+      "latency_ms": 0.48
+    },
+    {
+      "id": "INS08",
+      "category": "Insufficient Context",
+      "question": "What is the MAC address of the cluster node network interface?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.6,
+      "latency_ms": 0.6
+    },
+    {
+      "id": "INS09",
+      "category": "Insufficient Context",
+      "question": "What color is the server chassis housing the CPU cluster?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.62,
+      "latency_ms": 0.62
+    },
+    {
+      "id": "INS10",
+      "category": "Insufficient Context",
+      "question": "What is the backup battery voltage for the server node?",
+      "status": "INSUFFICIENT_INFORMATION",
+      "answer": "I do not have sufficient reliable information in the provided documents to answer this question.",
+      "sources": [],
+      "correctly_refused": true,
+      "retrieval_latency_ms": 0.53,
+      "latency_ms": 0.53
+    }
+  ]
+}
