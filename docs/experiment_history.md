@@ -84,3 +84,41 @@ COLLISION LAB
 
 - **Objective**: Create a graphical playground for model interaction.
 - **Action**: Developed a decoupled Streamlit client in `playground/app.py` that interacts with the FastAPI service, featuring real-time diagnostic output, generation controls, and session logs.
+
+---
+
+## 8. Parameter Capacity Expansion (Phase 77)
+
+- **Objective**: Test whether scaling model parameters from ~10M to 25M–50M (`J77-25M`, `J77-35M`, `J77-50M`) under the Phase 76 hybrid loss objective improves multi-turn conversational reasoning.
+- **Outcome**: **Outcome C — Capacity Not Confirmed**. Parameter expansion without pretraining resulted in zero-coherence collapse during conversational fine-tuning (coherence 0.500 vs 2.470 control).
+- **Conclusion**: Parameter scale alone is not the dominant bottleneck.
+
+---
+
+## 9. Pretraining Token Budget Expansion (Phase 78)
+
+- **Objective**: Investigate whether multi-stage foundational pretraining on synthetic domain-balanced text (`collision_dataset_v5_p78`) unlocks larger model capacity (~25M–50M) prior to conversational fine-tuning.
+- **Candidates**: `P78-A` (10M / 100 steps), `P78-B` (10M / 400 steps), `P78-C` (25M / 400 steps), `P78-D` (25M / 1000 steps), `P78-E` (50M / 1000 steps).
+- **Results**:
+  - Foundational pretraining completely prevented zero-coherence collapse across all scales, restoring functional coherence to `2.360` (vs Phase 77 `0.500`).
+  - Pretraining 25M model for 1000 steps (`P78-D`) achieved best validation loss of **`0.2511`** and perplexity of **`1.29`**.
+- **Outcome**: **Outcome B — Partial Unlock**. Pretraining exposure successfully unlocked capacity stability and convergence, confirming that foundational pretraining is mandatory. However, synthetic template pretraining reaches capacity saturation.
+- **Identified Bottleneck**: **DATA DIVERSITY & COMPLEXITY (PRETRAINING DATA QUALITY)**.
+
+---
+
+## 10. RAG Grounded-Answering Validation (Phase 93)
+
+- **Objective**: Rigorously evaluate whether COLLISION V9 can utilize high-quality retrieved context to synthesize accurate, grounded answers across controlled single-hop, multi-hop, and conflict conditions.
+- **Protocol**: 100-question controlled benchmark across 10 distinct domains evaluated under 4 controlled context variations (`MODEL_ONLY`, `RELEVANT_CONTEXT`, `IRRELEVANT_CONTEXT`, `CONFLICTING_CONTEXT`).
+- **Results**:
+  - `MODEL_ONLY_ACCURACY`: **2.00%**
+  - `RELEVANT_CONTEXT_ACCURACY`: **1.00%**
+  - `GROUNDED_GAIN`: **-1.00%**
+  - `TRUE_CONTEXT_UTILIZATION_RATE`: **1.00%**
+  - `IRRELEVANT_CONTEXT_CONTAMINATION_RATE`: **0.00%**
+  - `CONFLICT_RESOLUTION_RATE`: **0.00%**
+  - `HALLUCINATION_RATE`: **99.00%**
+  - `GENERATION_FAILURE_RATE`: **24.75%**
+- **Outcome**: **Verdict: PHASE_93_CONTEXT_UTILIZATION_FAILURE**. While V9 eliminates token collapse and generation crashes, a 10M base causal transformer does not intrinsically perform reading comprehension or in-context evidence extraction without targeted instruction fine-tuning / cross-attention mechanisms.
+- **Safety & Integrity**: All 13 safeguard assertions (`TEST_A` to `TEST_M`) passed with zero model weight alterations.

@@ -5,24 +5,26 @@ import hashlib
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple, Union
 
-DATABASE_URL = os.environ.get("DATABASE_URL", os.environ.get("COLLISION_DB_PATH", "collision_api.db"))
+def get_db_url() -> str:
+    return os.environ.get("DATABASE_URL", os.environ.get("COLLISION_DB_PATH", "collision_api.db"))
 
 def is_postgresql() -> bool:
-    return DATABASE_URL.startswith("postgres://") or DATABASE_URL.startswith("postgresql://")
+    url = get_db_url()
+    return url.startswith("postgres://") or url.startswith("postgresql://")
 
 def get_db_connection():
+    url = get_db_url()
     if is_postgresql():
         import psycopg2
         from psycopg2.extras import RealDictConnection
         # Fix potential postgres:// to postgresql:// scheme issue in psycopg2
-        url = DATABASE_URL
         if url.startswith("postgres://"):
             url = url.replace("postgres://", "postgresql://", 1)
         conn = psycopg2.connect(url, connection_factory=RealDictConnection)
         return conn
     else:
         # Fallback to local SQLite
-        conn = sqlite3.connect(DATABASE_URL)
+        conn = sqlite3.connect(url)
         conn.row_factory = sqlite3.Row
         return conn
 

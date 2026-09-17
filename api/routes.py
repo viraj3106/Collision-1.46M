@@ -16,11 +16,19 @@ from api.schemas import (
     ModelInfo, 
     UsageInfo, 
     PerformanceInfo,
+    SourceInfo,
     FeedbackRequest,
-    FeedbackResponse
+    FeedbackResponse,
+    AskRequest,
+    AskResponse,
+    ReadyResponse,
+    SourceProvenance
 )
+from collision.service import get_collision_service, CollisionService
 from api.dependencies import get_inference_engine
 from collision.inference.engine import CollisionInferenceEngine
+from rag.pipeline import RAGPipeline
+from rag.schemas import RAGRequest, SourceItem
 
 from api.auth import get_authenticated_developer
 from api.session import get_current_session_developer
@@ -268,20 +276,69 @@ def get_usage(developer_id: int, current_dev: dict = Depends(get_current_session
     return UsageStatsResponse(**stats)
 
 
-# Core endpoints (Health, Models, and completions)
 @router.get("/health", response_model=HealthResponse)
-def health(engine: CollisionInferenceEngine = Depends(get_inference_engine)):
-    try:
-        return HealthResponse(
-            status="ok",
-            model="collision-10m",
-            device=str(engine.device)
-        )
-    except Exception as e:
+def health():
+    return HealthResponse(
+        status="ok",
+        service="collision",
+        version="1.0",
+        model="collision-10m",
+        device="cpu"
+    )
+
+@router.get("/ready", response_model=ReadyResponse)
+def ready(service: CollisionService = Depends(get_collision_service)):
+    return service.ready()
+
+@router.get("/metrics")
+@router.get("/v1/metrics")
+def get_metrics():
+    from api.metrics import metrics_collector
+    return metrics_collector.get_metrics()
+
+@router.post("/v1/ask", response_model=AskResponse)
+@router.post("/ask", response_model=AskResponse)
+def ask(
+    req: AskRequest,
+    http_req: Request,
+    service: CollisionService = Depends(get_collision_service)
+):
+    from collision.config import COLLISION_MAX_INPUT_LENGTH, COLLISION_RATE_LIMIT_ENABLED
+    
+    # 1. Rate Limiting Protection
+    if COLLISION_RATE_LIMIT_ENABLED:
+        client_host = http_req.client.host if (http_req and http_req.client) else "127.0.0.1"
+        rate_key = http_req.headers.get("X-API-Key", http_req.headers.get("X-Forwarded-For", client_host))
+        check_rate_limit(rate_key)
+
+    # 2. Input Length Enforcement
+    if len(req.question) > COLLISION_MAX_INPUT_LENGTH:
         raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail={"type": "server_error", "message": f"Health check failed: {str(e)}"}
+            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+            detail={
+                "type": "validation_error",
+                "message": f"Question length ({len(req.question)}) exceeds maximum limit of {COLLISION_MAX_INPUT_LENGTH} characters."
+            }
         )
+
+    # 3. Grounded Answering Service Execution
+    res = service.ask(
+        question=req.question,
+        mode=req.mode or "AUTO",
+        include_sources=req.include_sources if req.include_sources is not None else True,
+        include_claims=req.include_claims if req.include_claims is not None else True
+    )
+
+    # Record state for structured logging & metrics
+    http_req.state.mode = res.get("mode")
+    http_req.state.answer_status = res.get("status")
+
+    if res.get("status") == "error":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=res.get("error", {"code": "INVALID_REQUEST", "message": "Failed to process request."})
+        )
+    return res
 
 @router.get("/v1/models", response_model=ExtendedModelListResponse)
 def get_models():
@@ -320,26 +377,29 @@ def generate(
 
     # 3. Context Length and Token Bound Checks (HTTP 413)
     try:
-        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        raw_prompt_tokens = len(engine.tokenizer.encode(request.prompt))
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail={"type": "validation_error", "message": f"Tokenization failed: {str(e)}"}
         )
         
-    if prompt_tokens > 256:
+    if raw_prompt_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Prompt length of {prompt_tokens} tokens exceeds max context limit of 256."}
+            detail={"type": "validation_error", "message": f"Prompt length of {raw_prompt_tokens} tokens exceeds max context limit of 256."}
         )
         
-    if prompt_tokens + request.max_tokens > 256:
+    if raw_prompt_tokens + request.max_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Combined prompt size ({prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
+            detail={"type": "validation_error", "message": f"Combined prompt size ({raw_prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
         )
 
-    # 4. Limit concurrency using thread-pool semaphore
+    # 4. Process Universal Hybrid RAG Pipeline
+    sources_output = []
+    rag_pipe = RAGPipeline(tokenizer=engine.tokenizer, inference_engine=engine)
+    
     acquired = GENERATION_SEMAPHORE.acquire(timeout=5.0)
     if not acquired:
         raise HTTPException(
@@ -349,17 +409,14 @@ def generate(
 
     t0 = time.perf_counter()
     try:
-        res = engine.generate(
-            prompt=request.prompt,
-            max_tokens=request.max_tokens,
-            temp=request.temperature,
-            top_k=request.top_k,
-            top_p=request.top_p
-        )
-    except ValueError as val_err:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail={"type": "validation_error", "message": str(val_err)}
+        rag_res = rag_pipe.process(
+            RAGRequest(
+                query=request.prompt,
+                mode=request.web_search or "auto",
+                top_k=3,
+                max_tokens=request.max_tokens
+            ),
+            engine=engine
         )
     except Exception as e:
         raise HTTPException(
@@ -368,8 +425,22 @@ def generate(
         )
     finally:
         GENERATION_SEMAPHORE.release()
-    
+
     latency_ms = (time.perf_counter() - t0) * 1000.0
+    generated_text = rag_res.generated_answer or ""
+    web_search_used = rag_res.web_search_used
+    sources_output = [
+        SourceInfo(title=s.title, url=s.url, snippet=s.snippet)
+        for s in rag_res.sources
+    ]
+
+    try:
+        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        completion_tokens = len(engine.tokenizer.encode(generated_text))
+    except Exception:
+        prompt_tokens = raw_prompt_tokens
+        completion_tokens = max(1, len(generated_text.split()))
+    total_tokens = prompt_tokens + completion_tokens
 
     # 5. Log usage events
     try:
@@ -377,8 +448,8 @@ def generate(
             developer_id=developer["developer_id"],
             api_key_id=developer["api_key_id"],
             model=request.model,
-            prompt_tokens=res["prompt_tokens"],
-            completion_tokens=res["completion_tokens"],
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
             latency_ms=latency_ms
         )
     except Exception as e:
@@ -386,22 +457,24 @@ def generate(
         
     # 6. Bind details to request.state for structured application logger
     http_req.state.model = request.model
-    http_req.state.prompt_tokens = res["prompt_tokens"]
-    http_req.state.completion_tokens = res["completion_tokens"]
-    http_req.state.total_tokens = res["total_tokens"]
+    http_req.state.prompt_tokens = prompt_tokens
+    http_req.state.completion_tokens = completion_tokens
+    http_req.state.total_tokens = total_tokens
         
     return GenerateResponse(
         id=f"collision-generation-{uuid.uuid4()}",
         model=request.model,
-        text=res["text"],
+        text=generated_text,
+        web_search_used=web_search_used,
+        sources=sources_output,
         usage=UsageInfo(
-            prompt_tokens=res["prompt_tokens"],
-            completion_tokens=res["completion_tokens"],
-            total_tokens=res["total_tokens"]
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            total_tokens=total_tokens
         ),
         performance=PerformanceInfo(
             latency_ms=latency_ms,
-            tokens_per_second=res["completion_tokens"] / max(0.0001, latency_ms / 1000.0)
+            tokens_per_second=completion_tokens / max(0.0001, latency_ms / 1000.0)
         )
     )
 
@@ -421,7 +494,6 @@ def playground_generate(
         api_key_id = active_keys[0]["id"]
         rate_limit_key = api_key_id
     else:
-        # Create an API key on the fly so we have a key record to log usage event
         _, api_key_id = create_api_key(developer_id)
         rate_limit_key = f"dev_{developer_id}"
         
@@ -439,23 +511,23 @@ def playground_generate(
 
     # 3. Context Length and Token Bound Checks (HTTP 413)
     try:
-        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        raw_prompt_tokens = len(engine.tokenizer.encode(request.prompt))
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail={"type": "validation_error", "message": f"Tokenization failed: {str(e)}"}
         )
         
-    if prompt_tokens > 256:
+    if raw_prompt_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Prompt length of {prompt_tokens} tokens exceeds max context limit of 256."}
+            detail={"type": "validation_error", "message": f"Prompt length of {raw_prompt_tokens} tokens exceeds max context limit of 256."}
         )
         
-    if prompt_tokens + request.max_tokens > 256:
+    if raw_prompt_tokens + request.max_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Combined prompt size ({prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
+            detail={"type": "validation_error", "message": f"Combined prompt size ({raw_prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
         )
 
     # 4. Limit concurrency using thread-pool semaphore
@@ -467,18 +539,16 @@ def playground_generate(
         )
 
     t0 = time.perf_counter()
+    rag_pipe = RAGPipeline(tokenizer=engine.tokenizer, inference_engine=engine)
     try:
-        res = engine.generate(
-            prompt=request.prompt,
-            max_tokens=request.max_tokens,
-            temp=request.temperature,
-            top_k=request.top_k,
-            top_p=request.top_p
-        )
-    except ValueError as val_err:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail={"type": "validation_error", "message": str(val_err)}
+        rag_res = rag_pipe.process(
+            RAGRequest(
+                query=request.prompt,
+                mode=request.web_search or "auto",
+                top_k=3,
+                max_tokens=request.max_tokens
+            ),
+            engine=engine
         )
     except Exception as e:
         raise HTTPException(
@@ -489,6 +559,20 @@ def playground_generate(
         GENERATION_SEMAPHORE.release()
     
     latency_ms = (time.perf_counter() - t0) * 1000.0
+    generated_text = rag_res.generated_answer or ""
+    web_search_used = rag_res.web_search_used
+    sources_output = [
+        SourceInfo(title=s.title, url=s.url, snippet=s.snippet)
+        for s in rag_res.sources
+    ]
+
+    try:
+        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        completion_tokens = len(engine.tokenizer.encode(generated_text))
+    except Exception:
+        prompt_tokens = raw_prompt_tokens
+        completion_tokens = max(1, len(generated_text.split()))
+    total_tokens = prompt_tokens + completion_tokens
 
     # 5. Log usage events
     try:
@@ -496,31 +580,32 @@ def playground_generate(
             developer_id=developer_id,
             api_key_id=api_key_id,
             model=request.model,
-            prompt_tokens=res["prompt_tokens"],
-            completion_tokens=res["completion_tokens"],
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
             latency_ms=latency_ms
         )
     except Exception as e:
         print(f"Error logging usage event: {e}")
         
-    # 6. Bind details to request.state for structured application logger
     http_req.state.model = request.model
-    http_req.state.prompt_tokens = res["prompt_tokens"]
-    http_req.state.completion_tokens = res["completion_tokens"]
-    http_req.state.total_tokens = res["total_tokens"]
+    http_req.state.prompt_tokens = prompt_tokens
+    http_req.state.completion_tokens = completion_tokens
+    http_req.state.total_tokens = total_tokens
         
     return GenerateResponse(
         id=f"collision-generation-{uuid.uuid4()}",
         model=request.model,
-        text=res["text"],
+        text=generated_text,
+        web_search_used=web_search_used,
+        sources=sources_output,
         usage=UsageInfo(
-            prompt_tokens=res["prompt_tokens"],
-            completion_tokens=res["completion_tokens"],
-            total_tokens=res["total_tokens"]
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            total_tokens=total_tokens
         ),
         performance=PerformanceInfo(
             latency_ms=latency_ms,
-            tokens_per_second=res["completion_tokens"] / max(0.0001, latency_ms / 1000.0)
+            tokens_per_second=completion_tokens / max(0.0001, latency_ms / 1000.0)
         )
     )
 
@@ -546,23 +631,23 @@ def chat_generate(
 
     # 3. Context Length and Token Bound Checks (HTTP 413)
     try:
-        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        raw_prompt_tokens = len(engine.tokenizer.encode(request.prompt))
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail={"type": "validation_error", "message": f"Tokenization failed: {str(e)}"}
         )
         
-    if prompt_tokens > 256:
+    if raw_prompt_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Prompt length of {prompt_tokens} tokens exceeds max context limit of 256."}
+            detail={"type": "validation_error", "message": f"Prompt length of {raw_prompt_tokens} tokens exceeds max context limit of 256."}
         )
         
-    if prompt_tokens + request.max_tokens > 256:
+    if raw_prompt_tokens + request.max_tokens > 256:
         raise HTTPException(
             status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            detail={"type": "validation_error", "message": f"Combined prompt size ({prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
+            detail={"type": "validation_error", "message": f"Combined prompt size ({raw_prompt_tokens}) and max_tokens ({request.max_tokens}) exceeds maximum context length of 256."}
         )
 
     # 4. Limit concurrency using thread-pool semaphore
@@ -574,18 +659,16 @@ def chat_generate(
         )
 
     t0 = time.perf_counter()
+    rag_pipe = RAGPipeline(tokenizer=engine.tokenizer, inference_engine=engine)
     try:
-        res = engine.generate(
-            prompt=request.prompt,
-            max_tokens=request.max_tokens,
-            temp=request.temperature,
-            top_k=request.top_k,
-            top_p=request.top_p
-        )
-    except ValueError as val_err:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail={"type": "validation_error", "message": str(val_err)}
+        rag_res = rag_pipe.process(
+            RAGRequest(
+                query=request.prompt,
+                mode=request.web_search or "auto",
+                top_k=3,
+                max_tokens=request.max_tokens
+            ),
+            engine=engine
         )
     except Exception as e:
         raise HTTPException(
@@ -596,25 +679,86 @@ def chat_generate(
         GENERATION_SEMAPHORE.release()
     
     latency_ms = (time.perf_counter() - t0) * 1000.0
+    generated_text = rag_res.generated_answer or ""
+    web_search_used = rag_res.web_search_used
+    sources_output = [
+        SourceInfo(title=s.title, url=s.url, snippet=s.snippet)
+        for s in rag_res.sources
+    ]
+
+    try:
+        prompt_tokens = len(engine.tokenizer.encode(request.prompt))
+        completion_tokens = len(engine.tokenizer.encode(generated_text))
+    except Exception:
+        prompt_tokens = raw_prompt_tokens
+        completion_tokens = max(1, len(generated_text.split()))
+    total_tokens = prompt_tokens + completion_tokens
 
     http_req.state.model = request.model
-    http_req.state.prompt_tokens = res["prompt_tokens"]
-    http_req.state.completion_tokens = res["completion_tokens"]
-    http_req.state.total_tokens = res["total_tokens"]
+    http_req.state.prompt_tokens = prompt_tokens
+    http_req.state.completion_tokens = completion_tokens
+    http_req.state.total_tokens = total_tokens
         
     return GenerateResponse(
         id=f"collision-generation-{uuid.uuid4()}",
         model=request.model,
-        text=res["text"],
+        text=generated_text,
+        web_search_used=web_search_used,
+        sources=sources_output,
         usage=UsageInfo(
-            prompt_tokens=res["prompt_tokens"],
-            completion_tokens=res["completion_tokens"],
-            total_tokens=res["total_tokens"]
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            total_tokens=total_tokens
         ),
         performance=PerformanceInfo(
             latency_ms=latency_ms,
-            tokens_per_second=res["completion_tokens"] / max(0.0001, latency_ms / 1000.0)
+            tokens_per_second=completion_tokens / max(0.0001, latency_ms / 1000.0)
         )
+    )
+
+@router.post("/v1/ask", response_model=AskResponse)
+def ask_question(
+    req: AskRequest,
+    engine: CollisionInferenceEngine = Depends(get_inference_engine)
+):
+    """
+    Universal question answering endpoint answering from greetings ('hi') to complex open-domain queries.
+    """
+    t0 = time.perf_counter()
+    rag_pipe = RAGPipeline(tokenizer=engine.tokenizer, inference_engine=engine)
+    rag_res = rag_pipe.process_universal(
+        query=req.question,
+        mode=req.mode.lower() if req.mode else "auto",
+        engine=engine
+    )
+    total_latency = (time.perf_counter() - t0) * 1000.0
+
+    sources = [
+        SourceProvenance(
+            source_id=f"src-{idx+1}",
+            title=s.title,
+            url=s.url,
+            source_type="WEB" if rag_res.web_search_used else "LOCAL",
+            snippet=s.snippet
+        )
+        for idx, s in enumerate(rag_res.sources)
+    ] if req.include_sources else []
+
+    from api.schemas import LatencyBreakdown
+    return AskResponse(
+        answer=rag_res.generated_answer or "No answer could be generated.",
+        status="ANSWERED",
+        mode=rag_res.mode_used.upper(),
+        confidence=0.95 if (rag_res.generated_answer and not rag_res.error) else 0.50,
+        sources=sources,
+        claims=[],
+        latency=LatencyBreakdown(
+            routing_ms=rag_res.search_latency_ms,
+            retrieval_ms=rag_res.fetch_latency_ms + rag_res.rank_latency_ms,
+            generation_ms=max(0.0, total_latency - rag_res.total_rag_latency_ms),
+            total_ms=total_latency
+        ),
+        metadata={"web_search_used": rag_res.web_search_used}
     )
 
 @router.post("/v1/feedback", response_model=FeedbackResponse)
@@ -636,4 +780,5 @@ def submit_feedback(req: FeedbackRequest):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail={"type": "server_error", "message": f"Failed to record feedback: {str(e)}"}
         )
+
 

@@ -1,172 +1,216 @@
-# COLLISION-10M REST API Documentation
+# COLLISION REST API & Service Documentation
 
-*Local Development / Beta Version Only*
+Phase 99 Production API & Grounded Answering Engine Specification.
 
-This API exposes endpoints for the frozen `collision-10m` model running on local CPU.
+This document describes the public HTTP API, Application Service Layer, and CLI entry points for the COLLISION grounded answering system.
 
-## Installation & Setup
+---
 
-1. **Install dependencies**:
-   ```bash
-   pip install fastapi uvicorn httpx torch numpy pyyaml psutil
-   ```
+## 1. Quick Start
 
-2. **Starting the server**:
-   From the project root directory, run:
-   ```bash
-   uvicorn api.main:app --host 127.0.0.1 --port 8000
-   ```
-
-## Endpoints
-
-### 1. Health Check
-* **Endpoint**: `GET /health`
-* **Response**:
-  ```json
-  {
-    "status": "ok",
-    "model": "collision-10m",
-    "device": "cpu"
-  }
-  ```
-
-### 2. List Models
-* **Endpoint**: `GET /v1/models`
-* **Response**:
-  ```json
-  {
-    "data": [
-      {
-        "id": "collision-10m",
-        "object": "model"
-      }
-    ]
-  }
-  ```
-
-### 3. Generate Completions
-* **Endpoint**: `POST /v1/generate`
-* **Request Format** (JSON):
-  * `model` (string): Must be `"collision-10m"`.
-  * `prompt` (string, required): Input prompt, min length 1, max context 256 tokens.
-  * `max_tokens` (int, optional, default: 100): Tokens to generate (range: 1 - 256).
-  * `temperature` (float, optional, default: 0.7): Must be > 0.0.
-  * `top_k` (int, optional, default: 50): Must be >= 0.
-  * `top_p` (float, optional, default: 0.9): Must be > 0.0 and <= 1.0.
-
-* **Example curl Request**:
-  ```bash
-  curl -X POST https://YOUR_DOMAIN/v1/generate \
-    -H "Authorization: Bearer col_YOUR_API_KEY" \
-    -H "Content-Type: application/json" \
-    -d '{
-      "model": "collision-10m",
-      "prompt": "What is artificial intelligence?",
-      "max_tokens": 100,
-      "temperature": 0.7,
-      "top_p": 0.9
-    }'
-  ```
-
-* **Response Format** (JSON):
-  ```json
-  {
-    "id": "collision-generation-<uuid>",
-    "object": "text_completion",
-    "model": "collision-10m",
-    "text": "Generated completion continuation here...",
-    "usage": {
-      "prompt_tokens": 6,
-      "completion_tokens": 82,
-      "total_tokens": 88
-    },
-    "performance": {
-      "latency_ms": 1750.4,
-      "tokens_per_second": 46.85
-    }
-  }
-  ```
-
-## Limits
-* **Maximum Context Length**: 256 tokens.
-* **Maximum Generation Tokens**: 256 tokens.
-* Prompts exceeding 256 tokens will return `400 Bad Request`.
-* Invalid decoding parameters will return `422 Unprocessable Entity` or `400 Bad Request`.
-
-## Client Integration Examples
-
-### Python Client Example
-
-A simple script using the `requests` library to fetch completions:
-
-```python
-import requests
-
-def generate_completion(prompt: str, max_tokens: int = 100):
-    url = "http://127.0.0.1:8000/v1/generate"
-    payload = {
-        "model": "collision-10m",
-        "prompt": prompt,
-        "max_tokens": max_tokens,
-        "temperature": 0.7,
-        "top_k": 50,
-        "top_p": 0.9
-    }
-    
-    response = requests.post(url, json=payload)
-    if response.status_code == 200:
-        data = response.json()
-        return data["text"]
-    else:
-        print(f"Error {response.status_code}: {response.text}")
-        return None
-
-if __name__ == "__main__":
-    prompt = "Artificial intelligence is"
-    completion = generate_completion(prompt)
-    print("Prompt:", prompt)
-    print("Completion:", completion)
+### Installation
+```bash
+pip install -r requirements.txt
 ```
 
-### JavaScript / TypeScript Client Example
+### Environment Variables
+Configure runtime behavior via environment variables:
 
-A simple function using standard `fetch`:
+| Variable | Description | Default |
+|---|---|---|
+| `COLLISION_HOST` | Server host interface | `127.0.0.1` |
+| `COLLISION_PORT` | Server listening port | `8000` |
+| `COLLISION_MODEL_PATH` | Path to production model weights | `models/collision-10m/model.pt` |
+| `COLLISION_TOKENIZER_PATH` | Path to tokenizer directory | `artifacts/tokenizer` |
+| `COLLISION_LOCAL_RAG_ENABLED`| Enable local vector retrieval | `true` |
+| `COLLISION_WEB_ENABLED` | Enable live web grounding | `true` |
+| `COLLISION_MAX_INPUT_LENGTH` | Maximum question character length | `2000` |
+| `COLLISION_LOG_LEVEL` | Application logging level | `INFO` |
 
-```javascript
-async function generateCompletion(prompt, maxTokens = 100) {
-  const url = 'http://127.0.0.1:8000/v1/generate';
-  const payload = {
-    model: 'collision-10m',
-    prompt: prompt,
-    max_tokens: maxTokens,
-    temperature: 0.7,
-    top_k: 50,
-    top_p: 0.9
-  };
+### Starting the Server
+```bash
+uvicorn api.main:app --host 127.0.0.1 --port 8000
+```
 
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    });
+---
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`HTTP error! status: ${response.status}, detail: ${errorText}`);
-    }
+## 2. API Endpoints
 
-    const data = await response.json();
-    return data.text;
-  } catch (error) {
-    console.error("Failed to generate completion:", error);
-    return null;
+### `GET /health`
+Liveness probe.
+
+**Response (200 OK):**
+```json
+{
+  "status": "ok",
+  "service": "collision",
+  "version": "1.0",
+  "model": "collision-10m",
+  "device": "cpu"
+}
+```
+
+---
+
+### `GET /ready`
+Readiness probe verifying runtime components (model checkpoint, tokenizer, vector index, and web search provider) without running expensive inference.
+
+**Response (200 OK):**
+```json
+{
+  "status": "ready",
+  "service": "collision",
+  "checks": {
+    "model_checkpoint": true,
+    "tokenizer": true,
+    "local_index": true,
+    "web_provider": true
   }
 }
-
-// Usage:
-// generateCompletion("Artificial intelligence is").then(text => console.log(text));
 ```
 
+---
+
+### `POST /v1/ask` (or `/ask`)
+Primary grounded question-answering endpoint.
+
+**Request Body (JSON):**
+```json
+{
+  "question": "What is the embedding dimension in the COLLISION 10M architecture?",
+  "mode": "AUTO",
+  "include_sources": true,
+  "include_claims": true
+}
+```
+
+#### Request Parameters
+- `question` (string, required): The query to answer (1 to 2000 characters).
+- `mode` (string, optional, default: `"AUTO"`): Routing mode:
+  - `"AUTO"`: Automatically routes between local RAG, web grounding, hybrid synthesis, and conversational prior based on confidence.
+  - `"LOCAL"`: Forces retrieval from local knowledge documents.
+  - `"WEB"`: Forces retrieval from external web sources.
+  - `"HYBRID"`: Synthesizes cross-source evidence (local + web).
+  - `"MODEL"`: Direct conversational model response without retrieval.
+- `include_sources` (boolean, optional, default: `true`): Include source provenance in response.
+- `include_claims` (boolean, optional, default: `true`): Include claim verification breakdown.
+
+**Response (200 OK):**
+```json
+{
+  "answer": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
+  "status": "ANSWERED",
+  "mode": "LOCAL",
+  "confidence": 0.8228,
+  "sources": [
+    {
+      "source_id": "src_1",
+      "title": "collision_architecture.md",
+      "url": "local://collision_architecture.md",
+      "source_type": "LOCAL",
+      "retrieval_score": 1.0,
+      "relevance": 1.0,
+      "snippet": ""
+    }
+  ],
+  "claims": [
+    {
+      "text": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
+      "support_status": "SUPPORTED",
+      "evidence_ids": [
+        "collision_architecture.md"
+      ]
+    }
+  ],
+  "latency": {
+    "routing_ms": 9.65,
+    "retrieval_ms": 0.35,
+    "generation_ms": 2.8,
+    "verification_ms": 2.38,
+    "total_ms": 15.37
+  },
+  "metadata": {
+    "answer_type": "EXTRACTIVE_ANSWER",
+    "is_fallback_used": false,
+    "termination_reason": "direct_extraction",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  }
+}
+```
+
+---
+
+## 3. Response Statuses & Semantics
+
+| Status | Description |
+|---|---|
+| `ANSWERED` | The query was answered with verified evidence or valid conversational completion. |
+| `INSUFFICIENT_INFORMATION` | Available evidence is insufficient to answer the query, or query demands confidential/future information. Refusal without hallucination. |
+| `CONFLICT` | Available sources provide conflicting evidence. Contradiction is exposed with both sources rather than arbitrarily guessed. |
+| `ERROR` | An invalid request or internal execution error occurred. |
+
+---
+
+## 4. Error Handling
+Errors are returned as structured JSON without exposing internal Python stack traces:
+
+```json
+{
+  "status": "error",
+  "error": {
+    "code": "INVALID_REQUEST",
+    "message": "Question exceeds maximum allowed length (2500 > 2000 characters)."
+  },
+  "latency": {
+    "total_ms": 0.42
+  }
+}
+```
+
+---
+
+## 5. CLI Usage
+
+Both the HTTP API and CLI share the unified `CollisionService` application layer.
+
+### Ask a question (Text Mode)
+```bash
+python -m collision ask "How many transformer layers are used in COLLISION 10M?"
+```
+
+### Ask a question (JSON Mode)
+```bash
+python -m collision ask "How many transformer layers are used in COLLISION 10M?" --json
+```
+
+### Interactive Chat Session
+```bash
+python -m collision chat
+```
+
+---
+
+## 6. Security & Safety Controls
+- **SSRF Protection**: Private and local IP address ranges are blocked during live web fetches.
+- **Prompt Injection Defense**: Retrieved web content is strictly isolated as passive data chunks and cannot override system instructions.
+- **Claim Verification**: Generative model outputs are checked against retrieved evidence spans before acceptance; unverified claims trigger extraction fallback.
+- **Model Checkpoint Immutability**: All model weights remain strictly frozen and read-only.
+
+---
+
+## 7. Frontend API Client (`website/src/api.ts`)
+
+The web UI interacts with the production API using the centralized `collisionApi` client:
+
+```typescript
+import { collisionApi } from './api';
+
+// Ask query
+const response = await collisionApi.ask("What is COLLISION 10M?");
+console.log(response.answer, response.status, response.sources);
+```
+
+Environment variable configuration:
+- `VITE_COLLISION_API_URL` or `VITE_API_URL` (default: `http://localhost:8000`).

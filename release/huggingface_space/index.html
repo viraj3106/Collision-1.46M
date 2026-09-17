@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLISION AI & NLP Lab | 10.28M Parameter Neural & NLP Suite</title>
+    <meta name="description" content="Interactive exploration laboratory for COLLISION-10M: In-house NLP engine, TextRank keyphrases, topic classification, tone analysis, proofreading, readability, and deterministic solvers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">⚡</div>
+                <div class="brand-text">
+                    <h2>COLLISION</h2>
+                    <span class="badge-pill">10.28M • NLP Suite</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <button class="nav-item active" data-tab="chatTab" id="navChat">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-label">Conversational AI</span>
+                </button>
+                <button class="nav-item" data-tab="textrankTab" id="navTextRank">
+                    <span class="nav-icon">🏷️</span>
+                    <span class="nav-label">TextRank Keyphrases</span>
+                </button>
+                <button class="nav-item" data-tab="topicTab" id="navTopic">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-label">Topic Classification</span>
+                </button>
+                <button class="nav-item" data-tab="toneTab" id="navTone">
+                    <span class="nav-icon">🎭</span>
+                    <span class="nav-label">Tone & Formality</span>
+                </button>
+                <button class="nav-item" data-tab="proofreadTab" id="navProofread">
+                    <span class="nav-icon">✍️</span>
+                    <span class="nav-label">Grammar & Spell Check</span>
+                </button>
+                <button class="nav-item" data-tab="readabilityTab" id="navReadability">
+                    <span class="nav-icon">📈</span>
+                    <span class="nav-label">Readability & Fog</span>
+                </button>
+                <button class="nav-item" data-tab="qaTab" id="navQA">
+                    <span class="nav-icon">🔍</span>
+                    <span class="nav-label">Extractive Context QA</span>
+                </button>
+                <button class="nav-item" data-tab="solverTab" id="navSolver">
+                    <span class="nav-icon">🔢</span>
+                    <span class="nav-label">Deterministic Solver</span>
+                </button>
+                <button class="nav-item" data-tab="quickstartTab" id="navQuickstart">
+                    <span class="nav-icon">💻</span>
+                    <span class="nav-label">Python SDK & API</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="stats-badge">
+                    <div class="stat-row"><span>Parameters:</span> <strong>10,284,288</strong></div>
+                    <div class="stat-row"><span>Tests:</span> <strong class="text-success">360 / 360 Passed</strong></div>
+                    <div class="stat-row"><span>HF Hub:</span> <strong>Live</strong></div>
+                </div>
+                <a href="https://huggingface.co/collision-10M/collision-10m" target="_blank" class="btn-hf-hub" id="btnHfHubLink">
+                    <span>🤗 Model Hub Repo</span>
+                    <span class="arrow">↗</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-titles">
+                    <h1 id="pageTitle">Conversational AI & Hybrid Intelligence</h1>
+                    <p id="pageSubtitle">Hierarchical Hybrid Intelligence: Neural (10.28M) + In-House NLP Engine + Knowledge Grounding</p>
+                </div>
+                <div class="header-actions">
+                    <span class="status-indicator online">
+                        <span class="pulse-dot"></span> Engine Online
+                    </span>
+                </div>
+            </header>
+
+            <div class="content-scrollable">
+                <!-- 1. CHAT TAB -->
+                <section class="tab-panel active" id="chatTab">
+                    <div class="chat-layout">
+                        <div class="chat-container">
+                            <div class="chat-messages" id="chatMessages">
+                                <div class="message assistant">
+                                    <div class="msg-avatar">⚡</div>
+                                    <div class="msg-body">
+                                        <div class="msg-header">
+                                            <span class="msg-sender">COLLISION Hybrid Assistant</span>
+                                            <span class="msg-badge badge-nlp">Hierarchical NLP</span>
+                                        </div>
+                                        <div class="msg-content">
+                                            <p>Hello! I am <strong>COLLISION-10M</strong>, powered by an industrial-strength in-house NLP Engine and CPU-first neural intelligence. You can ask me questions, test reasoning, analyze text, or try any of the NLP tools in the sidebar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chat-quick-actions">
+                                <span class="quick-label">Try asking:</span>
+                                <button class="btn-chip" onclick="sendPresetChat('What is machine learning and how does gradient descent work?')">🤖 What is ML & gradient descent?</button>
+                                <button class="btn-chip" onclick="sendPresetChat('Calculate the area of a circle with radius 14.5 meters')">📐 Circle area (r=14.5)</button>
+                                <button class="btn-chip" onclick="sendPresetChat('Convert 78.5 miles per hour to kilometers per hour and meters per second')">⚡ Convert 78.5 mph</button>
+                                <button class="btn-chip" onclick="sendPresetChat('Hi there! How are you doing today?')">👋 Greeting test</button>
+                            </div>
+
+                            <form class="chat-input-box" id="chatForm" onsubmit="handleChatSubmit(event)">
+                                <input type="text" id="chatInput" placeholder="Ask COLLISION anything (reasoning, NLP analysis, math, concepts)..." autocomplete="off">
+                                <button type="submit" class="btn-send" id="btnSendChat">
+                                    <span>Send</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="chat-inspector">
+                            <h3>🔍 Live Inference Inspector</h3>
+                            <div class="inspector-card">
+                                <div class="card-label">Predicted Intent & Route</div>
+                                <div class="route-badge" id="inspectorRoute">General Query</div>
+                            </div>
+                            <div class="inspector-card">
+                                <div class="card-label">Salient Keyphrases</div>
+                                <div class="tags-container" id="inspectorKeywords">
+                                    <span class="tag-chip">collision-10m</span>
+                                    <span class="tag-chip">nlp</span>
+                                </div>
+                            </div>
+                            <div class="inspector-card">
+                                <div class="card-label">Tone & Formality</div>
+                                <div class="progress-bar-container">
+                                    <div class="bar-header"><span>Formality</span> <strong id="inspectorFormality">78%</strong></div>
+                                    <div class="progress-bar"><div class="fill" id="inspectorFormalityFill" style="width: 78%"></div></div>
+                                </div>
+                            </div>
+                            <div class="inspector-card">
+                                <div class="card-label">Latency Metric</div>
+                                <div class="metric-value" id="inspectorLatency">~1.2 ms</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. TEXTRANK TAB -->
+                <section class="tab-panel" id="textrankTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>🏷️ TextRank Keyphrase & Keyword Extractor</h2>
+                            <p>Graph-based ranking algorithm that extracts both unigram keywords and multi-word keyphrases using co-occurrence graphs with damping.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="textrankInput">Input Document / Passage:</label>
+                            <textarea id="textrankInput" rows="6">Natural language processing (NLP) and artificial intelligence have revolutionized modern computer science. Deep neural networks, transformers, and automated keyphrase extraction algorithms enable autonomous semantic understanding, document indexing, and knowledge discovery across high-dimensional text datasets.</textarea>
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runTextRank()" id="btnRunTextRank">⚡ Extract Keyphrases</button>
+                            <button class="btn-secondary" onclick="loadSampleTextRank(1)">Sample: Quantum Computing</button>
+                            <button class="btn-secondary" onclick="loadSampleTextRank(2)">Sample: Bio-Medical Research</button>
+                        </div>
+
+                        <div class="results-grid" id="textrankResults">
+                            <div class="res-card">
+                                <h3>🔑 Top Multi-Word Keyphrases</h3>
+                                <div class="keyphrase-list" id="textrankKeyphrasesList">
+                                    <!-- Dynamic -->
+                                </div>
+                            </div>
+                            <div class="res-card">
+                                <h3>📊 Individual Ranked Tokens</h3>
+                                <div class="score-bars-list" id="textrankKeywordsList">
+                                    <!-- Dynamic -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. TOPIC CLASSIFIER TAB -->
+                <section class="tab-panel" id="topicTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>📊 Multi-Domain Topic Classification</h2>
+                            <p>Classifies text across 10 specialized knowledge domains: Artificial Intelligence, Technology, Science, Mathematics, Finance, Medicine, Politics, Law, Arts & Literature, and Philosophy.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="topicInput">Enter Text for Classification:</label>
+                            <textarea id="topicInput" rows="5">The Federal Reserve implemented quantitative tightening, raising benchmark interest rates to mitigate escalating inflation in financial equities and treasury yields.</textarea>
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runTopicClassifier()" id="btnRunTopic">📊 Classify Topic</button>
+                            <button class="btn-secondary" onclick="setTopicSample('AI')">AI Sample</button>
+                            <button class="btn-secondary" onclick="setTopicSample('Medicine')">Medicine Sample</button>
+                            <button class="btn-secondary" onclick="setTopicSample('Law')">Law Sample</button>
+                        </div>
+
+                        <div class="results-grid">
+                            <div class="res-card">
+                                <h3>🏆 Top Predicted Domain</h3>
+                                <div class="top-prediction" id="topTopicContainer">
+                                    <div class="top-badge" id="topTopicName">FINANCE</div>
+                                    <div class="top-confidence" id="topTopicConfidence">Confidence: 94.2%</div>
+                                </div>
+                            </div>
+                            <div class="res-card">
+                                <h3>📈 Full Distribution (10 Domains)</h3>
+                                <div class="distribution-list" id="topicDistributionList">
+                                    <!-- Dynamic -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. TONE & FORMALITY TAB -->
+                <section class="tab-panel" id="toneTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>🎭 Tone, Formality & Subjectivity Analysis</h2>
+                            <p>Analyzes register formality (0–100%), emotional valence / sentiment polarity, and objectivity vs subjectivity.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="toneInput">Text to Analyze:</label>
+                            <textarea id="toneInput" rows="4">Consequently, the empirical evidence rigorously corroborates the initial hypothesis, demonstrating substantial statistical significance across all clinical trials.</textarea>
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runToneAnalysis()" id="btnRunTone">🎭 Analyze Tone</button>
+                            <button class="btn-secondary" onclick="setToneSample('formal')">Academic Formal</button>
+                            <button class="btn-secondary" onclick="setToneSample('casual')">Casual / Slang</button>
+                        </div>
+
+                        <div class="metrics-quad" id="toneMetricsGrid">
+                            <div class="metric-box">
+                                <div class="metric-title">Formality Score</div>
+                                <div class="metric-huge" id="toneFormalityVal">92%</div>
+                                <div class="metric-desc" id="toneFormalityDesc">Highly Formal / Academic</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Sentiment Polarity</div>
+                                <div class="metric-huge text-success" id="tonePolarityVal">+0.65</div>
+                                <div class="metric-desc" id="tonePolarityDesc">Positive</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Subjectivity</div>
+                                <div class="metric-huge text-info" id="toneSubjectivityVal">0.18</div>
+                                <div class="metric-desc" id="toneSubjectivityDesc">Objective / Factual</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Register Class</div>
+                                <div class="metric-huge text-purple" id="toneClassVal">Academic</div>
+                                <div class="metric-desc">Lexical Sophistication</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. PROOFREADING TAB -->
+                <section class="tab-panel" id="proofreadTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>✍️ Grammar & Spell Proofreader</h2>
+                            <p>Identifies spelling mistakes, phonetic typos, duplicate words, capitalization issues, and suggests normalized corrections.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="proofreadInput">Text with potential errors:</label>
+                            <textarea id="proofreadInput" rows="4">The artifical inteligence model gave an amazeing explaination about how neural netwroks work in computer sciance.</textarea>
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runProofreading()" id="btnRunProofread">✍️ Check & Correct</button>
+                            <button class="btn-secondary" onclick="setProofSample()">Load Typo Sample</button>
+                        </div>
+
+                        <div class="results-grid">
+                            <div class="res-card">
+                                <h3>🔍 Detected Errors (<span id="errorCount">0</span>)</h3>
+                                <div class="error-items-list" id="proofreadErrorsList">
+                                    <!-- Dynamic -->
+                                </div>
+                            </div>
+                            <div class="res-card">
+                                <h3>✅ Corrected Output</h3>
+                                <div class="corrected-box" id="proofreadCorrectedText">
+                                    <!-- Dynamic -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. READABILITY TAB -->
+                <section class="tab-panel" id="readabilityTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>📈 Readability & Text Complexity Metrics</h2>
+                            <p>Computes classic linguistic readability standards including Flesch Reading Ease, Flesch-Kincaid Grade Level, and Gunning Fog Index.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="readabilityInput">Text to Analyze:</label>
+                            <textarea id="readabilityInput" rows="6">The collision model utilizes an integrated neural-symbolic router that evaluates semantic entropy and dynamically chooses between direct transformer inference, knowledge graph traversal, and deterministic mathematical verification.</textarea>
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runReadability()" id="btnRunReadability">📈 Calculate Readability</button>
+                        </div>
+
+                        <div class="metrics-quad">
+                            <div class="metric-box">
+                                <div class="metric-title">Flesch Reading Ease</div>
+                                <div class="metric-huge" id="fleschEaseVal">28.4</div>
+                                <div class="metric-desc" id="fleschEaseDesc">Difficult / College Level</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Flesch-Kincaid Grade</div>
+                                <div class="metric-huge text-info" id="fleschGradeVal">15.2</div>
+                                <div class="metric-desc">University / Postgraduate</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Gunning Fog Index</div>
+                                <div class="metric-huge text-warning" id="fogIndexVal">17.8</div>
+                                <div class="metric-desc">Complex Technical Prose</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-title">Avg Sentence Length</div>
+                                <div class="metric-huge" id="avgSentenceVal">24.0</div>
+                                <div class="metric-desc">Words per sentence</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. CONTEXT QA TAB -->
+                <section class="tab-panel" id="qaTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>🔍 Extractive Reading Comprehension (Context QA)</h2>
+                            <p>SQuAD-style question answering that extracts exact answer spans from a given reference passage based on query semantics and token alignment.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="qaPassage">Reference Context Passage:</label>
+                            <textarea id="qaPassage" rows="6">COLLISION-10M is an ultra-fast, CPU-first transformer model featuring 10.28 million parameters across 12 attention layers and 12 heads. It was trained on 88.4 million tokens with an optimized BPE vocabulary of 32,000 tokens. The model achieves sub-millisecond inference on standard x86 CPU architectures without requiring dedicated GPU acceleration.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="qaQuestion">Question:</label>
+                            <input type="text" id="qaQuestion" value="How many parameters and layers does COLLISION-10M have?">
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runContextQA()" id="btnRunQA">🔍 Extract Answer</button>
+                            <button class="btn-secondary" onclick="setQASample(1)">Q: Token count</button>
+                            <button class="btn-secondary" onclick="setQASample(2)">Q: Hardware requirements</button>
+                        </div>
+
+                        <div class="qa-result-box" id="qaResultContainer">
+                            <div class="qa-answer-title">🎯 Extracted Answer Span:</div>
+                            <div class="qa-answer-text" id="qaAnswerText">10.28 million parameters across 12 attention layers</div>
+                            <div class="qa-confidence" id="qaConfidence">Confidence Score: 0.94 • Sentence Rank #1</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 8. DETERMINISTIC SOLVER TAB -->
+                <section class="tab-panel" id="solverTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>🔢 Deterministic Problem Solver</h2>
+                            <p>Zero-hallucination exact computational solvers for arithmetic, geometry, statistical analysis, and physical unit conversions.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="solverQuery">Enter Problem or Expression:</label>
+                            <input type="text" id="solverQuery" value="calculate area of circle with radius 12.5">
+                        </div>
+                        <div class="actions-row">
+                            <button class="btn-primary" onclick="runSolver()" id="btnRunSolver">🔢 Solve Deterministically</button>
+                            <button class="btn-secondary" onclick="setSolverSample('circle')">Circle Area (r=12.5)</button>
+                            <button class="btn-secondary" onclick="setSolverSample('cylinder')">Cylinder Volume (r=4, h=10)</button>
+                            <button class="btn-secondary" onclick="setSolverSample('speed')">Speed: 100 km/h to mph</button>
+                            <button class="btn-secondary" onclick="setSolverSample('temp')">Temp: 98.6 F to C</button>
+                        </div>
+
+                        <div class="solver-result-container" id="solverResult">
+                            <div class="solver-metric-card">
+                                <div class="card-label">Problem Type</div>
+                                <div class="badge-nlp" id="solverType">Geometry: Circle Area</div>
+                            </div>
+                            <div class="solver-metric-card">
+                                <div class="card-label">Exact Formula</div>
+                                <div class="code-pill" id="solverFormula">A = π × r² = 3.14159 × (12.5)²</div>
+                            </div>
+                            <div class="solver-metric-card result-highlight">
+                                <div class="card-label">Computed Result</div>
+                                <div class="solver-big-val" id="solverResultVal">490.8739</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 9. PYTHON SDK & API TAB -->
+                <section class="tab-panel" id="quickstartTab">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <h2>💻 Python SDK & API Quickstart</h2>
+                            <p>Use the COLLISION NLP Engine in Python directly from the repository or Hugging Face Hub.</p>
+                        </div>
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <span>1. Complete NLP Engine Quickstart</span>
+                                <button class="btn-copy" onclick="copyCode('codeNLP')">Copy Code</button>
+                            </div>
+                            <pre><code id="codeNLP">from collision.nlp import CollisionNLPEngine
+
+# Initialize the NLP suite
+engine = CollisionNLPEngine()
+
+# 1. TextRank Keyphrase Extraction
+res = engine.extract_keyphrases("Transformers and natural language processing revolutionize modern AI.")
+print("Keyphrases:", res.keyphrases)
+
+# 2. Topic Classification
+topic = engine.classify_topic("The Federal Reserve adjusted monetary interest rates.")
+print("Topic:", topic.primary_topic, topic.confidence)
+
+# 3. Tone & Formality Analysis
+tone = engine.analyze_tone("Consequently, empirical evidence supports the hypothesis.")
+print("Formality:", tone.formality_score, "Sentiment:", tone.sentiment_polarity)
+
+# 4. Proofreading & Spelling Correction
+corrected = engine.proofread("The artifical inteligence model gave an amazeing answer.")
+print("Corrected:", corrected.corrected_text)
+
+# 5. Extractive Reading Comprehension
+qa = engine.answer_question(
+    context="COLLISION-10M has 10.28 million parameters across 12 layers.",
+    question="How many parameters does the model have?"
+)
+print("Answer:", qa.answer)</code></pre>
+                        </div>
+
+                        <div class="code-section">
+                            <div class="code-header">
+                                <span>2. Load from Hugging Face Model Hub</span>
+                                <button class="btn-copy" onclick="copyCode('codeHF')">Copy Code</button>
+                            </div>
+                            <pre><code id="codeHF">from huggingface_hub import hf_hub_download
+import torch
+
+# Download model checkpoint and tokenizer from Hugging Face
+model_path = hf_hub_download(repo_id="collision-10M/collision-10m", filename="model.pt")
+print(f"COLLISION-10M model loaded from {model_path}")</code></pre>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -19,19 +19,50 @@ from api.routes import router
 from api.dependencies import get_inference_engine
 from api.database import init_db, get_db_connection, is_postgresql
 from api.limiter import get_redis_client
+from api.metrics import metrics_collector
+from collision.config import (
+    PRODUCTION_MODEL_PATH,
+    TOKENIZER_DIR,
+    PROTECTED_COLLISION_10M_SHA256,
+    COLLISION_ENVIRONMENT,
+    COLLISION_CORS_ORIGINS
+)
 
 # Keep track of cold start time
 cold_start_metrics = {}
 
+def validate_system_startup():
+    """Validates model existence, cryptographic integrity, and tokenizers on startup."""
+    import hashlib
+    if not os.path.exists(PRODUCTION_MODEL_PATH):
+        raise RuntimeError(f"Startup Failure: Production model checkpoint missing at {PRODUCTION_MODEL_PATH}")
+    
+    sha = hashlib.sha256()
+    with open(PRODUCTION_MODEL_PATH, "rb") as f:
+        while chunk := f.read(8192 * 1024):
+            sha.update(chunk)
+    actual_hash = sha.hexdigest().lower()
+    
+    if actual_hash != PROTECTED_COLLISION_10M_SHA256:
+        raise RuntimeError(f"Startup Failure: Model checkpoint hash mismatch! Expected {PROTECTED_COLLISION_10M_SHA256}, got {actual_hash}")
+        
+    if not os.path.exists(TOKENIZER_DIR):
+        raise RuntimeError(f"Startup Failure: Tokenizer directory missing at {TOKENIZER_DIR}")
+        
+    print(f"Startup Validation PASSED: Model SHA-256 verified ({actual_hash[:16]}...)")
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("FastAPI server starting up...")
+    print(f"FastAPI server starting up in [{COLLISION_ENVIRONMENT}] mode...")
     t0 = time.time()
     
-    # Init DB tables
+    # 1. Startup cryptographic and filesystem validation
+    validate_system_startup()
+    
+    # 2. Init DB tables
     init_db()
     
-    # Trigger model load and warmup
+    # 3. Trigger model load and warmup
     engine = get_inference_engine()
     
     elapsed = time.time() - t0
@@ -43,7 +74,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="COLLISION-10M REST API",
-    description="Secure completions endpoint for the COLLISION-10M model.",
+    description="Secure completions and grounded answering endpoint for the COLLISION-10M model.",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -64,7 +95,7 @@ allowed_origins = [
     "http://127.0.0.1:8501"
 ]
 
-cors_env = os.environ.get("CORS_ALLOWED_ORIGINS")
+cors_env = os.environ.get("CORS_ALLOWED_ORIGINS", COLLISION_CORS_ORIGINS)
 if cors_env:
     for origin in cors_env.split(","):
         if origin.strip():
@@ -100,6 +131,17 @@ async def add_request_id_and_headers(request: Request, call_next):
     response.headers["X-Request-ID"] = request_id
     response.headers["X-Process-Time"] = f"{latency_ms / 1000.0:.4f}"
     
+    # Record metrics for observability
+    mode = getattr(request.state, "mode", None)
+    answer_status = getattr(request.state, "answer_status", None)
+    metrics_collector.record_request(
+        status_code=response.status_code,
+        latency_ms=latency_ms,
+        mode=mode,
+        status_str=answer_status,
+        is_rate_limited=(response.status_code == 429)
+    )
+
     # Structured application logging
     log_data = {
         "request_id": request_id,
@@ -110,7 +152,11 @@ async def add_request_id_and_headers(request: Request, call_next):
         "latency_ms": round(latency_ms, 2)
     }
     
-    # Safely attach inference details from request.state (if set in generate route)
+    if mode:
+        log_data["mode"] = mode
+    if answer_status:
+        log_data["answer_status"] = answer_status
+        
     model = getattr(request.state, "model", None)
     if model:
         log_data["model"] = model

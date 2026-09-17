@@ -1,58 +1,88 @@
-# Hugging Face Release Guide for COLLISION-1.46M
+# Hugging Face Release Guide for COLLISION-10M & COLLISION NLP Engine
 
-This document outlines the upload process, file layout, and model page metadata required to publish COLLISION-1.46M to the Hugging Face Model Hub.
+This document outlines the upload process, file layout, and metadata required to publish COLLISION-10M and the COLLISION NLP Engine to the Hugging Face Model Hub and Hugging Face Spaces.
 
-## 1. Model Repository Name
-Recommended name: `viraj3106/collision-1.46m`
-
-## 2. Files to Upload
-Upload the following files to the Hugging Face repository root:
-* `checkpoints/phase6/collision-1.46m-best.pt` (rename to `collision-1.46m-best.pt` in the hub root)
-* `release/release.yaml`
-* `artifacts/tokenizer/vocab.json`
-* `artifacts/tokenizer/merges.txt`
-* `MODEL_CARD.md` (rename to `README.md` on Hugging Face to serve as the Model Card page)
-* `release_inference.py` (optional - helper script for hub users)
-
-## 3. Hugging Face Metadata Card (YAML Frontmatter)
-Prepend this block to the Hugging Face repository's `README.md` to format the hub page correctly:
-```yaml
 ---
-language: en
-license: mit
-tags:
-- text-generation
-- custom-transformer
-- educational
-- cpu-optimized
-datasets:
-- collision_dataset_v4
-metrics:
-- perplexity
-model_name: COLLISION-1.46M
-parameters: 1.46M
+
+## 1. Hugging Face Repositories
+* **Model Hub**: `viraj3106/collision-10m`
+* **Space Hub**: `viraj3106/collision-ai-lab` (Streamlit SDK)
+* **Dataset Hub**: `viraj3106/collision_dataset_v5_expanded`
+
 ---
+
+## 2. Model Hub Release Layout (`release/huggingface/`)
+The `release/huggingface/` directory is prepared for 1-step deployment to Hugging Face Model Hub:
+```
+release/huggingface/
+├── README.md               # Model Card with rich YAML frontmatter & NLP documentation
+├── DESCRIPTION.md          # Short & Long architectural descriptions
+├── model_metadata.json     # Parameter specs, SHA-256 checksums, and NLP feature list
+├── checksums.sha256        # Verified cryptographic SHA-256 hashes
+├── model.pt                # 10.28M parameter model weights (125,057,611 bytes)
+├── config.json             # Transformer hyperparameters
+├── generation_config.json  # Sampling temperature, top_k, repetition penalty
+├── tokenizer.json          # Tokenizer config metadata
+└── tokenizer/              # BPE vocab.json, merges.json, config.json, stats.json
 ```
 
-## 4. Upload Checklist
-- [ ] Install the Hugging Face CLI tool: `pip install huggingface_hub`
-- [ ] Login using write-access token: `huggingface-cli login`
-- [ ] Create repository: `huggingface-cli repo create collision-1.46m`
-- [ ] Clone repository: `git clone https://huggingface.co/viraj3106/collision-1.46m`
-- [ ] Copy files (checkpoint, tokenizer files, and code) to target directory.
-- [ ] Commit and push changes:
-  ```bash
-  git add .
-  git commit -m "Initial release of COLLISION-1.46M model and custom BPE tokenizer"
-  git push origin main
-  ```
+---
 
-## 5. Verification Procedure
-To verify the uploaded model hub resources run locally:
+## 3. Hugging Face Space Layout (`release/huggingface_space/`)
+The `release/huggingface_space/` directory is ready for 1-step deployment to Hugging Face Spaces:
+```
+release/huggingface_space/
+├── README.md               # Space metadata (sdk: streamlit, title: COLLISION AI & NLP Lab)
+├── requirements.txt        # streamlit, torch, pydantic
+└── app.py                  # Standalone interactive portal running full NLP Engine & chat
+```
+
+---
+
+## 4. Publication Procedure
+
+### Option A: Using `huggingface_hub` Python SDK
+```python
+from huggingface_hub import HfApi
+
+api = HfApi()
+
+# 1. Upload Model Hub
+api.upload_folder(
+    folder_path="release/huggingface",
+    repo_id="viraj3106/collision-10m",
+    repo_type="model"
+)
+
+# 2. Upload Space Hub
+api.upload_folder(
+    folder_path="release/huggingface_space",
+    repo_id="viraj3106/collision-ai-lab",
+    repo_type="space"
+)
+```
+
+### Option B: Using Git
 ```bash
-# Clone model hub files
-git clone https://huggingface.co/viraj3106/collision-1.46m
+# Model Hub
+git clone https://huggingface.co/viraj3106/collision-10m
+cp -r release/huggingface/* collision-10m/
+cd collision-10m
+git add . && git commit -m "Release COLLISION-10M and in-house NLP Engine"
+git push origin main
 
-# Test inference using the entry point pointing to the cloned files
-python release_inference.py --checkpoint collision-1.46m/collision-1.46m-best.pt --tokenizer collision-1.46m/
+# Space Hub
+git clone https://huggingface.co/spaces/viraj3106/collision-ai-lab
+cp -r release/huggingface_space/* collision-ai-lab/
+cd collision-ai-lab
+git add . && git commit -m "Deploy COLLISION AI & NLP Lab Streamlit Space"
+git push origin main
+```
+
+---
+
+## 5. Verification
+Run the Hugging Face release verification suite before deploying:
+```bash
+python release/verify_huggingface_package.py
 ```

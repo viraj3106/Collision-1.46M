@@ -6,6 +6,7 @@ import { ChatWorkspace } from './components/ChatWorkspace';
 import type { Message } from './components/ChatWorkspace';
 import { SettingsModal } from './components/SettingsModal';
 import { AboutModal } from './components/AboutModal';
+import { collisionApi } from './api';
 
 const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '');
 
@@ -112,65 +113,40 @@ export default function App() {
     setIsGenerating(true);
 
     try {
-      // 1. Try real backend inference call to /v1/chat/generate
-      let res = await fetch(`${API_BASE_URL}/v1/chat/generate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'collision-10m',
-          prompt: promptText,
-          max_tokens: maxTokens,
-          temperature: temperature,
-          top_k: 50,
-          top_p: 0.9
-        })
-      });
+      // Call Phase 99 Production Grounded Endpoint: POST /v1/ask via Collision API Client
+      const response = await collisionApi.ask(promptText);
 
-      // 2. Fallback to /v1/playground/generate or /v1/generate if needed
-      if (!res.ok && res.status === 404) {
-        res = await fetch(`${API_BASE_URL}/v1/playground/generate`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'collision-10m',
-            prompt: promptText,
-            max_tokens: maxTokens,
-            temperature: temperature
-          })
-        });
-      }
+      const assistantMsg: Message = {
+        id: `msg-ast-${Date.now()}`,
+        role: 'assistant',
+        content: response.answer || 'No answer could be generated from verified evidence.',
+        timestamp: Date.now(),
+        status: response.status,
+        mode: response.mode,
+        confidence: response.confidence,
+        sources: response.sources || [],
+        claims: response.claims || [],
+        latency: response.latency,
+        tokens: {
+          prompt_tokens: 0,
+          completion_tokens: 0,
+          latency_ms: response.latency?.total_ms || 0
+        }
+      };
 
-      if (res.ok) {
-        const data = await res.json();
-        const generatedText = data.text || 'No response generated.';
-        
-        const assistantMsg: Message = {
-          id: `msg-ast-${Date.now()}`,
-          role: 'assistant',
-          content: generatedText,
-          timestamp: Date.now(),
-          tokens: {
-            prompt_tokens: data.usage?.prompt_tokens || 0,
-            completion_tokens: data.usage?.completion_tokens || 0,
-            latency_ms: data.performance?.latency_ms || 0
-          }
-        };
-
-        setSessionMessages(prev => ({
-          ...prev,
-          [targetSessionId!]: [...(prev[targetSessionId!] || []), assistantMsg]
-        }));
-      } else {
-        const errData = await res.json().catch(() => ({}));
-        throw new Error(errData.detail?.message || errData.error?.message || `Server returned HTTP ${res.status}`);
-      }
+      setSessionMessages(prev => ({
+        ...prev,
+        [targetSessionId!]: [...(prev[targetSessionId!] || []), assistantMsg]
+      }));
     } catch (err: any) {
-      // Friendly error handling state
+      // Clean, user-friendly error without stack traces or leaks
       const errorMsg: Message = {
         id: `msg-err-${Date.now()}`,
         role: 'assistant',
-        content: `⚠️ Could not complete request: ${err.message || 'Model API unreachable'}. Please verify that the COLLISION backend server is running on port 8000.`,
-        timestamp: Date.now()
+        content: `⚠️ Could not complete request: ${err.message || 'COLLISION API unreachable'}. Please verify that the backend is running on port 8000.`,
+        timestamp: Date.now(),
+        status: 'ERROR',
+        mode: 'ERROR'
       };
 
       setSessionMessages(prev => ({
@@ -279,6 +255,8 @@ export default function App() {
         isOpen={isAboutOpen}
         onClose={() => setIsAboutOpen(false)}
       />
+
+      {isGenerating && <div className="gemini-screen-ambient-glow" />}
     </div>
   );
 }

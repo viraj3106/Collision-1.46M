@@ -10,5 +10,22 @@
   "training_tokens": 10000384,
   "dataset": "collision_dataset_v5_expanded",
   "tokenizer": "Custom BPE Tokenizer",
-  "checkpoint_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  "checkpoint_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+  "nlp_engine": {
+    "module": "collision.nlp",
+    "version": "1.0.0",
+    "capabilities": [
+      "conversational_dialogue",
+      "textrank_keyphrase_extraction",
+      "topic_classification_10_domains",
+      "tone_and_formality_scoring",
+      "grammar_and_spell_proofreading",
+      "readability_indices_flesch_fog",
+      "reading_comprehension_context_qa",
+      "style_transformations",
+      "semantic_text_similarity",
+      "deterministic_math_geometry_statistics",
+      "grounded_answer_synthesis"
+    ]
+  }
 }

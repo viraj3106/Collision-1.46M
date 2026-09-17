@@ -67,7 +67,7 @@ class CollisionInferenceEngine:
         elapsed = time.time() - t0
         print(f"Warmup completed in {elapsed:.3f} seconds.")
 
-    def generate(self, prompt: str, max_tokens=100, temp=0.7, top_k=50, top_p=0.9):
+    def generate(self, prompt: str, max_tokens=100, temp=0.7, top_k=50, top_p=0.9, repetition_penalty=1.0):
         # Validation controls
         if temp <= 0.0:
             raise ValueError("temperature must be greater than 0")
@@ -77,6 +77,8 @@ class CollisionInferenceEngine:
             raise ValueError("top_p must be greater than 0 and less than or equal to 1")
         if max_tokens <= 0:
             raise ValueError("max_tokens must be positive")
+        if repetition_penalty < 1.0:
+            raise ValueError("repetition_penalty must be >= 1.0")
             
         # Safe upper limits
         max_tokens = min(max_tokens, 256)
@@ -94,6 +96,7 @@ class CollisionInferenceEngine:
         x = torch.tensor([ids], dtype=torch.long, device=self.device)
         prompt_len = len(ids)
         tokens_generated = 0
+        generated_token_ids = []
         start_time = time.time()
         
         with torch.no_grad():
@@ -101,7 +104,16 @@ class CollisionInferenceEngine:
                 # Context window cropping
                 x_cond = x if x.size(1) <= self.model_cfg.max_seq_len else x[:, -self.model_cfg.max_seq_len:]
                 logits, _ = self.model(x_cond)
-                next_token_logits = logits[0, -1, :] / temp
+                next_token_logits = logits[0, -1, :].clone()
+                
+                if repetition_penalty > 1.0 and len(generated_token_ids) > 0:
+                    for token_id in set(generated_token_ids):
+                        if next_token_logits[token_id] > 0:
+                            next_token_logits[token_id] /= repetition_penalty
+                        else:
+                            next_token_logits[token_id] *= repetition_penalty
+                            
+                next_token_logits = next_token_logits / temp
                 
                 filtered_logits = top_k_top_p_filtering(next_token_logits, top_k=top_k, top_p=top_p)
                 probs = torch.softmax(filtered_logits, dim=-1)
@@ -109,6 +121,7 @@ class CollisionInferenceEngine:
                 
                 x = torch.cat((x, next_token.unsqueeze(0)), dim=1)
                 tokens_generated += 1
+                generated_token_ids.append(next_token.item())
                 
                 if next_token.item() == self.tokenizer.special_tokens.get("[EOS]", 259):
                     break

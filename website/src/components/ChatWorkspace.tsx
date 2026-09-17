@@ -1,10 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
+import type { SourceInfo, ClaimInfo, LatencyInfo } from '../api';
 
 export interface Message {
   id: string;
   role: 'user' | 'assistant';
   content: string;
   timestamp: number;
+  status?: 'ANSWERED' | 'INSUFFICIENT_INFORMATION' | 'CONFLICT' | 'ERROR' | string;
+  mode?: string;
+  confidence?: number;
+  sources?: SourceInfo[];
+  claims?: ClaimInfo[];
+  latency?: LatencyInfo;
   tokens?: {
     prompt_tokens: number;
     completion_tokens: number;
@@ -66,8 +73,41 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
     setTimeout(() => setCopiedId(null), 2000);
   };
 
+  const renderInlineFormatted = (text: string) => {
+    // 1. Split on inline code blocks
+    const codeParts = text.split(/(`[^`]+`)/g);
+    return codeParts.map((cPart, cIdx) => {
+      if (cPart.startsWith('`') && cPart.endsWith('`') && cPart.length >= 2) {
+        return <code key={cIdx} className="inline-code">{cPart.slice(1, -1)}</code>;
+      }
+      // 2. Split on bold tokens (**bold**)
+      const boldParts = cPart.split(/(\*\*[^*]+\*\*)/g);
+      return (
+        <React.Fragment key={cIdx}>
+          {boldParts.map((bPart, bIdx) => {
+            if (bPart.startsWith('**') && bPart.endsWith('**') && bPart.length >= 4) {
+              return <strong key={bIdx} className="markdown-bold">{bPart.slice(2, -2)}</strong>;
+            }
+            // 3. Split on italic tokens (*italic*)
+            const italicParts = bPart.split(/(\*[^*]+\*)/g);
+            return (
+              <React.Fragment key={bIdx}>
+                {italicParts.map((iPart, iIdx) => {
+                  if (iPart.startsWith('*') && iPart.endsWith('*') && iPart.length >= 2 && !iPart.startsWith('**')) {
+                    return <em key={iIdx} className="markdown-italic">{iPart.slice(1, -1)}</em>;
+                  }
+                  return iPart;
+                })}
+              </React.Fragment>
+            );
+          })}
+        </React.Fragment>
+      );
+    });
+  };
+
   const renderContent = (content: string) => {
-    // Basic code block split parsing for slick rendering
+    // Code block split parsing
     const parts = content.split(/(```[\s\S]*?```)/g);
     return parts.map((part, index) => {
       if (part.startsWith('```') && part.endsWith('```')) {
@@ -104,19 +144,63 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
           </div>
         );
       } else {
-        // Handle inline code or line breaks
+        // Handle paragraphs, lists, and headings
         const paragraphs = part.split('\n\n');
         return paragraphs.map((p, pIdx) => {
-          if (!p.trim()) return null;
+          const trimmed = p.trim();
+          if (!trimmed) return null;
+
+          // Check if heading (### or ##)
+          if (trimmed.startsWith('### ') || trimmed.startsWith('## ')) {
+            const hText = trimmed.replace(/^#{2,3}\s+/, '');
+            return (
+              <h4 key={`${index}-${pIdx}`} className="markdown-heading">
+                {renderInlineFormatted(hText)}
+              </h4>
+            );
+          }
+
+          // Check if list of bullet items
+          const lines = trimmed.split('\n');
+          const isBulletList = lines.every(l => l.trim().startsWith('• ') || l.trim().startsWith('- ') || l.trim().startsWith('* '));
+
+          if (isBulletList && lines.length > 0) {
+            return (
+              <ul key={`${index}-${pIdx}`} className="markdown-list">
+                {lines.map((l, lIdx) => {
+                  const cleanItem = l.trim().replace(/^[•\-\*]\s+/, '');
+                  return (
+                    <li key={lIdx} className="markdown-list-item">
+                      <span className="bullet-dot">•</span>
+                      <div className="bullet-content">{renderInlineFormatted(cleanItem)}</div>
+                    </li>
+                  );
+                })}
+              </ul>
+            );
+          }
+
+          // Check if mixed lines with some bullets
           return (
-            <p key={`${index}-${pIdx}`} style={{ margin: '4px 0' }}>
-              {p.split(/(`[^`]+`)/g).map((sub, sIdx) => {
-                if (sub.startsWith('`') && sub.endsWith('`')) {
-                  return <code key={sIdx} className="inline-code">{sub.slice(1, -1)}</code>;
+            <div key={`${index}-${pIdx}`} className="markdown-paragraph">
+              {lines.map((l, lIdx) => {
+                const lineTrim = l.trim();
+                if (lineTrim.startsWith('• ') || lineTrim.startsWith('- ')) {
+                  const cleanItem = lineTrim.replace(/^[•\-]\s+/, '');
+                  return (
+                    <div key={lIdx} className="markdown-list-item" style={{ marginTop: '4px' }}>
+                      <span className="bullet-dot">•</span>
+                      <div className="bullet-content">{renderInlineFormatted(cleanItem)}</div>
+                    </div>
+                  );
                 }
-                return sub;
+                return (
+                  <div key={lIdx} style={{ margin: lIdx > 0 ? '4px 0 0 0' : '0' }}>
+                    {renderInlineFormatted(l)}
+                  </div>
+                );
               })}
-            </p>
+            </div>
           );
         });
       }
@@ -165,7 +249,33 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
           {messages.map((msg) => (
             <div key={msg.id} className={`message-row ${msg.role}`}>
               <div className="message-header">
-                {msg.role === 'user' ? 'You' : 'COLLISION'}
+                {msg.role === 'user' ? (
+                  'You'
+                ) : (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                    <span>COLLISION</span>
+                    {msg.mode && (
+                      <span className="mode-tag font-mono">
+                        {msg.mode}
+                      </span>
+                    )}
+                    {msg.status === 'CONFLICT' && (
+                      <span className="status-tag status-conflict">
+                        Evidence Conflict
+                      </span>
+                    )}
+                    {msg.status === 'INSUFFICIENT_INFORMATION' && (
+                      <span className="status-tag status-insufficient">
+                        Insufficient Grounding
+                      </span>
+                    )}
+                    {msg.status === 'ERROR' && (
+                      <span className="status-tag status-error">
+                        Error
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
 
               {msg.role === 'user' ? (
@@ -174,7 +284,79 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
                 </div>
               ) : (
                 <div className="assistant-body">
+                  {/* Status Banner for special states */}
+                  {msg.status === 'CONFLICT' && (
+                    <div className="status-banner banner-conflict">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                      </svg>
+                      <span><strong>Notice:</strong> The available verified sources contain conflicting information on this topic.</span>
+                    </div>
+                  )}
+
+                  {msg.status === 'INSUFFICIENT_INFORMATION' && (
+                    <div className="status-banner banner-insufficient">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                      </svg>
+                      <span><strong>Uncertainty Notice:</strong> Verified knowledge is insufficient to establish a conclusive answer.</span>
+                    </div>
+                  )}
+
+                  {/* Main Response Text */}
                   {renderContent(msg.content)}
+
+                  {/* Grounded Sources & Citations */}
+                  {msg.sources && msg.sources.length > 0 && (
+                    <div className="sources-container">
+                      <div className="sources-header">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <span>Verified Sources ({msg.sources.length})</span>
+                      </div>
+                      <div className="sources-grid">
+                        {msg.sources.map((src, sIdx) => {
+                          const hasUrl = Boolean(src.url && (src.url.startsWith('http://') || src.url.startsWith('https://')));
+                          const CardElement = hasUrl ? 'a' : 'div';
+                          return (
+                            <CardElement
+                              key={src.source_id || sIdx}
+                              {...(hasUrl ? { href: src.url, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                              className={`source-chip ${hasUrl ? 'clickable' : ''}`}
+                            >
+                              <div className="source-chip-top">
+                                <span className="source-badge font-mono">{src.source_type || 'evidence'}</span>
+                                {src.retrieval_score != null && src.retrieval_score > 0 && (
+                                  <span className="source-score font-mono">
+                                    {(src.retrieval_score * 100).toFixed(0)}% match
+                                  </span>
+                                )}
+                              </div>
+                              <div className="source-chip-title" title={src.title || src.url}>
+                                {src.title || src.url || `Evidence #${sIdx + 1}`}
+                              </div>
+                              {src.snippet && (
+                                <div className="source-chip-snippet" title={src.snippet}>
+                                  {src.snippet}
+                                </div>
+                              )}
+                              {hasUrl && (
+                                <div className="source-chip-url font-mono">
+                                  {src.url.replace(/^https?:\/\//, '').slice(0, 38)}
+                                </div>
+                              )}
+                            </CardElement>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
 
                   {/* Response Action Toolbar (Inspired by Reference 2) */}
                   <div className="response-toolbar">
@@ -223,9 +405,9 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
                       {msg.feedbackRating === 'thumbs_down' && ' Feedback recorded'}
                     </button>
 
-                    {msg.tokens && (
-                      <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: 'auto' }}>
-                        {msg.tokens.latency_ms.toFixed(0)}ms
+                    {(msg.latency?.total_ms != null || msg.tokens?.latency_ms != null) && (
+                      <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: 'auto' }} className="font-mono">
+                        {(msg.latency?.total_ms ?? msg.tokens?.latency_ms ?? 0).toFixed(0)}ms
                       </span>
                     )}
                   </div>
@@ -236,10 +418,17 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
 
           {isGenerating && (
             <div className="message-row assistant">
-              <div className="message-header">COLLISION</div>
-              <div className="thinking-indicator">
-                <span className="pulse-dot"></span>
-                <span>COLLISION is thinking...</span>
+              <div className="message-header" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span>COLLISION</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ filter: 'drop-shadow(0 0 4px #A58BFF)' }}>
+                  <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="#A58BFF" />
+                </svg>
+              </div>
+              <div className="gemini-thinking-glow-card">
+                <div className="thinking-indicator">
+                  <span className="pulse-dot"></span>
+                  <span className="thinking-text-glow">COLLISION is thinking...</span>
+                </div>
               </div>
             </div>
           )}

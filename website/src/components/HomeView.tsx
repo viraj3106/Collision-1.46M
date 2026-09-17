@@ -30,8 +30,29 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSendPrompt, onOpenSidebar,
 
   const suggestionPrompts = [
     {
-      category: 'Explain something',
-      prompt: 'Explain how transformer models generate text sequences efficiently on CPU.',
+      category: '💬 Conversational & Identity',
+      prompt: 'Hi COLLISION, what can you do?',
+      icon: (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+      )
+    },
+    {
+      category: '🧮 Exact Math & Calculations',
+      prompt: 'What is 45 * 128 + 15% of 850?',
+      icon: (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <line x1="4" y1="9" x2="20" y2="9"></line>
+          <line x1="4" y1="15" x2="20" y2="15"></line>
+          <line x1="10" y1="3" x2="8" y2="21"></line>
+          <line x1="16" y1="3" x2="14" y2="21"></line>
+        </svg>
+      )
+    },
+    {
+      category: '🔬 Science & Open Knowledge',
+      prompt: 'What is quantum computing and how does it work?',
       icon: (
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="12" cy="12" r="10"></circle>
@@ -41,30 +62,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSendPrompt, onOpenSidebar,
       )
     },
     {
-      category: 'Ask a technical question',
-      prompt: 'What are key memory bandwidth optimizations for 10M parameter models?',
+      category: '🏛️ History & Culture',
+      prompt: 'Who was Albert Einstein and what was his major discovery?',
       icon: (
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <polyline points="16 18 22 12 16 6"></polyline>
-          <polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
-      )
-    },
-    {
-      category: 'Explore an idea',
-      prompt: 'Draft a architecture proposal for zero-dependency CPU AI workloads.',
-      icon: (
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
-        </svg>
-      )
-    },
-    {
-      category: 'Test COLLISION',
-      prompt: 'Summarize the core capabilities of COLLISION-10M architecture.',
-      icon: (
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
       )
     }
@@ -87,14 +89,25 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSendPrompt, onOpenSidebar,
         </button>
       )}
 
-      <h1 className="home-greeting">Hello, I'm COLLISION.</h1>
-      <p className="home-subtitle">Explore what a CPU-first language model can generate.</p>
+      <h1 className="home-greeting" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <span>Hello, I'm COLLISION.</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style={{ filter: 'drop-shadow(0 0 8px #A58BFF)' }}>
+          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="url(#sparkleGrad)" />
+          <defs>
+            <linearGradient id="sparkleGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#A58BFF" />
+              <stop offset="1" stopColor="#8B7CF6" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </h1>
+      <p className="home-subtitle">Hierarchical Hybrid Intelligence System · Conversational, Math, Live Web & Grounded AI.</p>
 
       <div className="composer-box">
         <textarea
           ref={textareaRef}
           className="composer-input"
-          placeholder="Ask COLLISION anything..."
+          placeholder="Ask COLLISION anything (conversations, calculations, facts, science)..."
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           onKeyDown={handleKeyDown}
@@ -108,7 +121,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSendPrompt, onOpenSidebar,
                 <line x1="12" y1="8" x2="12" y2="12"></line>
                 <line x1="12" y1="16" x2="12.01" y2="16"></line>
               </svg>
-              COLLISION-10M
+              Hierarchical Hybrid AI
             </span>
           </div>
           <button 

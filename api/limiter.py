@@ -68,6 +68,8 @@ def _check_in_memory_rate_limit(rate_limit_key: Union[int, str], rate_limit: int
     _local_request_store[rate_limit_key] = timestamps
 
 def check_rate_limit(rate_limit_key: Union[int, str]):
+    if os.environ.get("COLLISION_RATE_LIMIT_ENABLED", "true").lower() in ("0", "false", "no", "off"):
+        return
     rate_limit = int(os.environ.get("COLLISION_RATE_LIMIT", "60"))
     if rate_limit <= 0:
         return
