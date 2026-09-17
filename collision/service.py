@@ -489,6 +489,48 @@ class CollisionService:
             logger.exception(f"Unexpected error executing ask() for query '{q_clean}': {e}")
             return self._build_error_response("INTERNAL_ERROR", f"An internal error occurred during answer synthesis: {str(e)}", t_start)
 
+    def think(
+        self,
+        question: str,
+        domain: str = "General",
+        enable_dialectic: bool = True
+    ) -> Dict[str, Any]:
+        """
+        Deliberative deep-thinking entry point backed by the COLLISION Synaptic Brain.
+        Executes non-linear Graph-of-Thoughts, Hegelian Dialectic synthesis,
+        epistemic uncertainty quantification, and Global Workspace broadcasting.
+        """
+        t_start = time.perf_counter()
+        if not question or not str(question).strip():
+            return self._build_error_response("INVALID_REQUEST", "Question field is required.", t_start)
+
+        from collision.brain import get_collision_brain
+        brain = get_collision_brain()
+        brain_res = brain.think(query=str(question).strip(), domain=domain, enable_dialectic=enable_dialectic)
+        total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
+
+        return {
+            "query": brain_res.query,
+            "answer": brain_res.answer,
+            "status": "ANSWERED",
+            "mode": "BRAIN_DELIBERATION",
+            "modality": brain_res.modality.value,
+            "confidence": brain_res.confidence,
+            "epistemic_certainty": brain_res.epistemic_certainty,
+            "primary_domain": brain_res.primary_domain,
+            "key_insights": brain_res.key_insights,
+            "followup_hypotheses": brain_res.followup_hypotheses,
+            "triples": [t.model_dump() if hasattr(t, "model_dump") else t.dict() for t in brain_res.triples],
+            "graph_summary": {
+                "nodes_count": len(brain_res.trace.graph_of_thoughts.nodes) if brain_res.trace and brain_res.trace.graph_of_thoughts else 0,
+                "edges_count": len(brain_res.trace.graph_of_thoughts.edges) if brain_res.trace and brain_res.trace.graph_of_thoughts else 0,
+                "dialectic_resolved": brain_res.trace.graph_of_thoughts.dialectic_resolved if brain_res.trace and brain_res.trace.graph_of_thoughts else True,
+            },
+            "latency": {
+                "total_ms": total_ms
+            }
+        }
+
     def _build_error_response(self, code: str, message: str, t_start: float) -> Dict[str, Any]:
         """Constructs a standard structured error payload without leaking stack traces."""
         return {

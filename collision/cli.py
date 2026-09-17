@@ -115,6 +115,57 @@ def handle_chat(args):
             break
 
 
+def handle_think(args):
+    service = get_collision_service()
+    question = args.question.strip() if args.question else ""
+    if not question:
+        print("Please provide a question for deep cognitive deliberation.")
+        return
+
+    result = service.think(
+        question=question,
+        domain=args.domain,
+        enable_dialectic=not args.no_dialectic
+    )
+
+    if args.json:
+        print(json.dumps(result, indent=2))
+        return
+
+    # User-facing structured brain output
+    print("=" * 70)
+    print("      COLLISION SYNAPTIC BRAIN -- DELIBERATIVE REASONING TRACE")
+    print("=" * 70)
+    print(f"\nInquiry: {question}")
+    print(f"Modality: {result.get('modality')} | Epistemic Certainty: {result.get('epistemic_certainty', 1.0)*100:.1f}%\n")
+    print("Deliberative Resolution:")
+    print(result.get("answer", "No resolution produced."))
+
+    key_insights = result.get("key_insights", [])
+    if key_insights:
+        print("\nKey Metacognitive Insights:")
+        for ins in key_insights:
+            print(f"- {ins}")
+
+    triples = result.get("triples", [])
+    if triples and args.verbose:
+        print("\nExtracted Semantic Knowledge Triples:")
+        for t in triples:
+            print(f"  ({t.get('subject')} --[{t.get('predicate')}]--> {t.get('object')})")
+
+    followups = result.get("followup_hypotheses", [])
+    if followups:
+        print("\nFollowup Cognitive Hypotheses:")
+        for f in followups:
+            print(f"- {f}")
+
+    if args.verbose:
+        g = result.get("graph_summary", {})
+        lat = result.get("latency", {})
+        print(f"\n[Brain Diagnostics] Graph Nodes: {g.get('nodes_count')} | Edges: {g.get('edges_count')} | Total Latency: {lat.get('total_ms', 0.0):.1f}ms")
+    print()
+
+
 def main():
     parser = argparse.ArgumentParser(prog="collision", description="COLLISION Production Grounded Answering CLI")
     subparsers = parser.add_subparsers(dest="command")
@@ -126,6 +177,14 @@ def main():
     ask_parser.add_argument("--verbose", action="store_true", help="Show execution diagnostics")
     ask_parser.add_argument("--json", action="store_true", help="Output raw JSON matching public API response schema")
 
+    # 'think' command (Synaptic Brain)
+    think_parser = subparsers.add_parser("think", help="Execute deep deliberative reasoning via COLLISION Synaptic Brain")
+    think_parser.add_argument("question", type=str, nargs="?", default="", help="Complex or philosophical question to deliberate")
+    think_parser.add_argument("--domain", type=str, default="General", help="Domain context")
+    think_parser.add_argument("--no-dialectic", action="store_true", help="Disable Hegelian dialectical synthesis")
+    think_parser.add_argument("--verbose", action="store_true", help="Show full Graph-of-Thoughts and triple extractions")
+    think_parser.add_argument("--json", action="store_true", help="Output raw JSON matching brain schema")
+
     # 'chat' command
     chat_parser = subparsers.add_parser("chat", help="Start an interactive chat session")
     chat_parser.add_argument("--mode", type=str, default="AUTO", choices=["AUTO", "LOCAL", "WEB", "HYBRID", "MODEL"], help="Default routing mode")
@@ -135,6 +194,8 @@ def main():
 
     if args.command == "ask":
         handle_ask(args)
+    elif args.command == "think":
+        handle_think(args)
     elif args.command == "chat":
         handle_chat(args)
     else:
