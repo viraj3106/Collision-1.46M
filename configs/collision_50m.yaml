@@ -1,10 +1,23 @@
-# COLLISION-50M Configuration
+# COLLISION-50M Scaled Configuration (53.76M Exact Parameters)
 model:
-  vocab_size: 32000
-  max_seq_len: 1024
-  d_model: 512
-  n_layer: 8
-  n_head: 8
-  d_ff: 2048
+  vocab_size: 16000
+  max_seq_len: 512
+  d_model: 640
+  n_layer: 12
+  n_head: 10
+  d_ff: 1536
   dropout: 0.1
   tie_embeddings: true
+  normalization: layer_norm
+  positional_encoding: absolute_learned
+
+training:
+  learning_rate: 4.0e-4
+  min_lr: 1.0e-5
+  warmup_steps: 500
+  max_steps: 25000
+  batch_size: 16
+  gradient_accumulation_steps: 4
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  seed: 1337

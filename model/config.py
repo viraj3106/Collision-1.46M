@@ -5,12 +5,13 @@ class ModelConfig:
         self,
         vocab_size: int = 8000,
         max_seq_len: int = 256,
-        d_model: int = 128,
-        n_layer: int = 3,
-        n_head: int = 4,
-        d_ff: int = 256,
+        d_model: int = 384,
+        n_layer: int = 6,
+        n_head: int = 8,
+        d_ff: int = 768,
         dropout: float = 0.1,
-        tie_embeddings: bool = True
+        tie_embeddings: bool = True,
+        **kwargs
     ):
         self.vocab_size = vocab_size
         self.max_seq_len = max_seq_len
@@ -20,6 +21,7 @@ class ModelConfig:
         self.d_ff = d_ff
         self.dropout = dropout
         self.tie_embeddings = tie_embeddings
+        self.extra_kwargs = kwargs
         self.validate()
 
     def validate(self):

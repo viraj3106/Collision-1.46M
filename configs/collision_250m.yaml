@@ -1,0 +1,23 @@
+# COLLISION-250M Final Max-Scaled Configuration (243.03M Exact Parameters)
+model:
+  vocab_size: 32000
+  max_seq_len: 1024
+  d_model: 1024
+  n_layer: 20
+  n_head: 16
+  d_ff: 3072
+  dropout: 0.1
+  tie_embeddings: true
+  normalization: layer_norm
+  positional_encoding: absolute_learned
+
+training:
+  learning_rate: 2.5e-4
+  min_lr: 1.0e-5
+  warmup_steps: 1500
+  max_steps: 100000
+  batch_size: 16
+  gradient_accumulation_steps: 16
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  seed: 1337

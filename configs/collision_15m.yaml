@@ -1,0 +1,23 @@
+# COLLISION-15M Scaled Configuration (16.59M Exact Parameters)
+model:
+  vocab_size: 8000
+  max_seq_len: 256
+  d_model: 448
+  n_layer: 8
+  n_head: 8
+  d_ff: 896
+  dropout: 0.1
+  tie_embeddings: true
+  normalization: layer_norm
+  positional_encoding: absolute_learned
+
+training:
+  learning_rate: 5.0e-4
+  min_lr: 1.0e-5
+  warmup_steps: 200
+  max_steps: 10000
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  seed: 1337

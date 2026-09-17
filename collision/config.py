@@ -57,5 +57,5 @@ def validate_checkpoints() -> bool:
     return True
 
 # Default settings
-DEFAULT_CONFIG_PATH = os.path.join(PROJECT_ROOT, "configs", "collision_1m.yaml")
+DEFAULT_CONFIG_PATH = os.environ.get("COLLISION_CONFIG_PATH", os.path.join(PROJECT_ROOT, "configs", "collision_10m.yaml"))
 

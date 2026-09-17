@@ -1,12 +1,17 @@
 import os
 import sys
-import yaml
-import torch
 
-# Resolve project root path and insert into Python path
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Remove script directory from sys.path to avoid shadowing standard library tokenize
+script_dir = os.path.dirname(os.path.abspath(__file__))
+while script_dir in sys.path:
+    sys.path.remove(script_dir)
+
+PROJECT_ROOT = os.path.dirname(script_dir)
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
+
+import yaml
+import torch
 
 from model.config import ModelConfig
 from model.transformer import CollisionTransformer
@@ -88,9 +93,11 @@ def dry_run_config(config_path):
 
 def main():
     configs = [
-        "configs/scaling/collision_3m.yaml",
-        "configs/scaling/collision_7m.yaml",
-        "configs/scaling/collision_15m.yaml"
+        "configs/collision_10m.yaml",
+        "configs/collision_15m.yaml",
+        "configs/collision_50m.yaml",
+        "configs/collision_100m.yaml",
+        "configs/collision_250m.yaml"
     ]
     
     results = []
