@@ -1,0 +1,37 @@
+{
+  "training_executed": false,
+  "model_weights_modified": false,
+  "production_checkpoint_modified": false,
+  "checkpoints": {
+    "production_collision_10m": {
+      "path": "V:\\collision - 1M\\models\\collision-10m\\model.pt",
+      "sha256_before": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+      "sha256_after": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97",
+      "sha256_unchanged": true,
+      "parameter_count": 10282304
+    },
+    "phase91_control_10m": {
+      "path": "V:\\collision - 1M\\models\\phase91_control_10m\\model.pt",
+      "sha256_before": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "sha256_after": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "sha256_unchanged": true,
+      "parameter_count": 10282304
+    },
+    "phase91_v9_10m": {
+      "path": "V:\\collision - 1M\\models\\phase91_v9_10m\\model.pt",
+      "sha256_before": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "sha256_after": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "sha256_unchanged": true,
+      "parameter_count": 10282304
+    }
+  },
+  "architecture": {
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "d_model": 384,
+    "n_layer": 6,
+    "n_head": 8,
+    "d_ff": 768,
+    "tie_embeddings": true
+  }
+}

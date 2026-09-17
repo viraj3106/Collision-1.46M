@@ -1,0 +1,18 @@
+{
+  "control_10m": {
+    "accuracy": 0.0042,
+    "correct_count": 1,
+    "grounding_score": 0.0,
+    "hallucination_rate": 0.0,
+    "generation_failures": 0,
+    "generation_failure_rate": 0.0
+  },
+  "v9_10m": {
+    "accuracy": 0.0083,
+    "correct_count": 2,
+    "grounding_score": 0.0,
+    "hallucination_rate": 0.0,
+    "generation_failures": 0,
+    "generation_failure_rate": 0.0
+  }
+}

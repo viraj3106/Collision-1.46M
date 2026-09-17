@@ -1,0 +1,46 @@
+{
+  "control_context_conditioning_score": 1.0,
+  "v9_context_conditioning_score": 1.0,
+  "control_details": {
+    "context_conditioning_score": 1.0,
+    "details": [
+      {
+        "question": "What is binary search?",
+        "q_only": "(Level 1)\nAnswer: binary trees is designed to traverse unstructured memory by dividing the array into smaller partitions recursively to decrease the runtime comple",
+        "correct_context_output": "binary trees is designed to traverse unstructured memory by dividing the array into smaller partitions recursively to decrease the runtime complexity significantly.",
+        "random_context_output": "expert systems is designed to process unseen text structures by parsing semantic syntax trees of human speech to understand conversational user intents.",
+        "alt_context_output": "binary trees is designed to traverse unstructured memory by traversing linked nodes recursively to evaluate mathematical syntax trees in compilers.",
+        "context_sensitive": true
+      },
+      {
+        "question": "What is Python?",
+        "q_only": "(Levectrees systems is that it modifies to optimize calculated model gradients by calculating gradients of loss functions and updating weight parameters along the steepest descent path.",
+        "correct_context_output": "the function of recursion is designed to optimize hardware resources by traversing linked nodes recursively to evaluate mathematical syntax trees in compilers.",
+        "random_context_output": "generative adversarial networks is designed to evaluate generative fake datasets by parsing semantic syntax trees of human speech to understand conversational user intents.",
+        "alt_context_output": "natural language processing is designed to classify reinforcement reward policies by parsing semantic syntax trees of human speech to understand conversational user intents.",
+        "context_sensitive": true
+      }
+    ]
+  },
+  "v9_details": {
+    "context_conditioning_score": 1.0,
+    "details": [
+      {
+        "question": "What is binary search?",
+        "q_only": "In high-throughput enterprise environments, Answer: binary search trees refers to a node-based binary tree data structure. Its primary utility is to logarithmic",
+        "correct_context_output": "refactoring patterns refers to code restructuring techniques. Its primary utility is to improved code maintainability and reduced technical debt. This aligns directly with established",
+        "random_context_output": "binary search trees refers to a node-based binary tree data structure. Its primary utility is to logarithmic time complexity for lookup operations. This aligns direc",
+        "alt_context_output": "binary search trees refers to a node-based binary tree data structure. Its primary utility is to logarithmic time complexity for lookup operations. This aligns direc",
+        "context_sensitive": true
+      },
+      {
+        "question": "What is Python?",
+        "q_only": "In high-throughput enterprise environments, Answer: refactoring patterns refers to code restructuring techniques. Its primary utility is to improved code maintainability and reduced techn",
+        "correct_context_output": "the main benefit of regularization techniques described in the context?\nAnswer: According to the passage, the main benefit of regularization techniques is prevention of model overfitting on noisy training",
+        "random_context_output": "browser caching policies refers to client-side content storage strategies. Its primary utility is to dramatically reduced page load latency. In practice,",
+        "alt_context_output": "the main benefit of regularization techniques described in the context?\nAnswer: According to the passage, the main benefit of regularization techniques is prevention of model overfitting on noisy training",
+        "context_sensitive": true
+      }
+    ]
+  }
+}

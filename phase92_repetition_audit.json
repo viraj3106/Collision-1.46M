@@ -1,0 +1,28 @@
+{
+  "total_outputs_evaluated": 100,
+  "synthetic_markers_audited": [
+    "(Revision)",
+    "(Overview)",
+    "(Module A)",
+    "(Module B)",
+    "(Module C)",
+    "(Level 1)",
+    "(Level 2)",
+    "is critical because it functions to",
+    "is designed to provide",
+    "functions to maintain"
+  ],
+  "v5_control": {
+    "synthetic_marker_count": 37,
+    "synthetic_marker_rate_pct": 37.0,
+    "unique_response_rate_pct": 100.0,
+    "mean_word_entropy": 3.893
+  },
+  "v9_redesigned": {
+    "synthetic_marker_count": 0,
+    "synthetic_marker_rate_pct": 0.0,
+    "unique_response_rate_pct": 98.0,
+    "mean_word_entropy": 3.8014
+  },
+  "synthetic_collapse_eliminated": true
+}

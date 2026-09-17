@@ -1,0 +1,37 @@
+{
+  "control_dataset": {
+    "name": "collision_dataset_v5_expanded",
+    "documents": 15649,
+    "total_tokens": 1802448,
+    "train_tokens": 1546977,
+    "qa_percentage": 0.0,
+    "instruction_percentage": 0.0,
+    "dialogue_percentage": 0.0,
+    "context_qa_percentage": 0.0,
+    "template_concentration": 1.0,
+    "duplicate_rate": 0.045
+  },
+  "redesigned_dataset": {
+    "name": "collision_dataset_v9_redesigned",
+    "documents": 14500,
+    "total_tokens": 3179187,
+    "train_tokens": 2703528,
+    "qa_percentage": 0.1912,
+    "instruction_percentage": 0.1864,
+    "dialogue_percentage": 0.0055,
+    "context_qa_percentage": 0.0326,
+    "template_concentration": 0.05,
+    "duplicate_rate": 0.001
+  },
+  "token_budget_control": {
+    "control_train_tokens": 1546977,
+    "experiment_train_tokens": 2703528,
+    "token_budget_ratio": 1.7476,
+    "budget_matched": false
+  },
+  "tokenizer_control": {
+    "tokenizer_dir": "V:\\collision - 1M\\artifacts\\tokenizer",
+    "vocab_size": 890,
+    "tokenizer_control_identical": true
+  }
+}

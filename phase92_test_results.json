@@ -1,0 +1,54 @@
+{
+  "TEST_A": {
+    "name": "checkpoint_sha_integrity",
+    "pass": true
+  },
+  "TEST_B": {
+    "name": "v5_v9_parameter_count_exact",
+    "pass": true
+  },
+  "TEST_C": {
+    "name": "no_production_checkpoint_modification",
+    "pass": true
+  },
+  "TEST_D": {
+    "name": "no_training_execution",
+    "pass": true
+  },
+  "TEST_E": {
+    "name": "no_evaluation_data_leakage",
+    "pass": true
+  },
+  "TEST_F": {
+    "name": "generated_answer_not_query",
+    "pass": true
+  },
+  "TEST_G": {
+    "name": "generated_answer_not_prompt",
+    "pass": true
+  },
+  "TEST_H": {
+    "name": "context_not_automatically_answer",
+    "pass": true
+  },
+  "TEST_I": {
+    "name": "prompt_variants_preserved",
+    "pass": true
+  },
+  "TEST_J": {
+    "name": "context_variants_preserved",
+    "pass": true
+  },
+  "TEST_K": {
+    "name": "generation_failures_explicitly_recorded",
+    "pass": true
+  },
+  "TEST_L": {
+    "name": "synthetic_markers_reduced_or_absent",
+    "pass": true
+  },
+  "TEST_M": {
+    "name": "all_eval_records_contain_checkpoint_sha",
+    "pass": true
+  }
+}

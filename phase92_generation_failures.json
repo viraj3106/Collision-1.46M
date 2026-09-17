@@ -1,0 +1,75 @@
+{
+  "total_baseline_questions": 100,
+  "v5_failures_count": 11,
+  "v5_failure_rate_pct": 11.0,
+  "v9_failures_count": 0,
+  "v9_failure_rate_pct": 0.0,
+  "failure_log": [
+    {
+      "question_id": "UNSEEN_Q002",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Revision)\nAnswer: Fourier transforms is designed to transform sinusoidal freque"
+    },
+    {
+      "question_id": "UNSEEN_Q004",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "networks (Overview)\nAnspace multiplication is designed to solve random variable "
+    },
+    {
+      "question_id": "UNSEEN_Q008",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Revision)\nAnswermodyon tum is configured to model outer solar system exoplanets"
+    },
+    {
+      "question_id": "UNSEEN_Q026",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnswer: linear algebra structures is designed to transform random var"
+    },
+    {
+      "question_id": "UNSEEN_Q039",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Revision)\nAnswermodynatewermodynamics is designed to quantize heat transfer equ"
+    },
+    {
+      "question_id": "UNSEEN_Q040",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnspment networks is executed, it modifies model weight parameters by"
+    },
+    {
+      "question_id": "UNSEEN_Q044",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnspfin vision is dwill optimize generalization capabilities by split"
+    },
+    {
+      "question_id": "UNSEEN_Q051",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnswer: recursion is designed to manage primary key mappings by divid"
+    },
+    {
+      "question_id": "UNSEEN_Q057",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnswer: exoplanet atmospheres manages this process where gravity prev"
+    },
+    {
+      "question_id": "UNSEEN_Q065",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnswer: space exploration interacts because it is configured to fuse "
+    },
+    {
+      "question_id": "UNSEEN_Q067",
+      "model": "v5_control",
+      "failure_type": "SYNTHETIC_TEMPLATE_COLLAPSE",
+      "output_snippet": "(Overview)\nAnswer: When queues is executed, it modifies hardware resources by tr"
+    }
+  ]
+}

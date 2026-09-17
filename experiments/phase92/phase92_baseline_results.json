@@ -1,0 +1,3702 @@
+[
+  {
+    "question_id": "UNSEEN_Q001",
+    "category": "General knowledge",
+    "question": "What is the capital of Japan?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "atom atries for systems is d)\nAnsprimaritical process to involves minimize cross-entropy loss values by splitting dataset",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1817.15,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In high-throughput enterprise environments, Answer: refactoring patterns refers to code restructuring techniques. Its p",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1474.33,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q002",
+    "category": "General knowledge",
+    "question": "What is the largest ocean on Earth?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Revision)\nAnswer: Fourier transforms is designed to transform sinusoidal frequencies by dividing the array into",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1552.81,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: expert systems refers to knowledge-based reasoning frameworks. Its",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1343.89,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q003",
+    "category": "General knowledge",
+    "question": "Who wrote Romeo and Juliet?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems systems is tual)\nAnatd to e model pher transforms is defined as a system designed to predict cross-entropy",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1352.62,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: Unlike standard methods, exoplanet atmospheric spectroscopy focuses on detecting chemical absorption",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1349.25,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q004",
+    "category": "General knowledge",
+    "question": "What is the currency of the United Kingdom?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "networks (Overview)\nAnspace multiplication is designed to solve random variable expectations by calculating limit values",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1402.81,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: continuous integration refers to an automated build and test process. Its",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1406.64,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q005",
+    "category": "General knowledge",
+    "question": "Which planet is known as the Red Planet?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "process (Module B)\nAnswer: deep learning models is defined as a system designed to extract digital image segments.",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1822.81,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: According to the passage, the main benefit of classical mechanics is precise trajectory",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1535.29,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q006",
+    "category": "General knowledge",
+    "question": "What is the hardest natural mineral?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module (Level 1)\nAnswer: stacks is designed to analyze pointer reference nodes by traversing linked",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1320.22,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In high-throughput enterprise environments, Answer: computer vision pipelines refers to image feature extraction architec",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1375.24,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q007",
+    "category": "General knowledge",
+    "question": "In which country are the Great Pyramids of Giza located?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: space exploration is designed to analyze stellar spectral radiation where gravity prevents e",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1603.14,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: Unlike standard methods, unsupervised clustering focuses on minimizing intra-cluster spatial distances using Eu",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1557.48,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q008",
+    "category": "General knowledge",
+    "question": "How many continents are there on Earth?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Revision)\nAnswermodyon tum is configured to model outer solar system exoplanets by fusing hydrogen atoms",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1336.08,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Assistant: Great question! Using Using electrelationally databases allows to sing scalable client-server int",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1426.32,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q009",
+    "category": "General knowledge",
+    "question": "What is the boiling point of water in Celsius?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: Hubble expansion constants is designed to discover galactic expansion parameters by balancing the",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1472.83,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Anssistant: According to the passage, the main benefit of thermodynamic entropy is predictable thermodyn",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1463.71,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q010",
+    "category": "General knowledge",
+    "question": "Who painted the Mona Lisa?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "1)\nAnswer: hash tables is designed to traverse hardware resources by traversing linked nodes r",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1280.58,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "When evaluating system trade-offs, Answer: It is essential because computing orthogonal dot products",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1351.82,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q011",
+    "category": "General knowledge",
+    "question": "What is the primary language spoken in Brazil?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Basic)\nAnswer: recursion is designed to manage Worst-case runtimes through dynamic RA",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1517.74,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "According to modern technical literature, Answer: It is essential because constraining parameter magnitudes via L1",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1484.48,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q012",
+    "category": "General knowledge",
+    "question": "Which chemical element has the symbol O?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Basiew)\nAnswer: exoplanet atmospheres is designed to track extreme gravitational fields where",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1459.06,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Systematic empirical benchmarks confirm that Answer: electromagnetic radiation refers to energy propagation thro",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1388.94,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q013",
+    "category": "General knowledge",
+    "question": "What is the longest river in the world?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Standard)\nAnswer: exoplanet atmospheres is designed to fuse elliptical planetary paths by bal",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1459.0,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: According to the passage, the main benefit of computer vision pipelines is accurate object d",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1400.63,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q014",
+    "category": "General knowledge",
+    "question": "How many days are in a leap year?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 2)\nAnswer: relational databases manages this process by dividing the array into smaller partitions recur",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1434.68,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Standows does relational databases to ensure that enforcing ACID transactions and executing SQL query plans",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1367.15,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q015",
+    "category": "General knowledge",
+    "question": "What is the capital of Australia?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: When recursion is executed, it modifies key-value pairs by mapping hash k",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1336.45,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Systematic empirical benchmarks confirm that Answer: refactoring patterns refers to code restructuring techniques. I",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1346.87,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q016",
+    "category": "Science",
+    "question": "Explain gravity simply.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems vision is d configured to adjust crimarily to curves hardware resources by dividing the array into smaller",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1317.49,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Response: The main advantage of relational databases is that enforcing ACID transactions and executing SQL query",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1258.18,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q017",
+    "category": "Science",
+    "question": "What is photosynthesis?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: exoplanet atmospheres is designed to emit outer solar system exoplanets by",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1319.66,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its primary uti",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1248.62,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q018",
+    "category": "Science",
+    "question": "What are the three main states of matter?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: recursion is designed to traverse unstructured memory by mapping hash keys to ind",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1400.34,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: It is essential because computing loss gradients with respect to model parameters and stepping downhill, which provid",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1343.98,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q019",
+    "category": "Science",
+    "question": "What organ pumps blood throughout the human body?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "B)\nAnswer: exoplanet atmospheres is designed to expand hydrogen-helium atomic cores by balancing",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1517.78,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: browser caching policies refers to client-side content storage strategies",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1548.92,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q020",
+    "category": "Science",
+    "question": "Why is the sky blue?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 2)\nAnswer: Hubble expansion constants is critical because it functions to orbit elliptical planetar",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1308.01,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: It is essential because rapping light and matter when escape velocity exceeds light speed",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1296.04,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q021",
+    "category": "Science",
+    "question": "What is the speed of light in vacuum?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Core)\nAnspher systems is experts observe that analyzing the details, space exploration acts to expand hydrogen-",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1447.71,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Ansssistan quant: It quantum superposition refers to a state where physical systems exist in multiple configur",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1467.29,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q022",
+    "category": "Science",
+    "question": "What particles make up an atom?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: recursion is designed to transform hardware resources by traversing linked nodes",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1357.68,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Standard industry guidelines suggest that Answer: Keplerian orbital motion refers to the mathematical",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1335.79,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q023",
+    "category": "Science",
+    "question": "What gas do humans inhale for cellular respiration?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Basic)\nAnswer: When classical mechanics is executed, it modifies total momentum conservation where",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1516.49,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "When evaluating system trade-offs, Answer: It is essential because applying Newton's laws of mo",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1625.21,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q024",
+    "category": "Science",
+    "question": "What is Newton's first law of motion?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "cts bers withinforcement systems is that to classical mechanics to transform unstructured memory. Applications are expanding quic",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1397.58,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: probability distributions refers to compute momentum and trajectories. Its primary utility is to precise",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1471.09,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q025",
+    "category": "Science",
+    "question": "What is the center of an atom called?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Core)\nAnswer: exoplanet atmospheres is designed to expand extreme gravitational fields by fusing hy",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1362.15,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "According to modern technical literature, Answer: It is essential because constraining parameter magnitudes via L1",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1443.16,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q026",
+    "category": "Technology",
+    "question": "What is the difference between RAM and storage?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnswer: linear algebra structures is designed to transform random variable expectations by calculating limit values",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1499.18,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Under standard operating parameters, Answer: Unlike standard methods, refactoring patterns focuses on simplifying complex class",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1514.89,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q027",
+    "category": "Technology",
+    "question": "What does HTTP mean?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Levect higher systems vision interact with reinforcement reward policies? (Basic)\nAnswer: When natural languag",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1303.11,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Recent studies demonstrate that Answer: CSS flexbox layouts refers to a modern CSS box layout module. I",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1221.97,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q028",
+    "category": "Technology",
+    "question": "What is artificial intelligence?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "cts (Overvect systems t is configured systems to transform to optimize gain statistics to understand how decision",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1182.12,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In quan quan oprestion obser: to optimallows, hash maps yoking refers to an associative arra",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1183.95,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q029",
+    "category": "Technology",
+    "question": "What is a database?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: relational databases is designed to execute sinusoidal frequencies through dynam",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1265.87,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: binary search trees refers to a node-based binary tree data",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1227.68,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q030",
+    "category": "Technology",
+    "question": "What does CPU stand for?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems inter wause systems inter bey with can to model elliptical paths (Standard)\nAnswer: When electromagne",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1245.33,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Systematic empirical benchmarks confirm that Answer: Fourier transforms refers to a mathematical transformation converting",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1233.55,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q031",
+    "category": "Technology",
+    "question": "What is cloud computing?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module A)\nAnswer: computer vision is designed to simulate reinforcement reward policies by parsing semantic",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1228.19,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Recent studies demonstrate that Answer: quantum superposition refers to a state where physical systems exist in multiple",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1282.52,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q032",
+    "category": "Technology",
+    "question": "What is an IP address?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Levectrees (Standard)\nAnswer: Fourier transforms is designed to transform sinusoidal frequency spectr",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1283.3,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Comprehensive research indicates that Answer: version control branching refers to parallel codebase development",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1330.1,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q033",
+    "category": "Technology",
+    "question": "What does URL stand for?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module learning learning interact with be behavior paths that ital velocities attempts to model outer solar system",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1435.12,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Under standard operating parameters, Answer: It is essential because allocating CPU time slices dynamically",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1443.3,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q034",
+    "category": "Technology",
+    "question": "What is the purpose of an operating system?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Core)\nAnswer: operating systems is designed to structure unstructured memory by traversing linked nodes recursi",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1382.71,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Systematic empirical benchmarks confirm that Answer: expert systems refers to knowledge-based reasoning f",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1430.24,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q035",
+    "category": "Technology",
+    "question": "What is a firewall in computer networks?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: computer vision is designed to maximize digital image segments through reinforcement learning policies",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1476.9,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, obranching that merging isolated feature branches via commit graphs, mathema",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1327.1,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q036",
+    "category": "Programming",
+    "question": "What is Python?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module occurs within generative adversarial networks is due to optimize digital image segments using generator-discriminator",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1221.16,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: continuous integration refers to an automated build and test process. Its primary utility is",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1197.37,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q037",
+    "category": "Programming",
+    "question": "What is HTML?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "2)\nAnswer: natural language processing is designed to optimize human cognitive patterns by passing raw",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1226.75,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: asynchronous HTTP requests refers to engineers observe that",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1220.24,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q038",
+    "category": "Programming",
+    "question": "What is a variable in programming?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Standard)\nAnswer: linear algebra structures is designed to calculate integer divisor properties using vector dot",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1311.65,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Recent studies demonstrate that Answer: It is essential because computing loss gradients with respect to model parameters and steping down",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1305.18,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q039",
+    "category": "Programming",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Revision)\nAnswermodynatewermodynamics is designed to quantize heat transfer equations by converting thermal",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1655.04,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: Unlike standard methods, operating system schedulers focuses on allocating CPU ti",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1589.01,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q040",
+    "category": "Programming",
+    "question": "What is a function in software code?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnspment networks is executed, it modifies model weight parameters by calculating gradients of loss functions and updating weight parameters alon",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1405.08,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In high-throughput enterprise environments, Answer: refactoring patterns refers to code restructuring techniques. Its p",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1278.8,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q041",
+    "category": "Programming",
+    "question": "What does API stand for?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "classion with systems works, we observe that it modifies to optimize Worst-case runtimes by traversing",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1312.11,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: Fourier transforms refers to a mathematical transformation converting time signals to",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1268.13,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q042",
+    "category": "Programming",
+    "question": "What is a loop in programming?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: Fourier transforms is designed to generalize linear matrix mappings which generalizes the proper",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1319.4,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Systematic empirical benchmarks confirm that Answer: It is essential because scaling characteristic vec",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1336.49,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q043",
+    "category": "Programming",
+    "question": "What is an array?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Core)\nAnswer: recursion is designed to transform sinusoidal frequencies by dividing the array into sm",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1290.37,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: quantum superposition refers to a state where physical systems exist in multiple configurations. Its prim",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1216.61,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q044",
+    "category": "Programming",
+    "question": "What is recursion in computer science?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnspfin vision is dwill optimize generalization capabilities by splitting dataset nodes recursively",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1408.85,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: hash maps refers to an associative array that maps keys to values. Its primary utilit",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1346.6,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q045",
+    "category": "Programming",
+    "question": "What is CSS used for?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Core)\nAnswer: orbital velocities is designed to orbit stellar spectral radiation by fusing hydrogen ato",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1299.08,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "When evaluating system trade-offs, Answer: CSS flexbox layouts refers to a modern CSS box",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1232.61,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q046",
+    "category": "Mathematics",
+    "question": "What is 2 + 2?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnsm systems networks is dwelecuted, it modifies to evaluate cross-entropy loss values by splitting",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1199.96,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: differential equations refers to equations relating functions to their rates of change. Its primary u",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1218.46,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q047",
+    "category": "Mathematics",
+    "question": "What is 15 multiplied by 4?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "validation ts systems is gain to cursical mechanics to e model curves by converting thermal energy into mechanical work thro",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1364.85,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: hash maps refers to an associative array that maps keys",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1302.84,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q048",
+    "category": "Mathematics",
+    "question": "What is the square root of 64?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "bints systems trefmain systems is tregulard)\nAnatd to process optimize calculated model gradients by calculating gradients of loss functions and updat",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1415.4,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: Unlike standard methods, black hole event horizons focuses on trapping light and matter when escape",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1310.24,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q049",
+    "category": "Mathematics",
+    "question": "What is the perimeter of a rectangle with length 5 and width 3?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems (Conceptual)\nAnsphen databases is to e maximize weighted activation outputs by passing raw vectors through multi",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1724.13,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: It is essential because expressing state vectors as linear comb",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1861.8,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q050",
+    "category": "Mathematics",
+    "question": "What is 100 divided by 5?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "cation for me grom gain for statism has functions to decute to regularize model weight parameters by calculating gradients of loss functions and",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1295.92,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "According to opassermodynamic entropy describing in the context?\nAnswer: According to the passage, the",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1455.41,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q051",
+    "category": "Mathematics",
+    "question": "What is a prime number?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnswer: recursion is designed to manage primary key mappings by dividing the array",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1311.9,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: It is essential because calculating pairwise dot-product rele",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1367.08,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q052",
+    "category": "Mathematics",
+    "question": "What is the value of Pi rounded to two decimal places?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Bassion algorithms is to d)\nAns to transform generalization capabilities by splitting dataset nodes recursively to maximize inform",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1547.42,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: It is essential because detecting chemical absorption lines during trans",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1563.27,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q053",
+    "category": "Mathematics",
+    "question": "What is 7 squared?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Levectrees vision is that it modifies to optimize average search complexity by dividing the array into smaller",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1204.71,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Comprehensive research indicates that Answer: hash maps refers to an associative arrays that maps key",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1216.8,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q054",
+    "category": "Mathematics",
+    "question": "What is an acute angle?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Basic)\nAnswer: When computer vision is executed, it modifies human cognitive patterns by passing raw vec",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1247.52,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: expert systems refers to knowledge-based reasoning frameworks. Its primary utility is",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1306.35,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q055",
+    "category": "Mathematics",
+    "question": "What is 12 minus 7?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module vision constants is tabes systems is to tabled to discover optimize be pacetimize gain key-value pairs",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1243.93,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: expert systems refers to knowledge-based reasoning frameworks.",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1241.65,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q056",
+    "category": "Explanation",
+    "question": "Why do seasons change on Earth?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: recursion interacts because it is configured to analyze key-value pairs by tra",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1309.88,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Under standard operating parameters, Answer: classical mechanics refers to the study of forces on acting physical bodies",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1388.75,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q057",
+    "category": "Explanation",
+    "question": "How does an airplane fly?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnswer: exoplanet atmospheres manages this process where gravity prevents even electro",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1282.02,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Under standard operating parameters, Answer: Keplerian orbital motion operates by balancing gravitational pull",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1291.81,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q058",
+    "category": "Explanation",
+    "question": "Why is water essential for living organisms?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 2)\nAnswer: potential energy interacts because it is configured to factorize vector space",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1389.29,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: forcement learning agents refers to modern technical literature, Answer: reinforcement learning agents refers to policy-d",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1485.55,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q059",
+    "category": "Explanation",
+    "question": "How do vaccines protect against disease?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: vector spaces interacts because it is configured to transform vector space dimensions",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1400.94,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In high-throughput enterprise environments, Answer: Unlike standard methods, electromagnetic radiation focuses on transmitting",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1478.83,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q060",
+    "category": "Explanation",
+    "question": "Why does ice float on liquid water?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: differential equations interacts because it is configured to map random variable expec",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1338.96,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Through rigorous mathematical derivation, Answer: Unlike standard methods, refactoring patterns focuses on simplifying",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1404.03,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q061",
+    "category": "Explanation",
+    "question": "How does a microwave oven heat food?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "B)\nAnswer: quantum wavefunctions manages this process using wave-particle duality concepts to model microscop",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1436.2,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "From an engineering perspective, Answer: cosmic microwave background operates by measuring faint isotro",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1466.06,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q062",
+    "category": "Explanation",
+    "question": "Why do leaves change color in autumn?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Basic)\nAnswer: classical mechanics interacts because it is configured to describe physical spaceti",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1464.2,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Comprehensive research indicates that Answer: It is essential because training generator and discriminator models in a",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1423.96,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q063",
+    "category": "Explanation",
+    "question": "How do search engines index web pages?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: operating systems manages this process by dividing the array into smaller partitions recursively",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1440.36,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In high-throughput enterprise environments, Answer: expert systems operates by evaluating rule-based inference engines",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1374.64,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q064",
+    "category": "Explanation",
+    "question": "Why is sleep necessary for human health?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswermodynamics is critical because it functions to quantize heat transfer equations where g",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1421.54,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: It design patterns refers to a factorization of squations reusable solutions to common software problems. Its p",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1354.43,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q065",
+    "category": "Explanation",
+    "question": "How do solar panels generate electricity?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnswer: space exploration interacts because it is configured to fuse elliptical planetary pa",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1402.49,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: document object model parsing operates by constructing hierarchical DOM tree nod",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1501.35,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q066",
+    "category": "Everyday reasoning",
+    "question": "If it is raining outside, what should you take before leaving home?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: Fourier transforms is designed to transform random variable expectations by calculating limit values",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1778.65,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: This guarantees extreme gravitational distortion of background radiation. Furthermore, continuous validation",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1740.15,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q067",
+    "category": "Everyday reasoning",
+    "question": "Why should you look both ways before crossing a street?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Overview)\nAnswer: When queues is executed, it modifies hardware resources by traversing link",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1658.56,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "According to modern technical literature, Answer: It is essential because allocating CPU time slices dy",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1709.76,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q068",
+    "category": "Everyday reasoning",
+    "question": "If you put ice cream in an oven, what will happen?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "calculus formuent (Module A)\nAnswer: calculus formulas is designed to calculate integer divisor properties by calculating",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1533.61,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: It is essential because constraining parameter magnitudes via L1 or",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1534.23,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q069",
+    "category": "Everyday reasoning",
+    "question": "Why is regular exercise recommended for health?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: binary trees is critical because it functions to manage average search complexity th",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1523.79,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: It is essential because aggregating predictions across random forest or boosted tree sp",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1482.49,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q070",
+    "category": "Everyday reasoning",
+    "question": "If your phone battery is at 1%, what should you do?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: Hubble expansion constants is designed to analyze hydrogen-helium atomic cores by",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1652.14,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: It quantum superposition refers to a state where physical systems exist in multiple configurations. Its",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1639.17,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q071",
+    "category": "Everyday reasoning",
+    "question": "Why do people wear coats in winter?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 1)\nAnswer: recursion interacts because it is configured to structure average search complexity by",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1337.7,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: It is essential because simplifying complex class hierarchi",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1333.15,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q072",
+    "category": "Everyday reasoning",
+    "question": "If a milk carton is kept unrefrigerated for several days, what will happen?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 2)\nAnswer: recursion is critical because it functions to resolve key-value pairs using La",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1760.17,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Through rigorous mathematical derivation, Answer: refactoring patterns refers to the code rore process loop. I",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1848.55,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q073",
+    "category": "Everyday reasoning",
+    "question": "Why do cars have seatbelts?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: space exploration is critical because it functions to expand outer solar system exoplanets",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1310.81,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Through rigorous mathematical derivation, Answer: Unlike standard methods, general relativity focuses on describing g",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1379.0,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q074",
+    "category": "Everyday reasoning",
+    "question": "If you want to bake a cake, what appliance do you use?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Module B)\nAnswer: orbital velocities is designed to discover galactic expansion parameters where gravity",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1641.74,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Answer: exoplanet atmospheric spectroscopy operates by detecting chemical absorption lines during trans",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1554.9,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q075",
+    "category": "Everyday reasoning",
+    "question": "Why do traffic lights have green, yellow, and red colors?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Level 2)\nAnswer: When space exploration is executed, it modifies elliptical planetary paths by f",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1615.16,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In production software systems, Answer: It is essential because minimizing intra-cluster spatial distances us",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1615.18,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q076",
+    "category": "Conversation",
+    "question": "Hello! How are you today?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Levector does prod)\nAnspace hash tables is designed to map primary key mappings by trav",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1370.56,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In stemon ows does cross-validation operates by partitioning dataset samples into k distinct folds to test generalization",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1268.58,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q077",
+    "category": "Conversation",
+    "question": "Can you help me learn how to code?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Levectual)\nAnswer: operating systems is critical because it functions to transform hardware resources by traversing",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1423.62,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "As an ows does To optimizing exoplanet atmospheric spectroscopy operates by detecting chemical abs",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1412.9,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q078",
+    "category": "Conversation",
+    "question": "Thank you for your assistance!",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "lard treguage to unlabeled clear fusion is to emit galacticate expansion parameters by fusing hydrogen atoms into helium",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1266.07,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Ushierarchitecture involves decomposing complex continuous functions into constituent sine and cosine frequencies. In",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1290.45,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q079",
+    "category": "Conversation",
+    "question": "What can you do?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "exoplanet atmospheres is executed, it modifies extreme gravitational fields by fusing hydrogen atoms into hel",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1200.4,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: relational databases refers to a program converting high-level code to",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1228.05,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q080",
+    "category": "Conversation",
+    "question": "Good morning!",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "ates systems is that classical tre systems is defined as a system designed to evaluate unlabeled training points. Applications are",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1218.44,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "RESTful API design is that exposing standard HTTP resource endpoints with stateless semantics, we",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1155.1,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q081",
+    "category": "Conversation",
+    "question": "What is your favorite topic to talk about?",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "(Conceptual)\nAnswer: calculus formulas is designed to factorize continuous accumulation rates by calculating limit values of",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1563.74,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practical field deployments, Answer: differential equations refers to equations relating functions to their rates of",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1557.4,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q082",
+    "category": "Conversation",
+    "question": "Tell me a fun thought for today.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Generally, experts obspace that classical mechanics is defined as a system designed to describe micro",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1351.04,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In opage, objectransmitting phood is that detecting chemical absorption lines during transit events. This",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1322.22,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q083",
+    "category": "Conversation",
+    "question": "I feel tired after work.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "This fact is essential to understand.Question: Why does reinforcement learning interact with information gain statistics? (M",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1276.51,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "(Case Study #416). This aligns directly with established theoretical models documented in primary research papers.",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1338.95,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q084",
+    "category": "Conversation",
+    "question": "Have a nice weekend!",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "lers systems trefacement systems is to curves to conserve reference nodes using Last-In-First-Out protocols to",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1274.65,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "unsupervised clustering is efficiently. convergence toward minimal loss values. This aligns directly with established theoretical models docu",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1271.87,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q085",
+    "category": "Conversation",
+    "question": "See you later!",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "er systems intent inter with continuom cts ger be systems is d)\nAns to transform gal to expand galactic expansion parameters by",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1194.03,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In descent plays a propertruciallows y is widely understood as the errorks bound scales as $O(Ref: #",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1281.0,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q086",
+    "category": "Creative generation",
+    "question": "Write a short poem about the moon in the night sky.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Studies confirm that by definition, hash tables will resolve primary key mappings in standard",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1578.27,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Question: What is the main benefit of RESTful API design described in the context?\nAnswer: Accor",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1502.3,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q087",
+    "category": "Creative generation",
+    "question": "Invent a creative name for a coffee shop for book lovers.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "networks is d)\nAnspural to classical mechanics scientists to curves heat transfer equations where gravity",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1666.33,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Consequently, it it allows applications to efficient frequency-domain signal analysis. (Ref: #256). This aligns direc",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1651.87,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q088",
+    "category": "Creative generation",
+    "question": "Write a one-sentence story about a mysterious locked door.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "From a technical standpoint, by definition, relational databases will transform average search complexity in standard",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1571.37,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Consequently, benchmarking teams consistently report superior metrics when this methodology is adopted.What is",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1594.37,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q089",
+    "category": "Creative generation",
+    "question": "Describe a futuristic city in the year 3000.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "trees systems systems functions t functions primarily to process e involves conserve that it helps galacticros radiation where gra",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1582.1,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In practice, performance gains scale linearly with workload expansion.What is linear algebra projections?\nFrom",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1458.72,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q090",
+    "category": "Creative generation",
+    "question": "Write a slogan for an eco-friendly water bottle.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems is tremain trees is that it helps optimize hardware resources by traversing linked nodes recursively",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1511.57,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Finally, this achieves precise modeling of dynamic physical phenomena. (Case Study #405).",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1472.29,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q091",
+    "category": "Creative generation",
+    "question": "Create a brief dialogue between a cat and a dog discussing dinner.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "vision vision is d)\nAns to curves manage to transform unstructured memory by dividing the array into smaller partition",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1723.17,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Response: The main advantage of Fourier transforms is that decomposing complex continuous functions into constituent sine",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1703.0,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q092",
+    "category": "Creative generation",
+    "question": "Describe the sound of rain falling on a metal roof.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Indecis confirimary that to understand how decision trees works, we observe that it will minimize unlabeled training",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1569.47,
+      "quality_score": 2,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "the ows ch: the chrore, the errorbound scales as $O(1/n)$. By proving that merging isolated",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1523.95,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q093",
+    "category": "Creative generation",
+    "question": "Write a warm welcome message for a community garden.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "This remains a cornerstone of research.Typically, analyzing the details, queues acts to analyze average search com",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1503.95,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Consequently, benchmarking teams consistently report superior metrics when this methodology is adopted.When evalu",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1515.31,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q094",
+    "category": "Creative generation",
+    "question": "Invent a name and brief description for a newly discovered magical forest.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "networks is defined as a system designed to emit outer solar system exoplanets. This fact is essential to understand",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1681.86,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In praccomplers s plays a crucial role by trapping light and matter when escape velocity exceeds",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1707.09,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q095",
+    "category": "Creative generation",
+    "question": "Write a three-line thank you note to a teacher.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "St systems systems t is tables that the primary process involves map hardware resources using Last-In-First-O",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1514.54,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "This behavior directly impacts predictable thermodynamic state transitions. (Ref: #61). Developers and",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1668.82,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q096",
+    "category": "Instruction following",
+    "question": "List exactly three colors of the rainbow.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "ges vision is d)\nAns to process involves optimize average search complexity by dividing the array into smaller",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1395.84,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "This Theh that detecting that detecting chemical absorption lines during transit events, achieving identification of po",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1418.93,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q097",
+    "category": "Instruction following",
+    "question": "Write the word 'COLLISION' in all capital letters.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Ques systems systems is d)\nAnsprecursion to optimize sinusoidal frequencies through dynamic RAM",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1523.8,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Consequently, it allows applications to rigorous statistical modeling of uncertainty.Code Explanation: In Python,",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1582.19,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q098",
+    "category": "Instruction following",
+    "question": "Name two programming languages that start with the letter P.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems vision is that to prodecute totregularize information gain statistics by splitting dataset nodes recursively to",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1541.95,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "This aligns directly with established theoretical models documented in primary research papers.Comprehensive research indicates",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1545.67,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q099",
+    "category": "Instruction following",
+    "question": "Count from 1 to 5 separated by commas.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "systems will process acts to curves Worst-valuate model weight parameters specifically by calculating gradients of loss functions and updating weight parameters along",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1508.22,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "In modern systems, this ensures logarithmic time complexity for lookup operations. (Ref: #72). In practice, per",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1375.48,
+      "quality_score": 3,
+      "keyword_match": true,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q100",
+    "category": "Instruction following",
+    "question": "State whether an elephant is larger than a mouse in one word.",
+    "v5": {
+      "model": "phase91_control_10m",
+      "checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+      "generated_answer": "Generally, experts observe that classical mechanics can transform electromagnetic wave fields efficiently.",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1618.87,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    },
+    "v9": {
+      "model": "phase91_v9_10m",
+      "checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+      "generated_answer": "Response: The main advantage of refactoring patterns is that simplifying complex class hierarchies without altering",
+      "generation_success": true,
+      "token_count": 64,
+      "latency_ms": 1645.26,
+      "quality_score": 1,
+      "keyword_match": false,
+      "decoding_config": {
+        "max_new_tokens": 64,
+        "temperature": 0.7,
+        "top_k": 40,
+        "strategy": "top_k_sampling"
+      }
+    }
+  }
+]

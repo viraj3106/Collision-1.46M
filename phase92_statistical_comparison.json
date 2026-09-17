@@ -1,0 +1,90 @@
+{
+  "unseen_questions_evaluated": 100,
+  "quality_scores_mean": {
+    "v5_control": 1.09,
+    "v9_redesigned": 1.14,
+    "absolute_diff": 0.05,
+    "relative_improvement_pct": 4.59
+  },
+  "correctness_rate_pct": {
+    "v5_control": 9.0,
+    "v9_redesigned": 7.0,
+    "absolute_diff": -2.0
+  },
+  "instruction_following_rate_pct": {
+    "v5_control": 64.0,
+    "v9_redesigned": 64.0,
+    "absolute_diff": 0.0
+  },
+  "context_utilization_rate_pct": {
+    "v5_control": 4.0,
+    "v9_redesigned": 4.0,
+    "absolute_diff": 0.0
+  },
+  "synthetic_template_overlap_pct": {
+    "v5_control": 37.0,
+    "v9_redesigned": 0.0,
+    "reduction_pct": 37.0
+  },
+  "generation_failure_rate_pct": {
+    "v5_control": 11.0,
+    "v9_redesigned": 0.0,
+    "reduction_pct": 11.0
+  },
+  "mean_latency_ms": {
+    "v5_control": 1427.49,
+    "v9_redesigned": 1418.38
+  },
+  "category_breakdown": {
+    "Conversation": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.2,
+      "delta": 0.2
+    },
+    "Creative generation": {
+      "v5_mean": 1.1,
+      "v9_mean": 1.0,
+      "delta": -0.1
+    },
+    "Everyday reasoning": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.0,
+      "delta": 0.0
+    },
+    "Explanation": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.0,
+      "delta": 0.0
+    },
+    "General knowledge": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.0,
+      "delta": 0.0
+    },
+    "Instruction following": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.4,
+      "delta": 0.4
+    },
+    "Mathematics": {
+      "v5_mean": 1.0,
+      "v9_mean": 1.0,
+      "delta": 0.0
+    },
+    "Programming": {
+      "v5_mean": 1.5,
+      "v9_mean": 1.4,
+      "delta": -0.1
+    },
+    "Science": {
+      "v5_mean": 1.1,
+      "v9_mean": 1.2,
+      "delta": 0.1
+    },
+    "Technology": {
+      "v5_mean": 1.2,
+      "v9_mean": 1.4,
+      "delta": 0.2
+    }
+  }
+}

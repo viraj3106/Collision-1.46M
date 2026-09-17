@@ -1,0 +1,33 @@
+{
+  "phase": 92,
+  "phase_name": "PHASE 92 \u2014 COLLISION V9 BEHAVIORAL VALIDATION & GENERALIZATION AUDIT",
+  "timestamp": "2026-09-11T06:48:06Z",
+  "safety_status": {
+    "training_executed": false,
+    "model_weights_modified": false,
+    "production_checkpoint_modified": false,
+    "v5_checkpoint_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+    "v9_checkpoint_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449",
+    "production_checkpoint_sha256": "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+  },
+  "metrics": {
+    "unseen_questions": 100,
+    "total_generations": 690,
+    "successful_generations": 200,
+    "v5_mean_quality": 1.09,
+    "v9_mean_quality": 1.14,
+    "v5_correctness_pct": 9.0,
+    "v9_correctness_pct": 7.0,
+    "v5_instruction_following_pct": 64.0,
+    "v9_instruction_following_pct": 64.0,
+    "v5_context_utilization_pct": 4.0,
+    "v9_context_utilization_pct": 4.0,
+    "v5_prompt_conditioning_pct": 64.0,
+    "v9_prompt_conditioning_pct": 64.0,
+    "v5_synthetic_template_overlap_pct": 37.0,
+    "v9_synthetic_template_overlap_pct": 0.0,
+    "v5_generation_failure_rate_pct": 11.0,
+    "v9_generation_failure_rate_pct": 0.0
+  },
+  "verdict": "PHASE_92_DATASET_EFFECT_INSUFFICIENT"
+}

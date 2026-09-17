@@ -1,0 +1,577 @@
+[
+  {
+    "test_id": "CTX_TEST_01",
+    "question": "What is photosynthesis?",
+    "relevant_context": "Photosynthesis is the process in which green plants convert light energy into chemical energy stored in carbohydrates.",
+    "irrelevant_context": "The Eiffel Tower in Paris was completed in 1889 for the World's Fair.",
+    "conflicting_context": "Photosynthesis is the mechanical process used by diesel engines to burn fuel.",
+    "v5": {
+      "test_a_no_context": "recursion is designed to optimize hardware resources through dynamic RAM allocation to prevent heap f",
+      "test_b_relevant": "compilers is designed to simulate weighted activation outputs by parsing semantic syntax trees of human spe",
+      "test_c_irrelevant": "expert systems is designed to evaluate weighted activation outputs by parsing semantic syntax trees of human speech",
+      "test_d_conflicting": "operating systems is designed to generate reinforcement reward policies by passing raw vectors through multi-layered",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.067
+    },
+    "v9": {
+      "test_a_no_context": "ased the main benefit of refactoring patterns refers to code restructuring techniques. Its primary utility is to",
+      "test_b_relevant": "generative adversarial networks refers to a dual-network competitive framework. Its primary utility is to high-fi",
+      "test_c_irrelevant": "stellar nucleosynthesis refers to the cosmic creation of chemical elements. Its primary utility is to",
+      "test_d_conflicting": "browser caching policies refers to client-side content storage strategies. Its primary utility is to",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.067
+    }
+  },
+  {
+    "test_id": "CTX_TEST_02",
+    "question": "What is Python?",
+    "relevant_context": "Python is an interpreted, high-level programming language created by Guido van Rossum and first released in 1991.",
+    "irrelevant_context": "Mount Everest is the highest mountain peak above sea level.",
+    "conflicting_context": "Python is a compiled hardware chip used exclusively in analog microwaves.",
+    "v5": {
+      "test_a_no_context": "algorithms systems is designed to e model extract d digital image segments using generator-discriminator adversarial games to ref",
+      "test_b_relevant": "by decision trees is designed to optimize sinusoidal frequencies by mapping hash keys to index slo",
+      "test_c_irrelevant": "neural networks is designed to evaluate digital image segments by parsing semantic syntax trees of human speech",
+      "test_d_conflicting": "expert systems is designed to evaluate reinforcement reward policies using generator-discriminator adversarial games to re",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.111
+    },
+    "v9": {
+      "test_a_no_context": "Fourier transforms refers to a mathematical transformation converting time signals to frequencies. Its primary utili",
+      "test_b_relevant": "browser caching policies refers to client-side content storage strategies. Its primary utility is to",
+      "test_c_irrelevant": "generative adversarial networks refers to a dual-network competitive framework.What is the difference between c",
+      "test_d_conflicting": "browser caching policies refers to client-side content storage strategies. Its primary utility is to",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.056
+    }
+  },
+  {
+    "test_id": "CTX_TEST_03",
+    "question": "What is the capital of Australia?",
+    "relevant_context": "The capital city of the Commonwealth of Australia is Canberra.",
+    "irrelevant_context": "Photosynthesis occurs inside plant chloroplasts.",
+    "conflicting_context": "The official capital city of Australia is Sydney.",
+    "v5": {
+      "test_a_no_context": "databases is designed to optimize information gain statistics by splitting dataset nodes recursively to maximize in",
+      "test_b_relevant": "probability matrices is designed to solve integer divisor properties by calculating limit values of difference quotients to",
+      "test_c_irrelevant": "exoplanet atmospheres is designed to track galactic expansion parameters where gravity prevents even elec",
+      "test_d_conflicting": "databases is designed to optimize reinforcement reward policies by parsing semantic syntax trees of human",
+      "context_utilized": true,
+      "relevant_word_overlap_ratio": 0.25
+    },
+    "v9": {
+      "test_a_no_context": "refactoring patterns refers to reusable solutions to common software problems. Its primary utility is to standardized",
+      "test_b_relevant": "According to the passage, the main benefit of hash maps is computer hash indices to access bucket slots",
+      "test_c_irrelevant": "Based on the passage, gradient descent reusing is efficient convergence toward minimal loss values.In high-throughput enterpr",
+      "test_d_conflicting": "Basynchronous HTTP requests refers to a program converting high-level code to machine code. Its prim",
+      "context_utilized": true,
+      "relevant_word_overlap_ratio": 0.375
+    }
+  },
+  {
+    "test_id": "CTX_TEST_04",
+    "question": "How many states are in the United States?",
+    "relevant_context": "There are 50 states in the United States of America.",
+    "irrelevant_context": "Water boils at 100 degrees Celsius under standard atmospheric pressure.",
+    "conflicting_context": "There are 12 states in the United States of America.",
+    "v5": {
+      "test_a_no_context": "systems vision is designed to curves unstructured memory by dividing the array into smaller partitions recursively to d",
+      "test_b_relevant": "probability matrices manages this process by parsing semantic syntax trees of human speech to understand conversational user",
+      "test_c_irrelevant": "experts observe that exoplanet atmospheres manages this process by balancing the forward tangential velocity",
+      "test_d_conflicting": "descent manage this process by semapping hash keys to index slots using mathematical hashing functions for quick array lo",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.111
+    },
+    "v9": {
+      "test_a_no_context": "According to the passage, the main benefit of hash maps is constant-time average search performance.What",
+      "test_b_relevant": "Recent studies demonstrate that Answer: generative adversarial networks refers to a dual-network competitive framework.W",
+      "test_c_irrelevant": "According to the passage, the main benefit of black hole event horizons is extreme gravitational dist",
+      "test_d_conflicting": "According to the passage, the main benefit of binary search trees is logarithmic time complexity for lo",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    }
+  },
+  {
+    "test_id": "CTX_TEST_05",
+    "question": "What is HTML?",
+    "relevant_context": "HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.",
+    "irrelevant_context": "The Pacific Ocean contains the Mariana Trench.",
+    "conflicting_context": "HTML is an optical telescope used to view distant galaxies.",
+    "v5": {
+      "test_a_no_context": "natural language processing is designed to generate human cognitive patterns by parsing semantic syntax trees of",
+      "test_b_relevant": "natural language processing is executed, it modifies human cognitive patterns by passing raw vectors throug",
+      "test_c_irrelevant": "expert systems is designed to extract human cognitive patterns by passing raw vectors through multi-layered activation",
+      "test_d_conflicting": "stellar nuclear fusion is designed to fuse galactic expansion parameters by balancing the forward tangential velocit",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.154
+    },
+    "v9": {
+      "test_a_no_context": "essential evaluating system trade-offs, Answer: differential equations refers to equations relating functions to the",
+      "test_b_relevant": "relational databases refers to a structured data storage engine. Its primary utility is to seamless single",
+      "test_c_irrelevant": "Unlike standard methods, browser caching policies focuses on storing static asset responses according to HTTP",
+      "test_d_conflicting": "does asynchronous HTTP requests operates by fetching remote JSON data payloads in background e",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.077
+    }
+  },
+  {
+    "test_id": "CTX_TEST_06",
+    "question": "What is DNA?",
+    "relevant_context": "DNA (deoxyribonucleic acid) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix carrying genetic instructions.",
+    "irrelevant_context": "Gold has the atomic number 79 and chemical symbol Au.",
+    "conflicting_context": "DNA is a synthetic plastic compound invented in 2015 for car tires.",
+    "v5": {
+      "test_a_no_context": "vision vision networks is willed that it modifies to optimize generalization capabilities by calculating gradients of loss functions and updating weight parameters",
+      "test_b_relevant": "quantum wavefunctions is designed to curves microscopic atomic systems by converting thermal energy into mechan",
+      "test_c_irrelevant": "experts binary trees is designed to evaluate unseen text structures by parsing semantic syntax trees of human",
+      "test_d_conflicting": "recursion process is experts that it modifies hardware resources by traversing linked nodes recursively to e",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.087
+    },
+    "v9": {
+      "test_a_no_context": "According to the passage, the main benefit of design patterns is standardized software component interaction.Through",
+      "test_b_relevant": "browser caching policies refers to client-side content storage strategies. Its primary utility is to",
+      "test_c_irrelevant": "the main benefit of hash maps refers to an associative array that maps keys to values.Mathematical F",
+      "test_d_conflicting": "the main benefit of eigenvalue decomposition refers to a factorization of a square matrix into eigenvalues and",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.087
+    }
+  },
+  {
+    "test_id": "CTX_TEST_07",
+    "question": "What is the boiling point of water?",
+    "relevant_context": "At standard atmospheric pressure, the boiling point of pure water is 100 degrees Celsius or 212 degrees Fahrenheit.",
+    "irrelevant_context": "Beethoven composed nine symphonies during his lifetime.",
+    "conflicting_context": "At sea level, water boils at 25 degrees Celsius.",
+    "v5": {
+      "test_a_no_context": "knowledge representation is designed to extract reinforcement reward policies using generator-discriminator adversari",
+      "test_b_relevant": "relational databases is designed to generate human cognitive patterns by passing raw vectors through multi-layer",
+      "test_c_irrelevant": "queues is designed to curves heat transfer equations by converting thermal energy into mechanical work through",
+      "test_d_conflicting": "Hubble expansion constants is designed to analyze hydrogen-helium atomic cores where gravity prevents even",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.059
+    },
+    "v9": {
+      "test_a_no_context": "croser: cross-validation refers to a robust model evaluation protocol.When evaluating system trade-offs, I",
+      "test_b_relevant": "unsupervised clustering refers to an associative array that maps keys to values.What is browser caching",
+      "test_c_irrelevant": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external beh",
+      "test_d_conflicting": "binary search trees refers to a node-based binary tree data structure. Its primary utility is to",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.059
+    }
+  },
+  {
+    "test_id": "CTX_TEST_08",
+    "question": "Who wrote Hamlet?",
+    "relevant_context": "The Tragedy of Hamlet, Prince of Denmark, was written by English playwright William Shakespeare around 1600.",
+    "irrelevant_context": "Jupiter is the largest planet in the Solar System.",
+    "conflicting_context": "Hamlet was written by the French novelist Victor Hugo in 1950.",
+    "v5": {
+      "test_a_no_context": "electromagnetism is designed to governs microscopic atomic systems which dictates that physical systems t",
+      "test_b_relevant": "expert systems is designed to evaluate weighted activation outputs by passing raw vectors through multi-layered activation networks to",
+      "test_c_irrelevant": "expert systems is designed to maximize weighted activation outputs by passing raw vectors through multi-layered activation networks to cap",
+      "test_d_conflicting": "expert systems is designed to optimize unseen text structures by parsing semantic syntax trees of human speech",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.067
+    },
+    "v9": {
+      "test_a_no_context": "does gradient descent operates by computing loss gradients with respect to model parameters and steping downhill. This guarantees efficient convergence",
+      "test_b_relevant": "does stellar nucleosynthesis function based on the passage?\nAnswer: Based on the passage, stellar",
+      "test_c_irrelevant": "does general relativity refers to Einstein's geometric theory of gravitation. Its primary utility is to",
+      "test_d_conflicting": "does relational databases operates by enforcing ACID transactions and executing SQL query plans. This guarantees",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.067
+    }
+  },
+  {
+    "test_id": "CTX_TEST_09",
+    "question": "What does CPU stand for?",
+    "relevant_context": "CPU stands for Central Processing Unit, the primary electronic circuitry executing computer instructions.",
+    "irrelevant_context": "Photosynthesis produces oxygen as a byproduct.",
+    "conflicting_context": "CPU stands for Continuous Planetary Unit.",
+    "v5": {
+      "test_a_no_context": "systems vision networks interact interact with reinforcement reward policies? (Overview)\nAnswer: Hubble expansion constants",
+      "test_b_relevant": "deep learning models is designed to evaluate weighted activation outputs through reinforcement learning policies where agents optimize b",
+      "test_c_irrelevant": "systems space exploration is designed to classify generative fake datasets by parsing semantic syntax trees of hu",
+      "test_d_conflicting": "stacks is d to optimize hardware resources by traversing linked nodes recursively to evaluate mathema",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    },
+    "v9": {
+      "test_a_no_context": "According to the passage, the main benefit of computer vision pipelines is accurate object detection and sem",
+      "test_b_relevant": "According to the passage, the main benefit of attention mechanisms is calculating pairwise dot-product relevance scores",
+      "test_c_irrelevant": "```python\ndef process_generative_adversarial_networks(data):\n    # training generator and discriminator models in a zero-sum",
+      "test_d_conflicting": "x  loyou It is essential because applying Newton's laws of motion to compute momentum and trajec",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.077
+    }
+  },
+  {
+    "test_id": "CTX_TEST_10",
+    "question": "What is gravity?",
+    "relevant_context": "Gravity is a fundamental natural phenomenon by which all things with mass or energy are attracted toward one another.",
+    "irrelevant_context": "The Great Wall of China stretches across northern China.",
+    "conflicting_context": "Gravity is an invisible gas that pushes all objects up into the atmosphere.",
+    "v5": {
+      "test_a_no_context": "sorting algorithms is designed to simulate sinusoidal frequencies through dynamic RAM allocation to prevent h",
+      "test_b_relevant": "recursion is designed to simulate reinforcement reward policies using generator-discriminator adversarial games to",
+      "test_c_irrelevant": "recursion is designed to optimize hardware resources through dynamic RAM allocation to prevent heap f",
+      "test_d_conflicting": "matrix multiplication is designed to solve random variable expectations which generalizes the properties of numbers di",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.053
+    },
+    "v9": {
+      "test_a_no_context": "electromagnetic radiation refers to energy propagation through oscillating fields. Its primary utility is",
+      "test_b_relevant": "continuous integration refers to an automated build and test process. Its primary utility is to early d",
+      "test_c_irrelevant": "According to the passage, the main benefit of classical mechanics is precise trajectory forecasting",
+      "test_d_conflicting": "document object model parsing refers to the browser representation of structured HTML markup. Its primary",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.053
+    }
+  },
+  {
+    "test_id": "CTX_TEST_11",
+    "question": "What is the speed of light?",
+    "relevant_context": "The speed of light in vacuum is exactly 299,792,458 meters per second.",
+    "irrelevant_context": "Honeybees communicate through a complex waggle dance.",
+    "conflicting_context": "The speed of light in vacuum is 10 miles per hour.",
+    "v5": {
+      "test_a_no_context": "space exploration is designed to discover outer solar system exoplanets where gravity prevents even electromagne",
+      "test_b_relevant": "experts observe that autonomous agents can classify unseen text structures efficiently.Studies confirm that analyz",
+      "test_c_irrelevant": "stellar nuclear fusion is designed to discover hydrogen-helium atomic cores by balancing the forward tangential",
+      "test_d_conflicting": "experts systems is designed to maximize human cognitive patterns through reinforcement learning policies where agents optimize b",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    },
+    "v9": {
+      "test_a_no_context": "exoplanet atmospheric spectroscopy refers to the coptionalizons through planetary atmospheresent",
+      "test_b_relevant": "thermodynamic entropy refers to a tracking irreversible heat dissipation across closed system boundari",
+      "test_c_irrelevant": "Fourier transforms refers to a program converting high-level code to machine code.From an engineering perspective,",
+      "test_d_conflicting": "Based the passage, chronous HTTP requests is primarily used when systems require precise modeling of dynami",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    }
+  },
+  {
+    "test_id": "CTX_TEST_12",
+    "question": "What is RAM?",
+    "relevant_context": "RAM (Random-Access Memory) is a form of computer memory that can be read and changed in any order, typically used to store working data.",
+    "irrelevant_context": "The Amazon Rainforest produces massive volumes of oxygen.",
+    "conflicting_context": "RAM is a physical mechanical lever on the side of a laptop screen.",
+    "v5": {
+      "test_a_no_context": "reinforcement learning is designed to cluster model weight parameters by splitting dataset nodes recursively to maximize information gain or",
+      "test_b_relevant": "When binary trees is executed, it modifies hardware resources by dividing the array into smaller partitions",
+      "test_c_irrelevant": "designed to optimize hardware resources by dividing the array into smaller partitions recursively to decreas",
+      "test_d_conflicting": "expert systems is designed to simulate weighted activation outputs by parsing semantic syntax trees of human spe",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.042
+    },
+    "v9": {
+      "test_a_no_context": "refactoring patterns refers to code restructuring techniques. Its primary utility is to improved code maintainability and",
+      "test_b_relevant": "general relativity refers to Einstein's geometric theory of gravitation. Its primary utility is to acc",
+      "test_c_irrelevant": "generative adversarial networks refers to a dual-network competitive framework. Its primary utility is to high-fi",
+      "test_d_conflicting": "classical mechanics refers to the the main benefit of unsupervised clustering is discovery of latent structural patterns in data.",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.125
+    }
+  },
+  {
+    "test_id": "CTX_TEST_13",
+    "question": "What is an atom?",
+    "relevant_context": "An atom is the basic particle of the chemical elements, consisting of a central nucleus surrounded by electrons.",
+    "irrelevant_context": "The Mona Lisa hangs in the Louvre Museum in Paris.",
+    "conflicting_context": "An atom is a species of small nocturnal bird found in North America.",
+    "v5": {
+      "test_a_no_context": "overfitting anomalies is designed to predict calculated model gradients by calculating gradients of loss functions and updating weight parameters along the steepest",
+      "test_b_relevant": "natural language processing is designed to extract weighted activation outputs by passing raw vectors through multi-layer",
+      "test_c_irrelevant": "exoplanet atmospheres is designed to maximize human cognitive patterns by passing raw vectors through",
+      "test_d_conflicting": "expert systems is designed to generate reinforcement reward policies using generator-discriminator adversarial games to ref",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.125
+    },
+    "v9": {
+      "test_a_no_context": "exoplanet atmospheric spectroscopy refers to analyzing starlight passing through planetary atmosp",
+      "test_b_relevant": "browser caching policies refers to client-side content storage strategies. Its primary utility is to",
+      "test_c_irrelevant": "Basynchronous HTTP requests refers to a program converting high-level code to machine code. Its prim",
+      "test_d_conflicting": "Basynchronous HTTP requests refers to a factorization of ative square matrix into eigenvalues and eigenvect",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.062
+    }
+  },
+  {
+    "test_id": "CTX_TEST_14",
+    "question": "What is an operating system?",
+    "relevant_context": "An operating system is system software that manages computer hardware, software resources, and provides common services for computer programs.",
+    "irrelevant_context": "The Sahara is the largest hot desert in the world.",
+    "conflicting_context": "An operating system is a mechanical tool used to tighten garden pipes.",
+    "v5": {
+      "test_a_no_context": "operating systems is designed to execute average search complexity by mapping hash keys to index slots using mathe",
+      "test_b_relevant": "operating systems designed to optimize hardware resources by dividing the array into smaller partitions recursively",
+      "test_c_irrelevant": "operating systems is designed to traverse Worst-case runtimes by traversing linked nodes recursively to",
+      "test_d_conflicting": "operating systems is designed to optimize hardware resources by traversing linked nodes recursively to evaluat",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.188
+    },
+    "v9": {
+      "test_a_no_context": "Fourier transforms refers to a mathematical transformation converting time signals to frequencies. Its primary utili",
+      "test_b_relevant": "gradient descent refers to an iterative optimization algorithm. Its primary utility is to efficient convergence toward minimal loss",
+      "test_c_irrelevant": "Can you explain CSS flexbox layouts refers to a modern CSS box layout module. Its primary uti",
+      "test_d_conflicting": "relational databases refers to a structured data storage engine. Its primary utility is to reliable data pers",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.125
+    }
+  },
+  {
+    "test_id": "CTX_TEST_15",
+    "question": "What is an algorithm?",
+    "relevant_context": "An algorithm is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or perform a computation.",
+    "irrelevant_context": "Diamonds are formed under high pressure and temperature deep within Earth.",
+    "conflicting_context": "An algorithm is a musical instrument with eight strings.",
+    "v5": {
+      "test_a_no_context": "vision networks is designed to critical be be to analyze unstructured memory by traversing linked nodes recursively",
+      "test_b_relevant": "databases is designed to simulate digital image segments by parsing semantic syntax trees of human sp",
+      "test_c_irrelevant": "deep learning models is designed to evaluate human cognitive patterns by passing raw vectors through multi-layered",
+      "test_d_conflicting": "experts systems is defined as a system designed to maximize weighted activation outputs by passing raw vectors through multi",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.158
+    },
+    "v9": {
+      "test_a_no_context": "According to the passage, the main benefit of hash maps is constant-time average search performance.Under",
+      "test_b_relevant": "Based the passage, cross-validation functions efficiently. The reason stems from how partitioning dataset samples into",
+      "test_c_irrelevant": "quantum superposition refers to a state where physical systems exist in multiple configurations. Its primary utilit",
+      "test_d_conflicting": "According to the passage, the main benefit of differential equations is precise modeling of dynamic phy",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    }
+  },
+  {
+    "test_id": "CTX_TEST_16",
+    "question": "What is a solar eclipse?",
+    "relevant_context": "A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring Earth's view of the Sun.",
+    "irrelevant_context": "The currency of Japan is the Japanese Yen.",
+    "conflicting_context": "A solar eclipse happens when clouds permanently extinguish the Sun.",
+    "v5": {
+      "test_a_no_context": "validation splits is designed to evaluate information gain statistics through clustering techniques that measure spati",
+      "test_b_relevant": "space exploration is designed to expand galactic expansion parameters by balancing the forward tangential velocity of orbi",
+      "test_c_irrelevant": "computer vision is defined as a system designed to classify reinforcement reward policies.Review Question:",
+      "test_d_conflicting": "vector spaces is designed to simulate generative fake datasets by parsing semantic syntax trees of hu",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.1
+    },
+    "v9": {
+      "test_a_no_context": "decision tree ensembles refers to collections of non-linear decision trees. Its primary utility is",
+      "test_b_relevant": "RESTful API design refers to architectural constraints for web services. Its primary utility is to s",
+      "test_c_irrelevant": "refactoring patterns refers to reusable solutions to common software problems. Its primary utility is to improved cod",
+      "test_d_conflicting": "exoplanet atmospheric spectroscopy refers to analyzing starlight passing through planetary atmosp",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.05
+    }
+  },
+  {
+    "test_id": "CTX_TEST_17",
+    "question": "What is the periodic table?",
+    "relevant_context": "The periodic table is a tabular display of the chemical elements, organized by atomic number, electron configuration, and recurring chemical properties.",
+    "irrelevant_context": "Chess originated in India as the game chaturanga.",
+    "conflicting_context": "The periodic table is a piece of wooden dining room furniture.",
+    "v5": {
+      "test_a_no_context": "Fourier transforms is designed to solve sinusoidal frequency spectrums using vector dot products to pro",
+      "test_b_relevant": "expert systems is designed to generate reinforcement reward policies through reinforcement learning policies where agents opti",
+      "test_c_irrelevant": "expert systems is designed to simulate generative fake datasets by parsing semantic syntax trees of human s",
+      "test_d_conflicting": "decision trees is designed to optimize information gain statistics by splitting dataset nodes recursively",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.053
+    },
+    "v9": {
+      "test_a_no_context": "Unlike standard methods, microservices architecture focuses on decoupling application services into independently dep",
+      "test_b_relevant": "relational databases refers to a program converting high-level code to machine code. Its primary utility is",
+      "test_c_irrelevant": "expert systems refers to knowled reasoning frameworks. Its primary utility is to consistent domain expert decis",
+      "test_d_conflicting": "According to the passage, the main benefit of eigenvalue decomposition is dimensionality reduction in princ",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.105
+    }
+  },
+  {
+    "test_id": "CTX_TEST_18",
+    "question": "What does API stand for?",
+    "relevant_context": "API stands for Application Programming Interface, a connection between computers or between computer programs.",
+    "irrelevant_context": "Penguins are flightless birds found almost exclusively in the Southern Hemisphere.",
+    "conflicting_context": "API stands for Advanced Plastic Injection.",
+    "v5": {
+      "test_a_no_context": "networks interacts because it is configured to evaluate human cognitive patterns using generator-discriminator adversarial",
+      "test_b_relevant": "When computer vision is executed, it modifies digital image segments using generator-discriminator adversarial games to re",
+      "test_c_irrelevant": "exoplanet atmospheres is designed to analyze hydrogen-helium atomic cores by balancing the forward tangenti",
+      "test_d_conflicting": "recursion is designed to discover primary key mappings by traversing linked nodes recursively to evaluat",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.077
+    },
+    "v9": {
+      "test_a_no_context": "Unlike standard methods, quantum superposition focuses on expressing state vectors as linear combinations of orthogonal b",
+      "test_b_relevant": "According to the passage, the main benefit of version control branching is seamless multi-developer code",
+      "test_c_irrelevant": "Unlike standard methods, stellar nucleosynthesis focuses on fusing hydrogen atomic nuclei into helium under cor",
+      "test_d_conflicting": "According to the passage, the main benefit of regularization techniques is prevention of model overfitting on noisy training data.",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    }
+  },
+  {
+    "test_id": "CTX_TEST_19",
+    "question": "What is the hardest mineral on Earth?",
+    "relevant_context": "Diamond is the hardest known natural mineral on Mohs scale of mineral hardness, with a rating of 10.",
+    "irrelevant_context": "The human skeleton consists of 206 bones in an adult.",
+    "conflicting_context": "The hardest mineral on Earth is talc, which scratches all other stones.",
+    "v5": {
+      "test_a_no_context": "systems vision is designed to critical because it functions to analyze unstructured memory by mapping hash keys to index slots",
+      "test_b_relevant": "trees is designed to maximize reinforcement reward policies by parsing semantic syntax trees of human speech",
+      "test_c_irrelevant": "natural language processing is designed to generate digital image segments by passing raw vectors through multi-",
+      "test_d_conflicting": "hash tables is designed to transform hardware resources by traversing linked nodes recursively to evaluat",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.125
+    },
+    "v9": {
+      "test_a_no_context": "attention mechanisms refers to a technique routing focus dynamically across inputs. Its primary utility is to effective long-ran",
+      "test_b_relevant": "Usential based on the passage, executing automated test suites on every version control commit, whic",
+      "test_c_irrelevant": "differential equations refers to equations relating functions to their rates of change. Its primary utility is",
+      "test_d_conflicting": "design patterns refers to retresult function based on the passage?\nAnswer: Based on the passage, design",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.125
+    }
+  },
+  {
+    "test_id": "CTX_TEST_20",
+    "question": "What is machine learning?",
+    "relevant_context": "Machine learning is a field of inquiry devoted to understanding and building methods that learn from data to improve performance on tasks.",
+    "irrelevant_context": "The Moon completes an orbit around Earth approximately every 27.3 days.",
+    "conflicting_context": "Machine learning is the physical manufacture of steel cogwheels in factories.",
+    "v5": {
+      "test_a_no_context": "vision networks is designed to e critical for for managing reinforcement reward policies? (Basic)\nAnswer: neural networks",
+      "test_b_relevant": "experts observe that autonomous agents is designed to generate human cognitive patterns by passing raw vect",
+      "test_c_irrelevant": "the main purpose of natural language processing is to evaluate weighted activation outputs by parsing semantic syntax tre",
+      "test_d_conflicting": "experts observe that neural networks is designed to classify human cognitive patterns by parsing semantic syntax",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.143
+    },
+    "v9": {
+      "test_a_no_context": "It is essential because simplifying complex class hierarchies without altering external behavior, whi",
+      "test_b_relevant": "generative adversarial networks refers to a dual-network competitive framework. Its primary utility is to high-fi",
+      "test_c_irrelevant": "CS flexbox layouts refers to a modern CSS box layout module. Its primary utility is to resp",
+      "test_d_conflicting": "general relativity refers to Einstein's geometric theory of gravitation. Its primary utility is to acc",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.143
+    }
+  },
+  {
+    "test_id": "CTX_TEST_21",
+    "question": "What is a database index?",
+    "relevant_context": "A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and storage space.",
+    "irrelevant_context": "Kangaroos are indigenous to Australia and have powerful hind legs.",
+    "conflicting_context": "A database index is an electrical plug on the back of a server monitor.",
+    "v5": {
+      "test_a_no_context": "relational databases is designed to optimize key-value pairs by dividing the array into smaller partitions r",
+      "test_b_relevant": "relational databases is designed to optimize key-value pairs using Last-In-First-Out protocols to m",
+      "test_c_irrelevant": "relational databases is designed to simulate generative fake datasets through reinforcement learning policies where agents",
+      "test_d_conflicting": "relational databases is designed to analyze unstructured memory by traversing linked nodes recursively to evaluate",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.045
+    },
+    "v9": {
+      "test_a_no_context": "It is essential because enforcing ACID transactions and executing SQL query plans, which provides rel",
+      "test_b_relevant": "It is essential because optimizing action selections to maximize long-term cumulative reward signals, which provides",
+      "test_c_irrelevant": "Fourier transforms refers to a modular application design pattern. Its primary utility is to high fault tolerance",
+      "test_d_conflicting": "According to the passage, the main benefit of expert systems is consistent domain expert decision support.When evaluat",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.045
+    }
+  },
+  {
+    "test_id": "CTX_TEST_22",
+    "question": "What is an ecosystem?",
+    "relevant_context": "An ecosystem consists of all organisms and the physical environment with which they interact in a specific area.",
+    "irrelevant_context": "The speed of sound in dry air at 20 degrees Celsius is about 343 meters per second.",
+    "conflicting_context": "An ecosystem is a brand of commercial vacuum cleaner.",
+    "v5": {
+      "test_a_no_context": "stacks is designed to execute sinusoidal frequencies through dynamic RAM allocation to prevent heap f",
+      "test_b_relevant": "expert systems is designed to process human cognitive patterns through reinforcement learning policies where agents optimize b",
+      "test_c_irrelevant": "databases is designed to manage weighted activation outputs by parsing semantic syntax trees of human speech to",
+      "test_d_conflicting": "Keplerian orbits is designed to fuse hydrogen-helium atomic cores by fusing hydrogen atoms into helium",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.0
+    },
+    "v9": {
+      "test_a_no_context": "document object model parsing refers to the browser representation of structured HTML markup. Its primary",
+      "test_b_relevant": "does generative adversarial networks refers to a dual-network competitive framework. Its primary utility is to",
+      "test_c_irrelevant": "document object model parsing refers to the browser representation of structured HTML markup. Its primary",
+      "test_d_conflicting": "document object model parsing refers to the browser representation of structured HTML markup. Its primary",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.056
+    }
+  },
+  {
+    "test_id": "CTX_TEST_23",
+    "question": "What is the primary function of red blood cells?",
+    "relevant_context": "Red blood cells carry oxygen from the lungs to the body tissues via the protein hemoglobin.",
+    "irrelevant_context": "The Colosseum in Rome was built during the Flavian dynasty.",
+    "conflicting_context": "Red blood cells are responsible for digesting food in the stomach.",
+    "v5": {
+      "test_a_no_context": "recursion is designed to manage average search complexity by traversing linked nodes recursively to e",
+      "test_b_relevant": "to understand how hash tables is executed, it modifies hardware resources by dividing the array into smaller par",
+      "test_c_irrelevant": "binary trees is designed to traverse unstructured memory using Last-In-First-Out protocols to manage",
+      "test_d_conflicting": "relational databases is designed to analyze sinusoidal frequencies by traversing linked nodes recursively to",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.143
+    },
+    "v9": {
+      "test_a_no_context": "It is essential because trapping light and matter when escape velocity exceeds light speed, which",
+      "test_b_relevant": "elational databases refers to a structured data storage engine. Its primary utility is to reliable data persi",
+      "test_c_irrelevant": "relational databases refers to a structured data storage engine. Its primary utility is to reliable data pers",
+      "test_d_conflicting": "Based on the passage, chrelational databases functions by enforcing ACID transactions and executing SQL query p",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.071
+    }
+  },
+  {
+    "test_id": "CTX_TEST_24",
+    "question": "What is cloud storage?",
+    "relevant_context": "Cloud storage is a model of computer data storage in which digital data is stored in logical pools on servers managed by a hosting provider.",
+    "irrelevant_context": "Giraffes are the tallest living terrestrial animals.",
+    "conflicting_context": "Cloud storage is the accumulation of actual rain clouds in the sky.",
+    "v5": {
+      "test_a_no_context": "sorting algorithms is designed to manage average search complexity by mapping hash keys to index slots using mathe",
+      "test_b_relevant": "computer vision is executed, it modifies digital image segments by passing raw vectors through multi-layered activation networks",
+      "test_c_irrelevant": "hash tables is designed to execute sinusoidal frequencies using Last-In-First-Out protocols to man",
+      "test_d_conflicting": "expert systems is designed to classify unseen text structures by parsing semantic syntax trees of human speech",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.2
+    },
+    "v9": {
+      "test_a_no_context": "It is essential because computing loss gradients with respect to model parameters and stepping downhill, which provides efficient",
+      "test_b_relevant": "refers to a ncresult surefers to the cosmic creation of chemical elements. Its primary utility is",
+      "test_c_irrelevant": "Based on the passage, refactoring patterns is improved code maintainability and reduced technical debt.According to",
+      "test_d_conflicting": "According to the passage, the main benefit of unsupervised clustering is discovery of latent structural patterns in data.Wh",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.15
+    }
+  },
+  {
+    "test_id": "CTX_TEST_25",
+    "question": "What is an IP address?",
+    "relevant_context": "An Internet Protocol (IP) address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.",
+    "irrelevant_context": "The Pacific Ocean is the deepest ocean basin on Earth.",
+    "conflicting_context": "An IP address is the physical postal mailing zip code of a computer store.",
+    "v5": {
+      "test_a_no_context": "vision is designed to classical mechanics to measure microscopic atomic systems which dictates that physical",
+      "test_b_relevant": "queues is designed to optimize unstructured memory by traversing linked nodes recursively to evaluate ma",
+      "test_c_irrelevant": "deep learning models is designed to classify digital image segments by parsing semantic syntax trees of human",
+      "test_d_conflicting": "by definition, computer vision is designed to evaluate weighted activation outputs in standard configurations.It is well-est",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.095
+    },
+    "v9": {
+      "test_a_no_context": "It is essential because integrating continuous boundary conditions across state variables, which provides precise",
+      "test_b_relevant": "the main benefit of RESTful API design refers to architectural constraints for web services. Its primary",
+      "test_c_irrelevant": "the main benefit of compilers refers to a program converting high-level code to machine code. Its primary",
+      "test_d_conflicting": "the main benefit of computer vision pipelines is oplays a crucial role by processing pixel grids through",
+      "context_utilized": false,
+      "relevant_word_overlap_ratio": 0.143
+    }
+  }
+]

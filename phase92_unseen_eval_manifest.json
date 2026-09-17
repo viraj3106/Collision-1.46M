@@ -1,0 +1,1882 @@
+[
+  {
+    "question_id": "UNSEEN_Q001",
+    "category": "General knowledge",
+    "question": "What is the capital of Japan?",
+    "expected_behavior": "Tokyo",
+    "keywords": [
+      "tokyo",
+      "japan",
+      "capital"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q002",
+    "category": "General knowledge",
+    "question": "What is the largest ocean on Earth?",
+    "expected_behavior": "Pacific Ocean",
+    "keywords": [
+      "pacific",
+      "ocean"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q003",
+    "category": "General knowledge",
+    "question": "Who wrote Romeo and Juliet?",
+    "expected_behavior": "William Shakespeare",
+    "keywords": [
+      "shakespeare",
+      "william"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q004",
+    "category": "General knowledge",
+    "question": "What is the currency of the United Kingdom?",
+    "expected_behavior": "Pound Sterling",
+    "keywords": [
+      "pound",
+      "sterling",
+      "gbp"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q005",
+    "category": "General knowledge",
+    "question": "Which planet is known as the Red Planet?",
+    "expected_behavior": "Mars",
+    "keywords": [
+      "mars",
+      "red planet"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q006",
+    "category": "General knowledge",
+    "question": "What is the hardest natural mineral?",
+    "expected_behavior": "Diamond",
+    "keywords": [
+      "diamond",
+      "carbon"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q007",
+    "category": "General knowledge",
+    "question": "In which country are the Great Pyramids of Giza located?",
+    "expected_behavior": "Egypt",
+    "keywords": [
+      "egypt",
+      "giza",
+      "pyramids"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q008",
+    "category": "General knowledge",
+    "question": "How many continents are there on Earth?",
+    "expected_behavior": "Seven",
+    "keywords": [
+      "seven",
+      "7",
+      "continents"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q009",
+    "category": "General knowledge",
+    "question": "What is the boiling point of water in Celsius?",
+    "expected_behavior": "100 degrees Celsius",
+    "keywords": [
+      "100",
+      "celsius",
+      "boiling"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q010",
+    "category": "General knowledge",
+    "question": "Who painted the Mona Lisa?",
+    "expected_behavior": "Leonardo da Vinci",
+    "keywords": [
+      "da vinci",
+      "leonardo"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q011",
+    "category": "General knowledge",
+    "question": "What is the primary language spoken in Brazil?",
+    "expected_behavior": "Portuguese",
+    "keywords": [
+      "portuguese",
+      "brazil"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q012",
+    "category": "General knowledge",
+    "question": "Which chemical element has the symbol O?",
+    "expected_behavior": "Oxygen",
+    "keywords": [
+      "oxygen",
+      "element"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q013",
+    "category": "General knowledge",
+    "question": "What is the longest river in the world?",
+    "expected_behavior": "Nile River (or Amazon)",
+    "keywords": [
+      "nile",
+      "amazon",
+      "river"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q014",
+    "category": "General knowledge",
+    "question": "How many days are in a leap year?",
+    "expected_behavior": "366 days",
+    "keywords": [
+      "366",
+      "leap",
+      "year"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q015",
+    "category": "General knowledge",
+    "question": "What is the capital of Australia?",
+    "expected_behavior": "Canberra",
+    "keywords": [
+      "canberra",
+      "australia"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q016",
+    "category": "Science",
+    "question": "Explain gravity simply.",
+    "expected_behavior": "Gravity is an attractive force pulling objects with mass toward each other.",
+    "keywords": [
+      "gravity",
+      "force",
+      "mass",
+      "attraction",
+      "pull"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q017",
+    "category": "Science",
+    "question": "What is photosynthesis?",
+    "expected_behavior": "The process by which plants use sunlight to convert water and carbon dioxide into oxygen and glucose.",
+    "keywords": [
+      "photosynthesis",
+      "plants",
+      "sunlight",
+      "light",
+      "energy",
+      "carbon dioxide",
+      "oxygen"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q018",
+    "category": "Science",
+    "question": "What are the three main states of matter?",
+    "expected_behavior": "Solid, liquid, and gas.",
+    "keywords": [
+      "solid",
+      "liquid",
+      "gas",
+      "matter"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q019",
+    "category": "Science",
+    "question": "What organ pumps blood throughout the human body?",
+    "expected_behavior": "The heart.",
+    "keywords": [
+      "heart",
+      "blood",
+      "pump"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q020",
+    "category": "Science",
+    "question": "Why is the sky blue?",
+    "expected_behavior": "Rayleigh scattering of sunlight by gas molecules in Earth's atmosphere.",
+    "keywords": [
+      "scattering",
+      "atmosphere",
+      "light",
+      "wavelength",
+      "blue"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q021",
+    "category": "Science",
+    "question": "What is the speed of light in vacuum?",
+    "expected_behavior": "Approximately 300,000 km/s (or 3x10^8 m/s).",
+    "keywords": [
+      "300,000",
+      "light",
+      "speed",
+      "vacuum"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q022",
+    "category": "Science",
+    "question": "What particles make up an atom?",
+    "expected_behavior": "Protons, neutrons, and electrons.",
+    "keywords": [
+      "protons",
+      "neutrons",
+      "electrons",
+      "atom"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q023",
+    "category": "Science",
+    "question": "What gas do humans inhale for cellular respiration?",
+    "expected_behavior": "Oxygen.",
+    "keywords": [
+      "oxygen",
+      "inhale",
+      "respiration"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q024",
+    "category": "Science",
+    "question": "What is Newton's first law of motion?",
+    "expected_behavior": "An object in motion stays in motion unless acted upon by an external net force.",
+    "keywords": [
+      "inertia",
+      "motion",
+      "force",
+      "rest",
+      "object"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q025",
+    "category": "Science",
+    "question": "What is the center of an atom called?",
+    "expected_behavior": "The nucleus.",
+    "keywords": [
+      "nucleus",
+      "center",
+      "atom"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q026",
+    "category": "Technology",
+    "question": "What is the difference between RAM and storage?",
+    "expected_behavior": "RAM is fast, volatile temporary memory; storage is non-volatile persistent data storage.",
+    "keywords": [
+      "ram",
+      "storage",
+      "volatile",
+      "memory",
+      "temporary",
+      "persistent"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q027",
+    "category": "Technology",
+    "question": "What does HTTP mean?",
+    "expected_behavior": "Hypertext Transfer Protocol.",
+    "keywords": [
+      "hypertext",
+      "transfer",
+      "protocol",
+      "http"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q028",
+    "category": "Technology",
+    "question": "What is artificial intelligence?",
+    "expected_behavior": "The simulation of human intelligence by computer systems and algorithms.",
+    "keywords": [
+      "artificial",
+      "intelligence",
+      "computer",
+      "machine",
+      "learning",
+      "algorithms"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q029",
+    "category": "Technology",
+    "question": "What is a database?",
+    "expected_behavior": "An organized collection of structured data stored electronically.",
+    "keywords": [
+      "database",
+      "data",
+      "storage",
+      "structured",
+      "sql",
+      "tables"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q030",
+    "category": "Technology",
+    "question": "What does CPU stand for?",
+    "expected_behavior": "Central Processing Unit.",
+    "keywords": [
+      "central",
+      "processing",
+      "unit",
+      "cpu"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q031",
+    "category": "Technology",
+    "question": "What is cloud computing?",
+    "expected_behavior": "Delivery of on-demand computing services over the internet.",
+    "keywords": [
+      "cloud",
+      "computing",
+      "servers",
+      "internet",
+      "services"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q032",
+    "category": "Technology",
+    "question": "What is an IP address?",
+    "expected_behavior": "A numerical label assigned to each device connected to a computer network.",
+    "keywords": [
+      "ip",
+      "address",
+      "network",
+      "device",
+      "protocol"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q033",
+    "category": "Technology",
+    "question": "What does URL stand for?",
+    "expected_behavior": "Uniform Resource Locator.",
+    "keywords": [
+      "uniform",
+      "resource",
+      "locator",
+      "url",
+      "web"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q034",
+    "category": "Technology",
+    "question": "What is the purpose of an operating system?",
+    "expected_behavior": "Manages computer hardware and software resources and provides common services.",
+    "keywords": [
+      "operating system",
+      "os",
+      "hardware",
+      "software",
+      "manage",
+      "resources"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q035",
+    "category": "Technology",
+    "question": "What is a firewall in computer networks?",
+    "expected_behavior": "A network security system that monitors and controls incoming and outgoing network traffic.",
+    "keywords": [
+      "firewall",
+      "security",
+      "traffic",
+      "network",
+      "block",
+      "protect"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q036",
+    "category": "Programming",
+    "question": "What is Python?",
+    "expected_behavior": "A high-level, interpreted, general-purpose programming language known for readability.",
+    "keywords": [
+      "python",
+      "language",
+      "programming",
+      "interpreted",
+      "code"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q037",
+    "category": "Programming",
+    "question": "What is HTML?",
+    "expected_behavior": "HyperText Markup Language, used to structure content on web pages.",
+    "keywords": [
+      "html",
+      "markup",
+      "web",
+      "structure",
+      "language"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q038",
+    "category": "Programming",
+    "question": "What is a variable in programming?",
+    "expected_behavior": "A named storage location in memory holding a value that can change.",
+    "keywords": [
+      "variable",
+      "value",
+      "memory",
+      "store",
+      "named"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q039",
+    "category": "Programming",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "expected_behavior": "Lists are mutable (modifiable), while tuples are immutable (read-only).",
+    "keywords": [
+      "mutable",
+      "immutable",
+      "list",
+      "tuple",
+      "change"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q040",
+    "category": "Programming",
+    "question": "What is a function in software code?",
+    "expected_behavior": "A reusable block of organized code designed to perform a single specific task.",
+    "keywords": [
+      "function",
+      "code",
+      "reusable",
+      "block",
+      "return",
+      "task"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q041",
+    "category": "Programming",
+    "question": "What does API stand for?",
+    "expected_behavior": "Application Programming Interface.",
+    "keywords": [
+      "application",
+      "programming",
+      "interface",
+      "api"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q042",
+    "category": "Programming",
+    "question": "What is a loop in programming?",
+    "expected_behavior": "A control structure that repeats a block of code as long as a condition is met.",
+    "keywords": [
+      "loop",
+      "repeat",
+      "iteration",
+      "for",
+      "while",
+      "code"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q043",
+    "category": "Programming",
+    "question": "What is an array?",
+    "expected_behavior": "A data structure containing a collection of elements identified by index or key.",
+    "keywords": [
+      "array",
+      "elements",
+      "index",
+      "collection",
+      "data"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q044",
+    "category": "Programming",
+    "question": "What is recursion in computer science?",
+    "expected_behavior": "A method where the solution to a problem depends on solutions to smaller instances of the same problem, typically a function calling itself.",
+    "keywords": [
+      "recursion",
+      "function",
+      "itself",
+      "base case",
+      "call"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q045",
+    "category": "Programming",
+    "question": "What is CSS used for?",
+    "expected_behavior": "Cascading Style Sheets, used to style and lay out web pages.",
+    "keywords": [
+      "css",
+      "style",
+      "design",
+      "layout",
+      "web",
+      "html"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q046",
+    "category": "Mathematics",
+    "question": "What is 2 + 2?",
+    "expected_behavior": "4",
+    "keywords": [
+      "4",
+      "four"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q047",
+    "category": "Mathematics",
+    "question": "What is 15 multiplied by 4?",
+    "expected_behavior": "60",
+    "keywords": [
+      "60",
+      "sixty"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q048",
+    "category": "Mathematics",
+    "question": "What is the square root of 64?",
+    "expected_behavior": "8",
+    "keywords": [
+      "8",
+      "eight"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q049",
+    "category": "Mathematics",
+    "question": "What is the perimeter of a rectangle with length 5 and width 3?",
+    "expected_behavior": "16",
+    "keywords": [
+      "16",
+      "perimeter",
+      "5",
+      "3"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q050",
+    "category": "Mathematics",
+    "question": "What is 100 divided by 5?",
+    "expected_behavior": "20",
+    "keywords": [
+      "20",
+      "twenty"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q051",
+    "category": "Mathematics",
+    "question": "What is a prime number?",
+    "expected_behavior": "A natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.",
+    "keywords": [
+      "prime",
+      "divisible",
+      "1",
+      "itself",
+      "factors"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q052",
+    "category": "Mathematics",
+    "question": "What is the value of Pi rounded to two decimal places?",
+    "expected_behavior": "3.14",
+    "keywords": [
+      "3.14",
+      "pi"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q053",
+    "category": "Mathematics",
+    "question": "What is 7 squared?",
+    "expected_behavior": "49",
+    "keywords": [
+      "49",
+      "forty-nine"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q054",
+    "category": "Mathematics",
+    "question": "What is an acute angle?",
+    "expected_behavior": "An angle smaller than 90 degrees.",
+    "keywords": [
+      "acute",
+      "angle",
+      "90",
+      "degrees",
+      "less"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q055",
+    "category": "Mathematics",
+    "question": "What is 12 minus 7?",
+    "expected_behavior": "5",
+    "keywords": [
+      "5",
+      "five"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q056",
+    "category": "Explanation",
+    "question": "Why do seasons change on Earth?",
+    "expected_behavior": "Earth's 23.5 degree axial tilt as it orbits the Sun causes varying angles of sunlight.",
+    "keywords": [
+      "tilt",
+      "axis",
+      "orbit",
+      "sun",
+      "sunlight",
+      "earth",
+      "seasons"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q057",
+    "category": "Explanation",
+    "question": "How does an airplane fly?",
+    "expected_behavior": "Wings create aerodynamic lift by deflecting air downward and generating pressure differential according to Bernoulli's principle and Newton's third law.",
+    "keywords": [
+      "wings",
+      "lift",
+      "air",
+      "pressure",
+      "thrust",
+      "aerodynamic"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q058",
+    "category": "Explanation",
+    "question": "Why is water essential for living organisms?",
+    "expected_behavior": "Water acts as a solvent for biochemical reactions, regulates temperature, and transports nutrients.",
+    "keywords": [
+      "water",
+      "solvent",
+      "biochemical",
+      "cells",
+      "metabolism",
+      "temperature"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q059",
+    "category": "Explanation",
+    "question": "How do vaccines protect against disease?",
+    "expected_behavior": "Vaccines train the immune system to recognize pathogens by introducing harmless antigens or mRNA.",
+    "keywords": [
+      "vaccines",
+      "immune",
+      "antibodies",
+      "pathogen",
+      "antigen",
+      "protect"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q060",
+    "category": "Explanation",
+    "question": "Why does ice float on liquid water?",
+    "expected_behavior": "Ice has a crystalline structure with lower density than liquid water.",
+    "keywords": [
+      "ice",
+      "density",
+      "float",
+      "structure",
+      "water",
+      "less dense"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q061",
+    "category": "Explanation",
+    "question": "How does a microwave oven heat food?",
+    "expected_behavior": "Microwaves produce electromagnetic radiation that vibrates water and polar molecules in food, generating thermal energy.",
+    "keywords": [
+      "microwaves",
+      "radiation",
+      "water",
+      "molecules",
+      "heat",
+      "vibrate"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q062",
+    "category": "Explanation",
+    "question": "Why do leaves change color in autumn?",
+    "expected_behavior": "Chlorophyll breaks down due to shorter daylight and cooler temperatures, revealing yellow and orange carotenoids.",
+    "keywords": [
+      "chlorophyll",
+      "autumn",
+      "fall",
+      "pigment",
+      "leaves",
+      "color",
+      "temperature"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q063",
+    "category": "Explanation",
+    "question": "How do search engines index web pages?",
+    "expected_behavior": "Web crawlers download web pages, extract text and links, and build inverted indexes for rapid search retrieval.",
+    "keywords": [
+      "crawlers",
+      "index",
+      "search",
+      "web",
+      "pages",
+      "links",
+      "keywords"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q064",
+    "category": "Explanation",
+    "question": "Why is sleep necessary for human health?",
+    "expected_behavior": "Sleep enables cellular repair, memory consolidation, brain waste clearance, and hormonal regulation.",
+    "keywords": [
+      "sleep",
+      "repair",
+      "memory",
+      "brain",
+      "health",
+      "rest"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q065",
+    "category": "Explanation",
+    "question": "How do solar panels generate electricity?",
+    "expected_behavior": "Photovoltaic cells absorb photons from sunlight, releasing electrons and creating an electrical current.",
+    "keywords": [
+      "solar",
+      "photovoltaic",
+      "photons",
+      "electrons",
+      "current",
+      "sunlight",
+      "electricity"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q066",
+    "category": "Everyday reasoning",
+    "question": "If it is raining outside, what should you take before leaving home?",
+    "expected_behavior": "An umbrella or raincoat.",
+    "keywords": [
+      "umbrella",
+      "raincoat",
+      "rain",
+      "coat",
+      "jacket"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q067",
+    "category": "Everyday reasoning",
+    "question": "Why should you look both ways before crossing a street?",
+    "expected_behavior": "To check for oncoming vehicles and avoid collisions.",
+    "keywords": [
+      "traffic",
+      "cars",
+      "vehicles",
+      "safe",
+      "crossing",
+      "look"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q068",
+    "category": "Everyday reasoning",
+    "question": "If you put ice cream in an oven, what will happen?",
+    "expected_behavior": "The ice cream will melt into liquid due to the heat.",
+    "keywords": [
+      "melt",
+      "heat",
+      "liquid",
+      "warm"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q069",
+    "category": "Everyday reasoning",
+    "question": "Why is regular exercise recommended for health?",
+    "expected_behavior": "It strengthens the cardiovascular system, improves mood, and maintains physical fitness.",
+    "keywords": [
+      "exercise",
+      "health",
+      "heart",
+      "fitness",
+      "muscles",
+      "body"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q070",
+    "category": "Everyday reasoning",
+    "question": "If your phone battery is at 1%, what should you do?",
+    "expected_behavior": "Connect it to a charger or enable power saving mode.",
+    "keywords": [
+      "charge",
+      "charger",
+      "plug",
+      "battery",
+      "power"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q071",
+    "category": "Everyday reasoning",
+    "question": "Why do people wear coats in winter?",
+    "expected_behavior": "Coats provide thermal insulation to keep the body warm in cold weather.",
+    "keywords": [
+      "warm",
+      "cold",
+      "winter",
+      "insulation",
+      "coat"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q072",
+    "category": "Everyday reasoning",
+    "question": "If a milk carton is kept unrefrigerated for several days, what will happen?",
+    "expected_behavior": "Bacteria will multiply and spoil/sour the milk.",
+    "keywords": [
+      "spoil",
+      "sour",
+      "bacteria",
+      "bad",
+      "rotten",
+      "curdle"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q073",
+    "category": "Everyday reasoning",
+    "question": "Why do cars have seatbelts?",
+    "expected_behavior": "To restrain passengers and reduce injury during sudden stops or accidents.",
+    "keywords": [
+      "seatbelt",
+      "safety",
+      "restrain",
+      "injury",
+      "accident",
+      "crash",
+      "protect"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q074",
+    "category": "Everyday reasoning",
+    "question": "If you want to bake a cake, what appliance do you use?",
+    "expected_behavior": "An oven.",
+    "keywords": [
+      "oven",
+      "bake",
+      "cake"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q075",
+    "category": "Everyday reasoning",
+    "question": "Why do traffic lights have green, yellow, and red colors?",
+    "expected_behavior": "To clearly signal when to go (green), prepare to stop (yellow), and stop (red).",
+    "keywords": [
+      "stop",
+      "go",
+      "red",
+      "green",
+      "yellow",
+      "signal",
+      "traffic"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q076",
+    "category": "Conversation",
+    "question": "Hello! How are you today?",
+    "expected_behavior": "A polite greeting response.",
+    "keywords": [
+      "hello",
+      "hi",
+      "doing",
+      "well",
+      "great",
+      "assist",
+      "help"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q077",
+    "category": "Conversation",
+    "question": "Can you help me learn how to code?",
+    "expected_behavior": "An encouraging affirmation offering to help with programming.",
+    "keywords": [
+      "help",
+      "code",
+      "learn",
+      "programming",
+      "start",
+      "python"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q078",
+    "category": "Conversation",
+    "question": "Thank you for your assistance!",
+    "expected_behavior": "A polite acknowledgment such as 'You are welcome!'.",
+    "keywords": [
+      "welcome",
+      "pleasure",
+      "help",
+      "glad"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q079",
+    "category": "Conversation",
+    "question": "What can you do?",
+    "expected_behavior": "Explain general language capabilities like answering questions and writing text.",
+    "keywords": [
+      "help",
+      "answer",
+      "questions",
+      "text",
+      "information",
+      "assist"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q080",
+    "category": "Conversation",
+    "question": "Good morning!",
+    "expected_behavior": "A friendly morning greeting.",
+    "keywords": [
+      "good morning",
+      "morning",
+      "hello",
+      "hi",
+      "day"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q081",
+    "category": "Conversation",
+    "question": "What is your favorite topic to talk about?",
+    "expected_behavior": "A general conversational response about science, technology, or learning.",
+    "keywords": [
+      "topic",
+      "science",
+      "technology",
+      "learning",
+      "discuss",
+      "enjoy"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q082",
+    "category": "Conversation",
+    "question": "Tell me a fun thought for today.",
+    "expected_behavior": "An interesting or uplifting thought.",
+    "keywords": [
+      "thought",
+      "world",
+      "day",
+      "interesting",
+      "wonder",
+      "curiosity"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q083",
+    "category": "Conversation",
+    "question": "I feel tired after work.",
+    "expected_behavior": "An empathetic response suggesting rest and relaxation.",
+    "keywords": [
+      "rest",
+      "relax",
+      "break",
+      "tired",
+      "sleep",
+      "evening"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q084",
+    "category": "Conversation",
+    "question": "Have a nice weekend!",
+    "expected_behavior": "A courteous wish for an enjoyable weekend.",
+    "keywords": [
+      "weekend",
+      "thank you",
+      "nice",
+      "enjoy",
+      "great"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q085",
+    "category": "Conversation",
+    "question": "See you later!",
+    "expected_behavior": "A polite farewell.",
+    "keywords": [
+      "bye",
+      "see you",
+      "goodbye",
+      "later",
+      "take care"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q086",
+    "category": "Creative generation",
+    "question": "Write a short poem about the moon in the night sky.",
+    "expected_behavior": "A poetic stanza describing the glowing moon and night stars.",
+    "keywords": [
+      "moon",
+      "night",
+      "sky",
+      "stars",
+      "glow",
+      "silver",
+      "light"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q087",
+    "category": "Creative generation",
+    "question": "Invent a creative name for a coffee shop for book lovers.",
+    "expected_behavior": "A creative book-and-coffee themed name (e.g. Chapter & Chai, Pages & Perk).",
+    "keywords": [
+      "books",
+      "pages",
+      "coffee",
+      "brew",
+      "chapter",
+      "cafe",
+      "cup",
+      "reads"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q088",
+    "category": "Creative generation",
+    "question": "Write a one-sentence story about a mysterious locked door.",
+    "expected_behavior": "A suspenseful one-sentence tale about opening a hidden door.",
+    "keywords": [
+      "door",
+      "key",
+      "locked",
+      "behind",
+      "shadow",
+      "opened",
+      "mystery"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q089",
+    "category": "Creative generation",
+    "question": "Describe a futuristic city in the year 3000.",
+    "expected_behavior": "A descriptive passage featuring flying vehicles, towering spires, and clean energy.",
+    "keywords": [
+      "city",
+      "towers",
+      "flying",
+      "sky",
+      "future",
+      "lights",
+      "technology"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q090",
+    "category": "Creative generation",
+    "question": "Write a slogan for an eco-friendly water bottle.",
+    "expected_behavior": "A catchy eco-friendly promotional phrase.",
+    "keywords": [
+      "bottle",
+      "green",
+      "earth",
+      "pure",
+      "clean",
+      "planet",
+      "water"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q091",
+    "category": "Creative generation",
+    "question": "Create a brief dialogue between a cat and a dog discussing dinner.",
+    "expected_behavior": "A playful conversation between a cat and a dog.",
+    "keywords": [
+      "cat",
+      "dog",
+      "food",
+      "dinner",
+      "bark",
+      "meow",
+      "bowl"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q092",
+    "category": "Creative generation",
+    "question": "Describe the sound of rain falling on a metal roof.",
+    "expected_behavior": "Sensory descriptions of rhythmic tapping and steady patter.",
+    "keywords": [
+      "rain",
+      "metal",
+      "roof",
+      "rhythm",
+      "sound",
+      "patter",
+      "drops",
+      "tapping"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q093",
+    "category": "Creative generation",
+    "question": "Write a warm welcome message for a community garden.",
+    "expected_behavior": "An inviting greeting encouraging planting and teamwork.",
+    "keywords": [
+      "welcome",
+      "garden",
+      "grow",
+      "community",
+      "plants",
+      "nature",
+      "seeds"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q094",
+    "category": "Creative generation",
+    "question": "Invent a name and brief description for a newly discovered magical forest.",
+    "expected_behavior": "A whimsical forest name with glowing flora or mystical trees.",
+    "keywords": [
+      "forest",
+      "trees",
+      "glow",
+      "magic",
+      "whispering",
+      "luminescent",
+      "woods"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q095",
+    "category": "Creative generation",
+    "question": "Write a three-line thank you note to a teacher.",
+    "expected_behavior": "A brief, appreciative note thanking an instructor.",
+    "keywords": [
+      "thank you",
+      "teacher",
+      "learn",
+      "guidance",
+      "inspire",
+      "class"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q096",
+    "category": "Instruction following",
+    "question": "List exactly three colors of the rainbow.",
+    "expected_behavior": "Three colors such as Red, Green, Blue.",
+    "keywords": [
+      "red",
+      "orange",
+      "yellow",
+      "green",
+      "blue",
+      "indigo",
+      "violet"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q097",
+    "category": "Instruction following",
+    "question": "Write the word 'COLLISION' in all capital letters.",
+    "expected_behavior": "COLLISION",
+    "keywords": [
+      "collision"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q098",
+    "category": "Instruction following",
+    "question": "Name two programming languages that start with the letter P.",
+    "expected_behavior": "Python, PHP, Perl, Pascal, or Prolog.",
+    "keywords": [
+      "python",
+      "php",
+      "perl",
+      "pascal",
+      "prolog"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q099",
+    "category": "Instruction following",
+    "question": "Count from 1 to 5 separated by commas.",
+    "expected_behavior": "1, 2, 3, 4, 5",
+    "keywords": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  },
+  {
+    "question_id": "UNSEEN_Q100",
+    "category": "Instruction following",
+    "question": "State whether an elephant is larger than a mouse in one word.",
+    "expected_behavior": "Yes or Larger.",
+    "keywords": [
+      "yes",
+      "larger",
+      "elephant",
+      "true"
+    ],
+    "source_status": "SYNTHESIZED_UNSEEN_BENCHMARK",
+    "leakage_check": {
+      "in_v5_training": false,
+      "in_v9_training": false,
+      "status": "PASSED_ZERO_LEAKAGE"
+    }
+  }
+]

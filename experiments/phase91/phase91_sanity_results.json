@@ -1,0 +1,190 @@
+{
+  "control_sanity_accuracy": 0.125,
+  "v9_sanity_accuracy": 0.125,
+  "control_details": {
+    "accuracy": 0.125,
+    "correct_count": 1,
+    "total_count": 8,
+    "details": [
+      {
+        "question": "What is 2 + 2?",
+        "answer": "(Le cle (Levectrees is that it modion systems is d)\nAns to optimize hardware resources by t",
+        "keywords": [
+          "4",
+          "four"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What language is Python?",
+        "answer": "(Levectrees systems is experts that it modifies to optimize digital image segments by parsing semantic syn",
+        "keywords": [
+          "programming",
+          "language",
+          "python"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is HTML?",
+        "answer": "2)\nAnswer: stacks is designed to traverse unstructured memory by dividing the array into smaller par",
+        "keywords": [
+          "markup",
+          "hypertext",
+          "html",
+          "web"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is CSS?",
+        "answer": "(Level 1)\nAnswer: When recursion is executed, it modifies hardware resources by travers",
+        "keywords": [
+          "style",
+          "stylesheet",
+          "css",
+          "formatting"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is JavaScript?",
+        "answer": "(Levector dot prod)\nAnspace systems is due to transform sinusoidal frequencies by traversing",
+        "keywords": [
+          "scripting",
+          "javascript",
+          "web",
+          "programming"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What does HTTP stand for?",
+        "answer": "(Levect systems inter with bevecause it is configured to optimize calculated model gradients? (Level 1)\nAn",
+        "keywords": [
+          "hypertext",
+          "transfer",
+          "protocol",
+          "http"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is a database?",
+        "answer": "(Module B)\nAnswer: relational databases is designed to traverse sinusoidal frequencies by tr",
+        "keywords": [
+          "storage",
+          "data",
+          "database",
+          "structured",
+          "query"
+        ],
+        "correct": true
+      },
+      {
+        "question": "What is an API?",
+        "answer": "(Levect systems is to d)\nAnspural to understand how decision trees is executed, it modifies calculated",
+        "keywords": [
+          "interface",
+          "application",
+          "api",
+          "service"
+        ],
+        "correct": false
+      }
+    ]
+  },
+  "v9_details": {
+    "accuracy": 0.125,
+    "correct_count": 1,
+    "total_count": 8,
+    "details": [
+      {
+        "question": "What is 2 + 2?",
+        "answer": "Answer: differential equations refers to equations relating functions to their rates of change. Its prim",
+        "keywords": [
+          "4",
+          "four"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What language is Python?",
+        "answer": "In high-throughput enterprise environments, Answer: regularization techniques refers to an iterative optimization algorithm.",
+        "keywords": [
+          "programming",
+          "language",
+          "python"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is HTML?",
+        "answer": "In high-throughput enterprise environments, Answer: asynchronous HTTP requests refers to non-bloc",
+        "keywords": [
+          "markup",
+          "hypertext",
+          "html",
+          "web"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is CSS?",
+        "answer": "In high-throughput enterprise environments, Answer: CSS flexbox layouts refers to a modern CSS",
+        "keywords": [
+          "style",
+          "stylesheet",
+          "css",
+          "formatting"
+        ],
+        "correct": true
+      },
+      {
+        "question": "What is JavaScript?",
+        "answer": "In practical field deployments, Answer: hash maps refers to an associative array that maps k",
+        "keywords": [
+          "scripting",
+          "javascript",
+          "web",
+          "programming"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What does HTTP stand for?",
+        "answer": "In high-throughput enterprise environments, Answer: It is essential because fetching remote JS",
+        "keywords": [
+          "hypertext",
+          "transfer",
+          "protocol",
+          "http"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is a database?",
+        "answer": "In high-throughput enterprise environments, Answer: binary search trees refers to a node-based bin",
+        "keywords": [
+          "storage",
+          "data",
+          "database",
+          "structured",
+          "query"
+        ],
+        "correct": false
+      },
+      {
+        "question": "What is an API?",
+        "answer": "In high-throughput enterprise environments, Answer: refactoring patterns refers to code restructuring techniques.",
+        "keywords": [
+          "interface",
+          "application",
+          "api",
+          "service"
+        ],
+        "correct": false
+      }
+    ]
+  }
+}

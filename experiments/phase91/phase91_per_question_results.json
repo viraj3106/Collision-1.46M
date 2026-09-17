@@ -1,0 +1,3846 @@
+{
+  "control_per_question": [
+    {
+      "question_id": 1,
+      "query": "",
+      "expected_answer": "MSFT",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 2,
+      "query": "",
+      "expected_answer": "Keir Starmer",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 3,
+      "query": "",
+      "expected_answer": "PyTorch 2.4",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 4,
+      "query": "",
+      "expected_answer": "Active exoplanet survey",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 5,
+      "query": "",
+      "expected_answer": "AMZN",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 6,
+      "query": "",
+      "expected_answer": "Pre-release testing",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 7,
+      "query": "",
+      "expected_answer": "Olaf Scholz",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 8,
+      "query": "",
+      "expected_answer": "Node 22 LTS",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 9,
+      "query": "",
+      "expected_answer": "Crypto market fluctuations",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 10,
+      "query": "",
+      "expected_answer": "Sundar Pichai",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 11,
+      "query": "",
+      "expected_answer": "Kernel 6.10",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 12,
+      "query": "",
+      "expected_answer": "Assembly phase",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 13,
+      "query": "",
+      "expected_answer": "Rust 1.80",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 14,
+      "query": "",
+      "expected_answer": "Planning phase",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 15,
+      "query": "",
+      "expected_answer": "TSLA",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 16,
+      "query": "",
+      "expected_answer": "Multinational agreements",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 17,
+      "query": "",
+      "expected_answer": "Docker 26.1",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 18,
+      "query": "",
+      "expected_answer": "Emmanuel Macron",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 19,
+      "query": "",
+      "expected_answer": "Superconducting qubit testing",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 20,
+      "query": "",
+      "expected_answer": "META",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 21,
+      "query": "",
+      "expected_answer": "Tech conference announcements",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 22,
+      "query": "",
+      "expected_answer": "Environmental treaty updates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 23,
+      "query": "",
+      "expected_answer": "Cybersecurity announcements",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 24,
+      "query": "",
+      "expected_answer": "Financial headlines",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 25,
+      "query": "",
+      "expected_answer": "Rocket launch test results",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 26,
+      "query": "",
+      "expected_answer": "Semiconductor node updates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 27,
+      "query": "",
+      "expected_answer": "European energy policy",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 28,
+      "query": "",
+      "expected_answer": "Space agency briefings",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 29,
+      "query": "",
+      "expected_answer": "Robotics expo highlights",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 30,
+      "query": "",
+      "expected_answer": "Security advisories",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 31,
+      "query": "",
+      "expected_answer": "Climate summit updates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 32,
+      "query": "",
+      "expected_answer": "Medical research breakthroughs",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 33,
+      "query": "",
+      "expected_answer": "Trade agreement updates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 34,
+      "query": "",
+      "expected_answer": "6G telecommunications research",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 35,
+      "query": "",
+      "expected_answer": "Autonomous vehicle testing",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 36,
+      "query": "",
+      "expected_answer": "Astronomy consortium findings",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 37,
+      "query": "",
+      "expected_answer": "OS enterprise patches",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 38,
+      "query": "",
+      "expected_answer": "Developer Conference highlights",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 39,
+      "query": "",
+      "expected_answer": "Power grid updates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 40,
+      "query": "",
+      "expected_answer": "Global news headlines",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 41,
+      "query": "",
+      "expected_answer": "Tokyo",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 42,
+      "query": "",
+      "expected_answer": "CO2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 43,
+      "query": "",
+      "expected_answer": "1945",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 44,
+      "query": "",
+      "expected_answer": "79",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 45,
+      "query": "",
+      "expected_answer": "Amazon River",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 46,
+      "query": "",
+      "expected_answer": "343 m/s",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 47,
+      "query": "",
+      "expected_answer": "Ottawa",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 48,
+      "query": "",
+      "expected_answer": "1064 \u00b0C",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 49,
+      "query": "",
+      "expected_answer": "1945",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 50,
+      "query": "",
+      "expected_answer": "Carbon dioxide",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 51,
+      "query": "",
+      "expected_answer": "Swiss Franc",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 52,
+      "query": "",
+      "expected_answer": "Fe",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 53,
+      "query": "",
+      "expected_answer": "9.81 m/s^2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 54,
+      "query": "",
+      "expected_answer": "Brasilia",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 55,
+      "query": "",
+      "expected_answer": "206",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 56,
+      "query": "",
+      "expected_answer": "Na",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 57,
+      "query": "",
+      "expected_answer": "Mariana Trench",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 58,
+      "query": "",
+      "expected_answer": "1789",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 59,
+      "query": "",
+      "expected_answer": "Cairo",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 60,
+      "query": "",
+      "expected_answer": "Neutral / zero",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 61,
+      "query": "",
+      "expected_answer": "{k: v for k, v in iterable}",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 62,
+      "query": "",
+      "expected_answer": "Non-blocking asynchronous coroutine execution",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 63,
+      "query": "",
+      "expected_answer": "JSON.parse()",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 64,
+      "query": "",
+      "expected_answer": "Reapplies commits on top of another base branch",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 65,
+      "query": "",
+      "expected_answer": "def factorial(n): return 1 if n<=1 else n*factorial(n-1)",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 66,
+      "query": "",
+      "expected_answer": "O(1) average time",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 67,
+      "query": "",
+      "expected_answer": "let mut x = value;",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 68,
+      "query": "",
+      "expected_answer": "Groups rows sharing a property into summary rows",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 69,
+      "query": "",
+      "expected_answer": "Function wrapping another function to extend behavior",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 70,
+      "query": "",
+      "expected_answer": "pip list or pip freeze",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 71,
+      "query": "",
+      "expected_answer": "Lists are mutable, tuples are immutable",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 72,
+      "query": "",
+      "expected_answer": "@app.get('/') decorator",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 73,
+      "query": "",
+      "expected_answer": "Accessing the value stored at the memory location pointed to",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 74,
+      "query": "",
+      "expected_answer": "docker build -t name .",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 75,
+      "query": "",
+      "expected_answer": "def my_gen(): yield 1",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 76,
+      "query": "",
+      "expected_answer": "Cross-Origin Resource Sharing",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 77,
+      "query": "",
+      "expected_answer": "Automatic memory management freeing unreferenced objects",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 78,
+      "query": "",
+      "expected_answer": "dict1 | dict2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 79,
+      "query": "",
+      "expected_answer": "Two threads waiting indefinitely for locks held by each other",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 80,
+      "query": "",
+      "expected_answer": "git init",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 81,
+      "query": "",
+      "expected_answer": "Cannot simultaneously know exact position and momentum of a particle",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 82,
+      "query": "",
+      "expected_answer": "Protein synthesis",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 83,
+      "query": "",
+      "expected_answer": "V = I * R",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 84,
+      "query": "",
+      "expected_answer": "Entropy of an isolated system always increases over time",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 85,
+      "query": "",
+      "expected_answer": "Copying double-stranded DNA molecule prior to cell division",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 86,
+      "query": "",
+      "expected_answer": "F = m * a",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 87,
+      "query": "",
+      "expected_answer": "Fission splits heavy nuclei; fusion combines light nuclei",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 88,
+      "query": "",
+      "expected_answer": "6CO2 + 6H2O + light -> C6H12O6 + 6O2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 89,
+      "query": "",
+      "expected_answer": "Gravity is the curvature of spacetime caused by mass and energy",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 90,
+      "query": "",
+      "expected_answer": "Lower activation energy to speed up reaction rates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 91,
+      "query": "",
+      "expected_answer": "Planets orbit the Sun in ellipses with the Sun at one focus",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 92,
+      "query": "",
+      "expected_answer": "Range of all types of EM radiation from radio waves to gamma rays",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 93,
+      "query": "",
+      "expected_answer": "Net movement of water across a semipermeable membrane from low to high solute concentration",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 94,
+      "query": "",
+      "expected_answer": "Increase in fluid speed occurs simultaneously with decrease in static pressure",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 95,
+      "query": "",
+      "expected_answer": "Primary energy currency of the cell",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 96,
+      "query": "",
+      "expected_answer": "System existing in multiple quantum states simultaneously until measured",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 97,
+      "query": "",
+      "expected_answer": "Speed of light equals wavelength times frequency",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 98,
+      "query": "",
+      "expected_answer": "Earth's outer shell is divided into large moving lithospheric plates",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 99,
+      "query": "",
+      "expected_answer": "6.022 x 10^23 particles per mole",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 100,
+      "query": "",
+      "expected_answer": "Change in frequency of a wave in relation to an observer moving relative to the source",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 101,
+      "query": "",
+      "expected_answer": "Leonardo da Vinci",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 102,
+      "query": "",
+      "expected_answer": "Blue Whale",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 103,
+      "query": "",
+      "expected_answer": "Portuguese",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 104,
+      "query": "",
+      "expected_answer": "366 days",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 105,
+      "query": "",
+      "expected_answer": "George Orwell",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 106,
+      "query": "",
+      "expected_answer": "Flour",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 107,
+      "query": "",
+      "expected_answer": "Rome",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 108,
+      "query": "",
+      "expected_answer": "6 sides",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 109,
+      "query": "",
+      "expected_answer": "Charles Darwin",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 110,
+      "query": "",
+      "expected_answer": "Pound Sterling",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 111,
+      "query": "",
+      "expected_answer": "Mount Everest",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 112,
+      "query": "",
+      "expected_answer": "Oxygen",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 113,
+      "query": "",
+      "expected_answer": "Alexander Graham Bell",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 114,
+      "query": "",
+      "expected_answer": "2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "CORRECT",
+      "correct": true
+    },
+    {
+      "question_id": 115,
+      "query": "",
+      "expected_answer": "Thermometer",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 116,
+      "query": "",
+      "expected_answer": "Madrid",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 117,
+      "query": "",
+      "expected_answer": "7 colors",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 118,
+      "query": "",
+      "expected_answer": "William Shakespeare",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 119,
+      "query": "",
+      "expected_answer": "Beijing",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 120,
+      "query": "",
+      "expected_answer": "Carbon dioxide",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 121,
+      "query": "",
+      "expected_answer": "100",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 122,
+      "query": "",
+      "expected_answer": "3",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 123,
+      "query": "",
+      "expected_answer": "40",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 124,
+      "query": "",
+      "expected_answer": "6x",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 125,
+      "query": "",
+      "expected_answer": "9",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 126,
+      "query": "",
+      "expected_answer": "60 mph",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 127,
+      "query": "",
+      "expected_answer": "20",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 128,
+      "query": "",
+      "expected_answer": "28",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 129,
+      "query": "",
+      "expected_answer": "24",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 130,
+      "query": "",
+      "expected_answer": "32",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 131,
+      "query": "",
+      "expected_answer": "30",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 132,
+      "query": "",
+      "expected_answer": "18",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 133,
+      "query": "",
+      "expected_answer": "180 degrees",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 134,
+      "query": "",
+      "expected_answer": "56",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 135,
+      "query": "",
+      "expected_answer": "5",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 136,
+      "query": "",
+      "expected_answer": "32",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 137,
+      "query": "",
+      "expected_answer": "9",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 138,
+      "query": "",
+      "expected_answer": "27",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 139,
+      "query": "",
+      "expected_answer": "81",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 140,
+      "query": "",
+      "expected_answer": "Yes",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 141,
+      "query": "",
+      "expected_answer": "Computer algorithms learning from data",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 142,
+      "query": "",
+      "expected_answer": "Gravitational attraction between masses",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 143,
+      "query": "",
+      "expected_answer": "Branch of physics studying matter at atomic scales",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 144,
+      "query": "",
+      "expected_answer": "Simulation of human intelligence by computer systems",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 145,
+      "query": "",
+      "expected_answer": "Readability, performance, and ecosystem",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 146,
+      "query": "",
+      "expected_answer": "Data stored on remote servers accessed via internet",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 147,
+      "query": "",
+      "expected_answer": "Study of fundamental questions about existence and knowledge",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 148,
+      "query": "",
+      "expected_answer": "Protection of computer systems from digital attacks",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 149,
+      "query": "",
+      "expected_answer": "Crawling, indexing, and ranking web pages",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 150,
+      "query": "",
+      "expected_answer": "Interdisciplinary field using methods to extract knowledge from data",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 151,
+      "query": "",
+      "expected_answer": "Systematic application of engineering to software development",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 152,
+      "query": "",
+      "expected_answer": "Electric motor powered by battery pack",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 153,
+      "query": "",
+      "expected_answer": "Decentralized distributed ledger recording transactions",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 154,
+      "query": "",
+      "expected_answer": "Einstein's theories of Special and General Relativity",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 155,
+      "query": "",
+      "expected_answer": "Subset of machine learning using multi-layer neural networks",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 156,
+      "query": "",
+      "expected_answer": "Executes instructions via fetch-decode-execute cycle",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 157,
+      "query": "",
+      "expected_answer": "Software with source code made available under permissive license",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 158,
+      "query": "",
+      "expected_answer": "Long-term shifts in temperatures and weather patterns",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 159,
+      "query": "",
+      "expected_answer": "Practice of securing communication in the presence of adversaries",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 160,
+      "query": "",
+      "expected_answer": "System software managing computer hardware and application software",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 161,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 162,
+      "query": "",
+      "expected_answer": "private / unknown",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 163,
+      "query": "",
+      "expected_answer": "cannot be counted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 164,
+      "query": "",
+      "expected_answer": "future event",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 165,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 166,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 167,
+      "query": "",
+      "expected_answer": "unlisted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 168,
+      "query": "",
+      "expected_answer": "unknown",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 169,
+      "query": "",
+      "expected_answer": "cannot be counted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 170,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 171,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 172,
+      "query": "",
+      "expected_answer": "private / unobservable",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 173,
+      "query": "",
+      "expected_answer": "unmeasured",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 174,
+      "query": "",
+      "expected_answer": "future event",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 175,
+      "query": "",
+      "expected_answer": "unrecorded",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 176,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 177,
+      "query": "",
+      "expected_answer": "private",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 178,
+      "query": "",
+      "expected_answer": "unweighed",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 179,
+      "query": "",
+      "expected_answer": "future outcome",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 180,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 181,
+      "query": "",
+      "expected_answer": "Python 9.0 does not exist",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 182,
+      "query": "",
+      "expected_answer": "No human has walked on Mars",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 183,
+      "query": "",
+      "expected_answer": "Atlantis is a mythical city",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 184,
+      "query": "",
+      "expected_answer": "Toyota Camry does not have a hyperdrive engine",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 185,
+      "query": "",
+      "expected_answer": "Delta Airlines does not fly to Pluto",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 186,
+      "query": "",
+      "expected_answer": "Warp drive interstellar trials do not exist",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 187,
+      "query": "",
+      "expected_answer": "Abraham Lincoln never won a Nobel Prize",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 188,
+      "query": "",
+      "expected_answer": "No human colonies or currency exist on the Moon",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 189,
+      "query": "",
+      "expected_answer": "Windows 11 cannot run natively on a toaster",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 190,
+      "query": "",
+      "expected_answer": "HTML 12 does not exist",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 191,
+      "query": "",
+      "expected_answer": "The US President office did not exist in 1776",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 192,
+      "query": "",
+      "expected_answer": "Cars do not drive on the ocean floor",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 193,
+      "query": "",
+      "expected_answer": "Java 95 does not exist",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 194,
+      "query": "",
+      "expected_answer": "Swimming across the Pacific in one day is impossible",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 195,
+      "query": "",
+      "expected_answer": "Dragons are mythical creatures",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 196,
+      "query": "",
+      "expected_answer": "Jupiter does not have cities or a capital",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 197,
+      "query": "",
+      "expected_answer": "Unicorns are fictional creatures",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 198,
+      "query": "",
+      "expected_answer": "Service Pack 15 does not exist for Windows XP",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 199,
+      "query": "",
+      "expected_answer": "Titan orbits Saturn, Earth has only one moon",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 200,
+      "query": "",
+      "expected_answer": "The iPhone was not created in 1899",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 201,
+      "query": "",
+      "expected_answer": "MSFT and Satya Nadella",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 202,
+      "query": "",
+      "expected_answer": "Paris and Euro",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 203,
+      "query": "",
+      "expected_answer": "Christopher Nolan in 2010",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 204,
+      "query": "",
+      "expected_answer": "Tokyo and Japanese",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 205,
+      "query": "",
+      "expected_answer": "Bill Gates and Paul Allen in 1975",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 206,
+      "query": "",
+      "expected_answer": "NaCl composed of Sodium and Chlorine",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 207,
+      "query": "",
+      "expected_answer": "Berlin and Euro",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 208,
+      "query": "",
+      "expected_answer": "Guido van Rossum in late 1980s / 1991",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 209,
+      "query": "",
+      "expected_answer": "299,792,458 m/s represented by c",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 210,
+      "query": "",
+      "expected_answer": "William Shakespeare",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 211,
+      "query": "",
+      "expected_answer": "Atomic number 6 and symbol C",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 212,
+      "query": "",
+      "expected_answer": "Ottawa and Pacific Ocean",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 213,
+      "query": "",
+      "expected_answer": "Thomas Edison",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 214,
+      "query": "",
+      "expected_answer": "100 \u00b0C and 0 \u00b0C",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 215,
+      "query": "",
+      "expected_answer": "Rome and Colosseum",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 216,
+      "query": "",
+      "expected_answer": "J.K. Rowling from the United Kingdom",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 217,
+      "query": "",
+      "expected_answer": "Jupiter and 7 main rings",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 218,
+      "query": "",
+      "expected_answer": "Canberra located in Australian Capital Territory",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 219,
+      "query": "",
+      "expected_answer": "Charles Darwin proposing Natural Selection",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 220,
+      "query": "",
+      "expected_answer": "Cairo and Nile River",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 221,
+      "query": "",
+      "expected_answer": "Verified Python 3.12 is latest stable release",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 222,
+      "query": "",
+      "expected_answer": "Verified ticker AAPL",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 223,
+      "query": "",
+      "expected_answer": "Verified Satya Nadella",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 224,
+      "query": "",
+      "expected_answer": "Verified PyTorch 2.4",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 225,
+      "query": "",
+      "expected_answer": "Verified FastAPI release",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 226,
+      "query": "",
+      "expected_answer": "Verified JWST survey",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 227,
+      "query": "",
+      "expected_answer": "Verified AMZN",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 228,
+      "query": "",
+      "expected_answer": "Verified Pydantic v2",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 229,
+      "query": "",
+      "expected_answer": "Verified TSLA",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 230,
+      "query": "",
+      "expected_answer": "Verified EU AI Act risk tiers",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 231,
+      "query": "",
+      "expected_answer": "Verified Python 3.13 development",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 232,
+      "query": "",
+      "expected_answer": "Verified META",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 233,
+      "query": "",
+      "expected_answer": "Verified Artemis III lunar south pole",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 234,
+      "query": "",
+      "expected_answer": "Verified Rust release notes",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 235,
+      "query": "",
+      "expected_answer": "Verified ITER fusion progress",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 236,
+      "query": "",
+      "expected_answer": "Verified Node.js LTS",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 237,
+      "query": "",
+      "expected_answer": "Verified Sundar Pichai",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 238,
+      "query": "",
+      "expected_answer": "Verified Docker 26",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 239,
+      "query": "",
+      "expected_answer": "Verified AI Summit highlights",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 240,
+      "query": "",
+      "expected_answer": "Verified COLLISION-25M candidate",
+      "generated_answer": "What is the function of space exploration? (Level 2)\nAnswer: space exploration is designed to expand gal",
+      "status": "INCORRECT",
+      "correct": false
+    }
+  ],
+  "v9_per_question": [
+    {
+      "question_id": 1,
+      "query": "",
+      "expected_answer": "MSFT",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 2,
+      "query": "",
+      "expected_answer": "Keir Starmer",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 3,
+      "query": "",
+      "expected_answer": "PyTorch 2.4",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 4,
+      "query": "",
+      "expected_answer": "Active exoplanet survey",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 5,
+      "query": "",
+      "expected_answer": "AMZN",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 6,
+      "query": "",
+      "expected_answer": "Pre-release testing",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 7,
+      "query": "",
+      "expected_answer": "Olaf Scholz",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 8,
+      "query": "",
+      "expected_answer": "Node 22 LTS",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 9,
+      "query": "",
+      "expected_answer": "Crypto market fluctuations",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 10,
+      "query": "",
+      "expected_answer": "Sundar Pichai",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 11,
+      "query": "",
+      "expected_answer": "Kernel 6.10",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 12,
+      "query": "",
+      "expected_answer": "Assembly phase",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 13,
+      "query": "",
+      "expected_answer": "Rust 1.80",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 14,
+      "query": "",
+      "expected_answer": "Planning phase",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 15,
+      "query": "",
+      "expected_answer": "TSLA",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 16,
+      "query": "",
+      "expected_answer": "Multinational agreements",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 17,
+      "query": "",
+      "expected_answer": "Docker 26.1",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 18,
+      "query": "",
+      "expected_answer": "Emmanuel Macron",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 19,
+      "query": "",
+      "expected_answer": "Superconducting qubit testing",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 20,
+      "query": "",
+      "expected_answer": "META",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 21,
+      "query": "",
+      "expected_answer": "Tech conference announcements",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 22,
+      "query": "",
+      "expected_answer": "Environmental treaty updates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 23,
+      "query": "",
+      "expected_answer": "Cybersecurity announcements",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 24,
+      "query": "",
+      "expected_answer": "Financial headlines",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 25,
+      "query": "",
+      "expected_answer": "Rocket launch test results",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 26,
+      "query": "",
+      "expected_answer": "Semiconductor node updates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 27,
+      "query": "",
+      "expected_answer": "European energy policy",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 28,
+      "query": "",
+      "expected_answer": "Space agency briefings",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 29,
+      "query": "",
+      "expected_answer": "Robotics expo highlights",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 30,
+      "query": "",
+      "expected_answer": "Security advisories",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 31,
+      "query": "",
+      "expected_answer": "Climate summit updates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 32,
+      "query": "",
+      "expected_answer": "Medical research breakthroughs",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 33,
+      "query": "",
+      "expected_answer": "Trade agreement updates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 34,
+      "query": "",
+      "expected_answer": "6G telecommunications research",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 35,
+      "query": "",
+      "expected_answer": "Autonomous vehicle testing",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 36,
+      "query": "",
+      "expected_answer": "Astronomy consortium findings",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 37,
+      "query": "",
+      "expected_answer": "OS enterprise patches",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 38,
+      "query": "",
+      "expected_answer": "Developer Conference highlights",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 39,
+      "query": "",
+      "expected_answer": "Power grid updates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 40,
+      "query": "",
+      "expected_answer": "Global news headlines",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 41,
+      "query": "",
+      "expected_answer": "Tokyo",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 42,
+      "query": "",
+      "expected_answer": "CO2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 43,
+      "query": "",
+      "expected_answer": "1945",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 44,
+      "query": "",
+      "expected_answer": "79",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 45,
+      "query": "",
+      "expected_answer": "Amazon River",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 46,
+      "query": "",
+      "expected_answer": "343 m/s",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 47,
+      "query": "",
+      "expected_answer": "Ottawa",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 48,
+      "query": "",
+      "expected_answer": "1064 \u00b0C",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 49,
+      "query": "",
+      "expected_answer": "1945",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 50,
+      "query": "",
+      "expected_answer": "Carbon dioxide",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 51,
+      "query": "",
+      "expected_answer": "Swiss Franc",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 52,
+      "query": "",
+      "expected_answer": "Fe",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 53,
+      "query": "",
+      "expected_answer": "9.81 m/s^2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 54,
+      "query": "",
+      "expected_answer": "Brasilia",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 55,
+      "query": "",
+      "expected_answer": "206",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 56,
+      "query": "",
+      "expected_answer": "Na",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "CORRECT",
+      "correct": true
+    },
+    {
+      "question_id": 57,
+      "query": "",
+      "expected_answer": "Mariana Trench",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 58,
+      "query": "",
+      "expected_answer": "1789",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 59,
+      "query": "",
+      "expected_answer": "Cairo",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 60,
+      "query": "",
+      "expected_answer": "Neutral / zero",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 61,
+      "query": "",
+      "expected_answer": "{k: v for k, v in iterable}",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 62,
+      "query": "",
+      "expected_answer": "Non-blocking asynchronous coroutine execution",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 63,
+      "query": "",
+      "expected_answer": "JSON.parse()",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 64,
+      "query": "",
+      "expected_answer": "Reapplies commits on top of another base branch",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 65,
+      "query": "",
+      "expected_answer": "def factorial(n): return 1 if n<=1 else n*factorial(n-1)",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 66,
+      "query": "",
+      "expected_answer": "O(1) average time",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 67,
+      "query": "",
+      "expected_answer": "let mut x = value;",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 68,
+      "query": "",
+      "expected_answer": "Groups rows sharing a property into summary rows",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 69,
+      "query": "",
+      "expected_answer": "Function wrapping another function to extend behavior",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 70,
+      "query": "",
+      "expected_answer": "pip list or pip freeze",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 71,
+      "query": "",
+      "expected_answer": "Lists are mutable, tuples are immutable",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 72,
+      "query": "",
+      "expected_answer": "@app.get('/') decorator",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 73,
+      "query": "",
+      "expected_answer": "Accessing the value stored at the memory location pointed to",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 74,
+      "query": "",
+      "expected_answer": "docker build -t name .",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 75,
+      "query": "",
+      "expected_answer": "def my_gen(): yield 1",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 76,
+      "query": "",
+      "expected_answer": "Cross-Origin Resource Sharing",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 77,
+      "query": "",
+      "expected_answer": "Automatic memory management freeing unreferenced objects",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 78,
+      "query": "",
+      "expected_answer": "dict1 | dict2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 79,
+      "query": "",
+      "expected_answer": "Two threads waiting indefinitely for locks held by each other",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 80,
+      "query": "",
+      "expected_answer": "git init",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 81,
+      "query": "",
+      "expected_answer": "Cannot simultaneously know exact position and momentum of a particle",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 82,
+      "query": "",
+      "expected_answer": "Protein synthesis",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 83,
+      "query": "",
+      "expected_answer": "V = I * R",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 84,
+      "query": "",
+      "expected_answer": "Entropy of an isolated system always increases over time",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 85,
+      "query": "",
+      "expected_answer": "Copying double-stranded DNA molecule prior to cell division",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 86,
+      "query": "",
+      "expected_answer": "F = m * a",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 87,
+      "query": "",
+      "expected_answer": "Fission splits heavy nuclei; fusion combines light nuclei",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 88,
+      "query": "",
+      "expected_answer": "6CO2 + 6H2O + light -> C6H12O6 + 6O2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 89,
+      "query": "",
+      "expected_answer": "Gravity is the curvature of spacetime caused by mass and energy",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 90,
+      "query": "",
+      "expected_answer": "Lower activation energy to speed up reaction rates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 91,
+      "query": "",
+      "expected_answer": "Planets orbit the Sun in ellipses with the Sun at one focus",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "CORRECT",
+      "correct": true
+    },
+    {
+      "question_id": 92,
+      "query": "",
+      "expected_answer": "Range of all types of EM radiation from radio waves to gamma rays",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 93,
+      "query": "",
+      "expected_answer": "Net movement of water across a semipermeable membrane from low to high solute concentration",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 94,
+      "query": "",
+      "expected_answer": "Increase in fluid speed occurs simultaneously with decrease in static pressure",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 95,
+      "query": "",
+      "expected_answer": "Primary energy currency of the cell",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 96,
+      "query": "",
+      "expected_answer": "System existing in multiple quantum states simultaneously until measured",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 97,
+      "query": "",
+      "expected_answer": "Speed of light equals wavelength times frequency",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 98,
+      "query": "",
+      "expected_answer": "Earth's outer shell is divided into large moving lithospheric plates",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 99,
+      "query": "",
+      "expected_answer": "6.022 x 10^23 particles per mole",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 100,
+      "query": "",
+      "expected_answer": "Change in frequency of a wave in relation to an observer moving relative to the source",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 101,
+      "query": "",
+      "expected_answer": "Leonardo da Vinci",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 102,
+      "query": "",
+      "expected_answer": "Blue Whale",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 103,
+      "query": "",
+      "expected_answer": "Portuguese",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 104,
+      "query": "",
+      "expected_answer": "366 days",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 105,
+      "query": "",
+      "expected_answer": "George Orwell",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 106,
+      "query": "",
+      "expected_answer": "Flour",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 107,
+      "query": "",
+      "expected_answer": "Rome",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 108,
+      "query": "",
+      "expected_answer": "6 sides",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 109,
+      "query": "",
+      "expected_answer": "Charles Darwin",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 110,
+      "query": "",
+      "expected_answer": "Pound Sterling",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 111,
+      "query": "",
+      "expected_answer": "Mount Everest",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 112,
+      "query": "",
+      "expected_answer": "Oxygen",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 113,
+      "query": "",
+      "expected_answer": "Alexander Graham Bell",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 114,
+      "query": "",
+      "expected_answer": "2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 115,
+      "query": "",
+      "expected_answer": "Thermometer",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 116,
+      "query": "",
+      "expected_answer": "Madrid",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 117,
+      "query": "",
+      "expected_answer": "7 colors",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 118,
+      "query": "",
+      "expected_answer": "William Shakespeare",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 119,
+      "query": "",
+      "expected_answer": "Beijing",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 120,
+      "query": "",
+      "expected_answer": "Carbon dioxide",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 121,
+      "query": "",
+      "expected_answer": "100",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 122,
+      "query": "",
+      "expected_answer": "3",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 123,
+      "query": "",
+      "expected_answer": "40",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 124,
+      "query": "",
+      "expected_answer": "6x",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 125,
+      "query": "",
+      "expected_answer": "9",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 126,
+      "query": "",
+      "expected_answer": "60 mph",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 127,
+      "query": "",
+      "expected_answer": "20",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 128,
+      "query": "",
+      "expected_answer": "28",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 129,
+      "query": "",
+      "expected_answer": "24",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 130,
+      "query": "",
+      "expected_answer": "32",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 131,
+      "query": "",
+      "expected_answer": "30",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 132,
+      "query": "",
+      "expected_answer": "18",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 133,
+      "query": "",
+      "expected_answer": "180 degrees",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 134,
+      "query": "",
+      "expected_answer": "56",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 135,
+      "query": "",
+      "expected_answer": "5",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 136,
+      "query": "",
+      "expected_answer": "32",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 137,
+      "query": "",
+      "expected_answer": "9",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 138,
+      "query": "",
+      "expected_answer": "27",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 139,
+      "query": "",
+      "expected_answer": "81",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 140,
+      "query": "",
+      "expected_answer": "Yes",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 141,
+      "query": "",
+      "expected_answer": "Computer algorithms learning from data",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 142,
+      "query": "",
+      "expected_answer": "Gravitational attraction between masses",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 143,
+      "query": "",
+      "expected_answer": "Branch of physics studying matter at atomic scales",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 144,
+      "query": "",
+      "expected_answer": "Simulation of human intelligence by computer systems",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 145,
+      "query": "",
+      "expected_answer": "Readability, performance, and ecosystem",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 146,
+      "query": "",
+      "expected_answer": "Data stored on remote servers accessed via internet",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 147,
+      "query": "",
+      "expected_answer": "Study of fundamental questions about existence and knowledge",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 148,
+      "query": "",
+      "expected_answer": "Protection of computer systems from digital attacks",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 149,
+      "query": "",
+      "expected_answer": "Crawling, indexing, and ranking web pages",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 150,
+      "query": "",
+      "expected_answer": "Interdisciplinary field using methods to extract knowledge from data",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 151,
+      "query": "",
+      "expected_answer": "Systematic application of engineering to software development",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 152,
+      "query": "",
+      "expected_answer": "Electric motor powered by battery pack",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 153,
+      "query": "",
+      "expected_answer": "Decentralized distributed ledger recording transactions",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 154,
+      "query": "",
+      "expected_answer": "Einstein's theories of Special and General Relativity",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 155,
+      "query": "",
+      "expected_answer": "Subset of machine learning using multi-layer neural networks",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 156,
+      "query": "",
+      "expected_answer": "Executes instructions via fetch-decode-execute cycle",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 157,
+      "query": "",
+      "expected_answer": "Software with source code made available under permissive license",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 158,
+      "query": "",
+      "expected_answer": "Long-term shifts in temperatures and weather patterns",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 159,
+      "query": "",
+      "expected_answer": "Practice of securing communication in the presence of adversaries",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 160,
+      "query": "",
+      "expected_answer": "System software managing computer hardware and application software",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 161,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 162,
+      "query": "",
+      "expected_answer": "private / unknown",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 163,
+      "query": "",
+      "expected_answer": "cannot be counted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 164,
+      "query": "",
+      "expected_answer": "future event",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 165,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 166,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 167,
+      "query": "",
+      "expected_answer": "unlisted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 168,
+      "query": "",
+      "expected_answer": "unknown",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 169,
+      "query": "",
+      "expected_answer": "cannot be counted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 170,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 171,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 172,
+      "query": "",
+      "expected_answer": "private / unobservable",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 173,
+      "query": "",
+      "expected_answer": "unmeasured",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 174,
+      "query": "",
+      "expected_answer": "future event",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 175,
+      "query": "",
+      "expected_answer": "unrecorded",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 176,
+      "query": "",
+      "expected_answer": "cannot be predicted",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 177,
+      "query": "",
+      "expected_answer": "private",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 178,
+      "query": "",
+      "expected_answer": "unweighed",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 179,
+      "query": "",
+      "expected_answer": "future outcome",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 180,
+      "query": "",
+      "expected_answer": "unannounced",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 181,
+      "query": "",
+      "expected_answer": "Python 9.0 does not exist",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 182,
+      "query": "",
+      "expected_answer": "No human has walked on Mars",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 183,
+      "query": "",
+      "expected_answer": "Atlantis is a mythical city",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 184,
+      "query": "",
+      "expected_answer": "Toyota Camry does not have a hyperdrive engine",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 185,
+      "query": "",
+      "expected_answer": "Delta Airlines does not fly to Pluto",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 186,
+      "query": "",
+      "expected_answer": "Warp drive interstellar trials do not exist",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 187,
+      "query": "",
+      "expected_answer": "Abraham Lincoln never won a Nobel Prize",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 188,
+      "query": "",
+      "expected_answer": "No human colonies or currency exist on the Moon",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 189,
+      "query": "",
+      "expected_answer": "Windows 11 cannot run natively on a toaster",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 190,
+      "query": "",
+      "expected_answer": "HTML 12 does not exist",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 191,
+      "query": "",
+      "expected_answer": "The US President office did not exist in 1776",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 192,
+      "query": "",
+      "expected_answer": "Cars do not drive on the ocean floor",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 193,
+      "query": "",
+      "expected_answer": "Java 95 does not exist",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 194,
+      "query": "",
+      "expected_answer": "Swimming across the Pacific in one day is impossible",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 195,
+      "query": "",
+      "expected_answer": "Dragons are mythical creatures",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 196,
+      "query": "",
+      "expected_answer": "Jupiter does not have cities or a capital",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 197,
+      "query": "",
+      "expected_answer": "Unicorns are fictional creatures",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 198,
+      "query": "",
+      "expected_answer": "Service Pack 15 does not exist for Windows XP",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 199,
+      "query": "",
+      "expected_answer": "Titan orbits Saturn, Earth has only one moon",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 200,
+      "query": "",
+      "expected_answer": "The iPhone was not created in 1899",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 201,
+      "query": "",
+      "expected_answer": "MSFT and Satya Nadella",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 202,
+      "query": "",
+      "expected_answer": "Paris and Euro",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 203,
+      "query": "",
+      "expected_answer": "Christopher Nolan in 2010",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 204,
+      "query": "",
+      "expected_answer": "Tokyo and Japanese",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 205,
+      "query": "",
+      "expected_answer": "Bill Gates and Paul Allen in 1975",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 206,
+      "query": "",
+      "expected_answer": "NaCl composed of Sodium and Chlorine",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 207,
+      "query": "",
+      "expected_answer": "Berlin and Euro",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 208,
+      "query": "",
+      "expected_answer": "Guido van Rossum in late 1980s / 1991",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 209,
+      "query": "",
+      "expected_answer": "299,792,458 m/s represented by c",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 210,
+      "query": "",
+      "expected_answer": "William Shakespeare",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 211,
+      "query": "",
+      "expected_answer": "Atomic number 6 and symbol C",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 212,
+      "query": "",
+      "expected_answer": "Ottawa and Pacific Ocean",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 213,
+      "query": "",
+      "expected_answer": "Thomas Edison",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 214,
+      "query": "",
+      "expected_answer": "100 \u00b0C and 0 \u00b0C",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 215,
+      "query": "",
+      "expected_answer": "Rome and Colosseum",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 216,
+      "query": "",
+      "expected_answer": "J.K. Rowling from the United Kingdom",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 217,
+      "query": "",
+      "expected_answer": "Jupiter and 7 main rings",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 218,
+      "query": "",
+      "expected_answer": "Canberra located in Australian Capital Territory",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 219,
+      "query": "",
+      "expected_answer": "Charles Darwin proposing Natural Selection",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 220,
+      "query": "",
+      "expected_answer": "Cairo and Nile River",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 221,
+      "query": "",
+      "expected_answer": "Verified Python 3.12 is latest stable release",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 222,
+      "query": "",
+      "expected_answer": "Verified ticker AAPL",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 223,
+      "query": "",
+      "expected_answer": "Verified Satya Nadella",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 224,
+      "query": "",
+      "expected_answer": "Verified PyTorch 2.4",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 225,
+      "query": "",
+      "expected_answer": "Verified FastAPI release",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 226,
+      "query": "",
+      "expected_answer": "Verified JWST survey",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 227,
+      "query": "",
+      "expected_answer": "Verified AMZN",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 228,
+      "query": "",
+      "expected_answer": "Verified Pydantic v2",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 229,
+      "query": "",
+      "expected_answer": "Verified TSLA",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 230,
+      "query": "",
+      "expected_answer": "Verified EU AI Act risk tiers",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 231,
+      "query": "",
+      "expected_answer": "Verified Python 3.13 development",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 232,
+      "query": "",
+      "expected_answer": "Verified META",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 233,
+      "query": "",
+      "expected_answer": "Verified Artemis III lunar south pole",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 234,
+      "query": "",
+      "expected_answer": "Verified Rust release notes",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 235,
+      "query": "",
+      "expected_answer": "Verified ITER fusion progress",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 236,
+      "query": "",
+      "expected_answer": "Verified Node.js LTS",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 237,
+      "query": "",
+      "expected_answer": "Verified Sundar Pichai",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 238,
+      "query": "",
+      "expected_answer": "Verified Docker 26",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 239,
+      "query": "",
+      "expected_answer": "Verified AI Summit highlights",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    },
+    {
+      "question_id": 240,
+      "query": "",
+      "expected_answer": "Verified COLLISION-25M candidate",
+      "generated_answer": "Unlike standard methods, refactoring patterns focuses on simplifying complex class hierarchies without altering external",
+      "status": "INCORRECT",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "phase": 91,
+  "timestamp": "2026-09-10T23:06:42+0530",
+  "random_seed": 42,
+  "model_architecture": {
+    "model_name": "COLLISION-10M",
+    "parameters": 10282304,
+    "vocab_size": 8000,
+    "max_seq_len": 256,
+    "d_model": 384,
+    "n_layer": 6,
+    "n_head": 8,
+    "d_ff": 768,
+    "dropout": 0.1,
+    "tie_embeddings": true,
+    "expected_params": 10282304,
+    "architecture_control_identical": true
+  },
+  "token_budget": {
+    "control_train_tokens": 1546977,
+    "experiment_train_tokens": 2703528,
+    "token_budget_ratio": 1.7476,
+    "budget_matched": false
+  },
+  "checkpoints": {
+    "control_checkpoint": "V:\\collision - 1M\\models\\phase91_control_10m\\model.pt",
+    "control_sha256": "06d3916738e3b9e2d7a1d97f78c97393840bed4f89bfaf457d74a58b39693663",
+    "v9_checkpoint": "V:\\collision - 1M\\models\\phase91_v9_10m\\model.pt",
+    "v9_sha256": "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449"
+  },
+  "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "torch_version": "2.13.0+cpu"
+}

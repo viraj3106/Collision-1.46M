@@ -1,0 +1,8 @@
+{
+  "dataset": "collision_dataset_v5_expanded",
+  "output_dir": "V:\\collision - 1M\\models\\phase91_control_10m",
+  "max_steps": 2500,
+  "batch_size": 8,
+  "learning_rate": 0.0005,
+  "seed": 42
+}
