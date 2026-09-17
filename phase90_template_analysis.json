@@ -1,0 +1,111 @@
+{
+  "total_documents_analyzed": 18779,
+  "unique_normalized_templates": 17302,
+  "top_10_templates_share_percentage": 1.0224186591405293,
+  "top_50_templates_share_percentage": 2.364343149262474,
+  "template_reuse_rate_percentage": 7.86516853932584,
+  "template_counts": {
+    "X is critical because it functions to...": {
+      "count": 1320,
+      "percentage": 7.029128281591139
+    },
+    "X is designed to...": {
+      "count": 464,
+      "percentage": 2.4708450929229455
+    },
+    "X functions to...": {
+      "count": 1320,
+      "percentage": 7.029128281591139
+    },
+    "When X is executed, it modifies...": {
+      "count": 489,
+      "percentage": 2.6039725224985357
+    },
+    "X interacts because it is configured to...": {
+      "count": 426,
+      "percentage": 2.2684913999680494
+    },
+    "Answer: ...": {
+      "count": 3130,
+      "percentage": 16.667554182863835
+    },
+    "(Revision) suffix": {
+      "count": 316,
+      "percentage": 1.6827307098354547
+    },
+    "(Overview) suffix": {
+      "count": 312,
+      "percentage": 1.66143032110336
+    },
+    "(Module A) suffix": {
+      "count": 324,
+      "percentage": 1.725331487299643
+    },
+    "(Standard) suffix": {
+      "count": 291,
+      "percentage": 1.5496032802598647
+    },
+    "(Level N) suffix": {
+      "count": 624,
+      "percentage": 3.32286064220672
+    }
+  },
+  "top_10_most_frequent_templates": [
+    {
+      "template": "Answer: {ENTITY} manages this process where gravity prevents even electromagnetic light waves from escaping beyond the e",
+      "count": 22,
+      "percentage": 0.11715213802651898
+    },
+    {
+      "template": "Helpful Query: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 22,
+      "percentage": 0.11715213802651898
+    },
+    {
+      "template": "Answer: {ENTITY} manages this process by balancing the forward tangential velocity of orbiting bodies with central gravi",
+      "count": 21,
+      "percentage": 0.1118270408434954
+    },
+    {
+      "template": "Question: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 20,
+      "percentage": 0.1065019436604718
+    },
+    {
+      "template": "Review Question: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 20,
+      "percentage": 0.1065019436604718
+    },
+    {
+      "template": "Key Question: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 20,
+      "percentage": 0.1065019436604718
+    },
+    {
+      "template": "Exam Question: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 19,
+      "percentage": 0.1011768464774482
+    },
+    {
+      "template": "Core Question: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 17,
+      "percentage": 0.09052665211140103
+    },
+    {
+      "template": "Query: What is the function of {ENTITY}? {SUFFIX}",
+      "count": 16,
+      "percentage": 0.08520155492837744
+    },
+    {
+      "template": "Answer: {ENTITY} manages this process by fusing hydrogen atoms into helium under immense pressure inside stellar core re",
+      "count": 15,
+      "percentage": 0.07987645774535385
+    }
+  ],
+  "findings": [
+    "Top 10 normalized templates account for 1.02% of all training documents.",
+    "Top 50 normalized templates account for 2.36% of all training documents.",
+    "Synthetic combinatorial generator ('data/build_v5_expanded.py') constructs 100% of documents from 5 master sentence structures.",
+    "High template concentration caused severe pretraining overfitting to synthetic template priors."
+  ]
+}

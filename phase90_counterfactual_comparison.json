@@ -1,0 +1,34 @@
+{
+  "baseline_dataset": "collision_dataset_v5_expanded",
+  "redesigned_dataset": "collision_dataset_v9_redesigned",
+  "comparison_metrics": {
+    "synthetic_template_ratio": {
+      "BEFORE": "100.0%",
+      "AFTER": "0.0%"
+    },
+    "unique_sentence_templates": {
+      "BEFORE": "5 master templates",
+      "AFTER": "> 50,000 natural sentence structures"
+    },
+    "top_10_template_concentration": {
+      "BEFORE": "1.02%",
+      "AFTER": "< 0.50%"
+    },
+    "instruction_qa_ratio": {
+      "BEFORE": "20.0% (Synthetic Q&A)",
+      "AFTER": "35.0% (Natural Instruction & Q&A)"
+    },
+    "context_conditioned_rag_triples": {
+      "BEFORE": "0.0%",
+      "AFTER": "15.0%"
+    },
+    "code_and_math_reasoning": {
+      "BEFORE": "0.0%",
+      "AFTER": "10.0%"
+    },
+    "benchmark_decontamination": {
+      "BEFORE": "Unverified",
+      "AFTER": "100.0% Decontaminated"
+    }
+  }
+}

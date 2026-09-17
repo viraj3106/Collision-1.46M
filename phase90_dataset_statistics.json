@@ -1,0 +1,23 @@
+{
+  "dataset_name": "collision_dataset_v5_expanded",
+  "total_samples": 18779,
+  "total_words": 427645,
+  "estimated_tokens": 1802448,
+  "unique_samples": 18250,
+  "exact_duplicate_rate_percentage": 2.816976409819479,
+  "content_type_breakdown": {
+    "Explanatory": 3912,
+    "Question/Answer": 3130,
+    "Completion": 2347,
+    "Declarative": 6260
+  },
+  "domain_breakdown": {
+    "Mathematics": 2571,
+    "Artificial Intelligence": 2559,
+    "Computer Science": 2634,
+    "Space": 2654,
+    "Physics": 2631,
+    "Machine Learning": 2600
+  },
+  "synthetically_generated_percentage": 100.0
+}
