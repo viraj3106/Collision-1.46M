@@ -1,0 +1,96 @@
+{
+  "benchmark": "Phase 102 Concurrency Benchmark",
+  "timestamp": "2026-09-16T11:01:49Z",
+  "tiers": [
+    {
+      "concurrency": 1,
+      "total_requests": 20,
+      "successful_requests": 20,
+      "success_rate_pct": 100.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "total_duration_sec": 0.854,
+      "throughput_qps": 23.41,
+      "latency_ms": {
+        "avg": 42.57,
+        "p50": 14.44,
+        "p95": 542.43,
+        "p99": 569.51,
+        "min": 9.54,
+        "max": 569.51
+      }
+    },
+    {
+      "concurrency": 5,
+      "total_requests": 30,
+      "successful_requests": 30,
+      "success_rate_pct": 100.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "total_duration_sec": 0.441,
+      "throughput_qps": 68.07,
+      "latency_ms": {
+        "avg": 72.3,
+        "p50": 70.13,
+        "p95": 97.33,
+        "p99": 99.34,
+        "min": 56.4,
+        "max": 99.34
+      }
+    },
+    {
+      "concurrency": 10,
+      "total_requests": 40,
+      "successful_requests": 40,
+      "success_rate_pct": 100.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "total_duration_sec": 0.562,
+      "throughput_qps": 71.21,
+      "latency_ms": {
+        "avg": 132.86,
+        "p50": 132.56,
+        "p95": 172.91,
+        "p99": 176.48,
+        "min": 88.12,
+        "max": 176.48
+      }
+    },
+    {
+      "concurrency": 25,
+      "total_requests": 50,
+      "successful_requests": 50,
+      "success_rate_pct": 100.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "total_duration_sec": 0.717,
+      "throughput_qps": 69.77,
+      "latency_ms": {
+        "avg": 292.55,
+        "p50": 305.6,
+        "p95": 430.38,
+        "p99": 479.39,
+        "min": 71.41,
+        "max": 479.39
+      }
+    },
+    {
+      "concurrency": 50,
+      "total_requests": 100,
+      "successful_requests": 100,
+      "success_rate_pct": 100.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "total_duration_sec": 1.364,
+      "throughput_qps": 73.32,
+      "latency_ms": {
+        "avg": 483.01,
+        "p50": 486.04,
+        "p95": 713.74,
+        "p99": 824.93,
+        "min": 131.74,
+        "max": 825.26
+      }
+    }
+  ]
+}

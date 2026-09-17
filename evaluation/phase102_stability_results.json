@@ -1,0 +1,46 @@
+{
+  "benchmark": "Phase 102 Memory & Stability Benchmark",
+  "timestamp": "2026-09-16T11:03:37Z",
+  "total_requests": 120,
+  "successful_requests": 120,
+  "success_rate_pct": 100.0,
+  "error_count": 0,
+  "total_duration_sec": 1.45,
+  "throughput_qps": 82.76,
+  "memory_rss": {
+    "initial_mb": 368.96,
+    "final_mb": 369.73,
+    "net_growth_mb": 0.77,
+    "is_leak_detected": false
+  },
+  "latency_ms": {
+    "overall_avg": 12.08,
+    "overall_p50": 11.93,
+    "overall_p95": 16.89,
+    "first_20_avg": 12.56,
+    "last_20_avg": 11.24,
+    "latency_drift_pct": -10.47
+  },
+  "memory_snapshots": [
+    {
+      "request_index": 30,
+      "memory_rss_mb": 369.36,
+      "memory_delta_mb": 0.39
+    },
+    {
+      "request_index": 60,
+      "memory_rss_mb": 369.55,
+      "memory_delta_mb": 0.58
+    },
+    {
+      "request_index": 90,
+      "memory_rss_mb": 369.62,
+      "memory_delta_mb": 0.66
+    },
+    {
+      "request_index": 120,
+      "memory_rss_mb": 369.73,
+      "memory_delta_mb": 0.77
+    }
+  ]
+}
