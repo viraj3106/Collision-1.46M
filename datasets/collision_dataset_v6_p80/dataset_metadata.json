@@ -1,0 +1,34 @@
+{
+  "dataset_name": "collision_dataset_v6_p80",
+  "total_paragraphs": 180,
+  "duplicate_rate": 0.0,
+  "leakage_val_pct": 0.0,
+  "leakage_test_pct": 0.0,
+  "tokens": {
+    "total_raw": 14216,
+    "train_tokens": 11717,
+    "val_tokens": 789,
+    "test_tokens": 1710
+  },
+  "paragraph_counts": {
+    "train": 149,
+    "val": 10,
+    "test": 21
+  },
+  "domain_distribution": {
+    "factual_knowledge": 18,
+    "definitions": 15,
+    "explanations": 12,
+    "technical_content": 15,
+    "computer_science": 12,
+    "artificial_intelligence": 12,
+    "mathematics": 12,
+    "physics": 12,
+    "space_science": 12,
+    "technology": 12,
+    "completion_text": 12,
+    "qa_text": 12,
+    "conversational_text": 12,
+    "general_explanatory_prose": 12
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_name": "collision_dataset_v9_redesigned",
+  "dataset_version": "9.0-redesigned",
+  "creation_timestamp": "2026-09-10T12:10:00+05:30",
+  "random_seed": 42,
+  "document_count": 14500,
+  "example_count": 14500,
+  "token_count": 3179187,
+  "train_tokens": 2703528,
+  "val_tokens": 317647,
+  "test_tokens": 158012,
+  "train_count": 12325,
+  "validation_count": 1450,
+  "test_count": 725,
+  "category_distribution": {
+    "declarative": 3125,
+    "explanatory": 3046,
+    "qa": 2773,
+    "instruction": 2703,
+    "dialogue": 80,
+    "context_qa": 473,
+    "coding": 534,
+    "math": 1766
+  },
+  "tokenizer_information": {
+    "tokenizer_dir": "artifacts/tokenizer",
+    "vocab_size": 894
+  }
+}

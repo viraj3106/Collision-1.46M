@@ -1,0 +1,1 @@
+SYNTHETIC_TEMPLATE_CONTAMINATION: Rejected due to synthetic placeholder contamination (item 0001, context 0001, unnaturally forced category/domain names).
