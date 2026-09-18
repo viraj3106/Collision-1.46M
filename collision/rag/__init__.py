@@ -4,6 +4,8 @@ from collision.rag.embeddings import LocalEmbeddingModel
 from collision.rag.index import VectorIndex
 from collision.rag.retriever import DocumentRetriever
 from collision.rag.engine import GroundedRAGEngine
+from collision.rag.reranker import HybridReranker
+from collision.rag.compressor import EvidenceCompressor
 
 __all__ = [
     "DocumentChunk",
@@ -14,5 +16,8 @@ __all__ = [
     "LocalEmbeddingModel",
     "VectorIndex",
     "DocumentRetriever",
-    "GroundedRAGEngine"
+    "GroundedRAGEngine",
+    "HybridReranker",
+    "EvidenceCompressor"
 ]
+

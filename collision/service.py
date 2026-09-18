@@ -521,6 +521,86 @@ class CollisionService:
             logger.exception(f"Unexpected error executing ask() for query '{q_clean}': {e}")
             return self._build_error_response("INTERNAL_ERROR", f"An internal error occurred during answer synthesis: {str(e)}", t_start)
 
+    def ask_with_documents(
+        self,
+        question: str,
+        documents: List[Dict[str, Any]],
+        token_budget: int = 512,
+        top_k: int = 3,
+        include_sources: bool = True,
+        include_claims: bool = True
+    ) -> Dict[str, Any]:
+        """
+        Direct long-context answering entry point over supplied document collections (Phase 104).
+        """
+        t_start = time.perf_counter()
+        if not question or not str(question).strip():
+            return self._build_error_response("INVALID_REQUEST", "Question field is required.", t_start)
+        if not documents:
+            return self._build_error_response("INVALID_REQUEST", "Documents list cannot be empty.", t_start)
+
+        try:
+            synth_res = self.engine.answer_with_context(
+                question=question.strip(),
+                documents=documents,
+                token_budget=token_budget,
+                top_k=top_k
+            )
+
+            status_str = "ANSWERED"
+            if synth_res.answer_type == AnswerType.INSUFFICIENT_INFORMATION:
+                status_str = "INSUFFICIENT_INFORMATION"
+            elif synth_res.answer_type == AnswerType.CONFLICTING_EVIDENCE:
+                status_str = "CONFLICT"
+
+            sources = []
+            if include_sources:
+                for idx, ev in enumerate(synth_res.fused_evidence):
+                    sources.append({
+                        "source_id": f"doc_{idx+1}",
+                        "title": ev.source,
+                        "url": ev.url,
+                        "source_type": ev.source_type,
+                        "retrieval_score": round(ev.score, 4),
+                        "relevance": round(ev.score, 4),
+                        "snippet": ev.text[:150]
+                    })
+
+            claims = []
+            if include_claims and synth_res.verification is not None:
+                for c in synth_res.verification.claims:
+                    claims.append({
+                        "text": c.claim_text,
+                        "support_status": c.status,
+                        "evidence_ids": c.supporting_evidence
+                    })
+
+            total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
+            return {
+                "answer": synth_res.answer,
+                "status": status_str,
+                "mode": "LONG_CONTEXT",
+                "confidence": round(synth_res.confidence, 4),
+                "sources": sources,
+                "claims": claims,
+                "latency": {
+                    "routing_ms": 0.0,
+                    "retrieval_ms": 0.0,
+                    "generation_ms": round(synth_res.latency_ms, 2),
+                    "verification_ms": 0.0,
+                    "total_ms": total_ms
+                },
+                "metadata": {
+                    "answer_type": synth_res.answer_type.value if hasattr(synth_res.answer_type, "value") else str(synth_res.answer_type),
+                    "is_fallback_used": synth_res.is_fallback_used,
+                    "termination_reason": synth_res.termination_reason
+                }
+            }
+        except Exception as e:
+            logger.exception(f"Error in ask_with_documents: {e}")
+            return self._build_error_response("INTERNAL_ERROR", str(e), t_start)
+
+
     def think(
         self,
         question: str,
