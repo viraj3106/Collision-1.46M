@@ -10,9 +10,9 @@ class QueryClassifier:
         r"\b(password|passcode|ssn|social\s+security|private\s+diary|pin(\s+number)?|credit\s+card|secret\s+pin)\b",
         r"\b(secret\s+recipe|secret\s+menu|unannounced\s+features|unannounced\s+restaurant|secret\s+master\s+key)\b",
         r"\b(who\s+will\s+win|winner\s+of|winning\s+candidate|election\s+winner)\s+(the\s+)?20[3-9]\d\b",
-        r"\b(what\s+will\s+happen\s+in|events\s+of|price\s+of\s+.*in|price\s+of\s+.*\s+on\s+.*|stock\s+price\s+of\s+.*(in|on|at))\s+20[3-9]\d\b",
-        r"\b(stock\s+price|price|exchange\s+rate|weather|temperature|closing\s+price|gdp|inflation|population|market\s+cap)\b.*(20[3-9]\d|tomorrow|next\s+(year|month|decade))\b",
-        r"\b(what\s+will|predict)\s+.*(stock\s+price|price\s+of|value\s+of|weather\s+in|population\s+of|exchange\s+rate|temperature\s+in).*(20[3-9]\d|tomorrow\s+at|next\s+year)\b",
+        r"\b(what\s+will\s+happen\s+in|events\s+of|price\s+of\s+.*in|price\s+of\s+.*\s+on\s+.*|stock\s+price\s+of\s+.*(in|on|at))\s+(the\s+year\s+)?20[3-9]\d\b",
+        r"\b(stock\s+price|price|exchange\s+rate|weather|temperature|closing\s+price|gdp|inflation|population|market\s+cap|unannounced\s+restaurant)\b.*(20[3-9]\d|tomorrow|next\s+(year|month|decade))\b",
+        r"\b(what\s+will|predict)\s+.*(stock\s+price|price\s+of|value\s+of|weather\s+in|population\s+of|exchange\s+rate|temperature\s+in|inflation\s+rate|gdp\s+of|market\s+cap\s+of|unannounced\s+restaurant).*(20[3-9]\d|tomorrow\s+at|next\s+year|in\s+20[3-9]\d)\b",
         r"\b(lottery|winning\s+numbers|powerball|mega\s+millions)\b",
         r"\b(grains\s+of\s+sand\s+on\s+earth|exact\s+number\s+of\s+atoms\s+in)\b",
         r"\b(first\s+human\s+astronaut\s+to\s+walk\s+on\s+mars)\b",
@@ -20,7 +20,7 @@ class QueryClassifier:
         r"\b(user\s+\d+\b)",
         r"\b(unrevealed|unpublished|confidential|undisclosed|undiscovered|unrecorded|unreleased)\b",
         r"\b(unobtainium|genesis\s+block|warp\s+drives|atlantis|universe\s+next\s+door|alien\s+cafeteria)\b",
-        r"\b(einstein.*iphone|napoleon.*ferrari|moon.*cheddar\s+cheese|columbus.*browser|da\s+vinci.*ipad|egyptians.*tesla|speed\s+of\s+sound.*vacuum|newton.*illegal|dinosaurs.*nuclear|caesar.*(program|bathwater|rubicon)|water\s+boil.*negative|washington.*twitter|ram.*apollo\s+11|pacific\s+ocean.*dry|earth.*hollow\s+cube|shakespeare.*netflix|aristotle.*windows\s+95|liquid\s+sunlight|usb-c.*great\s+wall|alexander.*drones)\b"
+        r"\b(einstein.*(iphone|smartphone)|napoleon.*ferrari|moon.*cheddar\s+cheese|columbus.*(browser|chrome|google)|da\s+vinci.*(ipad|tablet)|egyptians.*tesla|speed\s+of\s+sound.*vacuum|sound\s+travel.*vacuum|newton.*illegal|dinosaurs.*nuclear|caesar.*(program|bathwater|rubicon|python)|water\s+boil.*negative|washington.*twitter|ram.*apollo\s+11|pacific\s+ocean.*dry|earth.*hollow\s+cube|shakespeare.*netflix|aristotle.*windows\s+95|liquid\s+sunlight|usb-c.*great\s+wall|alexander.*drones)\b"
     ]
 
     TEMPORAL_WEB_PATTERNS = [

@@ -30,6 +30,7 @@ from collision.service import get_collision_service, CollisionService
 from collision.routing.schemas import RouteMode, FusedEvidence
 from collision.grounding.schemas import AnswerType
 
+PROTECTED_COLLISION_1B_SHA256 = "bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88"
 PROTECTED_COLLISION_10M_SHA256 = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
 PROTECTED_PHASE91_V9_SHA256 = "98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449"
 
@@ -45,9 +46,13 @@ def compute_sha256(filepath: str) -> str:
 
 
 def test_checkpoint_integrity_phase101():
-    """Verify production and research checkpoints remain byte-for-byte identical."""
+    """Verify flagship, edge, and research checkpoints remain byte-for-byte identical."""
+    c1b_path = os.path.join(PROJECT_ROOT, "models", "collision-1b", "model.pt")
+    assert os.path.exists(c1b_path), "Flagship collision-1b model checkpoint missing"
+    assert compute_sha256(c1b_path) == PROTECTED_COLLISION_1B_SHA256
+
     c10m_path = os.path.join(PROJECT_ROOT, "models", "collision-10m", "model.pt")
-    assert os.path.exists(c10m_path), "Production collision-10m model checkpoint missing"
+    assert os.path.exists(c10m_path), "Edge collision-10m model checkpoint missing"
     assert compute_sha256(c10m_path) == PROTECTED_COLLISION_10M_SHA256
 
     v9_path = os.path.join(PROJECT_ROOT, "models", "phase91_v9_10m", "model.pt")
@@ -87,8 +92,27 @@ def test_established_fact_transformer_paper():
 # --------------------------------------------------------------------------
 # Category B: Local RAG Knowledge
 # --------------------------------------------------------------------------
+def test_local_rag_1b_flagship_architecture_specs():
+    """Verify exact local RAG specs retrieval for flagship COLLISION-1.0B."""
+    service = get_collision_service()
+    res = service.ask("What is the embedding dimension in the COLLISION 1.0B architecture?", mode="LOCAL")
+    assert res["status"] == "ANSWERED"
+    assert res["mode"] == "LOCAL"
+    assert "2048" in res["answer"]
+    assert len(res["sources"]) > 0
+    assert res["sources"][0]["source_type"] == "LOCAL"
+
+
+def test_local_rag_1b_parameter_count():
+    """Verify exact parameter count of flagship COLLISION-1.0B."""
+    service = get_collision_service()
+    res = service.ask("What is the exact parameter count of the COLLISION 1.0B flagship model?", mode="LOCAL")
+    assert res["status"] == "ANSWERED"
+    assert "999,376,128" in res["answer"] or "1.00B" in res["answer"] or "1.0B" in res["answer"]
+
+
 def test_local_rag_architecture_specs():
-    """Verify exact local RAG specs retrieval."""
+    """Verify exact local RAG specs retrieval for 10M."""
     service = get_collision_service()
     res = service.ask("What is the embedding dimension in the COLLISION 10M architecture?", mode="LOCAL")
     assert res["status"] == "ANSWERED"

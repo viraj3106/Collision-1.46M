@@ -349,15 +349,16 @@ print(response.json()["text"])""", language="python")
     col_details_l, col_details_r = st.columns(2)
     with col_details_l:
         st.markdown(f"""
-        - **Model Name**: `collision-10m`
-        - **Parameter Count**: `10,282,304`
-        - **Context limit**: `256 tokens` (strict window size)
-        - **Architecture**: Decoder-only custom Transformer (6 layers, 8 heads, 384 embedding dim)
+        - **Model Name**: `collision-1.0b` (Official Flagship)
+        - **Parameter Count**: `999,376,128` (~1.00B)
+        - **Context limit**: `1,024 tokens`
+        - **Architecture**: Decoder-only custom Transformer (24 layers, 16 heads, 2048 embedding dim)
+        - **Edge Variant**: `collision-10m` (10,282,304 parameters, 256 context)
         """)
     with col_details_r:
         st.markdown("""
-        - **Intended Use**: causal text completion, educational experiments, lightweight CPU prototyping.
-        - **Not Intended For**: Conversational chatbot, instruction-following tasks, or production safety-critical execution.
+        - **Intended Use**: Causal text completion, reasoning synthesis, web grounding, industrial NLP tasks.
+        - **Deployment**: CPU native and Multi-GPU scalable architecture.
         """)
 
 # 2. API KEYS TAB

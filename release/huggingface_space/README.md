@@ -10,9 +10,10 @@ license: mit
 
 # COLLISION AI, NLP & Cognitive Brain Lab
 
-Interactive laboratory for **COLLISION-10M**, the **COLLISION NLP Engine** (`collision.nlp`), and the **Synaptic Cognitive Brain** (`collision.brain`).
+Interactive laboratory for **COLLISION-1.0B (Flagship)**, **COLLISION-10M (Edge)**, the **COLLISION NLP Engine** (`collision.nlp`), and the **Synaptic Cognitive Brain** (`collision.brain`).
 
-- ⚡ **Model Hub**: [https://huggingface.co/collision-10M/collision-10m](https://huggingface.co/collision-10M/collision-10m)
+- ⚡ **Model Hub (Flagship 1.0B)**: [https://huggingface.co/collision-10M/collision-1.0b](https://huggingface.co/collision-10M/collision-1.0b)
+- ⚡ **Model Hub (Edge 10M)**: [https://huggingface.co/collision-10M/collision-10m](https://huggingface.co/collision-10M/collision-10m)
 - 🧠 **Cognitive Brain & Dialectic Engine**:
   - **Graph-of-Thoughts (GoT)**: Non-linear reasoning DAG with step-by-step hypothesis validation.
   - **Hegelian Dialectics**: Automated Thesis $\rightarrow$ Antithesis $\rightarrow$ Synthesis reconciliation.

@@ -14,8 +14,8 @@ from model.transformer import CollisionTransformer
 from data.tokenize import BPETokenizer
 from inference.generate import generate
 
-EXPECTED_SHA256 = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
-EXPECTED_PARAMS = 10282304
+EXPECTED_SHA256 = "bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88"
+EXPECTED_PARAMS = 999376128
 
 def calculate_sha256(filepath):
     sha256 = hashlib.sha256()
@@ -124,7 +124,7 @@ def main():
         with open(metadata_file, "r", encoding="utf-8") as fp:
             meta = json.load(fp)
         # Assert crucial keys exist
-        assert meta["name"] == "COLLISION-10M"
+        assert meta["name"] == "COLLISION-1.0B"
         assert meta["parameters"] == EXPECTED_PARAMS
         assert meta["checkpoint_sha256"] == EXPECTED_SHA256
     except Exception as e:

@@ -37,11 +37,12 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
           <div style={{ background: 'var(--bg-surface)', padding: '12px 14px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)' }}>
             <div style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '6px' }}>Model Specifications</div>
             <ul style={{ paddingLeft: '18px', display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '12.5px' }}>
-              <li><strong>Parameters:</strong> 10,282,304</li>
-              <li><strong>Architecture:</strong> Decoder-only Transformer</li>
-              <li><strong>Context Window:</strong> 256 tokens</li>
-              <li><strong>Target Platform:</strong> CPU Native Execution</li>
-              <li><strong>Checkpoint Verification:</strong> FROZEN (d256d46d...)</li>
+              <li><strong>Model:</strong> COLLISION-1.0B (Official Flagship)</li>
+              <li><strong>Parameters:</strong> 999,376,128 (~1.00B)</li>
+              <li><strong>Architecture:</strong> Decoder-only Transformer (24 Layers, 2048 Dim, 16 Heads)</li>
+              <li><strong>Context Window:</strong> 1,024 tokens</li>
+              <li><strong>Target Platform:</strong> CPU & Multi-GPU Accelerated</li>
+              <li><strong>Checkpoint Verification:</strong> FROZEN (bdd986e2...)</li>
             </ul>
           </div>
 

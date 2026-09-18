@@ -2,26 +2,26 @@
   "total_requests": 5,
   "successful_requests": 5,
   "failed_requests": 0,
-  "avg_latency_ms": 150.94,
-  "p50_latency_ms": 13.82,
-  "p95_latency_ms": 701.76,
+  "avg_latency_ms": 120.22,
+  "p50_latency_ms": 29.99,
+  "p95_latency_ms": 503.67,
   "test_results": [
     {
       "id": "test_1_architecture",
       "name": "Local Architecture Query",
       "question": "What is COLLISION 10M?",
-      "mode": "LOCAL",
+      "mode": "MODEL",
       "status": "ANSWERED",
-      "sources_count": 2,
+      "sources_count": 0,
       "claims_count": 1,
-      "answer_preview": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
-      "transport_latency_ms": 701.7617000965402,
+      "answer_preview": "I am **COLLISION**, an ultra-efficient neural AI system designed for intelligent reasoning, conversational assistance, mathematical calculations, and grounded knowledge retrieval across open domains.",
+      "transport_latency_ms": 503.66519996896386,
       "engine_latency": {
-        "routing_ms": 12.66,
-        "retrieval_ms": 0.27,
-        "generation_ms": 4.25,
-        "verification_ms": 4.4,
-        "total_ms": 21.99
+        "routing_ms": 0.0,
+        "retrieval_ms": 0.0,
+        "generation_ms": 0.0,
+        "verification_ms": 0.0,
+        "total_ms": 0.86
       }
     },
     {
@@ -31,15 +31,15 @@
       "mode": "LOCAL",
       "status": "ANSWERED",
       "sources_count": 1,
-      "claims_count": 1,
-      "answer_preview": "COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768.",
-      "transport_latency_ms": 16.526399995200336,
+      "claims_count": 2,
+      "answer_preview": "**COLLISION** 1.0B operates as the official flagship with 24 transformer layers, an embedding dimension d_model of 2048, 16 attention heads, and d_ff of 5376.\n\n**Key Details:**\n\u2022 **COLLISION 10M** ser",
+      "transport_latency_ms": 29.994399985298514,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.65,
-        "generation_ms": 2.81,
-        "verification_ms": 2.83,
-        "total_ms": 6.46
+        "retrieval_ms": 0.8,
+        "generation_ms": 8.58,
+        "verification_ms": 9.78,
+        "total_ms": 19.47
       }
     },
     {
@@ -50,14 +50,14 @@
       "status": "ANSWERED",
       "sources_count": 1,
       "claims_count": 1,
-      "answer_preview": "PyTorch 2.5 introduces FlexAttention and torch.compile improvements.",
-      "transport_latency_ms": 13.823600020259619,
+      "answer_preview": "**PyTorch 2.5** is the latest official release version, delivering major performance optimizations:\n\n\u2022 **FlexAttention**: High-performance flexible attention mechanism API\n\u2022 **torch.compile**: Enhance",
+      "transport_latency_ms": 45.91990006156266,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.33,
-        "generation_ms": 0.91,
-        "verification_ms": 2.42,
-        "total_ms": 4.79
+        "retrieval_ms": 1.15,
+        "generation_ms": 1.47,
+        "verification_ms": 2.48,
+        "total_ms": 38.27
       }
     },
     {
@@ -68,14 +68,14 @@
       "status": "ANSWERED",
       "sources_count": 1,
       "claims_count": 1,
-      "answer_preview": "The exact parameter count is 10,282,304 parameters with tied embeddings.",
-      "transport_latency_ms": 13.791400007903576,
+      "answer_preview": "The exact parameter count is 999,376,128 parameters (~1.00B) with tied embeddings.",
+      "transport_latency_ms": 14.237200026400387,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 0.52,
-        "generation_ms": 1.77,
-        "verification_ms": 1.84,
-        "total_ms": 4.25
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.72,
+        "generation_ms": 1.97,
+        "verification_ms": 3.05,
+        "total_ms": 5.97
       }
     },
     {
@@ -87,13 +87,13 @@
       "sources_count": 0,
       "claims_count": 0,
       "answer_preview": "I do not have sufficient reliable information in the retrieved evidence to answer this question.",
-      "transport_latency_ms": 8.799299946986139,
+      "transport_latency_ms": 7.279000012204051,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 0.36,
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.34,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.43
+        "total_ms": 0.39
       }
     }
   ]

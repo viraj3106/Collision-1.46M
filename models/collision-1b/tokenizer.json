@@ -1,0 +1,5 @@
+{
+  "type": "BPETokenizer",
+  "vocab_size": 32000,
+  "path": "artifacts/tokenizer"
+}

@@ -1,45 +1,204 @@
 experiments:
+  - experiment_name: "COLLISION-1M"
+    target_parameters: "1.46M"
+    actual_parameters: 1462464
+    layers: 3
+    d_model: 128
+    heads: 4
+    d_ff: 256
+    vocab_size: 8000
+    context: 256
+    dataset: "collision_dataset_v1"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 6.0e-4
+    training_token_budget: 1536000
+    status: "COMPLETED"
+
   - experiment_name: "COLLISION-3M"
-    target_parameters: "3M"
+    target_parameters: "3.38M"
     actual_parameters: 3375680
     layers: 6
     d_model: 192
     heads: 6
+    d_ff: 384
+    vocab_size: 8000
     context: 256
     dataset: "collision_dataset_v4"
     tokenizer: "Custom BPE"
     seed: 1337
     optimizer: "AdamW"
-    learning_rate: 6e-4
+    learning_rate: 6.0e-4
     training_token_budget: 1536000
-    status: "READY"
+    status: "COMPLETED"
 
   - experiment_name: "COLLISION-7M"
-    target_parameters: "7M"
+    target_parameters: "6.34M"
     actual_parameters: 6338880
     layers: 8
     d_model: 256
     heads: 8
+    d_ff: 512
+    vocab_size: 8000
     context: 256
     dataset: "collision_dataset_v4"
     tokenizer: "Custom BPE"
     seed: 1337
     optimizer: "AdamW"
-    learning_rate: 6e-4
+    learning_rate: 6.0e-4
     training_token_budget: 1536000
-    status: "READY"
+    status: "COMPLETED"
 
-  - experiment_name: "COLLISION-15M"
-    target_parameters: "15M"
-    actual_parameters: 15017792
-    layers: 10
+  - experiment_name: "COLLISION-10M"
+    target_parameters: "10.28M"
+    actual_parameters: 10282304
+    layers: 6
     d_model: 384
     heads: 8
+    d_ff: 768
+    vocab_size: 8000
     context: 256
     dataset: "collision_dataset_v4"
     tokenizer: "Custom BPE"
     seed: 1337
     optimizer: "AdamW"
-    learning_rate: 6e-4
+    learning_rate: 6.0e-4
     training_token_budget: 1536000
-    status: "READY"
+    status: "EDGE_FLAGSHIP"
+
+  - experiment_name: "COLLISION-15M"
+    target_parameters: "16.59M"
+    actual_parameters: 16592064
+    layers: 8
+    d_model: 448
+    heads: 8
+    d_ff: 896
+    vocab_size: 8000
+    context: 256
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 5.0e-4
+    training_token_budget: 10000000
+    status: "CANONICAL_SCALED"
+
+  - experiment_name: "COLLISION-50M"
+    target_parameters: "53.93M"
+    actual_parameters: 53926272
+    layers: 12
+    d_model: 640
+    heads: 10
+    d_ff: 1536
+    vocab_size: 16000
+    context: 512
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 4.0e-4
+    training_token_budget: 10000000
+    status: "CANONICAL_SCALED"
+
+  - experiment_name: "COLLISION-100M"
+    target_parameters: "113.62M"
+    actual_parameters: 113619712
+    layers: 16
+    d_model: 768
+    heads: 12
+    d_ff: 2048
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 3.0e-4
+    training_token_budget: 10000000
+    status: "CANONICAL_SCALED"
+
+  - experiment_name: "COLLISION-250M"
+    target_parameters: "243.81M"
+    actual_parameters: 243811584
+    layers: 20
+    d_model: 1024
+    heads: 16
+    d_ff: 3072
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 2.5e-4
+    training_token_budget: 10000000
+    status: "CANONICAL_SCALED"
+
+  - experiment_name: "COLLISION-350M"
+    target_parameters: "356.91M"
+    actual_parameters: 356914688
+    layers: 24
+    d_model: 1152
+    heads: 18
+    d_ff: 3456
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 2.0e-4
+    training_token_budget: 10000000
+    status: "HEAVY_FRONTIER"
+
+  - experiment_name: "COLLISION-500M"
+    target_parameters: "501.49M"
+    actual_parameters: 501487360
+    layers: 28
+    d_model: 1280
+    heads: 20
+    d_ff: 3840
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 1.8e-4
+    training_token_budget: 10000000
+    status: "HALF_BILLION_ANCHOR"
+
+  - experiment_name: "COLLISION-750M"
+    target_parameters: "711.88M"
+    actual_parameters: 711878912
+    layers: 28
+    d_model: 1536
+    heads: 24
+    d_ff: 4608
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 1.5e-4
+    training_token_budget: 10000000
+    status: "HIGH_DENSITY_FRONTIER"
+
+  - experiment_name: "COLLISION-1.0B"
+    target_parameters: "1.00B"
+    actual_parameters: 999376128
+    layers: 24
+    d_model: 2048
+    heads: 16
+    d_ff: 5376
+    vocab_size: 32000
+    context: 1024
+    dataset: "collision_dataset_v5_expanded"
+    tokenizer: "Custom BPE"
+    seed: 1337
+    optimizer: "AdamW"
+    learning_rate: 1.2e-4
+    training_token_budget: 10000000
+    status: "FINAL_MAX_FRONTIER"

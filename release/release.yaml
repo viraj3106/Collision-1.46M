@@ -1,14 +1,35 @@
-model_name: "COLLISION-1.46M"
-parameters: 1462464
+model_name: "COLLISION-1.0B"
+parameters: 999376128
 architecture: "Decoder-only Transformer"
-layers: 3
-embedding_dimension: 128
-attention_heads: 4
-context_length: 256
+layers: 24
+embedding_dimension: 2048
+attention_heads: 16
+feedforward_dimension: 5376
+context_length: 1024
+vocabulary_size: 32000
+tie_embeddings: true
 tokenizer: "Custom BPE"
-training: "From scratch"
-training_hardware: "CPU"
-dataset: "collision_dataset_v4"
-best_validation_perplexity: 6.93
-checkpoint_path: "checkpoints/phase6/collision-1.46m-best.pt"
+training_hardware: "Multi-GPU / CPU Native"
+dataset: "collision_dataset_v5_expanded"
+checkpoint_path: "models/collision-1b/model.pt"
+checkpoint_sha256: "bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88"
 tokenizer_dir: "artifacts/tokenizer"
+
+historical_releases:
+  - model_name: "COLLISION-10M"
+    parameters: 10282304
+    layers: 6
+    embedding_dimension: 384
+    attention_heads: 8
+    context_length: 256
+    checkpoint_path: "models/collision-10m/model.pt"
+    status: "EDGE_FLAGSHIP"
+
+  - model_name: "COLLISION-1.46M"
+    parameters: 1462464
+    layers: 3
+    embedding_dimension: 128
+    attention_heads: 4
+    context_length: 256
+    checkpoint_path: "checkpoints/phase6/collision-1.46m-best.pt"
+    status: "HISTORICAL_BASELINE"

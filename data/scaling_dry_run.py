@@ -97,7 +97,11 @@ def main():
         "configs/collision_15m.yaml",
         "configs/collision_50m.yaml",
         "configs/collision_100m.yaml",
-        "configs/collision_250m.yaml"
+        "configs/collision_250m.yaml",
+        "configs/collision_350m.yaml",
+        "configs/collision_500m.yaml",
+        "configs/collision_750m.yaml",
+        "configs/collision_1b.yaml"
     ]
     
     results = []

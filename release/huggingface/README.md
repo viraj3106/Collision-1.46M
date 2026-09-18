@@ -29,15 +29,15 @@ metrics:
 - perplexity
 - accuracy
 - flesch-reading-ease
-model_name: COLLISION-10M
+model_name: COLLISION-1.0B
 pipeline_tag: text-generation
-parameters: 10.28M
+parameters: 1.00B
 ---
 
-# ⚡ COLLISION-10M & Industrial NLP Suite
+# ⚡ COLLISION-1.0B & Industrial NLP Suite
 
 <p align="center">
-  <b>An Ultra-Efficient, CPU-Native 10.28M Parameter Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
+  <b>A High-Efficiency 999.38M Parameter Flagship Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
 </p>
 
 <p align="center">
@@ -45,22 +45,20 @@ parameters: 10.28M
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://github.com/viraj3106/Collision-1.46M"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/Parameters-10.28M-purple" alt="Parameters">
-  <img src="https://img.shields.io/badge/CPU%20Latency-%3C5ms-brightgreen" alt="Latency">
+  <img src="https://img.shields.io/badge/Parameters-1.00B-purple" alt="Parameters">
+  <img src="https://img.shields.io/badge/Context-1024%20tokens-brightgreen" alt="Context">
 </p>
 
----
+---## 🌟 Why COLLISION-1.0B?
 
-## 🌟 Why COLLISION-10M?
-
-**COLLISION-10M** is a breakthrough, ultra-compact 10.28M parameter language model and full-stack intelligence system designed for **edge devices, microservices, and CPU-only environments**. It eliminates the massive GPU requirements of heavy LLMs while delivering fast, accurate, and naturally formatted responses.
+**COLLISION-1.0B** is the official primary flagship model of the COLLISION ecosystem. Packing **999,376,128 parameters** (~1.00B) into an optimized 24-layer transformer architecture, it delivers rich contextual reasoning, full 1,024-token context capacity, and state-of-the-art hybrid NLP capabilities with grounded web and local retrieval.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        COLLISION UNIFIED SYSTEM                        │
 ├────────────────────────────────────────────────────────────────────────┤
-│  1. COLLISION Neural Core (10.28M Parameters, Causal Transformer)      │
-│  2. Natural Grounded Synthesis Engine (ChatGPT / Gemini Phrasing)      │
+│  1. COLLISION Neural Flagship (999.38M Parameters, Causal Transformer) │
+│  2. Natural Grounded Synthesis Engine (Grounded Answering & Citations) │
 │  3. Multi-Source Live Web & Local Knowledge Retrieval (RAG)            │
 │  4. Industrial In-House NLP Suite (`collision.nlp` Subsystem):         │
 │     ├── Zero-Latency Conversational Dialogue                           │
@@ -71,6 +69,10 @@ parameters: 10.28M
 │     ├── Context Reading Comprehension QA                               │
 │     ├── Deterministic Math, Geometry, Statistics & Unit Conversions    │
 │     └── Semantic Text Similarity (Cosine, TF-IDF, Jaccard, N-Grams)    │
+│  5. Synaptic Cognitive Brain (`collision.brain` Subsystem):            │
+│     ├── System 1 / System 2 Dual-Process Controller                    │
+│     ├── Graph-of-Thoughts (GoT) Hegelian Dialectics                    │
+│     └── Global Workspace Theory (GWT) Conscious Broadcasting           │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -78,20 +80,19 @@ parameters: 10.28M
 
 ## 📊 Comparative Performance Benchmarks
 
-| Metric / Capability | **COLLISION-10M** | SmolLM-135M | TinyLlama-1.1B |
-| :--- | :---: | :---: | :---: |
-| **Active Parameters** | **10.28 Million** | 135 Million | 1.10 Billion |
-| **RAM / Memory Footprint** | **~120 MB** | ~550 MB | ~2.20 GB |
-| **CPU Inference Latency** | **< 5 ms** | ~45 ms | ~180 ms |
-| **GPU Required?** | ❌ **100% CPU Native** | ⚠️ Recommended | ✅ Required |
-| **Natural Web Grounding?** | ✅ **Built-in (ChatGPT style)** | ❌ External only | ❌ External only |
-| **Full Industrial NLP Suite?** | ✅ **11 Integrated Tasks** | ❌ None | ❌ None |
-| **Deterministic Math & Stats?** | ✅ **100% Precision Engine** | ❌ Hallucination-prone | ❌ Hallucination-prone |
-| **Edge / Raspberry Pi Ready?** | ✅ **Instant Run** | ⚠️ High Load | ❌ Out of Memory |
+| Metric / Capability | **COLLISION-1.0B** | **COLLISION-10M** | SmolLM-135M | TinyLlama-1.1B |
+| :--- | :---: | :---: | :---: | :---: |
+| **Active Parameters** | **999.38 Million** | **10.28 Million** | 135 Million | 1.10 Billion |
+| **Layers / Heads / Dim** | **24 / 16 / 2048** | **6 / 8 / 384** | 30 / 9 / 576 | 22 / 32 / 2048 |
+| **Context Window** | **1,024 tokens** | **256 tokens** | 2,048 tokens | 2,048 tokens |
+| **Natural Web Grounding?** | ✅ **Built-in (Tri-Modal)** | ✅ **Built-in** | ❌ External only | ❌ External only |
+| **Full Industrial NLP Suite?** | ✅ **11 Integrated Tasks** | ✅ **11 Integrated Tasks** | ❌ None | ❌ None |
+| **Deterministic Math & Stats?** | ✅ **100% Precision Engine** | ✅ **100% Precision Engine** | ❌ Hallucination-prone | ❌ Hallucination-prone |
+| **Role & Deployment Target** | **Production Flagship** | **Edge / Micro-device** | Research SLM | Base LLM |
 
 ---
 
-## 🚀 3-Line Quickstart
+## 🚀 Quickstart
 
 ### Option 1: Python Package (Recommended)
 
@@ -104,17 +105,13 @@ from collision import CollisionService
 
 service = CollisionService()
 
-# 1. Natural Web Grounded Answering (ChatGPT style)
+# 1. Natural Web Grounded Answering
 res = service.ask("What is the latest release version of PyTorch in 2025?", mode="WEB")
 print(res["answer"])
-# **PyTorch 2.5** is the latest official release version, delivering major performance optimizations:
-# • **FlexAttention**: High-performance flexible attention mechanism API
-# • **torch.compile**: Enhanced kernel compilation performance and broader model coverage
 
 # 2. Exact Deterministic Math & Conversions
 math_res = service.ask("What is 45 * 12 + 180 / 4?", mode="AUTO")
 print(math_res["answer"])
-# 45 * 12 + 180 / 4 = 585.0
 ```
 
 ---
@@ -132,14 +129,9 @@ Run everything in your browser on free Google Colab in under 10 seconds:
 Clone this repository and run pure PyTorch inference directly:
 
 ```bash
-git clone https://huggingface.co/collision-10M/collision-10m
-cd collision-10m
-python generate.py --prompt "Artificial intelligence is"
-```
-
-Interactive chat mode:
-```bash
-python generate.py --interactive
+git clone https://huggingface.co/viraj3106/collision-1.0b
+cd collision-1.0b
+python release_inference.py --prompt "Artificial intelligence is" --checkpoint model.pt
 ```
 
 ---
@@ -216,15 +208,16 @@ Key Cognitive Features:
 
 ## 🛠️ Model Architecture & Technical Specifications
 
-* **Parameter Count**: `10,282,304` (10.28M)
+* **Parameter Count**: `999,376,128` (~1.00B)
 * **Architecture**: Causal Decoder-Only Transformer (Weight-Tied Embeddings)
-* **Layers (`n_layer`)**: 6
-* **Hidden Size (`d_model`)**: 384
-* **Attention Heads (`n_head`)**: 8
-* **Feedforward Dimension (`d_ff`)**: 768
-* **Context Length**: 256 tokens
-* **Vocabulary**: Custom Byte-Pair Encoding (BPE)
-* **Checkpoint SHA-256**: `d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97`
+* **Layers (`n_layer`)**: 24
+* **Hidden Size (`d_model`)**: 2048
+* **Attention Heads (`n_head`)**: 16
+* **Feedforward Dimension (`d_ff`)**: 5376
+* **Context Length**: 1,024 tokens
+* **Vocabulary**: Custom Byte-Pair Encoding (BPE, 32,000 vocab)
+* **Checkpoint SHA-256**: `bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88`
+* **Edge Flagship Variant (10M)**: `d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97` (10,282,304 parameters)
 
 ---
 
@@ -237,9 +230,9 @@ Key Cognitive Features:
 ```bibtex
 @misc{collision2026,
   author = {Viraj et al.},
-  title = {COLLISION-10M: An Ultra-Efficient CPU-First Transformer & Grounded NLP Intelligence System},
+  title = {COLLISION-1.0B: High-Efficiency Scaled Transformer & Grounded NLP Intelligence System},
   year = {2026},
   publisher = {Hugging Face},
-  howpublished = {\url{https://huggingface.co/viraj3106/collision-10m}}
+  howpublished = {\url{https://huggingface.co/viraj3106/collision-1.0b}}
 }
 ```

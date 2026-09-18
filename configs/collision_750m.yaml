@@ -1,0 +1,23 @@
+# COLLISION-750M High-Density Frontier Configuration (711,878,912 Exact Parameters / 711.88M)
+model:
+  vocab_size: 32000
+  max_seq_len: 1024
+  d_model: 1536
+  n_layer: 28
+  n_head: 24
+  d_ff: 4608
+  dropout: 0.1
+  tie_embeddings: true
+  normalization: layer_norm
+  positional_encoding: absolute_learned
+
+training:
+  learning_rate: 1.5e-4
+  min_lr: 1.0e-5
+  warmup_steps: 3000
+  max_steps: 150000
+  batch_size: 8
+  gradient_accumulation_steps: 64
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  seed: 1337

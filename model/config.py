@@ -3,12 +3,12 @@ import yaml
 class ModelConfig:
     def __init__(
         self,
-        vocab_size: int = 8000,
-        max_seq_len: int = 256,
-        d_model: int = 384,
-        n_layer: int = 6,
-        n_head: int = 8,
-        d_ff: int = 768,
+        vocab_size: int = 32000,
+        max_seq_len: int = 1024,
+        d_model: int = 2048,
+        n_layer: int = 24,
+        n_head: int = 16,
+        d_ff: int = 5376,
         dropout: float = 0.1,
         tie_embeddings: bool = True,
         **kwargs

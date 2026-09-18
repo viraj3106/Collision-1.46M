@@ -2,11 +2,11 @@
   "total_evaluated": 170,
   "passed_count": 170,
   "pass_rate_pct": 100.0,
-  "grounded_claim_support_rate_pct": 100.0,
-  "unsupported_claim_rate_pct": 0.0,
-  "avg_latency_ms": 15.1,
-  "p50_latency_ms": 12.31,
-  "p95_latency_ms": 16.99,
+  "grounded_claim_support_rate_pct": 88.56,
+  "unsupported_claim_rate_pct": 11.44,
+  "avg_latency_ms": 22.93,
+  "p50_latency_ms": 15.78,
+  "p95_latency_ms": 40.7,
   "category_breakdown": {
     "A": {
       "total": 20,
@@ -58,14 +58,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 505.78,
+      "claims_count": 3,
+      "latency_ms": 742.7,
       "engine_latency": {
-        "routing_ms": 11.2,
-        "retrieval_ms": 3.0,
-        "generation_ms": 3.13,
-        "verification_ms": 3.21,
-        "total_ms": 23.89
+        "routing_ms": 9.32,
+        "retrieval_ms": 3.43,
+        "generation_ms": 14.25,
+        "verification_ms": 12.44,
+        "total_ms": 59.83
       }
     },
     {
@@ -77,13 +77,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.99,
+      "latency_ms": 16.58,
       "engine_latency": {
-        "routing_ms": 0.77,
-        "retrieval_ms": 1.22,
-        "generation_ms": 0.98,
-        "verification_ms": 1.2,
-        "total_ms": 4.3
+        "routing_ms": 0.98,
+        "retrieval_ms": 1.86,
+        "generation_ms": 2.08,
+        "verification_ms": 1.4,
+        "total_ms": 6.81
       }
     },
     {
@@ -94,14 +94,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 12.74,
+      "claims_count": 2,
+      "latency_ms": 19.12,
       "engine_latency": {
-        "routing_ms": 0.64,
-        "retrieval_ms": 1.44,
-        "generation_ms": 1.15,
-        "verification_ms": 1.36,
-        "total_ms": 4.79
+        "routing_ms": 0.81,
+        "retrieval_ms": 1.85,
+        "generation_ms": 2.99,
+        "verification_ms": 3.45,
+        "total_ms": 9.75
       }
     },
     {
@@ -112,14 +112,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 15.2,
+      "claims_count": 3,
+      "latency_ms": 27.13,
       "engine_latency": {
-        "routing_ms": 0.51,
-        "retrieval_ms": 1.8,
-        "generation_ms": 2.4,
-        "verification_ms": 2.49,
-        "total_ms": 7.55
+        "routing_ms": 0.9,
+        "retrieval_ms": 2.93,
+        "generation_ms": 4.06,
+        "verification_ms": 8.9,
+        "total_ms": 17.58
       }
     },
     {
@@ -131,13 +131,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.39,
+      "latency_ms": 16.56,
       "engine_latency": {
-        "routing_ms": 0.55,
-        "retrieval_ms": 1.46,
-        "generation_ms": 0.75,
-        "verification_ms": 0.95,
-        "total_ms": 3.78
+        "routing_ms": 1.0,
+        "retrieval_ms": 2.44,
+        "generation_ms": 1.53,
+        "verification_ms": 1.8,
+        "total_ms": 7.14
       }
     },
     {
@@ -149,13 +149,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 2,
-      "latency_ms": 19.68,
+      "latency_ms": 33.97,
       "engine_latency": {
-        "routing_ms": 1.8,
-        "retrieval_ms": 1.49,
-        "generation_ms": 2.29,
-        "verification_ms": 6.24,
-        "total_ms": 12.09
+        "routing_ms": 2.67,
+        "retrieval_ms": 2.42,
+        "generation_ms": 6.3,
+        "verification_ms": 11.57,
+        "total_ms": 24.06
       }
     },
     {
@@ -167,13 +167,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.93,
+      "latency_ms": 15.28,
       "engine_latency": {
-        "routing_ms": 0.54,
-        "retrieval_ms": 1.24,
-        "generation_ms": 1.01,
-        "verification_ms": 1.85,
-        "total_ms": 4.75
+        "routing_ms": 0.56,
+        "retrieval_ms": 1.28,
+        "generation_ms": 1.49,
+        "verification_ms": 1.97,
+        "total_ms": 5.62
       }
     },
     {
@@ -185,13 +185,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 9.86,
+      "latency_ms": 17.16,
       "engine_latency": {
-        "routing_ms": 0.61,
-        "retrieval_ms": 0.8,
-        "generation_ms": 0.66,
-        "verification_ms": 0.74,
-        "total_ms": 2.89
+        "routing_ms": 1.09,
+        "retrieval_ms": 1.31,
+        "generation_ms": 1.26,
+        "verification_ms": 2.07,
+        "total_ms": 6.19
       }
     },
     {
@@ -203,13 +203,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.76,
+      "latency_ms": 16.28,
       "engine_latency": {
-        "routing_ms": 0.67,
-        "retrieval_ms": 1.06,
-        "generation_ms": 0.92,
-        "verification_ms": 1.17,
-        "total_ms": 3.92
+        "routing_ms": 0.76,
+        "retrieval_ms": 1.77,
+        "generation_ms": 1.65,
+        "verification_ms": 2.26,
+        "total_ms": 6.85
       }
     },
     {
@@ -221,13 +221,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.01,
+      "latency_ms": 14.34,
       "engine_latency": {
-        "routing_ms": 0.55,
-        "retrieval_ms": 0.82,
-        "generation_ms": 0.66,
-        "verification_ms": 0.79,
-        "total_ms": 2.91
+        "routing_ms": 0.7,
+        "retrieval_ms": 1.01,
+        "generation_ms": 1.24,
+        "verification_ms": 1.06,
+        "total_ms": 4.33
       }
     },
     {
@@ -239,13 +239,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.88,
+      "latency_ms": 14.73,
       "engine_latency": {
-        "routing_ms": 0.66,
-        "retrieval_ms": 1.23,
-        "generation_ms": 1.11,
-        "verification_ms": 1.48,
-        "total_ms": 4.58
+        "routing_ms": 0.72,
+        "retrieval_ms": 1.29,
+        "generation_ms": 1.55,
+        "verification_ms": 1.65,
+        "total_ms": 5.58
       }
     },
     {
@@ -256,14 +256,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 18.11,
+      "claims_count": 3,
+      "latency_ms": 27.91,
       "engine_latency": {
-        "routing_ms": 0.64,
-        "retrieval_ms": 2.84,
-        "generation_ms": 2.57,
-        "verification_ms": 3.29,
-        "total_ms": 9.83
+        "routing_ms": 0.73,
+        "retrieval_ms": 2.77,
+        "generation_ms": 4.19,
+        "verification_ms": 10.18,
+        "total_ms": 18.64
       }
     },
     {
@@ -273,15 +273,15 @@
       "status": "ANSWERED",
       "mode": "WEB",
       "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 16.06,
+      "sources_count": 3,
+      "claims_count": 3,
+      "latency_ms": 25.99,
       "engine_latency": {
-        "routing_ms": 0.68,
-        "retrieval_ms": 1.73,
-        "generation_ms": 3.02,
-        "verification_ms": 2.15,
-        "total_ms": 7.91
+        "routing_ms": 0.73,
+        "retrieval_ms": 2.33,
+        "generation_ms": 3.31,
+        "verification_ms": 8.42,
+        "total_ms": 15.48
       }
     },
     {
@@ -293,13 +293,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.81,
+      "latency_ms": 13.53,
       "engine_latency": {
-        "routing_ms": 0.83,
-        "retrieval_ms": 0.69,
-        "generation_ms": 0.55,
-        "verification_ms": 0.73,
-        "total_ms": 2.89
+        "routing_ms": 0.59,
+        "retrieval_ms": 1.38,
+        "generation_ms": 1.38,
+        "verification_ms": 1.12,
+        "total_ms": 4.79
       }
     },
     {
@@ -311,13 +311,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 10.41,
+      "latency_ms": 12.85,
       "engine_latency": {
-        "routing_ms": 0.4,
-        "retrieval_ms": 0.76,
-        "generation_ms": 0.89,
-        "verification_ms": 0.68,
-        "total_ms": 2.84
+        "routing_ms": 0.49,
+        "retrieval_ms": 0.69,
+        "generation_ms": 1.21,
+        "verification_ms": 0.99,
+        "total_ms": 3.73
       }
     },
     {
@@ -329,13 +329,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.81,
+      "latency_ms": 15.47,
       "engine_latency": {
-        "routing_ms": 0.34,
-        "retrieval_ms": 0.89,
-        "generation_ms": 0.75,
-        "verification_ms": 1.3,
-        "total_ms": 3.35
+        "routing_ms": 0.49,
+        "retrieval_ms": 1.13,
+        "generation_ms": 1.42,
+        "verification_ms": 1.65,
+        "total_ms": 4.97
       }
     },
     {
@@ -347,13 +347,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.59,
+      "latency_ms": 17.63,
       "engine_latency": {
-        "routing_ms": 0.56,
-        "retrieval_ms": 1.14,
-        "generation_ms": 1.03,
-        "verification_ms": 1.48,
-        "total_ms": 4.29
+        "routing_ms": 0.74,
+        "retrieval_ms": 1.5,
+        "generation_ms": 1.88,
+        "verification_ms": 2.27,
+        "total_ms": 6.74
       }
     },
     {
@@ -365,13 +365,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.34,
+      "latency_ms": 15.57,
       "engine_latency": {
-        "routing_ms": 0.5,
-        "retrieval_ms": 0.86,
-        "generation_ms": 0.72,
-        "verification_ms": 1.02,
-        "total_ms": 3.19
+        "routing_ms": 0.59,
+        "retrieval_ms": 1.08,
+        "generation_ms": 1.41,
+        "verification_ms": 1.39,
+        "total_ms": 4.79
       }
     },
     {
@@ -383,13 +383,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.96,
+      "latency_ms": 16.87,
       "engine_latency": {
-        "routing_ms": 0.72,
-        "retrieval_ms": 2.2,
-        "generation_ms": 1.3,
-        "verification_ms": 1.37,
-        "total_ms": 5.7
+        "routing_ms": 0.67,
+        "retrieval_ms": 1.63,
+        "generation_ms": 1.56,
+        "verification_ms": 1.74,
+        "total_ms": 5.94
       }
     },
     {
@@ -401,125 +401,215 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.04,
+      "latency_ms": 17.0,
       "engine_latency": {
-        "routing_ms": 0.57,
-        "retrieval_ms": 1.1,
-        "generation_ms": 0.87,
-        "verification_ms": 1.62,
-        "total_ms": 4.25
+        "routing_ms": 0.73,
+        "retrieval_ms": 1.39,
+        "generation_ms": 1.63,
+        "verification_ms": 1.82,
+        "total_ms": 5.89
       }
     },
     {
       "idx": 21,
       "category": "B",
-      "question": "What is COLLISION 10M?",
+      "question": "What is COLLISION 1.0B?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 12.39,
+      "claims_count": 3,
+      "latency_ms": 38.79,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.29,
-        "generation_ms": 1.55,
-        "verification_ms": 2.54,
-        "total_ms": 4.64
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.41,
+        "generation_ms": 5.5,
+        "verification_ms": 21.74,
+        "total_ms": 28.16
       }
     },
     {
       "idx": 22,
+      "category": "B",
+      "question": "What is the embedding dimension in the COLLISION 1.0B architecture?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 36.9,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.9,
+        "generation_ms": 7.13,
+        "verification_ms": 19.09,
+        "total_ms": 27.71
+      }
+    },
+    {
+      "idx": 23,
+      "category": "B",
+      "question": "How many transformer layers are in the COLLISION 1.0B flagship model?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 2,
+      "claims_count": 3,
+      "latency_ms": 48.09,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.86,
+        "generation_ms": 8.73,
+        "verification_ms": 27.46,
+        "total_ms": 38.21
+      }
+    },
+    {
+      "idx": 24,
+      "category": "B",
+      "question": "How many attention heads are in COLLISION 1.0B?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 40.56,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.58,
+        "generation_ms": 6.62,
+        "verification_ms": 23.05,
+        "total_ms": 30.74
+      }
+    },
+    {
+      "idx": 25,
+      "category": "B",
+      "question": "What is the d_ff dimension in the COLLISION 1.0B architecture?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 35.43,
+      "engine_latency": {
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.78,
+        "generation_ms": 6.11,
+        "verification_ms": 17.52,
+        "total_ms": 24.92
+      }
+    },
+    {
+      "idx": 26,
+      "category": "B",
+      "question": "What is the exact parameter count of COLLISION 1.0B?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 34.55,
+      "engine_latency": {
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.58,
+        "generation_ms": 6.27,
+        "verification_ms": 17.15,
+        "total_ms": 24.48
+      }
+    },
+    {
+      "idx": 27,
       "category": "B",
       "question": "What is the embedding dimension in the COLLISION 10M architecture?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.4,
+      "claims_count": 3,
+      "latency_ms": 31.15,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.56,
-        "generation_ms": 1.08,
-        "verification_ms": 1.82,
-        "total_ms": 3.61
+        "retrieval_ms": 0.67,
+        "generation_ms": 5.33,
+        "verification_ms": 14.42,
+        "total_ms": 20.67
       }
     },
     {
-      "idx": 23,
+      "idx": 28,
       "category": "B",
       "question": "How many transformer layers are in the COLLISION 10M model?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.83,
+      "claims_count": 3,
+      "latency_ms": 30.42,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.64,
-        "generation_ms": 1.92,
-        "verification_ms": 1.88,
-        "total_ms": 4.6
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.62,
+        "generation_ms": 5.12,
+        "verification_ms": 14.55,
+        "total_ms": 20.54
       }
     },
     {
-      "idx": 24,
+      "idx": 29,
       "category": "B",
       "question": "How many attention heads are in COLLISION 10M?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.77,
+      "claims_count": 3,
+      "latency_ms": 30.88,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.91,
-        "generation_ms": 1.24,
-        "verification_ms": 1.79,
-        "total_ms": 4.14
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.67,
+        "generation_ms": 5.34,
+        "verification_ms": 14.83,
+        "total_ms": 21.11
       }
     },
     {
-      "idx": 25,
+      "idx": 30,
       "category": "B",
       "question": "What is the d_ff dimension in the COLLISION 10M architecture?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.4,
+      "claims_count": 3,
+      "latency_ms": 35.07,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.47,
-        "generation_ms": 1.68,
-        "verification_ms": 3.48,
-        "total_ms": 5.9
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.62,
+        "generation_ms": 6.56,
+        "verification_ms": 18.05,
+        "total_ms": 25.71
       }
     },
     {
-      "idx": 26,
+      "idx": 31,
       "category": "B",
       "question": "What is the exact parameter count of COLLISION 10M?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.56,
+      "claims_count": 3,
+      "latency_ms": 31.94,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.48,
-        "generation_ms": 1.39,
-        "verification_ms": 1.53,
-        "total_ms": 3.52
+        "retrieval_ms": 0.54,
+        "generation_ms": 6.37,
+        "verification_ms": 15.2,
+        "total_ms": 22.37
       }
     },
     {
-      "idx": 27,
+      "idx": 32,
       "category": "B",
       "question": "What chunk size is used by the Phase 94 local chunker?",
       "status": "ANSWERED",
@@ -527,17 +617,17 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 10.99,
+      "latency_ms": 13.11,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.44,
-        "generation_ms": 0.77,
-        "verification_ms": 1.41,
-        "total_ms": 2.76
+        "retrieval_ms": 0.58,
+        "generation_ms": 1.36,
+        "verification_ms": 2.11,
+        "total_ms": 4.19
       }
     },
     {
-      "idx": 28,
+      "idx": 33,
       "category": "B",
       "question": "What chunk overlap is used by the local chunker?",
       "status": "ANSWERED",
@@ -545,71 +635,89 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.81,
+      "latency_ms": 14.39,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.55,
-        "generation_ms": 1.04,
-        "verification_ms": 1.36,
-        "total_ms": 3.1
+        "retrieval_ms": 0.53,
+        "generation_ms": 1.79,
+        "verification_ms": 1.81,
+        "total_ms": 4.28
       }
     },
     {
-      "idx": 29,
+      "idx": 34,
       "category": "B",
       "question": "What distance metric and threshold does the local retriever use?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.26,
+      "claims_count": 2,
+      "latency_ms": 17.04,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 1.05,
-        "generation_ms": 1.57,
-        "verification_ms": 1.47,
-        "total_ms": 4.26
+        "retrieval_ms": 0.64,
+        "generation_ms": 2.38,
+        "verification_ms": 3.72,
+        "total_ms": 6.89
       }
     },
     {
-      "idx": 30,
+      "idx": 35,
       "category": "B",
-      "question": "What is the SHA-256 hash of the flagship checkpoint?",
+      "question": "What is the SHA-256 hash of the flagship 1.0B checkpoint?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 15.2,
+      "claims_count": 3,
+      "latency_ms": 37.74,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 0.53,
-        "generation_ms": 1.53,
-        "verification_ms": 2.01,
-        "total_ms": 4.18
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.62,
+        "generation_ms": 5.63,
+        "verification_ms": 21.89,
+        "total_ms": 28.75
       }
     },
     {
-      "idx": 31,
+      "idx": 36,
+      "category": "B",
+      "question": "What is the SHA-256 hash of the edge 10M checkpoint?",
+      "status": "ANSWERED",
+      "mode": "LOCAL",
+      "passed": true,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 41.18,
+      "engine_latency": {
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.56,
+        "generation_ms": 7.8,
+        "verification_ms": 22.5,
+        "total_ms": 31.48
+      }
+    },
+    {
+      "idx": 37,
       "category": "B",
       "question": "What is the SHA-256 hash of the research checkpoint?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.52,
+      "claims_count": 3,
+      "latency_ms": 26.84,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.46,
-        "generation_ms": 1.54,
-        "verification_ms": 1.99,
-        "total_ms": 4.1
+        "retrieval_ms": 0.54,
+        "generation_ms": 4.14,
+        "verification_ms": 11.34,
+        "total_ms": 16.19
       }
     },
     {
-      "idx": 32,
+      "idx": 38,
       "category": "B",
       "question": "What temperature is used for deterministic generation in COLLISION?",
       "status": "ANSWERED",
@@ -617,17 +725,17 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.56,
+      "latency_ms": 15.8,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 0.57,
-        "generation_ms": 1.08,
-        "verification_ms": 1.35,
-        "total_ms": 3.13
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.69,
+        "generation_ms": 3.06,
+        "verification_ms": 2.34,
+        "total_ms": 6.21
       }
     },
     {
-      "idx": 33,
+      "idx": 39,
       "category": "B",
       "question": "What repetition penalty is configured in the answering engine?",
       "status": "ANSWERED",
@@ -635,139 +743,31 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.51,
+      "latency_ms": 14.83,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.67,
-        "generation_ms": 1.08,
-        "verification_ms": 1.85,
-        "total_ms": 3.7
-      }
-    },
-    {
-      "idx": 34,
-      "category": "B",
-      "question": "Explain the layer count and embedding dimension of COLLISION 10M.",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.96,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.53,
-        "generation_ms": 2.17,
-        "verification_ms": 2.49,
-        "total_ms": 5.44
-      }
-    },
-    {
-      "idx": 35,
-      "category": "B",
-      "question": "Summarize the architectural specifications of COLLISION 10M.",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 13.83,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.54,
-        "generation_ms": 1.74,
-        "verification_ms": 2.58,
-        "total_ms": 5.11
-      }
-    },
-    {
-      "idx": 36,
-      "category": "B",
-      "question": "What are the token dimensions and attention heads in COLLISION?",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.88,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.49,
-        "generation_ms": 1.02,
-        "verification_ms": 1.99,
-        "total_ms": 3.63
-      }
-    },
-    {
-      "idx": 37,
-      "category": "B",
-      "question": "Describe the local vector index similarity threshold in RAG.",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.42,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.59,
-        "generation_ms": 1.46,
-        "verification_ms": 1.4,
-        "total_ms": 3.61
-      }
-    },
-    {
-      "idx": 38,
-      "category": "B",
-      "question": "What are the tied embedding parameters of COLLISION?",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 13.78,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.45,
-        "generation_ms": 2.05,
-        "verification_ms": 2.87,
-        "total_ms": 5.65
-      }
-    },
-    {
-      "idx": 39,
-      "category": "B",
-      "question": "Detail the flagship model checkpoint hash.",
-      "status": "ANSWERED",
-      "mode": "LOCAL",
-      "passed": true,
-      "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.99,
-      "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.56,
-        "generation_ms": 1.87,
-        "verification_ms": 2.04,
-        "total_ms": 4.6
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.79,
+        "generation_ms": 2.61,
+        "verification_ms": 2.3,
+        "total_ms": 5.88
       }
     },
     {
       "idx": 40,
       "category": "B",
-      "question": "Detail the research model checkpoint hash.",
+      "question": "What are the tied embedding parameters of COLLISION 1.0B?",
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.15,
+      "claims_count": 3,
+      "latency_ms": 40.86,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.44,
-        "generation_ms": 1.82,
-        "verification_ms": 2.23,
-        "total_ms": 4.59
+        "retrieval_ms": 1.14,
+        "generation_ms": 6.62,
+        "verification_ms": 17.87,
+        "total_ms": 26.16
       }
     },
     {
@@ -779,13 +779,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.54,
+      "latency_ms": 14.84,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.01,
-        "generation_ms": 1.09,
-        "verification_ms": 0.99,
-        "total_ms": 3.2
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.43,
+        "generation_ms": 0.96,
+        "verification_ms": 2.89,
+        "total_ms": 5.41
       }
     },
     {
@@ -797,13 +797,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 16.08,
+      "latency_ms": 19.91,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.92,
-        "generation_ms": 2.31,
-        "verification_ms": 2.81,
-        "total_ms": 7.3
+        "routing_ms": 0.02,
+        "retrieval_ms": 2.37,
+        "generation_ms": 2.09,
+        "verification_ms": 5.31,
+        "total_ms": 10.06
       }
     },
     {
@@ -815,13 +815,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 14.65,
+      "latency_ms": 19.53,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 2.5,
-        "generation_ms": 1.56,
-        "verification_ms": 2.38,
-        "total_ms": 6.75
+        "retrieval_ms": 2.21,
+        "generation_ms": 2.65,
+        "verification_ms": 4.32,
+        "total_ms": 9.46
       }
     },
     {
@@ -833,13 +833,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.37,
+      "latency_ms": 14.28,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 1.1,
-        "generation_ms": 1.21,
-        "verification_ms": 1.96,
-        "total_ms": 4.4
+        "routing_ms": 0.01,
+        "retrieval_ms": 1.88,
+        "generation_ms": 0.92,
+        "verification_ms": 2.27,
+        "total_ms": 5.23
       }
     },
     {
@@ -851,13 +851,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.21,
+      "latency_ms": 13.03,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.98,
-        "generation_ms": 1.19,
-        "verification_ms": 1.06,
-        "total_ms": 3.33
+        "retrieval_ms": 1.22,
+        "generation_ms": 1.39,
+        "verification_ms": 1.33,
+        "total_ms": 4.05
       }
     },
     {
@@ -869,13 +869,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.69,
+      "latency_ms": 13.23,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.84,
-        "generation_ms": 0.57,
-        "verification_ms": 0.68,
-        "total_ms": 2.19
+        "retrieval_ms": 1.03,
+        "generation_ms": 1.08,
+        "verification_ms": 0.96,
+        "total_ms": 3.21
       }
     },
     {
@@ -887,13 +887,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 15.51,
+      "latency_ms": 14.85,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 1.33,
-        "generation_ms": 0.74,
-        "verification_ms": 0.98,
-        "total_ms": 3.21
+        "routing_ms": 0.01,
+        "retrieval_ms": 1.38,
+        "generation_ms": 0.97,
+        "verification_ms": 3.2,
+        "total_ms": 5.69
       }
     },
     {
@@ -905,13 +905,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 15.73,
+      "latency_ms": 12.63,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 1.37,
-        "generation_ms": 1.24,
-        "verification_ms": 0.71,
-        "total_ms": 3.45
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.98,
+        "generation_ms": 1.09,
+        "verification_ms": 0.93,
+        "total_ms": 3.1
       }
     },
     {
@@ -923,13 +923,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 17.47,
+      "latency_ms": 16.35,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 1.48,
-        "generation_ms": 1.23,
-        "verification_ms": 1.49,
-        "total_ms": 4.36
+        "routing_ms": 0.01,
+        "retrieval_ms": 1.3,
+        "generation_ms": 1.01,
+        "verification_ms": 2.84,
+        "total_ms": 5.27
       }
     },
     {
@@ -941,13 +941,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.17,
+      "latency_ms": 15.59,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.06,
-        "generation_ms": 0.7,
-        "verification_ms": 0.78,
-        "total_ms": 2.65
+        "retrieval_ms": 1.83,
+        "generation_ms": 0.85,
+        "verification_ms": 2.27,
+        "total_ms": 5.06
       }
     },
     {
@@ -959,13 +959,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.26,
+      "latency_ms": 16.28,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 1.46,
-        "generation_ms": 0.85,
-        "verification_ms": 0.81,
-        "total_ms": 3.25
+        "retrieval_ms": 1.87,
+        "generation_ms": 0.88,
+        "verification_ms": 2.26,
+        "total_ms": 5.13
       }
     },
     {
@@ -977,13 +977,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 16.59,
+      "latency_ms": 19.72,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.92,
-        "generation_ms": 1.69,
-        "verification_ms": 3.15,
-        "total_ms": 6.99
+        "routing_ms": 0.02,
+        "retrieval_ms": 2.7,
+        "generation_ms": 2.25,
+        "verification_ms": 5.43,
+        "total_ms": 10.71
       }
     },
     {
@@ -995,13 +995,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 14.07,
+      "latency_ms": 22.36,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.58,
-        "generation_ms": 1.35,
-        "verification_ms": 1.54,
-        "total_ms": 4.67
+        "retrieval_ms": 2.64,
+        "generation_ms": 2.57,
+        "verification_ms": 5.05,
+        "total_ms": 10.62
       }
     },
     {
@@ -1013,13 +1013,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 10.73,
+      "latency_ms": 16.59,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.11,
-        "generation_ms": 0.76,
-        "verification_ms": 0.69,
-        "total_ms": 2.66
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.54,
+        "generation_ms": 1.58,
+        "verification_ms": 1.15,
+        "total_ms": 4.45
       }
     },
     {
@@ -1031,13 +1031,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.82,
+      "latency_ms": 14.57,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.96,
-        "generation_ms": 0.65,
-        "verification_ms": 0.71,
-        "total_ms": 2.42
+        "retrieval_ms": 1.22,
+        "generation_ms": 1.29,
+        "verification_ms": 1.07,
+        "total_ms": 3.71
       }
     },
     {
@@ -1049,13 +1049,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.97,
+      "latency_ms": 20.21,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.3,
-        "generation_ms": 1.31,
-        "verification_ms": 1.1,
-        "total_ms": 3.82
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.55,
+        "generation_ms": 1.61,
+        "verification_ms": 4.35,
+        "total_ms": 7.7
       }
     },
     {
@@ -1067,13 +1067,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.15,
+      "latency_ms": 19.51,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 1.73,
-        "generation_ms": 0.74,
-        "verification_ms": 0.99,
-        "total_ms": 3.57
+        "routing_ms": 0.02,
+        "retrieval_ms": 2.92,
+        "generation_ms": 1.38,
+        "verification_ms": 3.71,
+        "total_ms": 8.22
       }
     },
     {
@@ -1085,13 +1085,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.32,
+      "latency_ms": 18.11,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.1,
-        "generation_ms": 0.78,
-        "verification_ms": 0.99,
-        "total_ms": 2.97
+        "retrieval_ms": 1.32,
+        "generation_ms": 1.65,
+        "verification_ms": 3.51,
+        "total_ms": 6.64
       }
     },
     {
@@ -1103,13 +1103,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.59,
+      "latency_ms": 16.74,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 1.05,
-        "generation_ms": 0.82,
-        "verification_ms": 0.93,
-        "total_ms": 2.9
+        "retrieval_ms": 1.41,
+        "generation_ms": 2.27,
+        "verification_ms": 1.53,
+        "total_ms": 5.37
       }
     },
     {
@@ -1121,13 +1121,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 15.21,
+      "latency_ms": 23.28,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 2.23,
-        "generation_ms": 1.92,
-        "verification_ms": 2.75,
-        "total_ms": 7.18
+        "retrieval_ms": 2.77,
+        "generation_ms": 3.3,
+        "verification_ms": 6.78,
+        "total_ms": 13.23
       }
     },
     {
@@ -1138,14 +1138,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 15.74,
+      "claims_count": 2,
+      "latency_ms": 27.09,
       "engine_latency": {
-        "routing_ms": 0.75,
-        "retrieval_ms": 2.28,
-        "generation_ms": 1.58,
-        "verification_ms": 2.9,
-        "total_ms": 7.8
+        "routing_ms": 0.69,
+        "retrieval_ms": 3.22,
+        "generation_ms": 4.33,
+        "verification_ms": 6.67,
+        "total_ms": 15.51
       }
     },
     {
@@ -1156,14 +1156,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 26.34,
+      "claims_count": 3,
+      "latency_ms": 31.3,
       "engine_latency": {
-        "routing_ms": 0.63,
-        "retrieval_ms": 2.29,
-        "generation_ms": 3.23,
-        "verification_ms": 3.1,
-        "total_ms": 9.68
+        "routing_ms": 0.57,
+        "retrieval_ms": 3.74,
+        "generation_ms": 5.15,
+        "verification_ms": 10.5,
+        "total_ms": 20.82
       }
     },
     {
@@ -1175,13 +1175,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 14.94,
+      "latency_ms": 18.11,
       "engine_latency": {
-        "routing_ms": 0.7,
-        "retrieval_ms": 0.96,
-        "generation_ms": 0.85,
-        "verification_ms": 0.94,
-        "total_ms": 3.53
+        "routing_ms": 0.89,
+        "retrieval_ms": 1.25,
+        "generation_ms": 2.11,
+        "verification_ms": 1.79,
+        "total_ms": 6.41
       }
     },
     {
@@ -1193,13 +1193,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.81,
+      "latency_ms": 17.87,
       "engine_latency": {
-        "routing_ms": 0.64,
-        "retrieval_ms": 0.94,
-        "generation_ms": 0.81,
-        "verification_ms": 0.94,
-        "total_ms": 3.42
+        "routing_ms": 1.06,
+        "retrieval_ms": 1.83,
+        "generation_ms": 1.98,
+        "verification_ms": 1.42,
+        "total_ms": 6.76
       }
     },
     {
@@ -1210,14 +1210,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 16.25,
+      "claims_count": 3,
+      "latency_ms": 31.88,
       "engine_latency": {
-        "routing_ms": 0.57,
-        "retrieval_ms": 2.63,
-        "generation_ms": 1.96,
-        "verification_ms": 2.04,
-        "total_ms": 7.76
+        "routing_ms": 1.18,
+        "retrieval_ms": 2.88,
+        "generation_ms": 4.66,
+        "verification_ms": 10.93,
+        "total_ms": 20.46
       }
     },
     {
@@ -1228,14 +1228,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.71,
+      "claims_count": 2,
+      "latency_ms": 21.89,
       "engine_latency": {
-        "routing_ms": 0.85,
-        "retrieval_ms": 2.03,
-        "generation_ms": 1.34,
-        "verification_ms": 1.38,
-        "total_ms": 5.84
+        "routing_ms": 0.84,
+        "retrieval_ms": 2.05,
+        "generation_ms": 2.38,
+        "verification_ms": 5.39,
+        "total_ms": 11.17
       }
     },
     {
@@ -1247,13 +1247,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.38,
+      "latency_ms": 14.78,
       "engine_latency": {
-        "routing_ms": 0.56,
-        "retrieval_ms": 0.76,
-        "generation_ms": 0.65,
-        "verification_ms": 0.72,
-        "total_ms": 2.78
+        "routing_ms": 0.73,
+        "retrieval_ms": 0.97,
+        "generation_ms": 1.47,
+        "verification_ms": 1.4,
+        "total_ms": 4.92
       }
     },
     {
@@ -1265,13 +1265,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 10.83,
+      "latency_ms": 15.2,
       "engine_latency": {
-        "routing_ms": 0.51,
-        "retrieval_ms": 0.72,
-        "generation_ms": 0.61,
-        "verification_ms": 0.73,
-        "total_ms": 2.64
+        "routing_ms": 0.66,
+        "retrieval_ms": 0.91,
+        "generation_ms": 1.74,
+        "verification_ms": 1.34,
+        "total_ms": 4.98
       }
     },
     {
@@ -1283,13 +1283,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.08,
+      "latency_ms": 18.12,
       "engine_latency": {
-        "routing_ms": 0.54,
-        "retrieval_ms": 0.99,
-        "generation_ms": 0.81,
-        "verification_ms": 1.19,
-        "total_ms": 3.63
+        "routing_ms": 0.66,
+        "retrieval_ms": 1.89,
+        "generation_ms": 1.63,
+        "verification_ms": 2.49,
+        "total_ms": 7.02
       }
     },
     {
@@ -1301,13 +1301,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.29,
+      "latency_ms": 16.89,
       "engine_latency": {
-        "routing_ms": 0.53,
-        "retrieval_ms": 1.21,
-        "generation_ms": 1.08,
-        "verification_ms": 1.79,
-        "total_ms": 4.72
+        "routing_ms": 1.1,
+        "retrieval_ms": 2.16,
+        "generation_ms": 1.58,
+        "verification_ms": 2.55,
+        "total_ms": 7.74
       }
     },
     {
@@ -1319,13 +1319,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 14.56,
+      "latency_ms": 15.75,
       "engine_latency": {
-        "routing_ms": 1.28,
-        "retrieval_ms": 1.75,
-        "generation_ms": 1.01,
-        "verification_ms": 1.62,
-        "total_ms": 5.76
+        "routing_ms": 0.99,
+        "retrieval_ms": 1.57,
+        "generation_ms": 1.76,
+        "verification_ms": 1.92,
+        "total_ms": 6.66
       }
     },
     {
@@ -1337,13 +1337,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.64,
+      "latency_ms": 16.26,
       "engine_latency": {
         "routing_ms": 0.69,
-        "retrieval_ms": 1.17,
-        "generation_ms": 0.83,
-        "verification_ms": 1.29,
-        "total_ms": 4.06
+        "retrieval_ms": 1.32,
+        "generation_ms": 1.55,
+        "verification_ms": 1.78,
+        "total_ms": 5.69
       }
     },
     {
@@ -1355,13 +1355,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.98,
+      "latency_ms": 16.33,
       "engine_latency": {
-        "routing_ms": 0.75,
-        "retrieval_ms": 0.98,
-        "generation_ms": 0.85,
-        "verification_ms": 0.97,
-        "total_ms": 3.63
+        "routing_ms": 0.82,
+        "retrieval_ms": 1.16,
+        "generation_ms": 1.44,
+        "verification_ms": 1.38,
+        "total_ms": 5.19
       }
     },
     {
@@ -1373,13 +1373,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 14.35,
+      "latency_ms": 15.16,
       "engine_latency": {
-        "routing_ms": 0.63,
-        "retrieval_ms": 0.92,
-        "generation_ms": 0.78,
-        "verification_ms": 0.99,
-        "total_ms": 3.42
+        "routing_ms": 0.76,
+        "retrieval_ms": 1.13,
+        "generation_ms": 1.43,
+        "verification_ms": 1.35,
+        "total_ms": 5.0
       }
     },
     {
@@ -1387,17 +1387,17 @@
       "category": "D",
       "question": "In what year was the research paper Attention Is All You Need published?",
       "status": "ANSWERED",
-      "mode": "HYBRID",
+      "mode": "WEB",
       "passed": true,
-      "sources_count": 2,
-      "claims_count": 2,
-      "latency_ms": 20.51,
+      "sources_count": 1,
+      "claims_count": 1,
+      "latency_ms": 15.59,
       "engine_latency": {
-        "routing_ms": 0.64,
-        "retrieval_ms": 2.12,
-        "generation_ms": 2.28,
-        "verification_ms": 5.61,
-        "total_ms": 11.05
+        "routing_ms": 0.79,
+        "retrieval_ms": 1.28,
+        "generation_ms": 1.62,
+        "verification_ms": 1.51,
+        "total_ms": 5.59
       }
     },
     {
@@ -1409,13 +1409,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.38,
+      "latency_ms": 9.18,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.09
       }
     },
     {
@@ -1427,13 +1427,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.06,
+      "latency_ms": 9.82,
       "engine_latency": {
-        "routing_ms": 0.07,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.22
       }
     },
     {
@@ -1445,13 +1445,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.42,
+      "latency_ms": 9.14,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.13
+        "total_ms": 0.09
       }
     },
     {
@@ -1463,13 +1463,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.22,
+      "latency_ms": 10.47,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.08
       }
     },
     {
@@ -1481,13 +1481,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 11.38,
+      "latency_ms": 9.35,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.09
       }
     },
     {
@@ -1499,13 +1499,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.32,
+      "latency_ms": 9.95,
       "engine_latency": {
-        "routing_ms": 0.07,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.1
+        "total_ms": 0.09
       }
     },
     {
@@ -1517,13 +1517,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.1,
+      "latency_ms": 10.1,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.15
+        "total_ms": 0.29
       }
     },
     {
@@ -1535,13 +1535,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.04,
+      "latency_ms": 9.37,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.08
       }
     },
     {
@@ -1553,9 +1553,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.86,
+      "latency_ms": 10.68,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -1571,9 +1571,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 13.03,
+      "latency_ms": 8.91,
       "engine_latency": {
-        "routing_ms": 0.07,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -1589,9 +1589,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.79,
+      "latency_ms": 10.35,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -1603,17 +1603,17 @@
       "category": "E",
       "question": "What will happen in the year 2095 in global financial markets?",
       "status": "INSUFFICIENT_INFORMATION",
-      "mode": "WEB",
+      "mode": "INSUFFICIENT_INFORMATION",
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.45,
+      "latency_ms": 9.15,
       "engine_latency": {
-        "routing_ms": 0.68,
-        "retrieval_ms": 0.15,
+        "routing_ms": 0.0,
+        "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.88
+        "total_ms": 0.07
       }
     },
     {
@@ -1625,13 +1625,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.04,
+      "latency_ms": 10.22,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.13
+        "total_ms": 0.11
       }
     },
     {
@@ -1643,13 +1643,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.86,
+      "latency_ms": 10.2,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.14
       }
     },
     {
@@ -1661,13 +1661,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.41,
+      "latency_ms": 9.31,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.08
       }
     },
     {
@@ -1679,13 +1679,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.65,
+      "latency_ms": 9.66,
       "engine_latency": {
-        "routing_ms": 0.12,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.16
+        "total_ms": 0.08
       }
     },
     {
@@ -1697,13 +1697,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.5,
+      "latency_ms": 9.04,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.08
       }
     },
     {
@@ -1715,13 +1715,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.51,
+      "latency_ms": 10.21,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.08
       }
     },
     {
@@ -1733,13 +1733,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.79,
+      "latency_ms": 9.13,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.07
       }
     },
     {
@@ -1751,13 +1751,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.84,
+      "latency_ms": 10.17,
       "engine_latency": {
-        "routing_ms": 0.11,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.15
+        "total_ms": 0.09
       }
     },
     {
@@ -1769,13 +1769,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 12.92,
+      "latency_ms": 9.82,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.11
       }
     },
     {
@@ -1787,13 +1787,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.4,
+      "latency_ms": 8.98,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.07
       }
     },
     {
@@ -1805,13 +1805,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.92,
+      "latency_ms": 9.52,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.12
       }
     },
     {
@@ -1823,13 +1823,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 10.73,
+      "latency_ms": 9.53,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.13
+        "total_ms": 0.1
       }
     },
     {
@@ -1841,13 +1841,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.08,
+      "latency_ms": 9.41,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.1
+        "total_ms": 0.06
       }
     },
     {
@@ -1859,13 +1859,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.87,
+      "latency_ms": 9.39,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.09
       }
     },
     {
@@ -1877,13 +1877,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.74,
+      "latency_ms": 8.92,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.1
       }
     },
     {
@@ -1895,13 +1895,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.44,
+      "latency_ms": 9.53,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.13
+        "total_ms": 0.06
       }
     },
     {
@@ -1913,13 +1913,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.43,
+      "latency_ms": 9.09,
       "engine_latency": {
-        "routing_ms": 0.11,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.15
+        "total_ms": 0.09
       }
     },
     {
@@ -1931,13 +1931,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.9,
+      "latency_ms": 9.15,
       "engine_latency": {
-        "routing_ms": 0.04,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.07
+        "total_ms": 0.08
       }
     },
     {
@@ -1949,13 +1949,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.78,
+      "latency_ms": 10.92,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.11
       }
     },
     {
@@ -1967,13 +1967,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.62,
+      "latency_ms": 9.68,
       "engine_latency": {
-        "routing_ms": 0.05,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.08
+        "total_ms": 0.06
       }
     },
     {
@@ -1985,13 +1985,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.29,
+      "latency_ms": 10.28,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.15
       }
     },
     {
@@ -2003,9 +2003,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.87,
+      "latency_ms": 9.0,
       "engine_latency": {
-        "routing_ms": 0.05,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -2021,9 +2021,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.29,
+      "latency_ms": 10.69,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -2039,13 +2039,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.77,
+      "latency_ms": 9.54,
       "engine_latency": {
-        "routing_ms": 0.11,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.14
+        "total_ms": 0.11
       }
     },
     {
@@ -2057,13 +2057,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.9,
+      "latency_ms": 8.29,
       "engine_latency": {
-        "routing_ms": 0.15,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.19
+        "total_ms": 0.14
       }
     },
     {
@@ -2075,13 +2075,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.77,
+      "latency_ms": 9.91,
       "engine_latency": {
-        "routing_ms": 0.1,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.13
+        "total_ms": 0.14
       }
     },
     {
@@ -2093,13 +2093,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.73,
+      "latency_ms": 8.85,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.11
       }
     },
     {
@@ -2111,13 +2111,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.16,
+      "latency_ms": 9.93,
       "engine_latency": {
-        "routing_ms": 0.14,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.18
+        "total_ms": 0.13
       }
     },
     {
@@ -2129,13 +2129,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.14,
+      "latency_ms": 9.94,
       "engine_latency": {
-        "routing_ms": 0.14,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.18
+        "total_ms": 0.15
       }
     },
     {
@@ -2147,9 +2147,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.72,
+      "latency_ms": 9.89,
       "engine_latency": {
-        "routing_ms": 0.11,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -2165,13 +2165,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.89,
+      "latency_ms": 11.76,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.14
       }
     },
     {
@@ -2183,13 +2183,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.29,
+      "latency_ms": 9.69,
       "engine_latency": {
-        "routing_ms": 0.14,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.17
+        "total_ms": 0.13
       }
     },
     {
@@ -2201,13 +2201,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.78,
+      "latency_ms": 20.28,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.15
       }
     },
     {
@@ -2219,13 +2219,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.59,
+      "latency_ms": 9.44,
       "engine_latency": {
-        "routing_ms": 0.09,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.11
       }
     },
     {
@@ -2237,13 +2237,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.37,
+      "latency_ms": 9.82,
       "engine_latency": {
-        "routing_ms": 0.1,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.18
       }
     },
     {
@@ -2255,9 +2255,9 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.71,
+      "latency_ms": 9.57,
       "engine_latency": {
-        "routing_ms": 0.1,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
@@ -2269,17 +2269,17 @@
       "category": "G",
       "question": "Did Christopher Columbus use Google Chrome on his voyages?",
       "status": "INSUFFICIENT_INFORMATION",
-      "mode": "WEB",
+      "mode": "INSUFFICIENT_INFORMATION",
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.41,
+      "latency_ms": 9.07,
       "engine_latency": {
-        "routing_ms": 0.62,
-        "retrieval_ms": 0.1,
+        "routing_ms": 0.0,
+        "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.76
+        "total_ms": 0.12
       }
     },
     {
@@ -2287,17 +2287,17 @@
       "category": "G",
       "question": "Can sound travel through an absolute physical vacuum at 5000 m/s?",
       "status": "INSUFFICIENT_INFORMATION",
-      "mode": "WEB",
+      "mode": "INSUFFICIENT_INFORMATION",
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.22,
+      "latency_ms": 9.4,
       "engine_latency": {
-        "routing_ms": 0.64,
-        "retrieval_ms": 0.1,
+        "routing_ms": 0.0,
+        "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.78
+        "total_ms": 0.15
       }
     },
     {
@@ -2308,14 +2308,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.49,
+      "claims_count": 3,
+      "latency_ms": 37.97,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.5,
-        "generation_ms": 1.7,
-        "verification_ms": 2.51,
-        "total_ms": 4.97
+        "retrieval_ms": 0.72,
+        "generation_ms": 7.31,
+        "verification_ms": 18.49,
+        "total_ms": 27.08
       }
     },
     {
@@ -2326,14 +2326,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.29,
+      "claims_count": 2,
+      "latency_ms": 35.83,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.53,
-        "generation_ms": 1.1,
-        "verification_ms": 1.82,
-        "total_ms": 3.57
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.97,
+        "generation_ms": 7.03,
+        "verification_ms": 15.76,
+        "total_ms": 24.37
       }
     },
     {
@@ -2345,13 +2345,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.99,
+      "latency_ms": 23.98,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.88,
-        "generation_ms": 1.61,
-        "verification_ms": 1.96,
-        "total_ms": 4.58
+        "retrieval_ms": 0.94,
+        "generation_ms": 2.95,
+        "verification_ms": 6.7,
+        "total_ms": 10.87
       }
     },
     {
@@ -2362,14 +2362,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 16.08,
+      "claims_count": 3,
+      "latency_ms": 42.11,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.72,
-        "generation_ms": 2.22,
-        "verification_ms": 3.66,
-        "total_ms": 6.95
+        "retrieval_ms": 1.09,
+        "generation_ms": 9.15,
+        "verification_ms": 18.97,
+        "total_ms": 29.88
       }
     },
     {
@@ -2380,14 +2380,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 15.5,
+      "claims_count": 3,
+      "latency_ms": 41.52,
       "engine_latency": {
         "routing_ms": 0.01,
         "retrieval_ms": 0.73,
-        "generation_ms": 2.35,
-        "verification_ms": 3.49,
-        "total_ms": 6.99
+        "generation_ms": 7.3,
+        "verification_ms": 23.48,
+        "total_ms": 32.0
       }
     },
     {
@@ -2397,15 +2397,15 @@
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.2,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 36.23,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.49,
-        "generation_ms": 1.71,
-        "verification_ms": 3.4,
-        "total_ms": 5.87
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.66,
+        "generation_ms": 6.14,
+        "verification_ms": 18.71,
+        "total_ms": 26.01
       }
     },
     {
@@ -2416,14 +2416,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 15.72,
+      "claims_count": 3,
+      "latency_ms": 36.3,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.64,
-        "generation_ms": 3.71,
-        "verification_ms": 2.31,
-        "total_ms": 6.92
+        "retrieval_ms": 0.85,
+        "generation_ms": 6.83,
+        "verification_ms": 16.18,
+        "total_ms": 24.33
       }
     },
     {
@@ -2435,13 +2435,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.79,
+      "latency_ms": 16.17,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.58,
-        "generation_ms": 0.86,
-        "verification_ms": 1.39,
-        "total_ms": 2.95
+        "routing_ms": 0.02,
+        "retrieval_ms": 0.86,
+        "generation_ms": 1.5,
+        "verification_ms": 1.78,
+        "total_ms": 4.3
       }
     },
     {
@@ -2453,13 +2453,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.64,
+      "latency_ms": 15.15,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.63,
-        "generation_ms": 1.22,
-        "verification_ms": 1.42,
-        "total_ms": 3.51
+        "retrieval_ms": 0.73,
+        "generation_ms": 1.67,
+        "verification_ms": 1.82,
+        "total_ms": 4.38
       }
     },
     {
@@ -2470,14 +2470,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.46,
+      "claims_count": 3,
+      "latency_ms": 34.71,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.81,
-        "generation_ms": 1.16,
-        "verification_ms": 2.04,
-        "total_ms": 4.16
+        "retrieval_ms": 1.28,
+        "generation_ms": 6.83,
+        "verification_ms": 14.67,
+        "total_ms": 23.11
       }
     },
     {
@@ -2487,15 +2487,15 @@
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
-      "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 14.82,
+      "sources_count": 1,
+      "claims_count": 3,
+      "latency_ms": 41.19,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.85,
-        "generation_ms": 1.94,
-        "verification_ms": 3.77,
-        "total_ms": 6.97
+        "retrieval_ms": 1.09,
+        "generation_ms": 9.74,
+        "verification_ms": 19.92,
+        "total_ms": 31.43
       }
     },
     {
@@ -2506,14 +2506,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.37,
+      "claims_count": 2,
+      "latency_ms": 18.23,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 1.05,
-        "generation_ms": 1.41,
-        "verification_ms": 1.62,
-        "total_ms": 4.23
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.87,
+        "generation_ms": 2.5,
+        "verification_ms": 4.02,
+        "total_ms": 7.55
       }
     },
     {
@@ -2525,13 +2525,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.9,
+      "latency_ms": 18.11,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.61,
-        "generation_ms": 1.12,
-        "verification_ms": 1.35,
-        "total_ms": 3.19
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.1,
+        "generation_ms": 2.82,
+        "verification_ms": 2.62,
+        "total_ms": 6.74
       }
     },
     {
@@ -2543,13 +2543,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.56,
+      "latency_ms": 18.35,
       "engine_latency": {
-        "routing_ms": 0.01,
-        "retrieval_ms": 0.65,
-        "generation_ms": 1.13,
-        "verification_ms": 1.34,
-        "total_ms": 3.22
+        "routing_ms": 0.02,
+        "retrieval_ms": 1.03,
+        "generation_ms": 2.01,
+        "verification_ms": 2.0,
+        "total_ms": 5.19
       }
     },
     {
@@ -2559,15 +2559,15 @@
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
-      "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 14.86,
+      "sources_count": 2,
+      "claims_count": 3,
+      "latency_ms": 40.21,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.63,
-        "generation_ms": 1.71,
-        "verification_ms": 2.13,
-        "total_ms": 4.57
+        "retrieval_ms": 0.73,
+        "generation_ms": 5.89,
+        "verification_ms": 22.11,
+        "total_ms": 29.43
       }
     },
     {
@@ -2578,14 +2578,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 11.92,
+      "claims_count": 3,
+      "latency_ms": 30.24,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.4,
-        "generation_ms": 0.98,
-        "verification_ms": 2.47,
-        "total_ms": 4.0
+        "retrieval_ms": 0.54,
+        "generation_ms": 5.1,
+        "verification_ms": 14.25,
+        "total_ms": 20.14
       }
     },
     {
@@ -2595,15 +2595,15 @@
       "status": "ANSWERED",
       "mode": "LOCAL",
       "passed": true,
-      "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.54,
+      "sources_count": 2,
+      "claims_count": 3,
+      "latency_ms": 41.84,
       "engine_latency": {
-        "routing_ms": 0.02,
-        "retrieval_ms": 0.53,
-        "generation_ms": 2.09,
-        "verification_ms": 1.81,
-        "total_ms": 4.61
+        "routing_ms": 0.01,
+        "retrieval_ms": 0.9,
+        "generation_ms": 7.11,
+        "verification_ms": 23.14,
+        "total_ms": 31.98
       }
     },
     {
@@ -2614,14 +2614,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.25,
+      "claims_count": 3,
+      "latency_ms": 32.23,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.41,
-        "generation_ms": 1.0,
-        "verification_ms": 2.73,
-        "total_ms": 4.26
+        "retrieval_ms": 0.58,
+        "generation_ms": 6.53,
+        "verification_ms": 15.16,
+        "total_ms": 22.51
       }
     },
     {
@@ -2633,13 +2633,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.28,
+      "latency_ms": 14.49,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.46,
-        "generation_ms": 0.81,
-        "verification_ms": 1.4,
-        "total_ms": 2.78
+        "retrieval_ms": 1.14,
+        "generation_ms": 1.99,
+        "verification_ms": 1.76,
+        "total_ms": 5.06
       }
     },
     {
@@ -2651,13 +2651,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.58,
+      "latency_ms": 13.83,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.59,
-        "generation_ms": 0.93,
-        "verification_ms": 3.2,
-        "total_ms": 4.97
+        "retrieval_ms": 0.55,
+        "generation_ms": 1.35,
+        "verification_ms": 2.55,
+        "total_ms": 4.6
       }
     },
     {
@@ -2668,14 +2668,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 14.56,
+      "claims_count": 3,
+      "latency_ms": 26.42,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.39,
-        "generation_ms": 1.63,
-        "verification_ms": 2.94,
-        "total_ms": 5.1
+        "retrieval_ms": 0.52,
+        "generation_ms": 4.48,
+        "verification_ms": 11.67,
+        "total_ms": 16.85
       }
     },
     {
@@ -2686,14 +2686,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.93,
+      "claims_count": 3,
+      "latency_ms": 27.1,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.4,
-        "generation_ms": 1.54,
-        "verification_ms": 2.02,
-        "total_ms": 4.08
+        "retrieval_ms": 0.49,
+        "generation_ms": 4.16,
+        "verification_ms": 12.46,
+        "total_ms": 17.27
       }
     },
     {
@@ -2705,13 +2705,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.27,
+      "latency_ms": 15.5,
       "engine_latency": {
         "routing_ms": 0.01,
-        "retrieval_ms": 0.91,
-        "generation_ms": 0.68,
-        "verification_ms": 0.96,
-        "total_ms": 2.63
+        "retrieval_ms": 1.15,
+        "generation_ms": 0.99,
+        "verification_ms": 3.65,
+        "total_ms": 5.91
       }
     },
     {
@@ -2723,13 +2723,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 15.77,
+      "latency_ms": 19.66,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 2.59,
-        "generation_ms": 1.63,
-        "verification_ms": 2.27,
-        "total_ms": 6.73
+        "retrieval_ms": 2.73,
+        "generation_ms": 2.16,
+        "verification_ms": 4.35,
+        "total_ms": 9.56
       }
     },
     {
@@ -2741,13 +2741,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.21,
+      "latency_ms": 17.03,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.52,
-        "generation_ms": 0.64,
-        "verification_ms": 0.81,
-        "total_ms": 3.1
+        "retrieval_ms": 1.93,
+        "generation_ms": 0.81,
+        "verification_ms": 2.26,
+        "total_ms": 5.13
       }
     },
     {
@@ -2759,13 +2759,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 30.16,
+      "latency_ms": 15.05,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 1.14,
-        "generation_ms": 0.67,
-        "verification_ms": 1.14,
-        "total_ms": 3.15
+        "retrieval_ms": 1.25,
+        "generation_ms": 0.86,
+        "verification_ms": 2.86,
+        "total_ms": 5.11
       }
     },
     {
@@ -2777,13 +2777,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 10.9,
+      "latency_ms": 13.83,
       "engine_latency": {
         "routing_ms": 0.02,
-        "retrieval_ms": 0.9,
-        "generation_ms": 0.63,
-        "verification_ms": 0.8,
-        "total_ms": 2.44
+        "retrieval_ms": 1.45,
+        "generation_ms": 1.34,
+        "verification_ms": 1.15,
+        "total_ms": 4.09
       }
     },
     {
@@ -2794,14 +2794,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 3,
-      "claims_count": 1,
-      "latency_ms": 23.29,
+      "claims_count": 3,
+      "latency_ms": 31.38,
       "engine_latency": {
-        "routing_ms": 0.66,
-        "retrieval_ms": 2.96,
-        "generation_ms": 2.91,
-        "verification_ms": 4.93,
-        "total_ms": 11.96
+        "routing_ms": 0.53,
+        "retrieval_ms": 4.57,
+        "generation_ms": 4.17,
+        "verification_ms": 11.27,
+        "total_ms": 21.38
       }
     },
     {
@@ -2812,14 +2812,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 15.07,
+      "claims_count": 2,
+      "latency_ms": 20.39,
       "engine_latency": {
-        "routing_ms": 0.51,
-        "retrieval_ms": 1.4,
-        "generation_ms": 1.26,
-        "verification_ms": 1.63,
-        "total_ms": 5.0
+        "routing_ms": 0.61,
+        "retrieval_ms": 1.75,
+        "generation_ms": 2.81,
+        "verification_ms": 4.34,
+        "total_ms": 9.97
       }
     },
     {
@@ -2830,14 +2830,14 @@
       "mode": "WEB",
       "passed": true,
       "sources_count": 2,
-      "claims_count": 1,
-      "latency_ms": 13.04,
+      "claims_count": 2,
+      "latency_ms": 19.85,
       "engine_latency": {
-        "routing_ms": 0.39,
-        "retrieval_ms": 1.22,
-        "generation_ms": 1.1,
-        "verification_ms": 1.38,
-        "total_ms": 4.29
+        "routing_ms": 0.76,
+        "retrieval_ms": 1.94,
+        "generation_ms": 2.2,
+        "verification_ms": 3.89,
+        "total_ms": 9.24
       }
     },
     {
@@ -2849,13 +2849,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.56,
+      "latency_ms": 16.23,
       "engine_latency": {
-        "routing_ms": 0.55,
-        "retrieval_ms": 0.85,
-        "generation_ms": 0.72,
-        "verification_ms": 0.95,
-        "total_ms": 3.14
+        "routing_ms": 0.8,
+        "retrieval_ms": 1.26,
+        "generation_ms": 0.94,
+        "verification_ms": 2.76,
+        "total_ms": 6.1
       }
     },
     {
@@ -2867,13 +2867,13 @@
       "passed": true,
       "sources_count": 2,
       "claims_count": 1,
-      "latency_ms": 15.27,
+      "latency_ms": 20.4,
       "engine_latency": {
-        "routing_ms": 0.68,
-        "retrieval_ms": 2.11,
-        "generation_ms": 1.61,
-        "verification_ms": 2.22,
-        "total_ms": 6.84
+        "routing_ms": 0.6,
+        "retrieval_ms": 2.38,
+        "generation_ms": 1.99,
+        "verification_ms": 4.33,
+        "total_ms": 9.8
       }
     },
     {
@@ -2885,13 +2885,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.24,
+      "latency_ms": 16.26,
       "engine_latency": {
-        "routing_ms": 0.58,
-        "retrieval_ms": 0.81,
-        "generation_ms": 1.1,
-        "verification_ms": 0.92,
-        "total_ms": 3.49
+        "routing_ms": 0.7,
+        "retrieval_ms": 1.74,
+        "generation_ms": 0.88,
+        "verification_ms": 2.27,
+        "total_ms": 5.9
       }
     },
     {
@@ -2903,13 +2903,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.77,
+      "latency_ms": 14.46,
       "engine_latency": {
-        "routing_ms": 0.53,
-        "retrieval_ms": 0.84,
-        "generation_ms": 0.72,
-        "verification_ms": 0.95,
-        "total_ms": 3.12
+        "routing_ms": 0.66,
+        "retrieval_ms": 1.09,
+        "generation_ms": 1.34,
+        "verification_ms": 1.28,
+        "total_ms": 4.68
       }
     },
     {
@@ -2921,13 +2921,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.49,
+      "latency_ms": 14.3,
       "engine_latency": {
-        "routing_ms": 0.62,
-        "retrieval_ms": 0.78,
-        "generation_ms": 0.67,
-        "verification_ms": 0.67,
-        "total_ms": 2.81
+        "routing_ms": 0.73,
+        "retrieval_ms": 1.0,
+        "generation_ms": 1.17,
+        "verification_ms": 0.96,
+        "total_ms": 4.19
       }
     },
     {
@@ -2939,13 +2939,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 11.66,
+      "latency_ms": 16.32,
       "engine_latency": {
-        "routing_ms": 0.9,
-        "retrieval_ms": 1.01,
-        "generation_ms": 0.59,
-        "verification_ms": 0.69,
-        "total_ms": 3.28
+        "routing_ms": 0.65,
+        "retrieval_ms": 0.9,
+        "generation_ms": 1.18,
+        "verification_ms": 0.99,
+        "total_ms": 4.03
       }
     },
     {
@@ -2957,13 +2957,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 13.41,
+      "latency_ms": 16.26,
       "engine_latency": {
-        "routing_ms": 0.89,
-        "retrieval_ms": 0.83,
-        "generation_ms": 0.7,
-        "verification_ms": 1.01,
-        "total_ms": 3.53
+        "routing_ms": 0.66,
+        "retrieval_ms": 1.05,
+        "generation_ms": 0.93,
+        "verification_ms": 2.81,
+        "total_ms": 5.87
       }
     },
     {
@@ -2974,14 +2974,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 11.47,
+      "claims_count": 3,
+      "latency_ms": 31.24,
       "engine_latency": {
-        "routing_ms": 0.52,
-        "retrieval_ms": 0.28,
-        "generation_ms": 0.99,
-        "verification_ms": 1.82,
-        "total_ms": 3.71
+        "routing_ms": 1.0,
+        "retrieval_ms": 0.5,
+        "generation_ms": 5.16,
+        "verification_ms": 14.62,
+        "total_ms": 22.0
       }
     },
     {
@@ -2992,14 +2992,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 12.58,
+      "claims_count": 3,
+      "latency_ms": 32.26,
       "engine_latency": {
-        "routing_ms": 0.59,
-        "retrieval_ms": 0.3,
-        "generation_ms": 1.44,
-        "verification_ms": 1.52,
-        "total_ms": 3.98
+        "routing_ms": 0.69,
+        "retrieval_ms": 0.56,
+        "generation_ms": 6.54,
+        "verification_ms": 14.26,
+        "total_ms": 22.63
       }
     },
     {
@@ -3010,14 +3010,14 @@
       "mode": "LOCAL",
       "passed": true,
       "sources_count": 1,
-      "claims_count": 1,
-      "latency_ms": 13.39,
+      "claims_count": 3,
+      "latency_ms": 31.85,
       "engine_latency": {
-        "routing_ms": 1.17,
-        "retrieval_ms": 0.61,
-        "generation_ms": 1.03,
-        "verification_ms": 1.81,
-        "total_ms": 4.78
+        "routing_ms": 1.16,
+        "retrieval_ms": 0.53,
+        "generation_ms": 5.95,
+        "verification_ms": 14.18,
+        "total_ms": 22.34
       }
     },
     {
@@ -3029,13 +3029,13 @@
       "passed": true,
       "sources_count": 1,
       "claims_count": 1,
-      "latency_ms": 12.04,
+      "latency_ms": 15.48,
       "engine_latency": {
-        "routing_ms": 0.57,
-        "retrieval_ms": 0.32,
-        "generation_ms": 0.76,
-        "verification_ms": 1.83,
-        "total_ms": 3.6
+        "routing_ms": 0.93,
+        "retrieval_ms": 0.44,
+        "generation_ms": 1.42,
+        "verification_ms": 2.78,
+        "total_ms": 5.95
       }
     },
     {
@@ -3047,13 +3047,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.58,
+      "latency_ms": 9.76,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.08
       }
     },
     {
@@ -3065,13 +3065,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 9.04,
+      "latency_ms": 9.4,
       "engine_latency": {
-        "routing_ms": 0.08,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.12
+        "total_ms": 0.08
       }
     },
     {
@@ -3083,13 +3083,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 7.31,
+      "latency_ms": 9.97,
       "engine_latency": {
-        "routing_ms": 0.06,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.09
+        "total_ms": 0.1
       }
     },
     {
@@ -3101,13 +3101,13 @@
       "passed": true,
       "sources_count": 0,
       "claims_count": 0,
-      "latency_ms": 8.93,
+      "latency_ms": 9.24,
       "engine_latency": {
-        "routing_ms": 0.07,
+        "routing_ms": 0.0,
         "retrieval_ms": 0.0,
         "generation_ms": 0.0,
         "verification_ms": 0.0,
-        "total_ms": 0.11
+        "total_ms": 0.08
       }
     }
   ]

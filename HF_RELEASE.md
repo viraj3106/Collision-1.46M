@@ -1,11 +1,12 @@
-# Hugging Face Release Guide for COLLISION-10M & COLLISION NLP Engine
+# Hugging Face Release Guide for COLLISION-1.0B & COLLISION NLP Engine
 
-This document outlines the upload process, file layout, and metadata required to publish COLLISION-10M and the COLLISION NLP Engine to the Hugging Face Model Hub and Hugging Face Spaces.
+This document outlines the upload process, file layout, and metadata required to publish COLLISION-1.0B and the COLLISION NLP Engine to the Hugging Face Model Hub and Hugging Face Spaces.
 
 ---
 
 ## 1. Hugging Face Repositories
-* **Model Hub**: `collision-10M/collision-10m`
+* **Flagship Model Hub**: `collision-10M/collision-1.0b`
+* **Edge Model Hub (10M)**: `collision-10M/collision-10m`
 * **Space Hub**: `collision-10M/collision-ai-lab` (Static SDK)
 * **Dataset Hub**: `collision-10M/collision_dataset_v5_expanded`
 
@@ -17,10 +18,10 @@ The `release/huggingface/` directory is prepared for 1-step deployment to Huggin
 release/huggingface/
 ├── README.md               # Model Card with rich YAML frontmatter & NLP documentation
 ├── DESCRIPTION.md          # Short & Long architectural descriptions
-├── model_metadata.json     # Parameter specs, SHA-256 checksums, and NLP feature list
+├── model_metadata.json     # Parameter specs (999,376,128 params), SHA-256 checksums, and NLP feature list
 ├── checksums.sha256        # Verified cryptographic SHA-256 hashes
-├── model.pt                # 10.28M parameter model weights (125,057,611 bytes)
-├── config.json             # Transformer hyperparameters
+├── model.pt                # 999.38M parameter flagship model weights (2,180,231,419 bytes)
+├── config.json             # Transformer hyperparameters (24 layers, 2048 d_model, 16 heads)
 ├── generation_config.json  # Sampling temperature, top_k, repetition penalty
 ├── tokenizer.json          # Tokenizer config metadata
 └── tokenizer/              # BPE vocab.json, merges.json, config.json, stats.json
@@ -51,7 +52,7 @@ api = HfApi()
 # 1. Upload Model Hub
 api.upload_folder(
     folder_path="release/huggingface",
-    repo_id="collision-10M/collision-10m",
+    repo_id="collision-10M/collision-1.0b",
     repo_type="model"
 )
 
@@ -66,10 +67,10 @@ api.upload_folder(
 ### Option B: Using Git
 ```bash
 # Model Hub
-git clone https://huggingface.co/viraj3106/collision-10m
-cp -r release/huggingface/* collision-10m/
-cd collision-10m
-git add . && git commit -m "Release COLLISION-10M and in-house NLP Engine"
+git clone https://huggingface.co/viraj3106/collision-1.0b
+cp -r release/huggingface/* collision-1.0b/
+cd collision-1.0b
+git add . && git commit -m "Release COLLISION-1.0B flagship and in-house NLP Engine"
 git push origin main
 
 # Space Hub

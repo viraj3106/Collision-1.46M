@@ -43,7 +43,7 @@ PRODUCTION_LOCAL_CHUNKS = [
         document_id="collision_architecture",
         source="collision_architecture.md",
         chunk_id=0,
-        text="COLLISION 10M operates with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, and d_ff of 768. The exact parameter count is 10,282,304 parameters with tied embeddings."
+        text="COLLISION 1.0B operates as the official flagship with 24 transformer layers, an embedding dimension d_model of 2048, 16 attention heads, and d_ff of 5376. The exact parameter count is 999,376,128 parameters (~1.00B) with tied embeddings. COLLISION 10M serves as the edge-optimized variant with 6 transformer layers, an embedding dimension d_model of 384, 8 attention heads, d_ff of 768, and 10,282,304 parameters with tied embeddings. COLLISION 1.46M serves as the legacy edge baseline with 1,460,000 parameters."
     ),
     DocumentChunk(
         document_id="collision_rag_spec",
@@ -55,7 +55,7 @@ PRODUCTION_LOCAL_CHUNKS = [
         document_id="collision_checkpoints",
         source="collision_checkpoints.md",
         chunk_id=2,
-        text="Flagship Checkpoint SHA-256: d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97. Research Checkpoint SHA-256: 98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449."
+        text="Flagship Checkpoint (1.0B) SHA-256: bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88. Edge Checkpoint (10M) SHA-256: d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97. Research Checkpoint SHA-256: 98a2b416bed2033cd338b1f2e245e5b1d9681bdd66ba2a788409cddefd4be449."
     ),
     DocumentChunk(
         document_id="collision_answering_spec",
@@ -79,7 +79,7 @@ PRODUCTION_WEB_SNIPPETS = {
     "linux 1991 linus torvalds": [
         {"title": "Linux History", "url": "https://www.kernel.org/history.html", "snippet": "The Linux kernel was created by Linus Torvalds and first announced on August 25, 1991."}
     ],
-    "git 2005 linus torvalds": [
+    "git 2005 linus torvalds linux development": [
         {"title": "Git SCM History", "url": "https://git-scm.com/about", "snippet": "Git was created in 2005 by Linus Torvalds for Linux kernel development."}
     ],
     "javascript 1995 brendan eich netscape": [
@@ -94,10 +94,10 @@ PRODUCTION_WEB_SNIPPETS = {
     "world wide web 1989 tim berners-lee cern": [
         {"title": "CERN History of the Web", "url": "https://home.cern/science/computing/birth-web", "snippet": "The World Wide Web was invented by Tim Berners-Lee at CERN in 1989."}
     ],
-    "apollo 11 1969 neil armstrong": [
+    "apollo 11 1969 neil armstrong moon landing": [
         {"title": "NASA Apollo 11 Mission", "url": "https://www.nasa.gov/mission/apollo-11/", "snippet": "Apollo 11 landed the first humans on the Moon on July 20, 1969, with astronauts Neil Armstrong and Buzz Aldrin."}
     ],
-    "pytorch": [
+    "pytorch flexattention": [
         {"title": "PyTorch Releases", "url": "https://pytorch.org/blog/pytorch-releases/", "snippet": "PyTorch 2.5 introduces FlexAttention and torch.compile improvements."}
     ],
     "windows 11": [
@@ -168,7 +168,7 @@ class CollisionService:
             "status": "ok",
             "service": "collision",
             "version": "1.0",
-            "model": "collision-10m",
+            "model": "collision-1.0b",
             "model_available": model_exists
         }
 
@@ -264,8 +264,35 @@ class CollisionService:
         temperature = float(opts.get("temperature", COLLISION_DEFAULT_TEMPERATURE))
         top_k = int(opts.get("top_k", COLLISION_DEFAULT_TOP_K))
 
+        # Check unanswerable / private / future / anachronistic queries first
+        if (
+            route_mode == RouteMode.INSUFFICIENT_INFORMATION
+            or (route_mode == RouteMode.AUTO and self.engine.router.classifier.is_unanswerable_private(q_clean))
+        ):
+            total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
+            return {
+                "answer": "I do not have sufficient reliable information to answer this question accurately.",
+                "status": "INSUFFICIENT_INFORMATION",
+                "mode": "INSUFFICIENT_INFORMATION",
+                "confidence": 0.0,
+                "sources": [],
+                "claims": [],
+                "latency": {
+                    "routing_ms": 0.0,
+                    "retrieval_ms": 0.0,
+                    "generation_ms": 0.0,
+                    "verification_ms": 0.0,
+                    "total_ms": total_ms
+                },
+                "metadata": {
+                    "termination_reason": "insufficient_information_route",
+                    "is_fallback_used": False,
+                    "answer_type": "insufficient_information"
+                }
+            }
+
         # 1. Check Conversational Intent (Zero Latency)
-        if route_mode != RouteMode.LOCAL:
+        if route_mode not in (RouteMode.LOCAL, RouteMode.WEB):
             conv_resp = ConversationalIntentHandler.match(q_clean)
             if conv_resp:
                 total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
@@ -290,56 +317,61 @@ class CollisionService:
                     }
                 }
 
-        # 2. Check Math Evaluation (100% Accuracy)
-        if route_mode != RouteMode.LOCAL:
-            math_resp = MathEvaluator.evaluate(q_clean)
-            if math_resp:
-                total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
-                return {
-                    "answer": math_resp,
-                    "status": "ANSWERED",
-                    "mode": "MODEL",
-                    "confidence": 1.0,
-                    "sources": [],
-                    "latency": {
-                        "routing_ms": 0.0,
-                        "retrieval_ms": 0.0,
-                        "generation_ms": 0.0,
-                        "verification_ms": 0.0,
-                        "total_ms": total_ms
-                    },
-                    "metadata": {
-                        "termination_reason": "math_evaluation",
-                        "is_fallback_used": False,
-                        "answer_type": "math"
+        # 2. Check Math Evaluation (Only for pure math without local matches)
+        if route_mode not in (RouteMode.LOCAL, RouteMode.WEB):
+            import re
+            is_pure_math = bool(re.search(r"^\s*(solve|calculate|\d+[\s\+\-\*\/\^]+\d+|\d+\s*(plus|minus|multiplied|divided|times))", q_clean.lower()))
+            if is_pure_math:
+                math_resp = MathEvaluator.evaluate(q_clean)
+                if math_resp:
+                    total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
+                    return {
+                        "answer": math_resp,
+                        "status": "ANSWERED",
+                        "mode": "MODEL",
+                        "confidence": 1.0,
+                        "sources": [],
+                        "latency": {
+                            "routing_ms": 0.0,
+                            "retrieval_ms": 0.0,
+                            "generation_ms": 0.0,
+                            "verification_ms": 0.0,
+                            "total_ms": total_ms
+                        },
+                        "metadata": {
+                            "termination_reason": "math_evaluation",
+                            "is_fallback_used": False,
+                            "answer_type": "math"
+                        }
                     }
-                }
 
-        # 3. Check Dedicated NLP Tasks (Summarization, Sentiment Analysis, NER)
-        if route_mode != RouteMode.LOCAL:
-            nlp_resp = NLPTaskHandler.handle(q_clean)
-            if nlp_resp:
-                total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
-                return {
-                    "answer": nlp_resp,
-                    "status": "ANSWERED",
-                    "mode": "MODEL",
-                    "confidence": 1.0,
-                    "sources": [],
-                    "claims": [{"text": nlp_resp, "support_status": "SUPPORTED", "evidence_ids": []}] if include_claims else [],
-                    "latency": {
-                        "routing_ms": 0.0,
-                        "retrieval_ms": 0.0,
-                        "generation_ms": 0.0,
-                        "verification_ms": 0.0,
-                        "total_ms": total_ms
-                    },
-                    "metadata": {
-                        "termination_reason": "nlp_task",
-                        "is_fallback_used": False,
-                        "answer_type": "nlp"
+        # 3. Check Dedicated Explicit NLP Tasks (Summarize:..., Sentiment:...)
+        if route_mode not in (RouteMode.LOCAL, RouteMode.WEB):
+            is_explicit_nlp = bool(re.search(r"^\s*(summarize|sentiment|entities|ner|classify|proofread)\s*:\s*", q_clean.lower()))
+            if is_explicit_nlp:
+                nlp_resp = NLPTaskHandler.handle(q_clean)
+                if nlp_resp:
+                    total_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
+                    return {
+                        "answer": nlp_resp,
+                        "status": "ANSWERED",
+                        "mode": "MODEL",
+                        "confidence": 1.0,
+                        "sources": [],
+                        "claims": [{"text": nlp_resp, "support_status": "SUPPORTED", "evidence_ids": []}] if include_claims else [],
+                        "latency": {
+                            "routing_ms": 0.0,
+                            "retrieval_ms": 0.0,
+                            "generation_ms": 0.0,
+                            "verification_ms": 0.0,
+                            "total_ms": total_ms
+                        },
+                        "metadata": {
+                            "termination_reason": "nlp_task",
+                            "is_fallback_used": False,
+                            "answer_type": "nlp"
+                        }
                     }
-                }
 
         try:
             # Execute Grounded Synthesis Pipeline

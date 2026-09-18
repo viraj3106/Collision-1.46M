@@ -1,7 +1,12 @@
 {
-  "name": "COLLISION-10M",
+  "name": "COLLISION-1.0B",
   "version": "1.0.0",
   "model_type": "base_language_model",
-  "parameters": 10282304,
-  "context_length": 256
+  "parameters": 999376128,
+  "context_length": 1024,
+  "edge_variant": {
+    "name": "COLLISION-10M",
+    "parameters": 10282304,
+    "context_length": 256
+  }
 }

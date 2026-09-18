@@ -227,8 +227,8 @@ export const ChatWorkspace: React.FC<ChatWorkspaceProps> = ({
           )}
           <div className="header-model-pill">
             <span className="status-dot"></span>
-            COLLISION-10M
-            <span className="header-model-meta">· 10.28M parameters · CPU-first</span>
+            COLLISION-1.0B
+            <span className="header-model-meta">· 1.00B parameters · Flagship</span>
           </div>
         </div>
 

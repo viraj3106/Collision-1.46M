@@ -41,20 +41,20 @@ class MockWebSearchProvider(WebSearchProvider):
             # Score matches using content-word overlap
             import re
             from collision.rag.embeddings import LocalEmbeddingModel
-            q_words = set(re.findall(r"\b[a-z0-9_]{3,}\b", q_norm)) - LocalEmbeddingModel.STOP_WORDS
-            matches: List[tuple[float, List[Dict[str, str]]]] = []
+            q_words = set(re.findall(r"\b[a-z0-9_]{2,}\b", q_norm)) - LocalEmbeddingModel.STOP_WORDS
+            matches: List[tuple[float, int, List[Dict[str, str]]]] = []
             if q_words:
                 for k, items in self.mock_database.items():
-                    k_words = set(re.findall(r"\b[a-z0-9_]{3,}\b", k.lower())) - LocalEmbeddingModel.STOP_WORDS
+                    k_words = set(re.findall(r"\b[a-z0-9_]{2,}\b", k.lower())) - LocalEmbeddingModel.STOP_WORDS
                     overlap = len(q_words.intersection(k_words))
                     if overlap > 0:
-                        score = overlap / max(1, len(k_words))
-                        if score >= 0.5:
-                            matches.append((score, items))
+                        score = overlap / min(max(1, len(k_words)), max(1, len(q_words)))
+                        matches.append((score, overlap, items))
 
-                matches.sort(key=lambda x: x[0], reverse=True)
-                for _, items in matches:
-                    raw_items.extend(items)
+                matches.sort(key=lambda x: (x[0], x[1]), reverse=True)
+                for score, overlap, items in matches[:max_results]:
+                    if overlap >= 1:
+                        raw_items.extend(items)
 
         # Remove duplicate URLs
         seen_urls = set()

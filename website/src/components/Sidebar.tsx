@@ -96,9 +96,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="model-badge-container">
           <div className="model-badge-name">
             <span className="status-dot"></span>
-            COLLISION-10M
+            COLLISION-1.0B
           </div>
-          <div className="model-badge-meta">10.28M parameters · CPU-first</div>
+          <div className="model-badge-meta">1.00B parameters · Flagship</div>
         </div>
 
         <button className="sidebar-footer-btn" onClick={onOpenSettings}>

@@ -1,4 +1,4 @@
-# COLLISION-50M Scaled Configuration (53.76M Exact Parameters)
+# COLLISION-50M Scaled Configuration (53,926,272 Exact Parameters / 53.93M)
 model:
   vocab_size: 16000
   max_seq_len: 512

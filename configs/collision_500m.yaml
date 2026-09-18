@@ -1,23 +1,23 @@
-# COLLISION-100M Scaled Configuration (113,619,712 Exact Parameters / 113.62M)
+# COLLISION-500M Half-Billion Anchor Configuration (501,487,360 Exact Parameters / 501.49M)
 model:
   vocab_size: 32000
   max_seq_len: 1024
-  d_model: 768
-  n_layer: 16
-  n_head: 12
-  d_ff: 2048
+  d_model: 1280
+  n_layer: 28
+  n_head: 20
+  d_ff: 3840
   dropout: 0.1
   tie_embeddings: true
   normalization: layer_norm
   positional_encoding: absolute_learned
 
 training:
-  learning_rate: 3.0e-4
+  learning_rate: 1.8e-4
   min_lr: 1.0e-5
-  warmup_steps: 1000
-  max_steps: 50000
+  warmup_steps: 2500
+  max_steps: 120000
   batch_size: 16
-  gradient_accumulation_steps: 8
+  gradient_accumulation_steps: 32
   weight_decay: 0.01
   max_grad_norm: 1.0
   seed: 1337

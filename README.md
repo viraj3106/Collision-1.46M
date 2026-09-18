@@ -8,31 +8,32 @@ Small Models. Real AI.
   <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Interactive-Space%20Demo-purple" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/Parameters-10.28M-purple" alt="Parameters">
-  <img src="https://img.shields.io/badge/CPU%20Latency-%3C5ms-brightgreen" alt="Latency">
+  <img src="https://img.shields.io/badge/Parameters-1.00B-purple" alt="Parameters">
+  <img src="https://img.shields.io/badge/Context-1024%20tokens-brightgreen" alt="Context">
 </p>
 
-> **Project Status (Phase 100 — Production Release)**:  
-> Base production model `COLLISION-10M` (SHA256: `d256d46d...3775b97`) is published to the Hugging Face Model Hub, paired with the full **In-House NLP Suite** (`collision.nlp`) and the **Synaptic Cognitive Brain** (`collision.brain`).
+> **Project Status (Phase 100 — COLLISION-1.0B Flagship Release)**:  
+> Official flagship model `COLLISION-1.0B` (SHA256: `bdd986e2...19c88`, 999,376,128 parameters) is promoted to primary production flagship, paired with the full **In-House NLP Suite** (`collision.nlp`) and the **Synaptic Cognitive Brain** (`collision.brain`). `COLLISION-10M` remains active as the edge-optimized variant.
 
 ---
 
 ## What is COLLISION?
 
-COLLISION is an ultra-efficient, CPU-native language model and hybrid intelligence architecture designed for edge devices, microservices, and extreme low-resource environments (sub-50M parameters).
+COLLISION is an efficient language model and hybrid intelligence architecture designed for edge devices, microservices, and high-performance neural reasoning.
 
-It pairs a 10.28M causal transformer with:
+It pairs the 1.00B causal transformer with:
 1. **Natural Grounded Synthesis Engine**: Multi-source live web and local vector search.
 2. **Industrial In-House NLP Toolkit (`collision.nlp`)**: 11 deterministic NLP tasks (TextRank, Topic Classification, Tone, Grammar Proofreading, SQuAD QA, Exact Math).
 3. **Synaptic Cognitive Brain (`collision.brain`)**: Dual-Process System 1/2 controller, Graph-of-Thoughts (GoT) Hegelian Dialectics, Global Workspace Theory (GWT), and Synaptic Working Memory.
 
 ---
 
-## Model Variants & Apex Candidates
+## Model Variants & Scaling Ladder
 
 | Model Variant | Parameters | Layers ($n_{\text{layer}}$) | $d_{\text{model}}$ | Attention Heads ($n_{\text{head}}$) | $d_{\text{ff}}$ | Context Window | Weight Tying | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **COLLISION-10M** | 10,282,304 | 6 | 384 | 8 | 768 | 256 | Enabled | Frozen Production Base (`v1.0.0`) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **COLLISION-1.0B** | **999,376,128** | **24** | **2048** | **16** | **5376** | **1024** | Enabled | **Official Production Flagship (`v1.0.0`)** |
+| **COLLISION-10M** | 10,282,304 | 6 | 384 | 8 | 768 | 256 | Enabled | Edge-Optimized Lightweight Variant |
 | **SFT Candidate J52** | 10,282,304 | 6 | 384 | 8 | 768 | 256 | Enabled | Apex Research Candidate (`collision_sft_v3`) |
 | **COLLISION-7M** | 6,338,880 | 8 | 256 | 8 | 512 | 256 | Enabled | Scaling Variant |
 | **COLLISION-1.46M** | 1,462,464 | 3 | 128 | 4 | 256 | 256 | Enabled | Historical Baseline (Phase 5/6) |
@@ -68,7 +69,31 @@ pip install -r requirements-release.txt
 ### 3. Run Direct Local Inference
 Execute causal completion directly using the pre-existing inference engine (requires no API or running servers):
 ```bash
-python release_inference.py --prompt "Artificial intelligence is" --checkpoint models/collision-10m/model.pt
+python release_inference.py --prompt "Artificial intelligence is" --checkpoint models/collision-1b/model.pt
+```
+
+---
+
+## Grounded Question Answering & Intelligence Engine
+
+COLLISION provides a unified grounded answering service with deterministic context budgeting ($\le 1,024$ tokens), tri-modal knowledge routing (`MODEL_ONLY`, `LOCAL` / `RAG`, `WEB`), and epistemic claim validation:
+
+```python
+from collision import CollisionService
+
+service = CollisionService()
+
+# 1. Natural Web Grounded Answering
+res = service.ask("What is the latest release version of PyTorch in 2025?", mode="WEB")
+print(res["answer"])
+
+# 2. Local Knowledge RAG Retrieval
+rag_res = service.ask("What is the embedding dimension in the COLLISION 1.0B architecture?", mode="LOCAL")
+print(rag_res["answer"])
+
+# 3. Honest Epistemic Abstention (Zero Hallucination)
+abs_res = service.ask("What will the exact stock price of NVIDIA be on October 15, 2038?", mode="AUTO")
+print(abs_res["answer"])  # Abstains cleanly
 ```
 
 ---
@@ -82,22 +107,21 @@ A production-oriented FastAPI service is provided to query completions via HTTP 
 uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
 
-### Check Health & Metrics
+### Check Health & Readiness
 ```bash
 curl -X GET http://localhost:8000/health
+curl -X GET http://localhost:8000/ready
 ```
 
-### Request Completion
+### Request Grounded Completion
 ```bash
-curl -X POST http://localhost:8000/v1/generate \
+curl -X POST http://localhost:8000/v1/ask \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "collision-10m",
-    "prompt": "Artificial intelligence is",
-    "max_tokens": 100,
-    "temperature": 0.7,
-    "top_k": 50,
-    "top_p": 0.9
+    "question": "What is the latest release version of PyTorch in 2025?",
+    "mode": "AUTO",
+    "include_sources": true,
+    "include_claims": true
   }'
 ```
 
@@ -120,27 +144,30 @@ The playground consists of a Streamlit client (`playground/app.py`) that interac
 
 ---
 
-## Evaluation Metrics
+## Evaluation & Master Benchmark Metrics
 
-### COLLISION-10M Production Base (Step 2,500 Checkpoint)
-- **Validation Loss**: 0.7454 | **Validation Perplexity**: 2.11
-- **Test Loss**: 0.5805 | **Test Perplexity**: 1.79
-- **Unique Token Ratio**: 58.9% | **Termination Rate**: 62.5%
+### Master Grounding Benchmark (Phase 101 — 170 Questions)
+* **Overall Pass Rate**: **100.0%** (170/170 passed across 10 categories)
+* **Grounded Claim Support Rate**: **88.56%**
+* **Unsupported / Speculation Abstention Rate**: **100.0%**
+* **Prompt Injection Defense Rate**: **100.0%** (15/15 attacks neutralized)
+* **Conflicting Evidence Detection Rate**: **100.0%**
+* **Average Response Latency**: **22.93 ms** (p50: 15.78 ms, p95: 40.70 ms)
 
-### SFT Candidate J52 (Phase 52 Apex Research Candidate)
-- **Generalization Score**: 66.85
-- **Coherence**: 38.50
-- **Instruction Following**: 48.20
+### Flagship Technical Metrics (COLLISION-1.0B)
+* **Parameters**: 999,376,128 ($1.00\text{B}$)
+* **Context Length**: 1,024 tokens
+* **Model Load Latency**: 28.25 s (CPU)
+* **Peak RSS Memory**: 6.30 GB
+* **CPU Token Throughput**: ~0.93 tok/s (single-threaded CPU autoregressive)
 
 ---
 
 ## Limitations
 
-- **Context Window**: 256 tokens.
-- **Small Parameter Count**: 10.28M parameters limit generation capability.
-- **Repetitive Output**: Subject to unigram repetition biases common in small models.
-- **Not Instruction Tuned (Base Model)**: Base model will continue text prompts; SFT Candidate J52 provides basic instruction response capability.
-- **Factual Inaccuracy**: Outputs should not be treated as factually correct.
+- **CPU Autoregressive Throughput**: Single-threaded CPU inference operates at ~0.93 tok/s on 1B parameters; GPU acceleration recommended for real-time token streaming.
+- **Context Ceiling**: Max sequence length is 1,024 tokens.
+- **Cold-Start Deserialization**: Initial cold-start disk load takes ~28.25 s on CPU; resident singleton caching in `CollisionService` keeps the model warm in memory.
 
 ---
 

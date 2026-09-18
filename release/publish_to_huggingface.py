@@ -20,7 +20,13 @@ if PROJECT_ROOT not in sys.path:
 
 MODEL_REPO_ID = "collision-10M/collision-10m"
 SPACE_REPO_ID = "collision-10M/collision-ai-lab"
-EXPECTED_SHA256 = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+
+EXPECTED_SHA256_COLLISION_1B = "bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88"
+EXPECTED_SHA256_COLLISION_10M = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
+VALID_SHA256S = {
+    EXPECTED_SHA256_COLLISION_1B: "COLLISION-1.0B Flagship",
+    EXPECTED_SHA256_COLLISION_10M: "COLLISION-10M Edge Variant"
+}
 
 
 def verify_package(hf_dir: str) -> bool:
@@ -36,11 +42,15 @@ def verify_package(hf_dir: str) -> bool:
             sha256.update(chunk)
     actual_hash = sha256.hexdigest().lower()
 
-    if actual_hash != EXPECTED_SHA256:
-        print(f"[ERROR] Checksum mismatch: Expected {EXPECTED_SHA256}, got {actual_hash}")
+    if actual_hash not in VALID_SHA256S:
+        print(f"[ERROR] Checksum mismatch: {actual_hash} is not recognized.")
+        print(f"  Supported Hashes:")
+        for h, name in VALID_SHA256S.items():
+            print(f"    - {name}: {h}")
         return False
 
-    print(f"[OK] Checksum verified: SHA-256 is {actual_hash[:16]}... (Protected Flagship)")
+    model_name = VALID_SHA256S[actual_hash]
+    print(f"[OK] Checksum verified: SHA-256 is {actual_hash[:16]}... ({model_name})")
     return True
 
 
@@ -53,7 +63,7 @@ def publish_model(api, hf_dir: str, repo_id: str, token: str):
             repo_id=repo_id,
             repo_type="model",
             token=token,
-            commit_message="Release COLLISION-10M with In-House NLP Engine & Natural Web Grounding"
+            commit_message=f"Release {repo_id} with In-House NLP Engine & Grounded Intelligence"
         )
         print(f"[OK] Model successfully published to: https://huggingface.co/{repo_id}")
     except Exception as e:

@@ -1,30 +1,30 @@
-# ⚡ COLLISION-10M & Industrial NLP Suite — Official Model Card
+# ⚡ COLLISION-1.0B & Industrial NLP Suite — Official Model Card
 
 <p align="center">
-  <b>An Ultra-Efficient, CPU-Native 10.28M Parameter Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
+  <b>A High-Efficiency 999.38M Parameter Flagship Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/collision-10M/collision-10m"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
+  <a href="https://huggingface.co/collision-10M/collision-1.0b"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
   <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://github.com/viraj3106/Collision-1.46M"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/Parameters-10.28M-purple" alt="Parameters">
-  <img src="https://img.shields.io/badge/CPU%20Latency-%3C5ms-brightgreen" alt="Latency">
+  <img src="https://img.shields.io/badge/Parameters-1.00B-purple" alt="Parameters">
+  <img src="https://img.shields.io/badge/Context-1024%20tokens-brightgreen" alt="Context">
 </p>
 
 ---
 
 ## 🌟 Overview & Value Proposition
 
-**COLLISION-10M** is an ultra-compact 10.28M parameter language model and full-stack intelligence system designed for **edge devices, microservices, and CPU-only environments**. It eliminates the massive GPU requirements of heavy LLMs while delivering fast, accurate, and naturally formatted responses.
+**COLLISION-1.0B** is the official primary flagship model of the COLLISION ecosystem. Packing **999,376,128 parameters** (~1.00B) into an optimized 24-layer transformer architecture, it delivers rich contextual reasoning, full 1,024-token context capacity, and state-of-the-art hybrid NLP capabilities.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        COLLISION UNIFIED SYSTEM                        │
 ├────────────────────────────────────────────────────────────────────────┤
-│  1. COLLISION Neural Core (10.28M Parameters, Causal Transformer)      │
+│  1. COLLISION Neural Flagship (999.38M Parameters, Causal Transformer) │
 │  2. Natural Grounded Synthesis Engine (ChatGPT / Gemini Phrasing)      │
 │  3. Multi-Source Live Web & Local Knowledge Retrieval (RAG)            │
 │  4. Industrial In-House NLP Suite (`collision.nlp` Subsystem):         │
@@ -41,18 +41,13 @@
 
 ---
 
-## 📊 Comparative Performance Benchmarks
+## 📊 Model Variants & Scaling Ladder
 
-| Metric / Capability | **COLLISION-10M** | SmolLM-135M | TinyLlama-1.1B |
-| :--- | :---: | :---: | :---: |
-| **Active Parameters** | **10.28 Million** | 135 Million | 1.10 Billion |
-| **RAM / Memory Footprint** | **~120 MB** | ~550 MB | ~2.20 GB |
-| **CPU Inference Latency** | **< 5 ms** | ~45 ms | ~180 ms |
-| **GPU Required?** | ❌ **100% CPU Native** | ⚠️ Recommended | ✅ Required |
-| **Natural Web Grounding?** | ✅ **Built-in (ChatGPT style)** | ❌ External only | ❌ External only |
-| **Full Industrial NLP Suite?** | ✅ **11 Integrated Tasks** | ❌ None | ❌ None |
-| **Deterministic Math & Stats?** | ✅ **100% Precision Engine** | ❌ Hallucination-prone | ❌ Hallucination-prone |
-| **Edge / Raspberry Pi Ready?** | ✅ **Instant Run** | ⚠️ High Load | ❌ Out of Memory |
+| Model Variant | Parameters | Layers ($n_{\text{layer}}$) | $d_{\text{model}}$ | Heads ($n_{\text{head}}$) | $d_{\text{ff}}$ | Context Window | Status |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **COLLISION-1.0B** | **999,376,128** | **24** | **2048** | **16** | **5376** | **1024** | **Official Production Flagship** |
+| **COLLISION-10M** | 10,282,304 | 6 | 384 | 8 | 768 | 256 | Edge-Optimized Lightweight Variant |
+| **COLLISION-1.46M** | 1,462,464 | 3 | 128 | 4 | 256 | 256 | Historical Baseline Prototype |
 
 ---
 
@@ -65,7 +60,7 @@ from collision import CollisionService
 
 service = CollisionService()
 
-# 1. Natural Web Grounded Answering (ChatGPT style)
+# 1. Natural Web Grounded Answering
 res = service.ask("What is the latest release version of PyTorch in 2025?", mode="WEB")
 print(res["answer"])
 
@@ -82,11 +77,13 @@ print(math_res["answer"])
 
 ## 🛠️ Technical Specifications
 
-* **Parameters**: `10,282,304` (10.28M)
+* **Parameters**: `999,376,128` (~1.00B)
 * **Architecture**: Causal Decoder-Only Transformer (Weight-Tied Embeddings)
-* **Layers (`n_layer`)**: 6
-* **Hidden Size (`d_model`)**: 384
-* **Attention Heads (`n_head`)**: 8
-* **Feedforward Dimension (`d_ff`)**: 768
-* **Context Length**: 256 tokens
-* **Checkpoint SHA-256**: `d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97`
+* **Layers (`n_layer`)**: 24
+* **Hidden Size (`d_model`)**: 2048
+* **Attention Heads (`n_head`)**: 16
+* **Feedforward Dimension (`d_ff`)**: 5376
+* **Vocabulary Size**: 32,000
+* **Context Length**: 1,024 tokens
+* **Checkpoint SHA-256**: `bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88`
+* **Edge Flagship Checkpoint (10M)**: `d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97`
