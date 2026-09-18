@@ -1,0 +1,33 @@
+# COLLISION Phase 103 — Preference Alignment Configuration (DPO)
+model:
+  config_path: "configs/collision_1b.yaml"
+  vocab_size: 32000
+  max_seq_len: 1024
+  d_model: 2048
+  n_layer: 24
+  n_head: 16
+  d_ff: 5376
+  dropout: 0.1
+  tie_embeddings: true
+
+dpo:
+  train_data_path: "data/preferences/train.jsonl"
+  val_data_path: "data/preferences/validation.jsonl"
+  test_data_path: "data/preferences/test.jsonl"
+  reference_checkpoint_path: "checkpoints/phase102_sft/sft_final_model.pt"
+  output_dir: "checkpoints/phase103_pref"
+  tokenizer_path: "artifacts/tokenizer"
+  
+  beta: 0.1
+  learning_rate: 1.0e-6
+  min_lr: 1.0e-7
+  warmup_steps: 10
+  max_steps: 50
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  eval_interval: 10
+  save_interval: 25
+  seed: 1337
+  pad_token_id: 256

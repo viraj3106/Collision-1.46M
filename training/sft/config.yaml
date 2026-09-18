@@ -1,0 +1,31 @@
+# COLLISION Phase 102 — Grounded SFT Configuration
+model:
+  config_path: "configs/collision_1b.yaml"
+  vocab_size: 32000
+  max_seq_len: 1024
+  d_model: 2048
+  n_layer: 24
+  n_head: 16
+  d_ff: 5376
+  dropout: 0.1
+  tie_embeddings: true
+
+sft:
+  train_data_path: "data/sft/train.jsonl"
+  val_data_path: "data/sft/validation.jsonl"
+  test_data_path: "data/sft/test.jsonl"
+  tokenizer_path: "artifacts/tokenizer"
+  output_dir: "checkpoints/phase102_sft"
+  
+  learning_rate: 2.0e-5
+  min_lr: 2.0e-6
+  warmup_steps: 20
+  max_steps: 100
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  eval_interval: 20
+  save_interval: 50
+  seed: 1337
+  mixed_precision: true

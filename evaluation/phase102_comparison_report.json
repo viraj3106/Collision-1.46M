@@ -1,0 +1,40 @@
+{
+  "title": "COLLISION-1.0B Phase 102 Baseline vs Post-SFT Comparison",
+  "metrics": {
+    "overall_pass_rate_pct": {
+      "baseline": 65.87,
+      "sft": 65.87,
+      "delta": 0.0
+    },
+    "factual_accuracy_pct": {
+      "baseline": 86.84,
+      "sft": 86.84,
+      "delta": 0.0
+    },
+    "grounded_claim_support_rate_pct": {
+      "baseline": 89.02,
+      "sft": 88.89,
+      "delta": -0.13
+    },
+    "unsupported_claim_rate_pct": {
+      "baseline": 9.83,
+      "sft": 9.94,
+      "delta": 0.11
+    },
+    "abstention_accuracy_pct": {
+      "baseline": 56.0,
+      "sft": 56.0,
+      "delta": 0.0
+    },
+    "citation_correctness_pct": {
+      "baseline": 100.0,
+      "sft": 100.0,
+      "delta": 0.0
+    },
+    "avg_latency_ms": {
+      "baseline": 882.01,
+      "sft": 902.32,
+      "delta": 20.31
+    }
+  }
+}

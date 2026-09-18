@@ -1,0 +1,45 @@
+{
+  "title": "COLLISION-1.0B Phase 102 vs Phase 103 Preference Comparison",
+  "metrics": {
+    "overall_pass_rate_pct": {
+      "phase_102": 66.67,
+      "phase_103": 66.67,
+      "delta": 0.0
+    },
+    "factual_accuracy_pct": {
+      "phase_102": 86.84,
+      "phase_103": 86.84,
+      "delta": 0.0
+    },
+    "grounded_claim_support_rate_pct": {
+      "phase_102": 88.82,
+      "phase_103": 88.95,
+      "delta": 0.13
+    },
+    "unsupported_claim_rate_pct": {
+      "phase_102": 10.0,
+      "phase_103": 9.88,
+      "delta": -0.12
+    },
+    "abstention_accuracy_pct": {
+      "phase_102": 60.0,
+      "phase_103": 60.0,
+      "delta": 0.0
+    },
+    "citation_correctness_pct": {
+      "phase_102": 100.0,
+      "phase_103": 100.0,
+      "delta": 0.0
+    },
+    "targeted_preference_rate_pct": {
+      "phase_102": 100.0,
+      "phase_103": 100.0,
+      "delta": 0.0
+    },
+    "avg_latency_ms": {
+      "phase_102": 1009.35,
+      "phase_103": 2678.54,
+      "delta": 1669.19
+    }
+  }
+}
