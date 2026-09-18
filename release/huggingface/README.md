@@ -29,19 +29,19 @@ metrics:
 - perplexity
 - accuracy
 - flesch-reading-ease
-model_name: COLLISION-1.0B
+model_name: COLLISION-1B
 pipeline_tag: text-generation
 parameters: 1.00B
 ---
 
-# ⚡ COLLISION-1.0B & Industrial NLP Suite
+# ⚡ COLLISION-1B & Industrial NLP Suite
 
 <p align="center">
   <b>A High-Efficiency 999.38M Parameter Flagship Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
+  <a href="https://huggingface.co/spaces/viraj3106/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://github.com/viraj3106/Collision-1.46M"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
@@ -49,9 +49,9 @@ parameters: 1.00B
   <img src="https://img.shields.io/badge/Context-1024%20tokens-brightgreen" alt="Context">
 </p>
 
----## 🌟 Why COLLISION-1.0B?
+---## 🌟 Why COLLISION-1B?
 
-**COLLISION-1.0B** is the official primary flagship model of the COLLISION ecosystem. Packing **999,376,128 parameters** (~1.00B) into an optimized 24-layer transformer architecture, it delivers rich contextual reasoning, full 1,024-token context capacity, and state-of-the-art hybrid NLP capabilities with grounded web and local retrieval.
+**COLLISION-1B** is the official primary flagship model of the COLLISION ecosystem. Packing **999,376,128 parameters** (~1.00B) into an optimized 24-layer transformer architecture, it delivers rich contextual reasoning, full 1,024-token context capacity, and state-of-the-art hybrid NLP capabilities with grounded web and local retrieval.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -129,8 +129,8 @@ Run everything in your browser on free Google Colab in under 10 seconds:
 Clone this repository and run pure PyTorch inference directly:
 
 ```bash
-git clone https://huggingface.co/viraj3106/collision-1.0b
-cd collision-1.0b
+git clone https://huggingface.co/viraj3106/collision-1b
+cd collision-1b
 python release_inference.py --prompt "Artificial intelligence is" --checkpoint model.pt
 ```
 
@@ -188,25 +188,34 @@ brain = get_collision_brain()
 res = brain.think(
     query="Can artificial neural networks achieve subjective consciousness or only functional simulation?",
     domain="Philosophy & AI",
-    enable_dialectic=True
-)
+The flagship features an advanced cognitive architecture designed to emulate dual-process cognitive dynamics:
 
-print("Synthesized Stance:", res.answer)
-print("Epistemic Certainty:", f"{res.epistemic_certainty*100:.1f}%")
-print("Adversarial Resilience:", f"{res.adversarial_resilience*100:.1f}%")
-print("Mermaid Thought DAG:\n", res.graph_mermaid)
 ```
-
-Key Cognitive Features:
-- **Dual-Process Controller**: System 1 (reflexive intuitive) + System 2 (deliberative deep reasoning)
-- **Hegelian Dialectic Engine**: Formulates Thesis, synthesizes rigorous Antithesis, and converges to resolved Synthesis
-- **Global Workspace Theory (GWT)**: Conscious information broadcasting across specialized cognitive modules
-- **Synaptic Working Memory**: Long-Term Potentiation (LTP) decay and associative Hebbian plasticity
-- **Cross-Domain Knowledge Lattice**: Multidisciplinary concept bridging and semantic triple extraction
+                  ┌──────────────────────────────┐
+                  │    Perceptual Input Buffer   │
+                  └──────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 ▼                               ▼
+       ┌──────────────────┐            ┌──────────────────┐
+       │     System 1     │            │     System 2     │
+       │ (Fast Heuristic) │            │ (Deep Dialectic) │
+       └─────────┬────────┘            └─────────┬────────┘
+                 │                               │
+                 └───────────────┬───────────────┘
+                                 ▼
+                  ┌──────────────────────────────┐
+                  │   Global Workspace (GWT)     │
+                  │   - Epistemic Verification   │
+                  │   - Synaptic Memory (LTP)    │
+                  └──────────────┬───────────────┘
+                                 ▼
+                         Grounded Output
+```
 
 ---
 
-## 🛠️ Model Architecture & Technical Specifications
+## 📊 Technical Architecture Specifications
 
 * **Parameter Count**: `999,376,128` (~1.00B)
 * **Architecture**: Causal Decoder-Only Transformer (Weight-Tied Embeddings)
@@ -223,16 +232,16 @@ Key Cognitive Features:
 
 ## 🌐 Community & Ecosystem
 
-* **🤗 Live Space Demo**: [collision-10M/collision-ai-lab](https://huggingface.co/spaces/collision-10M/collision-ai-lab)
+* **🤗 Live Space Demo**: [viraj3106/collision-ai-lab](https://huggingface.co/spaces/viraj3106/collision-ai-lab)
 * **💻 GitHub Repository**: [viraj3106/Collision-1.46M](https://github.com/viraj3106/Collision-1.46M)
 * **📜 Citation & License**: MIT License (Permissive Open-Source for Commercial & Research Use)
 
 ```bibtex
 @misc{collision2026,
   author = {Viraj et al.},
-  title = {COLLISION-1.0B: High-Efficiency Scaled Transformer & Grounded NLP Intelligence System},
+  title = {COLLISION-1B: High-Efficiency Scaled Transformer & Grounded NLP Intelligence System},
   year = {2026},
   publisher = {Hugging Face},
-  howpublished = {\url{https://huggingface.co/viraj3106/collision-1.0b}}
+  howpublished = {\url{https://huggingface.co/viraj3106/collision-1b}}
 }
 ```

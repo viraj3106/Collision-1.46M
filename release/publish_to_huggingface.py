@@ -18,8 +18,8 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-MODEL_REPO_ID = "collision-10M/collision-10m"
-SPACE_REPO_ID = "collision-10M/collision-ai-lab"
+MODEL_REPO_ID = "viraj3106/collision-1b"
+SPACE_REPO_ID = "viraj3106/collision-ai-lab"
 
 EXPECTED_SHA256_COLLISION_1B = "bdd986e2a4964a6a204224dbd973625abe192cd4f6e23dceb79e273a29b19c88"
 EXPECTED_SHA256_COLLISION_10M = "d256d46d962d6416fe22d2cfe80b13df0574279fb980d7d8576c2bdcf3775b97"
@@ -89,8 +89,8 @@ def publish_space(api, space_dir: str, repo_id: str, token: str):
 def main():
     parser = argparse.ArgumentParser(description="COLLISION Hugging Face Publisher")
     parser.add_argument("--token", type=str, default=os.getenv("HF_TOKEN"), help="Hugging Face API Token")
-    parser.add_argument("--model-repo", type=str, default="collision-10M/collision-10m", help="Target Model Hub repo ID")
-    parser.add_argument("--space-repo", type=str, default="collision-10M/collision-ai-lab", help="Target Space Hub repo ID")
+    parser.add_argument("--model-repo", type=str, default="viraj3106/collision-1b", help="Target Model Hub repo ID")
+    parser.add_argument("--space-repo", type=str, default="viraj3106/collision-ai-lab", help="Target Space Hub repo ID")
     parser.add_argument("--model-only", action="store_true", help="Upload Model Hub only")
     parser.add_argument("--space-only", action="store_true", help="Upload Space Hub only")
     parser.add_argument("--all", action="store_true", default=True, help="Upload both Model and Space")

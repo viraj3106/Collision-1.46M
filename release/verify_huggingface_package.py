@@ -124,7 +124,7 @@ def main():
         with open(metadata_file, "r", encoding="utf-8") as fp:
             meta = json.load(fp)
         # Assert crucial keys exist
-        assert meta["name"] == "COLLISION-1.0B"
+        assert meta["name"] in ("COLLISION-1B", "COLLISION-1.0B")
         assert meta["parameters"] == EXPECTED_PARAMS
         assert meta["checkpoint_sha256"] == EXPECTED_SHA256
     except Exception as e:

@@ -1,12 +1,12 @@
-# ⚡ COLLISION-1.0B & Industrial NLP Suite — Official Model Card
+# ⚡ COLLISION-1B & Industrial NLP Suite — Official Model Card
 
 <p align="center">
   <b>A High-Efficiency 999.38M Parameter Flagship Transformer with Natural Web Grounding & Complete In-House NLP Toolkit</b>
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/collision-10M/collision-1.0b"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
-  <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
+  <a href="https://huggingface.co/viraj3106/collision-1b"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model"></a>
+  <a href="https://huggingface.co/spaces/viraj3106/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Live%20Demo-Space-blue" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://github.com/viraj3106/Collision-1.46M"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>

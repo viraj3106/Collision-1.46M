@@ -1,5 +1,5 @@
 {
-  "name": "COLLISION-1.0B",
+  "name": "COLLISION-1B",
   "version": "1.0.0",
   "parameters": 999376128,
   "architecture": "Decoder-only Transformer",

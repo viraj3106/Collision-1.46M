@@ -1,4 +1,4 @@
-model_name: "COLLISION-1.0B"
+model_name: "COLLISION-1B"
 parameters: 999376128
 architecture: "Decoder-only Transformer"
 layers: 24
