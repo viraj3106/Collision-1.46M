@@ -1,0 +1,12 @@
+{
+  "tokenizer_class": "CollisionTokenizer",
+  "auto_map": {
+    "AutoTokenizer": "tokenization_collision.CollisionTokenizer"
+  },
+  "bos_token": "[BOS]",
+  "eos_token": "[EOS]",
+  "unk_token": "[UNK]",
+  "pad_token": "[PAD]",
+  "model_max_length": 1024,
+  "clean_up_tokenization_spaces": true
+}

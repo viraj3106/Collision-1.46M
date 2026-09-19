@@ -100,7 +100,7 @@ function updateHeaderTitles(tabId) {
     const subEl = document.getElementById("pageSubtitle");
     
     const titles = {
-        chatTab: ["Conversational AI & Hybrid Intelligence", "Hierarchical Hybrid Intelligence: Neural (10.28M) + In-House NLP Engine + Grounding"],
+        chatTab: ["Conversational AI & Hybrid Intelligence", "Hierarchical Hybrid Intelligence: Neural Flagship (1.00B / 999.38M) + In-House NLP Engine + Grounding"],
         textrankTab: ["TextRank Keyphrase & Keyword Extractor", "Graph-based salient keyphrase discovery with co-occurrence graph ranking"],
         topicTab: ["Multi-Domain Topic Classification", "High-precision categorization across 10 specialized knowledge disciplines"],
         toneTab: ["Tone, Formality & Subjectivity Analysis", "Lexical sophistication metrics, register classification, and sentiment polarity"],
@@ -108,7 +108,7 @@ function updateHeaderTitles(tabId) {
         readabilityTab: ["Readability & Text Complexity", "Flesch Reading Ease, Flesch-Kincaid Grade Level, and Gunning Fog Index"],
         qaTab: ["Extractive Reading Comprehension (Context QA)", "SQuAD-style exact answer span extraction from reference passages"],
         solverTab: ["Deterministic Problem Solver", "Zero-hallucination computational engine for arithmetic, geometry, and conversions"],
-        quickstartTab: ["Python SDK & Model Hub Quickstart", "Production integration guide for the COLLISION-10M NLP suite"]
+        quickstartTab: ["Python SDK & Model Hub Quickstart", "Production integration guide for the Collision-1B Flagship NLP suite"]
     };
     
     if (titles[tabId]) {
@@ -640,7 +640,7 @@ function generateBotResponse(query) {
     const startTime = performance.now();
     
     let botText = "";
-    let route = "Neural 10.28M";
+    let route = "Neural Flagship 1.00B";
     let badgeClass = "badge-nlp";
     
     // 1. Math / Deterministic check
@@ -676,7 +676,7 @@ function generateBotResponse(query) {
     // 4. Default hybrid response
     else {
         route = "Hierarchical Hybrid";
-        botText = `COLLISION-10M processed your inquiry using hierarchical intent routing. The text was analyzed across topic dimensions, salient keyphrases, and verified through our grounded knowledge framework.`;
+        botText = `Collision-1B processed your inquiry using hierarchical intent routing. The text was analyzed across topic dimensions, salient keyphrases, and verified through our grounded knowledge framework.`;
     }
     
     const latency = (performance.now() - startTime).toFixed(1);

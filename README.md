@@ -4,8 +4,8 @@
 Small Models. Real AI.
 
 <p align="center">
-  <a href="https://huggingface.co/viraj3106/collision-1b"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model%20Hub-blue" alt="Hugging Face Model"></a>
-  <a href="https://huggingface.co/spaces/viraj3106/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Interactive-Space%20Demo-purple" alt="Hugging Face Space"></a>
+  <a href="https://huggingface.co/collision-10M/Collision-1B"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model%20Hub-blue" alt="Hugging Face Model"></a>
+  <a href="https://huggingface.co/spaces/collision-10M/collision-ai-lab"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Interactive-Space%20Demo-purple" alt="Hugging Face Space"></a>
   <a href="https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Parameters-1.00B-purple" alt="Parameters">

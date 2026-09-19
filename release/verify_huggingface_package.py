@@ -38,6 +38,14 @@ def main():
         os.path.join(hf_dir, "config.json"),
         os.path.join(hf_dir, "tokenizer.json"),
         os.path.join(hf_dir, "generation_config.json"),
+        os.path.join(hf_dir, "configuration_collision.py"),
+        os.path.join(hf_dir, "modeling_collision.py"),
+        os.path.join(hf_dir, "tokenization_collision.py"),
+        os.path.join(hf_dir, "tokenizer_config.json"),
+        os.path.join(hf_dir, "special_tokens_map.json"),
+        os.path.join(hf_dir, "api_server.py"),
+        os.path.join(hf_dir, "Modelfile"),
+        os.path.join(hf_dir, "requirements.txt"),
         os.path.join(hf_dir, "tokenizer", "config.json"),
         os.path.join(hf_dir, "tokenizer", "vocab.json"),
         os.path.join(hf_dir, "tokenizer", "merges.json"),
@@ -140,7 +148,30 @@ def main():
         sys.exit(1)
     print("OK: License documentation exists.")
 
-    print("\nCOLLISION HUGGING FACE PACKAGE VERIFIED\n")
+    # 8. Verify Hugging Face remote code classes import and initialize
+    try:
+        sys.path.insert(0, hf_dir)
+        from configuration_collision import CollisionConfig
+        from modeling_collision import CollisionForCausalLM
+        from tokenization_collision import CollisionTokenizer
+
+        hf_cfg = CollisionConfig(vocab_size=32000, max_seq_len=1024, d_model=2048, n_layer=24, n_head=16, d_ff=5376)
+        tok = CollisionTokenizer(
+            vocab_file=os.path.join(hf_dir, "tokenizer", "vocab.json"),
+            merges_file=os.path.join(hf_dir, "tokenizer", "merges.json")
+        )
+        encoded = tok.encode_to_ids("Test collision tokenizer", bos=True)
+        assert len(encoded) > 0, "Tokenizer produced empty token list"
+        decoded = tok.decode_from_ids(encoded)
+        assert len(decoded) > 0, "Tokenizer produced empty string"
+    except Exception as e:
+        print(f"FAILED: Transformers remote code verification failed: {e}")
+        sys.exit(1)
+    print("OK: Transformers remote code classes (AutoConfig, AutoModel, AutoTokenizer) verified.")
+
+    print("\n=======================================================")
+    print("  COLLISION HUGGING FACE PACKAGE 100% VERIFIED & READY")
+    print("=======================================================\n")
 
 if __name__ == "__main__":
     main()

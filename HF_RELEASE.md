@@ -5,10 +5,10 @@ This document outlines the upload process, file layout, and metadata required to
 ---
 
 ## 1. Hugging Face Repositories
-* **Flagship Model Hub**: `viraj3106/collision-1b`
-* **Edge Model Hub (10M)**: `viraj3106/collision-10m`
-* **Space Hub**: `viraj3106/collision-ai-lab` (Static SDK)
-* **Dataset Hub**: `viraj3106/collision_dataset_v5_expanded`
+* **Flagship Model Hub**: `collision-10M/Collision-1B`
+* **Edge Model Hub (10M)**: `collision-10M/collision-10m`
+* **Space Hub**: `collision-10M/collision-ai-lab` (Static SDK)
+* **Dataset Hub**: `collision-10M/collision_dataset_v5_expanded`
 
 ---
 
@@ -52,14 +52,14 @@ api = HfApi()
 # 1. Upload Model Hub
 api.upload_folder(
     folder_path="release/huggingface",
-    repo_id="viraj3106/collision-1b",
+    repo_id="collision-10M/Collision-1B",
     repo_type="model"
 )
 
 # 2. Upload Space Hub
 api.upload_folder(
     folder_path="release/huggingface_space",
-    repo_id="viraj3106/collision-ai-lab",
+    repo_id="collision-10M/collision-ai-lab",
     repo_type="space"
 )
 ```
@@ -67,14 +67,14 @@ api.upload_folder(
 ### Option B: Using Git
 ```bash
 # Model Hub
-git clone https://huggingface.co/viraj3106/collision-1b
-cp -r release/huggingface/* collision-1b/
-cd collision-1b
+git clone https://huggingface.co/collision-10M/Collision-1B
+cp -r release/huggingface/* Collision-1B/
+cd Collision-1B
 git add . && git commit -m "Release COLLISION-1B flagship and in-house NLP Engine"
 git push origin main
 
 # Space Hub
-git clone https://huggingface.co/spaces/viraj3106/collision-ai-lab
+git clone https://huggingface.co/spaces/collision-10M/collision-ai-lab
 cp -r release/huggingface_space/* collision-ai-lab/
 cd collision-ai-lab
 git add . && git commit -m "Deploy COLLISION AI & NLP Lab Streamlit Space"

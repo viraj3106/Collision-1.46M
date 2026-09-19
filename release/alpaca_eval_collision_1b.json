@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "What are the names of some famous actors that started their careers on Broadway?",
+    "output": "text",
+    "generator": "collision-1b",
+    "dataset": "helpful_base"
+  },
+  {
+    "instruction": "How did US states get their names?",
+    "output": "COLLISION-1B generated response.",
+    "generator": "collision-1b",
+    "dataset": "helpful_base"
+  },
+  {
+    "instruction": "Hi, my sister and her girlfriends want me to play kickball with them. Can you explain how the game is played, so they don't take advantage of me?",
+    "output": "creates",
+    "generator": "collision-1b",
+    "dataset": "helpful_base"
+  }
+]

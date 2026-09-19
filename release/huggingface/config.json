@@ -1,12 +1,34 @@
 {
+  "architectures": [
+    "CollisionForCausalLM"
+  ],
+  "model_type": "collision",
+  "auto_map": {
+    "AutoConfig": "configuration_collision.CollisionConfig",
+    "AutoModel": "modeling_collision.CollisionModel",
+    "AutoModelForCausalLM": "modeling_collision.CollisionForCausalLM",
+    "AutoTokenizer": "tokenization_collision.CollisionTokenizer"
+  },
   "vocab_size": 32000,
   "max_seq_len": 1024,
+  "max_position_embeddings": 1024,
   "d_model": 2048,
+  "hidden_size": 2048,
   "n_layer": 24,
+  "num_hidden_layers": 24,
   "n_head": 16,
+  "num_attention_heads": 16,
   "d_ff": 5376,
+  "intermediate_size": 5376,
   "dropout": 0.1,
   "tie_embeddings": true,
+  "tie_word_embeddings": true,
   "normalization": "layer_norm",
-  "positional_encoding": "absolute_learned"
+  "positional_encoding": "absolute_learned",
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0,
+  "unk_token_id": 0,
+  "torch_dtype": "float32",
+  "transformers_version": "4.44.0"
 }

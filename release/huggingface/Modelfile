@@ -1,0 +1,28 @@
+# Ollama Modelfile for COLLISION
+# Usage:
+#   ollama create collision -f Modelfile
+#   ollama run collision
+
+FROM ./model.pt
+
+TEMPLATE """{{- if .System }}
+System: {{ .System }}
+{{- end }}
+{{- range .Messages }}
+{{- if eq .Role "user" }}
+User: {{ .Content }}
+{{- else if eq .Role "assistant" }}
+Assistant: {{ .Content }}
+{{- end }}
+{{- end }}
+Assistant: """
+
+SYSTEM """You are COLLISION-1B, an ultra-fast, high-efficiency cognitive transformer language model with built-in natural grounding, deterministic precision reasoning, and complete NLP capabilities."""
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 50
+PARAMETER stop "User:"
+PARAMETER stop "System:"
+PARAMETER stop "[EOS]"
+PARAMETER stop "</s>"
