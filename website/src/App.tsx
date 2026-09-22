@@ -1,62 +1,80 @@
 import { useState, useEffect } from 'react';
-import { Sidebar } from './components/Sidebar';
-import type { ChatSession } from './components/Sidebar';
-import { HomeView } from './components/HomeView';
-import { ChatWorkspace } from './components/ChatWorkspace';
+import { Navbar } from './components/Navbar';
+import { LandingPage } from './components/LandingPage';
+import { PlaygroundWorkspace } from './components/PlaygroundWorkspace';
 import type { Message } from './components/ChatWorkspace';
+import type { ChatSession } from './components/Sidebar';
 import { SettingsModal } from './components/SettingsModal';
 import { AboutModal } from './components/AboutModal';
+import { MitLicenseModal } from './components/MitLicenseModal';
+import { CookieBanner } from './components/CookieBanner';
+import { AmbientQuantumNodes } from './components/AmbientQuantumNodes';
 import { collisionApi } from './api';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '');
-
 export default function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [currentView, setCurrentView] = useState<'landing' | 'playground'>('landing');
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
   const [sessionMessages, setSessionMessages] = useState<Record<string, Message[]>>({});
   const [isGenerating, setIsGenerating] = useState(false);
 
-  // COLLISION Model Info & Links: Small AI. Built from scratch. TRY COLLISION → PLAYGROUND | GET API KEY → DEVELOPER PORTAL
+  // Model hyperparams
   const [temperature, setTemperature] = useState(0.7);
-  const [maxTokens, setMaxTokens] = useState(120);
+  const [maxTokens, setMaxTokens] = useState(128);
 
   // Modals
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isLicenseOpen, setIsLicenseOpen] = useState(false);
 
-  // Load from localStorage on init
+  // Sync theme
+  useEffect(() => {
+    if (isDarkTheme) {
+      document.documentElement.classList.add('dark-theme');
+    } else {
+      document.documentElement.classList.remove('dark-theme');
+    }
+  }, [isDarkTheme]);
+
+  // Load chat history from localStorage
   useEffect(() => {
     try {
       const savedSessions = localStorage.getItem('collision_sessions');
       const savedMessages = localStorage.getItem('collision_messages');
-      if (savedSessions) {
-        setSessions(JSON.parse(savedSessions));
-      }
-      if (savedMessages) {
-        setSessionMessages(JSON.parse(savedMessages));
-      }
+      const savedTheme = localStorage.getItem('collision_theme');
+      if (savedSessions) setSessions(JSON.parse(savedSessions));
+      if (savedMessages) setSessionMessages(JSON.parse(savedMessages));
+      if (savedTheme === 'dark') setIsDarkTheme(true);
     } catch (e) {
-      console.warn("Could not parse local storage history:", e);
+      console.warn("Could not load local storage:", e);
     }
   }, []);
 
-  // Save to localStorage when updated
+  // Save history
   useEffect(() => {
     try {
       localStorage.setItem('collision_sessions', JSON.stringify(sessions));
       localStorage.setItem('collision_messages', JSON.stringify(sessionMessages));
+      localStorage.setItem('collision_theme', isDarkTheme ? 'dark' : 'light');
     } catch (e) {
       console.warn("Could not save to local storage:", e);
     }
-  }, [sessions, sessionMessages]);
+  }, [sessions, sessionMessages, isDarkTheme]);
+
+  const handleToggleTheme = () => {
+    setIsDarkTheme(prev => !prev);
+  };
 
   const handleNewChat = () => {
     setCurrentSessionId(null);
+    setCurrentView('playground');
   };
 
   const handleSelectSession = (id: string) => {
     setCurrentSessionId(id);
+    setCurrentView('playground');
   };
 
   const handleDeleteSession = (id: string) => {
@@ -84,20 +102,18 @@ export default function App() {
     if (!promptText.trim() || isGenerating) return;
 
     let targetSessionId = currentSessionId;
-    
-    // Create new session if none is selected
+
     if (!targetSessionId) {
       targetSessionId = `session-${Date.now()}`;
       const newSession: ChatSession = {
         id: targetSessionId,
-        title: promptText.length > 32 ? promptText.slice(0, 32) + '...' : promptText,
+        title: promptText.length > 36 ? promptText.slice(0, 36) + '...' : promptText,
         updatedAt: Date.now()
       };
       setSessions(prev => [newSession, ...prev]);
       setCurrentSessionId(targetSessionId);
     }
 
-    // Append user message
     const userMsg: Message = {
       id: `msg-user-${Date.now()}`,
       role: 'user',
@@ -110,28 +126,23 @@ export default function App() {
       [targetSessionId!]: [...(prev[targetSessionId!] || []), userMsg]
     }));
 
+    setCurrentView('playground');
     setIsGenerating(true);
 
     try {
-      // Call Phase 99 Production Grounded Endpoint: POST /v1/ask via Collision API Client
       const response = await collisionApi.ask(promptText);
 
       const assistantMsg: Message = {
         id: `msg-ast-${Date.now()}`,
         role: 'assistant',
-        content: response.answer || 'No answer could be generated from verified evidence.',
+        content: response.answer || 'Response generated successfully.',
         timestamp: Date.now(),
         status: response.status,
         mode: response.mode,
         confidence: response.confidence,
         sources: response.sources || [],
         claims: response.claims || [],
-        latency: response.latency,
-        tokens: {
-          prompt_tokens: 0,
-          completion_tokens: 0,
-          latency_ms: response.latency?.total_ms || 0
-        }
+        latency: response.latency
       };
 
       setSessionMessages(prev => ({
@@ -139,11 +150,10 @@ export default function App() {
         [targetSessionId!]: [...(prev[targetSessionId!] || []), assistantMsg]
       }));
     } catch (err: any) {
-      // Clean, user-friendly error without stack traces or leaks
       const errorMsg: Message = {
         id: `msg-err-${Date.now()}`,
         role: 'assistant',
-        content: `⚠️ Could not complete request: ${err.message || 'COLLISION API unreachable'}. Please verify that the backend is running on port 8000.`,
+        content: `⚠️ Request could not be completed: ${err.message || 'COLLISION API unreachable'}. Please make sure backend is active on port 8000.`,
         timestamp: Date.now(),
         status: 'ERROR',
         mode: 'ERROR'
@@ -160,87 +170,70 @@ export default function App() {
 
   const handleRegenerate = () => {
     if (!currentSessionId) return;
-    const currentMsgs = sessionMessages[currentSessionId] || [];
-    const lastUserMsg = [...currentMsgs].reverse().find(m => m.role === 'user');
+    const msgs = sessionMessages[currentSessionId] || [];
+    const lastUserMsg = [...msgs].reverse().find(m => m.role === 'user');
     if (lastUserMsg) {
       handleSendPrompt(lastUserMsg.content);
     }
   };
 
-  const handleFeedback = async (messageId: string, rating: 'thumbs_up' | 'thumbs_down') => {
+  const handleFeedback = (messageId: string, rating: 'thumbs_up' | 'thumbs_down') => {
     if (!currentSessionId) return;
-
-    // Update state locally first
     setSessionMessages(prev => {
       const msgs = prev[currentSessionId] || [];
       const updated = msgs.map(m => m.id === messageId ? { ...m, feedbackRating: rating } : m);
       return { ...prev, [currentSessionId]: updated };
     });
-
-    // Find targeted message and previous user prompt
-    const msgs = sessionMessages[currentSessionId] || [];
-    const targetMsg = msgs.find(m => m.id === messageId);
-    const targetIdx = msgs.findIndex(m => m.id === messageId);
-    const promptMsg = targetIdx > 0 ? msgs[targetIdx - 1] : null;
-
-    if (targetMsg && promptMsg) {
-      try {
-        await fetch(`${API_BASE_URL}/v1/feedback`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            user_id: "anonymous_chat_user",
-            prompt: promptMsg.content,
-            model: "collision-10m",
-            response: targetMsg.content,
-            rating: rating,
-            feedback: "",
-            category: "general",
-            consent: true
-          })
-        });
-      } catch (e) {
-        console.warn("Failed to submit feedback to backend:", e);
-      }
-    }
   };
 
   const currentMessages = currentSessionId ? (sessionMessages[currentSessionId] || []) : [];
 
   return (
-    <div className="app-container">
-      <Sidebar
-        isOpen={isSidebarOpen}
-        onClose={() => setIsSidebarOpen(false)}
-        sessions={sessions}
-        currentSessionId={currentSessionId}
-        onSelectSession={handleSelectSession}
-        onNewChat={handleNewChat}
-        onDeleteSession={handleDeleteSession}
+    <div className="app-root">
+      {/* Ambient background particles with rare micro-depth parallax */}
+      <AmbientQuantumNodes />
+
+      {/* Top Navigation Bar */}
+      <Navbar
+        currentView={currentView}
+        onNavigate={(view) => setCurrentView(view)}
         onOpenSettings={() => setIsSettingsOpen(true)}
         onOpenAbout={() => setIsAboutOpen(true)}
+        onOpenLicense={() => setIsLicenseOpen(true)}
+        isDarkTheme={isDarkTheme}
+        onToggleTheme={handleToggleTheme}
       />
 
-      {/* Main View Switching: Home (Reference 1) vs Chat Workspace (Reference 2) */}
-      {!currentSessionId || currentMessages.length === 0 ? (
-        <HomeView
-          onSendPrompt={handleSendPrompt}
-          onOpenSidebar={() => setIsSidebarOpen(true)}
-          isSidebarOpen={isSidebarOpen}
+      {/* Main Views */}
+      {currentView === 'landing' ? (
+        <LandingPage
+          onStartChat={(prompt) => {
+            if (prompt) {
+              handleSendPrompt(prompt);
+            } else {
+              setCurrentView('playground');
+            }
+          }}
+          onOpenAbout={() => setIsAboutOpen(true)}
+          onOpenLicense={() => setIsLicenseOpen(true)}
         />
       ) : (
-        <ChatWorkspace
+        <PlaygroundWorkspace
+          sessions={sessions}
+          currentSessionId={currentSessionId}
           messages={currentMessages}
           isGenerating={isGenerating}
           onSendPrompt={handleSendPrompt}
+          onSelectSession={handleSelectSession}
+          onNewChat={handleNewChat}
+          onDeleteSession={handleDeleteSession}
           onRegenerate={handleRegenerate}
           onFeedback={handleFeedback}
-          onOpenSidebar={() => setIsSidebarOpen(true)}
-          isSidebarOpen={isSidebarOpen}
-          onNewChat={handleNewChat}
+          onOpenSettings={() => setIsSettingsOpen(true)}
         />
       )}
 
+      {/* Modals & Overlays */}
       <SettingsModal
         isOpen={isSettingsOpen}
         onClose={() => setIsSettingsOpen(false)}
@@ -256,7 +249,13 @@ export default function App() {
         onClose={() => setIsAboutOpen(false)}
       />
 
-      {isGenerating && <div className="gemini-screen-ambient-glow" />}
+      <MitLicenseModal
+        isOpen={isLicenseOpen}
+        onClose={() => setIsLicenseOpen(false)}
+      />
+
+      {/* Cookie Consent & Telemetry Manager */}
+      <CookieBanner />
     </div>
   );
 }

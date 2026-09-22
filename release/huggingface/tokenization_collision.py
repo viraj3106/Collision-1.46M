@@ -57,6 +57,21 @@ class CollisionTokenizer(PreTrainedTokenizer):
             self.vocab[token_str.encode("utf-8")] = idx
         self.inverse_vocab = {v: k for k, v in self.vocab.items()}
 
+        # Automatic fallback path resolution
+        if not vocab_file or not os.path.exists(vocab_file):
+            cur_dir = os.path.dirname(os.path.abspath(__file__))
+            for cand in [os.path.join(cur_dir, "tokenizer", "vocab.json"), os.path.join(cur_dir, "vocab.json")]:
+                if os.path.exists(cand):
+                    vocab_file = cand
+                    break
+
+        if not merges_file or not os.path.exists(merges_file):
+            cur_dir = os.path.dirname(os.path.abspath(__file__))
+            for cand in [os.path.join(cur_dir, "tokenizer", "merges.json"), os.path.join(cur_dir, "merges.json")]:
+                if os.path.exists(cand):
+                    merges_file = cand
+                    break
+
         if vocab_file and os.path.exists(vocab_file):
             with open(vocab_file, "r", encoding="utf-8") as f:
                 json_vocab = json.load(f)

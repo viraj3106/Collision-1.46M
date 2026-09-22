@@ -99,17 +99,18 @@ class CausalSelfAttention(nn.Module):
         v = v.view(B, T, self.n_head, self.d_k).transpose(1, 2)
 
         scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.d_k)
-        scores = scores.masked_fill(self.bias[:, :, :T, :T] == 0, float("-inf"))
+        scores = scores.masked_fill(self.bias[:, :, :T, :T] == 0, -1e4)
 
         if attention_mask is not None:
             if attention_mask.dim() == 2:
                 # (B, T) -> (B, 1, 1, T)
                 mask = attention_mask[:, None, None, :]
-                scores = scores.masked_fill(mask == 0, float("-inf"))
+                scores = scores.masked_fill(mask == 0, -1e4)
             elif attention_mask.dim() == 4:
                 scores = scores + attention_mask
 
         attn_weights = torch.softmax(scores, dim=-1)
+        attn_weights = torch.nan_to_num(attn_weights, nan=0.0)
         attn_weights = self.attn_dropout(attn_weights)
 
         out = torch.matmul(attn_weights, v)
@@ -273,6 +274,12 @@ class CollisionModel(CollisionPreTrainedModel):
 
 class CollisionForCausalLM(CollisionPreTrainedModel, GenerationMixin):
     _tied_weights_keys = ["lm_head.weight"]
+    _keys_to_ignore_on_load_unexpected = {r"blocks\.\d+\.attn\.bias"}
+    _keys_to_ignore_on_load_missing = set()
+
+    @property
+    def all_tied_weights_keys(self):
+        return {"lm_head.weight": "token_emb.emb.weight"}
 
     def __init__(self, config: CollisionConfig):
         super().__init__(config)
@@ -371,6 +378,7 @@ class CollisionForCausalLM(CollisionPreTrainedModel, GenerationMixin):
 
         hidden_states = self.ln_f(x)
         logits = self.lm_head(hidden_states)
+        logits = torch.nan_to_num(logits, nan=0.0)
 
         loss = None
         if labels is not None:
